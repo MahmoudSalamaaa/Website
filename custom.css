@@ -12330,3 +12330,88 @@ img, video, canvas, svg {
         max-width: none;
     }
 }
+
+
+/* ===== Professional journey: separate role title from employer ===== */
+#resume .ex_rightside .experience-role-title {
+    margin: 0 0 10px;
+    color: #161616 !important;
+    font-size: 25px;
+    line-height: 1.28;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    text-transform: none;
+}
+#resume .ex_rightside .experience-role-title::before,
+#resume .ex_rightside .experience-role-title::after {
+    display: none !important;
+    content: none !important;
+}
+#resume .ex_rightside .experience-company {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 0 17px;
+    padding: 7px 12px 6px;
+    border-radius: 10px;
+    background: rgba(255, 81, 126, 0.08);
+    font-size: 14px;
+    line-height: 1.45;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    overflow-wrap: anywhere;
+}
+#resume .ex_rightside .experience-company.c-pink {
+    color: #e83f70 !important;
+    background: rgba(255, 81, 126, 0.10);
+    border-left: 3px solid #ff517e;
+}
+#resume .ex_rightside .experience-company.c-yellow {
+    color: #a86b00 !important;
+    background: rgba(252, 194, 85, 0.16);
+    border-left: 3px solid #fcc255;
+}
+#resume .ex_rightside .experience-company.c-orange {
+    color: #c85b19 !important;
+    background: rgba(244, 126, 57, 0.12);
+    border-left: 3px solid #f47e39;
+}
+#resume .ex_rightside .experience-company.c-cyan {
+    color: #087f95 !important;
+    background: rgba(6, 182, 212, 0.11);
+    border-left: 3px solid #06b6d4;
+}
+#resume .ex_rightside .ex_details {
+    margin-top: 0;
+}
+
+@media (max-width: 991px) {
+    #resume .ex_rightside .experience-role-title {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 767px) {
+    #resume .ex_rightside .experience-role-title {
+        margin-bottom: 8px;
+        font-size: 20px;
+        line-height: 1.32;
+        letter-spacing: -0.01em;
+    }
+    #resume .ex_rightside .experience-company {
+        margin-bottom: 14px;
+        padding: 6px 10px 5px;
+        border-radius: 8px;
+        font-size: 12.5px;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 390px) {
+    #resume .ex_rightside .experience-role-title {
+        font-size: 18px;
+    }
+    #resume .ex_rightside .experience-company {
+        font-size: 12px;
+    }
+}

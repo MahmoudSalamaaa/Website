@@ -81,3 +81,10 @@ Preserve external CSS and the existing design unless Mahmoud explicitly requests
 - Overrode legacy column-width rules that compressed cards into narrow columns on phones.
 - Converted mobile tabs to a 2-column touch-friendly grid and stacked featured skill cards to full width on small screens.
 - Prevented vertical letter wrapping in skill titles and improved spacing for supporting chips.
+
+## 2026-08-04 Experience Title and Employer Styling
+- Standardized all five Professional Journey entries.
+- Job titles are now fully black and use a dedicated `experience-role-title` class.
+- Employer names are visually separated beneath the title using `experience-company` and role-specific brand accents.
+- Removed colored/animated words from job titles and removed the hover effect from the Keyframe employer name.
+- Improved mobile typography and spacing for all experience cards.

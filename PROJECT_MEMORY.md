@@ -69,3 +69,15 @@ Preserve external CSS and the existing design unless Mahmoud explicitly requests
 - Moved selected earlier websites and digital products into a clearly labeled historical archive on portfolio.html.
 - Active public files changed: index.html, portfolio.html, custom.css.
 
+
+## 2026-08-04 Skills Tabs Redesign
+- Rebuilt the `#skills` section into a colorful six-tab capability matrix based directly on the Executive CV.
+- Added all major skill groups and tools from the CV: leadership, integration, engineering, data, delivery, security, and operations.
+- Introduced colorful progress bars, level pills, pane descriptions, and a polished legend.
+- Updated only `index.html` and `custom.css` for this redesign.
+
+## 2026-08-04 Executive Skills Refinement
+- Reduced visual density while preserving every skill from the Executive CV.
+- Highlighted the most strategic capabilities with colorful progress bars.
+- Grouped supporting technologies into compact chip clouds.
+- Added tab icons, pane icons, skill icons, softer gradients, and a more executive visual hierarchy.

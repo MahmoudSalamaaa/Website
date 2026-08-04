@@ -12127,3 +12127,206 @@ img, video, canvas, svg {
 #skills.capability-executive .tone-rose.capability-pane-shell{background:linear-gradient(135deg,rgba(255,81,126,.09),rgba(255,255,255,.98) 55%,rgba(252,194,85,.05))}
 #skills.capability-executive .tone-indigo.capability-pane-shell{background:linear-gradient(135deg,rgba(59,130,246,.09),rgba(255,255,255,.98) 55%,rgba(124,58,237,.05))}
 @media(max-width:767px){#skills.capability-executive .capability-pane-head{gap:13px}#skills.capability-executive .capability-pane-icon{width:46px;height:46px;min-width:46px;border-radius:14px;font-size:18px}#skills.capability-executive .capability-kicker{font-size:9.5px}#skills.capability-executive .cap-skill-top{flex-direction:row;align-items:flex-start}#skills.capability-executive .cap-skill-name{align-items:flex-start}#skills.capability-executive .cap-skill-name>i{width:28px;height:28px;min-width:28px}#skills.capability-executive .cap-skill-level{flex:0 0 auto}#skills.capability-executive .capability-supporting{padding:15px}#skills.capability-executive .capability-chip-cloud{gap:7px}#skills.capability-executive .capability-chip-cloud>span{min-height:30px;padding:7px 10px;font-size:11px}}
+
+
+/* ===== Mobile fix for skills tabs redesign ===== */
+#skills .capability-featured-grid > [class*='col-lg-6'],
+#skills .capability-featured-grid > [class*='col-lg-12'] {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    width: 50% !important;
+}
+#skills .capability-featured-grid > [class*='col-lg-12'] {
+    flex-basis: 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+}
+#skills .capability-tablist {
+    gap: 12px !important;
+}
+#skills .capability-tablist .nav-item {
+    flex: 0 0 auto;
+}
+#skills .capability-tablist .nav-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-width: 0;
+}
+#skills .cap-skill-name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+    flex: 1;
+}
+#skills .cap-skill-name i {
+    flex: 0 0 18px;
+}
+#skills .cap-skill-name h4 {
+    min-width: 0;
+    word-break: normal;
+    overflow-wrap: anywhere;
+}
+#skills .cap-skill-top {
+    align-items: flex-start;
+}
+#skills .capability-supporting {
+    margin-top: 20px;
+}
+#skills .capability-chip-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#skills .capability-chip-cloud span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 13px;
+    line-height: 1.2;
+}
+
+@media (max-width: 991px) {
+    #skills .capability-featured-grid > [class*='col-lg-6'],
+    #skills .capability-featured-grid > [class*='col-lg-12'] {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    #skills .capability-pane-head {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    #skills.capability-redesign {
+        margin-top: 40px;
+    }
+    #skills .capability-tablist {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px !important;
+        overflow: visible;
+        padding-bottom: 0;
+        justify-content: initial !important;
+    }
+    #skills .capability-tablist .nav-item {
+        width: 100%;
+    }
+    #skills .capability-tablist .nav-link {
+        width: 100%;
+        min-height: 54px;
+        padding: 10px 12px;
+        border-radius: 14px;
+        font-size: 12.5px;
+        line-height: 1.2;
+        white-space: normal;
+        text-align: center;
+        flex-direction: column;
+        gap: 6px;
+    }
+    #skills .capability-tablist .nav-link i {
+        font-size: 14px;
+    }
+    #skills .capability-pane-shell {
+        padding: 18px 14px;
+    }
+    #skills .capability-pane-head {
+        flex-direction: row;
+        gap: 12px;
+        margin-bottom: 16px;
+    }
+    #skills .capability-pane-icon {
+        width: 54px;
+        height: 54px;
+        min-width: 54px;
+        border-radius: 16px;
+    }
+    #skills .capability-kicker {
+        font-size: 10px;
+        letter-spacing: .08em;
+    }
+    #skills .capability-pane-head h3 {
+        font-size: 18px;
+        line-height: 1.3;
+        margin-bottom: 6px;
+    }
+    #skills .capability-pane-head p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+    #skills .capability-featured-grid {
+        row-gap: 14px !important;
+    }
+    #skills .capability-featured-grid > [class*='col-lg-6'],
+    #skills .capability-featured-grid > [class*='col-lg-12'] {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    #skills .cap-skill-item {
+        padding: 15px 13px 14px;
+        border-radius: 15px;
+    }
+    #skills .cap-skill-top {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    #skills .cap-skill-name {
+        gap: 10px;
+    }
+    #skills .cap-skill-name h4 {
+        font-size: 14px;
+        line-height: 1.35;
+        word-break: normal;
+        overflow-wrap: anywhere;
+    }
+    #skills .cap-skill-level {
+        flex: 0 0 auto;
+        max-width: 42%;
+        white-space: nowrap;
+        font-size: 10px;
+        padding: 7px 10px;
+        align-self: flex-start;
+    }
+    #skills .cap-skill-bar {
+        height: 9px;
+    }
+    #skills .supporting-title {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    #skills .capability-chip-cloud {
+        gap: 8px;
+    }
+    #skills .capability-chip-cloud span {
+        font-size: 11px;
+        padding: 8px 11px;
+    }
+}
+
+@media (max-width: 420px) {
+    #skills .capability-tablist {
+        grid-template-columns: 1fr 1fr;
+    }
+    #skills .capability-tablist .nav-link {
+        font-size: 12px;
+        padding: 10px 10px;
+    }
+    #skills .cap-skill-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #skills .cap-skill-level {
+        max-width: none;
+    }
+}

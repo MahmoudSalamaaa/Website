@@ -76,8 +76,8 @@ Preserve external CSS and the existing design unless Mahmoud explicitly requests
 - Introduced colorful progress bars, level pills, pane descriptions, and a polished legend.
 - Updated only `index.html` and `custom.css` for this redesign.
 
-## 2026-08-04 Executive Skills Refinement
-- Reduced visual density while preserving every skill from the Executive CV.
-- Highlighted the most strategic capabilities with colorful progress bars.
-- Grouped supporting technologies into compact chip clouds.
-- Added tab icons, pane icons, skill icons, softer gradients, and a more executive visual hierarchy.
+## 2026-08-04 Mobile Skills Tabs Fix
+- Fixed the mobile rendering of the redesigned skills tabs section.
+- Overrode legacy column-width rules that compressed cards into narrow columns on phones.
+- Converted mobile tabs to a 2-column touch-friendly grid and stacked featured skill cards to full width on small screens.
+- Prevented vertical letter wrapping in skill titles and improved spacing for supporting chips.

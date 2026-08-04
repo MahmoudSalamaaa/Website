@@ -56,7 +56,16 @@ Assigned to: ThemeForest
 	open_menu: function() {
 		if($('.port_togglebox').length > 0){
 			$('.port_togglebox').on('click', function(){
-				$('body').toggleClass('port_menu_open');
+				var isOpen = !$('body').hasClass('port_menu_open');
+				$('body').toggleClass('port_menu_open', isOpen);
+				$(this).attr('aria-expanded', isOpen ? 'true' : 'false')
+					.attr('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+			});
+			$('.port_navigation .nav_list a').on('click', function(){
+				if (window.innerWidth <= 767) {
+					$('body').removeClass('port_menu_open');
+					$('.port_togglebox').attr('aria-expanded', 'false').attr('aria-label', 'Open navigation menu');
+				}
 			});
 		}
 	},
@@ -163,7 +172,11 @@ Assigned to: ThemeForest
 	about_opendetails: function() {
 		if($('.icon').length > 0){
 			$('.icon').on('click', function() {
-				$('.about_leftsection').toggleClass('open_details');
+				var isOpen = !$('.about_leftsection').hasClass('open_details');
+				$('.about_leftsection').toggleClass('open_details', isOpen);
+				$(this).attr('aria-expanded', isOpen ? 'true' : 'false')
+					.attr('aria-label', isOpen ? 'Hide profile details' : 'Show profile details')
+					.attr('title', isOpen ? 'Hide profile details' : 'Show profile details');
 			});
 		}
 	},
@@ -583,10 +596,12 @@ Assigned to: ThemeForest
 				var windscroll = $(window).scrollTop();
 				var target = $('.port_navigation .nav_list li');
 				if (windscroll >= 0) {
-					$('[data-scroll]').each(function(i) {
+					$('[data-scroll]').each(function() {
 						if ($(this).position().top <= windscroll + 78) {
+							var scrollId = String($(this).attr('data-scroll'));
 							target.removeClass('active');
-							target.eq(i).addClass('active');
+							$('.port_navigation .nav_list li[data-number="' + scrollId + '"]').addClass('active');
+							$('.port_sidebar_position[data-number="' + scrollId + '"]').addClass('active');
 						}
 					});
 				}else{

@@ -93,7 +93,7 @@ button.ex_btn{appearance:none;background:none;border:0;padding:0;color:inherit;f
 <div class="ms-stage"><span class="sr-only" id="ms-intro-description">Brief animated introduction. Press Escape or select Skip to continue.</span>
 <!-- Neon logo -->
 <div aria-hidden="true" class="ms-logo-wrap">
-<img alt="" class="ms-logo" decoding="async" src="assets/images/logo.png"/>
+<img alt="" class="ms-logo" decoding="async" src="assets/images/logo.webp"/>
 </div>
 <!-- Typing headline -->
 <div aria-label="Mahmoud Salama" class="ms-headline" role="presentation">
@@ -221,7 +221,7 @@ button.ex_btn{appearance:none;background:none;border:0;padding:0;color:inherit;f
 <nav aria-label="Primary portfolio navigation" class="port_sidebar_wrapper mport_sidebar_wrapper">
 <div class="port_sidebar_profile">
 <a aria-label="Profile / About" class="port_sidebar_position active" data-number="20" href="#hero">
-<img alt="profile-image" class="img-fluid" decoding="async" src="assets/images/logo.png"/>
+<img alt="profile-image" class="img-fluid" decoding="async" src="assets/images/logo.webp"/>
 </a>
 </div>
 <div class="port_sidebar_nav">
@@ -287,20 +287,6 @@ button.ex_btn{appearance:none;background:none;border:0;padding:0;color:inherit;f
 </span>
 </a>
 <span class="menu_tooltip" style="color: #06b6d4">Achievements</span>
-</div>
-</li>
-<!-- Core Competencies -->
-<li data-number="2">
-<div class="tooltip_box">
-<a aria-label="Core Competencies" class="siderbar_menuicon" href="#competencies">
-<span class="first_micon">
-<img alt="" aria-hidden="true" class="_26" decoding="async" loading="lazy" src="assets/images/menu/compet.png"/>
-</span>
-<span class="second_micon">
-<img alt="" aria-hidden="true" class="_26" decoding="async" loading="lazy" src="assets/images/menu/compet.png"/>
-</span>
-</a>
-<span class="menu_tooltip" style="color: #4caf50 !important">Competencies</span>
 </div>
 </li>
 <!-- My Skills -->
@@ -385,7 +371,6 @@ button.ex_btn{appearance:none;background:none;border:0;padding:0;color:inherit;f
 <span class="menu_tooltip" style="color: #4E5180 !important ">Gallery</span>
 </div>
 </li>
-
 <!-- Contact -->
 <li data-number="7">
 <div class="tooltip_box">
@@ -503,11 +488,11 @@ button.ex_btn{appearance:none;background:none;border:0;padding:0;color:inherit;f
 </div>
 </div>
 </div><!-- End banner wrapper -->
-</div><div class="port_togglebox">
+</div><button aria-expanded="false" aria-label="Open navigation menu" class="port_togglebox" type="button">
 <span></span>
 <span></span>
 <span></span>
-</div><div class="port_sec_warapper">
+</button><div class="port_sec_warapper">
 <div class="port_about_setions page_scroll" data-scroll="0" id="about_sec" role="main">
 <!-- start about section  -->
 <div class="selfintro_section">
@@ -517,12 +502,12 @@ button.ex_btn{appearance:none;background:none;border:0;padding:0;color:inherit;f
 <div class="col-xl-5 col-lg-12 col-md-12">
 <div class="about_leftsection">
 <div class="img_warapper">
-<img alt="About" class="img-fluid" decoding="async" loading="lazy" src="assets/images/me1.png" title="more information click + icon"/>
-<div class="icon" title="more information click + icon">
+<img alt="About" class="img-fluid" decoding="async" loading="lazy" src="assets/images/me1.webp" title="more information click + icon"/>
+<button aria-expanded="false" aria-label="Show profile details" class="icon" title="Show profile details" type="button">
 <div class="iconbox">
 <i class="fa fa-plus icon_plus"></i>
 <i class="fa fa-minus icon_minus"></i>
-</div>
+</button>
 </div>
 </div>
 <div class="left_deatils">
@@ -651,8 +636,6 @@ button.ex_btn{appearance:none;background:none;border:0;padding:0;color:inherit;f
 </div>
 </div>
 </section>
-
-
 <!-- Start Key Achievements section -->
 <div class="achievements_section" data-scroll="1" id="achievements">
 <div class="container">
@@ -719,193 +702,111 @@ button.ex_btn{appearance:none;background:none;border:0;padding:0;color:inherit;f
 </div>
 </div>
 <!-- End Key Achievements section -->
-<!-- Start Core section -->
-<div class="port_services_setions" data-scroll="2" id="competencies">
-<!-- start services section  -->
-<div class="services_section">
+<!-- Skills Tabs Section -->
+<div aria-labelledby="skills-title" class="skills_tabs_section capability-redesign capability-executive" data-scroll="3" id="skills">
 <div class="container">
 <div class="row">
 <div class="col-md-12">
 <div class="port_heading_wrapper text-center">
-<div class="port_sub_heading_wrapper">
-<h2 class="port_sub_heading">Executive Capabilities</h2>
-</div>
-<h2 class="port_heading">Core Competencies</h2>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-lg-4 col-md-6 text-center">
-<div class="port_services_box_wrapper">
-<div class="port_services_box">
-<img alt="Problem Solving" class="_80" decoding="async" loading="lazy" src="assets/images/services/problem_solving.png"/>
-<h2 class="project_heading">Technology Strategy</h2>
-<p class="project_pera">Aligning technology investment, roadmaps, and operating priorities with institutional objectives.</p>
+<div class="port_sub_heading_wrapper"><h2 class="port_sub_heading">Capability Matrix</h2></div>
+<h2 class="port_heading" id="skills-title">Executive &amp; Technical Expertise</h2>
+<p class="capability-intro">A focused executive view of the complete capability set reflected in the CV, with the most strategic strengths highlighted and supporting technologies grouped for faster reading.</p>
 </div>
 </div>
 </div>
-<div class="col-lg-4 col-md-6 text-center">
-<div class="port_services_box_wrapper">
-<div class="port_services_box">
-<img alt="Critical Thinking" class="_80" decoding="async" loading="lazy" src="assets/images/services/critical_thinking.png"/>
-<h2 class="project_heading">Enterprise Architecture</h2>
-<p class="project_pera">Defining scalable platforms, integration standards, governance principles, and modernization pathways.</p>
+<ul aria-label="Capability categories" class="nav nav-tabs justify-content-center capability-tablist flex-wrap gap-2" id="skillsTab" role="tablist">
+<li class="nav-item" role="presentation"><button aria-controls="cap-executive" aria-selected="true" class="nav-link active" data-bs-target="#cap-executive" data-bs-toggle="tab" id="cap-executive-tab" role="tab" type="button"><i class="fas fa-chess-king"></i><span>Executive Leadership</span></button></li>
+<li class="nav-item" role="presentation"><button aria-controls="cap-integration" aria-selected="false" class="nav-link" data-bs-target="#cap-integration" data-bs-toggle="tab" id="cap-integration-tab" role="tab" type="button"><i class="fas fa-project-diagram"></i><span>Integration &amp; Platforms</span></button></li>
+<li class="nav-item" role="presentation"><button aria-controls="cap-engineering" aria-selected="false" class="nav-link" data-bs-target="#cap-engineering" data-bs-toggle="tab" id="cap-engineering-tab" role="tab" type="button"><i class="fas fa-code"></i><span>Core Engineering</span></button></li>
+<li class="nav-item" role="presentation"><button aria-controls="cap-data-analytics" aria-selected="false" class="nav-link" data-bs-target="#cap-data-analytics" data-bs-toggle="tab" id="cap-data-analytics-tab" role="tab" type="button"><i class="fas fa-chart-line"></i><span>Data &amp; Analytics</span></button></li>
+<li class="nav-item" role="presentation"><button aria-controls="cap-app-delivery" aria-selected="false" class="nav-link" data-bs-target="#cap-app-delivery" data-bs-toggle="tab" id="cap-app-delivery-tab" role="tab" type="button"><i class="fas fa-layer-group"></i><span>Apps &amp; Delivery</span></button></li>
+<li class="nav-item" role="presentation"><button aria-controls="cap-secops" aria-selected="false" class="nav-link" data-bs-target="#cap-secops" data-bs-toggle="tab" id="cap-secops-tab" role="tab" type="button"><i class="fas fa-shield-alt"></i><span>Security &amp; Operations</span></button></li>
+</ul>
+<div class="tab-content capability-tabs-content capability-rich-content" id="skillsTabContent">
+<div aria-labelledby="cap-executive-tab" class="tab-pane fade show active" id="cap-executive" role="tabpanel" tabindex="0">
+<div class="capability-pane-shell tone-sunrise">
+<div class="capability-pane-head"><div class="capability-pane-icon"><i class="fas fa-chess-king"></i></div><div><span class="capability-kicker">Leadership &amp; Direction</span><h3>Executive Technology Leadership</h3><p>Strategy, governance, architecture leadership, portfolio direction, and executive stakeholder alignment.</p></div></div>
+<div class="row g-4 capability-featured-grid">
+<div class="col-lg-6"><div class="cap-skill-item tone-sunrise"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-compass"></i><h4>Technology Strategy</h4></div><span class="cap-skill-level">Executive</span></div><div class="cap-skill-bar"><span style="width:96%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-sunrise"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-bolt"></i><h4>Digital Transformation</h4></div><span class="cap-skill-level">Executive</span></div><div class="cap-skill-bar"><span style="width:96%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-sunrise"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-sitemap"></i><h4>Enterprise Architecture</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-sunrise"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-cubes"></i><h4>Solution Architecture</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-sunrise"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-briefcase"></i><h4>Portfolio Management</h4></div><span class="cap-skill-level">Executive</span></div><div class="cap-skill-bar"><span style="width:96%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-sunrise"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-handshake"></i><h4>Executive Stakeholder Management</h4></div><span class="cap-skill-level">Executive</span></div><div class="cap-skill-bar"><span style="width:96%"></span></div></div></div>
+</div>
+<div class="capability-supporting"><span class="supporting-title">Supporting capabilities</span><div class="capability-chip-cloud"><span>Information Systems Leadership</span><span>Technology Roadmaps</span><span>Vendor Governance</span><span>Technical Program Delivery</span></div></div>
+</div>
+</div>
+<div aria-labelledby="cap-integration-tab" class="tab-pane fade" id="cap-integration" role="tabpanel" tabindex="0">
+<div class="capability-pane-shell tone-cyan">
+<div class="capability-pane-head"><div class="capability-pane-icon"><i class="fas fa-project-diagram"></i></div><div><span class="capability-kicker">Connected Enterprise</span><h3>Systems Integration &amp; Enterprise Platforms</h3><p>Controlled interoperability across enterprise systems, workflows, APIs, and Microsoft Dynamics 365 connectivity.</p></div></div>
+<div class="row g-4 capability-featured-grid">
+<div class="col-lg-6"><div class="cap-skill-item tone-cyan"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-network-wired"></i><h4>Systems Integration</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-cyan"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-plug"></i><h4>REST API Design</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-cyan"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-balance-scale"></i><h4>Integration Governance</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-cyan"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-random"></i><h4>Workflow Integration</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
+<div class="col-lg-12"><div class="cap-skill-item tone-cyan"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fab fa-microsoft"></i><h4>Microsoft Dynamics 365 ERP &amp; CRM Connectivity</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
+</div>
+<div class="capability-supporting"><span class="supporting-title">Supporting technologies</span><div class="capability-chip-cloud"><span>GraphQL</span><span>API Security</span><span>Data Mapping</span></div></div>
+</div>
+</div>
+<div aria-labelledby="cap-engineering-tab" class="tab-pane fade" id="cap-engineering" role="tabpanel" tabindex="0">
+<div class="capability-pane-shell tone-violet">
+<div class="capability-pane-head"><div class="capability-pane-icon"><i class="fas fa-code"></i></div><div><span class="capability-kicker">Hands-on Engineering</span><h3>Core Engineering Strengths</h3><p>Deep software engineering capability across .NET, databases, web technologies, and object-oriented development.</p></div></div>
+<div class="row g-4 capability-featured-grid">
+<div class="col-lg-6"><div class="cap-skill-item tone-violet"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-code"></i><h4>C#</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-violet"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-window-restore"></i><h4>ASP.NET Core</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-violet"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-layer-group"></i><h4>.NET Framework</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-violet"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-database"></i><h4>SQL</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-violet"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-database"></i><h4>PostgreSQL</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-violet"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-server"></i><h4>SQL Server</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
+</div>
+<div class="capability-supporting"><span class="supporting-title">Supporting engineering stack</span><div class="capability-chip-cloud"><span>Entity Framework</span><span>MySQL</span><span>LINQ</span><span>Object-Oriented Programming</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span></div></div>
+</div>
+</div>
+<div aria-labelledby="cap-data-analytics-tab" class="tab-pane fade" id="cap-data-analytics" role="tabpanel" tabindex="0">
+<div class="capability-pane-shell tone-emerald">
+<div class="capability-pane-head"><div class="capability-pane-icon"><i class="fas fa-chart-line"></i></div><div><span class="capability-kicker">Evidence &amp; Insight</span><h3>Data, Analytics &amp; Reporting</h3><p>Capabilities in warehousing, master data, validation, executive dashboards, and analytical enablement.</p></div></div>
+<div class="row g-4 capability-featured-grid">
+<div class="col-lg-6"><div class="cap-skill-item tone-emerald"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-chart-pie"></i><h4>Power BI</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-emerald"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-stream"></i><h4>Data Pipelines</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-emerald"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-database"></i><h4>Master Data Management</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-emerald"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-tachometer-alt"></i><h4>Executive Dashboards</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-emerald"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-check-double"></i><h4>Data Validation</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-emerald"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-search-dollar"></i><h4>Demand Analysis</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
+</div>
+<div class="capability-supporting"><span class="supporting-title">Supporting analytics tools</span><div class="capability-chip-cloud"><span>Apache Superset</span><span>SSRS</span><span>Crystal Reports</span><span>Operational Data Stores</span><span>Forecasting Support</span></div></div>
+</div>
+</div>
+<div aria-labelledby="cap-app-delivery-tab" class="tab-pane fade" id="cap-app-delivery" role="tabpanel" tabindex="0">
+<div class="capability-pane-shell tone-rose">
+<div class="capability-pane-head"><div class="capability-pane-icon"><i class="fas fa-layer-group"></i></div><div><span class="capability-kicker">Product &amp; Platform Delivery</span><h3>Application &amp; Platform Delivery</h3><p>Front-end, back-end, workflow, and platform tools used across enterprise applications and public-sector solutions.</p></div></div>
+<div class="row g-4 capability-featured-grid">
+<div class="col-lg-6"><div class="cap-skill-item tone-rose"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fab fa-react"></i><h4>React.js</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-rose"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fab fa-node-js"></i><h4>Node.js</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-rose"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-random"></i><h4>Workflow Engines</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-rose"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-table"></i><h4>Kendo UI</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
+<div class="col-lg-12"><div class="cap-skill-item tone-rose"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-th-large"></i><h4>DevExpress</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
+</div>
+<div class="capability-supporting"><span class="supporting-title">Supporting frameworks &amp; platforms</span><div class="capability-chip-cloud"><span>jQuery</span><span>Bootstrap</span><span>Sitefinity</span><span>Kentico</span><span>Umbraco</span><span>nopCommerce</span></div></div>
+</div>
+</div>
+<div aria-labelledby="cap-secops-tab" class="tab-pane fade" id="cap-secops" role="tabpanel" tabindex="0">
+<div class="capability-pane-shell tone-indigo">
+<div class="capability-pane-head"><div class="capability-pane-icon"><i class="fas fa-shield-alt"></i></div><div><span class="capability-kicker">Reliable &amp; Secure Delivery</span><h3>Delivery, Security &amp; Operations</h3><p>Tooling, governance, quality, secure delivery, operational controls, and resilience capabilities.</p></div></div>
+<div class="row g-4 capability-featured-grid">
+<div class="col-lg-6"><div class="cap-skill-item tone-indigo"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-infinity"></i><h4>CI/CD</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-indigo"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-sync-alt"></i><h4>SDLC</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-indigo"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-vial"></i><h4>Quality Assurance</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-indigo"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-clipboard-check"></i><h4>Release Governance</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-indigo"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-user-shield"></i><h4>Secure Coding</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
+<div class="col-lg-6"><div class="cap-skill-item tone-indigo"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-people-carry"></i><h4>Change Management</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
+</div>
+<div class="capability-supporting"><span class="supporting-title">Supporting tools &amp; controls</span><div class="capability-chip-cloud"><span>Docker</span><span>Jenkins</span><span>Git</span><span>GitHub</span><span>Jira</span><span>Postman</span><span>Agile</span><span>RBAC</span><span>Data Encryption</span><span>Audit Logs</span><span>Backup and Recovery</span></div></div>
 </div>
 </div>
 </div>
-<div class="col-lg-4 col-md-6 text-center">
-<div class="port_services_box_wrapper">
-<div class="port_services_box">
-<img alt="Communication" class="_80" decoding="async" loading="lazy" src="assets/images/services/communication.png"/>
-<h2 class="project_heading">Stakeholder Leadership</h2>
-<p class="project_pera">Leading executive, operational, technical, and partner stakeholders through complex decisions.</p>
 </div>
-</div>
-</div>
-<div class="col-lg-4 col-md-6 text-center">
-<div class="port_services_box_wrapper">
-<div class="port_services_box">
-<img alt="Organizational Skills" class="_80" decoding="async" loading="lazy" src="assets/images/services/org_skills.png"/>
-<h2 class="project_heading">Portfolio &amp; Vendor Governance</h2>
-<p class="project_pera">Governing portfolios, suppliers, delivery partners, risks, quality, and measurable outcomes.</p>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-6 text-center">
-<div class="port_services_box_wrapper">
-<div class="port_services_box">
-<img alt="Leadership" class="_80" decoding="async" loading="lazy" src="assets/images/services/leader.png"/>
-<h2 class="project_heading">Transformation Leadership</h2>
-<p class="project_pera">Driving adoption, organizational change, capability development, and sustainable transformation.</p>
-</div>
-</div>
-</div>
-<div class="col-lg-4 col-md-6 text-center">
-<div class="port_services_box_wrapper">
-<div class="port_services_box">
-<img alt="Time Management" class="_80" decoding="async" loading="lazy" src="assets/images/services/time.png"/>
-<h2 class="project_heading">Service &amp; Delivery Governance</h2>
-<p class="project_pera">Improving delivery discipline, service reliability, quality assurance, and operational accountability.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><!-- End core section  -->
-<!-- End progress bar section  -->
-<!-- Skills Tabs Section -->
-<div aria-labelledby="skills-title" class="skills_tabs_section capability-redesign capability-executive" data-scroll="3" id="skills">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="port_heading_wrapper text-center">
-          <div class="port_sub_heading_wrapper"><h2 class="port_sub_heading">Capability Matrix</h2></div>
-          <h2 class="port_heading" id="skills-title">Executive &amp; Technical Expertise</h2>
-          <p class="capability-intro">A focused executive view of the complete capability set reflected in the CV, with the most strategic strengths highlighted and supporting technologies grouped for faster reading.</p>
-        </div>
-      </div>
-    </div>
-
-    <ul aria-label="Capability categories" class="nav nav-tabs justify-content-center capability-tablist flex-wrap gap-2" id="skillsTab" role="tablist">
-      <li class="nav-item" role="presentation"><button aria-controls="cap-executive" aria-selected="true" class="nav-link active" data-bs-target="#cap-executive" data-bs-toggle="tab" id="cap-executive-tab" role="tab" type="button"><i class="fas fa-chess-king"></i><span>Executive Leadership</span></button></li>
-      <li class="nav-item" role="presentation"><button aria-controls="cap-integration" aria-selected="false" class="nav-link" data-bs-target="#cap-integration" data-bs-toggle="tab" id="cap-integration-tab" role="tab" type="button"><i class="fas fa-project-diagram"></i><span>Integration &amp; Platforms</span></button></li>
-      <li class="nav-item" role="presentation"><button aria-controls="cap-engineering" aria-selected="false" class="nav-link" data-bs-target="#cap-engineering" data-bs-toggle="tab" id="cap-engineering-tab" role="tab" type="button"><i class="fas fa-code"></i><span>Core Engineering</span></button></li>
-      <li class="nav-item" role="presentation"><button aria-controls="cap-data-analytics" aria-selected="false" class="nav-link" data-bs-target="#cap-data-analytics" data-bs-toggle="tab" id="cap-data-analytics-tab" role="tab" type="button"><i class="fas fa-chart-line"></i><span>Data &amp; Analytics</span></button></li>
-      <li class="nav-item" role="presentation"><button aria-controls="cap-app-delivery" aria-selected="false" class="nav-link" data-bs-target="#cap-app-delivery" data-bs-toggle="tab" id="cap-app-delivery-tab" role="tab" type="button"><i class="fas fa-layer-group"></i><span>Apps &amp; Delivery</span></button></li>
-      <li class="nav-item" role="presentation"><button aria-controls="cap-secops" aria-selected="false" class="nav-link" data-bs-target="#cap-secops" data-bs-toggle="tab" id="cap-secops-tab" role="tab" type="button"><i class="fas fa-shield-alt"></i><span>Security &amp; Operations</span></button></li>
-    </ul>
-
-    <div class="tab-content capability-tabs-content capability-rich-content" id="skillsTabContent">
-      <div aria-labelledby="cap-executive-tab" class="tab-pane fade show active" id="cap-executive" role="tabpanel" tabindex="0">
-        <div class="capability-pane-shell tone-sunrise">
-          <div class="capability-pane-head"><div class="capability-pane-icon"><i class="fas fa-chess-king"></i></div><div><span class="capability-kicker">Leadership &amp; Direction</span><h3>Executive Technology Leadership</h3><p>Strategy, governance, architecture leadership, portfolio direction, and executive stakeholder alignment.</p></div></div>
-          <div class="row g-4 capability-featured-grid">
-            <div class="col-lg-6"><div class="cap-skill-item tone-sunrise"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-compass"></i><h4>Technology Strategy</h4></div><span class="cap-skill-level">Executive</span></div><div class="cap-skill-bar"><span style="width:96%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-sunrise"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-bolt"></i><h4>Digital Transformation</h4></div><span class="cap-skill-level">Executive</span></div><div class="cap-skill-bar"><span style="width:96%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-sunrise"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-sitemap"></i><h4>Enterprise Architecture</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:92%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-sunrise"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-cubes"></i><h4>Solution Architecture</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:91%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-sunrise"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-briefcase"></i><h4>Portfolio Management</h4></div><span class="cap-skill-level">Executive</span></div><div class="cap-skill-bar"><span style="width:94%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-sunrise"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-handshake"></i><h4>Executive Stakeholder Management</h4></div><span class="cap-skill-level">Executive</span></div><div class="cap-skill-bar"><span style="width:95%"></span></div></div></div>
-          </div>
-          <div class="capability-supporting"><span class="supporting-title">Supporting capabilities</span><div class="capability-chip-cloud"><span>Information Systems Leadership</span><span>Technology Roadmaps</span><span>Vendor Governance</span><span>Technical Program Delivery</span></div></div>
-        </div>
-      </div>
-
-      <div aria-labelledby="cap-integration-tab" class="tab-pane fade" id="cap-integration" role="tabpanel" tabindex="0">
-        <div class="capability-pane-shell tone-cyan">
-          <div class="capability-pane-head"><div class="capability-pane-icon"><i class="fas fa-project-diagram"></i></div><div><span class="capability-kicker">Connected Enterprise</span><h3>Systems Integration &amp; Enterprise Platforms</h3><p>Controlled interoperability across enterprise systems, workflows, APIs, and Microsoft Dynamics 365 connectivity.</p></div></div>
-          <div class="row g-4 capability-featured-grid">
-            <div class="col-lg-6"><div class="cap-skill-item tone-cyan"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-network-wired"></i><h4>Systems Integration</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:92%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-cyan"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-plug"></i><h4>REST API Design</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-cyan"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-balance-scale"></i><h4>Integration Governance</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:90%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-cyan"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-random"></i><h4>Workflow Integration</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:87%"></span></div></div></div>
-            <div class="col-lg-12"><div class="cap-skill-item tone-cyan"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fab fa-microsoft"></i><h4>Microsoft Dynamics 365 ERP &amp; CRM Connectivity</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:87%"></span></div></div></div>
-          </div>
-          <div class="capability-supporting"><span class="supporting-title">Supporting technologies</span><div class="capability-chip-cloud"><span>GraphQL</span><span>API Security</span><span>Data Mapping</span></div></div>
-        </div>
-      </div>
-
-      <div aria-labelledby="cap-engineering-tab" class="tab-pane fade" id="cap-engineering" role="tabpanel" tabindex="0">
-        <div class="capability-pane-shell tone-violet">
-          <div class="capability-pane-head"><div class="capability-pane-icon"><i class="fas fa-code"></i></div><div><span class="capability-kicker">Hands-on Engineering</span><h3>Core Engineering Strengths</h3><p>Deep software engineering capability across .NET, databases, web technologies, and object-oriented development.</p></div></div>
-          <div class="row g-4 capability-featured-grid">
-            <div class="col-lg-6"><div class="cap-skill-item tone-violet"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-code"></i><h4>C#</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:93%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-violet"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-window-restore"></i><h4>ASP.NET Core</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:91%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-violet"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-layer-group"></i><h4>.NET Framework</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:92%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-violet"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-database"></i><h4>SQL</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:92%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-violet"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-database"></i><h4>PostgreSQL</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:90%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-violet"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-server"></i><h4>SQL Server</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:92%"></span></div></div></div>
-          </div>
-          <div class="capability-supporting"><span class="supporting-title">Supporting engineering stack</span><div class="capability-chip-cloud"><span>Entity Framework</span><span>MySQL</span><span>LINQ</span><span>Object-Oriented Programming</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span></div></div>
-        </div>
-      </div>
-
-      <div aria-labelledby="cap-data-analytics-tab" class="tab-pane fade" id="cap-data-analytics" role="tabpanel" tabindex="0">
-        <div class="capability-pane-shell tone-emerald">
-          <div class="capability-pane-head"><div class="capability-pane-icon"><i class="fas fa-chart-line"></i></div><div><span class="capability-kicker">Evidence &amp; Insight</span><h3>Data, Analytics &amp; Reporting</h3><p>Capabilities in warehousing, master data, validation, executive dashboards, and analytical enablement.</p></div></div>
-          <div class="row g-4 capability-featured-grid">
-            <div class="col-lg-6"><div class="cap-skill-item tone-emerald"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-chart-pie"></i><h4>Power BI</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-emerald"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-stream"></i><h4>Data Pipelines</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:90%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-emerald"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-database"></i><h4>Master Data Management</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:89%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-emerald"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-tachometer-alt"></i><h4>Executive Dashboards</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:87%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-emerald"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-check-double"></i><h4>Data Validation</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:86%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-emerald"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-search-dollar"></i><h4>Demand Analysis</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:84%"></span></div></div></div>
-          </div>
-          <div class="capability-supporting"><span class="supporting-title">Supporting analytics tools</span><div class="capability-chip-cloud"><span>Apache Superset</span><span>SSRS</span><span>Crystal Reports</span><span>Operational Data Stores</span><span>Forecasting Support</span></div></div>
-        </div>
-      </div>
-
-      <div aria-labelledby="cap-app-delivery-tab" class="tab-pane fade" id="cap-app-delivery" role="tabpanel" tabindex="0">
-        <div class="capability-pane-shell tone-rose">
-          <div class="capability-pane-head"><div class="capability-pane-icon"><i class="fas fa-layer-group"></i></div><div><span class="capability-kicker">Product &amp; Platform Delivery</span><h3>Application &amp; Platform Delivery</h3><p>Front-end, back-end, workflow, and platform tools used across enterprise applications and public-sector solutions.</p></div></div>
-          <div class="row g-4 capability-featured-grid">
-            <div class="col-lg-6"><div class="cap-skill-item tone-rose"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fab fa-react"></i><h4>React.js</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:85%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-rose"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fab fa-node-js"></i><h4>Node.js</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:83%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-rose"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-random"></i><h4>Workflow Engines</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:87%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-rose"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-table"></i><h4>Kendo UI</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:84%"></span></div></div></div>
-            <div class="col-lg-12"><div class="cap-skill-item tone-rose"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-th-large"></i><h4>DevExpress</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:82%"></span></div></div></div>
-          </div>
-          <div class="capability-supporting"><span class="supporting-title">Supporting frameworks &amp; platforms</span><div class="capability-chip-cloud"><span>jQuery</span><span>Bootstrap</span><span>Sitefinity</span><span>Kentico</span><span>Umbraco</span><span>nopCommerce</span></div></div>
-        </div>
-      </div>
-
-      <div aria-labelledby="cap-secops-tab" class="tab-pane fade" id="cap-secops" role="tabpanel" tabindex="0">
-        <div class="capability-pane-shell tone-indigo">
-          <div class="capability-pane-head"><div class="capability-pane-icon"><i class="fas fa-shield-alt"></i></div><div><span class="capability-kicker">Reliable &amp; Secure Delivery</span><h3>Delivery, Security &amp; Operations</h3><p>Tooling, governance, quality, secure delivery, operational controls, and resilience capabilities.</p></div></div>
-          <div class="row g-4 capability-featured-grid">
-            <div class="col-lg-6"><div class="cap-skill-item tone-indigo"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-infinity"></i><h4>CI/CD</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:84%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-indigo"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-sync-alt"></i><h4>SDLC</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:90%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-indigo"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-vial"></i><h4>Quality Assurance</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:86%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-indigo"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-clipboard-check"></i><h4>Release Governance</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:85%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-indigo"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-user-shield"></i><h4>Secure Coding</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:84%"></span></div></div></div>
-            <div class="col-lg-6"><div class="cap-skill-item tone-indigo"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-people-carry"></i><h4>Change Management</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:86%"></span></div></div></div>
-          </div>
-          <div class="capability-supporting"><span class="supporting-title">Supporting tools &amp; controls</span><div class="capability-chip-cloud"><span>Docker</span><span>Jenkins</span><span>Git</span><span>GitHub</span><span>Jira</span><span>Postman</span><span>Agile</span><span>RBAC</span><span>Data Encryption</span><span>Audit Logs</span><span>Backup and Recovery</span></div></div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 <!-- End Skills  section  -->
 <!-- start Experience section  -->
@@ -1270,9 +1171,9 @@ button.ex_btn{appearance:none;background:none;border:0;padding:0;color:inherit;f
 <div class="pc-foot"><span class="pc-tag">Led</span><span class="pc-sub">Data</span></div>
 </a>
 </article><article class="pcs-item development">
-<a class="pc view" data-desc="Integration architecture connecting procurement, operations, stakeholder services, reporting, and data platforms with Microsoft Dynamics 365 ERP and CRM through controlled exchange, mapping, validation, reconciliation, workflow alignment, monitoring, and audit controls." data-role="Directed integration architecture" data-sub="Application · Directed integration architecture" data-title="Microsoft Dynamics 365 ERP &amp; CRM Integration" href="images/portfolio/fin.avif">
+<a class="pc view" data-desc="Integration architecture connecting procurement, operations, stakeholder services, reporting, and data platforms with Microsoft Dynamics 365 ERP and CRM through controlled exchange, mapping, validation, reconciliation, workflow alignment, monitoring, and audit controls." data-role="Directed integration architecture" data-sub="Application · Directed integration architecture" data-title="Microsoft Dynamics 365 ERP &amp; CRM Integration" href="images/portfolio/fin.webp">
 <div class="pc-photo">
-<img alt="Financial System ERP" decoding="async" loading="lazy" src="images/portfolio/fin.avif"/>
+<img alt="Financial System ERP" decoding="async" loading="lazy" src="images/portfolio/fin.webp"/>
 <span class="pc-stamp">Application</span>
 </div>
 <div class="pc-title"><h3 class="pc-ttl">Microsoft Dynamics 365 ERP &amp; CRM Integration</h3></div>
@@ -1311,9 +1212,9 @@ button.ex_btn{appearance:none;background:none;border:0;padding:0;color:inherit;f
 <div class="pc-foot"><span class="pc-tag">Directed</span><span class="pc-sub">HTA</span></div>
 </a>
 </article><article class="pcs-item development">
-<a class="pc view" data-desc="End-to-end tracking of supply requests, POs, delivery notes, inspection documents, and warehouse activities in a unified timeline." data-role="Led architecture and delivery governance" data-sub="Application · Led architecture and delivery governance" data-title="Order Tracking" href="images/portfolio/order_tracking.png">
+<a class="pc view" data-desc="End-to-end tracking of supply requests, POs, delivery notes, inspection documents, and warehouse activities in a unified timeline." data-role="Led architecture and delivery governance" data-sub="Application · Led architecture and delivery governance" data-title="Order Tracking" href="images/portfolio/order_tracking.webp">
 <div class="pc-photo">
-<img alt="Order Tracking" decoding="async" loading="lazy" src="images/portfolio/order_tracking.png"/>
+<img alt="Order Tracking" decoding="async" loading="lazy" src="images/portfolio/order_tracking.webp"/>
 <span class="pc-stamp">Application</span>
 </div>
 <div class="pc-title"><h3 class="pc-ttl">Order Tracking</h3></div>
@@ -1616,7 +1517,6 @@ button.ex_btn{appearance:none;background:none;border:0;padding:0;color:inherit;f
 <div class="swiper-slide">
 <img alt="UPA" class="client_logo" decoding="async" loading="lazy" src="images/clients/upa.png"/>
 </div>
-
 <!--<div class="swiper-slide">
                                                 <img src="images/clients/plan.png" alt="Plan" class="client_logo">
                                             </div>-->
@@ -1626,9 +1526,6 @@ button.ex_btn{appearance:none;background:none;border:0;padding:0;color:inherit;f
 <div class="swiper-slide">
 <img alt="MOH" class="client_logo" decoding="async" loading="lazy" src="images/clients/moh.png"/>
 </div>
-
-
-
 </div>
 </div>
 </div>
@@ -1642,88 +1539,34 @@ button.ex_btn{appearance:none;background:none;border:0;padding:0;color:inherit;f
 <section class="impact-switcher" data-scroll="8" id="gallery">
 <div class="container">
 <div class="port_heading_wrapper text-center">
-<div class="port_sub_heading_wrapper">
-<h2 class="port_sub_heading">Impact in Motion</h2>
+<div class="port_sub_heading_wrapper"><h2 class="port_sub_heading">Impact in Motion</h2></div>
+<h2 class="port_heading">Selected Leadership Moments</h2>
+<p class="gallery-intro">Six selected moments from national programs, executive engagements, team leadership, and digital-health initiatives.</p>
 </div>
-<h2 class="port_heading">Milestones, Systems &amp; Stories</h2>
+<div class="albums-wrapper selected-gallery-wrapper">
+<div class="album-grid active selected-gallery-grid" id="a1">
+<button class="g-item" type="button" data-img="assets/images/gallery/excon3.webp" data-tag="Program" data-title="Africa Health ExCon Digital Health Pavilion"><img alt="Digital health program pavilion at Africa Health ExCon" decoding="async" loading="lazy" src="assets/images/gallery/excon3.webp"/></button>
+<button class="g-item" type="button" data-img="assets/images/gallery/manama.webp" data-tag="Leadership" data-title="Manama Health Congress Executive Session"><img alt="Regional health leadership event" decoding="async" loading="lazy" src="assets/images/gallery/manama.webp"/></button>
+<button class="g-item" type="button" data-img="assets/images/gallery/medIq.webp" data-tag="Program" data-title="MedIQ National Ecosystem Launch"><img alt="MedIQ national procurement and medical supply ecosystem event" decoding="async" loading="lazy" src="assets/images/gallery/medIq.webp"/></button>
+<button class="g-item" type="button" data-img="assets/images/gallery/leadership-meeting.webp" data-tag="Governance" data-title="Executive Governance Meeting"><img alt="Executive governance and stakeholder meeting" decoding="async" loading="lazy" src="assets/images/gallery/leadership-meeting.webp"/></button>
+<button class="g-item" type="button" data-img="assets/images/gallery/team-alignment.webp" data-tag="Team" data-title="Cross-functional Team Alignment"><img alt="Cross-functional technology team alignment session" decoding="async" loading="lazy" src="assets/images/gallery/team-alignment.webp"/></button>
+<button class="g-item" type="button" data-img="assets/images/gallery/exhibition.webp" data-tag="Recognition" data-title="Healthcare Technology Exhibition"><img alt="Healthcare technology exhibition and program showcase" decoding="async" loading="lazy" src="assets/images/gallery/exhibition.webp"/></button>
 </div>
-<!-- Album Tabs -->
-<div class="album-tabs">
-<button class="album-tab active" data-album="a1">Programs</button>
-<button class="album-tab" data-album="a2">Leadership</button>
-<button class="album-tab" data-album="a3">Teams</button>
-<button class="album-tab" data-album="a4">Digital</button>
-<button class="album-tab" data-album="a5">Media</button>
-<button class="album-tab" data-album="a6">Awards</button>
 </div>
-<!-- Albums -->
-<div class="albums-wrapper">
-<!-- ===== Album 1 ===== -->
-<div class="album-grid active" id="a1">
-<button class="g-item" data-img="assets/images/gallery/excon3.jpg" data-tag="Program" data-title="Digital Health Pavilion"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/excon3.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/exconfinal.jpg" data-tag="Program" data-title="Expo Closing &amp; Outcomes"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/exconfinal.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/manama.jpg" data-tag="Summit" data-title="Regional Health Summit"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/manama.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/manama22.jpg" data-tag="Summit" data-title="Strategic Delegation"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/manama22.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/manama32.jpg" data-tag="Summit" data-title="Innovation Exhibition"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/manama32.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/mohp.jpg" data-tag="Program" data-title="Ministry of Health Session"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/mohp.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/medIq.jpg" data-tag="Program" data-title="MedIQ National Launch"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/medIq.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/mediq2.jpg" data-tag="Expo" data-title="MedIQ Ecosystem Showcase"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/mediq2.jpg"/></button>
-</div>
-<!-- ===== Album 2 ===== -->
-<div class="album-grid" id="a2">
-<button class="g-item" data-img="assets/images/gallery/IMG-20250120-WA0004.jpg" data-tag="Leadership" data-title="High-Level Governance Meeting"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/IMG-20250120-WA0004.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/FB_IMG_1721926748450.jpg" data-tag="Leadership" data-title="Stakeholder Alignment"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/FB_IMG_1721926748450.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/mediq3.jpg" data-tag="Leadership" data-title="Program Governance Walkthrough"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/mediq3.jpg"/></button>
-</div>
-<!-- ===== Album 3 ===== -->
-<div class="album-grid" id="a3">
-<button class="g-item" data-img="assets/images/gallery/IMG-20230607-WA0004.jpg" data-tag="Team" data-title="Team Alignment"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/IMG-20230607-WA0004.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/IMG-20230607-WA0007.jpg" data-tag="Team" data-title="Workshop Execution"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/IMG-20230607-WA0007.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/IMG-20240603-WA0005.jpg" data-tag="Team" data-title="Cross-functional Collaboration"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/IMG-20240603-WA0005.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/IMG-20220606-WA0000.jpg" data-tag="Culture" data-title="Everyday Operations"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/IMG-20220606-WA0000.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/IMG-20220605-WA0018.jpg" data-tag="Culture" data-title="Team Gathering"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/IMG-20220605-WA0018.jpg"/></button>
-</div>
-<!-- ===== Album 4 ===== -->
-<div class="album-grid" id="a4">
-<button class="g-item" data-img="assets/images/gallery/gantt.jpg" data-tag="Design" data-title="Program Gantt Roadmap"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/gantt.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/gs1.png" data-tag="Platform" data-title="Portal UI Journey"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/gs1.png"/></button>
-<button class="g-item" data-img="assets/images/gallery/gs1_2.png" data-tag="Platform" data-title="Enhanced Workflows"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/gs1_2.png"/></button>
-<button class="g-item" data-img="assets/images/gallery/mediq_.jpg" data-tag="Analytics" data-title="National Dashboard"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/mediq_.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/investments.jpg" data-tag="Analytics" data-title="Investments Overview"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/investments.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/IMG-20230321-WA0007.jpg" data-tag="Platform" data-title="System Snapshot"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/IMG-20230321-WA0007.jpg"/></button>
-</div>
-<!-- ===== Album 5 ===== -->
-<div class="album-grid" id="a5">
-<button class="g-item" data-img="assets/images/gallery/news 67-1.jpg" data-tag="Media" data-title="National Media Feature"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/news 67-1.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/FB_IMG_1634568712441.jpg" data-tag="Media" data-title="Public Communication"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/FB_IMG_1634568712441.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/FB_IMG_1721926753111.jpg" data-tag="Media" data-title="Social Highlight"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/FB_IMG_1721926753111.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/IMG-20220220-WA0012.jpg" data-tag="Media" data-title="Health Sector Coverage"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/IMG-20220220-WA0012.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/IMG-20220315-WA0013.jpg" data-tag="Media" data-title="Digital Transformation Story"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/IMG-20220315-WA0013.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/IMG-20210315-WA0018.jpg" data-tag="Media" data-title="Policy Interview / Panel"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/IMG-20210315-WA0018.jpg"/></button>
-</div>
-<!-- ===== Album 6 ===== -->
-<div class="album-grid" id="a6">
-<button class="g-item" data-img="assets/images/gallery/20221210_201041.jpg" data-tag="Exhibition" data-title="Exhibition Booth"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/20221210_201041.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/IMG-20221212-WA0000.jpg" data-tag="Award" data-title="Partner Appreciation"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/IMG-20221212-WA0000.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/IMG-20221212-WA0011.jpg" data-tag="Award" data-title="Program Delivery Recognition"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/IMG-20221212-WA0011.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/IMG-20210929-WA0015.jpg" data-tag="Award" data-title="Innovation Award Ceremony"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/IMG-20210929-WA0015.jpg"/></button>
-<button class="g-item" data-img="assets/images/gallery/IMG-20210929-WA0024.jpg" data-tag="Award" data-title="Leadership Recognition"><img alt="Mahmoud Salama portfolio image" decoding="async" loading="lazy" src="assets/images/gallery/IMG-20210929-WA0024.jpg"/></button>
-</div>
+<div class="gallery-more-actions">
+<a class="portfolio_btn btn_cyan gallery-portfolio-link" href="https://mahmoud-salama.vercel.app/executive-portfolio/" rel="noopener noreferrer" target="_blank">
+<span class="first_text">View Executive Portfolio</span><span class="second_text">Open Portfolio</span>
+</a>
 </div>
 </div>
 </section>
-<!-- Lightbox -->
 <div class="gallery-lightbox" id="glb">
-<button class="lb-close">✕</button>
-<img alt="Mahmoud Salama portfolio image" decoding="async" id="glb-img" loading="lazy"/>
-<div class="lb-caption">
-<span id="glb-tag"></span>
-<h3 id="glb-title"></h3>
+<button aria-label="Close gallery" class="lb-close" type="button">✕</button>
+<img alt="Selected portfolio image" decoding="async" id="glb-img" loading="lazy"/>
+<div class="lb-caption"><span id="glb-tag"></span><h3 id="glb-title"></h3></div>
+<button aria-label="Previous image" class="lb-nav prev" type="button">◀</button>
+<button aria-label="Next image" class="lb-nav next" type="button">▶</button>
 </div>
-<button class="lb-nav prev">◀</button>
-<button class="lb-nav next">▶</button>
-</div>
-
 <div class="port_contact_wrapper page_scroll" data-scroll="7" id="contact">
 <div class="container">
 <div class="row">
@@ -2028,11 +1871,11 @@ button.ex_btn{appearance:none;background:none;border:0;padding:0;color:inherit;f
 <!-- ================== start inner section ================== -->
 <!-- ================== End inner section ================== -->
 <!-- go to top button -->
-<div class="bottom_top">
+<button aria-label="Back to top" class="bottom_top" type="button">
 <i class="fas fa-arrow-up">
 </i>
 <i class="fas fa-arrow-up"></i>
-</div>
+</button>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <!--<script data-cfasync="false" src="../../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>-->
@@ -2222,127 +2065,65 @@ button.ex_btn{appearance:none;background:none;border:0;padding:0;color:inherit;f
     </script>
 <script defer="defer" src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
 <script>
-        /* =====================================
-           Gallery – Tabs + Swipe + Lightbox
-        ===================================== */
+(function () {
+  const items = Array.from(document.querySelectorAll('#gallery .g-item'));
+  const lightbox = document.getElementById('glb');
+  const image = document.getElementById('glb-img');
+  const title = document.getElementById('glb-title');
+  const tag = document.getElementById('glb-tag');
+  const previous = lightbox?.querySelector('.lb-nav.prev');
+  const next = lightbox?.querySelector('.lb-nav.next');
+  const close = lightbox?.querySelector('.lb-close');
+  let currentIndex = 0;
 
-        /* ---------- Tabs ---------- */
-        let activeAlbum = 'a1';
+  if (!items.length || !lightbox || !image) return;
 
-        const tabs = document.querySelectorAll('.album-tab');
-        const grids = document.querySelectorAll('.album-grid');
+  function render() {
+    const item = items[currentIndex];
+    if (!item) return;
+    image.src = item.dataset.img || '';
+    title.textContent = item.dataset.title || '';
+    tag.textContent = item.dataset.tag || '';
+  }
 
-        function showAlbum(id) {
-            activeAlbum = id;
+  function open(item) {
+    currentIndex = Math.max(0, items.indexOf(item));
+    render();
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    close?.focus();
+  }
 
-            tabs.forEach(t =>
-                t.classList.toggle('active', t.dataset.album === id)
-            );
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
 
-            grids.forEach(g =>
-                g.classList.toggle('active', g.id === id)
-            );
-        }
+  items.forEach((item) => item.addEventListener('click', () => open(item)));
+  previous?.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
+    render();
+  });
+  next?.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % items.length;
+    render();
+  });
+  close?.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (event) => {
+    if (event.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', (event) => {
+    if (!lightbox.classList.contains('open')) return;
+    if (event.key === 'Escape') closeLightbox();
+    if (event.key === 'ArrowLeft') previous?.click();
+    if (event.key === 'ArrowRight') next?.click();
+  });
 
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                showAlbum(tab.dataset.album);
-            });
-        });
-
-        /* ---------- Swipe Between Tabs ---------- */
-        let startX = 0;
-        const wrapper = document.querySelector('.albums-wrapper');
-
-        if (wrapper) {
-            wrapper.addEventListener('touchstart', e => {
-                startX = e.touches[0].clientX;
-            });
-
-            wrapper.addEventListener('touchend', e => {
-                const diff = e.changedTouches[0].clientX - startX;
-                if (Math.abs(diff) < 50) return;
-
-                const idx = [...tabs].findIndex(t => t.dataset.album === activeAlbum);
-                const nextIdx = diff < 0 ? idx + 1 : idx - 1;
-
-                if (tabs[nextIdx]) {
-                    showAlbum(tabs[nextIdx].dataset.album);
-                }
-            });
-        }
-
-        /* ---------- Lightbox ---------- */
-        const lb = document.getElementById('glb');
-        const lbImg = document.getElementById('glb-img');
-        const lbTitle = document.getElementById('glb-title');
-        const lbTag = document.getElementById('glb-tag');
-
-        const btnPrev = document.querySelector('.lb-nav.prev');
-        const btnNext = document.querySelector('.lb-nav.next');
-        const btnClose = document.querySelector('.lb-close');
-
-        let activeItems = [];
-        let currentIndex = 0;
-
-        function openLightbox(item) {
-            activeItems = [...document.querySelectorAll(`#${activeAlbum} .g-item`)];
-            currentIndex = activeItems.indexOf(item);
-            if (currentIndex < 0) currentIndex = 0;
-
-            renderLightbox();
-            lb.classList.add('open');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function renderLightbox() {
-            const item = activeItems[currentIndex];
-            if (!item) return;
-
-            lbImg.src = item.dataset.img;
-            lbTitle.textContent = item.dataset.title || '';
-            lbTag.textContent = item.dataset.tag || '';
-        }
-
-        /* Bind thumbnails */
-        document.querySelectorAll('.g-item').forEach(item => {
-            item.addEventListener('click', () => openLightbox(item));
-        });
-
-        /* Prev / Next */
-        btnPrev.addEventListener('click', () => {
-            if (!activeItems.length) return;
-            currentIndex = (currentIndex - 1 + activeItems.length) % activeItems.length;
-            renderLightbox();
-        });
-
-        btnNext.addEventListener('click', () => {
-            if (!activeItems.length) return;
-            currentIndex = (currentIndex + 1) % activeItems.length;
-            renderLightbox();
-        });
-
-        /* Close */
-        function closeLightbox() {
-            lb.classList.remove('open');
-            document.body.style.overflow = '';
-        }
-
-        btnClose.addEventListener('click', closeLightbox);
-        lb.addEventListener('click', e => {
-            if (e.target === lb) closeLightbox();
-        });
-
-        /* ---------- GSAP Reveal ---------- */
-        if (typeof gsap !== 'undefined') {
-            gsap.from('#gallery', {
-                opacity: 0,
-                y: 40,
-                duration: 0.8,
-                ease: 'power2.out'
-            });
-        }
-    </script>
+  if (typeof gsap !== 'undefined') {
+    gsap.from('#gallery', { opacity: 0, y: 30, duration: 0.7, ease: 'power2.out' });
+  }
+})();
+</script>
 <script id="ms-project-tabs-accessibility">
         (function () {
             const tabs = Array.from(document.querySelectorAll('#works .pcs-tabs [role="tab"]'));

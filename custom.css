@@ -169,112 +169,6 @@
     .skill_card.skill9 {
         background-color: #607d8b;
     }
-/* Styling for the skills tabs section */
-.skills_tabs_section {
-    margin-top: 60px;
-}
-
-    .skills_tabs_section .nav-tabs {
-        border-bottom: none;
-        margin-bottom: 30px;
-        justify-content: center;
-    }
-
-        .skills_tabs_section .nav-tabs .nav-link {
-            color: #fff;
-            background-color: #2b2d42;
-            border: none;
-            margin: 0 5px;
-            padding: 10px 15px;
-            border-radius: 4px;
-            font-size: 14px;
-        }
-
-            .skills_tabs_section .nav-tabs .nav-link.active {
-                background-color: #f06449;
-                color: #fff;
-            }
-
-    /* Make the skill boxes smaller by overriding Bootstrap column widths within the skills tabs section */
-    .skills_tabs_section .row > [class*='col-lg-6'] {
-        flex: 0 0 33.3333%;
-        max-width: 33.3333%;
-        width: 33.3333%;
-    }
-
-    .skills_tabs_section .row > [class*='col-md-6'] {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-
-    .skills_tabs_section .row > [class*='col-sm-12'] {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-/* Progress bar styles within skills tabs */
-.skill_progress {
-    margin-bottom: 20px;
-}
-
-    .skill_progress .skill_header {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 5px;
-        font-size: 14px;
-        font-weight: 600;
-        color: #333;
-    }
-
-    .skill_progress .progress_container {
-        width: 100%;
-        background-color: #eee;
-        border-radius: 4px;
-        height: 6px;
-        overflow: hidden;
-    }
-
-    .skill_progress .progress_bar {
-        height: 100%;
-        border-radius: 4px;
-    }
-
-.progress_bar.skill1 {
-    background-color: #f06449;
-}
-
-.progress_bar.skill2 {
-    background-color: #ffb74d;
-}
-
-.progress_bar.skill3 {
-    background-color: #4caf50;
-}
-
-.progress_bar.skill4 {
-    background-color: #2196f3;
-}
-
-.progress_bar.skill5 {
-    background-color: #9c27b0;
-}
-
-.progress_bar.skill6 {
-    background-color: #ff6f00;
-}
-
-.progress_bar.skill7 {
-    background-color: #00bcd4;
-}
-
-.progress_bar.skill8 {
-    background-color: #795548;
-}
-
-.progress_bar.skill9 {
-    background-color: #607d8b;
-}
-
 /* Styling for Professional Involvements timeline */
 .professional_involvements_section {
     margin-top: 60px;
@@ -11767,44 +11661,6 @@ img, video, canvas, svg {
     align-items: stretch;
 }
 
-#skills .capability-tabs-content {
-    margin-top: 28px;
-}
-#skills .capability-card {
-    height: 100%;
-    min-height: 112px;
-    padding: 22px 20px;
-    border: 1px solid rgba(15, 23, 42, 0.08);
-    border-radius: 18px;
-    background: #fff;
-    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.07);
-    display: flex;
-    align-items: center;
-}
-#skills .capability-card .skill_header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-}
-#skills .capability-card .skill_header > span:first-child {
-    color: #0f172a;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 1.3;
-}
-#skills .capability-card .skill_percentage {
-    display: inline-flex;
-    width: auto;
-    padding: 7px 11px;
-    border-radius: 999px;
-    background: rgba(6, 182, 212, 0.11);
-    color: #087f95;
-    font-size: 12px;
-    line-height: 1;
-    font-weight: 700;
-}
 
 #works .portfolio-archive-heading {
     grid-column: 1 / -1;
@@ -11845,13 +11701,6 @@ img, video, canvas, svg {
         min-width: 0;
         padding-inline: 10px;
         font-size: 12px;
-    }
-    #skills .capability-card {
-        min-height: 96px;
-        padding: 18px 16px;
-    }
-    #skills .capability-card .skill_header > span:first-child {
-        font-size: 15px;
     }
     #works .portfolio-archive-heading {
         padding: 20px 18px;
@@ -12413,5 +12262,171 @@ img, video, canvas, svg {
     }
     #resume .ex_rightside .experience-company {
         font-size: 12px;
+    }
+}
+
+
+/* ===== Final replacement release: navigation, floating controls, gallery, and layout cleanup ===== */
+
+/* Accessible mobile menu control */
+.port_togglebox {
+    border: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* Keep the profile reveal control attached to the image rather than the details panel. */
+.about_leftsection .img_warapper {
+    position: relative;
+}
+.about_leftsection .icon {
+    top: 14px;
+    right: 14px;
+    bottom: auto;
+    left: auto;
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.22);
+}
+.about_leftsection .iconbox i {
+    top: 15px;
+}
+
+/* A safe, unobtrusive back-to-top button. */
+.bottom_top,
+.bottom_top.active {
+    top: auto;
+    right: max(18px, env(safe-area-inset-right));
+    bottom: max(18px, env(safe-area-inset-bottom));
+    transform: none;
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    border: 0;
+    border-radius: 14px;
+    box-shadow: 0 12px 28px rgba(255, 81, 126, 0.28);
+}
+.bottom_top {
+    pointer-events: none;
+}
+.bottom_top.active {
+    pointer-events: auto;
+}
+
+/* Compact six-image gallery */
+#gallery .gallery-intro {
+    max-width: 760px;
+    margin: 12px auto 0;
+    color: #667085;
+    font-size: 16px;
+    line-height: 1.7;
+}
+#gallery .selected-gallery-wrapper {
+    margin-top: 28px;
+}
+#gallery .selected-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+#gallery .selected-gallery-grid .g-item {
+    min-height: 220px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.10);
+}
+#gallery .selected-gallery-grid .g-item img {
+    width: 100%;
+    height: 100%;
+    min-height: 220px;
+    object-fit: cover;
+}
+#gallery .gallery-more-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+}
+#gallery .gallery-portfolio-link {
+    min-width: 260px;
+    margin: 0;
+    padding-inline: 26px;
+}
+
+/* Fixed, evidence-based progress-bar lengths: Executive / Advanced / Strong / Proficient. */
+#skills .cap-skill-bar > span[style*="96%"] { width: 96% !important; }
+#skills .cap-skill-bar > span[style*="88%"] { width: 88% !important; }
+#skills .cap-skill-bar > span[style*="78%"] { width: 78% !important; }
+#skills .cap-skill-bar > span[style*="68%"] { width: 68% !important; }
+
+@media (max-width: 767px) {
+    .port_togglebox {
+        top: max(14px, env(safe-area-inset-top));
+        right: max(14px, env(safe-area-inset-right));
+        width: 46px;
+        height: 46px;
+        padding: 12px 9px;
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: 0 10px 28px rgba(15, 23, 42, 0.16);
+        backdrop-filter: blur(12px);
+    }
+    .port_togglebox span {
+        height: 3px;
+        margin-bottom: 5px;
+        border-radius: 999px;
+    }
+    .port_togglebox span:last-child {
+        margin-bottom: 0;
+    }
+    .port_menu_open .port_togglebox {
+        background: #fff;
+    }
+    .about_leftsection .icon {
+        top: 12px;
+        right: 12px;
+        width: 42px;
+        height: 42px;
+        line-height: 42px;
+    }
+    .about_leftsection .iconbox i {
+        top: 13px;
+    }
+    .bottom_top,
+    .bottom_top.active {
+        right: max(14px, env(safe-area-inset-right));
+        bottom: max(14px, env(safe-area-inset-bottom));
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        border-radius: 13px;
+    }
+    #gallery .gallery-intro {
+        font-size: 14px;
+    }
+    #gallery .selected-gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+    #gallery .selected-gallery-grid .g-item,
+    #gallery .selected-gallery-grid .g-item img {
+        min-height: 150px;
+    }
+    #gallery .gallery-portfolio-link {
+        width: 100%;
+        min-width: 0;
+        max-width: 340px;
+    }
+}
+
+@media (max-width: 420px) {
+    #gallery .selected-gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    #gallery .selected-gallery-grid .g-item,
+    #gallery .selected-gallery-grid .g-item img {
+        min-height: 210px;
     }
 }

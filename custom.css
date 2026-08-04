@@ -12430,3 +12430,108 @@ img, video, canvas, svg {
         min-height: 210px;
     }
 }
+
+/* ===== Global button label animation — single visible label only ===== */
+.portfolio_btn {
+    position: relative !important;
+    display: inline-grid !important;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: 1fr;
+    place-items: center;
+    overflow: hidden !important;
+    line-height: 1 !important;
+    isolation: isolate;
+}
+.portfolio_btn .first_text,
+.portfolio_btn .second_text {
+    grid-column: 1;
+    grid-row: 1;
+    position: relative !important;
+    inset: auto !important;
+    top: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.15 !important;
+    white-space: nowrap;
+    pointer-events: none;
+    backface-visibility: hidden;
+    will-change: transform, opacity;
+    transition: transform .28s cubic-bezier(.22,.61,.36,1), opacity .18s ease !important;
+}
+.portfolio_btn .first_text {
+    z-index: 2;
+    transform: translate3d(0, 0, 0) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.portfolio_btn .second_text {
+    z-index: 1;
+    transform: translate3d(0, 115%, 0) !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+.portfolio_btn.is-pressed .first_text,
+.portfolio_btn:active .first_text {
+    transform: translate3d(0, -115%, 0) !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+.portfolio_btn.is-pressed .second_text,
+.portfolio_btn:active .second_text {
+    transform: translate3d(0, 0, 0) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Hover animation is intentionally limited to real mouse/trackpad devices. */
+@media (hover: hover) and (pointer: fine) {
+    .portfolio_btn:hover .first_text {
+        transform: translate3d(0, -115%, 0) !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+    .portfolio_btn:hover .second_text {
+        transform: translate3d(0, 0, 0) !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+}
+
+/* Touch devices must never preserve a sticky hover state. */
+@media (hover: none), (pointer: coarse) {
+    .portfolio_btn:hover:not(.is-pressed):not(:active) .first_text {
+        transform: translate3d(0, 0, 0) !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+    .portfolio_btn:hover:not(.is-pressed):not(:active) .second_text {
+        transform: translate3d(0, 115%, 0) !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+    }
+}
+
+/* Keep long hero labels centered on one line without overlapping. */
+.banner_btn.hero-actions .portfolio_btn .first_text,
+.banner_btn.hero-actions .portfolio_btn .second_text {
+    padding-inline: 8px !important;
+    font-size: clamp(11px, 3vw, 15px) !important;
+    letter-spacing: -0.015em;
+}
+
+@media (max-width: 390px) {
+    .banner_btn.hero-actions .portfolio_btn .first_text,
+    .banner_btn.hero-actions .portfolio_btn .second_text {
+        padding-inline: 5px !important;
+        font-size: clamp(10px, 2.85vw, 12px) !important;
+    }
+}

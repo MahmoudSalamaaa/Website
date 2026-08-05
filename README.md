@@ -1,10 +1,9 @@
-# Mahmoud Salama Executive Portfolio
+# Mahmoud Salama Portfolio
 
-Clean static HTML/CSS/JavaScript portfolio designed to work on both GitHub Pages and Vercel.
+Original portfolio design and brand colors, prepared for GitHub Pages.
 
-## Important
+## Publish
 
-Upload the **entire contents** of this package to the repository root, including the `assets` directory. The pages use document-relative paths, so CSS, JavaScript, images, documents, and internal links work at both a root domain and a GitHub Pages project subpath such as `/Website/`.
+Upload the complete folder contents to the root of the GitHub Pages repository. Keep `.nojekyll` in the root, and ensure `index.html`, `custom.css`, `assets/`, `images/`, and `executive-portfolio/` remain at their documented paths.
 
-- GitHub Pages instructions: `GITHUB_PAGES.md`
-- Vercel instructions: `DEPLOYMENT.md`
+The Executive Portfolio button points to `executive-portfolio/index.html` on the same website.

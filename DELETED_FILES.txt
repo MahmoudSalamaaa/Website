@@ -1,0 +1,5 @@
+Delete these obsolete hosting-specific files if they still exist in the repository:
+.vercelignore
+vercel.json
+.env.example
+api/contact.js

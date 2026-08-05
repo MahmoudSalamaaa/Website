@@ -1,10 +1,7 @@
-/* Executive Portfolio typography
-   Uses the same Josefin Sans family as the primary website. */
-
-body.executive-portfolio-page {
-  font-family: "Josefin Sans", sans-serif;
+/* Unify Executive Portfolio typography with the primary website */
+html, body, button, input, textarea, select, option,
+.site-header, .site-nav, .executive-hero, .section, .site-footer,
+.heading, .scorecard, .framework-card, .case-card, .lead-grid, .case-evidence {
+  font-family: 'Josefin Sans', sans-serif !important;
 }
-
-body.executive-portfolio-page :where(button, input, textarea, select) {
-  font-family: inherit;
-}
+code, pre, kbd, samp { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace !important; }

@@ -11,3 +11,20 @@ h1,h2,h3,.brand strong,.eyebrow,.button,.role,.evidence,.scorecard strong,
 code,pre,kbd,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 /* Logo and diagram images should be fully visible, not cropped like photographs. */
 .case-card img.mediq-case-logo,.case-card img[src$=".svg"]{object-fit:contain;background:#fff;padding:18px}
+
+/* Final executive-portfolio visual alignment with the original website. */
+:root{--radius:16px;--shadow:0 12px 30px rgba(15,23,42,.065)}
+body{background:#fff;color:#222}
+.site-header{border-top:4px solid #ff517e;border-bottom-color:rgba(14,15,33,.09);box-shadow:0 8px 24px rgba(14,15,33,.04)}
+.brand strong,.footer-name{color:#0e0f21}
+.site-nav a:after{background:linear-gradient(90deg,#fcc255,#ff517e,#00c8da)}
+.executive-hero{background-image:linear-gradient(90deg,rgba(255,255,255,.96),rgba(255,255,255,.9)),url('../images/banner_bg.png');background-size:cover;border-bottom:1px solid rgba(14,15,33,.08)}
+.executive-hero h1{letter-spacing:-.025em;color:#0e0f21}
+.eyebrow{color:#8b2aa5}
+.button{border-radius:10px;min-height:50px}
+.button.primary{background:#fcc255;color:#342300}.button.secondary{border-color:rgba(14,15,33,.14)}.button.purple{background:#8b2aa5;color:#fff;border-color:#8b2aa5}.button.cyan{background:#00c8da;color:#082c31;border-color:#00c8da}
+.scorecard article,.framework-card,.case-card,.lead-grid article,.summary,.tab-panels>section{border-radius:16px;box-shadow:0 10px 25px rgba(14,15,33,.055)}
+.scorecard article:nth-child(4n+1){border-top:4px solid #fcc255}.scorecard article:nth-child(4n+2){border-top:4px solid #00c8da}.scorecard article:nth-child(4n+3){border-top:4px solid #8b2aa5}.scorecard article:nth-child(4n+4){border-top:4px solid #ff517e}
+.section{padding:78px 0}.heading h2{letter-spacing:-.02em}
+.site-footer{border-top:5px solid #fcc255}
+@media(max-width:760px){.executive-hero{padding-top:58px}.executive-hero h1{font-size:38px}.actions{grid-template-columns:1fr}.section{padding:58px 0}}

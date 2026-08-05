@@ -29,8 +29,6 @@ Assigned to: ThemeForest
 			this.rightbtn_onload();
 			this.rightside_onload();
 			this.bannerleft_onload();
-			this.banner_typingtext();
-			this.typed_js();
 			/*this.magnific_popup();*/
 						
 						
@@ -116,7 +114,7 @@ Assigned to: ThemeForest
 	
 	// Typed JS
 	typed_js: function() {
-		if($('.typed').length > 0){	
+		if($('.typed').length > 0 && typeof Typed !== 'undefined'){	
 			$('.typed').each(function(){
 				var _this = $(this);
 				var typed = new Typed(this, {
@@ -133,7 +131,7 @@ Assigned to: ThemeForest
 	
 	// animated banner text
 	banner_typingtext: function() {
-		if($('.icon').length > 0){
+		if($('.banner_typingtext').length > 0 && $.fn.textillate){
 			$('.banner_typingtext').textillate({
 				loop: true,
 				minDisplayTime: 2e3,

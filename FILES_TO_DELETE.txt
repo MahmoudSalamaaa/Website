@@ -1,0 +1,4 @@
+Optional cleanup after replacing the files:
+- assets/css/role-profiles.css
+
+The rebuilt role pages no longer reference this Wave 2 stylesheet. Leaving it in the repository is harmless, but deleting it keeps the project clean.

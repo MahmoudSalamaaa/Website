@@ -1,7 +1,13 @@
-/* Unify Executive Portfolio typography with the primary website */
-html, body, button, input, textarea, select, option,
-.site-header, .site-nav, .executive-hero, .section, .site-footer,
-.heading, .scorecard, .framework-card, .case-card, .lead-grid, .case-evidence {
-  font-family: 'Josefin Sans', sans-serif !important;
+/* Match the primary website typography without forcing one font everywhere. */
+body,.site-header,.site-nav,.executive-hero,.section,.site-footer,
+.scorecard,.framework-card,.case-card,.lead-grid,.case-evidence,
+button,input,textarea,select,option{
+  font-family:'Poppins','Segoe UI',Arial,sans-serif;
 }
-code, pre, kbd, samp { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace !important; }
+h1,h2,h3,.brand strong,.eyebrow,.button,.role,.evidence,.scorecard strong,
+.framework-card>span,.case-evidence dt,.footer-name{
+  font-family:'Josefin Sans','Segoe UI',Arial,sans-serif;
+}
+code,pre,kbd,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+/* Logo and diagram images should be fully visible, not cropped like photographs. */
+.case-card img.mediq-case-logo,.case-card img[src$=".svg"]{object-fit:contain;background:#fff;padding:18px}

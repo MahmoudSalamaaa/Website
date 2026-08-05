@@ -26,20 +26,14 @@ Assigned to: ThemeForest
 			/*-------------- CV Portfolio Functions Calling ---------------------------------------------------
 			------------------------------------------------------------------------------------------------*/
 			this.open_menu();
-			this.custom_scrollbar();
 			this.rightbtn_onload();
 			this.rightside_onload();
 			this.bannerleft_onload();
 			this.banner_typingtext();
 			this.typed_js();
-			this.about_opendetails();
-			this.isotop_gallery();
-			this.circle_progressbar();
 			/*this.magnific_popup();*/
-			this.testimonial_slider();
-			this.popup_video();			
-			this.responsor_slider();			
-			this.world_map();
+						
+						
 			//this.contact_form();
 			this.goto_top();
 			this.page_scroll();

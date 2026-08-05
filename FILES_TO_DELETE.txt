@@ -1,4 +1,7 @@
-Optional cleanup after replacing the files:
-- assets/css/role-profiles.css
+Delete these obsolete role-specific files from the website repository:
 
-The rebuilt role pages no longer reference this Wave 2 stylesheet. Leaving it in the repository is harmless, but deleting it keeps the project clean.
+cto-cio-it-director.html
+enterprise-solution-architect.html
+digital-transformation-program-director.html
+assets/css/role-original.css
+assets/css/role-profiles.css

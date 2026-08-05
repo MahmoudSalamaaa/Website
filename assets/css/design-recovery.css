@@ -30,10 +30,6 @@
   .banner_official_role strong{font-size:15px}
   .banner_official_role span{font-size:12px}
 }
-.role-quick-links{padding:18px 0 62px;background:#fff}
-.role-quick-links .port_heading_wrapper{margin-bottom:24px}
-.role-quick-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
-@media(max-width:575px){.role-quick-actions .portfolio_btn{width:100%}}
 /* Preserve the original tabbed capability layout while avoiding percentage-style scoring. */
 .capability-executive .cap-skill-bar{display:none!important}
 .capability-executive .cap-skill-item{padding-bottom:18px}

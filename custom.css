@@ -12581,3 +12581,55 @@ img, video, canvas, svg {
         top: 14px !important;
     }
 }
+
+/* Source-grounded content enhancement */
+.framework-source-note{max-width:860px;margin:12px auto 28px;color:#64748b;font-size:16px;line-height:1.7;text-align:center}.operational-impact-section{padding-top:50px}.operational-impact-grid .achievement_card{min-height:100%}@media(max-width:767px){.framework-source-note{font-size:14px;padding:0 12px}.operational-impact-section{padding-top:30px}}
+
+
+/* 2026-08-05: MedIQ image fill + portfolio destination distinction */
+#works .pc-photo img.mediq-logo {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: fill !important;
+    padding: 0 !important;
+    background: #fff !important;
+    filter: none !important;
+}
+#works .pc:hover .pc-photo img.mediq-logo { transform: scale(1.01); }
+.portfolio-destination-grid {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 18px;
+    margin-top: 34px;
+}
+.portfolio-destination {
+    padding: 24px;
+    border-radius: 22px;
+    border: 1px solid rgba(15,23,42,.10);
+    background: #fff;
+    box-shadow: 0 12px 28px rgba(15,23,42,.07);
+    text-align: left;
+}
+.portfolio-destination.projects-destination { border-top: 5px solid #06b6d4; }
+.portfolio-destination.executive-destination { border-top: 5px solid #8b1fa9; }
+.portfolio-destination .destination-kicker {
+    display: inline-block;
+    margin-bottom: 7px;
+    color: #64748b;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+.portfolio-destination h3 { margin: 0 0 8px; color: #0f172a; font-size: 23px; }
+.portfolio-destination p { margin: 0 0 18px; color: #64748b; line-height: 1.65; }
+.portfolio-destination .portfolio_btn { min-width: 190px; }
+.portfolio-page-actions { display:flex; flex-wrap:wrap; justify-content:center; gap:14px; }
+.portfolio-page-intro { max-width:900px; margin:14px auto 0; color:#64748b; font-size:16px; line-height:1.7; }
+.portfolio-page-intro a { color:#8b1fa9; font-weight:800; text-decoration:underline; text-underline-offset:3px; }
+.projects-scope-note { max-width:850px; margin:12px auto 0; color:#64748b; line-height:1.7; font-size:15px; }
+@media (max-width:767px) {
+    .portfolio-destination-grid { grid-template-columns: 1fr; gap: 14px; }
+    .portfolio-destination { padding: 20px 17px; }
+    .portfolio-destination h3 { font-size: 20px; }
+}

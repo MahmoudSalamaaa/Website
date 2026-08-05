@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "portfolio.html",
+    "resume.html",
+    "index.html",
+    "card.html"
+  ],
+  "missing_local_references": [],
+  "duplicate_ids": {},
+  "inline_js_checked": 16,
+  "javascript_errors": [],
+  "custom_css_unchanged_from_original_design": true,
+  "mediq_logo_exists": true,
+  "nojekyll_exists": true
+}

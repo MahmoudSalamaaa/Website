@@ -1,0 +1,10 @@
+/* Executive Portfolio typography
+   Uses the same Josefin Sans family as the primary website. */
+
+body.executive-portfolio-page {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body.executive-portfolio-page :where(button, input, textarea, select) {
+  font-family: inherit;
+}

@@ -317,3 +317,146 @@ img { max-width: 100%; }
   height: auto;
   transition: all .3s;
 }
+
+
+/* 2026 executive homepage refinement: clearer official role, concise methodology,
+   evidence-led metrics, and level-based capabilities without subjective percentages. */
+.banner_official_role {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 820px;
+  margin: 12px 0 20px;
+  padding: 12px 16px;
+  border-left: 4px solid #ff517e;
+  border-radius: 0 14px 14px 0;
+  background: rgba(255, 81, 126, .08);
+  color: #111827;
+  line-height: 1.45;
+}
+.banner_official_role strong { font-size: clamp(15px, 1.25vw, 19px); font-weight: 800; }
+.banner_official_role span { color: #5b6472; font-size: clamp(13px, 1vw, 16px); font-weight: 600; }
+
+.homepage-executive-model,
+.homepage-capability-summary { position: relative; overflow: hidden; }
+.homepage-model-grid,
+.homepage-capability-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 34px;
+}
+.homepage-model-card,
+.homepage-capability-card {
+  position: relative;
+  min-width: 0;
+  padding: 25px;
+  border: 1px solid rgba(15, 23, 42, .08);
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 14px 38px rgba(15, 23, 42, .08);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.homepage-model-card:hover,
+.homepage-capability-card:hover { transform: translateY(-4px); box-shadow: 0 20px 46px rgba(15, 23, 42, .12); }
+.homepage-model-card::before,
+.homepage-capability-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 5px;
+  border-radius: 22px 22px 0 0;
+  background: var(--card-accent, #06b6d4);
+}
+.homepage-model-icon,
+.homepage-capability-head > i {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 15px;
+  background: color-mix(in srgb, var(--card-accent, #06b6d4) 14%, #fff);
+  color: var(--card-accent, #06b6d4);
+  font-size: 20px;
+}
+.homepage-model-step {
+  display: inline-block;
+  margin: 18px 0 8px;
+  color: var(--card-accent, #06b6d4);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+.homepage-model-card h3,
+.homepage-capability-card h3 { margin: 0 0 12px; color: #0f172a; font-size: 20px; line-height: 1.25; }
+.homepage-model-card p,
+.homepage-capability-card p { margin: 0; color: #5f6b7a; font-size: 15px; line-height: 1.65; }
+.model-diagnose { --card-accent: #06b6d4; }
+.model-design { --card-accent: #9c27b0; }
+.model-govern { --card-accent: #ff517e; }
+.model-deliver { --card-accent: #ffb400; }
+.homepage-summary-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.homepage-capability-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.homepage-capability-card { padding: 24px; }
+.homepage-capability-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+.capability-level-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--card-accent, #06b6d4) 12%, #fff);
+  color: var(--card-accent, #06b6d4);
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+}
+.homepage-capability-card .capability-chip-cloud { margin-top: 18px; }
+.homepage-capability-card .capability-chip-cloud span { font-size: 12px; }
+.capability-leadership { --card-accent: #ffb400; }
+.capability-architecture { --card-accent: #06b6d4; }
+.capability-engineering { --card-accent: #9c27b0; }
+.capability-data { --card-accent: #22a06b; }
+.capability-delivery { --card-accent: #ff517e; }
+.capability-security { --card-accent: #4e5180; }
+.capability-actions { margin-bottom: 6px; }
+
+.metric-evidence {
+  display: inline-flex;
+  margin: 0 0 10px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, .06);
+  color: #667085;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .02em;
+  line-height: 1.35;
+}
+
+@media (max-width: 1199px) {
+  .homepage-model-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .homepage-capability-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 767px) {
+  .banner_official_role { margin-top: 10px; padding: 11px 13px; }
+  .homepage-model-grid,
+  .homepage-capability-grid { grid-template-columns: 1fr; gap: 16px; margin-top: 26px; }
+  .homepage-model-card,
+  .homepage-capability-card { padding: 21px; }
+  .homepage-capability-head { align-items: flex-start; }
+  .capability-level-badge { max-width: 170px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .homepage-model-card:hover,
+  .homepage-capability-card:hover { transform: none; }
+}

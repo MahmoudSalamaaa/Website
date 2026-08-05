@@ -1,0 +1,208 @@
+MAHMOUD SALAMA
+TECHNOLOGY & DIGITAL TRANSFORMATION EXECUTIVE | ENTERPRISE ARCHITECT
+Information Systems | Software Engineering Leadership | Government & Healthcare Technology
++20 122 015 6077 • ma7moud.salamaaa@gmail.com • Cairo, Egypt • linkedin.com/in/mahmoud-salama-30249b34 •
+mahmoudsalamaaa.github.io
+
+PROFESSIONAL PROFILE
+Technology and digital transformation executive, enterprise architect, information-systems leader, and engineering
+manager with 18+ years of experience across government, healthcare, education, and large public-sector
+environments in Egypt and the GCC. Directs an EGP 150M+ portfolio and a multidisciplinary organization of 40+
+professionals. Led or contributed to 150+ digital initiatives spanning enterprise applications, national platforms,
+systems integration, data warehouses, analytics, software delivery, and IT governance, while retaining a strong
+hands-on foundation in full-stack engineering and solution architecture.
+
+EXECUTIVE IMPACT
+18+
+Years in
+Technology
+
+EGP 150M+
+Portfolio Managed
+
+40+
+Professionals Led
+
+12,000+
+Entities
+Supported
+
+150+
+Digital Initiatives
+
+39,000+
+Staff Reached
+
+LEADERSHIP & FUNCTIONAL SCOPE
+• Executive Technology & Digital Transformation: strategy, roadmaps, portfolio management, executive
+stakeholder engagement, change management, and digital adoption.
+• Enterprise Architecture & Information Systems: enterprise and solution architecture, application modernization,
+systems integration, ERP/CRM integration, service availability, and IT operations.
+• Software Engineering & Technical Delivery: engineering leadership, full-stack delivery, technical program
+management, Agile, QA, DevOps, release governance, and vendor coordination.
+• Data, Analytics & Sector Platforms: data warehouses, master data, BI, government technology, healthcare
+platforms, procurement, supply-chain systems, and multi-agency programs.
+
+PROFESSIONAL EXPERIENCE
+Head of Central Administration - Information Systems & Digital Transformation
+Egyptian Authority for Unified Procurement, Medical Supply & Medical Technology (UPA) | Cairo, Egypt | May
+2025 - Present
+
+• Lead enterprise technology strategy and digital transformation across healthcare procurement, warehousing,
+inventory, demand planning, data, analytics, and government operations.
+• Direct an EGP 150M+ portfolio spanning enterprise applications, data platforms, systems integration, analytics,
+and technology infrastructure.
+• Govern enterprise and solution architecture, platform modernization, integration standards, data governance,
+security controls, and long-term technology roadmaps.
+• Oversee integrations connecting operational and procurement platforms with Microsoft Dynamics 365 ERP and
+CRM, the National Health Sector Data Warehouse, Power BI, and Apache Superset.
+• Lead a cross-functional organization of 40+ developers, analysts, architects, and support professionals while
+coordinating vendors and implementation partners.
+• Establish delivery, quality, access-control, backup and recovery, auditability, and service-governance standards
+across platforms serving 100+ government institutions.
+
+General Manager - Systems, Applications & Technical Support
+UPA | Cairo, Egypt | Oct 2020 - May 2025
+
+• Directed implementation, modernization, maintenance, and high-availability support for procurement,
+medical-supply, inventory, reporting, and stakeholder platforms, sustaining 99%+ operational availability.
+• Approximately tripled departmental delivery capacity through team restructuring, OKR-based performance
+management, mentoring, technical enablement, and continuous upskilling.
+• Helped reduce production defects by approximately 50% and deployment time by approximately 35% through QA
+standards, release governance, coding practices, documentation, and structured delivery procedures.
+• Governed multi-agency technology coordination for Egypt's National Pharmaceutical Track & Trace Program and
+supported ministerial oversight of national blood-supply operations.
+• Led nationwide digital adoption and upskilling initiatives reaching 39,000+ staff and contributing to an estimated
+75% increase in platform utilization across participating institutions.
+
+Mahmoud Salama | Executive CV 2026
+
+Page 1
+
+PROFESSIONAL EXPERIENCE - CONTINUED
+Development Team Leader & Senior Full-Stack Developer
+Integral Solutions LLC | Muscat, Oman | May 2016 - Oct 2020
+
+• Led enterprise software delivery for government, healthcare, education, and corporate organizations across
+Oman and the wider GCC.
+• Directed cross-border teams of 10+ developers and delivered 15+ full-cycle enterprise platforms aligned with
+local e-government standards and regulatory requirements.
+• Led delivery of the Oman National Educational Portal, supporting e-learning, content management, academic
+records, administration, and performance tracking.
+• Architected secure, scalable platforms using ASP.NET, C#, React.js, Node.js, SQL Server, MySQL, Web APIs, Kendo
+UI, and Bootstrap; introduced agile delivery, code review, and QA practices associated with an approximate 45%
+reduction in reported defects.
+
+Development Team Leader & Senior Full-Stack Developer
+Keyframe Egypt | Cairo, Egypt | Apr 2011 - May 2016
+
+• Engineered 100+ websites, public portals, and enterprise applications for government, healthcare, and corporate
+clients across the full software development lifecycle.
+• Led portal delivery for Egypt's Ministry of Health and Oman's Ministry of Agriculture, with improvements
+associated with an approximate 40% increase in public engagement and an approximate 25% reduction in citizen
+information-response time.
+• Designed REST API integrations, responsive user interfaces, backend database-performance improvements, and
+technical documentation adopted as team standards.
+• Mentored junior developers and enforced code-quality standards, reducing rework and improving delivery
+consistency.
+
+Linux Systems & Web Developer
+Egyptian Armed Forces | Egypt | Apr 2008 - Oct 2010
+
+• Developed and customized Linux-based systems within a restricted defense environment, including
+Linux-from-scratch configurations, kernel-related components, system optimization, and hardened platform
+configurations.
+• Built secure internal web applications using ASP.NET and SQL Server, maintaining strong security, code integrity,
+and operational reliability.
+
+LEADERSHIP APPOINTMENTS & PROFESSIONAL CONTRIBUTIONS
+• Digital Transformation Committee Member - World Bank Group B-READY Egypt Assessment (2025-2026):
+contributed technical input supporting private-sector digitization, public-service modernization, and national
+competitiveness.
+• Board Member - National Blood Operations Oversight (2021-2024): appointed by Egypt's Minister of Health;
+oversaw digital governance, data integrity, and technology standards for the national blood-supply system.
+• Governance Lead - National Pharmaceutical Track & Trace Program (2021-2024): shaped the vision, governance
+framework, compliance model, and technology roadmap across UPA, EDA, and the Ministry of Health.
+• International Speaker - Manama Health Congress & Expo, Bahrain (2022): addressed senior policymakers and
+technology executives on bioinformatics and digital health.
+• Digital Health & Technology Contributor - Africa Health ExCon (2021-Present): contributed to strategic
+programming, digital-health content, and technical-track collaboration.
+
+SELECTED ENTERPRISE PLATFORMS & PROGRAMS
+MedIQ / Unified Procurement & Medical Supply Ecosystem
+Led the architecture and governance of a 10-platform ecosystem supporting 12,000+ public-sector entities across RFPs,
+approvals, inventory, distribution, supplier processes, and supply-chain controls. Automation of selected workflows reduced
+manual handling by up to 90%; measured improvements included an approximate 40% reduction in end-to-end
+procurement-cycle time and reductions of up to 74% in specific workflows.
+Technology: ASP.NET, C#, React.js, Node.js, GraphQL, MySQL
+
+Egypt's National Health Sector Data Warehouse & Strategic Analytics Layer
+Led the architecture of a governed enterprise data environment incorporating PostgreSQL, data pipelines, master data
+management, operational data stores, validation controls, and real-time analytics for 100+ government institutions. The
+environment processes 12M+ records daily and helped reduce executive reporting preparation time by approximately 70%.
+Technology: PostgreSQL, SQL, Data Pipelines, MDM, Power BI, Apache Superset
+
+Integration with Microsoft Dynamics 365 ERP & CRM
+Directed integration architecture connecting procurement, operational, stakeholder, reporting, and data platforms with
+Microsoft Dynamics 365 ERP and CRM through controlled data exchange, REST APIs, data mapping, and workflow alignment.
+Technology: REST APIs, Data Connectors, Data Mapping, Workflow Integration, Dynamics 365 Connectivity
+
+Mahmoud Salama | Executive CV 2026
+
+Page 2
+
+SELECTED ENTERPRISE PLATFORMS & PROGRAMS - CONTINUED
+Supply & Procurement Analytics Enablement
+Provided technology and data-platform leadership for demand planning, procurement monitoring, anomaly identification, risk
+assessment, and cost-optimization analysis across the public healthcare procurement chain.
+Technology: PostgreSQL, SQL, Forecasting Support, Risk and Anomaly Analysis
+
+Tenders, Contracts, Order Tracking & SLA Visibility
+Led architecture and delivery governance for digital tendering, approvals, vendor evaluation, contract workflows, real-time
+fulfillment tracking, SLA alerts, ownership dashboards, escalation processes, and audit traceability. The monitoring
+environment was associated with an estimated 30% reduction in fulfillment delays across monitored processes.
+Technology: ASP.NET, C#, MySQL, Workflow Engines, RBAC, BI Dashboards
+
+Health Technology Assessment Platform
+Directed platform architecture and workflow digitization supporting evidence submission, review, assessment tracking, audit
+traceability, dashboards, and compliance reporting aligned with national healthcare requirements.
+Technology: Workflow Engine, Dashboards, Audit Logs, Compliance Reporting
+
+Government Portals & Oman National Educational Portal
+Led or contributed to public-sector portals for Egypt's Ministry of Health, UPA, Oman's Ministry of Agriculture, and Oman's
+national education sector. Solutions supported public information, procurement transparency, GIS-enabled services, permits,
+e-learning, academic records, content management, and performance tracking.
+Technology: ASP.NET, C#, SQL Server, CMS Platforms, GIS Integration, LMS Components
+
+Additional Enterprise Applications Portfolio
+Delivered or governed 12+ enterprise applications including Electronic Pharmacy, Correspondence Management, Asset
+Management, Crisis Management, Recruitment ATS, Customer Care and Ticketing, Real-Time Notifications, SMS Gateway, and
+Unified Mobile Applications.
+Technology: Enterprise Applications, Workflow, Integration, Reporting
+
+TECHNICAL CAPABILITIES
+• Executive Technology & Architecture Leadership: Technology Strategy, Digital Transformation, Enterprise
+Architecture, Solution Architecture, Information Systems Leadership, Technology Roadmaps, Portfolio
+Management, Vendor Governance, Technical Program Delivery, Executive Stakeholder Management
+• Systems Integration & Enterprise Platforms: Systems Integration, REST API Design, GraphQL, API Security,
+Integration Governance, Workflow Integration, Data Mapping, Microsoft Dynamics 365 ERP and CRM Connectivity
+• Core Engineering Strengths: C#, ASP.NET Core, .NET Framework, Entity Framework, SQL, PostgreSQL, SQL Server,
+MySQL, LINQ, Object-Oriented Programming, JavaScript, HTML5, CSS3
+• Data, Analytics & Reporting: Power BI, Apache Superset, SSRS, Crystal Reports, Data Pipelines, Master Data
+Management, Operational Data Stores, Data Validation, Executive Dashboards, Demand Analysis, Forecasting
+Support
+• Application & Platform Delivery: React.js, Node.js, jQuery, Bootstrap, Kendo UI, DevExpress, Workflow Engines,
+Sitefinity, Kentico, Umbraco, nopCommerce
+• Delivery, Security & Operations: Docker, Jenkins, CI/CD, Git, GitHub, Jira, Postman, Agile, SDLC, QA, Release
+Governance, Secure Coding, RBAC, Data Encryption, Audit Logs, Backup and Recovery, Change Management
+
+EDUCATION & LANGUAGES
+Education: B.Sc. in Computer Science, Faculty of Computers & Informatics, Zagazig University | 2003-2007
+Languages: Arabic (Native) | English (Professional Working Proficiency)
+Availability: Within one month of offer acceptance | Open to Egypt, GCC, Africa, relocation, and remote opportunities
+
+Mahmoud Salama | Executive CV 2026
+
+Page 3
+
+

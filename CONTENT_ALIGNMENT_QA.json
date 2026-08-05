@@ -1,0 +1,15 @@
+{
+  "html_pages": [
+    "privacy.html",
+    "portfolio.html",
+    "resume.html",
+    "index.html",
+    "card.html",
+    "executive-portfolio/index.html",
+    "assets/css/mCSB_buttons.html"
+  ],
+  "duplicate_ids": {},
+  "missing_local_refs": [],
+  "vercel_mentions": [],
+  "unverified_card_mentions": []
+}

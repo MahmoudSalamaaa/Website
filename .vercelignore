@@ -1,3 +1,4 @@
-.env.example
-README.md
-DEPLOYMENT.md
+*.zip
+*.log
+QA_REPORT.md
+DOMAIN_SETUP.md

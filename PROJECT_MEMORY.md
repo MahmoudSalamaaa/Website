@@ -1,7 +1,5 @@
+# Final Rebuild - 2026-08-05
 
-## 2026-08-04 Global Button Label Animation Fix
-- Rebuilt the two-label animation for every `.portfolio_btn` across the site.
-- Both labels now occupy the same grid cell; only one can be visible at any time.
-- Desktop hover is limited to fine-pointer devices, preventing sticky hover on touchscreens.
-- Added shared `assets/js/button-label-motion.js` and loaded it in `index.html` and `portfolio.html`.
-- Removed the old hero-only press-animation script.
+- Rebuilt the site without Bootstrap, jQuery, Swiper, vector maps, circle-progress, custom scrollbars, GSAP, or popup libraries.
+- Added case studies, local executive portfolio, mobile expertise accordions, Arabic page, speaker profile, privacy policy, 404, optimized card, SEO metadata, analytics events, and secure contact handling.
+- No testimonials were fabricated. Custom-domain purchase and secret configuration remain external actions.

@@ -1,0 +1,64 @@
+/* Mahmoud Salama website - focused career refinement overlay
+   Load after custom.css and final-refinement.css. */
+:root{
+  --ms-navy:#0f172a;
+  --ms-blue:#0e7490;
+  --ms-line:rgba(15,23,42,.12);
+  --ms-surface:#ffffff;
+  --ms-muted:#475569;
+}
+html{scroll-behavior:smooth}
+body{font-family:Inter,"Plus Jakarta Sans",Arial,sans-serif;color:var(--ms-navy);text-rendering:optimizeLegibility}
+img{max-width:100%;height:auto}
+.port_banner_wrapper,.banner_content,.port_sec_warapper{overflow:clip}
+.banner_content h1,.banner_content h2,.port_heading_wrapper h2{letter-spacing:-.025em;line-height:1.12;text-wrap:balance}
+.banner_content p,.port_about_setions p,.resume_content p{line-height:1.72;color:var(--ms-muted)}
+/* Keep the hero portrait visible and proportionate on every breakpoint. */
+.port_banner_wrapper .banner_img img,
+.port_banner_wrapper .banner_image img,
+.hero-image img,
+.ex_img img{
+  display:block!important;
+  opacity:1!important;
+  visibility:visible!important;
+  object-fit:contain!important;
+  object-position:center bottom!important;
+  max-height:min(78vh,760px)!important;
+  width:auto!important;
+  margin-inline:auto!important;
+}
+/* Unify cards instead of making the page look like profiles for several people. */
+.experience_card,.skill_card,.achievement_card,.timeline_content,.project_card,.port_service_box{
+  background:var(--ms-surface)!important;
+  color:var(--ms-navy)!important;
+  border:1px solid var(--ms-line)!important;
+  box-shadow:0 14px 36px rgba(15,23,42,.08)!important;
+  border-radius:18px!important;
+}
+.experience_card p,.experience_card h4,.experience_card span,
+.skill_card h4,.skill_card .percentage,.achievement_card p,.achievement_card h4,
+.timeline_content p,.timeline_content h4,.timeline_content span{color:inherit!important}
+/* Professional hierarchy and breathing room. */
+.port_sec_warapper{padding-block:88px}
+.port_heading_wrapper{max-width:820px;margin-inline:auto;margin-bottom:40px}
+.port_heading_wrapper p{max-width:720px;margin-inline:auto}
+.btn,.port_btn,.portfolio_btn,.contact_chip .chip-cta{min-height:44px;display:inline-flex;align-items:center;justify-content:center;border-radius:10px;font-weight:700}
+/* Mobile navigation and content safety. */
+@media(max-width:991px){
+  .port_sec_warapper{padding-block:64px}
+  .port_sidebar_wrapper{z-index:1000}
+  .banner_content{text-align:center}
+  .banner_content .social_icons,.banner_content .port_btn_wrapper{justify-content:center}
+}
+@media(max-width:767px){
+  .port_sec_warapper{padding-block:52px}
+  .banner_content h1{font-size:clamp(2rem,10vw,3.25rem)}
+  .banner_content h2{font-size:clamp(1.1rem,5vw,1.5rem)}
+  .port_banner_wrapper .banner_img img,.hero-image img,.ex_img img{max-height:52vh!important}
+  .timeline_item{width:100%!important;left:0!important;padding:10px 0!important;text-align:left!important}
+  .involvement_timeline::before{display:none!important}
+  .achievement_card,.experience_card{width:100%!important;min-height:0!important}
+}
+/* Accessibility */
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #0ea5e9;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}

@@ -112,6 +112,155 @@ html[data-theme="dark"]{--bg:#09111e;--surface:#101a2a;--surface2:#172235;--ink:
   .universal-package,.generic-package{padding:9px}
 }
 
+
+/* v1.3 visibility & contrast upgrade */
+:root{
+  --muted:#4f6073;
+  --line:#c8d4e2;
+}
+html[data-theme="dark"]{
+  --muted:#c1ccda;
+  --line:#40516a;
+}
+
+/* Stronger section separation without visual heaviness */
+.hero,.workspace,.matchbar,.analyzer,.generic-package,.card,.resources-head,.resource{
+  border-color:color-mix(in srgb,var(--line) 88%,var(--ink) 12%);
+}
+.card{
+  box-shadow:0 7px 20px rgba(15,23,42,.07);
+}
+.card h2,.generic-copy h2,.section-heading h2,.matchbar strong,.analyzer h2{
+  color:var(--ink);
+  font-weight:900;
+}
+.summary,.generic-copy p,.section-heading p,.matchbar p,.hero p,.resource p{
+  color:var(--muted);
+}
+
+/* Universal profile: visually unmistakable */
+.universal-package{
+  border:2px solid color-mix(in srgb,#0f766e 58%,var(--line));
+  background:
+    linear-gradient(120deg,
+      color-mix(in srgb,#14b8a6 15%,var(--surface)),
+      color-mix(in srgb,#0f766e 5%,var(--surface))
+    );
+  box-shadow:0 10px 26px rgba(15,118,110,.13);
+}
+.universal-package .generic-copy h2{
+  color:#0b5f59;
+  font-size:16px;
+}
+html[data-theme="dark"] .universal-package .generic-copy h2{
+  color:#7ee7cf;
+}
+.universal-package .generic-note{
+  color:#0b665f;
+  font-weight:900;
+}
+html[data-theme="dark"] .universal-package .generic-note{
+  color:#8be8d5;
+}
+.universal-package .generic-badge{
+  border-width:1.5px;
+  font-weight:950;
+}
+
+/* PDF: high-priority and immediately scannable */
+.file.cv-pdf,.file.cl-pdf{
+  background:color-mix(in srgb,var(--accent) 16%,var(--surface));
+  border:1.6px solid color-mix(in srgb,var(--accent) 62%,var(--line));
+  box-shadow:inset 4px 0 0 var(--accent),0 3px 10px rgba(15,23,42,.07);
+}
+.file.cv-pdf:hover,.file.cl-pdf:hover{
+  background:color-mix(in srgb,var(--accent) 21%,var(--surface));
+  border-color:var(--accent);
+  box-shadow:inset 4px 0 0 var(--accent),0 8px 18px rgba(15,23,42,.12);
+}
+.file.cv-pdf strong,.file.cl-pdf strong{
+  color:var(--ink);
+  font-size:10.8px;
+  font-weight:950;
+}
+.file.cv-pdf small,.file.cl-pdf small{
+  color:color-mix(in srgb,var(--accent) 84%,var(--ink));
+  font-weight:900;
+}
+.file.cv-pdf code,.file.cl-pdf code{
+  color:color-mix(in srgb,var(--ink) 65%,var(--muted));
+}
+.file.cv-pdf .file-icon,.file.cl-pdf .file-icon{
+  box-shadow:0 2px 7px color-mix(in srgb,var(--accent) 28%,transparent);
+}
+
+/* Word stays secondary, but no longer washed out */
+.file.cv-word,.file.cl-word{
+  opacity:1;
+  background:color-mix(in srgb,#2563eb 7%,var(--surface));
+  border-color:color-mix(in srgb,#2563eb 28%,var(--line));
+}
+.file.cv-word strong,.file.cl-word strong{
+  color:color-mix(in srgb,var(--ink) 94%,#2563eb);
+  font-weight:850;
+}
+.file.cv-word small,.file.cl-word small{
+  color:color-mix(in srgb,var(--muted) 78%,#2563eb);
+}
+.file.cv-word code,.file.cl-word code{
+  color:var(--muted);
+}
+.file.cv-word .file-icon,.file.cl-word .file-icon{
+  background:color-mix(in srgb,#2563eb 14%,var(--surface));
+  color:#1d4ed8;
+  border-color:color-mix(in srgb,#2563eb 34%,var(--line));
+}
+
+/* Stronger labels and controls */
+.jobtag,.moretag,.role-badge,.filter-chip,.key,.section-badge{
+  border-width:1.2px;
+}
+.jobtag{
+  color:color-mix(in srgb,var(--accent) 90%,var(--ink));
+}
+.status{
+  font-weight:950;
+}
+.stat{
+  border-color:color-mix(in srgb,var(--line) 82%,var(--ink) 18%);
+}
+.stat strong{
+  font-weight:950;
+}
+.searchbox input,select,textarea{
+  border-color:color-mix(in srgb,var(--line) 80%,var(--ink) 20%);
+}
+
+/* Better keyboard / mouse affordance */
+.file:focus-visible,.card:focus-within{
+  outline:3px solid color-mix(in srgb,var(--focus) 70%,white);
+  outline-offset:2px;
+}
+
+/* Mobile: preserve contrast and readability */
+@media(max-width:760px){
+  .universal-package{
+    border-width:2px;
+    box-shadow:0 7px 20px rgba(15,118,110,.11);
+  }
+  .file.cv-pdf,.file.cl-pdf{
+    border-width:1.5px;
+  }
+  .file.cv-pdf strong,.file.cl-pdf strong,
+  .file.cv-word strong,.file.cl-word strong{
+    font-size:9.7px;
+  }
+  .file.cv-pdf small,.file.cl-pdf small,
+  .file.cv-word small,.file.cl-word small{
+    font-size:7.5px;
+  }
+}
+
 </style></head><body><main class="shell">
 <header class="topbar"><div class="brand"><div class="mark">MS</div><div><h1>Career CV Selector</h1><p>9 frozen masters · fast vacancy matching · private application toolkit</p></div></div><div class="top-actions"><a class="btn" href="https://drive.google.com/drive/folders/11KXMtnPn5NKUQGUrmleSRJeUi3tvQM3s" rel="noopener noreferrer" target="_blank">Frozen 9 Drive Folder ↗</a><button class="icon-btn" id="theme" title="Toggle theme" type="button">◐</button></div></header>
 <section class="hero"><div><h2>Choose the right CV fast. Use the Universal Profile when a platform allows only one CV.</h2><p>Use the Technology Leadership CV for one-CV job platforms and recruiter databases. For a defined vacancy, the nine frozen role-specific masters remain the strongest application baselines; the generic executive package stays available as a fallback.</p></div><div class="stats"><div class="stat"><strong>9</strong> Frozen masters</div><div class="stat"><strong>1</strong> Universal profile</div><div class="stat"><strong>PDF + Word</strong> Core files</div><div class="stat"><strong>Private</strong> No indexing</div></div></section>

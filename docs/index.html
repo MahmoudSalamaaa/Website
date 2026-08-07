@@ -79,6 +79,39 @@ html[data-theme="dark"]{--bg:#09111e;--surface:#101a2a;--surface2:#172235;--ink:
 .universal-package .file.cv-word,.universal-package .file.cl-word{background:color-mix(in srgb,#2563eb 3%,var(--surface));opacity:.82}
 @media(max-width:760px){.universal-package{grid-template-columns:1fr}}
 
+
+/* File-card overflow & responsive hardening */
+.file{overflow:hidden}
+.file-copy{min-width:0;overflow:hidden}
+.file-copy strong,.file-copy small,.file-copy code{max-width:100%}
+.file-copy strong{line-height:1.18;overflow-wrap:anywhere}
+.file-copy small{line-height:1.2}
+.file-copy code{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  display:block;
+  max-width:100%;
+}
+.generic-files{min-width:0}
+.generic-files .file{min-width:0}
+.generic-files .file-icon{flex:none}
+.universal-package .file{min-width:0}
+.universal-package .file-copy{min-width:0}
+@media(max-width:760px){
+  .generic-files{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .generic-files .file{grid-template-columns:30px minmax(0,1fr);gap:7px}
+  .generic-files .file-arrow{display:none}
+  .generic-files .file-copy code{display:none}
+  .generic-files .file-copy strong{font-size:9.2px;line-height:1.15}
+  .generic-files .file-copy small{font-size:7.2px;line-height:1.15}
+}
+@media(max-width:430px){
+  .generic-files{grid-template-columns:1fr}
+  .generic-files .file{min-height:52px}
+  .universal-package,.generic-package{padding:9px}
+}
+
 </style></head><body><main class="shell">
 <header class="topbar"><div class="brand"><div class="mark">MS</div><div><h1>Career CV Selector</h1><p>9 frozen masters · fast vacancy matching · private application toolkit</p></div></div><div class="top-actions"><a class="btn" href="https://drive.google.com/drive/folders/11KXMtnPn5NKUQGUrmleSRJeUi3tvQM3s" rel="noopener noreferrer" target="_blank">Frozen 9 Drive Folder ↗</a><button class="icon-btn" id="theme" title="Toggle theme" type="button">◐</button></div></header>
 <section class="hero"><div><h2>Choose the right CV fast. Use the Universal Profile when a platform allows only one CV.</h2><p>Use the Technology Leadership CV for one-CV job platforms and recruiter databases. For a defined vacancy, the nine frozen role-specific masters remain the strongest application baselines; the generic executive package stays available as a fallback.</p></div><div class="stats"><div class="stat"><strong>9</strong> Frozen masters</div><div class="stat"><strong>1</strong> Universal profile</div><div class="stat"><strong>PDF + Word</strong> Core files</div><div class="stat"><strong>Private</strong> No indexing</div></div></section>
@@ -89,10 +122,10 @@ html[data-theme="dark"]{--bg:#09111e;--surface:#101a2a;--surface2:#172235;--ink:
 <p>Your broadest ATS-ready profile. Use this when a job-search app, recruiter database, or talent platform allows only one CV. It deliberately combines information systems, software engineering, architecture, transformation, technical delivery, enterprise applications, data, integration, service governance, and GCC experience.</p>
 <div class="generic-note">For a specific vacancy where you can choose the file, the 9 frozen role-specific masters remain stronger.</div></div></div>
 <div class="generic-files">
-<a class="file cv-pdf" data-open="Universal CV PDF" href="https://drive.google.com/file/d/1YmBAQ3TAKxbs0uoP1BCIAPlTRC0bXpFF/view?usp=drivesdk" rel="noopener noreferrer" target="_blank" title="Open Technology Leadership CV PDF — primary one-CV profile"><span class="file-icon" aria-hidden="true">PDF</span><span><strong>Technology Leadership CV · PDF</strong><small>Primary · upload to job platforms</small><em>Mahmoud_Salama_Technology_Leadership_CV.pdf</em></span><b>↗</b></a>
-<a class="file cl-pdf" data-open="Universal Cover Letter PDF" href="https://drive.google.com/file/d/1dFVqgAKZksZyBxXmXIQprdffqhOFrx3o/view?usp=drivesdk" rel="noopener noreferrer" target="_blank" title="Open generic executive cover letter PDF — tailor before sending"><span class="file-icon" aria-hidden="true">PDF</span><span><strong>Executive Cover Letter · PDF</strong><small>Tailor before sending</small><em>Generic_Executive_Cover_Letter_Mahmoud_Salama.pdf</em></span><b>↗</b></a>
-<a class="file cv-word" data-open="Universal CV Word" href="https://docs.google.com/document/d/1zVibMDXO4t8gT3-hdgGwWBqLFAVm-m8H/edit?usp=drivesdk&ouid=100530613516818645947&rtpof=true&sd=true" rel="noopener noreferrer" target="_blank" title="Open editable Technology Leadership CV Word source"><span class="file-icon" aria-hidden="true">DOC</span><span><strong>Technology Leadership CV · Word</strong><small>Editable source</small><em>Mahmoud_Salama_Technology_Leadership_CV.docx</em></span><b>↗</b></a>
-<a class="file cl-word" data-open="Universal Cover Letter Word" href="https://docs.google.com/document/d/1aOxlPt2_tcl4wzbkZHkjJBLZPZZJSLcT/edit?usp=drivesdk" rel="noopener noreferrer" target="_blank" title="Open editable executive cover letter Word source"><span class="file-icon" aria-hidden="true">DOC</span><span><strong>Executive Cover Letter · Word</strong><small>Editable source</small><em>Generic_Executive_Cover_Letter_Mahmoud_Salama.docx</em></span><b>↗</b></a>
+<a class="file cv-pdf primary-file" data-open="Universal CV PDF" href="https://drive.google.com/file/d/1YmBAQ3TAKxbs0uoP1BCIAPlTRC0bXpFF/view?usp=drivesdk" rel="noopener noreferrer" target="_blank" title="Open Technology Leadership CV PDF — primary one-CV profile"><span class="file-icon">PDF</span><span class="file-copy"><strong>Technology Leadership CV</strong><small>PDF · Primary for job platforms</small><code title="Mahmoud_Salama_Technology_Leadership_CV.pdf">Mahmoud_Salama_Technology_Leadership_CV.pdf</code></span><span class="file-arrow">↗</span></a>
+<a class="file cl-pdf" data-open="Universal Cover Letter PDF" href="https://drive.google.com/file/d/1dFVqgAKZksZyBxXmXIQprdffqhOFrx3o/view?usp=drivesdk" rel="noopener noreferrer" target="_blank" title="Open executive cover letter PDF — tailor before sending"><span class="file-icon">PDF</span><span class="file-copy"><strong>Executive Cover Letter</strong><small>PDF · Tailor before sending</small><code title="Generic_Executive_Cover_Letter_Mahmoud_Salama.pdf">Generic_Executive_Cover_Letter_Mahmoud_Salama.pdf</code></span><span class="file-arrow">↗</span></a>
+<a class="file cv-word" data-open="Universal CV Word" href="https://docs.google.com/document/d/1zVibMDXO4t8gT3-hdgGwWBqLFAVm-m8H/edit?usp=drivesdk&amp;ouid=100530613516818645947&amp;rtpof=true&amp;sd=true" rel="noopener noreferrer" target="_blank" title="Open editable Technology Leadership CV Word source"><span class="file-icon">DOC</span><span class="file-copy"><strong>Technology Leadership CV</strong><small>Word · Editable source</small><code title="Mahmoud_Salama_Technology_Leadership_CV.docx">Mahmoud_Salama_Technology_Leadership_CV.docx</code></span><span class="file-arrow">↗</span></a>
+<a class="file cl-word" data-open="Universal Cover Letter Word" href="https://docs.google.com/document/d/1aOxlPt2_tcl4wzbkZHkjJBLZPZZJSLcT/edit?usp=drivesdk" rel="noopener noreferrer" target="_blank" title="Open editable executive cover letter Word source"><span class="file-icon">DOC</span><span class="file-copy"><strong>Executive Cover Letter</strong><small>Word · Editable source</small><code title="Generic_Executive_Cover_Letter_Mahmoud_Salama.docx">Generic_Executive_Cover_Letter_Mahmoud_Salama.docx</code></span><span class="file-arrow">↗</span></a>
 </div></section>
 
 <section aria-labelledby="genericTitle" class="generic-package" id="genericPackage">

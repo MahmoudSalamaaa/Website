@@ -261,15 +261,557 @@ html[data-theme="dark"] .universal-package .generic-note{
   }
 }
 
+
+/* v1.4 Comfort / readability mode — larger type, lower density */
+body{
+  font-size:16px;
+  line-height:1.58;
+  letter-spacing:.002em;
+}
+.shell{
+  width:min(1360px,calc(100% - 28px));
+  padding-bottom:44px;
+}
+
+/* Header / hero */
+.brand h1{font-size:18px}
+.brand p{font-size:12px;line-height:1.35}
+.hero{padding:17px 19px;gap:22px}
+.hero h2{font-size:20px;line-height:1.3}
+.hero p{font-size:13px;line-height:1.55;max-width:82ch}
+.stat{font-size:11px;padding:9px 12px}
+.stat strong{font-size:15px}
+
+/* Controls */
+.btn,.icon-btn{font-size:12.5px;padding:10px 13px}
+.searchbox input,select{height:45px;font-size:13.5px}
+.clear-search{top:8px}
+.filter-chip{font-size:11.5px;padding:7px 11px}
+.fastbar{padding:10px 12px}
+.fastbar>span{font-size:10.5px}
+.fastbar button{font-size:11.5px;min-height:34px;padding:0 12px}
+.fastbar small{font-size:10px}
+
+/* Section headings */
+.section-heading{margin:18px 0 10px}
+.section-heading h2{font-size:18px;line-height:1.25}
+.section-heading p{font-size:11.5px;line-height:1.4}
+.section-heading .section-badge{font-size:9.5px;padding:5px 9px}
+.matchbar{padding:13px 16px}
+.matchbar strong{font-size:16px}
+.matchbar p{font-size:11.5px}
+.match-kicker{font-size:9px}
+.result-count{font-size:12px}
+
+/* Generic / Universal packages */
+.generic-package,.universal-package{
+  padding:16px;
+  gap:16px;
+  border-radius:19px;
+}
+.generic-copy{gap:13px;padding:7px 5px}
+.generic-icon{flex-basis:48px;height:48px;border-radius:13px}
+.generic-icon svg{width:25px;height:25px}
+.generic-badge{font-size:9px;min-height:24px;padding:3px 8px}
+.generic-copy h2{font-size:19px;line-height:1.25;margin:7px 0 4px}
+.generic-copy p{font-size:12px;line-height:1.52;max-width:66ch}
+.generic-note{font-size:10.5px;line-height:1.4;margin-top:8px}
+
+/* Main cards — bigger, calmer */
+.grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+}
+.card{
+  border-radius:19px;
+}
+.card-main{padding:16px 16px 12px}
+.card-head{gap:12px}
+.role-icon{
+  flex-basis:42px;
+  height:42px;
+  border-radius:12px;
+  font-size:11.5px;
+}
+.category{font-size:9px}
+.card h2{
+  font-size:17px;
+  line-height:1.24;
+  margin:2px 0 4px;
+}
+.status{
+  font-size:9px;
+  line-height:1.3;
+}
+.role-badges{gap:5px;margin-top:7px}
+.role-badge{
+  font-size:9px;
+  min-height:23px;
+  padding:3px 8px;
+}
+.fav{font-size:20px}
+.summary{
+  font-size:12px;
+  line-height:1.52;
+  margin:11px 0;
+}
+.title-preview,.alltitles{gap:6px}
+.jobtag,.moretag{
+  font-size:9.5px;
+  line-height:1.2;
+  padding:5px 8px;
+}
+
+/* File actions — simple and readable */
+.pack{
+  gap:9px;
+  padding:12px 16px 15px;
+}
+.file{
+  min-height:68px;
+  grid-template-columns:40px minmax(0,1fr) 16px;
+  gap:10px;
+  padding:11px;
+  border-radius:13px;
+}
+.file-icon{
+  width:40px;
+  height:40px;
+  border-radius:10px;
+  font-size:11px;
+}
+.file-icon svg{width:21px;height:21px}
+.file strong{
+  font-size:12.5px !important;
+  line-height:1.25;
+}
+.file small{
+  font-size:10px !important;
+  line-height:1.3;
+  margin-top:3px;
+}
+.file-arrow{font-size:14px}
+
+/* Hide long filenames: useful technically, harmful visually */
+.file code{
+  display:none !important;
+}
+
+/* Card footer */
+.card-footer{
+  padding:9px 16px;
+  font-size:9.5px;
+}
+.copytitles{font-size:9.5px}
+
+/* Analyzer and resources */
+.analyzer{padding:16px}
+.analyzer h2{font-size:17px}
+.analyzer p{font-size:11.5px}
+textarea{
+  min-height:165px;
+  font-size:13px;
+  line-height:1.5;
+}
+.rec{padding:13px}
+.rec h3{font-size:13.5px}
+.rec ul{font-size:10.5px}
+.resources-head{padding:13px 15px}
+.resources-head h2{font-size:16px}
+.resources-head p{font-size:11px}
+.resource{padding:11px}
+.resource h3{font-size:12px}
+.resource p{font-size:10.5px}
+.resource a{font-size:10.5px}
+footer{font-size:10.5px}
+
+/* Guide */
+.format-guide{padding:11px 14px}
+.format-guide-copy strong{font-size:12px}
+.format-guide-copy span{font-size:10.5px}
+.key{font-size:9px;padding:5px 8px}
+
+/* More breathing space overall */
+.workspace{padding:11px}
+.quick-nav{gap:7px;margin-top:9px}
+.generic-files{gap:9px}
+
+/* Tablet */
+@media(max-width:1080px){
+  .grid{grid-template-columns:1fr}
+  .resources{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+/* Mobile */
+@media(max-width:700px){
+  body{font-size:15px}
+  .shell{width:min(100% - 12px,1360px)}
+  .topbar{padding:12px}
+  .hero{padding:14px}
+  .hero h2{font-size:18px}
+  .hero p{font-size:12.5px}
+  .stats{gap:6px}
+  .stat{font-size:10px}
+  .stat strong{font-size:14px}
+
+  .generic-package,.universal-package{padding:12px}
+  .generic-copy h2{font-size:17px}
+  .generic-copy p{font-size:11.5px}
+  .generic-note{font-size:10px}
+
+  .card-main{padding:14px 13px 11px}
+  .card h2{font-size:16px}
+  .summary{font-size:11.5px}
+  .jobtag,.moretag{font-size:9px}
+
+  /* one file per row on phones = much easier to scan */
+  .pack,
+  .generic-files{
+    grid-template-columns:1fr !important;
+    gap:7px;
+  }
+  .file{
+    min-height:62px;
+    grid-template-columns:38px minmax(0,1fr) 14px;
+    padding:10px 11px;
+  }
+  .file-icon{width:38px;height:38px}
+  .file strong{font-size:12px !important}
+  .file small{font-size:9.7px !important}
+  .file-arrow{display:block}
+
+  .section-heading h2{font-size:17px}
+  .matchbar strong{font-size:15px}
+  .matchbar p{font-size:11px}
+}
+
+/* Very small phones */
+@media(max-width:430px){
+  .shell{width:calc(100% - 8px)}
+  .hero,.workspace,.matchbar,.analyzer,.generic-package,.universal-package{
+    border-radius:14px;
+  }
+  .generic-copy{gap:9px}
+  .generic-icon{flex-basis:42px;height:42px}
+  .generic-copy h2{font-size:16px}
+  .card h2{font-size:15.5px}
+  .role-badge{font-size:8.5px}
+  .search-row{grid-template-columns:1fr}
+  .searchbox{grid-column:auto}
+  .search-row select,.search-row .btn{width:100%}
+}
+
+
+/* v1.5 Simple mode — reduce visual noise */
+:root{
+  --radius:15px;
+}
+body{
+  background:var(--bg);
+}
+
+/* Hide low-value visual clutter */
+.fastbar,
+.format-guide,
+.role-badges,
+.category,
+.status,
+.card-footer,
+.section-heading .section-badge,
+.generic-kicker{
+  display:none !important;
+}
+
+/* Cleaner header */
+.topbar{
+  padding:12px 14px;
+  border-radius:14px;
+  box-shadow:none;
+}
+.brand h1{font-size:17px}
+.brand p{font-size:11px}
+.top-actions .btn{display:none}
+
+/* Compact intro */
+.hero{
+  margin:8px 0 10px;
+  padding:13px 15px;
+  border-radius:14px;
+  box-shadow:none;
+}
+.hero h2{font-size:17px}
+.hero p{
+  font-size:11.5px;
+  max-width:76ch;
+}
+.stats{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:6px;
+}
+.stat{
+  padding:7px 9px;
+  font-size:9px;
+}
+.stat strong{font-size:13px}
+
+/* Universal + generic = calmer blocks */
+.generic-package,.universal-package{
+  display:block;
+  padding:13px;
+  border-radius:15px;
+  box-shadow:none;
+}
+.generic-copy{
+  padding:0;
+  margin-bottom:10px;
+}
+.generic-icon{
+  display:none;
+}
+.generic-copy h2{
+  margin:0 0 3px;
+  font-size:17px;
+}
+.generic-copy p{
+  font-size:11px;
+  max-width:82ch;
+}
+.generic-note{
+  margin-top:5px;
+  font-size:9.5px;
+}
+.generic-files{
+  grid-template-columns:repeat(4,minmax(0,1fr));
+}
+.universal-package{
+  border-width:1.5px;
+}
+
+/* Workspace = one clean row */
+.workspace{
+  position:static;
+  margin:10px 0;
+  padding:8px;
+  border-radius:13px;
+  box-shadow:none;
+  backdrop-filter:none;
+}
+.search-row{
+  grid-template-columns:minmax(0,1fr) 190px auto;
+}
+.search-row .folder-btn{
+  display:none !important;
+}
+.quick-nav{
+  margin-top:7px;
+}
+.filter-chip{
+  padding:6px 9px;
+  font-size:10px;
+}
+
+/* JD analyzer simpler */
+.analyzer{
+  box-shadow:none;
+  border-radius:14px;
+}
+.analyzer-head p{
+  display:none;
+}
+
+/* Role section */
+.section-heading{
+  margin:13px 0 7px;
+}
+.section-heading h2{
+  font-size:16px;
+}
+.section-heading p{
+  font-size:10.5px;
+}
+.matchbar{
+  padding:10px 12px;
+  box-shadow:none;
+}
+.match-kicker{
+  display:none;
+}
+.matchbar strong{
+  font-size:14px;
+}
+.matchbar p{
+  font-size:10px;
+}
+
+/* Cards: calm, simple */
+.grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:10px;
+}
+.card{
+  border-radius:15px;
+  box-shadow:none;
+  transition:border-color .12s ease,box-shadow .12s ease;
+}
+.card:hover{
+  transform:none;
+  box-shadow:0 5px 16px rgba(15,23,42,.06);
+}
+.accent{
+  height:3px;
+}
+.card-main{
+  padding:12px 13px 10px;
+}
+.card-head{
+  gap:9px;
+  align-items:center;
+}
+.role-icon{
+  flex-basis:36px;
+  height:36px;
+  border-radius:9px;
+  font-size:10px;
+}
+.card h2{
+  font-size:15px;
+  margin:0;
+}
+.fav{
+  font-size:17px;
+}
+.summary{
+  font-size:10.5px;
+  line-height:1.45;
+  margin:8px 0;
+}
+
+/* Show only first 3 title tags by default */
+.title-preview .jobtag:nth-of-type(n+4){
+  display:none;
+}
+.jobtag,.moretag{
+  font-size:8.5px;
+  padding:4px 7px;
+}
+
+/* Files: reduce to action labels only */
+.pack{
+  padding:9px 12px 11px;
+  gap:6px;
+}
+.file{
+  min-height:54px;
+  grid-template-columns:32px minmax(0,1fr);
+  gap:8px;
+  padding:8px 9px;
+  border-radius:10px;
+}
+.file-icon{
+  width:32px;
+  height:32px;
+  border-radius:8px;
+}
+.file-icon svg{
+  width:17px;
+  height:17px;
+}
+.file strong{
+  font-size:10.5px !important;
+}
+.file small{
+  font-size:8px !important;
+}
+.file-arrow{
+  display:none !important;
+}
+.file code{
+  display:none !important;
+}
+
+/* Resources less prominent */
+.resources-head{
+  margin-top:14px;
+  box-shadow:none;
+}
+.resources-head p{
+  display:none;
+}
+.resources{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.resource{
+  box-shadow:none;
+}
+.resource-index{
+  display:none;
+}
+
+/* Mobile */
+@media(max-width:900px){
+  .generic-files{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .grid{
+    grid-template-columns:1fr;
+  }
+}
+@media(max-width:700px){
+  .hero{
+    display:block;
+  }
+  .stats{
+    margin-top:10px;
+  }
+  .search-row{
+    grid-template-columns:1fr;
+  }
+  .searchbox{
+    grid-column:auto;
+  }
+  .search-row select,
+  .search-row .btn{
+    width:100%;
+  }
+  .generic-files{
+    grid-template-columns:1fr 1fr;
+  }
+  .pack{
+    grid-template-columns:1fr 1fr !important;
+  }
+}
+@media(max-width:470px){
+  .shell{
+    width:calc(100% - 10px);
+  }
+  .generic-files,
+  .pack{
+    grid-template-columns:1fr !important;
+  }
+  .stats{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .hero p{
+    display:none;
+  }
+  .generic-copy p{
+    font-size:10.5px;
+  }
+  .summary{
+    font-size:10px;
+  }
+}
+
 </style></head><body><main class="shell">
 <header class="topbar"><div class="brand"><div class="mark">MS</div><div><h1>Career CV Selector</h1><p>9 frozen masters · fast vacancy matching · private application toolkit</p></div></div><div class="top-actions"><a class="btn" href="https://drive.google.com/drive/folders/11KXMtnPn5NKUQGUrmleSRJeUi3tvQM3s" rel="noopener noreferrer" target="_blank">Frozen 9 Drive Folder ↗</a><button class="icon-btn" id="theme" title="Toggle theme" type="button">◐</button></div></header>
-<section class="hero"><div><h2>Choose the right CV fast. Use the Universal Profile when a platform allows only one CV.</h2><p>Use the Technology Leadership CV for one-CV job platforms and recruiter databases. For a defined vacancy, the nine frozen role-specific masters remain the strongest application baselines; the generic executive package stays available as a fallback.</p></div><div class="stats"><div class="stat"><strong>9</strong> Frozen masters</div><div class="stat"><strong>1</strong> Universal profile</div><div class="stat"><strong>PDF + Word</strong> Core files</div><div class="stat"><strong>Private</strong> No indexing</div></div></section>
+<section class="hero"><div><h2>Choose the right CV.</h2><p>Use Technology Leadership when only one CV is allowed. For a specific role, choose the closest master below.</p></div><div class="stats"><div class="stat"><strong>9</strong> Frozen masters</div><div class="stat"><strong>1</strong> Universal profile</div><div class="stat"><strong>PDF + Word</strong> Core files</div><div class="stat"><strong>Private</strong> No indexing</div></div></section>
 <section aria-labelledby="universalTitle" class="generic-package universal-package" id="universalPackage">
 <div class="generic-copy"><div aria-hidden="true" class="generic-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"></path><path d="M8 8h8M8 12h8M8 16h5"></path></svg></div><div>
 <div class="generic-kicker"><span class="generic-badge">Universal Profile</span><span class="generic-badge">Job Platforms</span><span class="generic-badge">Recommended for one-CV apps</span></div>
 <h2 id="universalTitle">Technology Leadership CV</h2>
-<p>Your broadest ATS-ready profile. Use this when a job-search app, recruiter database, or talent platform allows only one CV. It deliberately combines information systems, software engineering, architecture, transformation, technical delivery, enterprise applications, data, integration, service governance, and GCC experience.</p>
-<div class="generic-note">For a specific vacancy where you can choose the file, the 9 frozen role-specific masters remain stronger.</div></div></div>
+<p>Best single CV for job platforms and recruiter databases.</p>
+<div class="generic-note">For a specific role, use the closest master below.</div></div></div>
 <div class="generic-files">
 <a class="file cv-pdf primary-file" data-open="Universal CV PDF" href="https://drive.google.com/file/d/1YmBAQ3TAKxbs0uoP1BCIAPlTRC0bXpFF/view?usp=drivesdk" rel="noopener noreferrer" target="_blank" title="Open Technology Leadership CV PDF — primary one-CV profile"><span class="file-icon">PDF</span><span class="file-copy"><strong>Technology Leadership CV</strong><small>PDF · Primary for job platforms</small><code title="Mahmoud_Salama_Technology_Leadership_CV.pdf">Mahmoud_Salama_Technology_Leadership_CV.pdf</code></span><span class="file-arrow">↗</span></a>
 <a class="file cl-pdf" data-open="Universal Cover Letter PDF" href="https://drive.google.com/file/d/1dFVqgAKZksZyBxXmXIQprdffqhOFrx3o/view?usp=drivesdk" rel="noopener noreferrer" target="_blank" title="Open executive cover letter PDF — tailor before sending"><span class="file-icon">PDF</span><span class="file-copy"><strong>Executive Cover Letter</strong><small>PDF · Tailor before sending</small><code title="Generic_Executive_Cover_Letter_Mahmoud_Salama.pdf">Generic_Executive_Cover_Letter_Mahmoud_Salama.pdf</code></span><span class="file-arrow">↗</span></a>
@@ -283,8 +825,8 @@ html[data-theme="dark"] .universal-package .generic-note{
 <div>
 <div class="generic-kicker"><span class="generic-badge">Recruiter Package</span><span class="generic-badge">Fallback</span></div>
 <h2 id="genericTitle">General Executive Package</h2>
-<p>Use for recruiter registration, talent pools, speculative applications, confidential searches, or vacancies whose title is too broad to select one frozen master confidently.</p>
-<div class="generic-note">For a clearly defined vacancy, use one of the 9 role-specific masters below instead.</div>
+<p>Fallback for broad or unclear opportunities.</p>
+<div class="generic-note">Use a role-specific master whenever the vacancy is clear.</div>
 </div>
 </div>
 <div class="generic-files">
@@ -326,7 +868,7 @@ html[data-theme="dark"] .universal-package .generic-note{
 <div class="details-panel" hidden="" id="details-information-systems"><div class="alltitles"><span class="jobtag">Information Systems Manager</span><span class="jobtag">IS Manager</span><span class="jobtag">Enterprise Applications Manager</span><span class="jobtag">Business Applications Manager</span><span class="jobtag">Healthcare Information Systems Manager</span><span class="jobtag">Applications &amp; Integration Manager</span><span class="jobtag">Digital Systems Manager</span><span class="jobtag">IT Systems Manager</span><span class="jobtag">Information Systems Lead</span><span class="jobtag">Applications Manager</span></div></div>
 </div>
 <div class="pack"><a class="file cv-pdf primary-file" data-open="CV PDF" href="https://drive.google.com/file/d/1BzCFBmE8HUiSv8Wh0oloMUNpzuCI85p0/view?usp=drivesdk" rel="noopener noreferrer" target="_blank" title="Open submit-ready CV PDF"><span class="file-icon cv_pdf"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"></path><path d="M14 2v5h5"></path><path d="M8.5 13h7M8.5 16h7M8.5 10h3"></path></svg></span><span class="file-copy"><strong>CV PDF</strong><small>Primary · submit-ready</small><code title="Information_Systems_Manager_Mahmoud_Salama_CV.pdf">Information_Systems_Manager_Mahmoud_Salama_CV.pdf</code></span><span class="file-arrow">↗</span></a><a class="file cl-pdf" data-open="Cover Letter PDF" href="https://drive.google.com/file/d/1dFVqgAKZksZyBxXmXIQprdffqhOFrx3o/view?usp=drivesdk" rel="noopener noreferrer" target="_blank" title="Open cover letter PDF — tailor before sending"><span class="file-icon cl_pdf"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m4 7 8 6 8-6"></path><path d="M8 16h8"></path></svg></span><span class="file-copy"><strong>Cover Letter PDF</strong><small>Submit after tailoring</small><code title="Generic_Executive_Cover_Letter_Mahmoud_Salama.pdf">Generic_Executive_Cover_Letter_Mahmoud_Salama.pdf</code></span><span class="file-arrow">↗</span></a><a class="file cv-word" data-open="CV Word" href="https://docs.google.com/document/d/1J7UkNL5X6PnCZgA2OEj7YyLFe_rvd3Qd/edit?usp=drivesdk&amp;ouid=100530613516818645947&amp;rtpof=true&amp;sd=true" rel="noopener noreferrer" target="_blank" title="Open editable CV Word source"><span class="file-icon cv_word"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"></path><path d="M14 2v5h5"></path><path d="m8.5 11 1.4 6 1.6-4.2L13 17l1.5-6"></path></svg></span><span class="file-copy"><strong>CV Word</strong><small>Editable source</small><code title="Information_Systems_Manager_Mahmoud_Salama_CV.docx">Information_Systems_Manager_Mahmoud_Salama_CV.docx</code></span><span class="file-arrow">↗</span></a><a class="file cl-word" data-open="Cover Letter Word" href="https://docs.google.com/document/d/1aOxlPt2_tcl4wzbkZHkjJBLZPZZJSLcT/edit?usp=drivesdk&amp;ouid=100530613516818645947&amp;rtpof=true&amp;sd=true" rel="noopener noreferrer" target="_blank" title="Open editable cover letter Word source"><span class="file-icon cl_word"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m4 7 8 6 8-6"></path><path d="m15.5 15.5 2-2"></path></svg></span><span class="file-copy"><strong>Cover Letter Word</strong><small>Editable cover letter</small><code title="Generic_Executive_Cover_Letter_Mahmoud_Salama.docx">Generic_Executive_Cover_Letter_Mahmoud_Salama.docx</code></span><span class="file-arrow">↗</span></a></div>
-<div class="card-footer"><span>10 matched titles · 3 linked files</span><button class="copytitles" data-copy="Information Systems Manager | IS Manager | Enterprise Applications Manager | Business Applications Manager | Healthcare Information Systems Manager | Applications &amp; Integration Manager | Digital Systems Manager | IT Systems Manager | Information Systems Lead | Applications Manager" type="button">Copy titles</button></div>
+<div class="card-footer"><span>10 matched titles · 4 linked files</span><button class="copytitles" data-copy="Information Systems Manager | IS Manager | Enterprise Applications Manager | Business Applications Manager | Healthcare Information Systems Manager | Applications &amp; Integration Manager | Digital Systems Manager | IT Systems Manager | Information Systems Lead | Applications Manager" type="button">Copy titles</button></div>
 </article>
 <article class="card" data-category="Systems" data-priority="2" data-role="it-manager" data-search="it manager use when the vacancy spans it operations, enterprise systems, service management, vendors, continuity, access/security governance, support and operational accountability. it manager head of it it operations manager it &amp; systems manager it applications &amp; infrastructure manager ict manager technology operations manager it services manager it support manager it systems &amp; operations manager it manager head of it it operations it service management service desk incident problem management change management release management vendor management business continuity backup recovery access control cybersecurity governance sla kpi enterprise systems support operations availability" style="--accent:#0369a1;--soft:#e0f2fe">
 <div class="accent"></div>
@@ -337,7 +879,7 @@ html[data-theme="dark"] .universal-package .generic-note{
 <div class="details-panel" hidden="" id="details-it-manager"><div class="alltitles"><span class="jobtag">IT Manager</span><span class="jobtag">Head of IT</span><span class="jobtag">IT Operations Manager</span><span class="jobtag">IT &amp; Systems Manager</span><span class="jobtag">IT Applications &amp; Infrastructure Manager</span><span class="jobtag">ICT Manager</span><span class="jobtag">Technology Operations Manager</span><span class="jobtag">IT Services Manager</span><span class="jobtag">IT Support Manager</span><span class="jobtag">IT Systems &amp; Operations Manager</span></div></div>
 </div>
 <div class="pack"><a class="file cv-pdf primary-file" data-open="CV PDF" href="https://drive.google.com/file/d/1didHYeT8nd5X65NVzEccz_uONPnakt5L/view?usp=drivesdk" rel="noopener noreferrer" target="_blank" title="Open submit-ready CV PDF"><span class="file-icon cv_pdf"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"></path><path d="M14 2v5h5"></path><path d="M8.5 13h7M8.5 16h7M8.5 10h3"></path></svg></span><span class="file-copy"><strong>CV PDF</strong><small>Primary · submit-ready</small><code title="IT_Manager_Mahmoud_Salama_CV.pdf">IT_Manager_Mahmoud_Salama_CV.pdf</code></span><span class="file-arrow">↗</span></a><a class="file cl-pdf" data-open="Cover Letter PDF" href="https://drive.google.com/file/d/1dFVqgAKZksZyBxXmXIQprdffqhOFrx3o/view?usp=drivesdk" rel="noopener noreferrer" target="_blank" title="Open cover letter PDF — tailor before sending"><span class="file-icon cl_pdf"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m4 7 8 6 8-6"></path><path d="M8 16h8"></path></svg></span><span class="file-copy"><strong>Cover Letter PDF</strong><small>Submit after tailoring</small><code title="Generic_Executive_Cover_Letter_Mahmoud_Salama.pdf">Generic_Executive_Cover_Letter_Mahmoud_Salama.pdf</code></span><span class="file-arrow">↗</span></a><a class="file cv-word" data-open="CV Word" href="https://docs.google.com/document/d/1rUTS6eCUM3fFkF864o1vXQMJ1KQop0WX/edit?usp=drivesdk&amp;ouid=100530613516818645947&amp;rtpof=true&amp;sd=true" rel="noopener noreferrer" target="_blank" title="Open editable CV Word source"><span class="file-icon cv_word"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"></path><path d="M14 2v5h5"></path><path d="m8.5 11 1.4 6 1.6-4.2L13 17l1.5-6"></path></svg></span><span class="file-copy"><strong>CV Word</strong><small>Editable source</small><code title="IT_Manager_Mahmoud_Salama_CV.docx">IT_Manager_Mahmoud_Salama_CV.docx</code></span><span class="file-arrow">↗</span></a><a class="file cl-word" data-open="Cover Letter Word" href="https://docs.google.com/document/d/1aOxlPt2_tcl4wzbkZHkjJBLZPZZJSLcT/edit?usp=drivesdk&amp;ouid=100530613516818645947&amp;rtpof=true&amp;sd=true" rel="noopener noreferrer" target="_blank" title="Open editable cover letter Word source"><span class="file-icon cl_word"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m4 7 8 6 8-6"></path><path d="m15.5 15.5 2-2"></path></svg></span><span class="file-copy"><strong>Cover Letter Word</strong><small>Editable cover letter</small><code title="Generic_Executive_Cover_Letter_Mahmoud_Salama.docx">Generic_Executive_Cover_Letter_Mahmoud_Salama.docx</code></span><span class="file-arrow">↗</span></a></div>
-<div class="card-footer"><span>10 matched titles · 3 linked files</span><button class="copytitles" data-copy="IT Manager | Head of IT | IT Operations Manager | IT &amp; Systems Manager | IT Applications &amp; Infrastructure Manager | ICT Manager | Technology Operations Manager | IT Services Manager | IT Support Manager | IT Systems &amp; Operations Manager" type="button">Copy titles</button></div>
+<div class="card-footer"><span>10 matched titles · 4 linked files</span><button class="copytitles" data-copy="IT Manager | Head of IT | IT Operations Manager | IT &amp; Systems Manager | IT Applications &amp; Infrastructure Manager | ICT Manager | Technology Operations Manager | IT Services Manager | IT Support Manager | IT Systems &amp; Operations Manager" type="button">Copy titles</button></div>
 </article>
 <article class="card" data-category="Engineering" data-priority="3" data-role="software-dev-delivery" data-search="software development &amp; delivery manager use for software development leadership, engineering management, application delivery, sdlc ownership, quality, architecture, release governance and enterprise software delivery. software development manager software delivery manager software engineering manager engineering manager application development manager head of software development technical delivery manager engineering delivery manager application delivery manager development manager head of engineering director of software engineering software development manager software delivery manager software engineering manager engineering manager development team c# .net asp.net react node.js rest api graphql sdlc agile scrum ci/cd code review technical debt qa release deployment engineering leadership capacity planning" style="--accent:#1d4ed8;--soft:#dbeafe">
 <div class="accent"></div>

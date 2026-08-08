@@ -37,6 +37,7 @@
 .port_bannerbg_wrapper{min-height:100vh}
 .port_banner_wrapper .banner_content{padding-top:250px;padding-bottom:215px}
 .banner_rcontent img.move_bg{display:block;width:min(52vw,790px);height:auto;transition:transform .3s ease}
+.banner_rcontent img.hero-stage-photo{width:min(48vw,760px);aspect-ratio:4/3;object-fit:cover;object-position:center;border:10px solid #fff;border-radius:24px;box-shadow:0 24px 60px rgba(14,15,33,.18)}
 .banner_svg_box{transform:scale(1)!important}
 .banner_official_role{max-width:720px;margin:12px 0 16px;padding:2px 0 2px 15px;border-left:4px solid var(--ms-pink);background:transparent;color:#15162c;line-height:1.45}
 .banner_official_role strong{display:block;font-family:'Josefin Sans',sans-serif;font-size:17px;font-weight:700}
@@ -116,6 +117,7 @@ img{max-width:100%}
 @media(max-width:1199px){
   .port_banner_wrapper .banner_content{padding-top:190px;padding-bottom:155px;padding-left:64px}
   .banner_rcontent img.move_bg{width:min(55vw,690px)}
+  .banner_rcontent img.hero-stage-photo{width:min(50vw,660px)}
   .bannner_leftpart .banner_name{font-size:72px}
   .expertise-grid,.achievement_cards_grid,#works .pcs-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
@@ -124,6 +126,7 @@ img{max-width:100%}
   .port_banner_wrapper .banner_content{padding:40px 42px 76px}
   .banner_img{position:relative;top:auto;right:auto;display:flex;justify-content:center;padding:18px 56px 0}
   .banner_rcontent img.move_bg{width:min(100%,700px);max-height:72vh;object-fit:contain}
+  .banner_rcontent img.hero-stage-photo{width:min(100%,680px);max-height:none;object-fit:cover}
   .banner_official_role{max-width:100%}
   .methodology-bridge,.portfolio-actions-inline{align-items:flex-start;flex-direction:column}
   .methodology-bridge .portfolio_btn{min-width:190px}
@@ -135,6 +138,7 @@ img{max-width:100%}
   .port_togglebox span{height:3px;margin-bottom:5px}
   .banner_img{padding:8px 14px 0}
   .banner_rcontent img.move_bg{width:min(100%,520px);max-height:none}
+  .banner_rcontent img.hero-stage-photo{width:min(100%,520px);border-width:6px;border-radius:18px}
   .port_banner_wrapper .banner_content{padding:22px 20px 62px}
   .bannner_leftpart h2.stranger{font-size:21px}.bannner_leftpart h2.stranger:after{width:170px}
   .bannner_leftpart .banner_name{font-size:48px;line-height:1.05;margin-left:-4px}

@@ -80,7 +80,7 @@ button,input,select,textarea{font:inherit}
 .mock-answer{display:grid;grid-template-columns:1fr 1fr;gap:14px}.timer{font-size:32px;font-weight:800;color:var(--cyan);font-variant-numeric:tabular-nums}.score-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.score-grid button{padding:12px}
 .builder label{display:block;font-size:13px;font-weight:700;margin:13px 0 5px}.builder textarea{width:100%;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:10px}.output{white-space:pre-wrap;background:var(--navy);color:#eaf6fb;border-radius:15px;padding:18px;min-height:180px}
 .matrix-wrap{overflow-x:auto;border-radius:16px}.matrix{width:100%;border-collapse:collapse;background:var(--card);min-width:680px}.matrix th,.matrix td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.matrix th{background:var(--navy);color:#fff}
-.ar-text,[dir="rtl"]{direction:rtl;text-align:right}
+
 .progress{height:10px;background:var(--line);border-radius:999px;overflow:hidden}.progress span{display:block;height:100%;background:var(--cyan)}
 .mobile-menu{display:none}.footer{color:var(--muted);font-size:12px;padding:26px 0;text-align:center}
 .local-link-note{font-size:12px;color:var(--muted)}
@@ -96,4 +96,25 @@ button,input,select,textarea{font:inherit}
 }
 @media print{
   .sidebar,.topbar,.toolbar,.hero-actions,.footer,.status-row,.notes{display:none!important}.app{display:block}.content{max-width:none;padding:0}.q-body{display:block!important}.q-card{break-inside:avoid}.card{box-shadow:none}
+}
+
+
+/* === HARD LTR SHELL === */
+html, body {
+  direction: ltr !important;
+  text-align: left !important;
+}
+body, .app, .main, .content, .sidebar, .topbar, .nav, .card, .hero,
+.section, .grid, .flow, .toolbar, .q-card, .q-head, .q-body, .matrix-wrap {
+  direction: ltr !important;
+}
+.ar-block, .ar-text, .q-title-ar, .answer-box.ar, [lang="ar"] {
+  direction: rtl !important;
+  text-align: right !important;
+  unicode-bidi: isolate;
+}
+.nav-label small[lang="ar"]{
+  direction: rtl !important;
+  unicode-bidi: isolate;
+  text-align: left !important;
 }

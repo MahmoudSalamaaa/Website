@@ -19,11 +19,11 @@
     const prog=document.createElement('div');prog.className='ms-reading-progress';prog.innerHTML='<span></span>';document.body.prepend(prog);
     const main=document.querySelector('.tp-main,.content,main');if(main&&!main.id)main.id='main-content';
 
-    if(!document.querySelector('.ms-signature')){const sig=document.createElement('aside');sig.className='ms-signature';sig.setAttribute('aria-label','Mahmoud Salama Digital Card');sig.innerHTML=`<a href="${CARD}" target="_blank" rel="noopener"><img src="assets/logo.png" alt="Mahmoud Salama logo"><span><strong>Mahmoud Salama</strong><small>Enterprise Architecture · Digital Card ↗</small></span></a>`;document.body.append(sig);}
+    if(!document.querySelector('.ms-signature')){const sig=document.createElement('aside');sig.className='ms-signature';sig.setAttribute('aria-label','Mahmoud Salama Digital Card');sig.innerHTML=`<a href="${CARD}" target="_blank" rel="noopener"><img src="/togaf/assets/logo.png" alt="Mahmoud Salama logo"><span><strong>Mahmoud Salama</strong><small>Enterprise Architecture · Digital Card ↗</small></span></a>`;document.body.append(sig);}
 
     if(main&&!main.querySelector('.ms-page-footer')){
       const footer=document.createElement('footer');footer.className='ms-page-footer';
-      footer.innerHTML=`<div class="ms-footer-inner"><div class="ms-footer-brand"><img src="assets/logo.png" alt="Mahmoud Salama logo"><span><strong>Mahmoud Salama</strong><small>TOGAF Study Platform · Enterprise Architecture</small></span></div><a class="ms-footer-link" href="${CARD}" target="_blank" rel="noopener">Digital Card <span aria-hidden="true">↗</span></a></div>`;
+      footer.innerHTML=`<div class="ms-footer-inner"><div class="ms-footer-brand"><img src="/togaf/assets/logo.png" alt="Mahmoud Salama logo"><span><strong>Mahmoud Salama</strong><small>TOGAF Study Platform · Enterprise Architecture</small></span></div><a class="ms-footer-link" href="${CARD}" target="_blank" rel="noopener">Digital Card <span aria-hidden="true">↗</span></a></div>`;
       main.append(footer);
     }
     const top=document.createElement('button');top.className='ms-to-top';top.type='button';top.title='العودة إلى الأعلى';top.setAttribute('aria-label','العودة إلى الأعلى');top.textContent='↑';document.body.append(top);
@@ -48,7 +48,7 @@
 
   function replaceChapterBrand(){
     const mark=document.querySelector('.brand-mark');
-    if(mark&&!mark.querySelector('img'))mark.innerHTML='<img src="assets/logo.png" alt="Mahmoud Salama TOGAF logo">';
+    if(mark&&!mark.querySelector('img'))mark.innerHTML='<img src="/togaf/assets/logo.png" alt="Mahmoud Salama TOGAF logo">';
   }
 
   function reveal(){

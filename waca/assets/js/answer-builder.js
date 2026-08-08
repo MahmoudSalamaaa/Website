@@ -1,4 +1,30 @@
 
-const fields=['situation','task','action','result','learning'];fields.forEach(f=>document.getElementById(f).addEventListener('input',build));
-function build(){const v=Object.fromEntries(fields.map(f=>[f,document.getElementById(f).value.trim()]));const out=`SITUATION\n${v.situation||'[Context, scale and risk]'}\n\nTASK\n${v.task||'[Your accountability and objective]'}\n\nACTION\n${v.action||'[What you decided and did; controls and stakeholders]'}\n\nRESULT\n${v.result||'[Measured operational result]'}\n\nLEARNING / MSF LINK\n${v.learning||'[What you learned and how it applies to WaCA]'}`;document.getElementById('answerOutput').textContent=out;localStorage.setItem('msfStarDraft',JSON.stringify(v))}
-const saved=JSON.parse(localStorage.getItem('msfStarDraft')||'{}');fields.forEach(f=>document.getElementById(f).value=saved[f]||'');build();document.getElementById('copyAnswer').onclick=()=>navigator.clipboard.writeText(document.getElementById('answerOutput').textContent);
+(function(){
+  const ids=['situation','task','action','result','learning'];
+  const out=document.getElementById('answerOutput');
+  function refresh(){
+    const v=Object.fromEntries(ids.map(id=>[id,document.getElementById(id).value.trim()]));
+    out.textContent=
+`SITUATION
+${v.situation||'—'}
+
+TASK
+${v.task||'—'}
+
+ACTION
+${v.action||'—'}
+
+RESULT
+${v.result||'—'}
+
+LEARNING / MSF LINK
+${v.learning||'—'}`;
+  }
+  ids.forEach(id=>document.getElementById(id).addEventListener('input',refresh));
+  document.getElementById('copyAnswer').onclick=async()=>{
+    await navigator.clipboard.writeText(out.textContent);
+    document.getElementById('copyAnswer').textContent='Copied';
+    setTimeout(()=>document.getElementById('copyAnswer').textContent='Copy answer',1200);
+  };
+  refresh();
+})();

@@ -1,10 +1,45 @@
 
-const all=window.MSF_QUESTIONS||[];let deck=[],idx=0,seconds=120,timer=null,results=[];
-const cat=document.getElementById('mockCat');[...new Set(all.map(q=>q.category_en))].sort().forEach(c=>cat.insertAdjacentHTML('beforeend',`<option value="${c}">${c}</option>`));
-function shuffle(a){return [...a].sort(()=>Math.random()-.5)}
-function start(){const n=+document.getElementById('mockCount').value,c=cat.value;deck=shuffle(all.filter(q=>!c||q.category_en===c)).slice(0,n);idx=0;results=[];document.getElementById('setup').hidden=true;document.getElementById('session').hidden=false;show()}
-function show(){clearInterval(timer);seconds=+document.getElementById('timePer').value;const q=deck[idx];document.getElementById('mockProgress').textContent=`${idx+1} / ${deck.length}`;document.getElementById('mockQ').textContent=document.body.classList.contains('lang-ar')?q.question_ar:q.question_en;document.getElementById('mockA').textContent=document.body.classList.contains('lang-ar')?q.answer_ar:q.answer_en;document.getElementById('mockABox').hidden=true;tick();timer=setInterval(()=>{seconds--;tick();if(seconds<=0)clearInterval(timer)},1000)}
-function tick(){document.getElementById('timer').textContent=String(Math.floor(seconds/60)).padStart(2,'0')+':'+String(seconds%60).padStart(2,'0')}
-document.getElementById('startMock').onclick=start;document.getElementById('reveal').onclick=()=>document.getElementById('mockABox').hidden=false;document.querySelectorAll('[data-score]').forEach(b=>b.onclick=()=>{results.push({id:deck[idx].id,score:+b.dataset.score});idx++;if(idx<deck.length)show();else finish()});
-function finish(){clearInterval(timer);document.getElementById('session').hidden=true;document.getElementById('result').hidden=false;const avg=results.reduce((a,b)=>a+b.score,0)/results.length;document.getElementById('avg').textContent=avg.toFixed(1);document.getElementById('resultText').textContent=avg>=4?'Strong readiness. Focus on natural delivery and concise evidence.':avg>=3?'Good base. Rehearse weak answers using STAR and quantify outcomes.':'Repeat this set and strengthen structure, evidence and role-specific detail.';localStorage.setItem('msfLastMock',JSON.stringify({date:new Date().toISOString(),results,avg}))}
-document.getElementById('restart').onclick=()=>location.reload();
+(function(){
+  const all=window.MSF_QUESTIONS||[];
+  const setup=document.getElementById('setup'),session=document.getElementById('session'),result=document.getElementById('result');
+  const cat=document.getElementById('mockCat'),count=document.getElementById('mockCount'),timePer=document.getElementById('timePer');
+  [...new Set(all.map(q=>q.category_en))].sort().forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c;cat.appendChild(o)});
+  let queue=[],idx=0,scores=[],timerId=null,remaining=0,current=null;
+
+  function esc(s=''){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+  function shuffle(a){return [...a].sort(()=>Math.random()-.5)}
+  function tick(){
+    document.getElementById('timer').textContent=Math.floor(remaining/60)+':'+String(remaining%60).padStart(2,'0');
+    if(remaining<=0){clearInterval(timerId);return} remaining--;
+  }
+  function show(){
+    current=queue[idx];
+    document.getElementById('mockProgress').textContent=`Question ${idx+1} / ${queue.length}`;
+    document.getElementById('mockQ').innerHTML=`<div>${esc(current.question_en)}</div><div class="ar-text" lang="ar" dir="rtl">${esc(current.question_ar)}</div>`;
+    document.getElementById('mockABox').hidden=true;
+    document.getElementById('mockA').innerHTML='';
+    remaining=parseInt(timePer.value,10); clearInterval(timerId); tick(); timerId=setInterval(tick,1000);
+  }
+  document.getElementById('startMock').onclick=()=>{
+    let pool=cat.value?all.filter(q=>q.category_en===cat.value):all;
+    queue=shuffle(pool).slice(0,Math.min(parseInt(count.value,10),pool.length));idx=0;scores=[];
+    setup.hidden=true;result.hidden=true;session.hidden=false;show();
+  };
+  document.getElementById('reveal').onclick=()=>{
+    document.getElementById('mockABox').hidden=false;
+    document.getElementById('mockA').innerHTML=`<div class="mock-answer">
+      <div class="answer-box"><h4>English</h4>${esc(current.answer_en)}</div>
+      <div class="answer-box ar" lang="ar" dir="rtl"><h4>العربية</h4>${esc(current.answer_ar)}</div>
+    </div>`;
+  };
+  document.querySelectorAll('[data-score]').forEach(b=>b.onclick=()=>{
+    scores.push(Number(b.dataset.score));clearInterval(timerId);idx++;
+    if(idx<queue.length){show()} else {
+      session.hidden=true;result.hidden=false;
+      const avg=scores.reduce((a,b)=>a+b,0)/scores.length;
+      document.getElementById('avg').textContent=avg.toFixed(1);
+      document.getElementById('resultText').textContent=avg>=4?'Strong readiness. Focus on concise delivery and evidence.':avg>=3?'Good base. Revisit weaker answers and quantify examples.':'More practice recommended before the interview.';
+    }
+  });
+  document.getElementById('restart').onclick=()=>{result.hidden=true;setup.hidden=false};
+})();

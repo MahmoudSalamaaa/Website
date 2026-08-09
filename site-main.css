@@ -15455,3 +15455,40 @@ img, video, canvas, svg {
         font-size: 12.5px;
     }
 }
+
+/* Restore original About reveal icon position and shape. */
+.about_leftsection .icon {
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border: 0;
+    border-radius: 0;
+    background: #00c8da;
+    box-shadow: none;
+}
+
+.about_leftsection .iconbox i {
+    top: 22px;
+}
+
+@media (max-width: 767px) {
+    .about_leftsection .icon {
+        top: auto;
+        right: auto;
+        bottom: 0;
+        left: 0;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .about_leftsection .iconbox i {
+        top: 22px;
+    }
+}

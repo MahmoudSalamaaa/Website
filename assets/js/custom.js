@@ -26,12 +26,18 @@ Assigned to: ThemeForest
 			/*-------------- CV Portfolio Functions Calling ---------------------------------------------------
 			------------------------------------------------------------------------------------------------*/
 			this.open_menu();
+			this.custom_scrollbar();
 			this.rightbtn_onload();
 			this.rightside_onload();
 			this.bannerleft_onload();
-			/*this.magnific_popup();*/
-						
-						
+			this.banner_typingtext();
+			this.typed_js();
+			this.about_opendetails();
+
+			this.testimonial_slider();
+
+			this.responsor_slider();			
+			this.world_map();
 			//this.contact_form();
 			this.goto_top();
 			this.page_scroll();
@@ -114,7 +120,7 @@ Assigned to: ThemeForest
 	
 	// Typed JS
 	typed_js: function() {
-		if($('.typed').length > 0 && typeof Typed !== 'undefined'){	
+		if($('.typed').length > 0){	
 			$('.typed').each(function(){
 				var _this = $(this);
 				var typed = new Typed(this, {
@@ -131,7 +137,7 @@ Assigned to: ThemeForest
 	
 	// animated banner text
 	banner_typingtext: function() {
-		if($('.banner_typingtext').length > 0 && $.fn.textillate){
+		if($('.icon').length > 0){
 			$('.banner_typingtext').textillate({
 				loop: true,
 				minDisplayTime: 2e3,
@@ -175,40 +181,9 @@ Assigned to: ThemeForest
 	
 	/*------------------------------------------------------------------*/ 
 	// Start isotop gallery js 
-		isotop_gallery: function() {
-			if($('.gallery_grid').length > 0){
-				$('.gallery_grid').isotope({
-						itemSelector: '.grid-item',
-						filter: '*'
-					});
-					$('.port_project_gallery > .gallery_nav > ul > li').on( 'click', 'a', function() {
-						// filter button click
-						var filterValue = $( this ).attr('data-filter');
-						$('.gallery_grid').isotope({ filter: filterValue });
-
-						//active class added
-						$('a').removeClass('gallery_active');
-						$(this).addClass('gallery_active');
-					});
-			}
-		},
 	/*------------------------------------------------------------------*/ 
 	
 	// magnifiv popup for project gallery
-	magnific_popup: function() {
-			if($('.view').length > 0){
-			$('.view').magnificPopup({
-			  type: 'image',
-			  
-			  gallery: {
-				// options for gallery
-				enabled: true
-			  }
-			  
-			  // other options
-			});
-		}
-	},
 	/*------------------------------------------------------------------*/
 	// Start testimonial swipper slider
 	testimonial_slider: function() {
@@ -271,40 +246,6 @@ Assigned to: ThemeForest
 	/*------------------------------------------------------------------*/ 
 	
 	// circle progress bar js start
-	circle_progressbar: function() {
-		if($('.progressbar').length > 0){
-			$(document).ready(function(){
-				function animateElements() {
-					$('.progressbar').each(function () {
-						var elementPos = $(this).offset().top;
-						var topOfWindow = $(window).scrollTop();
-						var percent = $(this).find('.circle').attr('data-percent');
-						var animate = $(this).data('animate');
-						if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
-							$(this).data('animate', true);
-							$(this).find('.circle').circleProgress({
-								startAngle: -Math.PI / 2,
-								value: percent / 100,
-								size : 400,
-								thickness: 15,
-								lineCap: 'round',
-								fill: {
-									color: '#fff'
-								}
-							}).on('circle-animation-progress', function (event, progress, stepValue) {
-								$(this).find('strong').text((stepValue*100).toFixed(0) + "%");
-							}).stop();
-						}
-					});
-				}
-
-				animateElements();
-				$(window).scroll(animateElements);
-
-			
-			});
-		}
-	},
 		
 	// circle progress bar js start
 	/*------------------------------------------------------------------*/ 
@@ -443,28 +384,6 @@ Assigned to: ThemeForest
 	/*------------------------------------------------------------------*/ 
 	
 	// start video popup js
-	popup_video: function() {
-		if($('.testimonial_icon .video').length > 0){
-			$('.testimonial_icon .video').magnificPopup({ 
-			type: 'iframe',
-			iframe: {
-				markup: '<div class="mfp-iframe-scaler">'+
-					'<div class="mfp-close"></div>'+
-					'<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
-					'<div class="mfp-title">Some caption</div>'+
-					'</div>',
-				patterns: {
-					youtube: {
-						index: 'youtube.com/', 
-						id: 'v=',
-						src: 'https://www.youtube.com/embed/fpQcEiwxzQE'
-						}
-					}
-				}
-				// other options
-			});	
-		}
-	},
 	// End video popup js
 	/*------------------------------------------------------------------*/
 	

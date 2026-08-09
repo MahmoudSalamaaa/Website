@@ -17,7 +17,7 @@ main{width:min(1260px,100%);margin:auto;padding:26px 16px 80px}.hero{padding:28p
 <body>
 <section id="loginView" class="login-wrap">
   <div class="login"><div class="card">
-    <img class="login-logo" src="/togaf/assets/logo.png" alt="Mahmoud Salama">
+    <img class="login-logo" src="assets/logo.png" alt="Mahmoud Salama">
     <h1 style="text-align:center;margin:0 0 5px">Analytics Admin</h1>
     <p class="muted" style="text-align:center;margin:0 0 20px">TOGAF Study Platform</p>
     <div id="loginAlert" class="alert hidden"></div>
@@ -32,8 +32,8 @@ main{width:min(1260px,100%);margin:auto;padding:26px 16px 80px}.hero{padding:28p
 
 <div id="dashboardView" class="hidden">
 <header class="top">
-  <div class="brand"><img src="/togaf/assets/logo.png" alt="Mahmoud Salama"><span><strong>TOGAF Analytics Admin</strong><small>Mahmoud Salama · JSON text-file analytics</small></span></div>
-  <nav class="nav"><button id="refreshBtn">Refresh</button><button id="exportBtn">Export CSV</button><button id="accountBtn">Account</button><a href="/togaf/index.html">Open site</a><button id="logoutBtn">Logout</button></nav>
+  <div class="brand"><img src="assets/logo.png" alt="Mahmoud Salama"><span><strong>TOGAF Analytics Admin</strong><small>Mahmoud Salama · JSON text-file analytics</small></span></div>
+  <nav class="nav"><button id="refreshBtn">Refresh</button><button id="exportBtn">Export CSV</button><button id="accountBtn">Account</button><a href="index.html">Open site</a><button id="logoutBtn">Logout</button></nav>
 </header>
 <main>
   <section class="hero"><h1>Visitor Analytics</h1><p>Global visit statistics stored in JSON text files. No database, PHP, or raw IP storage.</p></section>
@@ -66,7 +66,7 @@ main{width:min(1260px,100%);margin:auto;padding:26px 16px 80px}.hero{padding:28p
 </div></div>
 
 <script>
-const API='/togaf/cgi-bin/togaf_analytics.py';
+const API='cgi-bin/togaf_analytics.py';
 let csrf='';
 const $=id=>document.getElementById(id);
 const esc=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));

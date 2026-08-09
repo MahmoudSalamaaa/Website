@@ -1,7 +1,7 @@
 {
   "name": "TOGAF Study Platform",
   "short_name": "TOGAF",
-  "start_url": "/togaf/index.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#eef4f9",
   "theme_color": "#07152f",
@@ -9,12 +9,12 @@
   "dir": "rtl",
   "icons": [
     {
-      "src": "/togaf/assets/icon-192.png",
+      "src": "assets/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/togaf/assets/icon-512.png",
+      "src": "assets/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
@@ -22,15 +22,15 @@
   "shortcuts": [
     {
       "name": "Workspace",
-      "url": "/togaf/workspace.html"
+      "url": "workspace.html"
     },
     {
       "name": "Practice",
-      "url": "/togaf/practice.html"
+      "url": "practice.html"
     },
     {
       "name": "Exam",
-      "url": "/togaf/exam.html"
+      "url": "exam.html"
     }
   ]
 }

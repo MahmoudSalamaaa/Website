@@ -1,7 +1,0 @@
-Delete these obsolete role-specific files from the website repository:
-
-cto-cio-it-director.html
-enterprise-solution-architect.html
-digital-transformation-program-director.html
-assets/css/role-original.css
-assets/css/role-profiles.css

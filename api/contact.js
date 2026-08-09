@@ -30,20 +30,10 @@ function isAllowedOrigin(req) {
   if (!origin) return true;
   try {
     const url = new URL(origin);
-    const allowedHosts = new Set([
-      'mahmoud-salama.vercel.app',
-      String(process.env.VERCEL_URL || '').toLowerCase(),
-      String(process.env.VERCEL_PROJECT_PRODUCTION_URL || '').toLowerCase(),
-      ...String(process.env.ALLOWED_ORIGINS || '')
-        .split(',')
-        .map((value) => value.trim().replace(/^https?:\/\//, '').replace(/\/$/, '').toLowerCase())
-        .filter(Boolean)
-    ]);
-    const hostname = url.hostname.toLowerCase();
-    return allowedHosts.has(hostname) ||
-      (hostname.startsWith('portfolio-') && hostname.endsWith('.vercel.app')) ||
-      hostname === 'localhost' ||
-      hostname === '127.0.0.1';
+    return url.hostname === 'mahmoud-salama.vercel.app' ||
+      (url.hostname.startsWith('mahmoud-salama-') && url.hostname.endsWith('.vercel.app')) ||
+      url.hostname === 'localhost' ||
+      url.hostname === '127.0.0.1';
   } catch (_) {
     return false;
   }
@@ -95,11 +85,9 @@ async function verifyTurnstile(token, ip) {
 }
 
 async function sendWithEmailJs(payload) {
-  // EmailJS public identifiers used by the original website.
-  // Vercel environment variables, when configured, override these defaults.
-  const publicKey = process.env.EMAILJS_PUBLIC_KEY || 'BOnHvu4r0ERzq0mTR';
-  const serviceId = process.env.EMAILJS_SERVICE_ID || 'service_lnfqrk2';
-  const templateId = process.env.EMAILJS_TEMPLATE_ID || 'template_ososwf7';
+  const publicKey = process.env.EMAILJS_PUBLIC_KEY;
+  const serviceId = process.env.EMAILJS_SERVICE_ID;
+  const templateId = process.env.EMAILJS_TEMPLATE_ID;
   const privateKey = process.env.EMAILJS_PRIVATE_KEY || '';
   if (!publicKey || !serviceId || !templateId) {
     console.error('Email service environment variables are not configured.');

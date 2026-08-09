@@ -15546,6 +15546,20 @@ img, video, canvas, svg {
     margin-right: auto;
 }
 
+.port_contact_form .contact-submit-actions {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: .6rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.port_contact_form .contact-submit-actions .portfolio_btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .port_projects_setions .banner_btn,
 .port_projects_setions .banner_btn.text-center {
     display: flex;

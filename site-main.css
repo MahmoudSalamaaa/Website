@@ -15507,3 +15507,92 @@ img, video, canvas, svg {
         border-radius: 18px;
     }
 }
+
+/* About details panel fix: the panel is a sibling of .about_leftsection in index.html. */
+.selfintro_section .about_leftsection + .left_deatils {
+    position: static;
+    max-width: 420px;
+    margin: 18px auto 0;
+    padding: 22px 22px 20px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-left: 4px solid #00c8da;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 18px 42px rgba(15, 23, 42, 0.10);
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transform: translateY(-8px);
+    transition: opacity 0.24s ease, visibility 0.24s ease, max-height 0.28s ease, transform 0.24s ease;
+}
+
+.selfintro_section .about_leftsection.open_details + .left_deatils {
+    opacity: 1;
+    visibility: visible;
+    max-height: 720px;
+    transform: translateY(0);
+}
+
+.selfintro_section .about_leftsection + .left_deatils .ps_name {
+    margin: 0 0 12px;
+    color: #101828;
+    font-size: 24px;
+}
+
+.selfintro_section .about_leftsection + .left_deatils .info-list li {
+    display: grid;
+    grid-template-columns: 108px minmax(0, 1fr);
+    gap: 10px;
+    margin-bottom: 9px;
+    color: #475467;
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+.selfintro_section .about_leftsection + .left_deatils .info-list .title {
+    color: #101828;
+    font-weight: 700;
+}
+
+.selfintro_section .about_leftsection + .left_deatils a {
+    color: #0b92a0;
+    overflow-wrap: anywhere;
+}
+
+.selfintro_section .about_leftsection + .left_deatils .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 16px 0 0;
+    padding: 0;
+}
+
+.selfintro_section .about_leftsection + .left_deatils .social-links li {
+    list-style: none;
+}
+
+.selfintro_section .about_leftsection + .left_deatils .social-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 999px;
+    background: #f2fbfc;
+    color: #00aebb;
+}
+
+@media (max-width: 575px) {
+    .selfintro_section .about_leftsection + .left_deatils {
+        max-width: min(360px, calc(100vw - 34px));
+        padding: 18px 16px;
+        border-radius: 16px;
+    }
+
+    .selfintro_section .about_leftsection + .left_deatils .info-list li {
+        grid-template-columns: 1fr;
+        gap: 2px;
+        margin-bottom: 10px;
+    }
+}

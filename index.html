@@ -709,106 +709,554 @@ button.ex_btn{appearance:none;background:none;border:0;padding:0;color:inherit;f
 </div>
 <!-- End Key Achievements section -->
 <!-- Skills Tabs Section -->
-<div aria-labelledby="skills-title" class="skills_tabs_section capability-redesign capability-executive" data-scroll="3" id="skills">
+<div class="skills_tabs_section" data-scroll="3" id="skills">
 <div class="container">
 <div class="row">
 <div class="col-md-12">
 <div class="port_heading_wrapper text-center">
-<div class="port_sub_heading_wrapper"><h2 class="port_sub_heading">Capability Matrix</h2></div>
-<h2 class="port_heading" id="skills-title">Executive &amp; Technical Expertise</h2>
-<p class="capability-intro">A focused executive view of the complete capability set reflected in the CV, with the most strategic strengths highlighted and supporting technologies grouped for faster reading.</p>
+<div class="port_sub_heading_wrapper">
+<h2 class="port_sub_heading">Expertise</h2>
+</div>
+<h2 class="port_heading">My Skills</h2>
 </div>
 </div>
 </div>
-<ul aria-label="Capability categories" class="nav nav-tabs justify-content-center capability-tablist flex-wrap gap-2" id="skillsTab" role="tablist">
-<li class="nav-item" role="presentation"><button aria-controls="cap-executive" aria-selected="true" class="nav-link active" data-bs-target="#cap-executive" data-bs-toggle="tab" id="cap-executive-tab" role="tab" type="button"><i class="fas fa-chess-king"></i><span>Executive Leadership</span></button></li>
-<li class="nav-item" role="presentation"><button aria-controls="cap-integration" aria-selected="false" class="nav-link" data-bs-target="#cap-integration" data-bs-toggle="tab" id="cap-integration-tab" role="tab" type="button"><i class="fas fa-project-diagram"></i><span>Integration &amp; Platforms</span></button></li>
-<li class="nav-item" role="presentation"><button aria-controls="cap-engineering" aria-selected="false" class="nav-link" data-bs-target="#cap-engineering" data-bs-toggle="tab" id="cap-engineering-tab" role="tab" type="button"><i class="fas fa-code"></i><span>Core Engineering</span></button></li>
-<li class="nav-item" role="presentation"><button aria-controls="cap-data-analytics" aria-selected="false" class="nav-link" data-bs-target="#cap-data-analytics" data-bs-toggle="tab" id="cap-data-analytics-tab" role="tab" type="button"><i class="fas fa-chart-line"></i><span>Data &amp; Analytics</span></button></li>
-<li class="nav-item" role="presentation"><button aria-controls="cap-app-delivery" aria-selected="false" class="nav-link" data-bs-target="#cap-app-delivery" data-bs-toggle="tab" id="cap-app-delivery-tab" role="tab" type="button"><i class="fas fa-layer-group"></i><span>Apps &amp; Delivery</span></button></li>
-<li class="nav-item" role="presentation"><button aria-controls="cap-secops" aria-selected="false" class="nav-link" data-bs-target="#cap-secops" data-bs-toggle="tab" id="cap-secops-tab" role="tab" type="button"><i class="fas fa-shield-alt"></i><span>Security &amp; Operations</span></button></li>
+<!-- Tabs Navigation -->
+<!-- Tabs -->
+<ul class="nav nav-tabs justify-content-center nav nav-tabs fancy-x flex-wrap flex-md-wrap gap-2" id="skillsTab" role="tablist">
+<li class="nav-item" role="presentation">
+<button aria-controls="arch" aria-selected="true" class="nav-link active" data-bs-target="#arch" data-bs-toggle="tab" id="arch-tab" role="tab" type="button">
+                            Architecture &amp; Platform
+                        </button>
+</li>
+<li class="nav-item" role="presentation">
+<button aria-controls="security" aria-selected="false" class="nav-link" data-bs-target="#security" data-bs-toggle="tab" id="security-tab" role="tab" type="button">
+                            Security &amp; Governance
+                        </button>
+</li>
+<li class="nav-item" role="presentation">
+<button aria-controls="data" aria-selected="false" class="nav-link" data-bs-target="#data" data-bs-toggle="tab" id="data-tab" role="tab" type="button">
+                            Data &amp; Analytics
+                        </button>
+</li>
+<li class="nav-item" role="presentation">
+<button aria-controls="devops" aria-selected="false" class="nav-link" data-bs-target="#devops" data-bs-toggle="tab" id="devops-tab" role="tab" type="button">
+                            DevOps &amp; Reliability
+                        </button>
+</li>
+<li class="nav-item" role="presentation">
+<button aria-controls="eng-practices" aria-selected="false" class="nav-link" data-bs-target="#eng-practices" data-bs-toggle="tab" id="eng-practices-tab" role="tab" type="button">
+                            Engineering Practices
+                        </button>
+</li>
+<li class="nav-item" role="presentation">
+<button aria-controls="languages" aria-selected="false" class="nav-link" data-bs-target="#languages" data-bs-toggle="tab" id="languages-tab" role="tab" type="button">
+                            Languages &amp; Core Tech
+                        </button>
+</li>
 </ul>
-<div class="tab-content capability-tabs-content capability-rich-content" id="skillsTabContent">
-<div aria-labelledby="cap-executive-tab" class="tab-pane fade show active" id="cap-executive" role="tabpanel" tabindex="0">
-<div class="capability-pane-shell tone-sunrise">
-<div class="capability-pane-head"><div class="capability-pane-icon"><i class="fas fa-chess-king"></i></div><div><span class="capability-kicker">Leadership &amp; Direction</span><h3>Executive Technology Leadership</h3><p>Strategy, governance, architecture leadership, portfolio direction, and executive stakeholder alignment.</p></div></div>
-<div class="row g-4 capability-featured-grid">
-<div class="col-lg-6"><div class="cap-skill-item tone-sunrise"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-compass"></i><h4>Technology Strategy</h4></div><span class="cap-skill-level">Executive</span></div><div class="cap-skill-bar"><span style="width:96%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-sunrise"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-bolt"></i><h4>Digital Transformation</h4></div><span class="cap-skill-level">Executive</span></div><div class="cap-skill-bar"><span style="width:96%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-sunrise"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-sitemap"></i><h4>Enterprise Architecture</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-sunrise"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-cubes"></i><h4>Solution Architecture</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-sunrise"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-briefcase"></i><h4>Portfolio Management</h4></div><span class="cap-skill-level">Executive</span></div><div class="cap-skill-bar"><span style="width:96%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-sunrise"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-handshake"></i><h4>Executive Stakeholder Management</h4></div><span class="cap-skill-level">Executive</span></div><div class="cap-skill-bar"><span style="width:96%"></span></div></div></div>
+<div class="tab-content" id="skillsTabContent">
+<!-- Panel 1: Architecture & Platform Strategy -->
+<div aria-labelledby="arch-tab" class="tab-pane fade show active" id="arch" role="tabpanel">
+<div class="row g-4">
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>.NET Core</span>
+<span class="skill_percentage">Advanced</span>
 </div>
-<div class="capability-supporting"><span class="supporting-title">Supporting capabilities</span><div class="capability-chip-cloud"><span>Information Systems Leadership</span><span>Technology Roadmaps</span><span>Vendor Governance</span><span>Technical Program Delivery</span></div></div>
-</div>
-</div>
-<div aria-labelledby="cap-integration-tab" class="tab-pane fade" id="cap-integration" role="tabpanel" tabindex="0">
-<div class="capability-pane-shell tone-cyan">
-<div class="capability-pane-head"><div class="capability-pane-icon"><i class="fas fa-project-diagram"></i></div><div><span class="capability-kicker">Connected Enterprise</span><h3>Systems Integration &amp; Enterprise Platforms</h3><p>Controlled interoperability across enterprise systems, workflows, APIs, and Microsoft Dynamics 365 connectivity.</p></div></div>
-<div class="row g-4 capability-featured-grid">
-<div class="col-lg-6"><div class="cap-skill-item tone-cyan"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-network-wired"></i><h4>Systems Integration</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-cyan"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-plug"></i><h4>REST API Design</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-cyan"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-balance-scale"></i><h4>Integration Governance</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-cyan"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-random"></i><h4>Workflow Integration</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
-<div class="col-lg-12"><div class="cap-skill-item tone-cyan"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fab fa-microsoft"></i><h4>Microsoft Dynamics 365 ERP &amp; CRM Connectivity</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
-</div>
-<div class="capability-supporting"><span class="supporting-title">Supporting technologies</span><div class="capability-chip-cloud"><span>GraphQL</span><span>API Security</span><span>Data Mapping</span></div></div>
+<div class="progress_container">
+<div aria-label=".NET Core" aria-valuemax="100" aria-valuemin="0" aria-valuenow="85" aria-valuetext="Advanced" class="progress_bar skill1" role="progressbar" style="width:85%;"></div>
 </div>
 </div>
-<div aria-labelledby="cap-engineering-tab" class="tab-pane fade" id="cap-engineering" role="tabpanel" tabindex="0">
-<div class="capability-pane-shell tone-violet">
-<div class="capability-pane-head"><div class="capability-pane-icon"><i class="fas fa-code"></i></div><div><span class="capability-kicker">Hands-on Engineering</span><h3>Core Engineering Strengths</h3><p>Deep software engineering capability across .NET, databases, web technologies, and object-oriented development.</p></div></div>
-<div class="row g-4 capability-featured-grid">
-<div class="col-lg-6"><div class="cap-skill-item tone-violet"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-code"></i><h4>C#</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-violet"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-window-restore"></i><h4>ASP.NET Core</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-violet"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-layer-group"></i><h4>.NET Framework</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-violet"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-database"></i><h4>SQL</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-violet"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-database"></i><h4>PostgreSQL</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-violet"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-server"></i><h4>SQL Server</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
 </div>
-<div class="capability-supporting"><span class="supporting-title">Supporting engineering stack</span><div class="capability-chip-cloud"><span>Entity Framework</span><span>MySQL</span><span>LINQ</span><span>Object-Oriented Programming</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span></div></div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>ASP.NET</span>
+<span class="skill_percentage">Strong</span>
+</div>
+<div class="progress_container">
+<div aria-label="ASP.NET" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" aria-valuetext="Strong" class="progress_bar skill2" role="progressbar" style="width:75%;"></div>
 </div>
 </div>
-<div aria-labelledby="cap-data-analytics-tab" class="tab-pane fade" id="cap-data-analytics" role="tabpanel" tabindex="0">
-<div class="capability-pane-shell tone-emerald">
-<div class="capability-pane-head"><div class="capability-pane-icon"><i class="fas fa-chart-line"></i></div><div><span class="capability-kicker">Evidence &amp; Insight</span><h3>Data, Analytics &amp; Reporting</h3><p>Capabilities in warehousing, master data, validation, executive dashboards, and analytical enablement.</p></div></div>
-<div class="row g-4 capability-featured-grid">
-<div class="col-lg-6"><div class="cap-skill-item tone-emerald"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-chart-pie"></i><h4>Power BI</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-emerald"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-stream"></i><h4>Data Pipelines</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-emerald"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-database"></i><h4>Master Data Management</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-emerald"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-tachometer-alt"></i><h4>Executive Dashboards</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-emerald"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-check-double"></i><h4>Data Validation</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-emerald"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-search-dollar"></i><h4>Demand Analysis</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
 </div>
-<div class="capability-supporting"><span class="supporting-title">Supporting analytics tools</span><div class="capability-chip-cloud"><span>Apache Superset</span><span>SSRS</span><span>Crystal Reports</span><span>Operational Data Stores</span><span>Forecasting Support</span></div></div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>Entity Framework</span>
+<span class="skill_percentage">Proficient</span>
+</div>
+<div class="progress_container">
+<div aria-label="Entity Framework" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" aria-valuetext="Proficient" class="progress_bar skill3" role="progressbar" style="width:70%;"></div>
 </div>
 </div>
-<div aria-labelledby="cap-app-delivery-tab" class="tab-pane fade" id="cap-app-delivery" role="tabpanel" tabindex="0">
-<div class="capability-pane-shell tone-rose">
-<div class="capability-pane-head"><div class="capability-pane-icon"><i class="fas fa-layer-group"></i></div><div><span class="capability-kicker">Product &amp; Platform Delivery</span><h3>Application &amp; Platform Delivery</h3><p>Front-end, back-end, workflow, and platform tools used across enterprise applications and public-sector solutions.</p></div></div>
-<div class="row g-4 capability-featured-grid">
-<div class="col-lg-6"><div class="cap-skill-item tone-rose"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fab fa-react"></i><h4>React.js</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-rose"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fab fa-node-js"></i><h4>Node.js</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-rose"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-random"></i><h4>Workflow Engines</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-rose"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-table"></i><h4>Kendo UI</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
-<div class="col-lg-12"><div class="cap-skill-item tone-rose"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-th-large"></i><h4>DevExpress</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
 </div>
-<div class="capability-supporting"><span class="supporting-title">Supporting frameworks &amp; platforms</span><div class="capability-chip-cloud"><span>jQuery</span><span>Bootstrap</span><span>Sitefinity</span><span>Kentico</span><span>Umbraco</span><span>nopCommerce</span></div></div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>ReactJS</span>
+<span class="skill_percentage">Proficient</span>
+</div>
+<div class="progress_container">
+<div aria-label="ReactJS" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" aria-valuetext="Proficient" class="progress_bar skill4" role="progressbar" style="width:70%;"></div>
 </div>
 </div>
-<div aria-labelledby="cap-secops-tab" class="tab-pane fade" id="cap-secops" role="tabpanel" tabindex="0">
-<div class="capability-pane-shell tone-indigo">
-<div class="capability-pane-head"><div class="capability-pane-icon"><i class="fas fa-shield-alt"></i></div><div><span class="capability-kicker">Reliable &amp; Secure Delivery</span><h3>Delivery, Security &amp; Operations</h3><p>Tooling, governance, quality, secure delivery, operational controls, and resilience capabilities.</p></div></div>
-<div class="row g-4 capability-featured-grid">
-<div class="col-lg-6"><div class="cap-skill-item tone-indigo"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-infinity"></i><h4>CI/CD</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-indigo"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-sync-alt"></i><h4>SDLC</h4></div><span class="cap-skill-level">Advanced</span></div><div class="cap-skill-bar"><span style="width:88%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-indigo"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-vial"></i><h4>Quality Assurance</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-indigo"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-clipboard-check"></i><h4>Release Governance</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-indigo"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-user-shield"></i><h4>Secure Coding</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
-<div class="col-lg-6"><div class="cap-skill-item tone-indigo"><div class="cap-skill-top"><div class="cap-skill-name"><i class="fas fa-people-carry"></i><h4>Change Management</h4></div><span class="cap-skill-level">Strong</span></div><div class="cap-skill-bar"><span style="width:78%"></span></div></div></div>
 </div>
-<div class="capability-supporting"><span class="supporting-title">Supporting tools &amp; controls</span><div class="capability-chip-cloud"><span>Docker</span><span>Jenkins</span><span>Git</span><span>GitHub</span><span>Jira</span><span>Postman</span><span>Agile</span><span>RBAC</span><span>Data Encryption</span><span>Audit Logs</span><span>Backup and Recovery</span></div></div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>Kendo UI</span>
+<span class="skill_percentage">Working</span>
+</div>
+<div class="progress_container">
+<div aria-label="Kendo UI" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" aria-valuetext="Working" class="progress_bar skill5" role="progressbar" style="width:60%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>jQuery</span>
+<span class="skill_percentage">Working</span>
+</div>
+<div class="progress_container">
+<div aria-label="jQuery" aria-valuemax="100" aria-valuemin="0" aria-valuenow="55" aria-valuetext="Working" class="progress_bar skill6" role="progressbar" style="width:55%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>Chart.js</span>
+<span class="skill_percentage">Working</span>
+</div>
+<div class="progress_container">
+<div aria-label="Chart.js" aria-valuemax="100" aria-valuemin="0" aria-valuenow="55" aria-valuetext="Working" class="progress_bar skill7" role="progressbar" style="width:55%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>Bootstrap</span>
+<span class="skill_percentage">Working</span>
+</div>
+<div class="progress_container">
+<div aria-label="Bootstrap" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" aria-valuetext="Working" class="progress_bar skill8" role="progressbar" style="width:60%;"></div>
+</div>
+</div>
+</div>
+<!--<div class="col-lg-4 col-md-6 col-sm-4">
+                                <div class="skill_progress">
+                                    <div class="skill_header">
+                                        <span>Sitefinity</span>
+                                        <span class="skill_percentage">55%</span>
+                                    </div>
+                                    <div class="progress_container">
+                                        <div class="progress_bar skill9" style="width:55%;"></div>
+                                    </div>
+                                </div>
+                            </div>-->
+</div>
+</div>
+<!-- Panel 2: Security & Governance -->
+<div aria-labelledby="security-tab" class="tab-pane fade" id="security" role="tabpanel">
+<div class="row g-4">
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>Web Security</span>
+<span class="skill_percentage">Advanced</span>
+</div>
+<div class="progress_container">
+<div aria-label="Web Security" aria-valuemax="100" aria-valuemin="0" aria-valuenow="85" aria-valuetext="Advanced" class="progress_bar skill2" role="progressbar" style="width:85%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>Data Encryption</span>
+<span class="skill_percentage">Strong</span>
+</div>
+<div class="progress_container">
+<div aria-label="Data Encryption" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" aria-valuetext="Strong" class="progress_bar skill3" role="progressbar" style="width:80%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>Data Compliance</span>
+<span class="skill_percentage">Strong</span>
+</div>
+<div class="progress_container">
+<div aria-label="Data Compliance" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" aria-valuetext="Strong" class="progress_bar skill4" role="progressbar" style="width:80%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>Secure Coding Practice</span>
+<span class="skill_percentage">Strong</span>
+</div>
+<div class="progress_container">
+<div aria-label="Secure Coding Practice" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" aria-valuetext="Strong" class="progress_bar skill5" role="progressbar" style="width:80%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>Technical Documentation</span>
+<span class="skill_percentage">Strong</span>
+</div>
+<div class="progress_container">
+<div aria-label="Technical Documentation" aria-valuemax="100" aria-valuemin="0" aria-valuenow="78" aria-valuetext="Strong" class="progress_bar skill6" role="progressbar" style="width:78%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Panel 3: Data Platforms & Analytics -->
+<div aria-labelledby="data-tab" class="tab-pane fade" id="data" role="tabpanel">
+<div class="row g-4">
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>PostgreSQL</span>
+<span class="skill_percentage">Strong</span>
+</div>
+<div class="progress_container">
+<div aria-label="PostgreSQL" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" aria-valuetext="Strong" class="progress_bar skill7" role="progressbar" style="width:80%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>SQL Server</span>
+<span class="skill_percentage">Strong</span>
+</div>
+<div class="progress_container">
+<div aria-label="SQL Server" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" aria-valuetext="Strong" class="progress_bar skill8" role="progressbar" style="width:75%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>MySQL</span>
+<span class="skill_percentage">Proficient</span>
+</div>
+<div class="progress_container">
+<div aria-label="MySQL" aria-valuemax="100" aria-valuemin="0" aria-valuenow="65" aria-valuetext="Proficient" class="progress_bar skill9" role="progressbar" style="width:65%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>Apache Superset</span>
+<span class="skill_percentage">Working</span>
+</div>
+<div class="progress_container">
+<div aria-label="Apache Superset" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" aria-valuetext="Working" class="progress_bar skill1" role="progressbar" style="width:60%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>SSRS</span>
+<span class="skill_percentage">Working</span>
+</div>
+<div class="progress_container">
+<div aria-label="SSRS" aria-valuemax="100" aria-valuemin="0" aria-valuenow="55" aria-valuetext="Working" class="progress_bar skill2" role="progressbar" style="width:55%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>Crystal Reports</span>
+<span class="skill_percentage">Working</span>
+</div>
+<div class="progress_container">
+<div aria-label="Crystal Reports" aria-valuemax="100" aria-valuemin="0" aria-valuenow="55" aria-valuetext="Working" class="progress_bar skill3" role="progressbar" style="width:55%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>DevExpress</span>
+<span class="skill_percentage">Working</span>
+</div>
+<div class="progress_container">
+<div aria-label="DevExpress" aria-valuemax="100" aria-valuemin="0" aria-valuenow="55" aria-valuetext="Working" class="progress_bar skill4" role="progressbar" style="width:55%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>MongoDB</span>
+<span class="skill_percentage">Working</span>
+</div>
+<div class="progress_container">
+<div aria-label="MongoDB" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" aria-valuetext="Working" class="progress_bar skill5" role="progressbar" style="width:60%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>Redis</span>
+<span class="skill_percentage">Working</span>
+</div>
+<div class="progress_container">
+<div aria-label="Redis" aria-valuemax="100" aria-valuemin="0" aria-valuenow="55" aria-valuetext="Working" class="progress_bar skill6" role="progressbar" style="width:55%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Panel 4: DevOps & Reliability -->
+<div aria-labelledby="devops-tab" class="tab-pane fade" id="devops" role="tabpanel">
+<div class="row g-4">
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>Git</span>
+<span class="skill_percentage">Advanced</span>
+</div>
+<div class="progress_container">
+<div aria-label="Git" aria-valuemax="100" aria-valuemin="0" aria-valuenow="85" aria-valuetext="Advanced" class="progress_bar skill9" role="progressbar" style="width:85%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>GitHub</span>
+<span class="skill_percentage">Strong</span>
+</div>
+<div class="progress_container">
+<div aria-label="GitHub" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" aria-valuetext="Strong" class="progress_bar skill1" role="progressbar" style="width:80%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>Jenkins</span>
+<span class="skill_percentage">Proficient</span>
+</div>
+<div class="progress_container">
+<div aria-label="Jenkins" aria-valuemax="100" aria-valuemin="0" aria-valuenow="65" aria-valuetext="Proficient" class="progress_bar skill2" role="progressbar" style="width:65%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>Docker</span>
+<span class="skill_percentage">Proficient</span>
+</div>
+<div class="progress_container">
+<div aria-label="Docker" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" aria-valuetext="Proficient" class="progress_bar skill3" role="progressbar" style="width:70%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>Postman</span>
+<span class="skill_percentage">Working</span>
+</div>
+<div class="progress_container">
+<div aria-label="Postman" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" aria-valuetext="Working" class="progress_bar skill4" role="progressbar" style="width:60%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>CI/CD Pipelines</span>
+<span class="skill_percentage">Strong</span>
+</div>
+<div class="progress_container">
+<div aria-label="CI/CD Pipelines" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" aria-valuetext="Strong" class="progress_bar skill5" role="progressbar" style="width:75%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>Performance Monitoring</span>
+<span class="skill_percentage">Proficient</span>
+</div>
+<div class="progress_container">
+<div aria-label="Performance Monitoring" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" aria-valuetext="Proficient" class="progress_bar skill6" role="progressbar" style="width:70%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Panel 5: Engineering Practices -->
+<div aria-labelledby="eng-practices-tab" class="tab-pane fade" id="eng-practices" role="tabpanel">
+<div class="row g-4">
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>SDLC</span>
+<span class="skill_percentage">Advanced</span>
+</div>
+<div class="progress_container">
+<div aria-label="SDLC" aria-valuemax="100" aria-valuemin="0" aria-valuenow="85" aria-valuetext="Advanced" class="progress_bar skill7" role="progressbar" style="width:85%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>System Integration</span>
+<span class="skill_percentage">Advanced</span>
+</div>
+<div class="progress_container">
+<div aria-label="System Integration" aria-valuemax="100" aria-valuemin="0" aria-valuenow="85" aria-valuetext="Advanced" class="progress_bar skill8" role="progressbar" style="width:85%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>Technical Audits</span>
+<span class="skill_percentage">Strong</span>
+</div>
+<div class="progress_container">
+<div aria-label="Technical Audits" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" aria-valuetext="Strong" class="progress_bar skill9" role="progressbar" style="width:80%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>Agile</span>
+<span class="skill_percentage">Strong</span>
+</div>
+<div class="progress_container">
+<div aria-label="Agile" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" aria-valuetext="Strong" class="progress_bar skill1" role="progressbar" style="width:80%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>Scrum</span>
+<span class="skill_percentage">Strong</span>
+</div>
+<div class="progress_container">
+<div aria-label="Scrum" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" aria-valuetext="Strong" class="progress_bar skill2" role="progressbar" style="width:80%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>QA Strategy</span>
+<span class="skill_percentage">Strong</span>
+</div>
+<div class="progress_container">
+<div aria-label="QA Strategy" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" aria-valuetext="Strong" class="progress_bar skill3" role="progressbar" style="width:75%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Panel 6: Languages & Core Tech -->
+<div aria-labelledby="languages-tab" class="tab-pane fade" id="languages" role="tabpanel">
+<div class="row g-4">
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>C#</span>
+<span class="skill_percentage">Advanced</span>
+</div>
+<div class="progress_container">
+<div aria-label="C#" aria-valuemax="100" aria-valuemin="0" aria-valuenow="85" aria-valuetext="Advanced" class="progress_bar skill4" role="progressbar" style="width:85%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>JavaScript</span>
+<span class="skill_percentage">Strong</span>
+</div>
+<div class="progress_container">
+<div aria-label="JavaScript" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" aria-valuetext="Strong" class="progress_bar skill5" role="progressbar" style="width:80%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>HTML</span>
+<span class="skill_percentage">Strong</span>
+</div>
+<div class="progress_container">
+<div aria-label="HTML" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" aria-valuetext="Strong" class="progress_bar skill6" role="progressbar" style="width:75%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>CSS</span>
+<span class="skill_percentage">Proficient</span>
+</div>
+<div class="progress_container">
+<div aria-label="CSS" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" aria-valuetext="Proficient" class="progress_bar skill7" role="progressbar" style="width:70%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>SQL</span>
+<span class="skill_percentage">Advanced</span>
+</div>
+<div class="progress_container">
+<div aria-label="SQL" aria-valuemax="100" aria-valuemin="0" aria-valuenow="85" aria-valuetext="Advanced" class="progress_bar skill8" role="progressbar" style="width:85%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>LINQ</span>
+<span class="skill_percentage">Strong</span>
+</div>
+<div class="progress_container">
+<div aria-label="LINQ" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" aria-valuetext="Strong" class="progress_bar skill9" role="progressbar" style="width:75%;"></div>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-4">
+<div class="skill_progress">
+<div class="skill_header">
+<span>OOP</span>
+<span class="skill_percentage">Advanced</span>
+</div>
+<div class="progress_container">
+<div aria-label="OOP" aria-valuemax="100" aria-valuemin="0" aria-valuenow="85" aria-valuetext="Advanced" class="progress_bar skill1" role="progressbar" style="width:85%;"></div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>

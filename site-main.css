@@ -15208,3 +15208,250 @@ img, video, canvas, svg {
         font-size: clamp(10px, 2.85vw, 12px) !important;
     }
 }
+
+/* =========================================================
+   Skills tabs — final responsive repair (2026-08-09)
+   Scoped to #skills only. Restores the classic My Skills UI
+   without reintroducing legacy global CSS.
+   ========================================================= */
+#skills.skills_tabs_section {
+    position: relative;
+    padding-block: 72px;
+    overflow: hidden;
+}
+
+#skills #skillsTab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px 14px;
+    margin: 28px auto 0;
+    padding: 0;
+    border: 0;
+    max-width: 1080px;
+}
+
+#skills #skillsTab .nav-item {
+    flex: 0 1 auto;
+    margin: 0;
+}
+
+#skills #skillsTab .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 10px 18px;
+    margin: 0;
+    border: 1px solid rgba(72,101,139,.18);
+    border-radius: 12px;
+    background: #fff;
+    color: #2f7ee6;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.25;
+    white-space: normal;
+    text-align: center;
+    box-shadow: 0 5px 16px rgba(15,23,42,.045);
+    transition: background-color .2s ease, color .2s ease, border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+
+#skills #skillsTab .nav-link:hover,
+#skills #skillsTab .nav-link:focus-visible {
+    color: #1d5fb9;
+    border-color: rgba(47,126,230,.42);
+    box-shadow: 0 8px 20px rgba(47,126,230,.10);
+    transform: translateY(-1px);
+}
+
+#skills #skillsTab .nav-link.active {
+    color: #394150;
+    background: #fff;
+    border-color: rgba(57,65,80,.22);
+    box-shadow: 0 8px 22px rgba(15,23,42,.07);
+}
+
+#skills #skillsTabContent {
+    margin-top: 26px;
+}
+
+#skills #skillsTabContent > .tab-pane {
+    margin: 0;
+    padding: 0;
+}
+
+#skills #skillsTabContent .row {
+    row-gap: 16px;
+}
+
+#skills .skill_progress {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 92px;
+    padding: 16px 18px 15px;
+    margin: 0;
+    border: 1px solid rgba(72,101,139,.12);
+    border-radius: 14px;
+    background: #fff;
+    box-shadow: 0 7px 20px rgba(15,23,42,.05);
+}
+
+#skills .skill_header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 0 0 12px;
+    color: #222;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+#skills .skill_header > span:first-child {
+    min-width: 0;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+#skills .skill_percentage {
+    flex: 0 0 auto;
+    color: #57606f;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+#skills .progress_container {
+    position: relative;
+    width: 100%;
+    height: 7px;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #eaf0f7;
+}
+
+#skills .progress_bar {
+    display: block;
+    height: 100%;
+    max-width: 100%;
+    margin: 0;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #48658b 0%, #2f7ee6 100%);
+    box-shadow: none;
+}
+
+/* Keep hidden Bootstrap tab panes out of layout even if a legacy rule leaks in. */
+#skills #skillsTabContent > .tab-pane:not(.active) {
+    display: none !important;
+}
+#skills #skillsTabContent > .tab-pane.active {
+    display: block;
+}
+
+@media (max-width: 767.98px) {
+    #skills.skills_tabs_section {
+        padding-block: 52px;
+    }
+
+    #skills .port_heading_wrapper {
+        margin-bottom: 0;
+    }
+
+    #skills #skillsTab {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 9px;
+        width: 100%;
+        margin-top: 22px;
+        padding-inline: 0;
+        overflow: visible;
+        white-space: normal;
+    }
+
+    #skills #skillsTab .nav-item {
+        width: 100%;
+        min-width: 0;
+    }
+
+    #skills #skillsTab .nav-link {
+        width: 100%;
+        min-width: 0;
+        min-height: 52px;
+        padding: 9px 8px;
+        border-radius: 11px;
+        font-size: 12.5px;
+        line-height: 1.25;
+    }
+
+    #skills #skillsTabContent {
+        margin-top: 18px;
+    }
+
+    #skills #skillsTabContent .row {
+        --bs-gutter-x: 12px;
+        --bs-gutter-y: 12px;
+        row-gap: 0;
+    }
+
+    /* Two compact skill cards per row on normal phones. */
+    #skills #skillsTabContent [class*="col-lg-4"] {
+        flex: 0 0 50%;
+        width: 50%;
+        max-width: 50%;
+    }
+
+    #skills .skill_progress {
+        min-height: 88px;
+        padding: 14px 12px 13px;
+        border-radius: 12px;
+    }
+
+    #skills .skill_header {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 13.5px;
+    }
+
+    #skills .skill_header > span:first-child,
+    #skills .skill_percentage {
+        display: block;
+    }
+
+    #skills .skill_percentage {
+        margin-top: 4px;
+        font-size: 11px;
+    }
+
+    #skills .progress_container {
+        height: 6px;
+    }
+}
+
+@media (max-width: 420px) {
+    #skills #skillsTab {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #skills #skillsTab .nav-link {
+        font-size: 11.5px;
+        padding-inline: 6px;
+    }
+
+    #skills #skillsTabContent [class*="col-lg-4"] {
+        flex: 0 0 50%;
+        width: 50%;
+        max-width: 50%;
+    }
+
+    #skills .skill_progress {
+        min-height: 84px;
+        padding: 13px 10px 12px;
+    }
+
+    #skills .skill_header {
+        font-size: 12.5px;
+    }
+}

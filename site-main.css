@@ -15526,3 +15526,85 @@ img, video, canvas, svg {
         right: 0;
     }
 }
+
+/* Final mobile polish for portfolio/gallery CTAs and involvements timeline. */
+.gallery-more-actions,
+.gallery-more-actions .portfolio_btn,
+#gallery .gallery-more-actions,
+#gallery .gallery-more-actions .portfolio_btn {
+    text-align: center;
+}
+
+.gallery-more-actions {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.gallery-more-actions .portfolio_btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.port_projects_setions .banner_btn,
+.port_projects_setions .banner_btn.text-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.port_projects_setions .banner_btn .portfolio_btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeline,
+.involvements_timeline_section .timeline {
+    --timeline-axis-x: 50%;
+}
+
+.timeline::before,
+.involvements_timeline_section .timeline::before {
+    left: var(--timeline-axis-x);
+    transform: translateX(-50%);
+}
+
+.timeline .tl_dot,
+.involvements_timeline_section .tl_dot {
+    left: var(--timeline-axis-x);
+    transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    .timeline,
+    .involvements_timeline_section .timeline {
+        --timeline-axis-x: 28px;
+    }
+
+    .timeline::before,
+    .involvements_timeline_section .timeline::before {
+        left: var(--timeline-axis-x);
+        transform: translateX(-50%);
+    }
+
+    .timeline .tl_dot,
+    .involvements_timeline_section .tl_dot {
+        left: var(--timeline-axis-x);
+        transform: translateX(-50%);
+    }
+
+    .port_projects_setions .banner_btn,
+    .gallery-more-actions {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .port_projects_setions .banner_btn .portfolio_btn,
+    .gallery-more-actions .portfolio_btn,
+    #gallery .gallery-portfolio-link {
+        width: min(100%, 340px);
+        min-width: 0;
+        max-width: 340px;
+    }
+}

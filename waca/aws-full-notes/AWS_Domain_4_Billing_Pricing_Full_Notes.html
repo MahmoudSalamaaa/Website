@@ -1,0 +1,537 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>AWS Domain 4 - Billing &amp; Pricing - Full Notes</title><style>
+:root{--bg:#f4f7fb;--paper:#fff;--ink:#13213a;--muted:#607089;--line:#dce5f0;--navy:#172f4f;--accent:#e87825;--soft:#fdf3ea;--good:#0b6e69;--shadow:0 16px 45px rgba(20,45,78,.09)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Noto Sans Arabic","Segoe UI",Arial,sans-serif;line-height:1.7}
+a{color:#0b5fab;text-decoration:none}.topbar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.topinner{max-width:1280px;margin:auto;padding:13px 24px;display:flex;gap:16px;align-items:center}.brand{font-weight:800;color:var(--navy);white-space:nowrap}.badge{font-size:12px;font-weight:700;color:#a2470d;background:#fff0e4;border:1px solid #f6cfb4;border-radius:999px;padding:4px 9px}.search{margin-left:auto;width:min(360px,40vw);border:1px solid var(--line);border-radius:12px;padding:10px 13px;background:#fff;color:var(--ink)}.layout{max-width:1280px;margin:28px auto 60px;padding:0 24px;display:grid;grid-template-columns:280px minmax(0,1fr);gap:24px}.toc{position:sticky;top:82px;align-self:start;max-height:calc(100vh - 102px);overflow:auto;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:var(--shadow)}.toc h3{margin:0 0 10px;font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}.toc a{display:block;font-size:13px;padding:7px 9px;border-radius:9px;color:#44556f}.toc a:hover{background:#f1f5fa;color:#102b50}.paper{background:var(--paper);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);overflow:hidden}.hero{padding:42px 46px 30px;background:linear-gradient(135deg,#132d4c,#244f78);color:#fff;border-bottom:5px solid var(--accent)}.hero .eyebrow{font-size:13px;text-transform:uppercase;letter-spacing:.12em;opacity:.8;font-weight:700}.hero h1{margin:8px 0 6px;font-size:36px;line-height:1.15}.hero p{margin:0;opacity:.84}.content{padding:34px 46px 56px}.content h1:first-child,.content h2:first-of-type{display:none}.content h2{font-size:26px;color:var(--navy);margin:42px 0 18px;padding-top:18px;border-top:1px solid var(--line)}.content h2:first-of-type{border-top:0}.content h3{font-size:19px;color:#1c4268;margin:26px 0 8px}.content h4{font-size:16px;margin:20px 0 7px;color:#2e5477}.content p{margin:8px 0 13px}.content ul,.content ol{padding-left:24px;margin:8px 0 16px}.content li{margin:4px 0}.content strong{color:#0c355d}.content blockquote{margin:0 0 30px;padding:17px 20px;border-left:4px solid var(--accent);background:var(--soft);border-radius:0 12px 12px 0;color:#5e4736}.content hr{border:0;border-top:1px solid var(--line);margin:34px 0}.content code{background:#eef3f8;padding:2px 6px;border-radius:5px}.page-chip{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--good);background:#eaf8f6;border:1px solid #c4e9e3;border-radius:999px;padding:5px 9px;margin-bottom:8px}.footer{color:var(--muted);font-size:12px;text-align:center;padding:24px}.rtl{direction:rtl;text-align:right}.hidden-by-search{display:none!important}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.toc{display:none}.hero,.content{padding-left:24px;padding-right:24px}.hero h1{font-size:29px}.search{width:45vw}}
+@media print{body{background:white}.topbar,.toc,.footer{display:none!important}.layout{display:block;max-width:none;margin:0;padding:0}.paper{border:0;border-radius:0;box-shadow:none}.hero{padding:24mm 18mm 12mm}.content{padding:10mm 18mm 18mm}.content h2{break-before:page;margin-top:0;padding-top:0;border-top:0}.content h2:first-of-type{break-before:auto}.content h3,.content h4{break-after:avoid}.content ul,.content ol,blockquote{break-inside:avoid}a{color:inherit} @page{size:A4;margin:0}}
+</style><style>.waca-back{position:fixed;right:18px;bottom:18px;z-index:9999;background:#0b2d45;color:#fff;text-decoration:none;padding:10px 14px;border-radius:999px;font:600 13px/1.2 system-ui,-apple-system,Segoe UI,sans-serif;box-shadow:0 8px 28px rgba(0,0,0,.18)}.waca-back:hover{transform:translateY(-1px)}</style><link rel="stylesheet" href="../assets/css/aws-notes.css"></head><body><a class="waca-back" href="../aws-library.html">← AWS Library</a>
+<header class="topbar"><div class="topinner"><div class="brand">AWS CLEAN WRITTEN NOTES</div><span class="badge">SOURCE-FAITHFUL</span><input class="search" id="q" type="search" placeholder="Search this document..." aria-label="Search"></div></header>
+<div class="layout"><aside class="toc"><h3>Contents</h3><div class="toclinks"></div></aside><main class="paper"><section class="hero"><div class="eyebrow">Complete standalone transcription</div><h1>AWS Domain 4 - Billing &amp; Pricing</h1><p>10 source pages • typed from the uploaded handwritten source • no external additions</p></section><article class="content"><h1>AWS Domain 4 - Billing &amp; Pricing</h1>
+<h2>Complete Clean Transcription of the Uploaded Handwritten Notes</h2>
+<blockquote>
+<p><strong>Source-faithful edition.</strong> This document rewrites the uploaded handwritten notes into clean typed text. It preserves the concepts, examples, figures, prices, response times, service names, comparisons, and practical notes <strong>as written in the source</strong>. No external material is added, and the notes are not externally verified or updated.</p>
+</blockquote>
+<hr />
+<h2>Source Page 1 - Pricing Models, TCO, Pricing Calculator</h2>
+<h3>Pricing &amp; Billing - Domain 4</h3>
+<p>The source summarizes three broad pricing dimensions:</p>
+<ol>
+<li><strong>Compute</strong> - hourly / usage-based.</li>
+<li><strong>Storage</strong>.</li>
+<li><strong>Outbound data transfer</strong>.</li>
+</ol>
+<h3>Free offer types written</h3>
+<ol>
+<li><strong>12-month free</strong> - initial sign-up.</li>
+<li><strong>Always Free</strong>.</li>
+<li><strong>Trials</strong> - pay-as-you-go / temporary trial type as noted.</li>
+</ol>
+<h3>EC2 pricing models</h3>
+<ol>
+<li><strong>On-Demand</strong> - pay by hour / second, without prepaying.</li>
+<li><strong>Savings Plans</strong> - commit to compute usage for <strong>1 or 3 years</strong>.</li>
+<li><strong>Reserved Instances</strong> - commit for <strong>1 or 3 years</strong>; source notes reduced compute cost.</li>
+<li><strong>Spot Instances</strong> - use spare capacity at lower cost.</li>
+<li><strong>Dedicated Host</strong> - physical server.</li>
+</ol>
+<h3>Lambda pricing model</h3>
+<ol>
+<li><strong>Number of requests / invocations</strong>.</li>
+<li><strong>Execution time</strong>.</li>
+<li>Source note: <strong>1 million requests per month</strong> under an Always Free-style allowance (as written in the notes).</li>
+</ol>
+<h3>S3 pricing model</h3>
+<ol>
+<li><strong>Storage class</strong> (example: Standard).</li>
+<li><strong>Number and size of objects</strong>.</li>
+<li><strong>Data transfer out of the S3 Region</strong>.</li>
+<li><strong>Requests and data retrieval</strong>.</li>
+</ol>
+<h3>RDS pricing model</h3>
+<ol>
+<li>Running <strong>clock hours</strong>.</li>
+<li><strong>Type of database</strong> - source examples/parameters include memory, size, engine.</li>
+<li><strong>Storage</strong>.</li>
+<li><strong>Purchase type</strong> - On-Demand / RI, etc.</li>
+<li><strong>Database count / number of instances</strong>.</li>
+<li><strong>API requests &amp; calls</strong> (source note references insights/dashboard calls).</li>
+<li><strong>Deployment type</strong> - single or multi-AZ.</li>
+<li><strong>Outbound data transfer</strong>.</li>
+</ol>
+<h3>TCO - Total Cost of Ownership</h3>
+<ul>
+<li>A financial estimate that helps you understand <strong>direct + indirect costs on AWS</strong>.</li>
+<li>Used before migration to estimate total cost.</li>
+<li>Source points to <strong>Application Discovery Service</strong> in the migration/TCO context.</li>
+</ul>
+<h3>Three ways to reduce TCO</h3>
+<ol>
+<li><strong>Minimize CapEx</strong>.</li>
+<li><strong>Utilize Reserved Instances</strong>.</li>
+<li><strong>Right-size your resources</strong>.</li>
+</ol>
+<h3>AWS Pricing Calculator</h3>
+<ul>
+<li>Estimate AWS fees and charges based on:<ul>
+<li>Use case.</li>
+<li>Needs.</li>
+<li>Suitable instance/service type.</li>
+</ul>
+</li>
+<li>Source note: used to calculate / estimate <strong>TCO</strong> before committing.</li>
+</ul>
+<hr />
+<h2>Source Page 2 - Cost &amp; Usage, Cost Explorer, Tags, Price List API, Budgets</h2>
+<h3>Cost and Usage Report (CUR)</h3>
+<ul>
+<li>View <strong>granular data about the AWS bill</strong>.</li>
+<li>Used when detailed cost/usage information is needed.</li>
+<li>Source notes the report can be downloaded / delivered to an <strong>S3 bucket / S3 Console</strong>.</li>
+</ul>
+<h3>3. AWS Cost Explorer</h3>
+<ul>
+<li>Allows you to <strong>visualize and forecast costs and usage</strong>.</li>
+<li>Visualizes data and can forecast roughly <strong>12 months</strong> (as written).</li>
+<li>Source example: analyze EC2 instance usage over the past <strong>7, 30, or 60 days</strong>.</li>
+</ul>
+<h3>4. Tags</h3>
+<ul>
+<li>Useful for <strong>tracking spend/cost</strong> through the cost-allocation report.</li>
+<li>Apply labels to resources, e.g., project/resource labels, so costs can be traced to an owner/project.</li>
+<li>Source note: important for governance when multiple AWS accounts / teams share billing.</li>
+</ul>
+<h3>AWS Price List API</h3>
+<ul>
+<li>Query service pricing programmatically.</li>
+<li>Query using <strong>JSON or HTML</strong> (wording as written in the source).</li>
+<li>Receive price alerts when <strong>prices change</strong>.</li>
+</ul>
+<h3>Pricing vs Billing - source distinction</h3>
+<ul>
+<li>Pricing tells you <strong>how much services cost</strong> / how pricing is calculated.</li>
+<li>Billing tells you <strong>what you are actually charged</strong> and helps track ongoing spend.</li>
+</ul>
+<h3>Billing - 1. AWS Budgets</h3>
+<ul>
+<li>Alert you when you <strong>exceed a budgeted amount / threshold</strong>.</li>
+<li>Can create budgets for:<ul>
+<li>Cost.</li>
+<li>Usage.</li>
+<li>Reservation / Savings Plans-related metrics.</li>
+</ul>
+</li>
+<li>Real-world note: set a budget and alert when reaching / exceeding <strong>free-tier limits</strong>.</li>
+</ul>
+<h3>Billing - 2. Cost and Usage Report</h3>
+<ul>
+<li>Provides the <strong>most detailed set of AWS cost and usage data</strong>.</li>
+<li>Shows usage by <strong>service/category</strong>.</li>
+<li>Usage can be aggregated / summarized by <strong>daily, hourly, or monthly</strong> periods.</li>
+</ul>
+<hr />
+<h2>Source Page 3 - AWS Organizations, SCPs, Consolidated Billing</h2>
+<h3>Governance - 1. AWS Organizations</h3>
+<ul>
+<li>Allows you to <strong>manage multiple accounts under one umbrella</strong>.</li>
+<li>Described as a <strong>global service</strong>.</li>
+<li>Main / top account is referred to in the notes as the <strong>master account</strong>.</li>
+</ul>
+<h3>Benefits of Organizations</h3>
+<ol>
+<li><strong>Automate account creation</strong>.<ul>
+<li>Source notes mention using APIs to create/manage accounts, sandbox environments, and invite existing accounts programmatically.</li>
+</ul>
+</li>
+<li><strong>Restrict account privileges using Service Control Policies (SCPs)</strong>.<ul>
+<li>Allocate resources and apply policies.</li>
+</ul>
+</li>
+<li>Cost benefits:<ul>
+<li><strong>Single payment for all accounts / consolidated billing</strong>.</li>
+<li>Receive <strong>volume discounts</strong> because usage is combined across accounts.</li>
+<li>Reduce costs by <strong>sharing resources / RI benefits across accounts</strong>.</li>
+</ul>
+</li>
+</ol>
+<h3>Organizations structure shown in the source</h3>
+<ul>
+<li>Root / master payer account.</li>
+<li>Organizational Units (OUs), examples:<ul>
+<li>IT OU.</li>
+<li>Shared Services OU.</li>
+<li>Marketing OU.</li>
+</ul>
+</li>
+<li>Member accounts such as:<ul>
+<li>Dev account.</li>
+<li>Logging account.</li>
+<li>Shared Services account.</li>
+</ul>
+</li>
+<li>Policies / SCPs can be applied at organization / OU levels.</li>
+<li>Source explanation: resources belong to <strong>individual member accounts</strong>, not directly to the OU; the OU groups similar AWS accounts.</li>
+</ul>
+<hr />
+<h2>Source Page 4 - Control Tower, Systems Manager, Trusted Advisor</h2>
+<h3>2. AWS Control Tower</h3>
+<ul>
+<li>Helps set up new accounts using a <strong>multi-account strategy</strong>.</li>
+<li>Works directly with <strong>AWS Organizations</strong>.</li>
+<li>Enforces best use / best practices across accounts.</li>
+<li>Provides a <strong>dashboard to manage accounts</strong>.</li>
+<li>Source explanation: can help accounts conform to company policies / guardrails / SCP-based governance.</li>
+</ul>
+<h4>Control Tower - real-world example</h4>
+<ul>
+<li>Apply a policy such as <strong>disallow public write access to all S3 buckets across accounts</strong>.</li>
+</ul>
+<h3>3. AWS Systems Manager</h3>
+<ul>
+<li>Gives control over AWS resources.</li>
+<li>Benefits written:<ol>
+<li><strong>Automate operational tasks on resources</strong>.</li>
+<li><strong>Group resources to take action</strong>.</li>
+</ol>
+</li>
+<li>Source notes also describe using Systems Manager to:<ul>
+<li>Patch and run commands on multiple <strong>EC2 instances or RDS instances</strong>.</li>
+<li>Automate OS/software patch deployment across a large group of instances.</li>
+</ul>
+</li>
+</ul>
+<h3>4. AWS Trusted Advisor</h3>
+<ul>
+<li>Provides <strong>high-level account assessment</strong>.</li>
+<li>Provides <strong>real-time guidance</strong> to help provision resources following AWS best practices.</li>
+<li>Source describes it as an assessment/checklist service across areas such as performance and security.</li>
+</ul>
+<h4>Trusted Advisor benefits</h4>
+<ol>
+<li>Checks your account and makes <strong>recommendations</strong>.</li>
+<li>Helps you see <strong>service limits</strong>.</li>
+<li>Helps you understand <strong>best practices</strong>.</li>
+</ol>
+<h4>Recommendation categories / examples written</h4>
+<ul>
+<li><strong>Cost optimization</strong> - detect unused resources; some checks are free while broader checks are associated with Business / Enterprise support plans in the source notes.</li>
+<li><strong>Performance</strong> - source example: checks around CloudFront content-delivery optimization.</li>
+</ul>
+<hr />
+<h2>Source Page 5 - Trusted Advisor Security Checks, Service Limits, License Manager, ACM</h2>
+<h3>5. Service Limits</h3>
+<ul>
+<li>Basic / free and Developer-related checks are referenced.</li>
+<li>Source example: check for <strong>service usage greater than 80% of a service limit</strong>.</li>
+<li>Example under cost optimization: check <strong>read and write capacity service limits for DynamoDB</strong>.</li>
+<li>Source note: Trusted Advisor can help reduce overall costs by monitoring service limits.</li>
+</ul>
+<h3>Trusted Advisor recommendation category - Security</h3>
+<p>The source notes say some checks are available for Free / Basic &amp; Developer plans and additional checks for Business/Enterprise.</p>
+<p>Checks written:</p>
+<ol>
+<li>Unrestricted access for a <strong>specific port on an EC2 instance</strong>.</li>
+<li><strong>S3 bucket permissions</strong> to determine if public access exists.</li>
+<li><strong>Multi-factor authentication (MFA) on the root account</strong>.</li>
+<li><strong>RDS public snapshots</strong>.</li>
+</ol>
+<p>Additional examples written for Business &amp; Enterprise:</p>
+<ol>
+<li>Check <strong>IAM password policy</strong>.</li>
+<li>Check for <strong>exposed access keys</strong>.</li>
+</ol>
+<h3>Fault Tolerance category</h3>
+<ul>
+<li>The source notes that fault-tolerance checks are available more fully with <strong>Business &amp; Enterprise support plans</strong>.</li>
+</ul>
+<h3>5. AWS License Manager</h3>
+<ul>
+<li>Helps manage <strong>software licenses</strong>.</li>
+<li>Tracks licensing for software running on EC2.</li>
+<li>Source examples include vendor licenses such as:<ul>
+<li>Oracle.</li>
+<li>Microsoft.</li>
+<li>SAP.</li>
+</ul>
+</li>
+<li>Benefits written:<ol>
+<li>Manage <strong>on-premises &amp; AWS licenses</strong>.</li>
+<li>Track licenses for Oracle/Microsoft/SAP and other vendor licenses.</li>
+</ol>
+</li>
+<li>Helps with compliance / license agreements.</li>
+</ul>
+<h3>6. AWS Certificate Manager (ACM)</h3>
+<ul>
+<li>Helps <strong>provision and manage SSL/TLS certificates</strong>.</li>
+<li>Source explanation: SSL/TLS certificate enables HTTPS / encrypted request access.</li>
+</ul>
+<hr />
+<h2>Source Page 6 - ACM Benefits, Amazon Managed Services, Management Services</h2>
+<h3>AWS Certificate Manager (ACM) - benefits</h3>
+<ol>
+<li>Provides <strong>public &amp; private certificates</strong>; source notes free/automatic public-certificate capability.</li>
+<li>Integrated with services such as:<ul>
+<li>Elastic Load Balancer.</li>
+<li>API Gateway.</li>
+<li>CloudFront distributions.</li>
+</ul>
+</li>
+<li>Source diagram: HTTPS client -&gt; certificate/load balancer -&gt; Auto Scaling Group; load balancer provides TLS certificate and offers HTTPS endpoint for clients.</li>
+</ol>
+<h3>Management Services - 1. Amazon Managed Services (AMS)</h3>
+<ul>
+<li>Described as a <strong>team of people / AWS experts</strong> providing infrastructure and application support on AWS.</li>
+<li>AMS team helps operate and manage infrastructure around:<ul>
+<li>Security.</li>
+<li>Reliability.</li>
+<li>Availability.</li>
+</ul>
+</li>
+</ul>
+<h4>AMS benefits written</h4>
+<ol>
+<li><strong>Augments your internal staff</strong>.</li>
+<li>Provides ongoing <strong>management of your infrastructure</strong>.</li>
+<li>Reduces <strong>operational risks and overhead</strong>.</li>
+</ol>
+<ul>
+<li>Examples of managed work noted:<ul>
+<li>Patch management.</li>
+<li>Monitoring.</li>
+<li>Cost optimization.</li>
+</ul>
+</li>
+<li>Source note: <strong>24/365</strong> availability/support wording is written.</li>
+</ul>
+<h4>Source real-world example</h4>
+<ul>
+<li>Managed Services can increase operational efficiency by helping develop <strong>application-specific health monitoring using CloudWatch</strong>.</li>
+</ul>
+<h3>Management / governance service note</h3>
+<ul>
+<li>Source emphasizes that governance and account/resource management services are intended to help administer AWS according to <strong>best practices</strong> and support utilization.</li>
+<li>Examples of planned events written:<ul>
+<li>Product launches.</li>
+<li>Migrations.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>Source Page 7 - Professional Services, APN, Marketplace</h2>
+<h3>2. AWS Professional Services</h3>
+<ul>
+<li>A <strong>team of people</strong> distinct from AMS in the notes.</li>
+<li>Focused on <strong>enterprise customers</strong>.</li>
+<li>Helps enterprise customers <strong>move to a cloud-based operating model</strong>.</li>
+<li>Activities / capabilities written:<ol>
+<li><strong>Propose solutions</strong> - including cloud/infrastructure/migration solutions.</li>
+<li><strong>Architect solutions</strong>.</li>
+<li><strong>Implement solutions</strong> / implement the architecture.</li>
+</ol>
+</li>
+</ul>
+<h3>3. AWS Partner Network (APN)</h3>
+<ul>
+<li>A <strong>global community of approved partners</strong>.</li>
+<li>Partners can provide:<ul>
+<li>Software solutions.</li>
+<li>Consulting services.</li>
+<li>AWS-related expertise.</li>
+</ul>
+</li>
+</ul>
+<h4>APN benefits written</h4>
+<ol>
+<li>Offers technology partners that provide <strong>software solutions</strong>.</li>
+<li>Offers / provides consulting partners providing <strong>professional services</strong>.</li>
+<li>Helps find <strong>approved vendors with deep AWS expertise</strong>.</li>
+</ol>
+<h4>APN real-world example</h4>
+<ul>
+<li>If a team lacks technical expertise to build and deploy a cloud application, APN can help the organization get up and running quickly through:<ul>
+<li><strong>Consulting Partner (Standard)</strong>.</li>
+<li><strong>Technology Partner (Advanced)</strong>.</li>
+</ul>
+</li>
+</ul>
+<h3>4. AWS Marketplace</h3>
+<ul>
+<li>Online platform provided by AWS where customers can deploy software products and services that run on AWS infrastructure.</li>
+<li>Described as a <strong>digital catalog of pre-built solutions</strong>.</li>
+<li>You can:<ul>
+<li>Purchase solutions.</li>
+<li>License solutions.</li>
+<li>Sell your own solutions to others.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>Source Page 8 - Marketplace Benefits, Personal Health Dashboard, Support Plans Intro</h2>
+<h3>Marketplace benefits</h3>
+<ol>
+<li>Buy <strong>third-party software</strong>.</li>
+<li>Sell solutions to other customers.</li>
+<li>Search the catalog of software listings and install with the <strong>click of a button</strong>.</li>
+<li>Try the app before making a long-term commitment - <strong>free trial</strong>.</li>
+</ol>
+<h3>5. Personal Health Dashboard (PHD)</h3>
+<ul>
+<li>AWS feature that helps customers monitor the <strong>status and health of AWS resources</strong>.</li>
+<li>Described as part of / connected with <strong>Trusted Advisor</strong> in the source notes.</li>
+</ul>
+<h4>PHD benefits written</h4>
+<ol>
+<li>Alerts you to <strong>events that might impact your AWS environment</strong>.<ul>
+<li>Examples handwritten include vulnerabilities / resource-impacting events / updates.</li>
+</ul>
+</li>
+<li>Provides <strong>troubleshooting guidance</strong> tailored to your environment.</li>
+<li>Feedback / guidance tailored to your <strong>specific environment</strong>.</li>
+</ol>
+<h3>AWS Support Plans</h3>
+<ul>
+<li>Source says customers choose a support plan based on the type/level of <strong>technical assistance</strong> required.</li>
+<li>Notes mention support categories such as:<ul>
+<li>Code.</li>
+<li>Development.</li>
+<li>Debugging.</li>
+<li>Administration tasks.</li>
+</ul>
+</li>
+<li>Source lists <strong>4 support plans</strong>.</li>
+</ul>
+<h3>1. Basic Support Plan</h3>
+<ul>
+<li>Included <strong>free for all AWS accounts</strong>.</li>
+<li>Features written:<ol>
+<li>Account and billing support cases.</li>
+<li>Service limit increases.</li>
+<li>Source notes also mention customer-service access via email / 24/7 in this section.</li>
+</ol>
+</li>
+<li>Response time depends on the type/severity of support need.</li>
+</ul>
+<h3>2. Developer Support Plan</h3>
+<ul>
+<li>Source price: starts at <strong>$29/month</strong>.</li>
+<li>Recommended for <strong>testing and development</strong>.</li>
+<li>Features written:<ol>
+<li>Account and billing cases.</li>
+<li>Service limit increases.</li>
+<li>Technical support - continued on the next page.</li>
+</ol>
+</li>
+</ul>
+<hr />
+<h2>Source Page 9 - Developer, Business and Enterprise Support</h2>
+<h3>Developer Support Plan - technical support features</h3>
+<ol>
+<li><strong>1 primary contact</strong>.</li>
+<li><strong>Unlimited cases</strong>.</li>
+<li>Contact with a <strong>Cloud Support Associate in business hours via email only</strong>.</li>
+</ol>
+<h4>Developer response times written</h4>
+<ol>
+<li><strong>&lt; 24 hours</strong> - General guidance.</li>
+<li><strong>&lt; 12 hours</strong> - System impaired.</li>
+</ol>
+<h3>3. Business Support Plan</h3>
+<ul>
+<li>Source price: starts at <strong>$100/month</strong>.</li>
+<li>Recommended for <strong>production workloads</strong>.</li>
+<li>Features written:<ol>
+<li>Account and billing cases.</li>
+<li>Service limit increases.</li>
+<li>Technical support.</li>
+</ol>
+</li>
+</ul>
+<h3>Business Plan technical support</h3>
+<ol>
+<li><strong>Unlimited contacts</strong>.</li>
+<li><strong>Unlimited cases</strong>.</li>
+<li><strong>Full set of Trusted Advisor checks</strong>.</li>
+<li>Access to <strong>Cloud Support Engineers 24/7 via email, phone, or chat</strong>.</li>
+</ol>
+<h4>Business response times written</h4>
+<ol>
+<li><strong>&lt; 24 hours</strong> - General guidance.</li>
+<li><strong>&lt; 12 hours</strong> - System impaired.</li>
+<li><strong>&lt; 4 hours</strong> - Production system impaired.</li>
+<li><strong>&lt; 1 hour</strong> - Production system down.</li>
+</ol>
+<h3>4. Enterprise Support Plan</h3>
+<ul>
+<li>Source price: starts at <strong>$15,000/month</strong>.</li>
+<li>Recommended for <strong>business or mission-critical production workloads</strong>.</li>
+<li>Features written:<ol>
+<li>Account and billing cases.</li>
+<li>Service limit increases.</li>
+<li>Technical support.</li>
+</ol>
+</li>
+<li>Additional Enterprise features continue on source page 10.</li>
+</ul>
+<hr />
+<h2>Source Page 10 - Enterprise Support Details and Response Times</h2>
+<h3>Enterprise Plan technical support</h3>
+<ol>
+<li><strong>Unlimited contacts</strong>.</li>
+<li><strong>Unlimited cases</strong>.</li>
+<li><strong>Full set of Trusted Advisor checks</strong>.</li>
+<li><strong>Technical Account Manager (TAM)</strong>.<ul>
+<li>TAM is your designated contact with AWS.</li>
+<li>Monitors your environment.</li>
+<li>Provides best-practices guidance.</li>
+<li>Provides assistance with architecture.</li>
+</ul>
+</li>
+<li><strong>Concierge Support Team</strong>.<ul>
+<li>Source note: handles / helps with <strong>billing and account questions</strong>.</li>
+</ul>
+</li>
+<li><strong>Infrastructure Event Management</strong>.<ul>
+<li>Operational support around <strong>launches or migrations</strong>.</li>
+</ul>
+</li>
+</ol>
+<h3>Enterprise response times written</h3>
+<ol>
+<li><strong>&lt; 24 hours</strong> - General guidance.</li>
+<li><strong>&lt; 12 hours</strong> - System impaired.</li>
+<li><strong>&lt; 4 hours</strong> - Production system impaired.</li>
+<li><strong>&lt; 1 hour</strong> - Production system down.</li>
+<li><strong>&lt; 15 minutes</strong> - Business-critical system down.</li>
+</ol>
+<hr />
+<h2>End of Domain 4 Notes</h2>
+<p>This document contains the clean written content of all <strong>10 source pages</strong> in the uploaded Domain 4 file, organized by source page and topic.</p>
+</article></main></div><div class="footer">Standalone clean transcription of the uploaded AWS notes.</div><script>
+(function(){
+  const content=document.querySelector('.content');
+  const toc=document.querySelector('.toclinks');
+  const headings=[...content.querySelectorAll('h2')];
+  headings.forEach((h,i)=>{
+    const id='section-'+(i+1); h.id=id;
+    const chip=document.createElement('div'); chip.className='page-chip'; chip.textContent='Source section '+(i+1); h.parentNode.insertBefore(chip,h);
+    const a=document.createElement('a'); a.href='#'+id; a.textContent=h.textContent; toc.appendChild(a);
+  });
+  const q=document.getElementById('q');
+  q.addEventListener('input',()=>{
+    const term=q.value.trim().toLowerCase();
+    [...content.children].forEach(el=>el.classList.remove('hidden-by-search'));
+    if(!term) return;
+    let show=false;
+    [...content.children].forEach(el=>{
+      if(el.matches('h2')) show=false;
+      if(el.textContent.toLowerCase().includes(term)) show=true;
+      if(!show && !el.matches('h1,h2')) el.classList.add('hidden-by-search');
+      if(el.matches('h2')){
+        const next=[]; let n=el.nextElementSibling; while(n && !n.matches('h2')){next.push(n);n=n.nextElementSibling}
+        const hit=el.textContent.toLowerCase().includes(term)||next.some(x=>x.textContent.toLowerCase().includes(term));
+        if(!hit){el.classList.add('hidden-by-search');next.forEach(x=>x.classList.add('hidden-by-search'))}
+      }
+    });
+  });
+})();
+</script><script src="../assets/js/aws-notes.js"></script></body></html>

@@ -8,6 +8,14 @@
 
   const sidebar=document.querySelector('.sidebar');
   const menu=document.querySelector('.mobile-menu');
+  // Mobile drawer is always closed on page load; it must never reserve layout width.
+  sidebar?.classList.remove('open'); body.classList.remove('nav-open');
+  if(sidebar && !sidebar.querySelector('.sidebar-close')){
+    const closeBtn=document.createElement('button');
+    closeBtn.type='button'; closeBtn.className='sidebar-close'; closeBtn.innerHTML='×';
+    closeBtn.setAttribute('aria-label','Close navigation'); closeBtn.title='Close navigation';
+    closeBtn.addEventListener('click',()=>closeMenu()); sidebar.prepend(closeBtn);
+  }
   function syncMenu(){
     if(menu){
       const open=!!sidebar?.classList.contains('open');

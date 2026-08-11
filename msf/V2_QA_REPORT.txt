@@ -1,0 +1,36 @@
+WACA UPA Evidence v2 — QA REPORT
+Date: 2026-08-12
+
+FUNCTIONAL
+[PASS] Overlay JavaScript syntax (node --check)
+[PASS] Evidence Lab JavaScript syntax
+[PASS] Existing Question Bank enhancer syntax
+[PASS] Every loaded question receives real_case_en / real_case_star_en / msf_transfer_en / visual_asset
+[PASS] Conceptual-only fallback removed; unmatched questions use a transparent closest-real-case transfer
+[PASS] AWS/MSF-specific questions remain bounded as transferable when direct platform/context evidence is absent
+[PASS] Behavioural wording avoids inventing personal conflict/failure incidents
+
+MATCHING QA
+[PASS] Word-aware matching added to prevent false matches such as ERP inside 'underperforming' or RDS inside 'dashboards'
+[PASS] Representative tests: AWS/low-connectivity, People, Data, Procurement, MSF motivation
+
+VISUALS
+[PASS] 16 sanitized SVG visual assets
+[PASS] Architecture, integration, procurement, offline-first, data, security, incident, performance, adoption, support, people, executive, cloud and evidence-transfer diagrams
+[PASS] 2 data-backed charts: support-channel lower bounds and historical inquiry volumes
+[PASS] Visual assets rendered successfully to PNG during QA
+[PASS] Runtime real-case coverage chart added to the Evidence Lab
+
+SECURITY / CONFIDENTIALITY
+[PASS] No internal IP addresses in overlay
+[PASS] No password/certificate filenames in overlay
+[PASS] No VPN/private endpoint/topology details in public study visuals
+[PASS] No exploit-like operational weakness instructions published
+
+INTEGRATION
+[PASS] Existing question data remains untouched; overlay enriches it at runtime
+[PASS] Existing question-bank renderer can be enhanced with two added JS references + one CSS reference
+[PASS] MutationObserver re-injects real-case panels after filters/focus mode re-render cards
+
+NOTE
+The package does not push or write to GitHub. It is a local drop-in patch, respecting the instruction not to upload changes automatically.

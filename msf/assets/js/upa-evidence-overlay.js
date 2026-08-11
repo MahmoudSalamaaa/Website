@@ -630,6 +630,73 @@
     }
   };
 
+  const HUMAN_CASES_AR = {
+    integration: {
+      evidence: "في هيئة الشراء الموحد عملت على مسار تكامل منظومة الإمداد الطبي مع Microsoft Dynamics 365. بدأ العمل بفهم العملية ومالك كل بيان، ثم تحديد بيانات الأصناف والموردين والجهات وأوامر الشراء والاستلام، وبعدها الاختبارات SIT وUAT وخطة الرجوع ومراقبة التكامل بعد التشغيل.",
+      lesson: "تعلمت أن نجاح التكامل لا يقاس بأن الـAPI يعمل فقط، بل بأن البيانات قابلة للمراجعة والمستخدم يعرف ماذا حدث عند الخطأ."
+    },
+    architecture: {
+      evidence: "في دراسة معمارية MedIQ كان التحدي هو حماية العمليات الأساسية للمشتريات والمخزون مع وجود تقارير وتحليلات ثقيلة. اتجهنا إلى الفصل المنطقي أولاً، ثم عزل الأحمال الثقيلة عند الحاجة، وعدم الفصل الكامل إلا إذا أثبتت القياسات أنه ضروري.",
+      lesson: "الدرس عندي هو الحفاظ على مصدر تشغيلي واحد للحقيقة وتجنب التعقيد المعماري غير المبرر."
+    },
+    procurement: {
+      evidence: "في UPA أتعامل مع دورة رقمية مترابطة تبدأ من الاحتياج والشراء، ثم المورد وأمر التوريد والاستلام، ثم أثر ذلك على المخزون والتقارير. أي ضعف في تسليم البيانات بين هذه المراحل يظهر مباشرة في التتبع والتقارير.",
+      lesson: "لذلك أركز على مالك واضح لكل خطوة، وتتبع الحالة، ومعالجة الاستثناءات بدلاً من الاعتماد على متابعة يدوية."
+    },
+    supply: {
+      evidence: "أوضح مثال هو Mobile MedIQ بنمط Offline-First. المستخدم في المخزن يستطيع تسجيل الحركة محلياً، وتظل Pending، ثم تتم المزامنة عند عودة الاتصال، ويجري التحقق مركزياً قبل أن تؤثر الحركة على الرصيد الرسمي. كما تدعم المنظومة GTIN/Barcode وBatch وExpiry.",
+      lesson: "هذا يسمح باستمرار العمل في ضعف الاتصال بدون إنشاء رصيد ثانٍ غير موثوق."
+    },
+    data: {
+      evidence: "في عملي على بيانات UPA تعاملت مع ربط بيانات الأصناف والجهات والمشتريات والإمداد وبناء التقارير ولوحات المتابعة. وفي دراسة مستودع بيانات MedIQ كان الاتجاه واضحاً: فصل التحليلات عن التشغيل، وتحديد مالك البيانات، وقواعد الجودة والـlineage قبل بناء KPI أو AI.",
+      lesson: "إذا لم يكن تعريف المؤشر ومالكه وجودة مصدره واضحة، فلا أعتبر الـdashboard موثوقاً."
+    },
+    security: {
+      evidence: "في MedIQ الصلاحيات مبنية على الدور ونطاق الجهة أو المخزن ومبدأ أقل صلاحية، مع فصل الاختصاصات في العمليات الحساسة، وتسجيل الأحداث، وضوابط للتعافي والنسخ الاحتياطي.",
+      lesson: "الأمن بالنسبة لي عملي: من المستخدم؟ ماذا يحق له أن يفعل؟ على أي نطاق؟ وكيف نثبت ما حدث بعد ذلك؟"
+    },
+    reliability: {
+      evidence: "في تشغيل أنظمة UPA نعتمد على ملكية واضحة للحادث والتصعيد بدلاً من التعامل العشوائي. نموذج الدعم الموثق يتضمن L1/L2/L3، ومتطلبات للاستمرارية والتعافي، وقاعدة معرفة، واختبارات دورية لـBCP/DR.",
+      lesson: "الأولوية هي استعادة الخدمة بسرعة، ثم تحليل السبب ومنع تكراره."
+    },
+    performance: {
+      evidence: "في أحد سيناريوهات UPA كانت تقارير الموردين الثقيلة ذات حمل مختلف تماماً عن التقارير التشغيلية القصيرة. تم عزل الحمل الثقيل واستخدام caching للبيانات المتكررة بدلاً من الضغط المستمر على PostgreSQL والخدمات التشغيلية.",
+      lesson: "لا أبدأ بشراء موارد أكثر؛ أبدأ بقياس عنق الزجاجة ثم أعالج السبب الحقيقي."
+    },
+    delivery: {
+      evidence: "في خطة تكامل Dynamics تم تقسيم التنفيذ إلى تصميم، تطوير واختبارات داخلية، ثم SIT، ثم UAT مع اعتماد الأعمال، ثم تشغيل بخطة rollback ومتابعة بعد الإطلاق. وتمت متابعة مخاطر مثل اختلاف البيانات وتأخر الاعتمادات وتغير المتطلبات.",
+      lesson: "بالنسبة لي المشروع لا يصبح منتهياً لأن المهام مغلقة؛ يصبح منتهياً عندما يكون الناتج مقبولاً وقابلاً للتشغيل."
+    },
+    adoption: {
+      evidence: "في UPA اعتمدنا على زيارات المستخدمين والاستبيانات والتدريب والدعم، وليس على إرسال تعليمات فقط. وفي MedIQ نعتبر تكرار أخطاء الاستخدام مؤشراً على احتياج تدريبي أو مشكلة في تصميم العملية، وليس مجرد Ticket جديد.",
+      lesson: "أقيس التبني بقدرة المستخدم على تنفيذ عمله فعلاً وانخفاض الأخطاء المتكررة."
+    },
+    support: {
+      evidence: "بيئة دعم UPA تخدم عشرات الآلاف من المستخدمين وآلاف الجهات والموردين عبر قنوات متعددة. لذلك نحتاج Intake واضح، وتصنيف للأولوية، ومالك للتذكرة، وتصعيد، وقاعدة معرفة، ثم تحليل أسباب التكرار بدلاً من إغلاق التذاكر فقط.",
+      lesson: "الدعم الجيد يتحول إلى مصدر معلومات لتحسين النظام والتدريب والعملية نفسها."
+    },
+    people: {
+      evidence: "في دوري القيادي داخل UPA أدرت فرقاً متعددة التخصصات واستخدمت OKRs، والتوجيه الفني، والـmentoring، وتوحيد أساليب التسليم لتحسين قدرة الفريق على الإنجاز.",
+      lesson: "عند مشكلة الأداء أبدأ بتوضيح التوقع والبيانات وإزالة العوائق والتوجيه، ثم أقيس التحسن قبل الانتقال لإجراء أكثر حدة."
+    },
+    executive: {
+      evidence: "في برامج التحول داخل UPA كان العمل يربط الأنظمة والتكامل والبيانات والإمداد وأصحاب المصلحة. التجارب الأقوى بدأت بنتيجة تشغيلية واضحة ومالك ونطاق محدد، ثم تسليم مرحلة قابلة للقياس قبل التوسع.",
+      lesson: "أربط الاستثمار التقني بأثر تشغيلي واضح، وليس بعدد الأنظمة أو الخصائص التي تم إطلاقها."
+    },
+    offline: {
+      evidence: "Mobile MedIQ هو أقرب مثال عملي عندي لبيئة اتصال غير مستقرة: تسجيل محلي، حالة Pending واضحة، مزامنة بعد عودة الاتصال، تحقق مركزي، ثم قبول أو رفض قبل تحديث الرصيد الرسمي.",
+      lesson: "العمل Offline يجب أن يكون معه reconciliation وaudit trail، وإلا سينقل المشكلة بدلاً من حلها."
+    },
+    cloud: {
+      evidence: "خبرتي المباشرة في UPA تشمل بنية مؤسسية، خدمات داخل containers، PostgreSQL وRedis، monitoring، backup/DR، عزل الأحمال وأنماط object storage. عند سؤال AWS أربط هذه المتطلبات بخدمات AWS المناسبة، ولا أدعي أن UPA كانت تعمل إنتاجياً على AWS.",
+      lesson: "بهذا أشرح AWS من منظور معماري حقيقي مع الحفاظ على الدقة في حدود خبرتي المباشرة."
+    },
+    general: {
+      evidence: "في UPA ترتبط الأنظمة التي أديرها وأطورها بعمليات صحية حقيقية: المشتريات، الإمداد، المخزون، التقارير ودعم المستخدمين. عملي المعتاد هو فهم المشكلة التشغيلية، تحديد المسؤول والمخاطر، تنفيذ تغيير قابل للتحكم، اختباره مع المستخدمين ثم متابعة أثره.",
+      lesson: "هذه خبرة عملية أستطيع نقلها إلى MSF مع تعلم أنظمتها وقيود العمل الميداني الخاصة بها."
+    }
+  };
+
   function sentences(text) {
     return String(text || '').replace(/\s+/g,' ').trim().match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [];
   }
@@ -647,17 +714,16 @@
     return trimWords(out || q.answer_en, 78);
   }
   function simpleArabic(q, realCase) {
-    const ss=sentences(q.answer_ar);
+    const ss=sentences(q.original_answer_ar || q.answer_ar);
     let base='';
-    for(const x of ss){ if(words(base+' '+x).length>65) break; base+=(base?' ':'')+x.trim(); if(sentences(base).length>=2) break; }
-    const title=realCase.title_ar || 'خبرة عملية من هيئة الشراء الموحد';
-    return `${base || 'الفكرة الأساسية: جاوب على المطلوب مباشرة، ثم اربطه بموقف حقيقي من خبرتك.'} الدليل العملي: ${title}. لا تحفظ النص حرفياً؛ احفظ الفكرة والمثال.`;
+    for(const x of ss){ if(words(base+' '+x).length>70) break; base+=(base?' ':'')+x.trim(); if(sentences(base).length>=3) break; }
+    const hc=HUMAN_CASES_AR[realCase.key] || HUMAN_CASES_AR.general;
+    return `${base.trim()} مثال حقيقي من عملي: ${hc.evidence} ${hc.lesson}`.trim();
   }
   function humanAnswer(q, realCase, grade) {
     const hc=HUMAN_CASES[realCase.key] || HUMAN_CASES.general;
     const core=coreAnswer(q);
-    const lead = grade==='DIRECT' ? 'A real example from my work is this:' : 'The closest real example from my work is this:';
-    return `${core} ${lead} ${hc.evidence} ${hc.lesson}`;
+    return `${core} Real example from my work: ${hc.evidence} ${hc.lesson}`;
   }
 
   function clean(s) {
@@ -773,11 +839,12 @@
 
     const hc = HUMAN_CASES[realCase.key] || HUMAN_CASES.general;
     q.experience_en = `${grade === "DIRECT" ? "Direct evidence from my work:" : "Closest transferable evidence from my work:"} ${hc.evidence} ${hc.lesson}`;
-    q.experience_ar = `الدليل الحقيقي من خبرتك: ${realCase.title_ar}. استخدم المثال لإثبات الفكرة، ولا تدّعِ أن سياق UPA مطابق لسياق MSF.`;
+    const hcAr = HUMAN_CASES_AR[realCase.key] || HUMAN_CASES_AR.general;
+    q.experience_ar = `مثال حقيقي من عملي: ${hcAr.evidence} ${hcAr.lesson}`;
     q.real_case_en = q.experience_en;
     q.real_case_ar = q.experience_ar;
 
-    q.evidence_scope_en = `${label}. Use the UPA example as evidence; when the context is MSF- or AWS-specific, state clearly that you are transferring the principle rather than claiming identical experience.`;
+    q.evidence_scope_en = `${label}. The UPA/MedIQ example below is the verified work evidence. For MSF- or AWS-specific questions, the platform context differs, but the operating principle is transferable.`;
     q.research_anchor_en = `UPA evidence sources: ${srcNames.join(" · ")}. Proof: ${profile.proof.join(" | ")}`;
     q.coach_en = uniqueAppend(q.coach_en, `Delivery cue: ${profile.cue}. Start with the decision/principle, use one verified proof point, then explain the MSF WaCA transfer.`);
     q.red_flag_en = uniqueAppend(q.red_flag_en, profile.redflag);
@@ -809,7 +876,7 @@
   });
 
   window.WACA_UPA_EVIDENCE = {
-    version: "2026-08-12-human-v3",
+    version: "2026-08-12-direct-bilingual-v4",
     question_count: qs.length,
     sources: SOURCES,
     profiles: PROFILES.map(p => ({ id:p.id, label:p.label, grade:p.grade, sources:p.sources })),

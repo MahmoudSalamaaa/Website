@@ -1,0 +1,7 @@
+MSF FOLDER DEPLOYMENT
+=====================
+
+Upload this entire folder as /msf at repository root.
+Expected URL: https://mahmoud-salama.vercel.app/msf/
+
+All project navigation and assets use relative paths and stay inside /msf.

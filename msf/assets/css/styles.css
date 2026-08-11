@@ -394,3 +394,116 @@ a.card:hover{transform:none;box-shadow:none;border-color:color-mix(in srgb,var(-
 .answer-short{padding:13px 14px;border:1px solid color-mix(in srgb,var(--green) 25%,var(--line));border-radius:12px;background:color-mix(in srgb,#e4f8ef 35%,var(--card))}.answer-short h4{color:var(--green)!important}.answer-short small{display:block;margin-top:7px;color:var(--muted);font-size:10.5px}
 @media(max-width:760px){.memory-visual,.mock-memory-visual{padding:11px}.memory-visual-head{display:block}.memory-visual-head>b{display:block;max-width:none;text-align:left;margin-top:5px}.memory-steps{display:flex;flex-direction:column;gap:5px}.memory-steps>i{transform:rotate(90deg);align-self:center;height:12px;line-height:12px}.memory-step{width:100%;padding:8px 9px}.memory-step strong{font-size:11.5px}.memory-tip{font-size:10px}}
 @media print{.memory-visual,.mock-memory-visual{break-inside:avoid;background:#fff}.memory-step{background:#fff}}
+
+/* ==========================================================
+   FINAL UI QA PASS — mobile + desktop consistency, Aug 2026
+   ========================================================== */
+html,body{max-width:100%;overflow-x:hidden}
+img,svg,video,canvas{max-width:100%;height:auto}
+.main,.content,.section,.card,.q-card,.q-heading-copy,.answer,.experience-bridge{min-width:0}
+.card,.q-card,.prep-box,.arabic-explainer,.memory-visual{overflow-wrap:anywhere;word-break:normal}
+.matrix{width:100%;max-width:100%;table-layout:auto}
+.matrix th,.matrix td{overflow-wrap:anywhere;word-break:normal}
+
+/* Navigation / header stability */
+.topbar{gap:12px;min-width:0}
+.topbar>div:first-child{min-width:0;display:flex;align-items:center;gap:8px}
+.top-title{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.controls{flex:0 0 auto;flex-wrap:nowrap}
+.icon-btn,.btn{min-height:42px;display:inline-flex;align-items:center;justify-content:center;line-height:1.15}
+
+/* Question cards: keep rank tile in its own column at every width */
+.q-head{grid-template-columns:54px minmax(0,1fr) auto;align-items:start}
+.q-rank{width:54px;min-width:54px;max-width:54px;box-sizing:border-box}
+.q-card.focus-current .q-head{grid-template-columns:60px minmax(0,1fr) auto}
+.q-card.focus-current .q-rank{width:60px;min-width:60px;max-width:60px;height:60px}
+.q-title-en,.q-title-ar-secondary{max-width:100%;overflow-wrap:anywhere}
+.q-title-ar-secondary{clear:both}
+
+/* Focus mode: responsive controls; never clip off-screen */
+.focus-bar{max-width:100%;flex-wrap:wrap;overflow:visible}
+.focus-bar>span{min-width:0;flex:1 1 230px}
+.focus-bar .btn{flex:0 0 auto;white-space:nowrap}
+
+/* Visual memory map stays useful without creating horizontal scroll */
+.memory-visual{max-width:100%}
+.memory-visual-head{min-width:0;gap:12px}
+.memory-steps{min-width:0;flex-wrap:wrap}
+.memory-step{min-width:120px;flex:1 1 130px}
+.memory-steps>i{flex:0 0 auto}
+
+@media(max-width:1000px){
+  .app{display:block;min-width:0}
+  .sidebar{top:0;left:0;height:100dvh;max-width:88vw}
+  .content{width:100%;max-width:100%}
+  .grid>*{min-width:0}
+}
+
+@media(max-width:800px){
+  .focus-bar{position:sticky;top:58px;display:grid;grid-template-columns:minmax(0,1fr) minmax(120px,1.35fr) minmax(0,1fr);grid-template-areas:"prev pos next" "reveal reveal exit";gap:8px;padding:10px;margin:10px 0 14px;overflow:visible}
+  #prevFocus{grid-area:prev} #focusBar>span{grid-area:pos;min-width:0;text-align:center} #nextFocus{grid-area:next} #revealFocus{grid-area:reveal} #exitFocus{grid-area:exit}
+  .focus-bar small{display:none}
+  .focus-bar .btn{width:100%;min-width:0;padding:9px 7px}
+  .q-head{grid-template-columns:50px minmax(0,1fr) auto;gap:10px;padding:14px 13px}
+  .q-rank{width:50px;min-width:50px;max-width:50px;min-height:50px}
+  .q-card.focus-current .q-head{grid-template-columns:52px minmax(0,1fr) auto;padding:15px 13px}
+  .q-card.focus-current .q-rank{width:52px;min-width:52px;max-width:52px;height:56px}
+  .q-card.focus-current .q-title{font-size:17px;line-height:1.42}
+  .q-title-ar-secondary{font-size:12.5px;line-height:1.65;margin-top:7px}
+  .q-meta{gap:5px}
+  .memory-visual-head{display:block}
+  .memory-visual-head>b{display:inline-block;margin-top:8px}
+  .memory-steps{display:grid!important;grid-template-columns:1fr!important;gap:7px!important}
+  .memory-step{min-width:0;width:100%}
+  .memory-steps>i{display:none!important}
+  .architecture-head{min-width:0}
+  .architecture-stage{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+}
+
+@media(max-width:600px){
+  body{font-size:14px}
+  .content{padding:12px 11px 34px}
+  .topbar{padding:9px 10px;min-height:56px}
+  .top-title{max-width:38vw;font-size:13px}
+  .controls{gap:5px}
+  .controls .icon-btn{min-width:36px;min-height:38px;padding:6px 8px}
+  .hero{padding:23px 18px;border-radius:16px}
+  .hero h1{font-size:clamp(28px,9vw,38px);line-height:1.1}
+  .hero p{font-size:14px;line-height:1.6}
+  .section{margin-top:26px}
+  .section h2{font-size:21px;line-height:1.25}
+  .card{padding:15px;border-radius:13px}
+  .grid.cols-2,.grid.cols-3,.grid.cols-4,.answer-grid,.prep-grid,.arabic-explainer-grid,.importance-strip{grid-template-columns:1fr!important}
+  .q-head{grid-template-columns:46px minmax(0,1fr) auto;gap:9px;padding:13px 10px}
+  .q-rank{width:46px;min-width:46px;max-width:46px;min-height:48px;border-radius:11px}
+  .q-rank strong{font-size:13px}.q-rank span{font-size:9px}
+  .q-card.focus-current .q-head{grid-template-columns:48px minmax(0,1fr) auto;padding:14px 10px}
+  .q-card.focus-current .q-rank{width:48px;min-width:48px;max-width:48px;height:54px}
+  .q-card.focus-current .q-title{font-size:16px;line-height:1.4}
+  .q-title-en{font-size:14px!important;line-height:1.42}
+  .q-card.focus-current .q-title-en{font-size:16px!important}
+  .q-title-ar-secondary{font-size:12px;line-height:1.6;margin-top:6px}
+  .q-body{padding:14px 11px 17px}
+  .answer-primary p,.answer-short p,.experience-primary p{font-size:13.5px!important;line-height:1.7}
+  .answer-short,.answer-primary,.experience-primary,.arabic-study-note,.memory-visual{border-radius:11px}
+  .status-row{grid-template-columns:1fr 1fr!important}
+  .recall-buttons{grid-template-columns:1fr 1fr!important}
+  .focus-bar{top:56px;grid-template-columns:1fr minmax(108px,1.25fr) 1fr;gap:6px;border-radius:12px;padding:8px}
+  .focus-bar>span b{font-size:13px;white-space:nowrap}
+  .focus-bar .btn{font-size:12px;min-height:40px;padding:7px 5px}
+  .matrix{font-size:12.5px}
+  .matrix th,.matrix td{padding:9px 8px}
+  .resource-links{display:grid;grid-template-columns:1fr}
+}
+
+@media(max-width:380px){
+  .content{padding-left:8px;padding-right:8px}
+  .top-title{display:none}
+  .q-head{grid-template-columns:42px minmax(0,1fr) auto;gap:7px;padding:12px 8px}
+  .q-rank{width:42px;min-width:42px;max-width:42px;min-height:46px}
+  .q-card.focus-current .q-head{grid-template-columns:44px minmax(0,1fr) auto;padding:12px 8px}
+  .q-card.focus-current .q-rank{width:44px;min-width:44px;max-width:44px;height:50px}
+  .q-card.focus-current .q-title-en{font-size:15px!important}
+  .focus-bar{grid-template-columns:1fr 1.15fr 1fr}
+  .focus-bar .btn{font-size:11px}
+}

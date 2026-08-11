@@ -1,7 +1,7 @@
-MSF FOLDER DEPLOYMENT
-=====================
+MSF DEPLOYMENT PACKAGE
+======================
+Upload this folder as `msf` at the repository root.
+Public URL: https://mahmoud-salama.vercel.app/msf/
 
-Upload this entire folder as /msf at repository root.
-Expected URL: https://mahmoud-salama.vercel.app/msf/
-
-All project navigation and assets use relative paths and stay inside /msf.
+All internal navigation and asset URLs are pinned to /msf/... .
+This prevents links from falling back to the website root even if the browser opens /msf without a trailing slash.

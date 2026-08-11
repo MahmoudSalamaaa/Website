@@ -308,3 +308,36 @@ a.card:hover,.card.clickable:hover{border-color:color-mix(in srgb,var(--cyan) 30
 .experience-bridge p{margin:0;line-height:1.75;color:var(--text,#1f2937)}
 [data-theme="dark"] .experience-bridge{background:linear-gradient(135deg,rgba(34,211,238,.10),rgba(15,23,42,.24));border-color:rgba(34,211,238,.24)}
 @media(max-width:720px){.experience-bridge{padding:15px 16px;border-radius:15px}.experience-bridge p{font-size:.96rem;line-height:1.7}}
+
+
+/* === English-first question bank + Arabic study support (2026-08-11) === */
+.question-bank-english-first{direction:ltr;text-align:left}
+.interview-language-badge{display:inline-flex;align-items:center;padding:7px 10px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--muted);font-size:10px;font-weight:850;letter-spacing:.025em;white-space:nowrap}
+.study-callout{display:flex;align-items:flex-start;gap:12px;margin:0 0 18px;padding:13px 16px;border:1px solid color-mix(in srgb,var(--cyan) 22%,var(--line));border-radius:14px;background:color-mix(in srgb,var(--cyan2) 35%,var(--card));box-shadow:var(--shadow-sm);text-align:left}
+.study-callout strong{flex:0 0 auto;color:var(--cyan-strong);font-size:12px;letter-spacing:.035em;text-transform:uppercase}
+.study-callout span{color:var(--muted);font-size:12.5px;line-height:1.55}
+.q-title-en{font-size:15px;font-weight:800;line-height:1.45;color:var(--ink)}
+.q-title-ar-secondary{margin-top:6px;color:var(--muted);font-size:12.5px;font-weight:650;line-height:1.65;text-align:right}
+.answer-primary{margin-top:18px;padding:18px 19px;border:1px solid var(--line);border-radius:15px;background:var(--card)}
+.answer-primary h4{font-size:11px;letter-spacing:.08em}
+.answer-primary p{margin-bottom:0}
+.arabic-study-note{margin-top:18px;padding:18px;border:1px solid rgba(0,156,184,.22);border-radius:17px;background:linear-gradient(135deg,color-mix(in srgb,var(--cyan2) 52%,var(--card)),var(--card));text-align:right}
+.arabic-study-head{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.arabic-study-head span{display:block;color:var(--muted);font-size:10px;font-weight:800}
+.arabic-study-head h4{margin:2px 0 0;color:var(--ink);font-size:16px}
+.arabic-study-head>b{direction:ltr;display:inline-flex;padding:4px 8px;border-radius:999px;background:var(--navy);color:#fff;font-size:9px;letter-spacing:.08em;white-space:nowrap}
+.arabic-explainer-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.arabic-explainer{padding:12px 13px;border:1px solid var(--line);border-radius:12px;background:color-mix(in srgb,var(--card) 92%,transparent)}
+.arabic-explainer.wide{grid-column:1/-1}
+.arabic-explainer b{display:block;margin-bottom:5px;color:var(--cyan-strong);font-size:12px}
+.arabic-explainer p{margin:0;color:var(--ink);font-size:13px;line-height:1.75}
+.arabic-explainer.danger{border-color:color-mix(in srgb,var(--red) 24%,var(--line))}
+.arabic-explainer.danger b{color:var(--red)}
+@media(max-width:700px){
+ .interview-language-badge{font-size:9px;padding:6px 8px;max-width:46vw;overflow:hidden;text-overflow:ellipsis}
+ .study-callout{display:block;margin-bottom:14px;padding:11px 13px}.study-callout strong{display:block;margin-bottom:4px}.study-callout span{font-size:11.5px}
+ .q-title-en{font-size:14px}.q-title-ar-secondary{font-size:12px;margin-top:5px}
+ .answer-primary{padding:15px}
+ .arabic-study-note{padding:14px 13px}.arabic-study-head h4{font-size:15px}.arabic-explainer-grid{grid-template-columns:1fr}.arabic-explainer.wide{grid-column:auto}.arabic-explainer p{font-size:12.5px}
+}
+@media(max-width:430px){.interview-language-badge{display:none}.q-head{grid-template-columns:46px minmax(0,1fr) auto;gap:9px}.q-rank{width:46px}.q-meta{gap:4px}}

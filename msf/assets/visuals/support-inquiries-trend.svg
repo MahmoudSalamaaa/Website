@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+<defs>
+  <linearGradient id="bg" x1="0" x2="1"><stop stop-color="#081522"/><stop offset="1" stop-color="#0d2a3d"/></linearGradient>
+  <filter id="sh"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-opacity=".25"/></filter>
+</defs>
+<rect width="100%" height="100%" rx="28" fill="url(#bg)"/>
+<text id="t" x="60" y="72" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#edf7ff">Historical support inquiries</text>
+<text id="d" x="60" y="108" font-family="Arial, sans-serif" font-size="17" fill="#9fb6c8">Periods preserved exactly as documented; 2021 and 2025 are partial-year periods.</text>
+<line x1="90" y1="470" x2="1110" y2="470" stroke="#315069"/>
+<polyline points="110,400.4 330,248.0 550,329.6 770,219.2 990,344.8" fill="none" stroke="#4ed9e7" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="110" cy="400.4" r="8" fill="#4ed9e7"/>
+<text x="110" y="384.4" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#edf7ff">3,210</text>
+<text x="110" y="505" text-anchor="middle" font-family="Arial" font-size="13" fill="#9fb6c8">Jul–Dec 2021</text>
+<circle cx="330" cy="248.0" r="8" fill="#4ed9e7"/>
+<text x="330" y="232.0" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#edf7ff">10,244</text>
+<text x="330" y="505" text-anchor="middle" font-family="Arial" font-size="13" fill="#9fb6c8">2022</text>
+<circle cx="550" cy="329.6" r="8" fill="#4ed9e7"/>
+<text x="550" y="313.6" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#edf7ff">6,480</text>
+<text x="550" y="505" text-anchor="middle" font-family="Arial" font-size="13" fill="#9fb6c8">2023</text>
+<circle cx="770" cy="219.2" r="8" fill="#4ed9e7"/>
+<text x="770" y="203.2" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#edf7ff">11,577</text>
+<text x="770" y="505" text-anchor="middle" font-family="Arial" font-size="13" fill="#9fb6c8">2024</text>
+<circle cx="990" cy="344.8" r="8" fill="#4ed9e7"/>
+<text x="990" y="328.8" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="#edf7ff">5,779</text>
+<text x="990" y="505" text-anchor="middle" font-family="Arial" font-size="13" fill="#9fb6c8">Jan–May 2025</text>
+</svg>

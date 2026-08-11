@@ -1,0 +1,24 @@
+{
+  "total_files": 88,
+  "html_files": 28,
+  "js_files": 11,
+  "visual_svg_files": 16,
+  "refs_checked": 614,
+  "broken_refs_count": 0,
+  "broken_refs": [],
+  "js_syntax_errors": [],
+  "question_coverage": {
+    "total": 195,
+    "missing": [],
+    "grades": {
+      "ADJACENT": 118,
+      "DIRECT": 77
+    }
+  },
+  "missing_visual_assets": [],
+  "security_hits": {
+    "private_ipv4": [],
+    "pfx_reference": [],
+    "pass_txt": []
+  }
+}

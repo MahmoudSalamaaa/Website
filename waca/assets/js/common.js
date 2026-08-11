@@ -75,7 +75,7 @@
   // On-this-page jumpbar for content-heavy pages.
   let jumpbar=null, jumpSections=[];
   const excluded=new Set(['index.html','question-bank.html','mock-interview.html','answer-builder.html','study-coach.html']);
-  if(!excluded.has(page)){
+  if(false && !excluded.has(page)){
     const scope=document.querySelector('.content');
     if(scope){
       const hs=[...scope.querySelectorAll('h2')].filter(h=>h.textContent.trim() && !h.closest('.footer'));
@@ -123,7 +123,7 @@
     if(e.key==='Enter'){e.preventDefault();items[activeIdx]?.click()}
   });
   const controls=document.querySelector('.controls');
-  if(controls){const qb=document.createElement('button');qb.className='icon-btn quick-trigger';qb.type='button';qb.innerHTML='⌕ <kbd>⌘K</kbd>';qb.setAttribute('aria-label','Quick navigation');qb.title='Quick navigation (Ctrl/Cmd+K)';qb.addEventListener('click',openQuick);controls.prepend(qb)}
+  if(false && controls){const qb=document.createElement('button');qb.className='icon-btn quick-trigger';qb.type='button';qb.innerHTML='⌕ <kbd>⌘K</kbd>';qb.setAttribute('aria-label','Quick navigation');qb.title='Quick navigation (Ctrl/Cmd+K)';qb.addEventListener('click',openQuick);controls.prepend(qb)}
 
   // Global interactions.
   document.addEventListener('click',e=>{

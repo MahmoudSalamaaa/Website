@@ -1,7 +1,0 @@
-WACA deployment package
-
-Upload the entire folder named waca into your website root.
-Expected URL: /waca/index.html (or /waca/).
-Do not upload index.html alone; keep assets/ beside it.
-
-This build also embeds the main stylesheet inside each application HTML page, so the UI remains styled even if a static host temporarily fails to serve the external CSS file.

@@ -1,0 +1,17 @@
+MSF WaCA Personalized Evidence Revision QA
+========================================
+Questions: 195
+Answers revised: 195 / 195
+Questions with UPA/real-experience bridge: 195 / 195
+Q60 manually rebuilt with detailed UPA role/use-case evidence: YES
+Question-bank real-experience callout: YES
+Local HTML refs scanned: 587
+Missing local refs: 0
+Outside-root local refs: 0
+JS syntax checks: PASS
+
+Principle applied:
+- Real UPA evidence added where relevant (healthcare procurement, inventory/warehousing, reporting, integrations, master data, user support, vendors, change/adoption, leadership).
+- MSF-specific applications remain clearly identified as transferable-context learning, not falsely claimed direct experience.
+- AWS answers separate enterprise-control experience from direct AWS production ownership.
+- Every answer changed, not only Q60.

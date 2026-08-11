@@ -2,7 +2,9 @@
   "html_files": 28,
   "theme_toggle_refs": [],
   "dark_theme_attrs": [],
-  "missing_light_css": [],
+  "missing_light_css": [
+    "14-day-plan.html"
+  ],
   "dark_meta": [],
   "contrast": {
     "question_on_card": 14.71,

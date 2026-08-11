@@ -512,11 +512,13 @@
   };
 
   function questionSpecificCase(q, profile) {
-    const text = clean([q.question_en, q.category_en, q.study_track, q.answer_en].join(" "));
+    const text = clean([q.question_en, q.category_en, q.study_track].join(" "));
     let key = profile.id in CASE_BANK ? profile.id : "general";
 
     // Override broad profile matching with concrete question intent.
-    if (matchesAny(text,["why msf","why do you want","work for msf","work with msf","motivation","humanitarian mission"])) key = "general";
+    if (matchesAny(text,["why msf","why do you want","work for msf","work with msf","motivation","humanitarian mission","core information systems","operational structure","unique challenges","why should msf hire","why would you leave","prepared for mobility"])) key = "general";
+    else if (matchesAny(text,["underperform","team member","feedback","coach","mentor","people management","multicultural technical team","employee"])) key = "people";
+    else if (matchesAny(text,["digital transformation","is strategy","roadmap","investment requests","prioritize competing","board-level","annual it budget","trade-offs due to budget"])) key = "executive";
     else if (matchesAny(text,["first 90","first ninety","first month","first weeks","onboarding","assess the environment"])) key = "executive";
     else if (matchesAny(text,["offline","low bandwidth","connectivity","remote site","field connectivity","intermittent"])) key = "offline";
     else if (matchesAny(text,["aws","cloud","ec2","s3","rds","lambda","vpc","cloudwatch","serverless"])) key = "cloud";
@@ -557,6 +559,105 @@
         `MSF TRANSFER — ${c.transfer_en}`
       ]
     };
+  }
+
+
+  // Human-first evidence wording: short enough to say naturally in an interview.
+  const HUMAN_CASES = {
+    integration: {
+      evidence: "At UPA, I worked on the integration path between the medical-supply environment and Microsoft Dynamics 365. We treated it as a business flow, not just an API: owners and data were mapped first, then SIT/UAT, rollback and post-go-live monitoring were built into the plan.",
+      lesson: "That experience taught me that an integration is only successful when the business can reconcile it and support can see when it fails."
+    },
+    architecture: {
+      evidence: "In the MedIQ architecture work, the practical question was how to protect core transactions while reporting and analytics created very different loads. The approach was to separate logically first, isolate heavy workloads when needed, and avoid physical separation unless the evidence justified the extra complexity.",
+      lesson: "I learned to prefer the simplest architecture that protects reliability and keeps one trusted operational truth."
+    },
+    procurement: {
+      evidence: "My UPA work covers the digital flow from demand and procurement through PO, supplier fulfilment, receipt, inventory and reporting. I have seen directly how a weak hand-off or inconsistent master data can break visibility across the whole chain.",
+      lesson: "So I focus on ownership, traceability and exception handling at every hand-off."
+    },
+    supply: {
+      evidence: "A strong example is Mobile MedIQ. The offline-first design lets a warehouse user capture work locally, keeps it pending, synchronizes later, validates it centrally, and only then changes the official stock. Barcode/GTIN plus batch and expiry controls improve accuracy at the point of work.",
+      lesson: "That is a practical model for continuity in weak-connectivity environments without creating a second uncontrolled version of stock."
+    },
+    data: {
+      evidence: "In UPA data work, I dealt with product and entity mapping, procurement and supply data, dashboards and analytical reporting. The MedIQ data study also separates operational transactions from the analytical layer and puts ownership, quality and lineage before dashboards or AI.",
+      lesson: "My rule is simple: if the definition, owner and quality of a KPI are unclear, the dashboard is not yet trustworthy."
+    },
+    security: {
+      evidence: "In MedIQ, access is not just a username and password. The model uses role-based access, least privilege, entity or warehouse scope, separation of duties, stronger controls for sensitive actions, logging and recovery controls.",
+      lesson: "That experience made security very practical for me: the right person, the right action, the right scope, and a clear audit trail."
+    },
+    reliability: {
+      evidence: "In UPA service operations, critical systems are handled through defined support ownership and escalation rather than ad-hoc reactions. The documented model includes L1/L2/L3 escalation, continuity and recovery expectations, knowledge capture and periodic DR/BCP testing.",
+      lesson: "The lesson is to restore service quickly, communicate clearly, then fix the cause so the same incident does not keep returning."
+    },
+    performance: {
+      evidence: "One UPA architecture case involved heavy supplier reports that behaved very differently from normal operational requests. The response was to measure the bottleneck, isolate the heavy workload and use caching where repeated reads were unnecessary.",
+      lesson: "I do not start by buying more infrastructure; I start by measuring what is actually slow and why."
+    },
+    delivery: {
+      evidence: "The Dynamics integration plan is a good delivery example from my work. It moved through design, development, SIT, UAT, deployment, rollback readiness and hypercare, with business sign-off and risks tracked throughout.",
+      lesson: "For me, a project is not '90% complete' because tasks are closed; it is complete when the agreed outcome is accepted and operable."
+    },
+    adoption: {
+      evidence: "At UPA, adoption work included user visits, structured feedback, training and support. In MedIQ, repeated user errors are also treated as a signal for better training or process design, not only as tickets to close.",
+      lesson: "I measure adoption by whether people can complete the real task correctly, not by how many attended a training session."
+    },
+    support: {
+      evidence: "UPA support operates at significant scale across call-centre, email and in-person channels. My experience taught me to classify demand, make ownership visible, escalate when needed, reuse knowledge and study recurring issues instead of treating every ticket as isolated.",
+      lesson: "A good support function turns recurring incidents into service improvement."
+    },
+    people: {
+      evidence: "In my UPA leadership role, I managed multidisciplinary technical work using clear objectives, mentoring, technical enablement and more repeatable delivery practices. I have learned that people perform better when expectations and blockers are visible.",
+      lesson: "My management style is clear on standards but supportive in how we reach them: evidence first, coaching second, escalation when necessary."
+    },
+    executive: {
+      evidence: "My UPA transformation work sits across systems, integration, data, supply operations and multiple stakeholders. The strongest programs were the ones where we started from an operational outcome, fixed ownership and scope, delivered a bounded capability, then measured adoption and value before expanding.",
+      lesson: "I try to keep technology tied to an operational result, not to the number of tools or features delivered."
+    },
+    offline: {
+      evidence: "Mobile MedIQ is my clearest real example for low-connectivity work: capture locally, keep a visible pending state, synchronize when the connection returns, validate centrally, then accept or reject before official stock changes.",
+      lesson: "Offline work needs reconciliation and auditability; otherwise it only moves the problem somewhere else."
+    },
+    cloud: {
+      evidence: "I would be precise about my AWS experience. My direct UPA background is in enterprise infrastructure, containerized services, PostgreSQL, Redis, monitoring, backup/DR, workload isolation and object-storage patterns. I map those proven requirements to AWS services rather than claiming UPA production ran on AWS.",
+      lesson: "That lets me discuss AWS with architectural judgement while staying accurate about what I have personally operated."
+    },
+    general: {
+      evidence: "My UPA role connects enterprise systems with real healthcare procurement, supply, inventory, reporting and user-support needs. I normally start with the operational problem, identify the owner and risk, make the smallest reliable change, validate it with users and monitor the result.",
+      lesson: "That is the practical pattern I would bring to a new MSF context while learning its specific systems and field constraints."
+    }
+  };
+
+  function sentences(text) {
+    return String(text || '').replace(/\s+/g,' ').trim().match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [];
+  }
+  function words(text) { return String(text||'').trim().split(/\s+/).filter(Boolean); }
+  function trimWords(text, max) {
+    const w=words(text); if(w.length<=max) return String(text||'').trim();
+    return w.slice(0,max).join(' ').replace(/[,;:]?$/,'') + '…';
+  }
+  function coreAnswer(q) {
+    const preferred = String(q.short_answer_en || '').trim();
+    if (preferred && words(preferred).length >= 18) return trimWords(preferred, 72);
+    const ss=sentences(q.answer_en);
+    let out='';
+    for(const x of ss){ if(words(out+' '+x).length>78) break; out+=(out?' ':'')+x.trim(); if(sentences(out).length>=3) break; }
+    return trimWords(out || q.answer_en, 78);
+  }
+  function simpleArabic(q, realCase) {
+    const ss=sentences(q.answer_ar);
+    let base='';
+    for(const x of ss){ if(words(base+' '+x).length>65) break; base+=(base?' ':'')+x.trim(); if(sentences(base).length>=2) break; }
+    const title=realCase.title_ar || 'خبرة عملية من هيئة الشراء الموحد';
+    return `${base || 'الفكرة الأساسية: جاوب على المطلوب مباشرة، ثم اربطه بموقف حقيقي من خبرتك.'} الدليل العملي: ${title}. لا تحفظ النص حرفياً؛ احفظ الفكرة والمثال.`;
+  }
+  function humanAnswer(q, realCase, grade) {
+    const hc=HUMAN_CASES[realCase.key] || HUMAN_CASES.general;
+    const core=coreAnswer(q);
+    const lead = grade==='DIRECT' ? 'A real example from my work is this:' : 'The closest real example from my work is this:';
+    return `${core} ${lead} ${hc.evidence} ${hc.lesson}`;
   }
 
   function clean(s) {
@@ -654,23 +755,29 @@
           ? `خبرة قابلة للنقل وليست نفس سياق MSF: ${profile.bridge_ar}`
           : `حدود الدليل: ${profile.bridge_ar}`;
 
-    const practicalCaseBlock = `REAL WORK CASE — ${realCase.answer_bridge_en}`;
-    const practicalCaseAr = `USE CASE عملي — ${realCase.answer_bridge_ar}`;
-    q.answer_en = uniqueAppend(uniqueAppend(q.answer_en, evidenceIntro), practicalCaseBlock);
-    q.answer_ar = uniqueAppend(uniqueAppend(q.answer_ar, arIntro), practicalCaseAr);
+    // Replace long, layered wording with one natural interview answer.
+    // Keep the old text only for audit/debugging; the UI uses the human-first version below.
+    q.original_answer_en = q.answer_en;
+    q.original_answer_ar = q.answer_ar;
+    q.answer_en = humanAnswer(q, realCase, grade);
+    q.short_answer_en = coreAnswer(q);
+    q.answer_ar = simpleArabic(q, realCase);
 
     q.real_case_title_en = realCase.title_en;
     q.real_case_title_ar = realCase.title_ar;
-    q.real_case_en = realCase.answer_bridge_en;
+    q.real_case_en = q.experience_en;
     q.real_case_ar = realCase.answer_bridge_ar;
     q.real_case_star_en = realCase.star_en.slice();
     q.msf_transfer_en = realCase.transfer_en;
     q.visual_asset = `/msf/assets/visuals/${realCase.visual}`;
 
-    q.experience_en = `${label}. ${realCase.answer_bridge_en}\n\nProof points: ${profile.proof.map((x,i)=>`${i+1}) ${x}`).join(" ")}`;
-    q.experience_ar = `${label}. ${realCase.answer_bridge_ar}\n\nللمذاكرة: ${profile.proof.map((x,i)=>`${i+1}) ${x}`).join(" ")}`;
+    const hc = HUMAN_CASES[realCase.key] || HUMAN_CASES.general;
+    q.experience_en = `${grade === "DIRECT" ? "Direct evidence from my work:" : "Closest transferable evidence from my work:"} ${hc.evidence} ${hc.lesson}`;
+    q.experience_ar = `الدليل الحقيقي من خبرتك: ${realCase.title_ar}. استخدم المثال لإثبات الفكرة، ولا تدّعِ أن سياق UPA مطابق لسياق MSF.`;
+    q.real_case_en = q.experience_en;
+    q.real_case_ar = q.experience_ar;
 
-    q.evidence_scope_en = `${label}. Every question now includes a closest real work case. ${grade === "DIRECT" ? "You can use the UPA case directly, while keeping your personal responsibility precise." : "Present the case as a transferable analogue: say 'the closest real example from my work is…', then explain the MSF-specific adaptation."}`;
+    q.evidence_scope_en = `${label}. Use the UPA example as evidence; when the context is MSF- or AWS-specific, state clearly that you are transferring the principle rather than claiming identical experience.`;
     q.research_anchor_en = `UPA evidence sources: ${srcNames.join(" · ")}. Proof: ${profile.proof.join(" | ")}`;
     q.coach_en = uniqueAppend(q.coach_en, `Delivery cue: ${profile.cue}. Start with the decision/principle, use one verified proof point, then explain the MSF WaCA transfer.`);
     q.red_flag_en = uniqueAppend(q.red_flag_en, profile.redflag);
@@ -690,7 +797,7 @@
       real_case_key: realCase.key,
       real_case_title_en: realCase.title_en,
       real_case_title_ar: realCase.title_ar,
-      real_case_en: realCase.answer_bridge_en,
+      real_case_en: q.experience_en,
       real_case_ar: realCase.answer_bridge_ar,
       real_case_star_en: realCase.star_en.slice(),
       msf_transfer_en: realCase.transfer_en,
@@ -702,7 +809,7 @@
   });
 
   window.WACA_UPA_EVIDENCE = {
-    version: "2026-08-12-v2",
+    version: "2026-08-12-human-v3",
     question_count: qs.length,
     sources: SOURCES,
     profiles: PROFILES.map(p => ({ id:p.id, label:p.label, grade:p.grade, sources:p.sources })),

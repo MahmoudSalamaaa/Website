@@ -20,12 +20,10 @@
     const wrap=document.createElement('section');
     wrap.className='real-case current-bank-real-case';
     wrap.innerHTML=`
-      <div class="section-title"><span>CLOSEST REAL WORK CASE</span><b>${esc(grade)}</b></div>
+      <div class="section-title"><span>REAL EVIDENCE · VISUAL MEMORY</span><b>${esc(grade)}</b></div>
       <h3>${esc(q.real_case_title_en||q.upa_evidence?.real_case_title_en||'Verified UPA case')}</h3>
-      <p>${esc(q.real_case_en||q.upa_evidence?.real_case_en||'')}</p>
       ${visual?`<img class="case-visual" loading="lazy" src="${esc(visual)}" alt="${esc(q.real_case_title_en||'UPA work case visual')}">`:''}
-      <div class="star-grid">${star.map(x=>`<div>${esc(x)}</div>`).join('')}</div>
-      <div class="transfer"><b>MSF WaCA transfer</b><p>${esc(q.msf_transfer_en||q.upa_evidence?.msf_transfer_en||'')}</p></div>
+      <div class="transfer"><b>How I transfer this to MSF WaCA</b><p>${esc(q.msf_transfer_en||q.upa_evidence?.msf_transfer_en||'')}</p></div>
       <div class="sources">${sources(q)}</div>`;
     anchor.parentNode.insertBefore(wrap,anchor);
     const meta=card.querySelector('.q-meta');

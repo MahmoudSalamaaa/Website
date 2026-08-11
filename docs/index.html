@@ -976,6 +976,10 @@ html[data-theme="dark"] .file.cl-word .file-icon{
   --accent:var(--ms-navy)!important;
   --soft:rgba(14,15,33,.065)!important;
 }
+.card[data-role="business-analysis"]{
+  --accent:#7c3aed;
+  --soft:#ede9fe;
+}
 .card[data-role="product-delivery"]{
   --accent:#00bcd4!important;
   --soft:rgba(0,188,212,.09)!important;
@@ -1064,278 +1068,9 @@ html[data-theme="dark"] .copytitles{
   }
 }
 
-
-/* v1.7 Readability typography — moderate increase, same visual hierarchy */
-body{
-  font-size:17px;
-  line-height:1.62;
-}
-
-/* Header */
-.brand h1{font-size:18px}
-.brand p{font-size:12px}
-.btn,.icon-btn{font-size:13px}
-
-/* Hero */
-.hero h2{font-size:18.5px;line-height:1.32}
-.hero p{font-size:12.5px;line-height:1.58}
-.stat{font-size:10px}
-.stat strong{font-size:14px}
-
-/* Search and controls */
-.searchbox input,select,textarea{font-size:14px}
-.filter-chip{font-size:11px}
-.clear-search{font-size:19px}
-
-/* Package blocks */
-.generic-copy h2{font-size:18px}
-.generic-copy p{font-size:12px;line-height:1.55}
-.generic-note{font-size:10.5px}
-
-/* Section headers */
-.section-heading h2{font-size:17px}
-.section-heading p{font-size:11.5px}
-.matchbar strong{font-size:15px}
-.matchbar p{font-size:11px}
-.result-count{font-size:11.5px}
-
-/* Role cards */
-.card h2{font-size:16px;line-height:1.3}
-.summary{font-size:11.5px;line-height:1.55}
-.jobtag,.moretag{font-size:9.5px;line-height:1.3}
-.fav{font-size:19px}
-.role-icon{font-size:10.5px}
-
-/* File actions */
-.file strong{font-size:11.5px !important;line-height:1.3}
-.file small{font-size:9px !important;line-height:1.35}
-.file-icon{font-size:10px}
-
-/* Analyzer */
-.analyzer h2{font-size:16px}
-.analyzer p{font-size:11px}
-.analyzer-actions{font-size:11px}
-.rec h3{font-size:12.5px}
-.rec small{font-size:10px}
-.rec ul{font-size:10px}
-.rec a,.rec button{font-size:10.5px}
-
-/* Resources */
-.resources-head h2{font-size:15px}
-.resource h3{font-size:11.5px}
-.resource p{font-size:10px;line-height:1.45}
-.resource a{font-size:10.5px}
-footer{font-size:10px}
-
-/* Mobile gets a slightly smaller bump to avoid crowding */
-@media(max-width:700px){
-  body{font-size:16px}
-  .hero h2{font-size:17.5px}
-  .hero p{font-size:12px}
-  .generic-copy h2{font-size:17px}
-  .generic-copy p{font-size:11.5px}
-  .card h2{font-size:15.5px}
-  .summary{font-size:11px}
-  .jobtag,.moretag{font-size:9px}
-  .file strong{font-size:11px !important}
-  .file small{font-size:8.8px !important}
-  .filter-chip{font-size:10.5px}
-  .searchbox input,select,textarea{font-size:13.5px}
-}
-
-
-/* v1.8 Spacious clarity mode */
-body{font-size:17.5px;line-height:1.68}
-.shell{width:min(1380px,calc(100% - 42px));padding:18px 0 64px}
-.topbar{margin-bottom:18px;padding:16px 19px;border-radius:16px}
-.mark{width:48px;height:48px;border-radius:13px}
-.brand h1{font-size:20px}.brand p{font-size:13px;line-height:1.45}
-.icon-btn{min-width:44px;min-height:44px}
-
-.hero{margin:0 0 22px;padding:22px 24px;grid-template-columns:minmax(0,1.25fr) auto;gap:28px;border-radius:18px}
-.hero h2{font-size:23px;line-height:1.32;margin-bottom:7px}
-.hero p{font-size:14px;line-height:1.65;max-width:82ch}
-.stats{gap:9px}.stat{min-width:112px;padding:11px 13px;border-radius:12px;font-size:11px}.stat strong{font-size:16px;margin-bottom:2px}
-
-.generic-package,.universal-package{padding:20px 21px;border-radius:19px}
-.universal-package{margin:0 0 18px}#genericPackage{margin:0 0 24px}
-.generic-copy{margin-bottom:15px}.generic-copy h2{font-size:21px;line-height:1.3;margin-bottom:5px}
-.generic-copy p{font-size:13.5px;line-height:1.65;max-width:90ch}.generic-note{font-size:11px;line-height:1.5;margin-top:8px}
-.generic-files{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px}
-
-.workspace{margin:18px 0 22px;padding:14px}
-.search-row{grid-template-columns:minmax(0,1fr) 220px auto;gap:10px}
-.searchbox input,select{height:49px;font-size:14.5px;border-radius:12px}
-.btn{min-height:49px;padding:0 15px;font-size:13px;border-radius:11px}
-.quick-nav{gap:8px;margin-top:11px}.filter-chip{padding:8px 12px;font-size:11.5px}
-
-.analyzer{margin:18px 0 24px;padding:20px}.analyzer h2{font-size:19px}.analyzer p{font-size:12.5px}
-textarea{min-height:190px;padding:14px;font-size:14px;line-height:1.6}.analyzer-actions{margin-top:10px}
-
-.section-heading{margin:26px 0 14px}.section-heading h2{font-size:21px}.section-heading p{font-size:12.5px;margin-top:4px}
-.matchbar{margin:0 0 18px;padding:15px 18px}.matchbar strong{font-size:17px}.matchbar p{font-size:12px;line-height:1.5}
-
-.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-.card{border-radius:19px;min-height:0}.card-main{padding:19px 19px 16px}.card-head{gap:13px;align-items:flex-start}
-.role-icon{flex:0 0 46px;height:46px;border-radius:13px;font-size:12px}
-.card h2{font-size:19px;line-height:1.3;margin:1px 0 2px}.fav{font-size:22px;padding:3px 5px}
-.summary{font-size:13px;line-height:1.65;margin:14px 0 15px;max-width:70ch}
-.title-preview,.alltitles{gap:7px}.jobtag,.moretag{font-size:10.5px;line-height:1.3;padding:6px 9px}
-.details-panel{margin-top:11px;padding-top:11px}
-
-.pack{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px;padding:14px 18px 17px}
-.file{min-height:76px;grid-template-columns:44px minmax(0,1fr);gap:12px;padding:13px 14px;border-radius:13px}
-.file-icon{width:44px;height:44px;border-radius:11px}.file-icon svg{width:23px;height:23px}
-.file strong{font-size:13px!important;line-height:1.3}.file small{font-size:10.5px!important;line-height:1.4;margin-top:4px}
-
-.best-actions{gap:8px}.best-action{min-height:42px;padding:9px 13px;font-size:10.5px}
-
-.resources-head{margin-top:34px;padding:15px 17px}.resources-head h2{font-size:18px}.resources-head p{font-size:12px}
-.resources{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}
-.resource{padding:14px;border-radius:13px}.resource h3{font-size:13px;line-height:1.4}.resource p{font-size:11.5px;line-height:1.55;margin-top:5px}.resource a{font-size:11.5px}
-footer{margin-top:28px;font-size:11px}
-
-@media(max-width:1050px){
-  .shell{width:min(100% - 28px,1380px)}
-  .hero{grid-template-columns:1fr}
-  .stats{justify-content:flex-start}
-  .grid{grid-template-columns:1fr}
-}
-@media(max-width:700px){
-  body{font-size:16.5px;line-height:1.64}
-  .shell{width:calc(100% - 16px);padding-top:8px}
-  .topbar{padding:13px 14px}
-  .mark{width:43px;height:43px}
-  .brand h1{font-size:18px}.brand p{font-size:11.5px}
-  .hero{padding:17px 16px;margin-bottom:15px}
-  .hero h2{font-size:20px}.hero p{font-size:13px}
-  .stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%}.stat{min-width:0}
-  .generic-package,.universal-package{padding:16px}
-  .generic-copy h2{font-size:19px}.generic-copy p{font-size:12.5px}
-  .generic-files{grid-template-columns:1fr!important}
-  .workspace{padding:10px}
-  .search-row{grid-template-columns:1fr}.searchbox{grid-column:auto}
-  .search-row select,.search-row .btn{width:100%}
-  .section-heading{margin-top:22px}.section-heading h2{font-size:19px}.section-heading p{font-size:11.5px}
-  .matchbar{align-items:flex-start;flex-direction:column}
-  .grid{gap:14px}
-  .card-main{padding:16px 15px 13px}
-  .role-icon{flex-basis:42px;height:42px}
-  .card h2{font-size:17.5px}
-  .summary{font-size:12.5px;line-height:1.6}
-  .jobtag,.moretag{font-size:10px;padding:5px 8px}
-  .pack{grid-template-columns:1fr!important;gap:8px;padding:11px 14px 14px}
-  .file{min-height:70px;grid-template-columns:42px minmax(0,1fr);padding:12px 13px}
-  .file-icon{width:42px;height:42px}
-  .file strong{font-size:12.5px!important}.file small{font-size:10px!important}
-  .resources{grid-template-columns:1fr}
-}
-@media(max-width:420px){
-  .shell{width:calc(100% - 10px)}
-  .hero p{display:block}
-  .stats{grid-template-columns:1fr 1fr}
-  .card h2{font-size:17px}
-}
-
-
-/* v1.8.1 File button overlap fix */
-.file{
-  display:grid;
-  grid-template-columns:64px minmax(0,1fr) !important;
-  column-gap:16px !important;
-  align-items:center !important;
-  padding:14px 16px !important;
-  min-height:84px !important;
-  overflow:hidden;
-}
-
-.file-icon{
-  width:56px !important;
-  height:56px !important;
-  min-width:56px !important;
-  flex:0 0 56px !important;
-  border-radius:13px !important;
-  font-size:14px !important;
-  line-height:1 !important;
-  justify-self:start;
-}
-
-.file-icon svg{
-  width:26px !important;
-  height:26px !important;
-}
-
-.file-copy{
-  min-width:0 !important;
-  padding-left:0 !important;
-  overflow:hidden;
-}
-
-.file strong{
-  display:block;
-  margin:0 !important;
-  padding:0 !important;
-  font-size:13.5px !important;
-  line-height:1.3 !important;
-  overflow-wrap:anywhere;
-}
-
-.file small{
-  display:block;
-  margin-top:5px !important;
-  padding:0 !important;
-  font-size:10.5px !important;
-  line-height:1.35 !important;
-  overflow-wrap:anywhere;
-}
-
-.file-arrow{
-  display:none !important;
-}
-
-@media(max-width:700px){
-  .file{
-    grid-template-columns:58px minmax(0,1fr) !important;
-    column-gap:14px !important;
-    min-height:80px !important;
-    padding:13px 14px !important;
-  }
-  .file-icon{
-    width:52px !important;
-    height:52px !important;
-    min-width:52px !important;
-    flex-basis:52px !important;
-    font-size:13px !important;
-  }
-  .file-icon svg{
-    width:24px !important;
-    height:24px !important;
-  }
-  .file strong{
-    font-size:13px !important;
-  }
-  .file small{
-    font-size:10px !important;
-  }
-}
-
-@media(max-width:420px){
-  .file{
-    grid-template-columns:54px minmax(0,1fr) !important;
-    column-gap:12px !important;
-  }
-  .file-icon{
-    width:48px !important;
-    height:48px !important;
-    min-width:48px !important;
-    flex-basis:48px !important;
-    font-size:12px !important;
-  }
-}
-
 </style></head><body><main class="shell">
-<header class="topbar"><div class="brand"><div class="mark">MS</div><div><h1>Career CV Selector</h1><p>9 frozen masters · fast vacancy matching · private application toolkit</p></div></div><div class="top-actions"><a class="btn" href="https://drive.google.com/drive/folders/11KXMtnPn5NKUQGUrmleSRJeUi3tvQM3s" rel="noopener noreferrer" target="_blank">Frozen 9 Drive Folder ↗</a><button class="icon-btn" id="theme" title="Toggle theme" type="button">◐</button></div></header>
-<section class="hero"><div><h2>Choose the right CV.</h2><p>Use Technology Leadership when only one CV is allowed. For a specific role, choose the closest master below.</p></div><div class="stats"><div class="stat"><strong>9</strong> Frozen masters</div><div class="stat"><strong>1</strong> Universal profile</div><div class="stat"><strong>PDF + Word</strong> Core files</div><div class="stat"><strong>Private</strong> No indexing</div></div></section>
+<header class="topbar"><div class="brand"><div class="mark">MS</div><div><h1>Career CV Selector</h1><p>10 frozen masters · fast vacancy matching · private application toolkit</p></div></div><div class="top-actions"><a class="btn" href="https://drive.google.com/drive/folders/11KXMtnPn5NKUQGUrmleSRJeUi3tvQM3s" rel="noopener noreferrer" target="_blank">Frozen 10 Drive Folder ↗</a><button class="icon-btn" id="theme" title="Toggle theme" type="button">◐</button></div></header>
+<section class="hero"><div><h2>Choose the right CV.</h2><p>Use Technology Leadership when only one CV is allowed. For a specific role, choose the closest master below.</p></div><div class="stats"><div class="stat"><strong>10</strong> Frozen masters</div><div class="stat"><strong>1</strong> Universal profile</div><div class="stat"><strong>PDF + Word</strong> Core files</div><div class="stat"><strong>Private</strong> No indexing</div></div></section>
 <section aria-labelledby="universalTitle" class="generic-package universal-package" id="universalPackage">
 <div class="generic-copy"><div aria-hidden="true" class="generic-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"></path><path d="M8 8h8M8 12h8M8 16h5"></path></svg></div><div>
 <div class="generic-kicker"><span class="generic-badge">Universal Profile</span><span class="generic-badge">Job Platforms</span><span class="generic-badge">Recommended for one-CV apps</span></div>
@@ -1381,15 +1116,15 @@ footer{margin-top:28px;font-size:11px}
 <section aria-label="File format guide" class="format-guide">
 <div class="format-guide-copy"><strong>Fast submission rule</strong><span>Use <b>PDF</b> to apply. Use <b>Word</b> only to create a tailored copy.</span></div>
 <div class="format-key"><span class="key pdf-key">PDF · primary</span><span class="key word-key">Word · editable</span><span class="key cl-key">Cover letter · tailor first</span></div>
-</section><section aria-label="Fast apply shortcuts" class="fastbar"><span>Fast apply</span><button data-quickrole="Information Systems Manager" type="button">IS Manager</button><button data-quickrole="IT Manager" type="button">IT Manager</button><button data-quickrole="Software Development Manager" type="button">Software Development</button><button data-quickrole="Enterprise Architect" type="button">Enterprise Architect</button><small>Ctrl/⌘+K search · Esc clear/close</small></section>
-<section aria-label="Career pack filters" class="workspace"><div class="search-row"><div class="searchbox"><input aria-label="Search by job title" id="search" list="jobTitles" placeholder="Search or paste vacancy title — e.g. Information Systems Manager" type="search"/><button aria-label="Clear search" class="clear-search" id="clearSearch" type="button">×</button><datalist id="jobTitles"><option value="Information Systems Manager"></option><option value="IS Manager"></option><option value="Enterprise Applications Manager"></option><option value="Business Applications Manager"></option><option value="Healthcare Information Systems Manager"></option><option value="Applications &amp; Integration Manager"></option><option value="Digital Systems Manager"></option><option value="IT Systems Manager"></option><option value="Information Systems Lead"></option><option value="Applications Manager"></option><option value="IT Manager"></option><option value="Head of IT"></option><option value="IT Operations Manager"></option><option value="IT &amp; Systems Manager"></option><option value="IT Applications &amp; Infrastructure Manager"></option><option value="ICT Manager"></option><option value="Technology Operations Manager"></option><option value="IT Services Manager"></option><option value="IT Support Manager"></option><option value="IT Systems &amp; Operations Manager"></option><option value="Software Development Manager"></option><option value="Software Delivery Manager"></option><option value="Software Engineering Manager"></option><option value="Engineering Manager"></option><option value="Application Development Manager"></option><option value="Head of Software Development"></option><option value="Technical Delivery Manager"></option><option value="Engineering Delivery Manager"></option><option value="Application Delivery Manager"></option><option value="Development Manager"></option><option value="Head of Engineering"></option><option value="Director of Software Engineering"></option><option value="Enterprise Architect"></option><option value="Lead Enterprise Architect"></option><option value="Chief Architect"></option><option value="Enterprise Architecture Manager"></option><option value="Architecture Governance Lead"></option><option value="Business Architect"></option><option value="Domain Architect"></option><option value="Technology Architect"></option><option value="Enterprise Technology Strategist"></option><option value="Target Architecture Lead"></option><option value="Solution Architect"></option><option value="Senior Solution Architect"></option><option value="Application Architect"></option><option value="Integration Architect"></option><option value="Technical Architect"></option><option value="Systems Architect"></option><option value="Enterprise Applications Architect"></option><option value="Digital Platform Architect"></option><option value="API &amp; Integration Architect"></option><option value="Solution Design Lead"></option><option value="Technical Project Manager"></option><option value="Senior Technical Project Manager"></option><option value="IT Project Manager"></option><option value="Technology Project Manager"></option><option value="Software Project Manager"></option><option value="Enterprise Applications Project Manager"></option><option value="ERP Project Manager"></option><option value="CRM Project Manager"></option><option value="Implementation Project Manager"></option><option value="Digital Transformation Project Manager"></option><option value="Project Delivery Manager"></option><option value="Digital Transformation Director"></option><option value="Digital Transformation Manager"></option><option value="Head of Digital Transformation"></option><option value="Technology Transformation Director"></option><option value="Transformation Program Director"></option><option value="Digital Strategy Director"></option><option value="Business Transformation Director"></option><option value="Digital Programs Director"></option><option value="Government Digital Transformation Lead"></option><option value="Chief Technology Officer (CTO)"></option><option value="CTO"></option><option value="IT Director"></option><option value="Technology Director"></option><option value="Head of Technology"></option><option value="Chief Information Officer (CIO)"></option><option value="CIO"></option><option value="ICT Director"></option><option value="Director of Information Technology"></option><option value="Technology Executive"></option><option value="Product Delivery Manager"></option><option value="Digital Product Delivery Manager"></option><option value="Platform Delivery Manager"></option><option value="Product Operations Manager"></option><option value="Product Program Manager"></option><option value="Enterprise Product Manager"></option><option value="Product Delivery Lead"></option><option value="Digital Platform Manager"></option><option value="Product Implementation Manager"></option></datalist></div><select aria-label="Sort" id="sort"><option value="priority">Recommended order</option><option value="relevance">Best match</option><option value="favorites">Favorites first</option><option value="az">A–Z</option></select><button aria-expanded="false" class="btn primary" id="openAnalyzer" type="button">Analyze job description</button><a class="btn folder-btn" href="https://drive.google.com/drive/folders/11KXMtnPn5NKUQGUrmleSRJeUi3tvQM3s" rel="noopener noreferrer" target="_blank">Open folder</a></div><div class="quick-nav"><button aria-pressed="true" class="filter-chip" data-cat="all" type="button">All 9</button><button aria-pressed="false" class="filter-chip" data-cat="Systems" type="button">IS / IT</button><button aria-pressed="false" class="filter-chip" data-cat="Engineering" type="button">Engineering</button><button aria-pressed="false" class="filter-chip" data-cat="Architecture" type="button">Architecture</button><button aria-pressed="false" class="filter-chip" data-cat="Delivery" type="button">Delivery</button><button aria-pressed="false" class="filter-chip" data-cat="Transformation" type="button">Transformation</button><button aria-pressed="false" class="filter-chip" data-cat="Leadership" type="button">Executive</button></div></section>
+</section><section aria-label="Fast apply shortcuts" class="fastbar"><span>Fast apply</span><button data-quickrole="Information Systems Manager" type="button">IS Manager</button><button data-quickrole="IT Manager" type="button">IT Manager</button><button data-quickrole="Software Development Manager" type="button">Software Development</button><button data-quickrole="Enterprise Architect" type="button">Enterprise Architect</button><button data-quickrole="Senior Business Analyst" type="button">Business Analysis</button><small>Ctrl/⌘+K search · Esc clear/close</small></section>
+<section aria-label="Career pack filters" class="workspace"><div class="search-row"><div class="searchbox"><input aria-label="Search by job title" id="search" list="jobTitles" placeholder="Search or paste vacancy title — e.g. Information Systems Manager" type="search"/><button aria-label="Clear search" class="clear-search" id="clearSearch" type="button">×</button><datalist id="jobTitles"><option value="Information Systems Manager"></option><option value="IS Manager"></option><option value="Enterprise Applications Manager"></option><option value="Business Applications Manager"></option><option value="Healthcare Information Systems Manager"></option><option value="Applications &amp; Integration Manager"></option><option value="Digital Systems Manager"></option><option value="IT Systems Manager"></option><option value="Information Systems Lead"></option><option value="Applications Manager"></option><option value="IT Manager"></option><option value="Head of IT"></option><option value="IT Operations Manager"></option><option value="IT &amp; Systems Manager"></option><option value="IT Applications &amp; Infrastructure Manager"></option><option value="ICT Manager"></option><option value="Technology Operations Manager"></option><option value="IT Services Manager"></option><option value="IT Support Manager"></option><option value="IT Systems &amp; Operations Manager"></option><option value="Software Development Manager"></option><option value="Software Delivery Manager"></option><option value="Software Engineering Manager"></option><option value="Engineering Manager"></option><option value="Application Development Manager"></option><option value="Head of Software Development"></option><option value="Technical Delivery Manager"></option><option value="Engineering Delivery Manager"></option><option value="Application Delivery Manager"></option><option value="Development Manager"></option><option value="Head of Engineering"></option><option value="Director of Software Engineering"></option><option value="Enterprise Architect"></option><option value="Lead Enterprise Architect"></option><option value="Chief Architect"></option><option value="Enterprise Architecture Manager"></option><option value="Architecture Governance Lead"></option><option value="Business Architect"></option><option value="Domain Architect"></option><option value="Technology Architect"></option><option value="Enterprise Technology Strategist"></option><option value="Target Architecture Lead"></option><option value="Solution Architect"></option><option value="Senior Solution Architect"></option><option value="Application Architect"></option><option value="Integration Architect"></option><option value="Technical Architect"></option><option value="Systems Architect"></option><option value="Enterprise Applications Architect"></option><option value="Digital Platform Architect"></option><option value="API &amp; Integration Architect"></option><option value="Solution Design Lead"></option><option value="Technical Project Manager"></option><option value="Senior Technical Project Manager"></option><option value="IT Project Manager"></option><option value="Technology Project Manager"></option><option value="Software Project Manager"></option><option value="Enterprise Applications Project Manager"></option><option value="ERP Project Manager"></option><option value="CRM Project Manager"></option><option value="Implementation Project Manager"></option><option value="Digital Transformation Project Manager"></option><option value="Project Delivery Manager"></option><option value="Digital Transformation Director"></option><option value="Digital Transformation Manager"></option><option value="Head of Digital Transformation"></option><option value="Technology Transformation Director"></option><option value="Transformation Program Director"></option><option value="Digital Strategy Director"></option><option value="Business Transformation Director"></option><option value="Digital Programs Director"></option><option value="Government Digital Transformation Lead"></option><option value="Chief Technology Officer (CTO)"></option><option value="CTO"></option><option value="IT Director"></option><option value="Technology Director"></option><option value="Head of Technology"></option><option value="Chief Information Officer (CIO)"></option><option value="CIO"></option><option value="ICT Director"></option><option value="Director of Information Technology"></option><option value="Technology Executive"></option><option value="Senior Business Analyst"></option><option value="Lead Business Analyst"></option><option value="Business Analyst"></option><option value="Business Systems Analyst"></option><option value="IT Business Analyst"></option><option value="Technical Business Analyst"></option><option value="Business Process Analyst"></option><option value="Requirements Lead"></option><option value="Business Analysis Lead"></option><option value="Digital Transformation Business Analyst"></option><option value="Enterprise Applications Business Analyst"></option><option value="Product Delivery Manager"></option><option value="Digital Product Delivery Manager"></option><option value="Platform Delivery Manager"></option><option value="Product Operations Manager"></option><option value="Product Program Manager"></option><option value="Enterprise Product Manager"></option><option value="Product Delivery Lead"></option><option value="Digital Platform Manager"></option><option value="Product Implementation Manager"></option></datalist></div><select aria-label="Sort" id="sort"><option value="priority">Recommended order</option><option value="relevance">Best match</option><option value="favorites">Favorites first</option><option value="az">A–Z</option></select><button aria-expanded="false" class="btn primary" id="openAnalyzer" type="button">Analyze job description</button><a class="btn folder-btn" href="https://drive.google.com/drive/folders/11KXMtnPn5NKUQGUrmleSRJeUi3tvQM3s" rel="noopener noreferrer" target="_blank">Open folder</a></div><div class="quick-nav"><button aria-pressed="true" class="filter-chip" data-cat="all" type="button">All 10</button><button aria-pressed="false" class="filter-chip" data-cat="Systems" type="button">IS / IT</button><button aria-pressed="false" class="filter-chip" data-cat="Engineering" type="button">Engineering</button><button aria-pressed="false" class="filter-chip" data-cat="Architecture" type="button">Architecture</button><button aria-pressed="false" class="filter-chip" data-cat="Analysis" type="button">Business Analysis</button><button aria-pressed="false" class="filter-chip" data-cat="Delivery" type="button">Delivery</button><button aria-pressed="false" class="filter-chip" data-cat="Transformation" type="button">Transformation</button><button aria-pressed="false" class="filter-chip" data-cat="Leadership" type="button">Executive</button></div></section>
 <section class="analyzer" hidden="" id="jdAnalyzer"><div class="analyzer-head"><div><h2>Job Description Decision Assistant</h2><p>Paste the vacancy title + requirements. The percentage means document-pack relevance—not candidate acceptance probability.</p></div><button class="btn" id="closeAnalyzer" type="button">Close</button></div><textarea id="jdText" placeholder="Paste the full job description here..."></textarea><div class="analyzer-actions"><span id="jdCount" style="color:var(--muted);font-size:9px">0 characters</span><div><button class="btn" id="sampleAnalysis" type="button">Example</button> <button class="btn" id="clearAnalysis" type="button">Clear</button> <button class="btn primary" id="runAnalysis" type="button">Find best pack</button></div></div><div class="recommendations" id="recommendations"></div></section>
-<div class="section-heading" id="roleSpecificHeading"><div><h2>Role-Specific CVs</h2><p>Frozen masters for defined vacancies. Search by title or analyze the full job description.</p></div><span class="section-badge">9 frozen masters</span></div><section aria-live="polite" class="matchbar" id="matchbar"><div><span class="match-kicker" id="matchKicker">Ready</span><strong id="matchTitle">Choose a frozen master</strong><p id="matchHint">Search by job title, use a career-family filter, or analyze the full job description.</p></div><div aria-live="polite" class="result-count" id="result"></div><div class="best-actions" hidden="" id="bestActions">
+<div class="section-heading" id="roleSpecificHeading"><div><h2>Role-Specific CVs</h2><p>Frozen masters for defined vacancies. Search by title or analyze the full job description.</p></div><span class="section-badge">10 frozen masters</span></div><section aria-live="polite" class="matchbar" id="matchbar"><div><span class="match-kicker" id="matchKicker">Ready</span><strong id="matchTitle">Choose a frozen master</strong><p id="matchHint">Search by job title, use a career-family filter, or analyze the full job description.</p></div><div aria-live="polite" class="result-count" id="result"></div><div class="best-actions" hidden="" id="bestActions">
 <a class="best-action primary-action" id="bestCv" rel="noopener noreferrer" target="_blank">Open CV PDF <span>↗</span></a>
 <a class="best-action" id="bestCl" rel="noopener noreferrer" target="_blank">Cover Letter PDF <span>↗</span></a>
 <button class="best-action subtle" id="bestWord" type="button">Edit CV Word</button>
 </div></section>
-<div class="empty" id="empty"><strong>No matching pack found.</strong><br/>Try a shorter title or choose All 9.</div><section class="grid" id="roles"><article class="card" data-category="Systems" data-priority="1" data-role="information-systems" data-search="information systems manager best for enterprise information systems, business applications, service governance, integration, data, support, vendors, continuity and multi-site digital operations. information systems manager is manager enterprise applications manager business applications manager healthcare information systems manager applications &amp; integration manager digital systems manager it systems manager information systems lead applications manager information systems is manager enterprise applications business applications application portfolio service governance application support service ownership vendor management business continuity dynamics 365 data governance integration sla kpi support tiers operational handover multi-site" style="--accent:#0f766e;--soft:#ccfbf1">
+<div class="empty" id="empty"><strong>No matching pack found.</strong><br/>Try a shorter title or choose All 10.</div><section class="grid" id="roles"><article class="card" data-category="Systems" data-priority="1" data-role="information-systems" data-search="information systems manager best for enterprise information systems, business applications, service governance, integration, data, support, vendors, continuity and multi-site digital operations. information systems manager is manager enterprise applications manager business applications manager healthcare information systems manager applications &amp; integration manager digital systems manager it systems manager information systems lead applications manager information systems is manager enterprise applications business applications application portfolio service governance application support service ownership vendor management business continuity dynamics 365 data governance integration sla kpi support tiers operational handover multi-site" style="--accent:#0f766e;--soft:#ccfbf1">
 <div class="accent"></div>
 <div class="card-main">
 <div class="card-head"><div class="role-icon">IS</div><div class="role-heading"><span class="category">Systems</span><h2>Information Systems Manager</h2><span class="status">● FROZEN MASTER · Primary / most-used</span><div aria-label="Role guidance" class="role-badges"><span class="role-badge badge-recommend">Recommended</span><span class="role-badge badge-hot">Most used</span></div></div><button aria-pressed="false" class="fav" data-favorite="information-systems" title="Favorite" type="button">☆</button></div>
@@ -1477,7 +1212,23 @@ footer{margin-top:28px;font-size:11px}
 <div class="pack"><a class="file cv-pdf primary-file" data-open="CV PDF" href="https://drive.google.com/file/d/1C-CIn3Zb1UdIWahaONPTY24DXLRGEjHm/view?usp=drivesdk" rel="noopener noreferrer" target="_blank" title="Open submit-ready CV PDF"><span class="file-icon cv_pdf"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"></path><path d="M14 2v5h5"></path><path d="M8.5 13h7M8.5 16h7M8.5 10h3"></path></svg></span><span class="file-copy"><strong>CV PDF</strong><small>Primary · submit-ready</small><code title="CTO_IT_Director_Mahmoud_Salama_CV.pdf">CTO_IT_Director_Mahmoud_Salama_CV.pdf</code></span><span class="file-arrow">↗</span></a><a class="file cl-pdf" data-open="Cover Letter PDF" href="https://drive.google.com/file/d/11xWAUQ_7CMeByIi_faUHVz46L7s3GZx0/view?usp=drivesdk" rel="noopener noreferrer" target="_blank" title="Open cover letter PDF — tailor before sending"><span class="file-icon cl_pdf"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m4 7 8 6 8-6"></path><path d="M8 16h8"></path></svg></span><span class="file-copy"><strong>Cover Letter PDF</strong><small>Submit after tailoring</small><code title="CTO_IT_Director_Mahmoud_Salama_Cover_Letter.pdf">CTO_IT_Director_Mahmoud_Salama_Cover_Letter.pdf</code></span><span class="file-arrow">↗</span></a><a class="file cv-word" data-open="CV Word" href="https://docs.google.com/document/d/1LS7qRhHtWMggs0KkPuMjPptILKYGkMK3/edit?usp=drivesdk&amp;ouid=100530613516818645947&amp;rtpof=true&amp;sd=true" rel="noopener noreferrer" target="_blank" title="Open editable CV Word source"><span class="file-icon cv_word"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M6 2h8l4 4v16H6z"></path><path d="M14 2v5h5"></path><path d="m8.5 11 1.4 6 1.6-4.2L13 17l1.5-6"></path></svg></span><span class="file-copy"><strong>CV Word</strong><small>Editable source</small><code title="CTO_IT_Director_Mahmoud_Salama_CV.docx">CTO_IT_Director_Mahmoud_Salama_CV.docx</code></span><span class="file-arrow">↗</span></a><a class="file cl-word" data-open="Cover Letter Word" href="https://docs.google.com/document/d/1PXtFhmxOb_FMcq_0n4Ka8_AiIKOX8Qge/edit?usp=drivesdk" rel="noopener noreferrer" target="_blank" title="Open editable cover letter Word source"><span class="file-icon cl_word"><svg aria-hidden="true" viewbox="0 0 24 24"><rect height="14" rx="2" width="18" x="3" y="5"></rect><path d="m4 7 8 6 8-6"></path><path d="m15.5 15.5 2-2"></path></svg></span><span class="file-copy"><strong>Cover Letter Word</strong><small>Editable cover letter</small><code title="CTO_IT_Director_Mahmoud_Salama_Cover_Letter.docx">CTO_IT_Director_Mahmoud_Salama_Cover_Letter.docx</code></span><span class="file-arrow">↗</span></a></div>
 <div class="card-footer"><span>10 matched titles · 4 linked files</span><button class="copytitles" data-copy="Chief Technology Officer (CTO) | CTO | IT Director | Technology Director | Head of Technology | Chief Information Officer (CIO) | CIO | ICT Director | Director of Information Technology | Technology Executive" type="button">Copy titles</button></div>
 </article>
-<article class="card" data-category="Delivery" data-priority="9" data-role="product-delivery" data-search="product delivery manager use selectively for enterprise/platform product delivery roles emphasizing roadmaps, backlogs, release outcomes, adoption and cross-functional delivery—not consumer growth/product-market-fit roles. product delivery manager digital product delivery manager platform delivery manager product operations manager product program manager enterprise product manager product delivery lead digital platform manager product implementation manager product delivery manager product delivery product roadmap product backlog user stories acceptance criteria platform delivery product operations product lifecycle release outcome adoption product owner prioritization value delivery" style="--accent:#9a3412;--soft:#ffedd5">
+<article class="card" data-category="Analysis" data-priority="9" data-role="business-analysis" data-search="lead senior business analyst business systems analyst it business analyst technical business analyst business process analyst requirements lead business analysis lead digital transformation business analyst enterprise applications business analyst requirements elicitation requirements engineering stakeholder interviews stakeholder workshops business functional requirements as-is to-be current state future state gap analysis process mapping workflow redesign user journeys use cases user stories acceptance criteria requirements traceability prioritisation backlog readiness business rules controls data reporting requirements data mapping integration requirements uat stakeholder acceptance change impact adoption kpi sla continuous improvement agile hybrid delivery" style="--accent:#7c3aed;--soft:#ede9fe">
+<div class="accent"></div>
+<div class="card-main">
+<div class="card-head"><div class="role-icon">BA</div><div class="role-heading"><span class="category">Analysis</span><h2>Lead / Senior Business Analyst</h2><span class="status">● FROZEN MASTER · Strong fit</span><div aria-label="Role guidance" class="role-badges"><span class="role-badge">Strong fit</span></div></div><button aria-pressed="false" class="fav" data-favorite="business-analysis" title="Favorite" type="button">☆</button></div>
+<p class="summary">Best for senior business analysis roles spanning requirements, process improvement, enterprise applications, data/integration analysis, UAT and business-to-technology translation.</p>
+<div class="title-preview"><span class="jobtag">Senior Business Analyst</span><span class="jobtag">Lead Business Analyst</span><span class="jobtag">Business Systems Analyst</span><span class="jobtag">IT Business Analyst</span><button class="moretag" data-expand="business-analysis" type="button">+7 titles</button></div>
+<div class="details-panel" hidden="" id="details-business-analysis"><div class="alltitles"><span class="jobtag">Senior Business Analyst</span><span class="jobtag">Lead Business Analyst</span><span class="jobtag">Business Analyst</span><span class="jobtag">Business Systems Analyst</span><span class="jobtag">IT Business Analyst</span><span class="jobtag">Technical Business Analyst</span><span class="jobtag">Business Process Analyst</span><span class="jobtag">Requirements Lead</span><span class="jobtag">Business Analysis Lead</span><span class="jobtag">Digital Transformation Business Analyst</span><span class="jobtag">Enterprise Applications Business Analyst</span></div></div>
+</div>
+<div class="pack">
+<a class="file cv-pdf primary-file" data-open="CV PDF" href="https://drive.google.com/file/d/1s6N7QMIEEoOXllcdUn5BeCLc7AAuOeDH/view?usp=drivesdk" rel="noopener noreferrer" target="_blank" title="Open submit-ready Business Analyst CV PDF"><span class="file-icon">PDF</span><span class="file-copy"><strong>CV PDF</strong><small>Primary · submit-ready</small><code title="Mahmoud_Salama_CV_Lead_Senior_Business_Analyst_ATS.pdf">Mahmoud_Salama_CV_Lead_Senior_Business_Analyst_ATS.pdf</code></span><span class="file-arrow">↗</span></a>
+<a class="file cl-pdf" data-open="Cover Letter PDF" href="https://drive.google.com/file/d/1dFVqgAKZksZyBxXmXIQprdffqhOFrx3o/view?usp=drivesdk" rel="noopener noreferrer" target="_blank" title="Open cover letter PDF — tailor before sending"><span class="file-icon">PDF</span><span class="file-copy"><strong>Cover Letter PDF</strong><small>Submit after tailoring</small><code title="Generic_Executive_Cover_Letter_Mahmoud_Salama.pdf">Generic_Executive_Cover_Letter_Mahmoud_Salama.pdf</code></span><span class="file-arrow">↗</span></a>
+<a class="file cv-word" data-open="CV Word" href="https://docs.google.com/document/d/1ECtz3OIbCr9tJK16S_VXJCQOE8XHVgig/edit?usp=drivesdk&amp;ouid=100530613516818645947&amp;rtpof=true&amp;sd=true" rel="noopener noreferrer" target="_blank" title="Open editable Lead / Senior Business Analyst CV Word source"><span class="file-icon">DOC</span><span class="file-copy"><strong>CV Word</strong><small>Editable source</small><code title="Mahmoud_Salama_CV_Lead_Senior_Business_Analyst_ATS.docx">Mahmoud_Salama_CV_Lead_Senior_Business_Analyst_ATS.docx</code></span><span class="file-arrow">↗</span></a>
+<a class="file cl-word" data-open="Cover Letter Word" href="https://docs.google.com/document/d/1aOxlPt2_tcl4wzbkZHkjJBLZPZZJSLcT/edit?usp=drivesdk" rel="noopener noreferrer" target="_blank" title="Open editable cover letter Word source"><span class="file-icon">DOC</span><span class="file-copy"><strong>Cover Letter Word</strong><small>Editable cover letter</small><code title="Generic_Executive_Cover_Letter_Mahmoud_Salama.docx">Generic_Executive_Cover_Letter_Mahmoud_Salama.docx</code></span><span class="file-arrow">↗</span></a>
+</div>
+<div class="card-footer"><span>11 matched titles · 4 linked files</span><button class="copytitles" data-copy="Senior Business Analyst | Lead Business Analyst | Business Analyst | Business Systems Analyst | IT Business Analyst | Technical Business Analyst | Business Process Analyst | Requirements Lead | Business Analysis Lead | Digital Transformation Business Analyst | Enterprise Applications Business Analyst" type="button">Copy titles</button></div>
+</article>
+<article class="card" data-category="Delivery" data-priority="10" data-role="product-delivery" data-search="product delivery manager use selectively for enterprise/platform product delivery roles emphasizing roadmaps, backlogs, release outcomes, adoption and cross-functional delivery—not consumer growth/product-market-fit roles. product delivery manager digital product delivery manager platform delivery manager product operations manager product program manager enterprise product manager product delivery lead digital platform manager product implementation manager product delivery manager product delivery product roadmap product backlog user stories acceptance criteria platform delivery product operations product lifecycle release outcome adoption product owner prioritization value delivery" style="--accent:#9a3412;--soft:#ffedd5">
 <div class="accent"></div>
 <div class="card-main">
 <div class="card-head"><div class="role-icon">PD</div><div class="role-heading"><span class="category">Delivery</span><h2>Product Delivery Manager</h2><span class="status">● FROZEN MASTER · Selective use</span><div aria-label="Role guidance" class="role-badges"><span class="role-badge badge-selective">Selective</span></div></div><button aria-pressed="false" class="fav" data-favorite="product-delivery" title="Favorite" type="button">☆</button></div>
@@ -1508,18 +1259,18 @@ footer{margin-top:28px;font-size:11px}
 <article class="resource" data-resource-search="urgent recruitment toolkit drive folder open the dedicated drive folder containing all urgent-support files."><span class="resource-index">18</span><div><h3>Urgent Recruitment Toolkit Drive Folder</h3><p>Open the dedicated Drive folder containing all urgent-support files.</p><a href="https://drive.google.com/drive/folders/1R0cUj-H1OzLALX8AsHGsnucJDdtbqgEF" rel="noopener noreferrer" target="_blank">Open resource ↗</a></div></article></section>
 <footer>Private career toolkit · Frozen masters should remain unchanged · Create a vacancy-specific copy before editing · Google Drive sign-in may be required</footer></main><div aria-live="polite" class="toast" id="toast" role="status"></div>
 <script>
-const roleSignals={"information-systems": {"label": "Information Systems Manager", "signals": ["information systems", "is manager", "enterprise applications", "business applications", "application portfolio", "service governance", "application support", "service ownership", "vendor management", "business continuity", "dynamics 365", "data governance", "integration", "sla", "kpi", "support tiers", "operational handover", "multi-site"]}, "it-manager": {"label": "IT Manager", "signals": ["it manager", "head of it", "it operations", "it service management", "service desk", "incident", "problem management", "change management", "release management", "vendor management", "business continuity", "backup", "recovery", "access control", "cybersecurity governance", "sla", "kpi", "enterprise systems", "support operations", "availability"]}, "software-dev-delivery": {"label": "Software Development & Delivery Manager", "signals": ["software development manager", "software delivery manager", "software engineering manager", "engineering manager", "development team", "c#", ".net", "asp.net", "react", "node.js", "rest api", "graphql", "sdlc", "agile", "scrum", "ci/cd", "code review", "technical debt", "qa", "release", "deployment", "engineering leadership", "capacity planning"]}, "enterprise-architect": {"label": "Enterprise Architect", "signals": ["enterprise architect", "enterprise architecture", "business capability", "capability map", "target state", "architecture principles", "reference architecture", "architecture governance", "application portfolio rationalization", "technology roadmap", "transition architecture", "standards", "architecture review", "exception management", "data architecture", "integration architecture"]}, "solution-architect": {"label": "Solution Architect", "signals": ["solution architect", "solution design", "application architect", "integration architect", "api contract", "rest api", "graphql", "data flow", "non-functional requirements", "nfr", "scalability", "availability", "resilience", "security architecture", "technical design", "dynamics 365", "solution blueprint", "trade-off"]}, "technical-project": {"label": "Technical Project Manager", "signals": ["technical project manager", "it project manager", "project plan", "scope", "wbs", "schedule", "milestone", "raid", "risk register", "dependency", "change control", "resource plan", "budget", "sit", "uat", "implementation", "deployment", "hypercare", "project governance", "pmo"]}, "digital-transformation": {"label": "Digital Transformation Director", "signals": ["digital transformation", "transformation director", "digital strategy", "current state", "target state", "operating model", "process redesign", "modernization roadmap", "change management", "adoption", "benefits realization", "stakeholder alignment", "business transformation", "innovation", "digital program"]}, "cto-it-director": {"label": "CTO / IT Director", "signals": ["chief technology officer", "cto", "it director", "technology director", "head of technology", "cio", "technology strategy", "it operating model", "enterprise systems", "architecture", "cybersecurity governance", "vendor governance", "business continuity", "technology portfolio", "executive leadership", "board", "budget"]}, "product-delivery": {"label": "Product Delivery Manager", "signals": ["product delivery manager", "product delivery", "product roadmap", "product backlog", "user stories", "acceptance criteria", "platform delivery", "product operations", "product lifecycle", "release outcome", "adoption", "product owner", "prioritization", "value delivery"]}};
+const roleSignals={"information-systems": {"label": "Information Systems Manager", "signals": ["information systems", "is manager", "enterprise applications", "business applications", "application portfolio", "service governance", "application support", "service ownership", "vendor management", "business continuity", "dynamics 365", "data governance", "integration", "sla", "kpi", "support tiers", "operational handover", "multi-site"]}, "it-manager": {"label": "IT Manager", "signals": ["it manager", "head of it", "it operations", "it service management", "service desk", "incident", "problem management", "change management", "release management", "vendor management", "business continuity", "backup", "recovery", "access control", "cybersecurity governance", "sla", "kpi", "enterprise systems", "support operations", "availability"]}, "software-dev-delivery": {"label": "Software Development & Delivery Manager", "signals": ["software development manager", "software delivery manager", "software engineering manager", "engineering manager", "development team", "c#", ".net", "asp.net", "react", "node.js", "rest api", "graphql", "sdlc", "agile", "scrum", "ci/cd", "code review", "technical debt", "qa", "release", "deployment", "engineering leadership", "capacity planning"]}, "enterprise-architect": {"label": "Enterprise Architect", "signals": ["enterprise architect", "enterprise architecture", "business capability", "capability map", "target state", "architecture principles", "reference architecture", "architecture governance", "application portfolio rationalization", "technology roadmap", "transition architecture", "standards", "architecture review", "exception management", "data architecture", "integration architecture"]}, "solution-architect": {"label": "Solution Architect", "signals": ["solution architect", "solution design", "application architect", "integration architect", "api contract", "rest api", "graphql", "data flow", "non-functional requirements", "nfr", "scalability", "availability", "resilience", "security architecture", "technical design", "dynamics 365", "solution blueprint", "trade-off"]}, "technical-project": {"label": "Technical Project Manager", "signals": ["technical project manager", "it project manager", "project plan", "scope", "wbs", "schedule", "milestone", "raid", "risk register", "dependency", "change control", "resource plan", "budget", "sit", "uat", "implementation", "deployment", "hypercare", "project governance", "pmo"]}, "digital-transformation": {"label": "Digital Transformation Director", "signals": ["digital transformation", "transformation director", "digital strategy", "current state", "target state", "operating model", "process redesign", "modernization roadmap", "change management", "adoption", "benefits realization", "stakeholder alignment", "business transformation", "innovation", "digital program"]}, "cto-it-director": {"label": "CTO / IT Director", "signals": ["chief technology officer", "cto", "it director", "technology director", "head of technology", "cio", "technology strategy", "it operating model", "enterprise systems", "architecture", "cybersecurity governance", "vendor governance", "business continuity", "technology portfolio", "executive leadership", "board", "budget"]}, "business-analysis": {"label": "Lead / Senior Business Analyst", "signals": ["senior business analyst", "lead business analyst", "business analyst", "business systems analyst", "it business analyst", "technical business analyst", "business process analyst", "requirements elicitation", "requirements engineering", "stakeholder workshop", "business requirements", "functional requirements", "as-is", "to-be", "current state", "future state", "gap analysis", "process mapping", "process redesign", "workflow analysis", "user journey", "use case", "user stories", "acceptance criteria", "requirements traceability", "business rules", "data mapping", "integration requirements", "uat", "stakeholder acceptance", "kpi", "continuous improvement"]}, "product-delivery": {"label": "Product Delivery Manager", "signals": ["product delivery manager", "product delivery", "product roadmap", "product backlog", "user stories", "acceptance criteria", "platform delivery", "product operations", "product lifecycle", "release outcome", "adoption", "product owner", "prioritization", "value delivery"]}};
 const cards=[...document.querySelectorAll('.card')], search=document.getElementById('search'), sort=document.getElementById('sort'), result=document.getElementById('result'), empty=document.getElementById('empty');
 const matchTitle=document.getElementById('matchTitle'),matchHint=document.getElementById('matchHint'),matchKicker=document.getElementById('matchKicker');let category='all';
-const favKey='msFrozen9Fav';const favs=()=>{try{return new Set(JSON.parse(localStorage.getItem(favKey)||'[]'))}catch{return new Set()}};const saveFav=s=>localStorage.setItem(favKey,JSON.stringify([...s]));
+const favKey='msFrozen10Fav';const favs=()=>{try{return new Set(JSON.parse(localStorage.getItem(favKey)||'[]'))}catch{return new Set()}};const saveFav=s=>localStorage.setItem(favKey,JSON.stringify([...s]));
 function norm(v){return (v||'').toLowerCase().replace(/[–—]/g,'-').replace(/[^a-z0-9+#.&/\-\s]/g,' ').replace(/\s+/g,' ').trim()}
 function titleScore(c,q){if(!q)return 0;const title=norm(c.querySelector('h2').textContent),txt=norm(c.dataset.search);let n=0;if(title===q)n+=160;if(title.includes(q)||q.includes(title))n+=95;if(txt.includes(q))n+=55;const w=[...new Set(q.split(' ').filter(x=>x.length>1))];w.forEach(x=>{if(title.includes(x))n+=16;if(txt.includes(x))n+=4});return n}
 function syncCats(){document.querySelectorAll('[data-cat]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.cat===category)))}
 function syncFavs(){const f=favs();document.querySelectorAll('.fav').forEach(b=>{const on=f.has(b.dataset.favorite);b.textContent=on?'★':'☆';b.setAttribute('aria-pressed',String(on))})}
-function apply(){const q=norm(search.value);let shown=[];cards.forEach(c=>{c.classList.remove('best-match');const okCat=category==='all'||c.dataset.category===category;const okText=!q||titleScore(c,q)>8;c.hidden=!(okCat&&okText);if(!c.hidden)shown.push(c)});if(sort.value==='az')shown.sort((a,b)=>a.querySelector('h2').textContent.localeCompare(b.querySelector('h2').textContent));else if(sort.value==='favorites'){const f=favs();shown.sort((a,b)=>(f.has(b.dataset.role)?1:0)-(f.has(a.dataset.role)?1:0)||(+a.dataset.priority)-(+b.dataset.priority))}else if(sort.value==='relevance'&&q)shown.sort((a,b)=>titleScore(b,q)-titleScore(a,q));else shown.sort((a,b)=>(+a.dataset.priority)-(+b.dataset.priority));shown.forEach(c=>document.getElementById('roles').appendChild(c));if(q&&shown.length){shown[0].classList.add('best-match');matchKicker.textContent='Recommended frozen master';matchTitle.textContent=shown[0].querySelector('h2').textContent;matchHint.textContent='Closest document pack to “'+search.value.trim()+'”. Open the PDF to submit or Word to create a tailored copy.'}else{matchKicker.textContent=category==='all'?'Ready':'Filtered';matchTitle.textContent=category==='all'?'Choose a frozen master':category+' packs';matchHint.textContent=category==='all'?'Search by job title, filter by family, or analyze the full description.':'Showing '+category.toLowerCase()+' roles only.'}const ba=document.getElementById('bestActions'),bcv=document.getElementById('bestCv'),bcl=document.getElementById('bestCl'),bw=document.getElementById('bestWord');if(shown.length&&q){const first=shown[0],cv=first.querySelector('.file.cv-pdf'),cl=first.querySelector('.file.cl-pdf'),word=first.querySelector('.file.cv-word');if(cv){bcv.href=cv.href;bcv.setAttribute('aria-label','Open '+first.querySelector('h2').textContent+' CV PDF')}if(cl){bcl.href=cl.href;bcl.setAttribute('aria-label','Open '+first.querySelector('h2').textContent+' cover letter PDF')}bw.onclick=()=>word&&window.open(word.href,'_blank','noopener');ba.hidden=false}else ba.hidden=true;result.textContent=shown.length+' of 9';empty.style.display=shown.length?'none':'block'}
+function apply(){const q=norm(search.value);let shown=[];cards.forEach(c=>{c.classList.remove('best-match');const okCat=category==='all'||c.dataset.category===category;const okText=!q||titleScore(c,q)>8;c.hidden=!(okCat&&okText);if(!c.hidden)shown.push(c)});if(sort.value==='az')shown.sort((a,b)=>a.querySelector('h2').textContent.localeCompare(b.querySelector('h2').textContent));else if(sort.value==='favorites'){const f=favs();shown.sort((a,b)=>(f.has(b.dataset.role)?1:0)-(f.has(a.dataset.role)?1:0)||(+a.dataset.priority)-(+b.dataset.priority))}else if(sort.value==='relevance'&&q)shown.sort((a,b)=>titleScore(b,q)-titleScore(a,q));else shown.sort((a,b)=>(+a.dataset.priority)-(+b.dataset.priority));shown.forEach(c=>document.getElementById('roles').appendChild(c));if(q&&shown.length){shown[0].classList.add('best-match');matchKicker.textContent='Recommended frozen master';matchTitle.textContent=shown[0].querySelector('h2').textContent;matchHint.textContent='Closest document pack to “'+search.value.trim()+'”. Open the PDF to submit or Word to create a tailored copy.'}else{matchKicker.textContent=category==='all'?'Ready':'Filtered';matchTitle.textContent=category==='all'?'Choose a frozen master':category+' packs';matchHint.textContent=category==='all'?'Search by job title, filter by family, or analyze the full description.':'Showing '+category.toLowerCase()+' roles only.'}const ba=document.getElementById('bestActions'),bcv=document.getElementById('bestCv'),bcl=document.getElementById('bestCl'),bw=document.getElementById('bestWord');if(shown.length&&q){const first=shown[0],cv=first.querySelector('.file.cv-pdf'),cl=first.querySelector('.file.cl-pdf'),word=first.querySelector('.file.cv-word');if(cv){bcv.href=cv.href;bcv.setAttribute('aria-label','Open '+first.querySelector('h2').textContent+' CV PDF')}if(cl){bcl.href=cl.href;bcl.setAttribute('aria-label','Open '+first.querySelector('h2').textContent+' cover letter PDF')}bw.onclick=()=>word&&window.open(word.href,'_blank','noopener');ba.hidden=false}else ba.hidden=true;result.textContent=shown.length+' of 10';empty.style.display=shown.length?'none':'block'}
 search.addEventListener('input',()=>{sort.value=search.value.trim()?'relevance':'priority';apply()});document.getElementById('clearSearch').onclick=()=>{search.value='';sort.value='priority';apply();search.focus()};sort.onchange=apply;document.querySelectorAll('[data-cat]').forEach(b=>b.onclick=()=>{category=b.dataset.cat;syncCats();apply()});document.querySelectorAll('.fav').forEach(b=>b.onclick=()=>{const f=favs();f.has(b.dataset.favorite)?f.delete(b.dataset.favorite):f.add(b.dataset.favorite);saveFav(f);syncFavs();if(sort.value==='favorites')apply()});document.querySelectorAll('[data-expand]').forEach(b=>b.onclick=()=>{const el=document.getElementById('details-'+b.dataset.expand),open=!el.hidden;el.hidden=open;b.textContent=open?'+'+(el.querySelectorAll('.jobtag').length-4)+' titles':'Hide titles'});document.querySelectorAll('[data-copy]').forEach(b=>b.onclick=async()=>{try{await navigator.clipboard.writeText(b.dataset.copy);toast('Matched titles copied')}catch{toast('Copy unavailable')}});
 function toast(t){const el=document.getElementById('toast');el.textContent=t;el.classList.add('show');clearTimeout(window.__tt);window.__tt=setTimeout(()=>el.classList.remove('show'),1700)}
-document.getElementById('theme').onclick=()=>{const n=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=n;localStorage.setItem('msFrozen9Theme',n)};document.documentElement.dataset.theme=localStorage.getItem('msFrozen9Theme')||'light';document.getElementById('resourceToggle').onclick=e=>{const r=document.getElementById('resources'),show=r.hidden;r.hidden=!show;e.currentTarget.textContent=show?'Hide resources':'Show resources';e.currentTarget.setAttribute('aria-expanded',String(show))};document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();search.focus()}});
+document.getElementById('theme').onclick=()=>{const n=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=n;localStorage.setItem('msFrozen10Theme',n)};document.documentElement.dataset.theme=localStorage.getItem('msFrozen10Theme')||'light';document.getElementById('resourceToggle').onclick=e=>{const r=document.getElementById('resources'),show=r.hidden;r.hidden=!show;e.currentTarget.textContent=show?'Hide resources':'Show resources';e.currentTarget.setAttribute('aria-expanded',String(show))};document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();search.focus()}});
 const analyzer=document.getElementById('jdAnalyzer'),jd=document.getElementById('jdText'),recs=document.getElementById('recommendations');function setAnalyzer(on){analyzer.hidden=!on;document.getElementById('openAnalyzer').setAttribute('aria-expanded',String(on));if(on){jd.focus();analyzer.scrollIntoView({behavior:'smooth',block:'nearest'})}}document.getElementById('openAnalyzer').onclick=()=>setAnalyzer(analyzer.hidden);document.getElementById('closeAnalyzer').onclick=()=>setAnalyzer(false);jd.oninput=()=>document.getElementById('jdCount').textContent=jd.value.length.toLocaleString()+' characters';document.getElementById('clearAnalysis').onclick=()=>{jd.value='';jd.oninput();recs.innerHTML='';jd.focus()};document.getElementById('sampleAnalysis').onclick=()=>{jd.value='Information Systems Manager responsible for enterprise applications, Microsoft Dynamics 365 integration, IT service governance, application support, vendor management, service continuity, access controls, SLA/KPI reporting, user adoption, data governance and multi-site operations.';jd.oninput();runAnalysis()};
 function analyze(raw){const t=norm(raw);return cards.map(c=>{const role=c.dataset.role, sig=roleSignals[role]?.signals||[];let score=0,m=[];sig.forEach(s=>{const ns=norm(s);if(t.includes(ns)){score+=ns.includes(' ')?16:8;m.push(s)}});const title=norm(c.querySelector('h2').textContent);if(t.includes(title)){score+=60;m.unshift('exact role title')};const overlap=[...new Set(norm(c.dataset.search).split(' '))].filter(w=>w.length>3&&t.includes(w)).length;score+=Math.min(overlap,24)*1.7;return{c,role,score,m:[...new Set(m)].slice(0,5)}}).sort((a,b)=>b.score-a.score)}
 function runAnalysis(){if(jd.value.trim().length<35){recs.innerHTML='<div class="rec"><strong>Add more vacancy detail.</strong><br><small>Paste at least the title plus responsibilities or requirements.</small></div>';return}const top=analyze(jd.value).slice(0,3),max=Math.max(top[0]?.score||1,1);recs.innerHTML=top.map((x,i)=>{const pct=Math.max(42,Math.min(i===0?97:93,Math.round(50+(x.score/max)*46-i*4)));const pdf=x.c.querySelector('.file.primary-file').href;return `<article class="rec"><span class="rec-rank">${i+1}</span><h3>${x.c.querySelector('h2').textContent}</h3><small>${pct}% document-pack relevance</small><ul>${(x.m.length?x.m:['role-title and responsibility vocabulary']).map(v=>`<li>${v}</li>`).join('')}</ul><a href="${pdf}" target="_blank" rel="noopener noreferrer">Open CV PDF ↗</a> · <button type="button" data-show="${x.role}">Show pack</button></article>`}).join('');recs.querySelectorAll('[data-show]').forEach(b=>b.onclick=()=>{const c=document.querySelector(`[data-role="${b.dataset.show}"]`);search.value=c.querySelector('h2').textContent;category='all';syncCats();sort.value='relevance';apply();setAnalyzer(false);c.scrollIntoView({behavior:'smooth',block:'center'})})}document.getElementById('runAnalysis').onclick=runAnalysis;jd.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key==='Enter')runAnalysis()});document.querySelectorAll('.file[data-open]').forEach(a=>a.addEventListener('click',()=>{const card=a.closest('.card');const pack=a.closest('.universal-package,.generic-package,.card');const role=pack?.querySelector('h2')?.textContent||'Career Package';localStorage.setItem('msLastOpened',JSON.stringify({role,file:a.dataset.open,at:Date.now()}));toast(role+' · '+a.dataset.open)}));

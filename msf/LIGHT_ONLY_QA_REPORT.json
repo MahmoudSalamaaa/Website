@@ -1,0 +1,21 @@
+{
+  "html_files": 28,
+  "theme_toggle_refs": [],
+  "dark_theme_attrs": [],
+  "missing_light_css": [
+    "14-day-plan.html"
+  ],
+  "dark_meta": [],
+  "contrast": {
+    "question_on_card": 14.71,
+    "arabic_question_on_card": 5.72,
+    "body_on_bg": 14.79
+  },
+  "styles_has_dark_selector": true,
+  "common_forces_light": true,
+  "light_css_size": 8202,
+  "js_syntax_errors": [],
+  "refs_checked": 641,
+  "broken_refs_count": 0,
+  "broken_refs_sample": []
+}

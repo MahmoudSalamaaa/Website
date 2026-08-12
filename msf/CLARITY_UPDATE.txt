@@ -1,0 +1,15 @@
+WACA CLARITY UPDATE - 11 Aug 2026
+
+Goal: make the project easier to scan and study, especially on mobile.
+
+Changes:
+- Rebuilt the dashboard around four clear actions: P0 questions, Study Coach, Mock Interview, Final Review.
+- Reduced dashboard visual density and moved secondary resources into a collapsible section.
+- Simplified the question-bank header and progress area.
+- Kept only Search, Priority, Status and Study one-by-one visible by default.
+- Moved track/category/source/sort/print controls under "More filters".
+- Reduced question-card visual noise while keeping English answer, UPA bridge, Arabic explanation and study controls.
+- Arabic remains study support; English remains the interview language.
+- Removed automatic jump bars and command-palette button from normal page UI.
+- Simplified global card shadows, spacing, typography and mobile layout.
+- Preserved all 195 questions, progress state, spaced-review logic and existing content.

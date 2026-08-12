@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5f8fb">
+<title>UPA Evidence Atlas · WACA Study</title>
+<link rel="stylesheet" href="/msf/assets/css/upa-evidence.css?v=20260812-v2">
+<link rel="stylesheet" href="/msf/assets/css/light-only.css?v=20260812-light-final"></head>
+<body>
+<a class="btn" href="/msf/resources.html" style="margin:14px">Resources</a>
+<main class="atlas">
+  <a class="btn" href="/msf/upa-evidence-lab.html">← 195-question evidence lab</a>
+  <section class="hero" style="margin-top:14px">
+    <div class="eyebrow">SOURCE-BACKED STUDY ATLAS</div>
+    <h1>Turn UPA work into interview proof.</h1>
+    <p>This page is a memory map of the strongest, defensible stories from your actual work. It intentionally excludes credentials, internal IPs/ports, VPN details, private endpoints and operational weakness details.</p>
+  </section>
+
+  <section class="section">
+    <h2>Scale you can remember</h2>
+    <p class="lead">These figures come from 2025–2026 UPA/MedIQ working documents. Use the scope/date when challenged; do not merge different definitions of “entity”, “facility” or “institution”.</p>
+    <div class="grid3">
+      <div class="metric-card"><b>38k+</b><span>users in the 2026 MedIQ data/AI study</span></div>
+      <div class="metric-card"><b>11k+</b><span>medical facilities in the 2026 MedIQ study</span></div>
+      <div class="metric-card"><b>2k+</b><span>suppliers in UPA / MedIQ source material</span></div>
+    </div>
+  </section>
+
+  <section class="section chart-card">
+    <h2>Support-channel workload</h2>
+    <p class="lead">Documented annual minimum volumes in the UPA Customer Service / CRM plan. These are “more than” figures, shown here as the documented lower bounds for visual comparison.</p>
+    <div class="bar-row"><span>Call center</span><div class="bar-bg"><div class="bar-fill" style="width:100%"></div></div><b>11k+</b></div>
+    <div class="bar-row"><span>Email</span><div class="bar-bg"><div class="bar-fill" style="width:27.3%"></div></div><b>3k+</b></div>
+    <div class="bar-row"><span>In-person</span><div class="bar-bg"><div class="bar-fill" style="width:9.1%"></div></div><b>1k+</b></div>
+    <div class="note">Interview use: service desk scale, multi-channel intake, prioritization, knowledge base, root-cause and targeted training.</div>
+  </section>
+
+  <section class="section chart-card">
+    <h2>Historical inquiry volumes</h2>
+    <p class="lead">From the customer-service source. Periods are intentionally shown exactly as documented because 2021 and 2025 are partial-year periods.</p>
+    <div class="bar-row"><span>Jul–Dec 2021</span><div class="bar-bg"><div class="bar-fill" style="width:27.7%"></div></div><b>3,210</b></div>
+    <div class="bar-row"><span>2022</span><div class="bar-bg"><div class="bar-fill" style="width:88.5%"></div></div><b>10,244</b></div>
+    <div class="bar-row"><span>2023</span><div class="bar-bg"><div class="bar-fill" style="width:56.0%"></div></div><b>6,480</b></div>
+    <div class="bar-row"><span>2024</span><div class="bar-bg"><div class="bar-fill" style="width:100%"></div></div><b>11,577</b></div>
+    <div class="bar-row"><span>Jan–May 2025</span><div class="bar-bg"><div class="bar-fill" style="width:49.9%"></div></div><b>5,779</b></div>
+  </section>
+
+  <section class="section diagram-card">
+    <h2>1. Enterprise value chain — say this, not a tool list</h2>
+    <div class="flow-wide">
+      <div class="node"><b>Users / entities / suppliers</b><span>Requests, bids, operations</span></div><div class="arrow">→</div>
+      <div class="node"><b>MedIQ operational core</b><span>Procurement, supply, inventory</span></div><div class="arrow">→</div>
+      <div class="node"><b>Integration layer</b><span>APIs, mapping, validation</span></div><div class="arrow">→</div>
+      <div class="node"><b>ERP / external systems</b><span>Dynamics, GS1, E‑Tender</span></div><div class="arrow">→</div>
+      <div class="node"><b>Data & analytics</b><span>Warehouse, KPIs, AI support</span></div>
+    </div>
+    <p class="note">Memory cue: <b>Operate → Integrate → Govern → Analyze.</b> Keep one authoritative transaction source while allowing analytical and specialist workloads to be isolated.</p>
+  </section>
+
+  <section class="section diagram-card">
+    <h2>2. Transaction traceability</h2>
+    <div class="flow-wide">
+      <div class="node"><b>Request / PR</b><span>Need + owner</span></div><div class="arrow">→</div>
+      <div class="node"><b>Purchase Order</b><span>Supplier + price + tax</span></div><div class="arrow">→</div>
+      <div class="node"><b>Initial receipt</b><span>Inbound / pending</span></div><div class="arrow">→</div>
+      <div class="node"><b>Final receipt</b><span>Accepted delivery</span></div><div class="arrow">→</div>
+      <div class="node"><b>Inventory / finance</b><span>Stock movement + accounting</span></div>
+    </div>
+    <p class="note">Evidence anchor: UPA API materials contain endpoints/data models for PO, PO items, initial/final receipts, vendors, entities, items and inventory releases.</p>
+  </section>
+
+  <section class="section diagram-card">
+    <h2>3. Offline-first is a governance pattern</h2>
+    <div class="flow-wide">
+      <div class="node"><b>Capture locally</b><span>Warehouse / consumption</span></div><div class="arrow">→</div>
+      <div class="node"><b>Pending queue</b><span>Not authoritative yet</span></div><div class="arrow">→</div>
+      <div class="node"><b>Sync</b><span>When connectivity returns</span></div><div class="arrow">→</div>
+      <div class="node"><b>Validate</b><span>Identity, item, stock, rules</span></div><div class="arrow">→</div>
+      <div class="node"><b>Accept / reject</b><span>Only accepted affects stock</span></div>
+    </div>
+    <p class="note">Interview cue: <b>Offline ≠ Final.</b> GTIN/Barcode, Batch/Expiry, pending-sync reporting and escalation are operational controls, not UI features.</p>
+  </section>
+
+  <section class="section diagram-card">
+    <h2>4. Integration delivery lifecycle</h2>
+    <div class="flow-wide">
+      <div class="node"><b>Process mapping</b><span>Business problem first</span></div><div class="arrow">→</div>
+      <div class="node"><b>Data ownership</b><span>Master + transactional models</span></div><div class="arrow">→</div>
+      <div class="node"><b>API / middleware</b><span>Transform + retry + log</span></div><div class="arrow">→</div>
+      <div class="node"><b>SIT</b><span>End-to-end technical proof</span></div><div class="arrow">→</div>
+      <div class="node"><b>UAT</b><span>Business sign-off</span></div><div class="arrow">→</div>
+      <div class="node"><b>Go-live</b><span>Rollback + monitoring</span></div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <h2>Visual study gallery</h2>
+    <p class="lead">These diagrams are deliberately simplified and sanitized for interview study. They contain no private infrastructure details.</p>
+    <div class="visual-gallery">
+      <figure><img src="/msf/assets/visuals/integration-lifecycle.svg" alt="Integration lifecycle"><figcaption>Dynamics integration: business mapping to monitored go-live.</figcaption></figure>
+      <figure><img src="/msf/assets/visuals/offline-first.svg" alt="Offline first workflow"><figcaption>Mobile MedIQ: offline capture with central reconciliation.</figcaption></figure>
+      <figure><img src="/msf/assets/visuals/architecture-separation.svg" alt="Architecture separation"><figcaption>Logical → operational → physical separation only when justified.</figcaption></figure>
+      <figure><img src="/msf/assets/visuals/data-governance.svg" alt="Data governance"><figcaption>From data ownership and lineage to governed KPIs and human-reviewed AI.</figcaption></figure>
+      <figure><img src="/msf/assets/visuals/security-layers.svg" alt="Security layers"><figcaption>Identity, least privilege, workflow control, audit and recovery.</figcaption></figure>
+      <figure><img src="/msf/assets/visuals/incident-lifecycle.svg" alt="Incident lifecycle"><figcaption>Detect → own → restore → communicate → learn.</figcaption></figure>
+      <figure><img src="/msf/assets/visuals/support-workload-chart.svg" alt="Support workload chart"><figcaption>Documented annual support-channel lower bounds.</figcaption></figure>
+      <figure><img src="/msf/assets/visuals/support-inquiries-trend.svg" alt="Historical inquiries chart"><figcaption>Historical inquiry volumes with partial periods kept explicit.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Evidence ethics — what makes your answer credible</h2>
+    <div class="grid3">
+      <div class="source-card safe"><b>DIRECT</b><small>You worked in this domain and the documents support the use case. State your own role precisely.</small></div>
+      <div class="source-card warning"><b>ADJACENT</b><small>A real UPA pattern is transferable, but the MSF/humanitarian/AWS context is not identical. Say so.</small></div>
+      <div class="source-card"><b>CONCEPTUAL</b><small>No verified personal story is forced. Answer from professional principles and use a real remembered story only if you can defend it.</small></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Source catalogue used by the overlay</h2>
+    <div class="source-list">
+      <div class="source-card"><b>UPA Digital Strategy 2025–2030</b><small>Procurement, inventory, MDM, ERP, integration, data warehouse, analytics, security and control tower.</small></div>
+      <div class="source-card"><b>Microsoft Dynamics 365 Integration</b><small>Process mapping, endpoint progress, master/transactional data and stakeholder validation.</small></div>
+      <div class="source-card"><b>UPA Supply Chain / Dynamics API Reference</b><small>PO, receipt, item, entity, vendor and inventory-release traceability.</small></div>
+      <div class="source-card"><b>Dynamics ERP Integration Work Plan</b><small>API/middleware, SIT, UAT, deployment, rollback, risk and change control.</small></div>
+      <div class="source-card"><b>MedIQ Architecture Study 2026</b><small>Transactional core, N-tier model and evidence-based logical/operational/physical separation.</small></div>
+      <div class="source-card"><b>Mobile MedIQ — Offline First</b><small>Field capture, sync, validation, GTIN/Barcode, inventory count and pending-transaction escalation.</small></div>
+      <div class="source-card"><b>MedIQ Security & Permissions 2026</b><small>Defense in depth, least privilege, RBAC, SoD, OTP, audit and environment controls.</small></div>
+      <div class="source-card"><b>MedIQ Data Warehouse & AI Study 2026</b><small>Ownership, quality, lineage, semantic KPIs, Human-in-the-Loop AI and phased data program.</small></div>
+      <div class="source-card"><b>UPA-MedIQ-KPI-Framework</b><small>User, warehouse and supply KPI scoring and operational measures.</small></div>
+      <div class="source-card"><b>UPA Customer Service / CRM Plan</b><small>Large-scale support workload, channels, training and service-management needs.</small></div>
+      <div class="source-card"><b>Executive SLA — Digital Signer 24×7</b><small>Availability target, escalation, response/recovery targets, BCP/DR and governance reporting.</small></div>
+      <div class="source-card"><b>MedIQ E‑Tender</b><small>Electronic technical/financial evaluation, supplier fairness, contract linkage and reporting.</small></div>
+      <div class="source-card"><b>Latest Enterprise Architect CV</b><small>Personal scope and leadership claims; used to distinguish platform facts from Mahmoud's own role.</small></div>
+      <div class="source-card"><b>UPA technical architecture (sanitized)</b><small>Only safe architecture patterns are used. No private infrastructure or security-sensitive details are published.</small></div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

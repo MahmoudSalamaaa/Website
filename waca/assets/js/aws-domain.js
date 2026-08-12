@@ -9,7 +9,7 @@
   let st={};try{st=JSON.parse(localStorage.getItem('msfWacaReady2026QuestionState')||'{}')||{}}catch(e){}
   const today=new Date();today.setHours(0,0,0,0); const due=q=>{const x=st[q.id]||{};return x.nextDue?new Date(x.nextDue)<=today:(x.status!=='ready')};
   const rows=qs.filter(due).sort((a,b)=>{const aw=+(b.study_track||'').includes('AWS')-+(a.study_track||'').includes('AWS');return aw||a.interview_rank-b.interview_rank}).slice(0,8);
-  const queue=document.getElementById('smartQueue'); if(queue)queue.innerHTML=rows.map(q=>`<a class="review-item" href="/msf-waca-ready-2026/question-bank.html#q-${q.id}"><span class="rank">#${q.interview_rank}</span><span><b>${q.question_en}</b><small>${q.study_track||q.category_en}</small></span><span>→</span></a>`).join('')||'<div class="callout success"><b>No reviews due.</b> Run a mock or open P1.</div>';
+  const queue=document.getElementById('smartQueue'); if(queue)queue.innerHTML=rows.map(q=>`<a class="review-item" href="/waca/question-bank.html#q-${q.id}"><span class="rank">#${q.interview_rank}</span><span><b>${q.question_en}</b><small>${q.study_track||q.category_en}</small></span><span>→</span></a>`).join('')||'<div class="callout success"><b>No reviews due.</b> Run a mock or open P1.</div>';
   const ready=qs.filter(q=>(st[q.id]||{}).status==='ready').length, weak=qs.filter(q=>(st[q.id]||{}).status==='weak').length, dueN=qs.filter(due).length, aws=qs.filter(q=>due(q)&&(q.study_track||'').includes('AWS')).length;
   [['coachReady',ready],['coachWeak',weak],['coachDue',dueN],['coachAws',aws]].forEach(([id,v])=>{const e=document.getElementById(id);if(e)e.textContent=v});
 })();

@@ -41,14 +41,14 @@
 
   // Evidence-backed study navigation added in the complete 2026-08-12 build.
   const nav=document.querySelector('.nav');
-  if(nav && !nav.querySelector('a[href="/msf-waca-ready-2026/upa-evidence-lab.html"]')){
+  if(nav && !nav.querySelector('a[href="/waca/upa-evidence-lab.html"]')){
     const label=document.createElement('div');
     label.className='nav-label';
     label.textContent='EVIDENCE & REAL CASES';
     const links=[
-      ['/msf-waca-ready-2026/upa-evidence-lab.html','Evidence Lab','مختبر الأدلة'],
-      ['/msf-waca-ready-2026/upa-visual-study.html','Visual Study','المذاكرة البصرية'],
-      ['/msf-waca-ready-2026/resources.html','Resources','المصادر المساعدة']
+      ['/waca/upa-evidence-lab.html','Evidence Lab','مختبر الأدلة'],
+      ['/waca/upa-visual-study.html','Visual Study','المذاكرة البصرية'],
+      ['/waca/resources.html','Resources','المصادر المساعدة']
     ];
     nav.appendChild(label);
     links.forEach(([href,en,ar])=>{

@@ -29,9 +29,9 @@
   scan();
 
   // Add study links without altering the shared site template.
-  const active=document.querySelector('.nav a[href="/msf-waca-ready-2026/question-bank.html"]');
-  if(active&&active.parentElement&&!document.querySelector('.nav a[href="/msf-waca-ready-2026/upa-visual-study.html"]')){
-    const a=document.createElement('a');a.href='/msf-waca-ready-2026/upa-visual-study.html';a.innerHTML='<span class="dot"></span><span class="en-only">UPA Visual Cases</span><span class="ar-only">الحالات العملية المصورة</span>';
+  const active=document.querySelector('.nav a[href="/waca/question-bank.html"]');
+  if(active&&active.parentElement&&!document.querySelector('.nav a[href="/waca/upa-visual-study.html"]')){
+    const a=document.createElement('a');a.href='/waca/upa-visual-study.html';a.innerHTML='<span class="dot"></span><span class="en-only">UPA Visual Cases</span><span class="ar-only">الحالات العملية المصورة</span>';
     active.insertAdjacentElement('afterend',a);
   }
 })();

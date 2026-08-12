@@ -2,7 +2,7 @@
 
 ## What this patch does
 
-This pack adds a source-backed evidence layer to the existing `/msf` WACA interview project without rewriting the 1.1MB `questions-data.js` file by hand.
+This pack adds a source-backed evidence layer to the existing `/msfwaca` WACA interview project without rewriting the 1.1MB `questions-data.js` file by hand.
 
 At runtime, **every question in `window.MSF_QUESTIONS` is classified and enriched** with:
 - a verified UPA evidence bridge;
@@ -29,21 +29,21 @@ This is deliberate: AWS / MSF-field-specific questions must not become false cla
 - `msf/UPA_EVIDENCE_SOURCE_AUDIT.md` — source and confidentiality audit.
 - `msf/PATCH_EXISTING_QUESTION_BANK.txt` — one-line integration into the current question bank.
 
-## Install into the existing WACA `/msf` folder
+## Install into the existing WACA `/msfwaca` folder
 
-1. Copy the files from this pack into the matching `/msf` paths.
-2. The new page `/msf/upa-evidence-lab.html` will work with the existing `/msf/assets/js/questions-data.js`.
-3. To enrich the **existing** `/msf/question-bank.html` renderer too, insert the overlay script between the current question data and renderer scripts:
+1. Copy the files from this pack into the matching `/msfwaca` paths.
+2. The new page `/msfwaca/upa-evidence-lab.html` will work with the existing `/msfwaca/assets/js/questions-data.js`.
+3. To enrich the **existing** `/msfwaca/question-bank.html` renderer too, insert the overlay script between the current question data and renderer scripts:
 
 ```html
-<script src="/msf/assets/js/questions-data.js"></script>
-<script src="/msf/assets/js/upa-evidence-overlay.js?v=20260811"></script>
-<script src="/msf/assets/js/question-bank.js"></script>
+<script src="/msfwaca/assets/js/questions-data.js"></script>
+<script src="/msfwaca/assets/js/upa-evidence-overlay.js?v=20260811"></script>
+<script src="/msfwaca/assets/js/question-bank.js"></script>
 ```
 
 4. Optionally add navigation links to:
-   - `/msf/upa-evidence-lab.html`
-   - `/msf/upa-evidence-atlas.html`
+   - `/msfwaca/upa-evidence-lab.html`
+   - `/msfwaca/upa-evidence-atlas.html`
 
 ## Important interview rule
 
@@ -74,19 +74,19 @@ The 2026-08-12 v2 overlay removes the practical-evidence gap:
 - there is no conceptual-only fallback;
 - unmatched questions receive the closest verified UPA operating case with a transparent transfer boundary;
 - behavioural questions never receive invented personal incidents;
-- `/msf/upa-visual-study.html` contains the full visual study library.
+- `/msfwaca/upa-visual-study.html` contains the full visual study library.
 
 
 ## Resource hub
 
-All supporting files now live under `/msf`.
+All supporting files now live under `/msfwaca`.
 
 Main links:
-- `/msf/resources.html`
-- `/msf/upa-evidence-lab.html`
-- `/msf/upa-evidence-atlas.html`
-- `/msf/upa-visual-study.html`
-- `/msf/upa-evidence-atlas-standalone.html`
-- `/msf/upa-visual-study-standalone.html`
-- `/msf/UPA_EVIDENCE_SOURCE_AUDIT.md`
-- `/msf/PATCH_EXISTING_QUESTION_BANK.txt`
+- `/msfwaca/resources.html`
+- `/msfwaca/upa-evidence-lab.html`
+- `/msfwaca/upa-evidence-atlas.html`
+- `/msfwaca/upa-visual-study.html`
+- `/msfwaca/upa-evidence-atlas-standalone.html`
+- `/msfwaca/upa-visual-study-standalone.html`
+- `/msfwaca/UPA_EVIDENCE_SOURCE_AUDIT.md`
+- `/msfwaca/PATCH_EXISTING_QUESTION_BANK.txt`

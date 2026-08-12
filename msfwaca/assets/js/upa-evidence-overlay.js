@@ -857,7 +857,7 @@
     q.real_case_ar = realCase.answer_bridge_ar;
     q.real_case_star_en = realCase.star_en.slice();
     q.msf_transfer_en = realCase.transfer_en;
-    q.visual_asset = `/msf/assets/visuals/${realCase.visual}`;
+    q.visual_asset = `/msfwaca/assets/visuals/${realCase.visual}`;
 
     const hc = HUMAN_CASES[realCase.key] || HUMAN_CASES.general;
     q.experience_en = `${grade === "DIRECT" ? "Direct evidence from my work:" : "Closest transferable evidence from my work:"} ${hc.evidence} ${hc.lesson}`;

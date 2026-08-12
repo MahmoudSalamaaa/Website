@@ -1,0 +1,13 @@
+MSF WaCA — canonical deployment folder
+
+Upload this folder as:
+  /msfwaca
+
+Main URL:
+  /msfwaca/index.html
+
+Question bank:
+  /msfwaca/question-bank.html
+
+All project-internal absolute links were rewritten from /msf/... to /msfwaca/...
+The old /msf folder is not required by this build.

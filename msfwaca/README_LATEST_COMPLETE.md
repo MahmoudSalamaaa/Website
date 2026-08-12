@@ -5,25 +5,25 @@ Build date: 2026-08-12
 This folder merges the last complete MSF/WaCA interview project preserved before the GitHub deletion event with the latest UPA evidence-backed enhancements.
 
 ## Main pages
-- `/msf/index.html`
-- `/msf/question-bank.html`
-- `/msf/mock-interview.html`
-- `/msf/study-coach.html`
-- `/msf/job-analysis.html`
-- `/msf/systems-map.html`
-- `/msf/people-management.html`
-- `/msf/aws-security.html`
-- `/msf/aws-technology.html`
-- `/msf/aws-cost-governance.html`
-- `/msf/aws-library.html`
-- `/msf/20-day-plan.html`
-- `/msf/final-review.html`
+- `/msfwaca/index.html`
+- `/msfwaca/question-bank.html`
+- `/msfwaca/mock-interview.html`
+- `/msfwaca/study-coach.html`
+- `/msfwaca/job-analysis.html`
+- `/msfwaca/systems-map.html`
+- `/msfwaca/people-management.html`
+- `/msfwaca/aws-security.html`
+- `/msfwaca/aws-technology.html`
+- `/msfwaca/aws-cost-governance.html`
+- `/msfwaca/aws-library.html`
+- `/msfwaca/20-day-plan.html`
+- `/msfwaca/final-review.html`
 
 ## Evidence-backed additions
-- `/msf/upa-evidence-lab.html`
-- `/msf/upa-evidence-atlas.html`
-- `/msf/upa-visual-study.html`
-- `/msf/resources.html`
+- `/msfwaca/upa-evidence-lab.html`
+- `/msfwaca/upa-evidence-atlas.html`
+- `/msfwaca/upa-visual-study.html`
+- `/msfwaca/resources.html`
 
 ## Question-bank integration
 The original 195 questions remain intact. The existing question bank now loads the evidence overlay before rendering and the enhancer after rendering, so every question can show its closest verified UPA work case, STAR evidence, MSF transfer and matching visual.

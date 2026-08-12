@@ -1,0 +1,97 @@
+(function(){
+  // This page is deliberately English-first because the interview is in English.
+  // Arabic is rendered as a secondary study explanation and never replaces the English content.
+  document.documentElement.lang='en';
+  document.documentElement.dir='ltr';
+  document.body.classList.remove('lang-ar');
+  document.body.classList.add('lang-en','question-bank-english-first');
+  const qs = window.MSF_QUESTIONS || [];
+  const $ = id => document.getElementById(id);
+  const list = $('questionList');
+  const controls = {search:$('search'), tier:$('tier'), track:$('track'), category:$('category'), source:null, status:$('status'), sort:$('sort')};
+  let state = {};
+  try { state = JSON.parse(localStorage.getItem('msfWacaReady2026QuestionState') || '{}') || {}; } catch(e){ state = {}; }
+  let focusMode=false, focusRows=[], focusIndex=0, hashHandled=false;
+  const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+  const norm=s=>String(s??'').toLowerCase().trim();
+  const tierOrder={P0:0,P1:1,P2:2,P3:3};
+  const getStatus=id=>(state[id]&&state[id].status)||'new';
+  const ensure=id=>(state[id]=state[id]||{});
+  const localDate=(d=new Date())=>{const x=new Date(d);x.setMinutes(x.getMinutes()-x.getTimezoneOffset());return x.toISOString().slice(0,10)};
+  const addDays=(base,n)=>{const d=new Date(base);d.setHours(12,0,0,0);d.setDate(d.getDate()+n);return localDate(d)};
+  const today=()=>localDate(new Date());
+  const isDue=id=>{const x=state[id]||{}; if(x.nextDue) return x.nextDue<=today(); return getStatus(id)!=='ready';};
+  const dueLabel=id=>{const x=state[id]||{};if(!x.nextDue)return getStatus(id)==='ready'?'No review scheduled':'Due now';if(x.nextDue<=today())return 'Due now';const d=new Date(x.nextDue+'T12:00:00');return 'Review '+d.toLocaleDateString(undefined,{month:'short',day:'numeric'})};
+  function persist(){localStorage.setItem('msfWacaReady2026QuestionState',JSON.stringify(state));updateStats();}
+  function fillSelect(el,values){if(!el)return;values.filter(Boolean).sort((a,b)=>a.localeCompare(b)).forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;el.appendChild(o)})}
+  fillSelect(controls.track,[...new Set(qs.map(q=>q.study_track))]); fillSelect(controls.category,[...new Set(qs.map(q=>q.category_en))]); fillSelect(controls.source,[...new Set(qs.map(q=>q.source_family))]);
+  function updateStats(){
+    const ready=qs.filter(q=>getStatus(q.id)==='ready').length,p0=qs.filter(q=>q.importance_tier==='P0'),p0Ready=p0.filter(q=>getStatus(q.id)==='ready').length,practicing=qs.filter(q=>getStatus(q.id)==='practicing').length,weak=qs.filter(q=>getStatus(q.id)==='weak').length,due=qs.filter(q=>isDue(q.id)).length;
+    if($('readyCount'))$('readyCount').textContent=ready;if($('p0ReadyCount'))$('p0ReadyCount').textContent=`${p0Ready} / ${p0.length}`;if($('practiceCount'))$('practiceCount').textContent=practicing;if($('weakCount'))$('weakCount').textContent=weak;if($('dueCount'))$('dueCount').textContent=due;if($('progressBar'))$('progressBar').style.width=(p0.length?p0Ready/p0.length*100:0)+'%';
+  }
+  function filteredRows(){
+    const s=norm(controls.search?.value),tier=controls.tier?.value||'',track=controls.track?.value||'',category=controls.category?.value||'',source=controls.source?.value||'',status=controls.status?.value||'';
+    let rows=qs.filter(q=>{const hay=[q.question_en,q.question_ar,q.answer_en,q.answer_ar,q.experience_en,q.experience_ar,q.category_en,q.category_ar,q.study_track,q.importance_reason_en].map(norm).join(' ');const statusOk=!status||(status==='due'?isDue(q.id):getStatus(q.id)===status);return(!s||hay.includes(s))&&(!tier||q.importance_tier===tier)&&(!track||q.study_track===track)&&(!category||q.category_en===category)&&(!source||q.source_family===source)&&statusOk});
+    const sort=controls.sort?.value||'rank';if(sort==='category')rows.sort((a,b)=>a.category_en.localeCompare(b.category_en)||(a.interview_rank||999)-(b.interview_rank||999));else if(sort==='id')rows.sort((a,b)=>a.id-b.id);else rows.sort((a,b)=>(a.interview_rank||999)-(b.interview_rank||999)||tierOrder[a.importance_tier]-tierOrder[b.importance_tier]);return rows;
+  }
+  function visualHtml(q){
+    const steps=(q.visual_steps_en||[]).filter(Boolean); if(!steps.length)return '';
+    const pattern=esc(q.visual_pattern||'flow');
+    return `<section class="memory-visual pattern-${pattern}" aria-label="Visual memory map"><div class="memory-visual-head"><div><span>VISUAL MEMORY MAP</span><h4>${esc(q.visual_title_en||'Answer structure')}</h4></div><b>${esc(q.memory_cue_en||'')}</b></div><div class="memory-steps">${steps.map((s,i)=>`<div class="memory-step"><span>${String(i+1).padStart(2,'0')}</span><strong>${esc(s)}</strong></div>`).join('<i aria-hidden="true">→</i>')}</div><div class="memory-tip"><b>Recall cue:</b> cover the answers and rebuild the response from these anchors first.</div></section>`;
+  }
+  function statusButtons(id){const st=getStatus(id);return `<div class="status-row" role="group" aria-label="Study status"><button class="status-btn weak ${st==='weak'?'active':''}" data-status="weak">Weak</button><button class="status-btn ${st==='new'?'active':''}" data-status="new">Not started</button><button class="status-btn practicing ${st==='practicing'?'active':''}" data-status="practicing">Practicing</button><button class="status-btn ready ${st==='ready'?'active':''}" data-status="ready">Ready</button></div>`}
+  function recallButtons(id){return `<div class="recall-panel"><div class="recall-copy"><b>Spaced recall rating</b><span>Rate the answer you just produced — not how familiar the model answer looks.</span></div><div class="recall-buttons" role="group" aria-label="Spaced recall rating"><button data-recall="again" class="recall-btn again"><kbd>A</kbd>Again<small>tomorrow</small></button><button data-recall="hard" class="recall-btn hard"><kbd>H</kbd>Hard<small>short interval</small></button><button data-recall="good" class="recall-btn good"><kbd>G</kbd>Good<small>space it</small></button><button data-recall="easy" class="recall-btn easy"><kbd>E</kbd>Easy<small>push it out</small></button></div></div>`}
+  function cardHtml(q){
+    const st=state[q.id]||{},reasonEn=q.importance_reason_en||'',reasonAr=q.importance_reason_ar||reasonEn,evidence=q.evidence_scope_en||'Interview preparation evidence',needsStory=/(describe a time|tell us about a time|give an example|example of|walk us through a time)/i.test(q.question_en||'');
+    const arQuestion=q.question_ar||'راجع معنى السؤال بالعربية ثم تدرب على الإجابة بالإنجليزية.';
+    const arAnswer=q.answer_ar||'استخدم الشرح الإنجليزي أعلاه كأساس، وركز هنا على فهم المنطق وليس حفظ صياغة عربية.';
+    return `<article class="q-card tier-${esc((q.importance_tier||'P3').toLowerCase())}" id="q-${q.id}" data-id="${q.id}" data-tier="${esc(q.importance_tier)}" data-rank="${q.interview_rank||999}">
+      <button class="q-head" type="button" aria-expanded="false">
+        <div class="q-rank"><strong>#${q.interview_rank||'–'}</strong><span>Q${q.id}</span></div>
+        <div class="q-heading-copy">
+          <div class="q-title q-title-en">${esc(q.question_en)}</div>
+          <div class="q-title-ar-secondary rtl" lang="ar">${esc(arQuestion)}</div>
+          <div class="q-meta"><span class="tier-pill ${(q.importance_tier||'P3').toLowerCase()}">${esc(q.importance_tier||'P3')}</span><span class="tag">${esc(q.study_track||q.category_en)}</span><span class="tag confirmed">${q.target_seconds||90}s</span><span class="study-status ${getStatus(q.id)}">${esc(getStatus(q.id))}</span><span class="due-chip ${isDue(q.id)?'due':''}">${esc(dueLabel(q.id))}</span></div>
+        </div><span class="q-chevron" aria-hidden="true">⌄</span>
+      </button>
+      <div class="q-body">
+        <div class="answer answer-primary final-study-answer"><h4>ANSWER · ENGLISH</h4><p>${esc(q.answer_en)}</p></div>
+        <section class="arabic-study-note rtl final-study-answer-ar" lang="ar" aria-label="Arabic answer">
+          <div class="arabic-study-head"><div><span>إجابة نهائية جاهزة للحفظ والفهم</span><h4>الإجابة بالعربي</h4></div><b>AR</b></div>
+          <div class="arabic-explainer-grid">
+            <div class="arabic-explainer wide"><p>${esc(arAnswer)}</p></div>
+          </div>
+        </section>
+        ${visualHtml(q)}
+        <details class="study-details"><summary>Interview caution</summary><div class="prep-grid"><div class="prep-box danger"><b>Avoid</b><span>${esc(q.red_flag_en||'')}</span></div></div></details>
+        ${recallButtons(q.id)}
+        <label class="notes-label">My rehearsal notes</label><textarea class="notes" placeholder="Short keywords only…">${esc(st.notes||'')}</textarea>${statusButtons(q.id)}
+      </div>
+    </article>`;
+  }
+  function applyRecall(id,rating){
+    const x=ensure(id),prev=Math.max(0,+x.intervalDays||0),reviews=(+x.reviews||0)+1;let days,status;
+    if(rating==='again'){days=1;status='weak'}
+    else if(rating==='hard'){days=prev?Math.max(2,Math.round(prev*1.45)):2;status='practicing'}
+    else if(rating==='good'){days=prev?Math.max(4,Math.round(prev*2.15)):4;status=reviews>=2?'ready':'practicing'}
+    else {days=prev?Math.max(7,Math.round(prev*2.75)):7;status='ready'}
+    days=Math.min(days,21);x.intervalDays=days;x.nextDue=addDays(new Date(),days);x.lastReviewed=new Date().toISOString();x.lastRating=rating;x.reviews=reviews;x.status=status;persist();
+  }
+  function updateFilterHint(){if(!$('filterHint'))return;const bits=[];if(controls.tier?.value)bits.push(controls.tier.value);if(controls.track?.value)bits.push(controls.track.value);if(controls.category?.value)bits.push(controls.category.value);if(controls.source?.value)bits.push(controls.source.value);if(controls.status?.value)bits.push(controls.status.value==='due'?'due now':controls.status.value);if(controls.search?.value.trim())bits.push(`search: ${controls.search.value.trim()}`);$('filterHint').textContent=bits.length?bits.join(' · '):'Importance order active'}
+  function render(){const rows=filteredRows();if($('shown'))$('shown').textContent=rows.length;updateFilterHint();if(focusMode){focusRows=rows;focusIndex=Math.min(focusIndex,Math.max(0,focusRows.length-1));renderFocus();return}list.innerHTML=rows.map(cardHtml).join('')||`<div class="empty-state"><b>No questions match these filters.</b><span>Clear one or more filters, or open P0 focus.</span></div>`;if(!hashHandled)handleHash()}
+  function openCard(card,open=true){if(!card)return;card.classList.toggle('open',open);card.querySelector('.q-head')?.setAttribute('aria-expanded',open?'true':'false')}
+  function handleHash(){const m=location.hash.match(/^#q-(\d+)$/);if(!m)return;const id=+m[1],q=qs.find(x=>x.id===id);if(!q)return;Object.values(controls).forEach(c=>{if(c&&c!==controls.sort&&c!==controls.search)c.value=''});if(controls.search)controls.search.value='';const card=document.getElementById(`q-${id}`);if(card){openCard(card,true);setTimeout(()=>card.scrollIntoView({behavior:'smooth',block:'start'}),50);hashHandled=true}}
+  function renderFocus(){const bar=$('focusBar');if(bar)bar.hidden=false;if(!focusRows.length){list.innerHTML='<div class="empty-state"><b>No questions in this focus deck.</b><span>Exit focus mode and change filters.</span></div>';if($('focusPosition'))$('focusPosition').textContent='0 / 0';return}const q=focusRows[focusIndex];list.innerHTML=cardHtml(q);const card=list.querySelector('.q-card');card?.classList.add('focus-current');if($('focusPosition'))$('focusPosition').textContent=`${focusIndex+1} / ${focusRows.length} · #${q.interview_rank} · Q${q.id}`;window.history.replaceState(null,'',`#q-${q.id}`)}
+  function enterFocus(){focusMode=true;focusRows=filteredRows();focusIndex=0;document.body.classList.add('study-focus');renderFocus();list.scrollIntoView({behavior:'smooth',block:'start'})}
+  function exitFocus(){focusMode=false;document.body.classList.remove('study-focus');if($('focusBar'))$('focusBar').hidden=true;history.replaceState(null,'',location.pathname+location.search);render()}
+  function moveFocus(delta){if(!focusMode||!focusRows.length)return;focusIndex=(focusIndex+delta+focusRows.length)%focusRows.length;renderFocus()}
+  function revealFocus(){if(focusMode)openCard(list.querySelector('.q-card'),true)}
+  function rateCurrent(rating){const card=list.querySelector('.q-card');if(!card)return;const id=card.dataset.id;applyRecall(id,rating);if(focusMode){focusRows=filteredRows();focusIndex=Math.min(focusIndex,Math.max(0,focusRows.length-1));renderFocus();if(focusRows.length>1)setTimeout(()=>moveFocus(1),100)}else render()}
+  Object.values(controls).forEach(el=>el?.addEventListener('input',()=>{focusIndex=0;render()}));
+  list?.addEventListener('click',e=>{const card=e.target.closest('.q-card');if(!card)return;const rec=e.target.closest('[data-recall]');if(rec){applyRecall(card.dataset.id,rec.dataset.recall);if(focusMode){focusRows=filteredRows();focusIndex=Math.min(focusIndex,Math.max(0,focusRows.length-1));renderFocus()}else{const wasOpen=card.classList.contains('open');render();openCard(document.getElementById(`q-${card.dataset.id}`),wasOpen)}return}const statusBtn=e.target.closest('[data-status]');if(statusBtn){const x=ensure(card.dataset.id);x.status=statusBtn.dataset.status;if(statusBtn.dataset.status==='ready'&&!x.nextDue){x.intervalDays=7;x.nextDue=addDays(new Date(),7)}persist();if(focusMode){focusRows=filteredRows();focusIndex=Math.min(focusIndex,Math.max(0,focusRows.length-1));renderFocus()}else{const wasOpen=card.classList.contains('open');render();openCard(document.getElementById(`q-${card.dataset.id}`),wasOpen)}return}if(e.target.closest('.q-head'))openCard(card,!card.classList.contains('open'))});
+  list?.addEventListener('input',e=>{if(e.target.matches('.notes')){const id=e.target.closest('.q-card')?.dataset.id;if(!id)return;ensure(id).notes=e.target.value;persist()}});
+  $('p0Only')?.addEventListener('click',()=>{controls.tier.value='P0';controls.status.value='';controls.search.value='';focusIndex=0;render()});$('weakOnly')?.addEventListener('click',()=>{controls.status.value='weak';controls.tier.value='';controls.search.value='';focusIndex=0;render()});$('focusMode')?.addEventListener('click',enterFocus);$('exitFocus')?.addEventListener('click',exitFocus);$('prevFocus')?.addEventListener('click',()=>moveFocus(-1));$('nextFocus')?.addEventListener('click',()=>moveFocus(1));$('revealFocus')?.addEventListener('click',revealFocus);
+  const params=new URLSearchParams(location.search);['tier','track','category','source','status'].forEach(k=>{if(params.get(k)&&controls[k])controls[k].value=params.get(k)});if(params.get('due')==='1'&&controls.status)controls.status.value='due';
+  document.addEventListener('keydown',e=>{if(e.target.matches('input,textarea,select'))return;if(focusMode){const k=e.key.toLowerCase();if(['j','arrowright','arrowdown'].includes(k)){e.preventDefault();moveFocus(1)}else if(['k','arrowleft','arrowup'].includes(k)){e.preventDefault();moveFocus(-1)}else if(k==='r'){e.preventDefault();revealFocus()}else if(k==='a'){e.preventDefault();rateCurrent('again')}else if(k==='h'){e.preventDefault();rateCurrent('hard')}else if(k==='g'){e.preventDefault();rateCurrent('good')}else if(k==='e'){e.preventDefault();rateCurrent('easy')}else if(e.key==='Escape')exitFocus()}});
+  window.addEventListener('hashchange',()=>{hashHandled=false;if(!focusMode)render()});document.addEventListener('msf-language-change',()=>{if(focusMode)renderFocus()});updateStats();render();
+})();

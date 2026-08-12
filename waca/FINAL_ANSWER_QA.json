@@ -1,0 +1,16 @@
+{
+  "folder": "msf-waca-ready-2026",
+  "questions": 195,
+  "banned_arabic_instruction_answers": 0,
+  "banned_english_coaching_answers": 0,
+  "questions_missing_bullets": [],
+  "js_errors": [],
+  "links_checked": 638,
+  "broken_links": [],
+  "stale_old_paths": [],
+  "overlay_version": "2026-08-12-final-memorize-v1",
+  "sample_q1_en": "• WHY MSF — I want my technology experience to support a mission with direct human impact, not only a corporate objective.\n• PERSONAL CONNECTION — My wife works with MSF Egypt, and seeing the organization more closely strengthened my respect for its humanitarian work. The decision to apply is my own professional choice.\n• VALUE I BRING — My background in healthcare systems, supply, data and digital transformation can help keep operations reliable, secure and well supported.",
+  "sample_q1_ar": "• لماذا MSF — أريد أن أستخدم خبرتي التقنية في عمل له أثر إنساني مباشر، وليس فقط هدفاً تجارياً.\n• الارتباط الشخصي — زوجتي تعمل في MSF مصر، ورؤيتي للمنظمة عن قرب زادت احترامي لعملها الإنساني. لكن قرار التقديم هو اختياري المهني أنا.\n• ما أقدمه — خبرتي في أنظمة الصحة والإمداد والبيانات والتحول الرقمي تساعدني على دعم عمليات موثوقة وآمنة ومستقرة.",
+  "sample_q58_en": "• ANSWER — One project was delayed because I underestimated a dependency on an external vendor's schedule.\n• WHAT I DID — I communicated the delay, protected the most important scope and revised the plan around confirmed dependencies instead of hiding the risk.\n• LESSON — I now expose external dependencies earlier, add contingency and review schedule risk well before the deadline.",
+  "sample_q58_ar": "• الإجابة — تأخر أحد المشروعات لأنني قللت من أثر الاعتماد على الجدول الزمني لمورد خارجي.\n• ما فعلته — أوضحت التأخير، وحميت الجزء الأهم من النطاق، وأعدت ترتيب الخطة على أساس الاعتماديات المؤكدة بدلاً من إخفاء الخطر.\n• الدرس — أصبحت أظهر الاعتماديات الخارجية مبكراً، وأضع هامشاً مناسباً، وأراجع مخاطر الجدول قبل الموعد النهائي بوقت كافٍ."
+}

@@ -1,7 +1,0 @@
-MSF DEPLOYMENT PACKAGE
-======================
-Upload this folder as `msf` at the repository root.
-Public URL: https://mahmoud-salama.vercel.app/msfwaca/
-
-All internal navigation and asset URLs are pinned to /msfwaca/... .
-This prevents links from falling back to the website root even if the browser opens /msfwaca without a trailing slash.

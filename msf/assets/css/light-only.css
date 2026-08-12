@@ -140,3 +140,6 @@ input::placeholder,textarea::placeholder{color:#7c8d9a!important}
 
 /* Direct bilingual study layout v4 */
 .study-details{margin-top:14px;border:1px solid #d8e1ea;border-radius:12px;background:#f8fafc;padding:10px 12px;color:#334155}.study-details summary{cursor:pointer;font-weight:700;color:#475569}.arabic-study-note .arabic-explainer-grid{grid-template-columns:1fr!important}.arabic-study-note .arabic-explainer{background:#fff!important}.experience-primary{background:#f0fdf4!important;border-color:#bbf7d0!important}.answer-primary{background:#f8fbff!important}.q-body h4{letter-spacing:.02em!important}.q-body p{line-height:1.75!important}
+
+.answer,.answer-en,.answer-ar,.answer-body,.answer-text,.question-answer,[data-answer]{white-space:pre-line!important;line-height:1.72!important}
+.upa-coach,.coach-box,.research-anchor,.evidence-scope,.star-grid{display:none!important}

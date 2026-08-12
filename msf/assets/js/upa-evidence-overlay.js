@@ -535,7 +535,7 @@
     else if (matchesAny(text,["team","coach","mentor","underperform","conflict","delegat","performance review","people management","direct report","motivat"])) key = "people";
     else if (matchesAny(text,["strategy","roadmap","portfolio","priorit","executive","board","governance","business value","budget","digital transformation"])) key = "executive";
 
-    const c = CASE_BANK[key] || CASE_BANK.general;
+    const c = {...(CASE_BANK[key] || CASE_BANK.general), key};
     const behavioural = matchesAny(text,["tell me about a time","give me an example","describe a time","conflict","mistake","failure","difficult","underperform","disagree"]);
     const hypothetical = matchesAny(text,["how would you","what would you do","imagine","suppose","if you"]);
 
@@ -793,6 +793,26 @@
     return grade;
   }
 
+
+  const FAST_AR = {
+    integration:["في هيئة الشراء الموحد، شاركت في ربط منظومة الإمداد الطبي مع Microsoft Dynamics 365. بدأنا بتحديد العملية وملكية البيانات، ثم نفذنا التكامل وSIT وUAT وخطة الرجوع والمتابعة بعد التشغيل.","نجاح التكامل ليس أن الـAPI يعمل فقط؛ المهم صحة البيانات، وضوح الأخطاء، وقبول المستخدم."],
+    architecture:["في MedIQ، حافظنا على مصدر تشغيلي واحد للحقيقة، وفصلنا الأحمال فقط عندما كان الأداء أو الاعتمادية يحتاجان ذلك.","لا أعقد المعمارية قبل وجود سبب قابل للقياس."],
+    procurement:["في UPA، ربطنا دورة العمل من الطلب والتقييم والتعاقد وأمر الشراء حتى التوريد والاستلام والمخزون، بحيث تظل كل مرحلة قابلة للتتبع.","قيمة النظام في وضوح التتبع والمسؤولية بين المراحل."],
+    supply:["في Mobile MedIQ، تُسجل الحركة محلياً عند ضعف الإنترنت كـ Pending، ثم تتزامن وتُراجع مركزياً، ولا تؤثر على الرصيد الرسمي إلا بعد قبولها.","الاستمرارية يجب أن تحافظ في الوقت نفسه على دقة المخزون."],
+    offline:["في Mobile MedIQ، المستخدم يعمل بدون إنترنت، لكن الحركة تظل Pending حتى تعود الشبكة وتتم المزامنة والتحقق المركزي قبل تحديث المخزون الرسمي.","Offline لا يعني Final؛ المزامنة والمراجعة جزء من الحل."],
+    data:["في MedIQ، فصلنا التشغيل عن التحليلات وحددنا ملكية البيانات وتعريف المؤشرات وجودتها قبل بناء التقارير أو استخدام AI.","قبل Dashboard أو AI يجب أن أعرف تعريف الرقم ومالكه وجودته ومصدره."],
+    security:["في MedIQ، استخدمنا RBAC وLeast Privilege ونطاق الصلاحية حسب الجهة أو المخزن، مع فصل المسؤوليات والتسجيل والمراجعة.","الأمن الجيد يحدد من يفعل ماذا وعلى أي نطاق بدون تعطيل العمل."],
+    reliability:["في بيئة UPA، تعاملنا مع الأنظمة الحرجة بتحديد شدة الحادث ومالك المشكلة والتصعيد واستعادة الخدمة، ثم تحليل السبب ومنع التكرار.","أستعيد الخدمة بأمان أولاً، ثم أعالج السبب حتى لا يتكرر."],
+    performance:["عندما أصبحت تقارير الموردين الكبيرة حملاً مختلفاً عن الاستخدام اليومي، عزلنا الحمل الثقيل واستخدمنا caching بدلاً من زيادة موارد النظام كله.","أقيس عنق الزجاجة وأعالج الحمل المسبب للمشكلة بدلاً من تكبير كل شيء."],
+    delivery:["في تكامل Dynamics، قسمنا العمل إلى تصميم وتطوير وSIT ثم UAT، وبعد قبول المستخدم جهزنا النشر وخطة الرجوع والمتابعة بعد التشغيل.","التقدم الحقيقي هو مخرج مقبول ومستخدم جاهز وتشغيل يمكن دعمه."],
+    adoption:["في UPA، استخدمنا زيارات المستخدمين والملاحظات وقنوات الدعم والأخطاء المتكررة لتحديد فجوات التدريب أو العملية، ثم عدلنا التدريب أو النظام.","نجاح التدريب يظهر في قدرة المستخدم على إنجاز العمل وانخفاض الأخطاء."],
+    support:["في UPA، كان الدعم يخدم مستخدمين وجهات وموردين عبر الهاتف والبريد والحضور. ركزنا على التصنيف والملكية والتصعيد وتحويل التكرار إلى معرفة أو تحسين.","المشكلة المتكررة إشارة لسبب جذري أو فجوة تدريب أو تصميم."],
+    people:["في دوري القيادي في UPA، استخدمت أهدافاً واضحة وOKRs مع mentoring وتمكين تقني؛ أحدد المتوقع، أراجع الدليل، أزيل العوائق ثم أتابع التحسن.","القيادة تبدأ بوضوح التوقعات والتوجيه وإزالة العوائق ثم المحاسبة."],
+    executive:["في برامج التحول داخل UPA، ربطت التقنية بهدف تشغيلي واضح ومالك للقرار ونطاق قابل للقياس، ثم نقيس التبني والقيمة قبل التوسع.","التقنية تنجح عندما تحقق نتيجة تشغيلية قابلة للقياس."],
+    cloud:["خبرتي المباشرة تشمل بنية مؤسسية وcontainers وPostgreSQL وRedis والعزل والمراقبة والنسخ الاحتياطي والتعافي. في AWS أربط هذه الاحتياجات بالخدمة المناسبة دون ادعاء أن UPA كانت تعمل على AWS.","أختار خدمة السحابة حسب الاحتياج والمخاطر والتكلفة، لا لمجرد استخدام AWS."],
+    general:["في UPA، كان عملي يربط الأنظمة بعمليات فعلية مثل المشتريات والإمداد والمخزون والتقارير والدعم. أبدأ بالمشكلة التشغيلية، أحدد المسؤول والقرار، أنفذ التغيير ثم أقيس أثره.","أبدأ من المشكلة والنتيجة المطلوبة، ثم أختار أبسط إجراء موثوق وأقيس أثره."]
+  };
+  function fastShort(t,n){ const x=String(t||"").replace(/\s+/g," ").trim().split(/(?<=[.!?])\s+/).slice(0,2).join(" "); const w=x.split(/\s+/); return w.length>n?w.slice(0,n).join(" ")+"…":x; }
   qs.forEach(q => {
     const { profile, text } = pickProfile(q);
     const grade = gradeFor(profile, text);
@@ -825,9 +845,11 @@
     // Keep the old text only for audit/debugging; the UI uses the human-first version below.
     q.original_answer_en = q.answer_en;
     q.original_answer_ar = q.answer_ar;
-    q.answer_en = humanAnswer(q, realCase, grade);
-    q.short_answer_en = coreAnswer(q);
-    q.answer_ar = simpleArabic(q, realCase);
+    const _oldEn=String(q.answer_en||"").replace(/\s+/g," ").trim();
+    const _oldAr=String(q.answer_ar||"").replace(/\s+/g," ").trim();
+    const _k=realCase.key||"general", _ar=FAST_AR[_k]||FAST_AR.general;
+    q.answer_en=["• MY ANSWER — "+fastShort(_oldEn,38),"• REAL EXAMPLE — "+fastShort(realCase.situation_en+" "+realCase.action_en,52),"• LESSON — "+fastShort(realCase.result_en,28),"• AT MSF — "+fastShort(realCase.transfer_en,28)].join("\n");
+    q.answer_ar=["• إجابتي — "+fastShort(_oldAr,38),"• مثال حقيقي — "+_ar[0],"• الدرس — "+_ar[1],"• في MSF — سأطبق نفس المنطق بما يناسب العمل الميداني: أفهم الأثر، أحدد المسؤولية، أنفذ حلاً بسيطاً وموثوقاً، ثم أتابع النتيجة."].join("\n");
 
     q.real_case_title_en = realCase.title_en;
     q.real_case_title_ar = realCase.title_ar;

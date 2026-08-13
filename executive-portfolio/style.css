@@ -766,3 +766,58 @@ h2 {
     min-height: 305px;
   }
 }
+
+
+/* Current role banner */
+.current-role-banner {
+  display: grid;
+  grid-template-columns: auto minmax(0,1fr);
+  gap: 14px;
+  align-items: center;
+  margin: 22px 0 0;
+  padding: 14px 16px;
+  max-width: 760px;
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 18px;
+  background: rgba(255,255,255,.06);
+  backdrop-filter: blur(10px);
+}
+.current-role-banner > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 94px;
+  min-height: 34px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: var(--gold);
+  color: var(--navy);
+  font-size: 10px;
+  font-weight: 950;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+.current-role-banner div { min-width: 0; }
+.current-role-banner strong {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.3;
+}
+.current-role-banner small {
+  display: block;
+  margin-top: 3px;
+  color: #b9cbe0;
+  font-size: 11.5px;
+  line-height: 1.4;
+}
+@media (max-width: 520px) {
+  .current-role-banner {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+  .current-role-banner > span {
+    width: fit-content;
+    min-width: 0;
+  }
+}

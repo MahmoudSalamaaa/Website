@@ -442,3 +442,41 @@ html[data-theme=slate] .site-header{background:#12161dee}html[data-theme=slate] 
     font-size:14px !important;
   }
 }
+
+
+/* ===== V8 NAVIGATION RELIABILITY FIX ===== */
+#leadership,
+#executive-brief,
+#work,
+#career,
+#domains,
+#regional,
+#philosophy,
+#outputs,
+#governance {
+  scroll-margin-top: 128px !important;
+}
+
+body.nav-open {
+  overflow: hidden !important;
+  touch-action: auto !important;
+}
+
+@media (max-width: 760px) {
+  #leadership,
+  #executive-brief,
+  #work,
+  #career,
+  #domains,
+  #regional,
+  #philosophy,
+  #outputs,
+  #governance {
+    scroll-margin-top: 112px !important;
+  }
+
+  .main-nav a {
+    cursor: pointer !important;
+    -webkit-tap-highlight-color: rgba(25,215,255,.10);
+  }
+}

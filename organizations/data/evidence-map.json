@@ -1,0 +1,182 @@
+{
+  "version": "2.0.0",
+  "capabilities": {
+    "enterprise_architecture": {
+      "terms": [
+        "enterprise architecture",
+        "solution architecture",
+        "target architecture",
+        "application architecture",
+        "business architecture"
+      ],
+      "evidence": [
+        "mediq-national-ecosystem",
+        "d365-integration"
+      ]
+    },
+    "digital_transformation": {
+      "terms": [
+        "digital transformation",
+        "digital strategy",
+        "modernization",
+        "transformation program",
+        "institutional transformation"
+      ],
+      "evidence": [
+        "mediq-national-ecosystem",
+        "executive-portfolio-governance",
+        "adoption-operations"
+      ]
+    },
+    "program_delivery": {
+      "terms": [
+        "program management",
+        "programme management",
+        "delivery governance",
+        "pmo",
+        "portfolio delivery",
+        "roadmap",
+        "risk management",
+        "dependency management"
+      ],
+      "evidence": [
+        "executive-portfolio-governance",
+        "mediq-national-ecosystem"
+      ]
+    },
+    "systems_integration": {
+      "terms": [
+        "systems integration",
+        "integration architecture",
+        "api",
+        "rest",
+        "interoperability",
+        "erp integration",
+        "crm integration"
+      ],
+      "evidence": [
+        "d365-integration",
+        "mediq-national-ecosystem"
+      ]
+    },
+    "data_analytics": {
+      "terms": [
+        "data platform",
+        "data warehouse",
+        "data architecture",
+        "analytics",
+        "business intelligence",
+        "power bi",
+        "superset",
+        "postgresql",
+        "master data",
+        "data quality"
+      ],
+      "evidence": [
+        "national-health-data-warehouse"
+      ]
+    },
+    "software_delivery": {
+      "terms": [
+        "software development",
+        "application development",
+        "engineering manager",
+        "development manager",
+        "sdlc",
+        "testing",
+        "deployment",
+        "release management"
+      ],
+      "evidence": [
+        "oman-education-portal",
+        "mediq-national-ecosystem"
+      ]
+    },
+    "government_public_sector": {
+      "terms": [
+        "government",
+        "public sector",
+        "ministry",
+        "national platform",
+        "public authority"
+      ],
+      "evidence": [
+        "mediq-national-ecosystem",
+        "oman-education-portal",
+        "national-health-data-warehouse"
+      ]
+    },
+    "gcc_oman": {
+      "terms": [
+        "oman",
+        "muscat",
+        "gcc",
+        "gulf",
+        "middle east"
+      ],
+      "evidence": [
+        "oman-education-portal"
+      ]
+    },
+    "leadership": {
+      "terms": [
+        "chief technology",
+        "cio",
+        "cto",
+        "it director",
+        "head of",
+        "director",
+        "team leadership",
+        "people leadership",
+        "executive leadership"
+      ],
+      "evidence": [
+        "executive-portfolio-governance",
+        "adoption-operations"
+      ]
+    },
+    "operations_service": {
+      "terms": [
+        "operations",
+        "service delivery",
+        "production support",
+        "availability",
+        "business continuity",
+        "incident",
+        "problem management",
+        "it service"
+      ],
+      "evidence": [
+        "adoption-operations"
+      ]
+    },
+    "enterprise_applications": {
+      "terms": [
+        "enterprise applications",
+        "dynamics 365",
+        "erp",
+        "crm",
+        "applications manager",
+        "information systems"
+      ],
+      "evidence": [
+        "d365-integration",
+        "mediq-national-ecosystem"
+      ]
+    },
+    "stakeholder_vendor": {
+      "terms": [
+        "stakeholder management",
+        "vendor management",
+        "vendor governance",
+        "supplier management",
+        "partner management"
+      ],
+      "evidence": [
+        "executive-portfolio-governance",
+        "d365-integration",
+        "oman-education-portal"
+      ]
+    }
+  }
+}

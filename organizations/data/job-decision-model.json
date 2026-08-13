@@ -1,0 +1,61 @@
+{
+  "version": "2.0.0",
+  "weights": {
+    "role_family": 25,
+    "seniority": 15,
+    "evidence": 30,
+    "eligibility": 15,
+    "location": 10,
+    "source": 5
+  },
+  "thresholds": {
+    "apply": 80,
+    "apply_with_caution": 68,
+    "manual_review": 55
+  },
+  "hard_risks": [
+    "citizens only",
+    "nationals only",
+    "must be a citizen",
+    "security clearance required",
+    "active security clearance"
+  ],
+  "negative_seniority": [
+    "intern",
+    "internship",
+    "trainee",
+    "graduate programme",
+    "graduate program",
+    "junior",
+    "entry level",
+    "entry-level"
+  ],
+  "preferred_seniority": [
+    "chief",
+    "director",
+    "head",
+    "manager",
+    "lead",
+    "architect",
+    "senior"
+  ],
+  "preferred_locations": [
+    "egypt",
+    "cairo",
+    "oman",
+    "muscat",
+    "gcc",
+    "gulf",
+    "saudi arabia",
+    "uae",
+    "united arab emirates",
+    "qatar",
+    "kuwait",
+    "bahrain",
+    "africa",
+    "emea",
+    "remote",
+    "global",
+    "worldwide"
+  ]
+}

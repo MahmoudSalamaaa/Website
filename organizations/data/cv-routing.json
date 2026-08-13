@@ -1,0 +1,139 @@
+{
+  "version": "2.1.0",
+  "base": "../docs/",
+  "families": [
+    {
+      "id": "cto_it_director",
+      "label": "CTO / CIO / IT Director",
+      "pdf": "Mahmoud_Salama_CV_CTO_IT_Director_LATEST.pdf",
+      "docx": "Mahmoud_Salama_CV_CTO_IT_Director_LATEST.docx",
+      "titles": [
+        "cto",
+        "chief technology officer",
+        "cio",
+        "chief information officer",
+        "it director",
+        "head of it",
+        "head of technology",
+        "information systems director",
+        "technology director"
+      ],
+      "keywords": [
+        "technology strategy",
+        "it governance",
+        "operations",
+        "information systems",
+        "infrastructure",
+        "enterprise applications",
+        "executive leadership"
+      ]
+    },
+    {
+      "id": "digital_transformation",
+      "label": "Digital Transformation / Program Director",
+      "pdf": "Mahmoud_Salama_CV_Digital_Transformation_Director_LATEST.pdf",
+      "docx": "Mahmoud_Salama_CV_Digital_Transformation_Director_LATEST.docx",
+      "titles": [
+        "digital transformation director",
+        "digital transformation manager",
+        "transformation director",
+        "program director",
+        "programme director",
+        "technology program manager",
+        "pmo lead",
+        "delivery director"
+      ],
+      "keywords": [
+        "digital transformation",
+        "program governance",
+        "roadmap",
+        "change management",
+        "portfolio",
+        "stakeholder management",
+        "benefits realization"
+      ]
+    },
+    {
+      "id": "enterprise_architect",
+      "label": "Enterprise / Solution Architect",
+      "pdf": "Mahmoud_Salama_CV_Enterprise_Architect_LATEST.pdf",
+      "docx": "Mahmoud_Salama_CV_Enterprise_Architect_LATEST.docx",
+      "titles": [
+        "enterprise architect",
+        "solution architect",
+        "application architect",
+        "integration architect",
+        "data architect",
+        "business architect",
+        "technology architect"
+      ],
+      "keywords": [
+        "enterprise architecture",
+        "solution architecture",
+        "integration",
+        "api",
+        "data architecture",
+        "target state",
+        "architecture governance"
+      ]
+    },
+    {
+      "id": "software_development",
+      "label": "Software / Application Development Manager",
+      "pdf": "Mahmoud_Salama_CV_Software_Development_Manager_LATEST.pdf",
+      "docx": "Mahmoud_Salama_CV_Software_Development_Manager_LATEST.docx",
+      "titles": [
+        "software development manager",
+        "engineering manager",
+        "application development manager",
+        "web development manager",
+        "head of software development",
+        "development manager",
+        "enterprise applications manager",
+        "applications manager"
+      ],
+      "keywords": [
+        "software delivery",
+        "application development",
+        "sdlc",
+        "engineering leadership",
+        "release management",
+        "testing",
+        "development team"
+      ]
+    },
+    {
+      "id": "business_analysis",
+      "label": "Lead / Senior Business Analyst",
+      "pdf": "Mahmoud_Salama_CV_Lead_Senior_Business_Analyst_LATEST.pdf",
+      "docx": "Mahmoud_Salama_CV_Lead_Senior_Business_Analyst_LATEST.docx",
+      "titles": [
+        "lead business analyst",
+        "senior business analyst",
+        "business analyst",
+        "business systems analyst",
+        "it business analyst",
+        "business process analyst",
+        "requirements lead",
+        "business analysis lead"
+      ],
+      "keywords": [
+        "business analysis",
+        "requirements engineering",
+        "requirements elicitation",
+        "stakeholder analysis",
+        "process mapping",
+        "business process",
+        "gap analysis",
+        "user stories",
+        "acceptance criteria",
+        "process improvement",
+        "digital requirements"
+      ]
+    }
+  ],
+  "fallback": {
+    "id": "digital_transformation",
+    "reason": "Use Digital Transformation for broad transformation/program leadership roles; use Business Analysis when requirements, process analysis and business-system alignment are central."
+  }
+}

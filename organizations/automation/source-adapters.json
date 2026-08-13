@@ -1,0 +1,28 @@
+{
+  "note": "Only add public or explicitly authorized RSS/JSON/ATS feeds. Do not add sources that prohibit automated access.",
+  "settings": {
+    "discover_from_catalog": true,
+    "max_discovered_adapters": 50
+  },
+  "adapters": [
+    {
+      "id": "example-greenhouse",
+      "enabled": false,
+      "type": "greenhouse",
+      "identifier": "company-token",
+      "organization": "Replace with employer name",
+      "country": "",
+      "region": "",
+      "note": "Enable only after verifying the official public board."
+    },
+    {
+      "id": "example-rss",
+      "enabled": false,
+      "type": "rss",
+      "name": "Authorized RSS feed",
+      "url": "https://example.org/jobs.rss",
+      "organization": "",
+      "note": "Replace with an authorized feed."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "version": "2.0.0",
+  "updated_at": "2026-08-13",
+  "name": "Mahmoud Salama",
+  "headline": "Technology & Digital Transformation Executive | Enterprise Architect",
+  "experience_years": 18,
+  "location": "Cairo, Egypt",
+  "regions": [
+    "Egypt",
+    "Oman",
+    "GCC",
+    "Africa",
+    "Remote / Global"
+  ],
+  "positioning": [
+    "Technology Strategy",
+    "Digital Transformation",
+    "Enterprise Architecture",
+    "Information Systems",
+    "Enterprise Applications",
+    "Systems Integration",
+    "Data Platforms",
+    "Software Delivery",
+    "Program Governance",
+    "Public-Sector Technology",
+    "Healthcare Technology"
+  ],
+  "role_families": [
+    "CTO / CIO / IT Director",
+    "Digital Transformation / Program Director",
+    "Enterprise / Solution Architect",
+    "Software / Application Development Manager"
+  ],
+  "evidence_policy": {
+    "allow_inference": false,
+    "invent_experience": false,
+    "invent_metrics": false,
+    "invent_certifications": false,
+    "rule": "Every generated claim must be traceable to achievement-bank.json or a user-supplied job/application field."
+  },
+  "source_files": [
+    "/executive-portfolio/index.html",
+    "/docs/README_CV_SELECTION.txt",
+    "/organizations/assets/config.js"
+  ]
+}

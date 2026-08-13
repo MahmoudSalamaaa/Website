@@ -1,0 +1,147 @@
+[
+  {
+    "id": "mediq-national-ecosystem",
+    "title": "MedIQ / Unified Procurement & Medical Supply Ecosystem",
+    "organization": "UPA · Egypt",
+    "scope": "Architecture & Governance Lead",
+    "summary": "Governed a national 10-platform ecosystem connecting procurement, approvals, inventory, distribution, supplier interaction, forecasting, analytics and supply-chain controls.",
+    "metrics": [
+      "12,000+ entities supported",
+      "320,000+ automated validation checks",
+      "10 integrated platforms"
+    ],
+    "capabilities": [
+      "enterprise architecture",
+      "digital transformation",
+      "platform governance",
+      "systems integration",
+      "public sector",
+      "healthcare technology",
+      "vendor governance",
+      "program delivery"
+    ],
+    "source": "/executive-portfolio/#work"
+  },
+  {
+    "id": "national-health-data-warehouse",
+    "title": "National Health Sector Data Warehouse & Strategic Analytics Layer",
+    "organization": "UPA · Egypt",
+    "scope": "Enterprise Data Architecture Lead",
+    "summary": "Designed a governed enterprise data environment for consistent, faster cross-institution reporting and decision support.",
+    "metrics": [
+      "12M+ records processed daily",
+      "100+ government institutions",
+      "~70% faster reporting preparation"
+    ],
+    "capabilities": [
+      "data architecture",
+      "data platforms",
+      "data warehouse",
+      "postgresql",
+      "master data",
+      "data quality",
+      "power bi",
+      "apache superset",
+      "analytics",
+      "public sector"
+    ],
+    "source": "/executive-portfolio/#work"
+  },
+  {
+    "id": "oman-education-portal",
+    "title": "Oman Ministry of Education — Educational Portal & Ministry Systems",
+    "organization": "Integral Solutions LLC · Muscat",
+    "scope": "Embedded Government Delivery",
+    "summary": "Worked closely inside the Ministry environment on the award-winning Educational Portal and connected systems, including recruitment workflows.",
+    "metrics": [
+      "2.5+ years embedded at Ministry of Education",
+      "4+ years lived & worked in Muscat",
+      "Award-winning national education portal"
+    ],
+    "capabilities": [
+      "oman",
+      "gcc",
+      "government technology",
+      "requirements",
+      "solution design",
+      "software development",
+      "integration",
+      "testing",
+      "deployment",
+      "stakeholder management",
+      "training",
+      "production support"
+    ],
+    "source": "/executive-portfolio/#work"
+  },
+  {
+    "id": "d365-integration",
+    "title": "Microsoft Dynamics 365 ERP & CRM Integration",
+    "organization": "UPA · Egypt",
+    "scope": "Integration Architecture",
+    "summary": "Connected procurement, operational, stakeholder, reporting and data platforms with Microsoft Dynamics 365 ERP and CRM using controlled integration patterns.",
+    "metrics": [
+      "REST connectivity",
+      "Workflow alignment and reconciliation",
+      "Cross-team and vendor governance"
+    ],
+    "capabilities": [
+      "microsoft dynamics 365",
+      "erp",
+      "crm",
+      "integration architecture",
+      "rest api",
+      "data mapping",
+      "workflow",
+      "reconciliation",
+      "monitoring",
+      "auditability",
+      "vendor governance"
+    ],
+    "source": "/executive-portfolio/#work"
+  },
+  {
+    "id": "executive-portfolio-governance",
+    "title": "Executive Technology Portfolio Governance",
+    "organization": "Leadership portfolio",
+    "scope": "Executive Leadership",
+    "summary": "Executive governance across technology strategy, architecture, delivery, data, integration and adoption.",
+    "metrics": [
+      "EGP 150M+ portfolio",
+      "40+ professionals"
+    ],
+    "capabilities": [
+      "technology strategy",
+      "portfolio management",
+      "budget governance",
+      "team leadership",
+      "program governance",
+      "stakeholder management",
+      "executive reporting"
+    ],
+    "source": "/executive-portfolio/#leadership"
+  },
+  {
+    "id": "adoption-operations",
+    "title": "Change, Adoption & Operations",
+    "organization": "Leadership portfolio",
+    "scope": "Service & Adoption Leadership",
+    "summary": "Embedded training, service governance, production readiness, continuity and operational ownership into transformation delivery.",
+    "metrics": [
+      "39,000+ staff reached",
+      "99%+ availability"
+    ],
+    "capabilities": [
+      "change management",
+      "adoption",
+      "training",
+      "service management",
+      "production support",
+      "business continuity",
+      "availability",
+      "operations",
+      "knowledge transfer"
+    ],
+    "source": "/executive-portfolio/#leadership"
+  }
+]

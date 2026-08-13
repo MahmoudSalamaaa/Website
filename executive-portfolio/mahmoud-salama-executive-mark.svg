@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+<title id="title">Mahmoud Salama executive mark</title>
+<desc id="desc">MS monogram with orbit rings representing technology, architecture and connected systems.</desc>
+<defs>
+  <linearGradient id="bg" x1="12" y1="8" x2="116" y2="120" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#122A48"/>
+    <stop offset=".58" stop-color="#091626"/>
+    <stop offset="1" stop-color="#07101D"/>
+  </linearGradient>
+  <linearGradient id="cyan" x1="20" y1="18" x2="100" y2="108" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#75ECFF"/>
+    <stop offset=".55" stop-color="#19D7FF"/>
+    <stop offset="1" stop-color="#0B8DA8"/>
+  </linearGradient>
+  <linearGradient id="gold" x1="38" y1="24" x2="96" y2="100" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#F5D98C"/>
+    <stop offset="1" stop-color="#C89938"/>
+  </linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+    <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#000" flood-opacity=".3"/>
+  </filter>
+</defs>
+<rect x="6" y="6" width="116" height="116" rx="34" fill="url(#bg)" stroke="#D8B86A" stroke-opacity=".38" stroke-width="2" filter="url(#shadow)"/>
+<circle cx="64" cy="64" r="41" fill="none" stroke="url(#cyan)" stroke-opacity=".45" stroke-width="1.8"/>
+<ellipse cx="64" cy="64" rx="42" ry="23" transform="rotate(-28 64 64)" fill="none" stroke="url(#gold)" stroke-opacity=".56" stroke-width="1.8"/>
+<ellipse cx="64" cy="64" rx="29" ry="44" transform="rotate(22 64 64)" fill="none" stroke="#BCECF5" stroke-opacity=".24" stroke-width="1.4"/>
+<circle cx="31" cy="47" r="4.6" fill="#19D7FF"/>
+<circle cx="95" cy="39" r="4.3" fill="#D8B86A"/>
+<circle cx="92" cy="92" r="3.8" fill="#75ECFF"/>
+<circle cx="64" cy="64" r="25" fill="#0A1A2E" stroke="#FFFFFF" stroke-opacity=".10"/>
+<text x="64" y="72" text-anchor="middle" fill="#F7FCFF" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="800" letter-spacing="-1">MS</text>
+<path d="M44 88h40" stroke="url(#gold)" stroke-width="2.2" stroke-linecap="round" opacity=".8"/>
+</svg>

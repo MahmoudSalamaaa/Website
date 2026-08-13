@@ -34,17 +34,35 @@ if (backTop) {
 /*
  * Executive Portfolio integrity fixes
  * ------------------------------------
- * 1) Keep the verified Integral Solutions period unchanged:
+ * 1) Keep Integral Solutions period:
  *    May 2016 - October 2020.
  *
- * 2) The downloadable Executive Portfolio PDF in this folder predates
- *    the latest web-portfolio content. Hide that CTA so visitors are not
- *    offered an outdated version.
+ * 2) Make the Executive CV button always download the current frozen
+ *    "Executive Leadership - Mahmoud Salama.pdf" from Google Drive.
  *
- * 3) The project-specific hashes previously used by the Executive
- *    Portfolio do not exist in portfolio.html. Route those links to the
- *    existing #works section instead of leaving dead anchors.
+ * 3) Hide the older downloadable Executive Portfolio PDF because its
+ *    content predates the latest web-portfolio update.
+ *
+ * 4) Route project links to the existing #works section instead of
+ *    non-existent project-specific hashes.
  */
+
+const executiveCvButton =
+    document.querySelector('[data-event="cv_download"]');
+
+if (executiveCvButton) {
+    executiveCvButton.removeAttribute("download");
+    executiveCvButton.setAttribute(
+        "href",
+        "https://drive.google.com/uc?export=download&id=17vWy0zIFStLAFg6h0tkmX_z2JYe5TYl1"
+    );
+    executiveCvButton.setAttribute("target", "_blank");
+    executiveCvButton.setAttribute("rel", "noopener noreferrer");
+    executiveCvButton.setAttribute(
+        "aria-label",
+        "Download the latest frozen Executive Leadership CV"
+    );
+}
 
 const outdatedPortfolioPdfButton =
     document.querySelector('[data-event="portfolio_pdf_download"]');

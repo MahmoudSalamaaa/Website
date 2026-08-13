@@ -120,28 +120,6 @@ if (themeToggle && themeMenu) {
   });
 }
 
-// Creative navigation shell
-const navClose = document.querySelector(".nav-close");
-const navBackdrop = document.querySelector(".nav-backdrop");
-
-const setNavState = (open) => {
-  if (!nav || !navButton) return;
-  nav.classList.toggle("open", open);
-  navButton.classList.toggle("open", open);
-  navButton.setAttribute("aria-expanded", String(open));
-  document.body.classList.toggle("nav-open", open);
-};
-
-if (navButton && nav) {
-  navButton.addEventListener("click", () => setNavState(!nav.classList.contains("open")));
-}
-if (navClose) navClose.addEventListener("click", () => setNavState(false));
-if (navBackdrop) navBackdrop.addEventListener("click", () => setNavState(false));
-if (nav) nav.querySelectorAll('a[href^="#"]').forEach((a) => a.addEventListener("click", () => setNavState(false)));
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") setNavState(false);
-});
-
 // Soft magnetic hover on capable pointers
 if (window.matchMedia("(pointer:fine)").matches) {
   document.querySelectorAll(".magnetic").forEach((el) => {

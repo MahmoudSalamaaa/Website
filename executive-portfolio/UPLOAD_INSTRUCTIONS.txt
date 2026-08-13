@@ -1,0 +1,23 @@
+EXECUTIVE PORTFOLIO — OMAN IT PROGRAM MANAGER EDITION
+====================================================
+
+Replace the existing files inside /executive-portfolio/ with:
+- index.html
+- style.css
+- script.js
+- Mahmoud-Salama-Executive-Leadership-CV.pdf
+
+Purpose of this edition:
+- Prioritizes Oman government delivery immediately after the hero
+- Positions Mahmoud for a senior IT Program Manager / Enterprise Program Delivery role
+- Highlights strategic alignment, benefits realization, cross-project orchestration,
+  executive reporting, vendor/financial governance, change management, hybrid delivery,
+  risk and escalation
+- Keeps employer/client attribution accurate
+- Keeps Integral Solutions period: May 2016 - October 2020
+- Does NOT claim PMP, PRINCE2, PgMP, MSP or SAFe certifications
+- Uses the latest frozen Executive Leadership CV as the download file
+- Keeps Project Archive links pointing to the existing #works section
+- Preserves responsive mobile behavior and accessibility
+
+Existing root images/assets are referenced by relative paths and do not need to be copied.

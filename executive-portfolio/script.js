@@ -97,3 +97,59 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     });
   });
 });
+
+
+// Theme switcher: Midnight / Pearl / Emerald / Slate
+const themeButton = document.querySelector(".theme-button");
+const themeMenu = document.querySelector(".theme-menu");
+const themeOptions = Array.from(document.querySelectorAll("[data-theme]"));
+const allowedThemes = ["midnight", "pearl", "emerald", "slate"];
+
+const applyTheme = (theme) => {
+  const selected = allowedThemes.includes(theme) ? theme : "midnight";
+  if (selected === "midnight") document.documentElement.removeAttribute("data-theme");
+  else document.documentElement.setAttribute("data-theme", selected);
+
+  themeOptions.forEach((option) => {
+    const active = option.dataset.theme === selected;
+    option.classList.toggle("active", active);
+    option.setAttribute("aria-pressed", String(active));
+  });
+
+  try { localStorage.setItem("portfolio-theme", selected); } catch (_) {}
+};
+
+let savedTheme = "midnight";
+try { savedTheme = localStorage.getItem("portfolio-theme") || "midnight"; } catch (_) {}
+applyTheme(savedTheme);
+
+if (themeButton && themeMenu) {
+  themeButton.addEventListener("click", (event) => {
+    event.stopPropagation();
+    const open = themeMenu.classList.toggle("open");
+    themeButton.setAttribute("aria-expanded", String(open));
+  });
+
+  themeOptions.forEach((option) => {
+    option.addEventListener("click", () => {
+      applyTheme(option.dataset.theme);
+      themeMenu.classList.remove("open");
+      themeButton.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!themeMenu.contains(event.target) && !themeButton.contains(event.target)) {
+      themeMenu.classList.remove("open");
+      themeButton.setAttribute("aria-expanded", "false");
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      themeMenu.classList.remove("open");
+      themeButton.setAttribute("aria-expanded", "false");
+      themeButton.focus();
+    }
+  });
+}

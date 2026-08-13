@@ -112,3 +112,12 @@ if (themeToggle && themeMenu) {
     }
   });
 }
+
+
+// V7 menu hardening: always reset document position after closing.
+const preservePageX = () => {
+  if (window.scrollX !== 0) window.scrollTo(0, window.scrollY);
+};
+if (navButton) navButton.addEventListener("click", () => setTimeout(preservePageX, 0));
+if (navClose) navClose.addEventListener("click", () => setTimeout(preservePageX, 0));
+if (navBackdrop) navBackdrop.addEventListener("click", () => setTimeout(preservePageX, 0));

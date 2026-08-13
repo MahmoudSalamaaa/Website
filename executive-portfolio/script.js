@@ -11,14 +11,18 @@ const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matc
 if (year) year.textContent = new Date().getFullYear();
 
 if (navButton && nav) {
-  navButton.addEventListener("click", () => {
-    const open = nav.classList.toggle("open");
+  const navBackdrop = document.querySelector(".nav-backdrop");
+  const navClose = document.querySelector(".nav-close");
+  const setNav = (open) => {
+    nav.classList.toggle("open", open);
+    document.body.classList.toggle("nav-open", open);
     navButton.setAttribute("aria-expanded", String(open));
-  });
-  nav.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => {
-    nav.classList.remove("open");
-    navButton.setAttribute("aria-expanded", "false");
-  }));
+  };
+  navButton.addEventListener("click", () => setNav(!nav.classList.contains("open")));
+  if (navClose) navClose.addEventListener("click", () => setNav(false));
+  if (navBackdrop) navBackdrop.addEventListener("click", () => setNav(false));
+  nav.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setNav(false)));
+  document.addEventListener("keydown", (event) => { if (event.key === "Escape") setNav(false); });
 }
 
 const updateScrollUI = () => {
@@ -113,5 +117,42 @@ if (themeToggle && themeMenu) {
       themeMenu.classList.remove("open");
       themeToggle.setAttribute("aria-expanded","false");
     }
+  });
+}
+
+// Creative navigation shell
+const navClose = document.querySelector(".nav-close");
+const navBackdrop = document.querySelector(".nav-backdrop");
+
+const setNavState = (open) => {
+  if (!nav || !navButton) return;
+  nav.classList.toggle("open", open);
+  navButton.classList.toggle("open", open);
+  navButton.setAttribute("aria-expanded", String(open));
+  document.body.classList.toggle("nav-open", open);
+};
+
+if (navButton && nav) {
+  navButton.addEventListener("click", () => setNavState(!nav.classList.contains("open")));
+}
+if (navClose) navClose.addEventListener("click", () => setNavState(false));
+if (navBackdrop) navBackdrop.addEventListener("click", () => setNavState(false));
+if (nav) nav.querySelectorAll('a[href^="#"]').forEach((a) => a.addEventListener("click", () => setNavState(false)));
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") setNavState(false);
+});
+
+// Soft magnetic hover on capable pointers
+if (window.matchMedia("(pointer:fine)").matches) {
+  document.querySelectorAll(".magnetic").forEach((el) => {
+    el.addEventListener("mousemove", (event) => {
+      const r = el.getBoundingClientRect();
+      const x = (event.clientX - r.left - r.width / 2) * .08;
+      const y = (event.clientY - r.top - r.height / 2) * .08;
+      el.style.transform = `translate(${x}px, ${y}px)`;
+    });
+    el.addEventListener("mouseleave", () => {
+      el.style.transform = "";
+    });
   });
 }

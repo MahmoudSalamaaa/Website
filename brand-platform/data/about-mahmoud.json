@@ -1,0 +1,25 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mahmoud Salama",
+  "headline": "Technology at National Scale",
+  "jobTitle": "Technology & Digital Transformation Executive | Enterprise Architect",
+  "url": "https://mahmoud-salama.vercel.app/",
+  "sameAs": [
+    "https://www.linkedin.com/in/mahmoud-salama-30249b34",
+    "https://github.com/MahmoudSalamaaa"
+  ],
+  "knowsAbout": [
+    "Digital Government",
+    "Enterprise Architecture",
+    "Digital Transformation",
+    "Enterprise Applications",
+    "Systems Integration",
+    "Data Platforms",
+    "Technology Governance",
+    "Software Delivery",
+    "Public-Sector Technology",
+    "Healthcare Technology"
+  ],
+  "evidencePolicy": "Claims on public-facing brand assets should remain traceable to the site's evidence bank or source material."
+}

@@ -1,29 +1,16 @@
-# Mahmoud Salama Executive Career Platform — FULL ADDITIVE
+# Mahmoud Salama Executive + Brand Platform — FULL v3 ADDITIVE
 
-This package combines **all content from Wave 1 and Wave 2** into one safe additive bundle.
+Contains:
+- `executive-lab/` — Wave 1
+- `executive-lab-v2/` — Wave 2
+- `brand-platform/` — Wave 3 Branding
+- `executive-platform/` — internal hub updated to show all three waves
 
-## Copy these folders to the Website repository root
+## Protected visual surfaces
+No root replacement is included for `index.html`, `site-main.css`, or `card.html`. The current main website and Digital Card remain visually protected.
 
-1. `executive-platform/` — new master hub linking both waves.
-2. `executive-lab/` — Wave 1, preserved from v1.
-3. `executive-lab-v2/` — Wave 2, preserved from v2.
+## Deployment
+Copy the four folders above to the repository root. If Waves 1 and 2 are already present, the only new folder is `brand-platform/`; `executive-platform/index.html` is the only intentionally updated internal existing file.
 
-Do **not** replace the whole website. Do **not** copy or modify `.git`.
-
-## Source integrity
-
-- Every Wave 1 module file is byte-for-byte preserved from `Mahmoud-Salama-Executive-Career-Platform-v1-ADDITIVE.zip`.
-- Every Wave 2 module file is byte-for-byte preserved from `Mahmoud-Salama-Executive-Career-Platform-v2-ADDITIVE.zip`.
-- All non-module support files from both original packages are also preserved under `source-metadata/v1/` and `source-metadata/v2/`.
-
-## Recommended deployment
-
-Commit only the three folders above in one additive commit, e.g.:
-
-`Add unified executive career platform v1 and v2`
-
-Then deploy and verify `/executive-platform/`, `/executive-lab/`, and `/executive-lab-v2/`.
-
-## QA
-
-See `FULL_QA_REPORT.json`. Current package QA status: **FAIL**.
+## Brand rule
+Internal projects may adopt Brand System v3. The homepage and Digital Card should not receive new standalone sections or unrelated CSS without dedicated visual QA.

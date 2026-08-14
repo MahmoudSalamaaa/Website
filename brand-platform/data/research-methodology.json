@@ -1,0 +1,27 @@
+{
+  "title": "State of Digital Government & Enterprise Technology — MENA",
+  "status": "Research framework / Edition Zero — no comparative results published yet",
+  "principles": [
+    "Public and attributable sources",
+    "No invented country scores",
+    "Separate evidence from interpretation",
+    "Methodology disclosed before ranking",
+    "Update timestamps on every dataset"
+  ],
+  "dimensions": [
+    "Strategy & governance",
+    "Digital public services",
+    "Enterprise architecture",
+    "Data & interoperability",
+    "Cloud & infrastructure",
+    "Cybersecurity & resilience",
+    "AI governance & adoption",
+    "Talent & operating model"
+  ],
+  "outputs": [
+    "Annual report",
+    "Executive summary",
+    "Country/economy profiles where evidence is sufficient",
+    "Executive index only after validation"
+  ]
+}

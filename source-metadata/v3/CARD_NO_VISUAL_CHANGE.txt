@@ -1,0 +1,1 @@
+card.html is intentionally not included or replaced. Keep its current layout and styling. If desired later, only update metadata/copy/links after visual QA.

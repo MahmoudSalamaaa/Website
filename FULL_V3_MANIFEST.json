@@ -1,0 +1,16 @@
+{
+  "package": "Mahmoud Salama Executive + Brand Platform FULL v3",
+  "version": "3.0.0",
+  "type": "ADDITIVE",
+  "waves": [
+    "Wave 1 Executive Technology Lab",
+    "Wave 2 Career Intelligence",
+    "Wave 3 Brand System"
+  ],
+  "protected_visual_surfaces": [
+    "root index.html",
+    "root site-main.css",
+    "root card.html"
+  ],
+  "files": 131
+}

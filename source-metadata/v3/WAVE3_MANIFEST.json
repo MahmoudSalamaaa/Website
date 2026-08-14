@@ -1,0 +1,48 @@
+{
+  "package": "Mahmoud Salama Brand Platform Wave 3",
+  "type": "ADDITIVE",
+  "version": "3.0.0",
+  "generated": "2026-08-14",
+  "copy_to_root": [
+    "brand-platform/"
+  ],
+  "protected_existing_files": [
+    "index.html",
+    "site-main.css",
+    "card.html"
+  ],
+  "optional_internal_replacement": "integration/EXECUTIVE_PLATFORM_WAVE3_REPLACEMENT.html -> executive-platform/index.html",
+  "modules": [
+    "brand-platform/assets/brand.css",
+    "brand-platform/assets/brand.js",
+    "brand-platform/brand-os/index.html",
+    "brand-platform/brand-os/lexicon.html",
+    "brand-platform/brand-os/visual-system.html",
+    "brand-platform/components/index.html",
+    "brand-platform/data/about-mahmoud.json",
+    "brand-platform/data/brand-system.json",
+    "brand-platform/data/content-series.json",
+    "brand-platform/data/research-methodology.json",
+    "brand-platform/entity/index.html",
+    "brand-platform/frameworks/index.html",
+    "brand-platform/frameworks/maturity-model.html",
+    "brand-platform/frameworks/salama-scale.html",
+    "brand-platform/frameworks/transformation-chain.html",
+    "brand-platform/index.html",
+    "brand-platform/integration/index.html",
+    "brand-platform/journey/index.html",
+    "brand-platform/manifesto/index.html",
+    "brand-platform/media/bios.html",
+    "brand-platform/media/index.html",
+    "brand-platform/media/speaking.html",
+    "brand-platform/perspectives/editorial-system.html",
+    "brand-platform/perspectives/executive-brief-template.html",
+    "brand-platform/perspectives/index.html",
+    "brand-platform/research/executive-index.html",
+    "brand-platform/research/index.html",
+    "brand-platform/research/state-of-digital-government-mena.html",
+    "brand-platform/social-kit/index.html",
+    "brand-platform/technology-at-scale/index.html"
+  ],
+  "module_count": 30
+}

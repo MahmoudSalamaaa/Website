@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "html_files": 26,
+  "json_files": 6,
+  "js_files": 1,
+  "local_refs_checked": 220,
+  "broken_internal_refs": [],
+  "expected_site_dependencies": [
+    {
+      "file": "integration/EXECUTIVE_PLATFORM_WAVE3_REPLACEMENT.html",
+      "ref": "../executive-lab/"
+    },
+    {
+      "file": "integration/EXECUTIVE_PLATFORM_WAVE3_REPLACEMENT.html",
+      "ref": "../executive-lab-v2/"
+    }
+  ],
+  "json_errors": [],
+  "js_errors": [],
+  "html_parse_errors": [],
+  "protected_root_files_present": [],
+  "browser_qa": "BLOCKED_BY_ENVIRONMENT_POLICY",
+  "browser_note": "Chromium/Playwright local navigation is blocked by administrator policy in this runtime, so browser QA was not falsely marked as passed."
+}

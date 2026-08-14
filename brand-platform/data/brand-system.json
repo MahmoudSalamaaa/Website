@@ -1,0 +1,65 @@
+{
+  "version": "3.0.0",
+  "name": "Mahmoud Salama Brand System",
+  "positioning": "Technology at National Scale",
+  "descriptor": "Digital Government · Enterprise Architecture · Transformation · Data · Technology Leadership",
+  "brand_promise": "Turning complex technology environments into governed, scalable digital capabilities.",
+  "memory_targets": [
+    "National-scale technology",
+    "Egypt + GCC government delivery",
+    "Architecture + execution"
+  ],
+  "voice": [
+    "Executive",
+    "Analytical",
+    "Evidence-driven",
+    "Practical",
+    "Calm"
+  ],
+  "use_words": [
+    "architecture",
+    "scale",
+    "governance",
+    "transformation",
+    "outcomes",
+    "capability",
+    "integration",
+    "evidence"
+  ],
+  "avoid_words": [
+    "guru",
+    "ninja",
+    "rockstar",
+    "visionary without evidence",
+    "disruptive without context"
+  ],
+  "content_pillars": [
+    "Architecture at Scale",
+    "Digital Government",
+    "Technology Leadership",
+    "GCC Technology"
+  ],
+  "signature_series": [
+    "Architecture Decisions",
+    "Lessons from National Platforms",
+    "Technology Leadership Notes",
+    "Digital Government Field Notes"
+  ],
+  "signature_frameworks": [
+    "SALAMA SCALE",
+    "Transformation Chain",
+    "Enterprise Digital Capability Maturity Model"
+  ],
+  "design": {
+    "navy": "#071827",
+    "cyan": "#22c4dd",
+    "gold": "#e2af45",
+    "main_site_bridge_blue": "#556d91",
+    "main_site_bridge_yellow": "#fcc255"
+  },
+  "boundaries": {
+    "main_site": "preserve structure and visual composition",
+    "digital_card": "preserve structure and visual composition",
+    "internal_projects": "may adopt Brand System v3"
+  }
+}

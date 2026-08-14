@@ -1,0 +1,1 @@
+(()=>{const y=document.querySelector('[data-year]');if(y)y.textContent=new Date().getFullYear();document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',async()=>{const t=document.querySelector(b.dataset.copy)?.textContent||'';try{await navigator.clipboard.writeText(t);b.textContent='Copied';setTimeout(()=>b.textContent='Copy',1400)}catch(e){}}));})();

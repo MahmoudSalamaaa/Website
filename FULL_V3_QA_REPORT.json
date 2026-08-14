@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "files": 131,
+  "html_files": 89,
+  "local_refs_checked": 392,
+  "broken_package_refs": [],
+  "expected_existing_website_dependencies": [
+    {
+      "file": "executive-lab/for/digital-transformation.html",
+      "ref": "../../docs/Mahmoud_Salama_CV_Digital_Transformation_Director_LATEST.pdf"
+    },
+    {
+      "file": "executive-lab/for/digital-transformation.html",
+      "ref": "../../recruiter/"
+    },
+    {
+      "file": "executive-lab/for/digital-transformation.html",
+      "ref": "../../case-studies/"
+    },
+    {
+      "file": "executive-lab/for/cto.html",
+      "ref": "../../docs/Mahmoud_Salama_CV_CTO_IT_Director_LATEST.pdf"
+    },
+    {
+      "file": "executive-lab/for/cto.html",
+      "ref": "../../recruiter/"
+    },
+    {
+      "file": "executive-lab/for/cto.html",
+      "ref": "../../case-studies/"
+    },
+    {
+      "file": "executive-lab/for/enterprise-architect.html",
+      "ref": "../../docs/Mahmoud_Salama_CV_Enterprise_Architect_LATEST.pdf"
+    },
+    {
+      "file": "executive-lab/for/enterprise-architect.html",
+      "ref": "../../recruiter/"
+    },
+    {
+      "file": "executive-lab/for/enterprise-architect.html",
+      "ref": "../../case-studies/"
+    },
+    {
+      "file": "executive-lab/for/oman.html",
+      "ref": "../../docs/Mahmoud_Salama_CV_Digital_Transformation_Director_LATEST.pdf"
+    },
+    {
+      "file": "executive-lab/for/oman.html",
+      "ref": "../../recruiter/"
+    },
+    {
+      "file": "executive-lab/for/oman.html",
+      "ref": "../../case-studies/"
+    },
+    {
+      "file": "executive-lab/for/business-analyst.html",
+      "ref": "../../docs/Mahmoud_Salama_CV_Lead_Senior_Business_Analyst_LATEST.pdf"
+    },
+    {
+      "file": "executive-lab/for/business-analyst.html",
+      "ref": "../../recruiter/"
+    },
+    {
+      "file": "executive-lab/for/business-analyst.html",
+      "ref": "../../case-studies/"
+    },
+    {
+      "file": "executive-lab/for/software-development-manager.html",
+      "ref": "../../docs/Mahmoud_Salama_CV_Software_Development_Manager_LATEST.pdf"
+    },
+    {
+      "file": "executive-lab/for/software-development-manager.html",
+      "ref": "../../recruiter/"
+    },
+    {
+      "file": "executive-lab/for/software-development-manager.html",
+      "ref": "../../case-studies/"
+    },
+    {
+      "file": "source-metadata/v3/EXECUTIVE_PLATFORM_WAVE3_REPLACEMENT.html",
+      "ref": "../executive-lab/"
+    },
+    {
+      "file": "source-metadata/v3/EXECUTIVE_PLATFORM_WAVE3_REPLACEMENT.html",
+      "ref": "../executive-lab-v2/"
+    },
+    {
+      "file": "source-metadata/v3/EXECUTIVE_PLATFORM_WAVE3_REPLACEMENT.html",
+      "ref": "../brand-platform/"
+    }
+  ],
+  "protected_root_replacements": [],
+  "browser_qa": "BLOCKED_BY_ENVIRONMENT_POLICY",
+  "browser_note": "Local browser navigation is blocked by administrator policy in this runtime. Static HTML/JS/JSON/reference QA completed instead."
+}

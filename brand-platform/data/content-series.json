@@ -1,0 +1,22 @@
+{
+  "newsletter": "Technology at Scale",
+  "series": [
+    {
+      "name": "Architecture Decisions",
+      "purpose": "Explain consequential technology trade-offs and governance decisions."
+    },
+    {
+      "name": "Lessons from National Platforms",
+      "purpose": "Translate large-scale delivery experience into reusable lessons."
+    },
+    {
+      "name": "Technology Leadership Notes",
+      "purpose": "Practical operating-model, governance, team and delivery perspectives."
+    },
+    {
+      "name": "Digital Government Field Notes",
+      "purpose": "Public-sector transformation, capability, data and adoption insights."
+    }
+  ],
+  "cadence": "Quality-first; monthly flagship perspective plus shorter derivative assets."
+}

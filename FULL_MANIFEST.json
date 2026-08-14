@@ -1,0 +1,40 @@
+{
+  "package": "Mahmoud Salama Executive Career Platform — FULL ADDITIVE",
+  "generated": "2026-08-14",
+  "integration_model": "additive-only",
+  "copy_to_website_root": [
+    "executive-platform/",
+    "executive-lab/",
+    "executive-lab-v2/"
+  ],
+  "do_not_replace": [
+    "existing website root",
+    "assets/",
+    "organizations/",
+    "waca/",
+    ".git/"
+  ],
+  "waves": {
+    "v1": {
+      "folder": "executive-lab/",
+      "files": 39,
+      "source_archive": "Mahmoud-Salama-Executive-Career-Platform-v1-ADDITIVE.zip",
+      "source_file_count": 46
+    },
+    "v2": {
+      "folder": "executive-lab-v2/",
+      "files": 38,
+      "source_archive": "Mahmoud-Salama-Executive-Career-Platform-v2-ADDITIVE.zip",
+      "source_file_count": 44
+    },
+    "master_hub": {
+      "folder": "executive-platform/",
+      "files": 1
+    }
+  },
+  "source_metadata_preserved": true,
+  "source_metadata_locations": [
+    "source-metadata/v1/",
+    "source-metadata/v2/"
+  ]
+}

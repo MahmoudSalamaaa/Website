@@ -1,0 +1,130 @@
+[
+  {
+    "dimension": "Strategy & Value",
+    "text": "Digital strategy is tied to measurable institutional outcomes."
+  },
+  {
+    "dimension": "Strategy & Value",
+    "text": "Technology portfolio priorities are governed with explicit value and risk criteria."
+  },
+  {
+    "dimension": "Strategy & Value",
+    "text": "Major initiatives have accountable executive sponsors and benefits owners."
+  },
+  {
+    "dimension": "Strategy & Value",
+    "text": "Investment decisions use business cases and post-implementation value reviews."
+  },
+  {
+    "dimension": "Data & Analytics",
+    "text": "Critical data domains have accountable owners and quality controls."
+  },
+  {
+    "dimension": "Data & Analytics",
+    "text": "Master/reference data is governed across systems."
+  },
+  {
+    "dimension": "Data & Analytics",
+    "text": "Decision makers can access timely, trusted analytics."
+  },
+  {
+    "dimension": "Data & Analytics",
+    "text": "Data architecture supports integration, lineage and scalable reporting."
+  },
+  {
+    "dimension": "Architecture & Integration",
+    "text": "Architecture principles guide major solution decisions."
+  },
+  {
+    "dimension": "Architecture & Integration",
+    "text": "APIs/integration patterns reduce point-to-point dependency."
+  },
+  {
+    "dimension": "Architecture & Integration",
+    "text": "Application portfolios have lifecycle/technical-debt visibility."
+  },
+  {
+    "dimension": "Architecture & Integration",
+    "text": "Interoperability and non-functional requirements are designed early."
+  },
+  {
+    "dimension": "Delivery & Product",
+    "text": "Cross-functional teams can deliver in increments with clear acceptance criteria."
+  },
+  {
+    "dimension": "Delivery & Product",
+    "text": "Programs track dependencies, risks, decisions and benefits."
+  },
+  {
+    "dimension": "Delivery & Product",
+    "text": "Product/service ownership continues after go-live."
+  },
+  {
+    "dimension": "Delivery & Product",
+    "text": "Release, test and production-readiness controls are repeatable."
+  },
+  {
+    "dimension": "Cyber, Risk & Continuity",
+    "text": "Security and privacy are built into solution lifecycles."
+  },
+  {
+    "dimension": "Cyber, Risk & Continuity",
+    "text": "Identity/access controls reflect least privilege and role ownership."
+  },
+  {
+    "dimension": "Cyber, Risk & Continuity",
+    "text": "Continuity, recovery and resilience expectations are tested."
+  },
+  {
+    "dimension": "Cyber, Risk & Continuity",
+    "text": "Technology risks are visible at executive governance level."
+  },
+  {
+    "dimension": "People, Change & Adoption",
+    "text": "Stakeholder groups are mapped and actively engaged."
+  },
+  {
+    "dimension": "People, Change & Adoption",
+    "text": "Training, communications and adoption measures are part of delivery."
+  },
+  {
+    "dimension": "People, Change & Adoption",
+    "text": "Teams have clear decision rights and capability-development plans."
+  },
+  {
+    "dimension": "People, Change & Adoption",
+    "text": "Operational ownership and knowledge transfer are explicit before handover."
+  },
+  {
+    "dimension": "AI Governance & Responsible Use",
+    "text": "AI use cases are selected against business value and risk."
+  },
+  {
+    "dimension": "AI Governance & Responsible Use",
+    "text": "AI systems have accountable owners, data controls and human oversight."
+  },
+  {
+    "dimension": "AI Governance & Responsible Use",
+    "text": "AI risks are documented, monitored and reassessed over the lifecycle."
+  },
+  {
+    "dimension": "AI Governance & Responsible Use",
+    "text": "Generative-AI use considers privacy, security, evaluation and misuse controls."
+  },
+  {
+    "dimension": "Digital Government / Platform Thinking",
+    "text": "Services are designed around user needs rather than internal silos."
+  },
+  {
+    "dimension": "Digital Government / Platform Thinking",
+    "text": "Shared platforms/components are reused where appropriate."
+  },
+  {
+    "dimension": "Digital Government / Platform Thinking",
+    "text": "Public-sector data is treated as a strategic asset with governance."
+  },
+  {
+    "dimension": "Digital Government / Platform Thinking",
+    "text": "Digital services are designed to become more proactive and interoperable over time."
+  }
+]

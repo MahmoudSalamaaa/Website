@@ -1,0 +1,1 @@
+Private v2 tools already carry meta robots noindex. Public v2 pages explicitly use index,follow. No robots.txt change is required for first deployment.

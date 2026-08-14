@@ -1,0 +1,10 @@
+{
+  "html_files": 31,
+  "local_refs_checked": 83,
+  "inline_module_scripts": 31,
+  "shared_js": "PASS",
+  "errors": [],
+  "status": "PASS",
+  "browser_smoke_test": "BLOCKED_BY_RUNTIME_ADMIN_POLICY",
+  "deployment_model": "ADDITIVE_ONLY"
+}

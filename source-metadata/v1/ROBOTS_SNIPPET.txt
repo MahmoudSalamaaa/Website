@@ -1,0 +1,7 @@
+# Optional additions to root robots.txt after /executive-lab/ is deployed
+Disallow: /executive-lab/job-evidence/
+Disallow: /executive-lab/90-day-plan/
+Disallow: /executive-lab/content-factory/
+Disallow: /executive-lab/market-intelligence/
+Disallow: /executive-lab/briefing/
+Disallow: /executive-lab/github-profile/

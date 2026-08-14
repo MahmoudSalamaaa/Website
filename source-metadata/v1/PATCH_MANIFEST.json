@@ -1,0 +1,26 @@
+{
+  "package": "Mahmoud Salama Executive Career Platform v1",
+  "type": "additive-module",
+  "generated": "2026-08-14",
+  "root_to_copy": "executive-lab/",
+  "overwrites_existing_files": false,
+  "modules": [
+    "Role-Specific Proof Engine",
+    "AI & Digital Transformation Readiness",
+    "Transformation ROI Calculator",
+    "Enterprise Architecture Decision Lab",
+    "Digital Government Lab",
+    "Skills Evidence Graph",
+    "Ask Mahmoud’s Experience",
+    "Technology Leadership Playbook",
+    "JD → Evidence Matrix",
+    "90-Day Executive Plan",
+    "Content Factory",
+    "Career Market Intelligence",
+    "Executive Briefing Generator",
+    "Industry Mini-Portfolios",
+    "Professional Endorsements",
+    "GitHub Executive Profile Kit"
+  ],
+  "evidence_policy": "Every public claim must trace to the evidence bank; no invented experience, metrics or certifications."
+}

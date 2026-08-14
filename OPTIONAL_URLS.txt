@@ -1,0 +1,3 @@
+/executive-platform/
+/executive-lab/
+/executive-lab-v2/

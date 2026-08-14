@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Build vs Buy for a Core Enterprise Capability",
+    "decision": "Prefer buy/configure when the capability is non-differentiating and mature products cover the operating model; build when integration, national-scale process specificity or strategic control creates material differentiation.",
+    "questions": [
+      "Is the capability strategically differentiating?",
+      "Can the product fit governance and integration constraints?",
+      "What is the 3-year TCO including change, vendor lock-in and support?",
+      "Can we exit or replace it without operational disruption?"
+    ],
+    "evidence": "Enterprise architecture and vendor governance across national platforms."
+  },
+  {
+    "title": "Stabilizing a Delayed Technology Program",
+    "decision": "Stabilize scope, ownership, dependencies and production risk before accelerating delivery. Speed without control compounds delay.",
+    "questions": [
+      "What outcomes are truly critical?",
+      "Where is decision latency?",
+      "Which dependencies sit outside the team?",
+      "What can be delivered safely in 30 days?"
+    ],
+    "evidence": "Program governance, service readiness and cross-team delivery leadership."
+  },
+  {
+    "title": "Governing AI Adoption",
+    "decision": "Treat AI as a governed business capability: define purpose, data boundaries, human accountability, evaluation, monitoring and exit criteria before scaling.",
+    "questions": [
+      "What decision or task is being augmented?",
+      "What harm follows from an incorrect output?",
+      "Which data is allowed?",
+      "Who owns approval and monitoring?"
+    ],
+    "evidence": "Digital governance, data governance and public-sector technology leadership."
+  },
+  {
+    "title": "Modernizing Legacy Applications",
+    "decision": "Modernize by business capability and risk\u2014not by technology age alone. Use strangler patterns, integration boundaries and measurable service outcomes.",
+    "questions": [
+      "Which capabilities create operational risk?",
+      "Where are coupling and data ownership problems?",
+      "What can be isolated first?",
+      "How will service continuity be protected?"
+    ],
+    "evidence": "Enterprise applications, integration architecture and production operations."
+  },
+  {
+    "title": "Consolidating Fragmented Data Platforms",
+    "decision": "Start with ownership, semantics, data quality and consumption needs before selecting a target platform. Consolidation without governance recreates fragmentation centrally.",
+    "questions": [
+      "Who owns each critical data domain?",
+      "Which definitions conflict?",
+      "What latency is required?",
+      "Which executive decisions depend on the data?"
+    ],
+    "evidence": "National health data warehouse and analytics architecture."
+  }
+]

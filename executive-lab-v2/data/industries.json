@@ -1,0 +1,41 @@
+{
+  "public-sector": {
+    "title": "Public Sector & Digital Government",
+    "intro": "National-scale platforms, governance, data, integration and institution-wide adoption.",
+    "evidence": [
+      "mediq",
+      "warehouse",
+      "oman",
+      "leadership"
+    ]
+  },
+  "healthcare": {
+    "title": "Healthcare Technology & Public Procurement",
+    "intro": "Health-sector data, procurement, medical supply, analytics and multi-entity platform governance.",
+    "evidence": [
+      "mediq",
+      "warehouse",
+      "d365",
+      "adoption"
+    ]
+  },
+  "education": {
+    "title": "Education & Government Services",
+    "intro": "Embedded ministry delivery, national education portal work, recruitment workflows and production support.",
+    "evidence": [
+      "oman",
+      "adoption",
+      "d365"
+    ]
+  },
+  "enterprise-it": {
+    "title": "Enterprise IT, Applications & Integration",
+    "intro": "Enterprise applications, ERP/CRM integration, data platforms, architecture and service operations.",
+    "evidence": [
+      "d365",
+      "warehouse",
+      "leadership",
+      "adoption"
+    ]
+  }
+}

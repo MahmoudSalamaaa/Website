@@ -1,0 +1,86 @@
+[
+  {
+    "title": "ERP implementation delayed nine months",
+    "first48": [
+      "Freeze uncontrolled scope changes",
+      "Map decision owners and blockers",
+      "Validate critical-path dependencies",
+      "Separate delivery facts from status-report optimism"
+    ],
+    "d30": [
+      "Re-baseline scope and milestones",
+      "Create executive RAID governance",
+      "Agree integration and data ownership",
+      "Define a safe incremental go-live path"
+    ],
+    "kpis": [
+      "Decision turnaround time",
+      "Critical defects",
+      "Milestone predictability",
+      "Integration readiness"
+    ]
+  },
+  {
+    "title": "12 legacy applications with no integration strategy",
+    "first48": [
+      "Inventory business capabilities and interfaces",
+      "Identify operational and security risk",
+      "Map data ownership and duplicate functions",
+      "Stop point-to-point expansion"
+    ],
+    "d30": [
+      "Define target integration principles",
+      "Prioritize capabilities for rationalization",
+      "Introduce API/integration boundaries",
+      "Create modernization waves"
+    ],
+    "kpis": [
+      "Interfaces rationalized",
+      "Duplicate capability reduction",
+      "Change lead time",
+      "Service availability"
+    ]
+  },
+  {
+    "title": "National platform adoption is under target",
+    "first48": [
+      "Segment adoption by user/entity group",
+      "Review support and training evidence",
+      "Identify workflow friction",
+      "Confirm technical availability vs user-experience issues"
+    ],
+    "d30": [
+      "Prioritize top adoption blockers",
+      "Establish training/support feedback loop",
+      "Instrument usage metrics",
+      "Create accountable adoption owners"
+    ],
+    "kpis": [
+      "Active users",
+      "Completion rate",
+      "Support demand",
+      "Time-to-proficiency"
+    ]
+  },
+  {
+    "title": "Executive reporting is inconsistent across institutions",
+    "first48": [
+      "Identify conflicting definitions",
+      "Trace report lineage to source systems",
+      "Quantify manual reconciliation",
+      "Name data owners"
+    ],
+    "d30": [
+      "Define common metrics and master data",
+      "Create governed pipelines",
+      "Introduce validation and reconciliation",
+      "Publish executive data-quality scorecard"
+    ],
+    "kpis": [
+      "Reporting preparation time",
+      "Reconciliation exceptions",
+      "Data-quality pass rate",
+      "Metric consistency"
+    ]
+  }
+]

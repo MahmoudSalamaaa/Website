@@ -1,0 +1,15 @@
+{
+  "release": "FULL v7.2 ESSENTIAL LINKS",
+  "base": "FULL v7.1 SYNCED ADDITIVE",
+  "changes": [
+    "Homepage purple CTA now opens /executive-platform/ using the same existing button classes and layout",
+    "/executive-platform/ upgraded to the master gateway with essential public pages + Waves 1\u20137",
+    "New /links/ utility page with the essential links",
+    "No CSS file or Digital Card redesign"
+  ],
+  "homepage_visual_change": "None: same button slot, class, color and layout; label/destination only",
+  "new_or_changed_route_checks": 9,
+  "missing_new_or_changed_routes": [],
+  "status": "PASS",
+  "note": "The package is additive; root-site assets already present in the deployment are intentionally not duplicated."
+}

@@ -1,0 +1,179 @@
+[
+  {
+    "title": "Chief Technology Officer (CTO)",
+    "family": "Executive Technology",
+    "terms": [
+      "technology strategy",
+      "team leadership",
+      "portfolio management",
+      "enterprise architecture",
+      "software development",
+      "data platforms",
+      "integration",
+      "governance"
+    ]
+  },
+  {
+    "title": "Chief Information Officer (CIO)",
+    "family": "Executive Technology",
+    "terms": [
+      "technology strategy",
+      "information systems",
+      "operations",
+      "service management",
+      "portfolio management",
+      "budget governance",
+      "cybersecurity",
+      "enterprise applications"
+    ]
+  },
+  {
+    "title": "Chief Digital Officer (CDO)",
+    "family": "Digital Transformation",
+    "terms": [
+      "digital transformation",
+      "change management",
+      "data platforms",
+      "customer experience",
+      "governance",
+      "technology strategy",
+      "ai transformation"
+    ]
+  },
+  {
+    "title": "Director of Digital Transformation",
+    "family": "Digital Transformation",
+    "terms": [
+      "digital transformation",
+      "program governance",
+      "stakeholder management",
+      "change management",
+      "enterprise architecture",
+      "data platforms",
+      "adoption"
+    ]
+  },
+  {
+    "title": "Head of Enterprise Platforms",
+    "family": "Platforms & Applications",
+    "terms": [
+      "enterprise applications",
+      "erp",
+      "crm",
+      "integration",
+      "platform governance",
+      "service management",
+      "vendor governance"
+    ]
+  },
+  {
+    "title": "Enterprise Architecture Director",
+    "family": "Architecture",
+    "terms": [
+      "enterprise architecture",
+      "integration architecture",
+      "data architecture",
+      "solution design",
+      "technology strategy",
+      "governance"
+    ]
+  },
+  {
+    "title": "Chief Architect / Enterprise Architect",
+    "family": "Architecture",
+    "terms": [
+      "enterprise architecture",
+      "solution design",
+      "integration architecture",
+      "data architecture",
+      "platform governance",
+      "api"
+    ]
+  },
+  {
+    "title": "Director of Enterprise Applications",
+    "family": "Platforms & Applications",
+    "terms": [
+      "enterprise applications",
+      "erp",
+      "crm",
+      "software delivery",
+      "integration",
+      "vendor governance",
+      "operations"
+    ]
+  },
+  {
+    "title": "Director of Technology Transformation",
+    "family": "Transformation",
+    "terms": [
+      "technology strategy",
+      "digital transformation",
+      "program governance",
+      "architecture",
+      "change management",
+      "portfolio management"
+    ]
+  },
+  {
+    "title": "Government Technology Advisor",
+    "family": "Advisory",
+    "terms": [
+      "public sector",
+      "government technology",
+      "digital transformation",
+      "enterprise architecture",
+      "stakeholder management",
+      "governance"
+    ]
+  },
+  {
+    "title": "Digital Government Advisor",
+    "family": "Advisory",
+    "terms": [
+      "public sector",
+      "government technology",
+      "digital transformation",
+      "platform governance",
+      "data platforms",
+      "change management"
+    ]
+  },
+  {
+    "title": "Platform Director",
+    "family": "Platforms & Applications",
+    "terms": [
+      "platform governance",
+      "enterprise applications",
+      "integration",
+      "software delivery",
+      "operations",
+      "vendor governance"
+    ]
+  },
+  {
+    "title": "Data & Analytics Director",
+    "family": "Data",
+    "terms": [
+      "data architecture",
+      "data platforms",
+      "data warehouse",
+      "analytics",
+      "master data",
+      "data quality",
+      "business intelligence"
+    ]
+  },
+  {
+    "title": "Technology Program Director",
+    "family": "Program Leadership",
+    "terms": [
+      "program governance",
+      "stakeholder management",
+      "portfolio management",
+      "vendor governance",
+      "digital transformation",
+      "change management"
+    ]
+  }
+]

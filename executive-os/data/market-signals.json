@@ -1,0 +1,95 @@
+[
+  {
+    "theme": "AI transformation at scale",
+    "terms": [
+      "ai transformation",
+      "artificial intelligence",
+      "genai",
+      "generative ai",
+      "agentic ai",
+      "ai roadmap",
+      "responsible ai"
+    ]
+  },
+  {
+    "theme": "Data foundations & governance",
+    "terms": [
+      "data governance",
+      "data platform",
+      "data architecture",
+      "master data",
+      "data quality",
+      "data readiness",
+      "enterprise data"
+    ]
+  },
+  {
+    "theme": "Cloud, sovereignty & resilience",
+    "terms": [
+      "cloud transformation",
+      "sovereign cloud",
+      "hybrid cloud",
+      "cloud strategy",
+      "resilience",
+      "platform modernization"
+    ]
+  },
+  {
+    "theme": "Cybersecurity & digital trust",
+    "terms": [
+      "cybersecurity",
+      "digital trust",
+      "security governance",
+      "risk management",
+      "identity",
+      "zero trust"
+    ]
+  },
+  {
+    "theme": "Enterprise platforms & integration",
+    "terms": [
+      "enterprise architecture",
+      "platform",
+      "integration",
+      "api",
+      "erp",
+      "crm",
+      "application modernization",
+      "enterprise applications"
+    ]
+  },
+  {
+    "theme": "Leadership, governance & change",
+    "terms": [
+      "technology leadership",
+      "digital transformation",
+      "governance",
+      "change management",
+      "stakeholder management",
+      "operating model",
+      "portfolio management"
+    ]
+  },
+  {
+    "theme": "Skills-first discoverability",
+    "terms": [
+      "skills-first",
+      "skills based",
+      "adjacent skills",
+      "qualifications",
+      "capabilities",
+      "evidence"
+    ]
+  },
+  {
+    "theme": "Thought leadership & authority",
+    "terms": [
+      "thought leadership",
+      "research",
+      "executive brief",
+      "speaker",
+      "publication",
+      "insight"
+    ]
+  }
+]

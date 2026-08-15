@@ -1,0 +1,110 @@
+{
+  "cto": {
+    "label": "CTO / CIO / IT Director",
+    "subtitle": "Technology & Digital Transformation Executive | Enterprise Architect",
+    "lines": [
+      "Technology Strategy Across Complex Organizations.",
+      "Enterprise Platforms, Data and Integration Governance.",
+      "Portfolio, Vendors and Technology Operations.",
+      "Leadership from Architecture through Adoption."
+    ],
+    "primary": {
+      "text": "Executive Proof",
+      "href": "/recruiter/"
+    },
+    "secondary": {
+      "text": "Executive Portfolio",
+      "href": "/executive-portfolio/"
+    }
+  },
+  "digital": {
+    "label": "Digital Transformation",
+    "subtitle": "Digital Transformation Executive | Enterprise Technology Leader",
+    "lines": [
+      "Turning Strategy into Governed Transformation.",
+      "Connecting Process, Platforms, Data and Adoption.",
+      "Public-Sector Programs Across Egypt and the GCC.",
+      "Measuring Outcomes Beyond Go-Live."
+    ],
+    "primary": {
+      "text": "Transformation Proof",
+      "href": "/executive-lab/for/digital-transformation.html"
+    },
+    "secondary": {
+      "text": "Case Studies",
+      "href": "/case-studies/"
+    }
+  },
+  "architecture": {
+    "label": "Enterprise Architecture",
+    "subtitle": "Enterprise Architect | Technology & Digital Transformation Executive",
+    "lines": [
+      "Architecting Governed Enterprise Platforms.",
+      "Integration, Data and Application Architecture.",
+      "Reducing Complexity Across Enterprise Systems.",
+      "Connecting Architecture to Operational Outcomes."
+    ],
+    "primary": {
+      "text": "Architecture Proof",
+      "href": "/executive-lab/for/enterprise-architect.html"
+    },
+    "secondary": {
+      "text": "Architecture Lab",
+      "href": "/executive-lab/architecture-lab/"
+    }
+  },
+  "gcc": {
+    "label": "GCC / Oman",
+    "subtitle": "Technology Executive | GCC Government & Enterprise Delivery",
+    "lines": [
+      "4+ Years Living and Working in Muscat.",
+      "Government Technology Delivery in Oman.",
+      "Egypt + GCC Enterprise Transformation Experience.",
+      "Architecture, Delivery and Stakeholder Leadership."
+    ],
+    "primary": {
+      "text": "GCC Evidence",
+      "href": "/executive-conversion/gcc/"
+    },
+    "secondary": {
+      "text": "Oman Proof",
+      "href": "/executive-lab/for/oman.html"
+    }
+  },
+  "board": {
+    "label": "Board / Advisory",
+    "subtitle": "Technology Executive | Governance, Transformation & Enterprise Architecture",
+    "lines": [
+      "Technology Governance and Risk Oversight.",
+      "National-Scale Digital Transformation Experience.",
+      "Architecture, Data and Portfolio Decision Support.",
+      "Executive Technology Perspective Across Egypt and GCC."
+    ],
+    "primary": {
+      "text": "Board Value",
+      "href": "/executive-conversion/board/"
+    },
+    "secondary": {
+      "text": "Advisory",
+      "href": "/executive-conversion/advisory/"
+    }
+  },
+  "recruiter": {
+    "label": "Recruiter",
+    "subtitle": "Technology & Digital Transformation Executive | Enterprise Architect",
+    "lines": [
+      "18+ Years Across Technology Leadership and Delivery.",
+      "Egypt + GCC Government and Enterprise Experience.",
+      "Evidence-First Career Profile and Role-Specific CVs.",
+      "National Platforms, Data, Integration and Governance."
+    ],
+    "primary": {
+      "text": "60-Second View",
+      "href": "/recruiter/"
+    },
+    "secondary": {
+      "text": "Evidence Passport",
+      "href": "/executive-conversion/evidence-passport/"
+    }
+  }
+}

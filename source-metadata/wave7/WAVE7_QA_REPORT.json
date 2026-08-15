@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "html_pages": 25,
+  "local_refs_checked": 80,
+  "broken_refs": [],
+  "protected_root_files_present": [],
+  "default_homepage_visual_change": "none; activation is one deferred JS tag and role personalization requires ?view="
+}

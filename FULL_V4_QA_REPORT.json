@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "html_pages": 115,
+  "files": 173,
+  "javascript_checks_total": 4,
+  "javascript_failures": [],
+  "local_references_checked": 674,
+  "broken_local_references": [],
+  "protected_main_assets_in_package_root": {
+    "index.html": false,
+    "site-main.css": false,
+    "card.html": false
+  },
+  "note": "Full additive package contains only internal platform folders and metadata; protected main-site files are absent."
+}

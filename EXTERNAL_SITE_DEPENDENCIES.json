@@ -1,0 +1,29 @@
+{
+  "purpose": "References intentionally resolved against the existing website after additive folders are copied to repository root.",
+  "required_existing_roots": [
+    "docs/",
+    "recruiter/",
+    "case-studies/",
+    "executive-portfolio/"
+  ],
+  "references": [
+    "executive-lab/for/cto.html -> ../../docs/Mahmoud_Salama_CV_CTO_IT_Director_LATEST.pdf",
+    "executive-lab/for/cto.html -> ../../recruiter/",
+    "executive-lab/for/cto.html -> ../../case-studies/",
+    "executive-lab/for/enterprise-architect.html -> ../../docs/Mahmoud_Salama_CV_Enterprise_Architect_LATEST.pdf",
+    "executive-lab/for/enterprise-architect.html -> ../../recruiter/",
+    "executive-lab/for/enterprise-architect.html -> ../../case-studies/",
+    "executive-lab/for/digital-transformation.html -> ../../docs/Mahmoud_Salama_CV_Digital_Transformation_Director_LATEST.pdf",
+    "executive-lab/for/digital-transformation.html -> ../../recruiter/",
+    "executive-lab/for/digital-transformation.html -> ../../case-studies/",
+    "executive-lab/for/business-analyst.html -> ../../docs/Mahmoud_Salama_CV_Lead_Senior_Business_Analyst_LATEST.pdf",
+    "executive-lab/for/business-analyst.html -> ../../recruiter/",
+    "executive-lab/for/business-analyst.html -> ../../case-studies/",
+    "executive-lab/for/software-development-manager.html -> ../../docs/Mahmoud_Salama_CV_Software_Development_Manager_LATEST.pdf",
+    "executive-lab/for/software-development-manager.html -> ../../recruiter/",
+    "executive-lab/for/software-development-manager.html -> ../../case-studies/",
+    "executive-lab/for/oman.html -> ../../docs/Mahmoud_Salama_CV_Digital_Transformation_Director_LATEST.pdf",
+    "executive-lab/for/oman.html -> ../../recruiter/",
+    "executive-lab/for/oman.html -> ../../case-studies/"
+  ]
+}

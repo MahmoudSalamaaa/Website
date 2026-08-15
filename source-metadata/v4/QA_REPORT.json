@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "wave": "4",
+  "protected_root_files_present": {
+    "index.html": false,
+    "site-main.css": false,
+    "card.html": false
+  },
+  "html_pages": 26,
+  "files": 38,
+  "javascript_checks": [
+    {
+      "file": "executive-capital/assets/wave4.js",
+      "ok": true,
+      "stderr": ""
+    }
+  ],
+  "local_references_checked": 279,
+  "broken_local_references": [],
+  "brand_guard": {
+    "root": "/mnt/data/Mahmoud-Salama-Executive-Reputation-Wave4-ADDITIVE",
+    "status": "PASS",
+    "errors": []
+  },
+  "research_sources": 17
+}

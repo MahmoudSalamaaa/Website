@@ -1,0 +1,121 @@
+{
+  "cto": {
+    "title": "CTO / CIO / IT Director",
+    "tagline": "Technology strategy, enterprise platforms, governance, operations and executive delivery.",
+    "cv": "../docs/Mahmoud_Salama_CV_CTO_IT_Director_LATEST.pdf",
+    "keywords": [
+      "technology strategy",
+      "portfolio management",
+      "team leadership",
+      "operations",
+      "service management",
+      "enterprise architecture",
+      "vendor governance",
+      "budget governance"
+    ],
+    "evidence": [
+      "leadership",
+      "mediq",
+      "adoption",
+      "d365"
+    ]
+  },
+  "digital-transformation": {
+    "title": "Digital Transformation Director",
+    "tagline": "Transformation roadmaps, national platforms, governance, adoption and measurable outcomes.",
+    "cv": "../docs/Mahmoud_Salama_CV_Digital_Transformation_Director_LATEST.pdf",
+    "keywords": [
+      "digital transformation",
+      "program governance",
+      "change management",
+      "platform governance",
+      "stakeholder management",
+      "data platforms"
+    ],
+    "evidence": [
+      "mediq",
+      "adoption",
+      "warehouse",
+      "leadership"
+    ]
+  },
+  "enterprise-architect": {
+    "title": "Enterprise / Solution Architect",
+    "tagline": "Architecture decisions across applications, integration, data, platforms and operating models.",
+    "cv": "../docs/Mahmoud_Salama_CV_Enterprise_Architect_LATEST.pdf",
+    "keywords": [
+      "enterprise architecture",
+      "integration architecture",
+      "data architecture",
+      "systems integration",
+      "rest api",
+      "platform governance"
+    ],
+    "evidence": [
+      "mediq",
+      "d365",
+      "warehouse",
+      "oman"
+    ]
+  },
+  "software-development-manager": {
+    "title": "Software / Application Development Manager",
+    "tagline": "Application delivery, engineering leadership, integration and production ownership.",
+    "cv": "../docs/Mahmoud_Salama_CV_Software_Development_Manager_LATEST.pdf",
+    "keywords": [
+      "software development",
+      "program delivery",
+      "testing",
+      "deployment",
+      "production support",
+      "team leadership",
+      "integration"
+    ],
+    "evidence": [
+      "oman",
+      "mediq",
+      "adoption",
+      "d365"
+    ]
+  },
+  "business-analyst": {
+    "title": "Lead / Senior Business Analyst",
+    "tagline": "Requirements, process redesign, stakeholder alignment, data-supported decisions and transformation delivery.",
+    "cv": "../docs/Mahmoud_Salama_CV_Lead_Senior_Business_Analyst_LATEST.pdf",
+    "keywords": [
+      "requirements",
+      "workflow",
+      "stakeholder management",
+      "analytics",
+      "data mapping",
+      "digital transformation",
+      "process"
+    ],
+    "evidence": [
+      "oman",
+      "d365",
+      "warehouse",
+      "mediq"
+    ]
+  },
+  "oman": {
+    "title": "Oman / GCC Technology Leadership",
+    "tagline": "GCC government delivery with direct Muscat experience and embedded ministry execution.",
+    "cv": "../docs/Mahmoud_Salama_CV_Digital_Transformation_Director_LATEST.pdf",
+    "keywords": [
+      "oman",
+      "gcc",
+      "government technology",
+      "stakeholder management",
+      "software development",
+      "integration",
+      "training"
+    ],
+    "evidence": [
+      "oman",
+      "mediq",
+      "leadership",
+      "d365"
+    ]
+  }
+}

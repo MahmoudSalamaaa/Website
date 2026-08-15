@@ -1,0 +1,43 @@
+{
+  "wave": 7,
+  "name": "Executive Conversion & Public Influence Layer",
+  "created": "2026-08-15",
+  "folders": [
+    "executive-conversion/"
+  ],
+  "root_patch_optional": [
+    "ROOT_PATCH/HOME_PATCH_PREVIEW.md",
+    "ROOT_PATCH/sitemap.xml"
+  ],
+  "protected": [
+    "site-main.css",
+    "card.html"
+  ],
+  "modules": [
+    "./",
+    "discoverability/",
+    "10-minute/",
+    "hiring-manager/",
+    "board/",
+    "due-diligence/",
+    "2-minute/",
+    "evidence-passport/",
+    "executive-search/",
+    "decision-room/",
+    "advisory/",
+    "recruiter-faq/",
+    "trust/",
+    "proof-graph/",
+    "30-second/",
+    "referral-pack/",
+    "campaign-builder/",
+    "conversion-analytics/",
+    "contact-router/",
+    "quality-hire/",
+    "market-narrative/",
+    "role-router/",
+    "thought-leadership/",
+    "brand-score/",
+    "gcc/"
+  ]
+}

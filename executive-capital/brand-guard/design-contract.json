@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "purpose": "Protect root website and Digital Card from future additive-module regressions.",
+  "protected_files": [
+    "/index.html",
+    "/site-main.css",
+    "/card.html"
+  ],
+  "rules": [
+    "Wave packages must not contain root index.html, site-main.css or card.html.",
+    "New CSS must be scoped to a unique namespace (.w4-* for Wave 4).",
+    "New modules should live in dedicated folders and must not inject global element selectors beyond safe reset declarations.",
+    "Any future homepage integration must be a separately reviewed optional snippet, never bundled as an automatic replacement.",
+    "Digital Card is visually frozen unless a change is explicitly approved.",
+    "Run local-reference QA and JavaScript syntax validation before packaging."
+  ],
+  "allowed_optional_integration": [
+    "executive-platform/index.html"
+  ],
+  "design_identity": {
+    "main_site": "preserve existing Josefin Sans portfolio layout and established section structure",
+    "digital_card": "preserve existing executive luxury navy/cyan/gold card experience",
+    "internal_modules": "may evolve while using common navy/cyan/gold executive identity"
+  }
+}

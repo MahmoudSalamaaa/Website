@@ -1,0 +1,165 @@
+{
+  "package": "Mahmoud Salama Executive Intelligence & Influence OS",
+  "wave": 6,
+  "mode": "ADDITIVE",
+  "entry": "/executive-os/",
+  "module_count": 30,
+  "protected_files_excluded": [
+    "index.html",
+    "site-main.css",
+    "card.html"
+  ],
+  "modules": [
+    {
+      "slug": "mission-control",
+      "title": "Executive Mission Control",
+      "group": "System Control"
+    },
+    {
+      "slug": "next-best-action",
+      "title": "Next Best Action Engine",
+      "group": "Decision Intelligence"
+    },
+    {
+      "slug": "copilot",
+      "title": "Executive Evidence Copilot",
+      "group": "Evidence Intelligence"
+    },
+    {
+      "slug": "knowledge-graph",
+      "title": "Unified Professional Knowledge Graph",
+      "group": "Data Foundation"
+    },
+    {
+      "slug": "probability",
+      "title": "Opportunity Probability Planner",
+      "group": "Opportunity Intelligence"
+    },
+    {
+      "slug": "portfolio-optimizer",
+      "title": "Career Portfolio Optimizer",
+      "group": "Resource Allocation"
+    },
+    {
+      "slug": "relationship-intelligence",
+      "title": "Relationship Intelligence",
+      "group": "Network Intelligence"
+    },
+    {
+      "slug": "network-decay",
+      "title": "Network Decay Monitor",
+      "group": "Network Intelligence"
+    },
+    {
+      "slug": "influence-map",
+      "title": "Influence Map",
+      "group": "Account Intelligence"
+    },
+    {
+      "slug": "referral-readiness",
+      "title": "Referral Readiness Engine",
+      "group": "Network Intelligence"
+    },
+    {
+      "slug": "hidden-market",
+      "title": "Hidden Job Market Engine",
+      "group": "Opportunity Intelligence"
+    },
+    {
+      "slug": "search-consultant-matcher",
+      "title": "Executive Search Consultant Matcher",
+      "group": "Executive Search"
+    },
+    {
+      "slug": "company-intelligence",
+      "title": "Company Intelligence Brief",
+      "group": "Account Intelligence"
+    },
+    {
+      "slug": "interview-war-room",
+      "title": "Interview War Room",
+      "group": "Interview Intelligence"
+    },
+    {
+      "slug": "objection-engine",
+      "title": "Objection Handling Engine",
+      "group": "Narrative Intelligence"
+    },
+    {
+      "slug": "narrative-compiler",
+      "title": "Executive Narrative Compiler",
+      "group": "Narrative Intelligence"
+    },
+    {
+      "slug": "consistency-scanner",
+      "title": "Brand Consistency Scanner",
+      "group": "Brand Intelligence"
+    },
+    {
+      "slug": "evidence-freshness",
+      "title": "Evidence Freshness Monitor",
+      "group": "Evidence Intelligence"
+    },
+    {
+      "slug": "brand-saturation",
+      "title": "Brand Saturation Monitor",
+      "group": "Brand Intelligence"
+    },
+    {
+      "slug": "content-radar",
+      "title": "Content Opportunity Radar",
+      "group": "Authority Intelligence"
+    },
+    {
+      "slug": "ip-registry",
+      "title": "Signature IP Registry",
+      "group": "Authority Intelligence"
+    },
+    {
+      "slug": "publishing-calendar",
+      "title": "Executive Publishing Calendar",
+      "group": "Authority Operations"
+    },
+    {
+      "slug": "authority-score",
+      "title": "Authority Score",
+      "group": "Reputation Intelligence"
+    },
+    {
+      "slug": "inbound-center",
+      "title": "Inbound Opportunity Center",
+      "group": "Inbound Intelligence"
+    },
+    {
+      "slug": "recruiter-workspaces",
+      "title": "Recruiter Workspace Builder",
+      "group": "Recruiter Experience"
+    },
+    {
+      "slug": "due-diligence",
+      "title": "Executive Due-Diligence Room",
+      "group": "Executive Readiness"
+    },
+    {
+      "slug": "promotion-intelligence",
+      "title": "Promotion Intelligence",
+      "group": "Internal Advancement"
+    },
+    {
+      "slug": "succession-map",
+      "title": "Succession & Delegation Map",
+      "group": "Leadership Maturity"
+    },
+    {
+      "slug": "personal-okrs",
+      "title": "Executive Personal OKRs",
+      "group": "Career Governance"
+    },
+    {
+      "slug": "career-digital-twin",
+      "title": "Career Digital Twin",
+      "group": "Scenario Intelligence"
+    }
+  ],
+  "data_policy": "local-first; evidence-grounded; no external tracker upload"
+}

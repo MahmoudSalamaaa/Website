@@ -1,0 +1,117 @@
+[
+  {
+    "id": "platform-outage",
+    "title": "National platform becomes unavailable during a peak service window",
+    "context": "A business-critical public-sector platform is down, multiple stakeholders are escalating, and technical evidence is incomplete.",
+    "steps": [
+      "Establish incident command and protect service/user safety",
+      "Separate symptom containment from root-cause investigation",
+      "Create a single source of truth for stakeholders and decision rights",
+      "Restore minimum viable service before nonessential optimization",
+      "Run post-incident review with ownership, resilience and monitoring actions"
+    ],
+    "tradeoffs": [
+      "Speed vs. forensic completeness",
+      "Central command vs. distributed technical ownership",
+      "Temporary workaround vs. architectural debt"
+    ],
+    "metrics": [
+      "time to acknowledge",
+      "time to restore critical service",
+      "repeat-incident rate",
+      "stakeholder communication cadence"
+    ]
+  },
+  {
+    "id": "erp-delay",
+    "title": "ERP / enterprise application program is nine months late",
+    "context": "Vendor, internal teams and business owners disagree on scope, dependencies and accountability.",
+    "steps": [
+      "Re-baseline scope and critical outcomes",
+      "Map unresolved decisions and ownership gaps",
+      "Split recoverable work from structural blockers",
+      "Introduce milestone evidence and executive governance cadence",
+      "Renegotiate vendor commitments against measurable acceptance criteria"
+    ],
+    "tradeoffs": [
+      "Scope protection vs. delivery speed",
+      "Relationship preservation vs. accountability",
+      "Big-bang completion vs. staged value release"
+    ],
+    "metrics": [
+      "critical path variance",
+      "open decision age",
+      "defect escape rate",
+      "accepted milestone percentage"
+    ]
+  },
+  {
+    "id": "ai-no-governance",
+    "title": "AI program is scaling without governance or trusted data access",
+    "context": "Business demand is high, pilots are multiplying, but data quality, ownership, security and human oversight are inconsistent.",
+    "steps": [
+      "Inventory use cases and classify risk",
+      "Define data access, ownership and lineage requirements",
+      "Establish responsible-AI decision rights and human oversight",
+      "Prioritize use cases with measurable value and manageable risk",
+      "Instrument monitoring, model/change controls and outcome review"
+    ],
+    "tradeoffs": [
+      "Innovation speed vs. assurance",
+      "Central standards vs. local experimentation",
+      "Broad access vs. least privilege"
+    ],
+    "metrics": [
+      "governed use-case percentage",
+      "data readiness score",
+      "time from pilot to controlled production",
+      "exceptions aging"
+    ]
+  },
+  {
+    "id": "vendor-lockin",
+    "title": "Critical technology capability is constrained by vendor lock-in",
+    "context": "Costs are rising and switching is difficult because integrations, data and operational knowledge are concentrated with one supplier.",
+    "steps": [
+      "Quantify technical, commercial and knowledge concentration",
+      "Identify contractual and architectural exit constraints",
+      "Separate data portability, interface portability and operational capability",
+      "Design phased optionality rather than a disruptive immediate exit",
+      "Embed knowledge-transfer and interoperability milestones into governance"
+    ],
+    "tradeoffs": [
+      "Short-term continuity vs. long-term optionality",
+      "Migration cost vs. strategic leverage",
+      "Standardization vs. supplier-specific optimization"
+    ],
+    "metrics": [
+      "portable interfaces",
+      "internal knowledge coverage",
+      "exit-cost trend",
+      "supplier dependency index"
+    ]
+  },
+  {
+    "id": "data-trust",
+    "title": "Executives do not trust the enterprise data warehouse",
+    "context": "Reports conflict, definitions differ across departments and decision-makers revert to spreadsheets.",
+    "steps": [
+      "Identify high-value decisions and authoritative measures",
+      "Map conflicting definitions to data ownership",
+      "Introduce master/reference data and validation controls",
+      "Publish lineage and reconciliation evidence",
+      "Rebuild adoption around a small set of trusted executive products"
+    ],
+    "tradeoffs": [
+      "Breadth vs. trust",
+      "Central governance vs. local flexibility",
+      "Speed of reporting vs. validation depth"
+    ],
+    "metrics": [
+      "reconciliation exceptions",
+      "data-quality rule pass rate",
+      "executive adoption",
+      "manual report preparation time"
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "package": "Mahmoud-Salama-Executive-Brand-Platform-FULL-v4-ADDITIVE",
+  "contains": [
+    "executive-lab (Wave 1)",
+    "executive-lab-v2 (Wave 2)",
+    "brand-platform (Wave 3)",
+    "executive-capital (Wave 4)",
+    "executive-platform (unified internal hub)"
+  ],
+  "protected_main_assets_not_included": [
+    "index.html",
+    "site-main.css",
+    "card.html"
+  ],
+  "qa_status": "PASS"
+}

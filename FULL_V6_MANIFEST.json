@@ -1,0 +1,22 @@
+{
+  "package": "Mahmoud Salama Executive + Brand Platform FULL v6",
+  "mode": "ADDITIVE",
+  "waves": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "entry_points": [
+    "/executive-platform/",
+    "/executive-os/"
+  ],
+  "protected_public_files_not_in_package": [
+    "index.html",
+    "site-main.css",
+    "card.html"
+  ],
+  "wave6_modules": 30
+}

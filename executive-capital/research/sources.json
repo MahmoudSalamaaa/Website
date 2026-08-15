@@ -1,0 +1,121 @@
+[
+  {
+    "id": "linkedin-thought-leadership-2025",
+    "publisher": "LinkedIn",
+    "title": "How to Create Impactful Thought Leadership Content",
+    "url": "https://www.linkedin.com/business/marketing/blog/content-marketing/creating-a-thought-leadership-marketing-plan",
+    "finding": "73% of decision-makers say thought leadership is a more trustworthy basis for assessing capabilities than traditional marketing materials; strong content should be accurate, digestible, shareable, actionable and relevant."
+  },
+  {
+    "id": "linkedin-hidden-buyers-2025",
+    "publisher": "LinkedIn / Edelman",
+    "title": "How B2B Marketers Can Use Thought Leadership to Persuade Hidden Buyers",
+    "url": "https://www.linkedin.com/business/marketing/blog/research-and-insights/b2b-thought-leadership-influence-hidden-buyers",
+    "finding": "Hidden buyers value distinctive style, straightforward presentation and human, accessible insight; more than 40% of B2B deals stall because of buying-group misalignment."
+  },
+  {
+    "id": "linkedin-skills-first",
+    "publisher": "LinkedIn",
+    "title": "Skills-based hiring",
+    "url": "https://www.linkedin.com/business/talent/blog/skills-based-hiring",
+    "finding": "Skills-first hiring continues to expand, increasing the value of explicit, evidence-backed capability signals rather than relying only on titles or pedigree."
+  },
+  {
+    "id": "google-people-first",
+    "publisher": "Google Search Central",
+    "title": "Creating Helpful, Reliable, People-First Content",
+    "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+    "finding": "Google emphasizes original information, first-hand expertise, clear authorship, useful sourcing, a clear site purpose, and people-first rather than search-engine-first content."
+  },
+  {
+    "id": "google-profilepage",
+    "publisher": "Google Search Central",
+    "title": "ProfilePage structured data",
+    "url": "https://developers.google.com/search/docs/appearance/structured-data/profile-page",
+    "finding": "ProfilePage markup helps Google understand a creator page; a clear mainEntity, accurate name, image and sameAs links support entity understanding."
+  },
+  {
+    "id": "google-article-author",
+    "publisher": "Google Search Central",
+    "title": "Article structured data",
+    "url": "https://developers.google.com/search/docs/appearance/structured-data/article",
+    "finding": "Google recommends accurate author markup and strongly recommends type plus author url or sameAs to help identify the person behind content."
+  },
+  {
+    "id": "github-repo-customization",
+    "publisher": "GitHub Docs",
+    "title": "Customizing your repository",
+    "url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository",
+    "finding": "README, repository topics, social preview images and CITATION files can improve project discoverability, comprehension and professional presentation."
+  },
+  {
+    "id": "pwc-ceo-2026",
+    "publisher": "PwC Middle East",
+    "title": "29th Global CEO Survey — Middle East findings",
+    "url": "https://www.pwc.com/m1/en/media-centre/2026/middle-east-29-ceo-survey.html",
+    "finding": "Middle East and GCC CEOs report AI adoption above global averages; 70% report a clearly defined AI roadmap, while leaders increasingly emphasize data readiness and governance before scaling AI."
+  },
+  {
+    "id": "pwc-cloud-2026",
+    "publisher": "PwC Middle East",
+    "title": "EMEA Cloud Business Survey — Middle East Findings",
+    "url": "https://www.pwc.com/m1/en/publications/emea-cloud-survey-tech-leaders.html",
+    "finding": "86% plan to increase cloud investment, 51% use or plan sovereign public cloud, and 43% are already implementing and scaling agentic AI."
+  },
+  {
+    "id": "pwc-cyber-2026",
+    "publisher": "PwC Middle East",
+    "title": "2026 Global Digital Trust Insights — Middle East",
+    "url": "https://www.pwc.com/m1/en/publications/ai-and-quantum-readiness-reshape-cyber-resilience-in-the-middle-east.html",
+    "finding": "62% expect cyber budgets to increase in 2026; 30% plan responsible-AI practices in the next 12 months, reinforcing trust and governance as executive priorities."
+  },
+  {
+    "id": "pwc-workforce-2025",
+    "publisher": "PwC Middle East",
+    "title": "Middle East Workforce Hopes and Fears Survey 2025",
+    "url": "https://www.pwc.com/m1/en/issues/upskilling/hopes-and-fears-2025.html",
+    "finding": "75% of regional respondents used AI at work; 69% learned new skills in the past year; 85% say job security is a top priority when considering roles."
+  },
+  {
+    "id": "spencer-board-bio",
+    "publisher": "Spencer Stuart",
+    "title": "Your board bio: Storytelling to connect the dots",
+    "url": "https://www.spencerstuart.com/research-and-insight/your-board-bio-storytelling-to-connect-the-dots",
+    "finding": "A board bio is a tailored one-page summary, distinct from an executive CV, centered on board value proposition, governance relevance, career impact, credentials and intellectual capital."
+  },
+  {
+    "id": "egon-board-ready",
+    "publisher": "Egon Zehnder",
+    "title": "Positioning Yourself for First-Time Board Service",
+    "url": "https://www.egonzehnder.com/what-we-do/board-advisory/insights/part-i-positioning-yourself-for-first-time-board-service",
+    "finding": "Board readiness benefits from a focused bio, explicit differentiation, profile raising through speaking/publishing, and networking with directors and executive-search firms."
+  },
+  {
+    "id": "spencer-board-search",
+    "publisher": "Spencer Stuart",
+    "title": "Myths and Opportunities",
+    "url": "https://www.spencerstuart.com/research-and-insight/myths-and-opportunities",
+    "finding": "Many board opportunities are not advertised; being known as an expert and widening professional networks increases the odds of being considered."
+  },
+  {
+    "id": "guidepoint-experts",
+    "publisher": "Guidepoint",
+    "title": "Guidepoint Advisors",
+    "url": "https://www.guidepoint.com/experts/",
+    "finding": "Experienced executives and specialists can register interest for compensated expert-network engagements; Guidepoint states that clear role/responsibility detail improves matching."
+  },
+  {
+    "id": "glg-experts",
+    "publisher": "GLG",
+    "title": "Consulting Opportunities for Senior Executives & Industry Leaders",
+    "url": "https://glginsights.com/executive-experts/",
+    "finding": "GLG offers senior executives flexible expert engagements and explicitly positions them as a way to extend expertise, influence decision-makers and build leadership visibility, subject to compliance."
+  },
+  {
+    "id": "orcid-researchers",
+    "publisher": "ORCID",
+    "title": "ORCID for Researchers",
+    "url": "https://info.orcid.org/researchers/",
+    "finding": "ORCID provides a free persistent identifier that connects research, affiliations and contributions across institutions and geographies, improving discoverability and attribution."
+  }
+]

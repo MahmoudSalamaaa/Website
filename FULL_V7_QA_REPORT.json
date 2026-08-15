@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "file_count": 311,
+  "wave7_included": true,
+  "protected_root_files_present": [],
+  "note": "Root homepage patch remains optional metadata; main-site visual design is not replaced."
+}

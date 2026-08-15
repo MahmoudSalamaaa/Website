@@ -1,0 +1,856 @@
+{
+  "version": "1.0",
+  "nodes": [
+    {
+      "id": "person",
+      "type": "person",
+      "label": "Mahmoud Salama"
+    },
+    {
+      "id": "role:chief-technology-officer-cto",
+      "type": "role",
+      "label": "Chief Technology Officer (CTO)",
+      "family": "Executive Technology"
+    },
+    {
+      "id": "role:chief-information-officer-cio",
+      "type": "role",
+      "label": "Chief Information Officer (CIO)",
+      "family": "Executive Technology"
+    },
+    {
+      "id": "role:chief-digital-officer-cdo",
+      "type": "role",
+      "label": "Chief Digital Officer (CDO)",
+      "family": "Digital Transformation"
+    },
+    {
+      "id": "role:director-of-digital-transformation",
+      "type": "role",
+      "label": "Director of Digital Transformation",
+      "family": "Digital Transformation"
+    },
+    {
+      "id": "role:enterprise-architecture-director",
+      "type": "role",
+      "label": "Enterprise Architecture Director",
+      "family": "Architecture"
+    },
+    {
+      "id": "role:chief-architect-enterprise-architect",
+      "type": "role",
+      "label": "Chief Architect / Enterprise Architect",
+      "family": "Architecture"
+    },
+    {
+      "id": "role:director-of-enterprise-applications",
+      "type": "role",
+      "label": "Director of Enterprise Applications",
+      "family": "Platforms & Applications"
+    },
+    {
+      "id": "role:director-of-technology-transformation",
+      "type": "role",
+      "label": "Director of Technology Transformation",
+      "family": "Transformation"
+    },
+    {
+      "id": "role:government-technology-advisor",
+      "type": "role",
+      "label": "Government Technology Advisor",
+      "family": "Advisory"
+    },
+    {
+      "id": "role:digital-government-advisor",
+      "type": "role",
+      "label": "Digital Government Advisor",
+      "family": "Advisory"
+    },
+    {
+      "id": "role:head-of-enterprise-platforms",
+      "type": "role",
+      "label": "Head of Enterprise Platforms",
+      "family": "Platforms & Applications"
+    },
+    {
+      "id": "role:data-analytics-director",
+      "type": "role",
+      "label": "Data & Analytics Director",
+      "family": "Data"
+    },
+    {
+      "id": "evidence:mediq",
+      "type": "evidence",
+      "label": "MedIQ / Unified Procurement & Medical Supply Ecosystem",
+      "org": "UPA · Egypt"
+    },
+    {
+      "id": "cap:enterprise-architecture",
+      "type": "capability",
+      "label": "enterprise architecture"
+    },
+    {
+      "id": "cap:digital-transformation",
+      "type": "capability",
+      "label": "digital transformation"
+    },
+    {
+      "id": "cap:platform-governance",
+      "type": "capability",
+      "label": "platform governance"
+    },
+    {
+      "id": "cap:systems-integration",
+      "type": "capability",
+      "label": "systems integration"
+    },
+    {
+      "id": "cap:public-sector",
+      "type": "capability",
+      "label": "public sector"
+    },
+    {
+      "id": "cap:healthcare-technology",
+      "type": "capability",
+      "label": "healthcare technology"
+    },
+    {
+      "id": "cap:vendor-governance",
+      "type": "capability",
+      "label": "vendor governance"
+    },
+    {
+      "id": "cap:program-delivery",
+      "type": "capability",
+      "label": "program delivery"
+    },
+    {
+      "id": "cap:procurement",
+      "type": "capability",
+      "label": "procurement"
+    },
+    {
+      "id": "cap:supply-chain",
+      "type": "capability",
+      "label": "supply chain"
+    },
+    {
+      "id": "evidence:warehouse",
+      "type": "evidence",
+      "label": "National Health Sector Data Warehouse & Strategic Analytics Layer",
+      "org": "UPA · Egypt"
+    },
+    {
+      "id": "cap:data-architecture",
+      "type": "capability",
+      "label": "data architecture"
+    },
+    {
+      "id": "cap:data-platforms",
+      "type": "capability",
+      "label": "data platforms"
+    },
+    {
+      "id": "cap:data-warehouse",
+      "type": "capability",
+      "label": "data warehouse"
+    },
+    {
+      "id": "cap:postgresql",
+      "type": "capability",
+      "label": "postgresql"
+    },
+    {
+      "id": "cap:master-data",
+      "type": "capability",
+      "label": "master data"
+    },
+    {
+      "id": "cap:data-quality",
+      "type": "capability",
+      "label": "data quality"
+    },
+    {
+      "id": "cap:power-bi",
+      "type": "capability",
+      "label": "power bi"
+    },
+    {
+      "id": "cap:apache-superset",
+      "type": "capability",
+      "label": "apache superset"
+    },
+    {
+      "id": "cap:analytics",
+      "type": "capability",
+      "label": "analytics"
+    },
+    {
+      "id": "cap:business-intelligence",
+      "type": "capability",
+      "label": "business intelligence"
+    },
+    {
+      "id": "evidence:oman",
+      "type": "evidence",
+      "label": "Oman Ministry of Education — Educational Portal & Ministry Systems",
+      "org": "Integral Solutions LLC · Muscat"
+    },
+    {
+      "id": "cap:oman",
+      "type": "capability",
+      "label": "oman"
+    },
+    {
+      "id": "cap:gcc",
+      "type": "capability",
+      "label": "gcc"
+    },
+    {
+      "id": "cap:government-technology",
+      "type": "capability",
+      "label": "government technology"
+    },
+    {
+      "id": "cap:requirements",
+      "type": "capability",
+      "label": "requirements"
+    },
+    {
+      "id": "cap:solution-design",
+      "type": "capability",
+      "label": "solution design"
+    },
+    {
+      "id": "cap:software-development",
+      "type": "capability",
+      "label": "software development"
+    },
+    {
+      "id": "cap:integration",
+      "type": "capability",
+      "label": "integration"
+    },
+    {
+      "id": "cap:testing",
+      "type": "capability",
+      "label": "testing"
+    },
+    {
+      "id": "cap:deployment",
+      "type": "capability",
+      "label": "deployment"
+    },
+    {
+      "id": "cap:stakeholder-management",
+      "type": "capability",
+      "label": "stakeholder management"
+    },
+    {
+      "id": "cap:training",
+      "type": "capability",
+      "label": "training"
+    },
+    {
+      "id": "cap:production-support",
+      "type": "capability",
+      "label": "production support"
+    },
+    {
+      "id": "cap:education-technology",
+      "type": "capability",
+      "label": "education technology"
+    },
+    {
+      "id": "evidence:d365",
+      "type": "evidence",
+      "label": "Microsoft Dynamics 365 ERP & CRM Integration",
+      "org": "UPA · Egypt"
+    },
+    {
+      "id": "cap:microsoft-dynamics-365",
+      "type": "capability",
+      "label": "microsoft dynamics 365"
+    },
+    {
+      "id": "cap:erp",
+      "type": "capability",
+      "label": "erp"
+    },
+    {
+      "id": "cap:crm",
+      "type": "capability",
+      "label": "crm"
+    },
+    {
+      "id": "cap:integration-architecture",
+      "type": "capability",
+      "label": "integration architecture"
+    },
+    {
+      "id": "cap:rest-api",
+      "type": "capability",
+      "label": "rest api"
+    },
+    {
+      "id": "cap:data-mapping",
+      "type": "capability",
+      "label": "data mapping"
+    },
+    {
+      "id": "cap:workflow",
+      "type": "capability",
+      "label": "workflow"
+    },
+    {
+      "id": "cap:reconciliation",
+      "type": "capability",
+      "label": "reconciliation"
+    },
+    {
+      "id": "cap:monitoring",
+      "type": "capability",
+      "label": "monitoring"
+    },
+    {
+      "id": "cap:auditability",
+      "type": "capability",
+      "label": "auditability"
+    },
+    {
+      "id": "evidence:leadership",
+      "type": "evidence",
+      "label": "Executive Technology Portfolio Governance",
+      "org": "Leadership portfolio"
+    },
+    {
+      "id": "cap:technology-strategy",
+      "type": "capability",
+      "label": "technology strategy"
+    },
+    {
+      "id": "cap:portfolio-management",
+      "type": "capability",
+      "label": "portfolio management"
+    },
+    {
+      "id": "cap:budget-governance",
+      "type": "capability",
+      "label": "budget governance"
+    },
+    {
+      "id": "cap:team-leadership",
+      "type": "capability",
+      "label": "team leadership"
+    },
+    {
+      "id": "cap:program-governance",
+      "type": "capability",
+      "label": "program governance"
+    },
+    {
+      "id": "cap:executive-reporting",
+      "type": "capability",
+      "label": "executive reporting"
+    },
+    {
+      "id": "cap:leadership",
+      "type": "capability",
+      "label": "leadership"
+    },
+    {
+      "id": "evidence:adoption",
+      "type": "evidence",
+      "label": "Change, Adoption & Operations",
+      "org": "Leadership portfolio"
+    },
+    {
+      "id": "cap:change-management",
+      "type": "capability",
+      "label": "change management"
+    },
+    {
+      "id": "cap:adoption",
+      "type": "capability",
+      "label": "adoption"
+    },
+    {
+      "id": "cap:service-management",
+      "type": "capability",
+      "label": "service management"
+    },
+    {
+      "id": "cap:business-continuity",
+      "type": "capability",
+      "label": "business continuity"
+    },
+    {
+      "id": "cap:availability",
+      "type": "capability",
+      "label": "availability"
+    },
+    {
+      "id": "cap:operations",
+      "type": "capability",
+      "label": "operations"
+    },
+    {
+      "id": "cap:knowledge-transfer",
+      "type": "capability",
+      "label": "knowledge transfer"
+    },
+    {
+      "id": "region:egypt",
+      "type": "region",
+      "label": "Egypt"
+    },
+    {
+      "id": "region:oman",
+      "type": "region",
+      "label": "Oman"
+    },
+    {
+      "id": "region:gcc",
+      "type": "region",
+      "label": "GCC"
+    },
+    {
+      "id": "region:africa",
+      "type": "region",
+      "label": "Africa"
+    },
+    {
+      "id": "region:remote-global",
+      "type": "region",
+      "label": "Remote / Global"
+    }
+  ],
+  "edges": [
+    {
+      "from": "person",
+      "to": "role:chief-technology-officer-cto",
+      "type": "targets"
+    },
+    {
+      "from": "person",
+      "to": "role:chief-information-officer-cio",
+      "type": "targets"
+    },
+    {
+      "from": "person",
+      "to": "role:chief-digital-officer-cdo",
+      "type": "targets"
+    },
+    {
+      "from": "person",
+      "to": "role:director-of-digital-transformation",
+      "type": "targets"
+    },
+    {
+      "from": "person",
+      "to": "role:enterprise-architecture-director",
+      "type": "targets"
+    },
+    {
+      "from": "person",
+      "to": "role:chief-architect-enterprise-architect",
+      "type": "targets"
+    },
+    {
+      "from": "person",
+      "to": "role:director-of-enterprise-applications",
+      "type": "targets"
+    },
+    {
+      "from": "person",
+      "to": "role:director-of-technology-transformation",
+      "type": "targets"
+    },
+    {
+      "from": "person",
+      "to": "role:government-technology-advisor",
+      "type": "targets"
+    },
+    {
+      "from": "person",
+      "to": "role:digital-government-advisor",
+      "type": "targets"
+    },
+    {
+      "from": "person",
+      "to": "role:head-of-enterprise-platforms",
+      "type": "targets"
+    },
+    {
+      "from": "person",
+      "to": "role:data-analytics-director",
+      "type": "targets"
+    },
+    {
+      "from": "person",
+      "to": "evidence:mediq",
+      "type": "delivered"
+    },
+    {
+      "from": "evidence:mediq",
+      "to": "cap:enterprise-architecture",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:mediq",
+      "to": "cap:digital-transformation",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:mediq",
+      "to": "cap:platform-governance",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:mediq",
+      "to": "cap:systems-integration",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:mediq",
+      "to": "cap:public-sector",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:mediq",
+      "to": "cap:healthcare-technology",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:mediq",
+      "to": "cap:vendor-governance",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:mediq",
+      "to": "cap:program-delivery",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:mediq",
+      "to": "cap:procurement",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:mediq",
+      "to": "cap:supply-chain",
+      "type": "proves"
+    },
+    {
+      "from": "person",
+      "to": "evidence:warehouse",
+      "type": "delivered"
+    },
+    {
+      "from": "evidence:warehouse",
+      "to": "cap:data-architecture",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:warehouse",
+      "to": "cap:data-platforms",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:warehouse",
+      "to": "cap:data-warehouse",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:warehouse",
+      "to": "cap:postgresql",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:warehouse",
+      "to": "cap:master-data",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:warehouse",
+      "to": "cap:data-quality",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:warehouse",
+      "to": "cap:power-bi",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:warehouse",
+      "to": "cap:apache-superset",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:warehouse",
+      "to": "cap:analytics",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:warehouse",
+      "to": "cap:public-sector",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:warehouse",
+      "to": "cap:business-intelligence",
+      "type": "proves"
+    },
+    {
+      "from": "person",
+      "to": "evidence:oman",
+      "type": "delivered"
+    },
+    {
+      "from": "evidence:oman",
+      "to": "cap:oman",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:oman",
+      "to": "cap:gcc",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:oman",
+      "to": "cap:government-technology",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:oman",
+      "to": "cap:requirements",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:oman",
+      "to": "cap:solution-design",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:oman",
+      "to": "cap:software-development",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:oman",
+      "to": "cap:integration",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:oman",
+      "to": "cap:testing",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:oman",
+      "to": "cap:deployment",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:oman",
+      "to": "cap:stakeholder-management",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:oman",
+      "to": "cap:training",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:oman",
+      "to": "cap:production-support",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:oman",
+      "to": "cap:education-technology",
+      "type": "proves"
+    },
+    {
+      "from": "person",
+      "to": "evidence:d365",
+      "type": "delivered"
+    },
+    {
+      "from": "evidence:d365",
+      "to": "cap:microsoft-dynamics-365",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:d365",
+      "to": "cap:erp",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:d365",
+      "to": "cap:crm",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:d365",
+      "to": "cap:integration-architecture",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:d365",
+      "to": "cap:rest-api",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:d365",
+      "to": "cap:data-mapping",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:d365",
+      "to": "cap:workflow",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:d365",
+      "to": "cap:reconciliation",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:d365",
+      "to": "cap:monitoring",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:d365",
+      "to": "cap:auditability",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:d365",
+      "to": "cap:vendor-governance",
+      "type": "proves"
+    },
+    {
+      "from": "person",
+      "to": "evidence:leadership",
+      "type": "delivered"
+    },
+    {
+      "from": "evidence:leadership",
+      "to": "cap:technology-strategy",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:leadership",
+      "to": "cap:portfolio-management",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:leadership",
+      "to": "cap:budget-governance",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:leadership",
+      "to": "cap:team-leadership",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:leadership",
+      "to": "cap:program-governance",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:leadership",
+      "to": "cap:stakeholder-management",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:leadership",
+      "to": "cap:executive-reporting",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:leadership",
+      "to": "cap:leadership",
+      "type": "proves"
+    },
+    {
+      "from": "person",
+      "to": "evidence:adoption",
+      "type": "delivered"
+    },
+    {
+      "from": "evidence:adoption",
+      "to": "cap:change-management",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:adoption",
+      "to": "cap:adoption",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:adoption",
+      "to": "cap:training",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:adoption",
+      "to": "cap:service-management",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:adoption",
+      "to": "cap:production-support",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:adoption",
+      "to": "cap:business-continuity",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:adoption",
+      "to": "cap:availability",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:adoption",
+      "to": "cap:operations",
+      "type": "proves"
+    },
+    {
+      "from": "evidence:adoption",
+      "to": "cap:knowledge-transfer",
+      "type": "proves"
+    },
+    {
+      "from": "person",
+      "to": "region:egypt",
+      "type": "market"
+    },
+    {
+      "from": "person",
+      "to": "region:oman",
+      "type": "market"
+    },
+    {
+      "from": "person",
+      "to": "region:gcc",
+      "type": "market"
+    },
+    {
+      "from": "person",
+      "to": "region:africa",
+      "type": "market"
+    },
+    {
+      "from": "person",
+      "to": "region:remote-global",
+      "type": "market"
+    }
+  ],
+  "policy": "Every generated public claim must trace to evidence. No invented experience, metrics, certifications, employers or outcomes."
+}

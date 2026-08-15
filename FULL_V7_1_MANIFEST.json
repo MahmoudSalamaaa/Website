@@ -1,0 +1,26 @@
+{
+  "package": "Mahmoud-Salama-Executive-Brand-Platform-FULL-v7.1-SYNCED-ADDITIVE",
+  "type": "additive-overlay",
+  "base_commit": "12d71cca2d9981e29aac15494ba850cc6eee0b12",
+  "base_index_git_blob_sha1": "07026d9517e1f16ec3f6d30e2fd0b31f464fbdcf",
+  "homepage_change": "single deferred script include only",
+  "homepage_visual_change": false,
+  "site_main_css_included": false,
+  "digital_card_included": false,
+  "waves": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "root_sync_files": [
+    "index.html",
+    "sitemap.xml",
+    "CVSalama.pdf",
+    "assets/documents/Mahmoud_Salama_Executive_CV_2026.pdf",
+    "README.txt"
+  ]
+}

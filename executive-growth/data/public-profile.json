@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.0",
+  "generated": "2026-08-14",
+  "person": {
+    "name": "Mahmoud Salama",
+    "headline": "Technology & Digital Transformation Executive | Enterprise Architect",
+    "experience_years": "18+",
+    "location": "Cairo, Egypt",
+    "regions": [
+      "Egypt",
+      "Oman",
+      "GCC",
+      "Africa",
+      "Remote / Global"
+    ],
+    "contact": {
+      "email": "ma7moud.salamaaa@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/mahmoud-salama-30249b34",
+      "github": "https://github.com/MahmoudSalamaaa"
+    },
+    "metrics": [
+      "EGP 150M+ technology portfolio",
+      "40+ professionals",
+      "12,000+ entities supported",
+      "4+ years lived & worked in Muscat"
+    ],
+    "policy": "Every public claim must trace to the evidence bank; no invented experience, metrics or certifications."
+  },
+  "positioning": {
+    "primary": "Technology at National Scale",
+    "themes": [
+      "Digital Government",
+      "Enterprise Architecture",
+      "Digital Transformation",
+      "Data Platforms",
+      "Enterprise Applications",
+      "Technology Leadership",
+      "Egypt + GCC"
+    ]
+  },
+  "evidence": [
+    {
+      "id": "mediq",
+      "title": "MedIQ / Unified Procurement & Medical Supply Ecosystem",
+      "org": "UPA · Egypt",
+      "scope": "Architecture & Governance Lead",
+      "summary": "Governed a national 10-platform ecosystem connecting procurement, approvals, inventory, distribution, supplier interaction, forecasting, analytics and supply-chain controls.",
+      "metrics": [
+        "12,000+ entities supported",
+        "320,000+ automated validation checks",
+        "10 integrated platforms"
+      ],
+      "capabilities": [
+        "enterprise architecture",
+        "digital transformation",
+        "platform governance",
+        "systems integration",
+        "public sector",
+        "healthcare technology",
+        "vendor governance",
+        "program delivery",
+        "procurement",
+        "supply chain"
+      ],
+      "url": "../case-studies/"
+    },
+    {
+      "id": "warehouse",
+      "title": "National Health Sector Data Warehouse & Strategic Analytics Layer",
+      "org": "UPA · Egypt",
+      "scope": "Enterprise Data Architecture Lead",
+      "summary": "Designed a governed enterprise data environment for consistent, faster cross-institution reporting and decision support.",
+      "metrics": [
+        "12M+ records processed daily",
+        "100+ government institutions",
+        "~70% faster reporting preparation"
+      ],
+      "capabilities": [
+        "data architecture",
+        "data platforms",
+        "data warehouse",
+        "postgresql",
+        "master data",
+        "data quality",
+        "power bi",
+        "apache superset",
+        "analytics",
+        "public sector",
+        "business intelligence"
+      ],
+      "url": "../case-studies/"
+    },
+    {
+      "id": "oman",
+      "title": "Oman Ministry of Education — Educational Portal & Ministry Systems",
+      "org": "Integral Solutions LLC · Muscat",
+      "scope": "Embedded Government Delivery",
+      "summary": "Worked closely inside the Ministry environment on the award-winning Educational Portal and connected systems, including recruitment workflows.",
+      "metrics": [
+        "2.5+ years embedded at Ministry of Education",
+        "4+ years lived & worked in Muscat",
+        "Award-winning national education portal"
+      ],
+      "capabilities": [
+        "oman",
+        "gcc",
+        "government technology",
+        "requirements",
+        "solution design",
+        "software development",
+        "integration",
+        "testing",
+        "deployment",
+        "stakeholder management",
+        "training",
+        "production support",
+        "education technology"
+      ],
+      "url": "../case-studies/"
+    },
+    {
+      "id": "d365",
+      "title": "Microsoft Dynamics 365 ERP & CRM Integration",
+      "org": "UPA · Egypt",
+      "scope": "Integration Architecture",
+      "summary": "Connected procurement, operational, stakeholder, reporting and data platforms with Microsoft Dynamics 365 ERP and CRM using controlled integration patterns.",
+      "metrics": [
+        "REST connectivity",
+        "Workflow alignment and reconciliation",
+        "Cross-team and vendor governance"
+      ],
+      "capabilities": [
+        "microsoft dynamics 365",
+        "erp",
+        "crm",
+        "integration architecture",
+        "rest api",
+        "data mapping",
+        "workflow",
+        "reconciliation",
+        "monitoring",
+        "auditability",
+        "vendor governance"
+      ],
+      "url": "../case-studies/"
+    },
+    {
+      "id": "leadership",
+      "title": "Executive Technology Portfolio Governance",
+      "org": "Leadership portfolio",
+      "scope": "Executive Leadership",
+      "summary": "Executive governance across technology strategy, architecture, delivery, data, integration and adoption.",
+      "metrics": [
+        "EGP 150M+ portfolio",
+        "40+ professionals"
+      ],
+      "capabilities": [
+        "technology strategy",
+        "portfolio management",
+        "budget governance",
+        "team leadership",
+        "program governance",
+        "stakeholder management",
+        "executive reporting",
+        "leadership"
+      ],
+      "url": "../executive-portfolio/"
+    },
+    {
+      "id": "adoption",
+      "title": "Change, Adoption & Operations",
+      "org": "Leadership portfolio",
+      "scope": "Service & Adoption Leadership",
+      "summary": "Embedded training, service governance, production readiness, continuity and operational ownership into transformation delivery.",
+      "metrics": [
+        "39,000+ staff reached",
+        "99%+ availability"
+      ],
+      "capabilities": [
+        "change management",
+        "adoption",
+        "training",
+        "service management",
+        "production support",
+        "business continuity",
+        "availability",
+        "operations",
+        "knowledge transfer"
+      ],
+      "url": "../executive-portfolio/"
+    }
+  ],
+  "role_adjacencies": [
+    "Chief Technology Officer (CTO)",
+    "Chief Information Officer (CIO)",
+    "Chief Digital Officer (CDO)",
+    "Director of Digital Transformation",
+    "Head of Enterprise Platforms",
+    "Enterprise Architecture Director",
+    "Chief Architect / Enterprise Architect",
+    "Director of Enterprise Applications",
+    "Director of Technology Transformation",
+    "Government Technology Advisor",
+    "Digital Government Advisor",
+    "Platform Director",
+    "Data & Analytics Director",
+    "Technology Program Director"
+  ],
+  "evidence_policy": "No invented experience, metrics, certifications or testimonials. Public claims should trace to the evidence collection."
+}

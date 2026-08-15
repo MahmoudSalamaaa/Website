@@ -1,0 +1,17 @@
+{
+  "version": "2.0",
+  "protected_root_surfaces": [
+    "/index.html",
+    "/site-main.css",
+    "/card.html"
+  ],
+  "rule": "Wave 5 ships no protected root surfaces. Main-site and Digital Card changes require separate explicit review.",
+  "namespace": ".w5-*",
+  "public_indexable_modules": [
+    "/executive-growth/advisory/",
+    "/executive-growth/public-profile/",
+    "/executive-growth/leadership-simulator/"
+  ],
+  "internal_noindex_modules": "all remaining Wave 5 operating tools",
+  "claim_policy": "Personal claims must trace to the evidence collection; role adjacency and market themes are decision aids, not experience claims."
+}

@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "package": "Mahmoud-Salama-Executive-Brand-Platform-FULL-v7.1-SYNCED-ADDITIVE",
+  "base_commit": "12d71cca2d9981e29aac15494ba850cc6eee0b12",
+  "base_index_git_blob_sha1": "07026d9517e1f16ec3f6d30e2fd0b31f464fbdcf",
+  "homepage_patch_only_expected_script": true,
+  "homepage_visual_css_changed": false,
+  "site_main_css_in_package": false,
+  "card_html_in_package": false,
+  "cv_size_bytes": 71928,
+  "cv_git_blob_sha1": "61344c6c54b664fb092173d26d768a52e559fbbd",
+  "cv_copies_byte_identical": true,
+  "readme_git_blob_sha1": "f874c06b304813bbfe3be1ced64d0d96b86adced",
+  "files_total_before_report": 320,
+  "html_files": 200,
+  "js_files": 8,
+  "json_files": 70,
+  "json_parse_errors": [],
+  "js_syntax_errors": [],
+  "deploy_local_refs_checked": 1588,
+  "deploy_local_refs_resolved_in_merged_tree": 1519,
+  "verified_current_main_dependency_refs": 68,
+  "runtime_dependency_refs": 1,
+  "broken_deploy_refs_count": 0,
+  "broken_deploy_refs": [],
+  "verified_current_main_roots": [
+    "case-studies",
+    "docs",
+    "executive-portfolio",
+    "recruiter"
+  ],
+  "archival_source_metadata_excluded_from_deploy_ref_check": true,
+  "changed_root_files": {
+    "index.html": {
+      "size": 178959,
+      "sha256": "f43dcd61359c955958ec0511830d70dbe7d100c3211e4024dd1de37e42ce67c3"
+    },
+    "sitemap.xml": {
+      "size": 3813,
+      "sha256": "460b3a9981f678d6babbd35140eb83cee4ba33d37d26c8e48de858e05e7f0552"
+    },
+    "CVSalama.pdf": {
+      "size": 71928,
+      "sha256": "003c089b74df73457b3e86934dc730c00d1c3bfb1fc3d37534ff27151ba77104"
+    },
+    "assets/documents/Mahmoud_Salama_Executive_CV_2026.pdf": {
+      "size": 71928,
+      "sha256": "003c089b74df73457b3e86934dc730c00d1c3bfb1fc3d37534ff27151ba77104"
+    },
+    "README.txt": {
+      "size": 531,
+      "sha256": "85f1e2408a0e99b1f588982bbdadee5bbbcc5a652fe1bdce1d5efa386a7e4cdd"
+    }
+  }
+}

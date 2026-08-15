@@ -1,0 +1,26 @@
+{
+  "version": "5.0",
+  "generated": "2026-08-14",
+  "waves": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+  ],
+  "entry_points": [
+    "/executive-lab/",
+    "/executive-lab-v2/",
+    "/brand-platform/",
+    "/executive-capital/",
+    "/executive-growth/",
+    "/executive-platform/"
+  ],
+  "protected_main_surfaces_not_replaced": [
+    "/index.html",
+    "/site-main.css",
+    "/card.html"
+  ],
+  "file_count": 223,
+  "html_pages": 143
+}

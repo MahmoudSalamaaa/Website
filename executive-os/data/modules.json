@@ -1,0 +1,182 @@
+[
+  {
+    "slug": "mission-control",
+    "title": "Executive Mission Control",
+    "group": "System Control",
+    "summary": "One dashboard for opportunities, relationships, interviews, content, authority and career priorities."
+  },
+  {
+    "slug": "next-best-action",
+    "title": "Next Best Action Engine",
+    "group": "Decision Intelligence",
+    "summary": "Turns open goals and due items into a ranked daily action queue."
+  },
+  {
+    "slug": "copilot",
+    "title": "Executive Evidence Copilot",
+    "group": "Evidence Intelligence",
+    "summary": "Local evidence-grounded Q&A across roles, proof points and career modules."
+  },
+  {
+    "slug": "knowledge-graph",
+    "title": "Unified Professional Knowledge Graph",
+    "group": "Data Foundation",
+    "summary": "Connects roles, capabilities, evidence, regions and career assets in one navigable model."
+  },
+  {
+    "slug": "probability",
+    "title": "Opportunity Probability Planner",
+    "group": "Opportunity Intelligence",
+    "summary": "Transparent planning heuristic for interview likelihood drivers — not a predictive hiring claim."
+  },
+  {
+    "slug": "portfolio-optimizer",
+    "title": "Career Portfolio Optimizer",
+    "group": "Resource Allocation",
+    "summary": "Shows where application effort is over- or under-allocated by role family and market."
+  },
+  {
+    "slug": "relationship-intelligence",
+    "title": "Relationship Intelligence",
+    "group": "Network Intelligence",
+    "summary": "Classifies contacts by influence role, strength, value and next action."
+  },
+  {
+    "slug": "network-decay",
+    "title": "Network Decay Monitor",
+    "group": "Network Intelligence",
+    "summary": "Surfaces strategically important relationships that are going cold."
+  },
+  {
+    "slug": "influence-map",
+    "title": "Influence Map",
+    "group": "Account Intelligence",
+    "summary": "Maps decision makers, connectors and warm paths around a target organization."
+  },
+  {
+    "slug": "referral-readiness",
+    "title": "Referral Readiness Engine",
+    "group": "Network Intelligence",
+    "summary": "Scores whether a relationship is ready for an introduction request."
+  },
+  {
+    "slug": "hidden-market",
+    "title": "Hidden Job Market Engine",
+    "group": "Opportunity Intelligence",
+    "summary": "Prioritizes employer trigger signals before a vacancy appears."
+  },
+  {
+    "slug": "search-consultant-matcher",
+    "title": "Executive Search Consultant Matcher",
+    "group": "Executive Search",
+    "summary": "Matches consultant practice tags against target roles, sectors and geographies."
+  },
+  {
+    "slug": "company-intelligence",
+    "title": "Company Intelligence Brief",
+    "group": "Account Intelligence",
+    "summary": "Builds a structured executive target-company brief from verified user inputs."
+  },
+  {
+    "slug": "interview-war-room",
+    "title": "Interview War Room",
+    "group": "Interview Intelligence",
+    "summary": "Consolidates role, company, stories, objections, questions, compensation and close strategy."
+  },
+  {
+    "slug": "objection-engine",
+    "title": "Objection Handling Engine",
+    "group": "Narrative Intelligence",
+    "summary": "Builds evidence-led responses to common executive hiring objections."
+  },
+  {
+    "slug": "narrative-compiler",
+    "title": "Executive Narrative Compiler",
+    "group": "Narrative Intelligence",
+    "summary": "Repackages the same verified experience for CEO, CIO, HR, recruiter and government audiences."
+  },
+  {
+    "slug": "consistency-scanner",
+    "title": "Brand Consistency Scanner",
+    "group": "Brand Intelligence",
+    "summary": "Flags conflicting metrics, titles and positioning across pasted bios or profile text."
+  },
+  {
+    "slug": "evidence-freshness",
+    "title": "Evidence Freshness Monitor",
+    "group": "Evidence Intelligence",
+    "summary": "Tracks when proof points were last verified and which assets need stronger support."
+  },
+  {
+    "slug": "brand-saturation",
+    "title": "Brand Saturation Monitor",
+    "group": "Brand Intelligence",
+    "summary": "Prevents signature language from becoming repetitive or diluted."
+  },
+  {
+    "slug": "content-radar",
+    "title": "Content Opportunity Radar",
+    "group": "Authority Intelligence",
+    "summary": "Finds market themes with evidence support that deserve an article, brief or diagram."
+  },
+  {
+    "slug": "ip-registry",
+    "title": "Signature IP Registry",
+    "group": "Authority Intelligence",
+    "summary": "Registers frameworks, models, terminology and publication assets under one naming system."
+  },
+  {
+    "slug": "publishing-calendar",
+    "title": "Executive Publishing Calendar",
+    "group": "Authority Operations",
+    "summary": "Balances architecture, leadership, GCC, government, data and AI content over time."
+  },
+  {
+    "slug": "authority-score",
+    "title": "Authority Score",
+    "group": "Reputation Intelligence",
+    "summary": "Scores evidence, distribution, third-party validation, speaking and inbound opportunity signals."
+  },
+  {
+    "slug": "inbound-center",
+    "title": "Inbound Opportunity Center",
+    "group": "Inbound Intelligence",
+    "summary": "Classifies recruiter, advisory, speaking, media and partnership inquiries and recommends next steps."
+  },
+  {
+    "slug": "recruiter-workspaces",
+    "title": "Recruiter Workspace Builder",
+    "group": "Recruiter Experience",
+    "summary": "Builds compact role-specific evidence packs that can be exported as JSON or printed."
+  },
+  {
+    "slug": "due-diligence",
+    "title": "Executive Due-Diligence Room",
+    "group": "Executive Readiness",
+    "summary": "Prepares verified achievements, governance exposure, references and documents for late-stage hiring."
+  },
+  {
+    "slug": "promotion-intelligence",
+    "title": "Promotion Intelligence",
+    "group": "Internal Advancement",
+    "summary": "Compares current mandate breadth with a next-level executive scope and builds the promotion case."
+  },
+  {
+    "slug": "succession-map",
+    "title": "Succession & Delegation Map",
+    "group": "Leadership Maturity",
+    "summary": "Maps key responsibilities, delegation readiness, successors and concentration risk."
+  },
+  {
+    "slug": "personal-okrs",
+    "title": "Executive Personal OKRs",
+    "group": "Career Governance",
+    "summary": "Runs quarterly outcomes across interviews, relationships, research, visibility and GCC pipeline."
+  },
+  {
+    "slug": "career-digital-twin",
+    "title": "Career Digital Twin",
+    "group": "Scenario Intelligence",
+    "summary": "Compares transparent career scenarios by role, region, channel, learning investment and strategic fit."
+  }
+]

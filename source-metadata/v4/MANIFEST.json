@@ -1,0 +1,39 @@
+{
+  "package": "Mahmoud-Salama-Executive-Reputation-Wave4-ADDITIVE",
+  "version": "4.0.0",
+  "entry_point": "/executive-capital/",
+  "additive_only": true,
+  "protected_main_assets": [
+    "/index.html",
+    "/site-main.css",
+    "/card.html"
+  ],
+  "modules": [
+    "Career Capital Scorecard",
+    "Executive Advancement System",
+    "Promotion Dossier",
+    "Mandate Expansion Map",
+    "Stakeholder & Sponsor Map",
+    "Succession Readiness",
+    "Board & Advisory Readiness",
+    "Board Bio Builder",
+    "Board Skills Matrix",
+    "Executive Search OS",
+    "One-Page Candidate Profile",
+    "Target Account Planner",
+    "Executive Search CRM",
+    "Authority Engine",
+    "Expert Network Profile Studio",
+    "Research Identity & Contribution Registry",
+    "Recognition Pipeline",
+    "90-Day Visibility Calendar",
+    "GCC Technology Leadership Agenda 2026",
+    "Source Registry",
+    "Professional Trust Center",
+    "Evidence Policy",
+    "AI & Content Disclosure",
+    "Brand Guard"
+  ],
+  "research_sources": 17,
+  "qa_status": "PASS"
+}

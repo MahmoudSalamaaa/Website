@@ -1,0 +1,29 @@
+{
+  "principles": [
+    {
+      "theme": "Skills-first hiring",
+      "implication": "Lead with demonstrable capabilities and achievements, not title matching alone.",
+      "source": "LinkedIn Talent Solutions — Future of Recruiting / skills-first research"
+    },
+    {
+      "theme": "AI-assisted sourcing",
+      "implication": "Make role, skill and evidence relationships machine-readable and semantically clear.",
+      "source": "LinkedIn Talent Solutions — AI-assisted search"
+    },
+    {
+      "theme": "Thought leadership",
+      "implication": "Research, data, practical guidance and case studies increase credibility with decision-makers.",
+      "source": "LinkedIn / Edelman B2B Thought Leadership research"
+    },
+    {
+      "theme": "People-first content",
+      "implication": "Publish first-hand, useful, attributable material rather than search-engine filler.",
+      "source": "Google Search Central — Creating helpful, reliable, people-first content"
+    },
+    {
+      "theme": "Executive search",
+      "implication": "Build visibility, clarity and retained-search relationships before an urgent job need.",
+      "source": "Spencer Stuart — Six Steps for a Successful Job Search"
+    }
+  ]
+}

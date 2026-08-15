@@ -1,0 +1,131 @@
+[
+  {
+    "theme": "AI transformation at scale",
+    "weight": 10,
+    "terms": [
+      "ai transformation",
+      "artificial intelligence",
+      "genai",
+      "generative ai",
+      "agentic ai",
+      "ai roadmap",
+      "responsible ai"
+    ],
+    "source_ids": [
+      "pwc-ceo-2026",
+      "pwc-cloud-2026"
+    ]
+  },
+  {
+    "theme": "Data foundations & governance",
+    "weight": 9,
+    "terms": [
+      "data governance",
+      "data platform",
+      "data architecture",
+      "master data",
+      "data quality",
+      "data readiness",
+      "enterprise data"
+    ],
+    "source_ids": [
+      "pwc-ceo-2026"
+    ]
+  },
+  {
+    "theme": "Cloud, sovereignty & resilience",
+    "weight": 8,
+    "terms": [
+      "cloud transformation",
+      "sovereign cloud",
+      "hybrid cloud",
+      "cloud strategy",
+      "resilience",
+      "platform modernization"
+    ],
+    "source_ids": [
+      "pwc-cloud-2026"
+    ]
+  },
+  {
+    "theme": "Cybersecurity & digital trust",
+    "weight": 8,
+    "terms": [
+      "cybersecurity",
+      "digital trust",
+      "security governance",
+      "risk management",
+      "identity",
+      "zero trust"
+    ],
+    "source_ids": [
+      "pwc-ceo-press-2026"
+    ]
+  },
+  {
+    "theme": "Enterprise platforms & integration",
+    "weight": 9,
+    "terms": [
+      "enterprise architecture",
+      "platform",
+      "integration",
+      "api",
+      "erp",
+      "crm",
+      "application modernization",
+      "enterprise applications"
+    ],
+    "source_ids": [
+      "spencer-executive-search"
+    ]
+  },
+  {
+    "theme": "Leadership, governance & change",
+    "weight": 9,
+    "terms": [
+      "technology leadership",
+      "digital transformation",
+      "governance",
+      "change management",
+      "stakeholder management",
+      "operating model",
+      "portfolio management"
+    ],
+    "source_ids": [
+      "spencer-executive-search",
+      "pwc-ceo-2026"
+    ]
+  },
+  {
+    "theme": "Skills-first discoverability",
+    "weight": 8,
+    "terms": [
+      "skills-first",
+      "skills based",
+      "adjacent skills",
+      "qualifications",
+      "capabilities",
+      "evidence"
+    ],
+    "source_ids": [
+      "linkedin-skills-first",
+      "linkedin-advanced-ai-search-2025"
+    ]
+  },
+  {
+    "theme": "Thought leadership & authority",
+    "weight": 7,
+    "terms": [
+      "thought leadership",
+      "research",
+      "executive brief",
+      "speaker",
+      "publication",
+      "insight"
+    ],
+    "source_ids": [
+      "edelman-linkedin-thought-leadership-2025",
+      "linkedin-thought-leadership"
+    ]
+  }
+]

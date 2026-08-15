@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "html_pages_checked": 169,
+  "html_metadata_snippets_excluded": 5,
+  "js_files": 6,
+  "json_files": 60,
+  "local_refs_checked": 1227,
+  "expected_existing_site_dependencies": [
+    "executive-lab/for/cto.html -> ../../docs/Mahmoud_Salama_CV_CTO_IT_Director_LATEST.pdf",
+    "executive-lab/for/cto.html -> ../../recruiter/",
+    "executive-lab/for/cto.html -> ../../case-studies/",
+    "executive-lab/for/enterprise-architect.html -> ../../docs/Mahmoud_Salama_CV_Enterprise_Architect_LATEST.pdf",
+    "executive-lab/for/enterprise-architect.html -> ../../recruiter/",
+    "executive-lab/for/enterprise-architect.html -> ../../case-studies/",
+    "executive-lab/for/digital-transformation.html -> ../../docs/Mahmoud_Salama_CV_Digital_Transformation_Director_LATEST.pdf",
+    "executive-lab/for/digital-transformation.html -> ../../recruiter/",
+    "executive-lab/for/digital-transformation.html -> ../../case-studies/",
+    "executive-lab/for/business-analyst.html -> ../../docs/Mahmoud_Salama_CV_Lead_Senior_Business_Analyst_LATEST.pdf",
+    "executive-lab/for/business-analyst.html -> ../../recruiter/",
+    "executive-lab/for/business-analyst.html -> ../../case-studies/",
+    "executive-lab/for/software-development-manager.html -> ../../docs/Mahmoud_Salama_CV_Software_Development_Manager_LATEST.pdf",
+    "executive-lab/for/software-development-manager.html -> ../../recruiter/",
+    "executive-lab/for/software-development-manager.html -> ../../case-studies/",
+    "executive-lab/for/oman.html -> ../../docs/Mahmoud_Salama_CV_Digital_Transformation_Director_LATEST.pdf",
+    "executive-lab/for/oman.html -> ../../recruiter/",
+    "executive-lab/for/oman.html -> ../../case-studies/"
+  ],
+  "broken_internal_references": [],
+  "protected_public_files_in_package": []
+}

@@ -92,7 +92,14 @@ button.ex_btn{appearance:none;background:none;border:0;padding:0;color:inherit;f
     document.head.appendChild(s);
   }
 })();
-</script></head>
+</script><style id="ms-about-toggle-position-fix">
+#about_sec .about_leftsection .icon{
+  left:0!important;
+  right:auto!important;
+  bottom:0!important;
+  top:auto!important;
+}
+</style></head>
 <body><a class="sr-only sr-only-focusable" href="#main-content" id="skip-to-content">Skip to main content</a>
 <div aria-describedby="ms-intro-description" aria-label="Intro animation" aria-modal="true" class="ms-intro" id="ms-intro" role="dialog">
 <canvas aria-hidden="true" id="ms-particles"></canvas>
@@ -509,7 +516,7 @@ button.ex_btn{appearance:none;background:none;border:0;padding:0;color:inherit;f
 <div class="about_leftsection">
 <div class="img_warapper">
 <img alt="About" class="img-fluid" decoding="async" loading="lazy" src="assets/images/me1.webp" title="more information click + icon"/>
-<button aria-expanded="false" aria-label="Show profile details" class="icon" title="Show profile details" type="button">
+<button aria-expanded="false" aria-label="Show profile details" class="icon" style="left:0!important;right:auto!important;bottom:0!important;top:auto!important;" title="Show profile details" type="button">
 <div class="iconbox">
 <i class="fa fa-plus icon_plus"></i>
 <i class="fa fa-minus icon_minus"></i>

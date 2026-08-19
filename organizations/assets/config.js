@@ -5,12 +5,12 @@ export const LEGACY_BASE = `https://raw.githubusercontent.com/MahmoudSalamaaa/Ma
 
 export const PROFILE = {
   name: 'Mahmoud Salama',
-  title: 'Chief Technology & Digital Transformation Officer',
+  title: 'Head of the Central Administration for Information Systems & Digital Transformation',
   location: 'Cairo, Egypt',
   yearsExperience: 18,
   website: 'https://mahmoud-salama.vercel.app',
-  digitalCard: 'https://mahmoud-salama.vercel.app/digital_card/index.html',
-  cv: 'https://mahmoud-salama.vercel.app/CVSalama.pdf',
+  digitalCard: 'https://mahmoud-salama.vercel.app/card.html',
+  cv: 'https://mahmoud-salama.vercel.app/docs/',
   linkedin: 'https://www.linkedin.com/in/mahmoud-salama-30249b34/',
   keywords: [
     'digital transformation','enterprise architecture','enterprise systems','systems integration',

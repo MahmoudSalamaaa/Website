@@ -1,73 +1,33 @@
-# TOGAF HTML + Python CGI Visitor Counter
+# TOGAF Analytics — Vercel Deployment Safety
 
-The public platform and admin dashboard are HTML files. The only server-side file is:
+The TOGAF learning pages remain static and can be served by Vercel.
 
-`cgi-bin/togaf_analytics.py`
+The legacy Python CGI analytics implementation under `cgi-bin/` is **not compatible with this Vercel deployment** and must not be deployed. Its file-backed state under `data/` must also remain private and must never contain committed credentials or signing secrets.
 
-All analytics data is stored in JSON text files under `data/`. No database and no PHP are used.
+## Vercel deployment
 
-## Requirements
-- Python 3.8 or newer
-- CGI support enabled by the web host
-- Write permission for `TOGAF/data/`
-- HTTPS strongly recommended
+The production repository should:
 
-## Upload
-1. Upload the complete `TOGAF` folder.
-2. Make `cgi-bin/togaf_analytics.py` executable (`755`).
-3. Make the `data` directory writable by the CGI user, commonly `775`.
-4. Make the JSON files writable, commonly `664`.
-5. Open `index.html` through the website.
-6. Open `admin.html` for the analytics dashboard.
-7. Sign in with the separately supplied credentials and change them immediately.
-
-## Local test
-From the directory that contains the `TOGAF` folder:
-
-```bash
-python3 -m http.server --cgi 8000 --directory TOGAF
-```
-
-Then open:
-- Site: `http://localhost:8000/index.html`
-- Admin: `http://localhost:8000/admin.html`
-
-## Hosting compatibility
-This works on hosting that supports Python CGI. It does not work on static-only hosting such as GitHub Pages.
-
-## Text files
-- `data/visits.json`: visits and aggregate statistics
-- `data/login-attempts.json`: rate-limit state
-- `data/config.json`: username, password hash, and signing secret
-
-## Privacy
-- Raw IP addresses are not stored.
-- Unique visitors use a random first-party cookie.
-- IP addresses are HMAC-hashed only for login rate limiting.
-- Known bots are ignored by default.
+- exclude `togaf/cgi-bin/` from deployment;
+- exclude `togaf/data/` from deployment;
+- block `/togaf/cgi-bin/*` and `/togaf/data/*` at the edge;
+- keep the TOGAF study pages, chapters, CSS, JavaScript and offline learning behavior unchanged.
 
 ## Security
-- Admin password uses PBKDF2-HMAC-SHA256.
-- Authentication uses a signed HttpOnly cookie.
-- Credential-changing and logout actions use a CSRF token.
-- Login attempts are rate-limited.
-- Protect the `data/` directory at server level. Apache `.htaccess` and IIS `web.config` files are included.
 
-## Android local file
-`TOGAF-Mobile.html` still works as an offline single file, but global visitor counting requires opening the hosted website through HTTP/HTTPS.
+Do not store admin usernames, password hashes, salts, session-signing secrets or writable analytics state in a public Git repository.
 
+The previously committed analytics secret and admin credential material must be considered exposed and rotated before the analytics feature is ever re-enabled.
 
-## Nginx protection
-Nginx does not read `.htaccess`. Add a rule similar to:
+## If analytics are re-enabled later
 
-```nginx
-location ^~ /TOGAF/data/ {
-    deny all;
-    return 403;
-}
-```
+Use a supported serverless/backend implementation with:
 
-Configure the Python script as CGI/FastCGI according to the hosting provider. This package targets traditional Python CGI hosting.
+- secrets stored in environment variables or a managed secret store;
+- persistent server-side storage rather than repository JSON files;
+- rate limiting;
+- authenticated admin routes;
+- CSRF protection for state-changing actions;
+- no direct public access to configuration or analytics state.
 
-## Permissions troubleshooting
-On most shared hosting accounts, `755` for the CGI script, `775` for `data/`, and `664` for JSON files are sufficient. If the CGI process runs as a different operating-system user, the host may require different ownership or permissions. Avoid making the data directory publicly readable through HTTP; the included Apache and IIS rules block it.
+The static TOGAF learning experience does not depend on the legacy CGI analytics and should continue to work without it.

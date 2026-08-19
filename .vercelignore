@@ -1,3 +1,26 @@
 .env.example
 README.md
 DEPLOYMENT.md
+
+# Root recovery / QA / patch artifacts are not runtime assets
+/FULL_*_MANIFEST.json
+/FULL_*_QA*.json
+/QA.json
+/PATCH_NOTES.txt
+/CONTENT_REFRESH_*.txt
+/OPTIONAL_URLS.txt
+/RECOVERY*.txt
+/RECOVERY*.json
+/README*.md
+/README*.txt
+/_recovery_patches/
+/_source_manifest/
+/index(1).html
+
+# Stale root CV; current role-specific CVs live under /docs/
+/CVSalama.pdf
+
+# Legacy Python CGI analytics are incompatible with the Vercel deployment.
+# Never deploy their credential/state files.
+/togaf/data/
+/togaf/cgi-bin/

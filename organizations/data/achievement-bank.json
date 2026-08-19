@@ -1,14 +1,15 @@
 [
   {
-    "id": "mediq-national-ecosystem",
-    "title": "MedIQ / Unified Procurement & Medical Supply Ecosystem",
+    "id": "mediq",
+    "title": "Unified Procurement & Medical Supply Ecosystem",
     "organization": "UPA · Egypt",
-    "scope": "Architecture & Governance Lead",
-    "summary": "Governed a national 10-platform ecosystem connecting procurement, approvals, inventory, distribution, supplier interaction, forecasting, analytics and supply-chain controls.",
+    "scope": "Technology leadership, architecture and governance",
+    "summary": "Led and governed enterprise systems supporting procurement, inventory, distribution, supplier interaction, reporting and supply-chain operations.",
     "metrics": [
-      "12,000+ entities supported",
-      "320,000+ automated validation checks",
-      "10 integrated platforms"
+      "38K+ platform users",
+      "11K+ facilities",
+      "~89K stores",
+      "~2K suppliers"
     ],
     "capabilities": [
       "enterprise architecture",
@@ -18,20 +19,22 @@
       "public sector",
       "healthcare technology",
       "vendor governance",
-      "program delivery"
+      "program delivery",
+      "procurement",
+      "supply chain"
     ],
-    "source": "/executive-portfolio/#work"
+    "source": "/case-studies/"
   },
   {
-    "id": "national-health-data-warehouse",
-    "title": "National Health Sector Data Warehouse & Strategic Analytics Layer",
+    "id": "warehouse",
+    "title": "Health-Sector Data & Analytics Environment",
     "organization": "UPA · Egypt",
-    "scope": "Enterprise Data Architecture Lead",
-    "summary": "Designed a governed enterprise data environment for consistent, faster cross-institution reporting and decision support.",
+    "scope": "Enterprise data architecture and analytics leadership",
+    "summary": "Designed and governed a cross-institution data environment supporting reporting, analytics, master-data alignment and decision support.",
     "metrics": [
-      "12M+ records processed daily",
-      "100+ government institutions",
-      "~70% faster reporting preparation"
+      "Cross-institution reporting",
+      "Governed data integration",
+      "Power BI and Apache Superset analytics"
     ],
     "capabilities": [
       "data architecture",
@@ -43,20 +46,21 @@
       "power bi",
       "apache superset",
       "analytics",
-      "public sector"
+      "public sector",
+      "business intelligence"
     ],
-    "source": "/executive-portfolio/#work"
+    "source": "/case-studies/"
   },
   {
-    "id": "oman-education-portal",
+    "id": "oman",
     "title": "Oman Ministry of Education — Educational Portal & Ministry Systems",
     "organization": "Integral Solutions LLC · Muscat",
-    "scope": "Embedded Government Delivery",
-    "summary": "Worked closely inside the Ministry environment on the award-winning Educational Portal and connected systems, including recruitment workflows.",
+    "scope": "Senior hands-on technical contribution",
+    "summary": "Contributed to government education platforms and ministry systems across analysis, application and database development, reporting, testing, deployment, releases and production support.",
     "metrics": [
-      "2.5+ years embedded at Ministry of Education",
-      "4+ years lived & worked in Muscat",
-      "Award-winning national education portal"
+      "Government education platform delivery",
+      "Electronic correspondence and reporting",
+      "Recruitment and ministry workflow systems"
     ],
     "capabilities": [
       "oman",
@@ -70,15 +74,16 @@
       "deployment",
       "stakeholder management",
       "training",
-      "production support"
+      "production support",
+      "education technology"
     ],
-    "source": "/executive-portfolio/#work"
+    "source": "/case-studies/"
   },
   {
-    "id": "d365-integration",
+    "id": "d365",
     "title": "Microsoft Dynamics 365 ERP & CRM Integration",
     "organization": "UPA · Egypt",
-    "scope": "Integration Architecture",
+    "scope": "Integration architecture",
     "summary": "Connected procurement, operational, stakeholder, reporting and data platforms with Microsoft Dynamics 365 ERP and CRM using controlled integration patterns.",
     "metrics": [
       "REST connectivity",
@@ -98,38 +103,39 @@
       "auditability",
       "vendor governance"
     ],
-    "source": "/executive-portfolio/#work"
+    "source": "/case-studies/"
   },
   {
-    "id": "executive-portfolio-governance",
-    "title": "Executive Technology Portfolio Governance",
-    "organization": "Leadership portfolio",
-    "scope": "Executive Leadership",
-    "summary": "Executive governance across technology strategy, architecture, delivery, data, integration and adoption.",
+    "id": "leadership",
+    "title": "Technology Organization Leadership",
+    "organization": "UPA · Egypt",
+    "scope": "Executive technology leadership",
+    "summary": "Leads technology strategy, enterprise systems, software delivery, architecture, data, integration, service operations, governance and modernization.",
     "metrics": [
-      "EGP 150M+ portfolio",
-      "40+ professionals"
+      "54-person technology organization",
+      "7 direct reports"
     ],
     "capabilities": [
       "technology strategy",
       "portfolio management",
-      "budget governance",
       "team leadership",
       "program governance",
       "stakeholder management",
-      "executive reporting"
+      "executive reporting",
+      "leadership"
     ],
-    "source": "/executive-portfolio/#leadership"
+    "source": "/resume.html"
   },
   {
-    "id": "adoption-operations",
+    "id": "adoption",
     "title": "Change, Adoption & Operations",
-    "organization": "Leadership portfolio",
-    "scope": "Service & Adoption Leadership",
-    "summary": "Embedded training, service governance, production readiness, continuity and operational ownership into transformation delivery.",
+    "organization": "UPA · Egypt",
+    "scope": "Service and adoption leadership",
+    "summary": "Embedded training, service governance, production readiness, continuity, support and operational ownership into transformation delivery.",
     "metrics": [
-      "39,000+ staff reached",
-      "99%+ availability"
+      "Training and onboarding",
+      "Production readiness and support",
+      "Incident, RCA and continuity practices"
     ],
     "capabilities": [
       "change management",
@@ -138,10 +144,9 @@
       "service management",
       "production support",
       "business continuity",
-      "availability",
       "operations",
       "knowledge transfer"
     ],
-    "source": "/executive-portfolio/#leadership"
+    "source": "/resume.html"
   }
 ]

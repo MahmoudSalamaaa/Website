@@ -1,0 +1,9 @@
+{
+  "package": "Cumulative Site Cleanup V2",
+  "generated": "2026-08-19",
+  "changed_file_count": 22,
+  "legacy_claim_hits_in_patch": {},
+  "togaf_data_blocked_in_vercelignore": true,
+  "togaf_cgi_blocked_in_vercelignore": true,
+  "robots_internal_areas_blocked": true
+}

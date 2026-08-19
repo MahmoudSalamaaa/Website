@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {"source": "/", "destination": "/api/home_v8"},
+    {"source": "/resume.html", "destination": "/api/resume"},
+    {"source": "/portfolio.html", "destination": "/api/portfolio"},
+    {"source": "/case-studies", "destination": "/api/cases"},
+    {"source": "/case-studies/", "destination": "/api/cases"},
+    {"source": "/:path*", "destination": "https://portfolio-gtlhqen0m-mahmoudsalamaaas-projects.vercel.app/:path*"}
+  ]
+}

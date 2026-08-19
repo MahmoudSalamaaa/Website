@@ -1,10 +1,4 @@
 (function(){
-  // This page is deliberately English-first because the interview is in English.
-  // Arabic is rendered as a secondary study explanation and never replaces the English content.
-  document.documentElement.lang='en';
-  document.documentElement.dir='ltr';
-  document.body.classList.remove('lang-ar');
-  document.body.classList.add('lang-en','question-bank-english-first');
   const qs = window.MSF_QUESTIONS || [];
   const $ = id => document.getElementById(id);
   const list = $('questionList');
@@ -31,49 +25,14 @@
   }
   function filteredRows(){
     const s=norm(controls.search?.value),tier=controls.tier?.value||'',track=controls.track?.value||'',category=controls.category?.value||'',source=controls.source?.value||'',status=controls.status?.value||'';
-    let rows=qs.filter(q=>{const hay=[q.question_en,q.question_ar,q.answer_en,q.answer_ar,q.experience_en,q.experience_ar,q.research_anchor_en,q.research_anchor_ar,q.coach_en,q.coach_ar,q.red_flag_en,q.red_flag_ar,q.category_en,q.category_ar,q.study_track,q.importance_reason_en,q.evidence_scope_en,q.source_family].map(norm).join(' ');const statusOk=!status||(status==='due'?isDue(q.id):getStatus(q.id)===status);return(!s||hay.includes(s))&&(!tier||q.importance_tier===tier)&&(!track||q.study_track===track)&&(!category||q.category_en===category)&&(!source||q.source_family===source)&&statusOk});
+    let rows=qs.filter(q=>{const hay=[q.question_en,q.question_ar,q.answer_en,q.answer_ar,q.research_anchor_en,q.research_anchor_ar,q.coach_en,q.coach_ar,q.red_flag_en,q.red_flag_ar,q.category_en,q.category_ar,q.study_track,q.importance_reason_en,q.evidence_scope_en,q.source_family].map(norm).join(' ');const statusOk=!status||(status==='due'?isDue(q.id):getStatus(q.id)===status);return(!s||hay.includes(s))&&(!tier||q.importance_tier===tier)&&(!track||q.study_track===track)&&(!category||q.category_en===category)&&(!source||q.source_family===source)&&statusOk});
     const sort=controls.sort?.value||'rank';if(sort==='category')rows.sort((a,b)=>a.category_en.localeCompare(b.category_en)||(a.interview_rank||999)-(b.interview_rank||999));else if(sort==='id')rows.sort((a,b)=>a.id-b.id);else rows.sort((a,b)=>(a.interview_rank||999)-(b.interview_rank||999)||tierOrder[a.importance_tier]-tierOrder[b.importance_tier]);return rows;
-  }
-  function visualHtml(q){
-    const steps=(q.visual_steps_en||[]).filter(Boolean); if(!steps.length)return '';
-    const pattern=esc(q.visual_pattern||'flow');
-    return `<section class="memory-visual pattern-${pattern}" aria-label="Visual memory map"><div class="memory-visual-head"><div><span>VISUAL MEMORY MAP</span><h4>${esc(q.visual_title_en||'Answer structure')}</h4></div><b>${esc(q.memory_cue_en||'')}</b></div><div class="memory-steps">${steps.map((s,i)=>`<div class="memory-step"><span>${String(i+1).padStart(2,'0')}</span><strong>${esc(s)}</strong></div>`).join('<i aria-hidden="true">→</i>')}</div><div class="memory-tip"><b>Recall cue:</b> cover the answers and rebuild the response from these anchors first.</div></section>`;
   }
   function statusButtons(id){const st=getStatus(id);return `<div class="status-row" role="group" aria-label="Study status"><button class="status-btn weak ${st==='weak'?'active':''}" data-status="weak">Weak</button><button class="status-btn ${st==='new'?'active':''}" data-status="new">Not started</button><button class="status-btn practicing ${st==='practicing'?'active':''}" data-status="practicing">Practicing</button><button class="status-btn ready ${st==='ready'?'active':''}" data-status="ready">Ready</button></div>`}
   function recallButtons(id){return `<div class="recall-panel"><div class="recall-copy"><b>Spaced recall rating</b><span>Rate the answer you just produced — not how familiar the model answer looks.</span></div><div class="recall-buttons" role="group" aria-label="Spaced recall rating"><button data-recall="again" class="recall-btn again"><kbd>A</kbd>Again<small>tomorrow</small></button><button data-recall="hard" class="recall-btn hard"><kbd>H</kbd>Hard<small>short interval</small></button><button data-recall="good" class="recall-btn good"><kbd>G</kbd>Good<small>space it</small></button><button data-recall="easy" class="recall-btn easy"><kbd>E</kbd>Easy<small>push it out</small></button></div></div>`}
   function cardHtml(q){
-    const st=state[q.id]||{},reasonEn=q.importance_reason_en||'',reasonAr=q.importance_reason_ar||reasonEn,evidence=q.evidence_scope_en||'Interview preparation evidence',needsStory=/(describe a time|tell us about a time|give an example|example of|walk us through a time)/i.test(q.question_en||'');
-    const arQuestion=q.question_ar||'راجع معنى السؤال بالعربية ثم تدرب على الإجابة بالإنجليزية.';
-    const arAnswer=q.answer_ar||'استخدم الشرح الإنجليزي أعلاه كأساس، وركز هنا على فهم المنطق وليس حفظ صياغة عربية.';
-    const arExperience=q.experience_ar||'لا يوجد دليل عملي إضافي لهذا السؤال.';
-    const arCoach=q.coach_ar||q.coach_en||'تدرب على إجابة واضحة ومباشرة، ثم توقع سؤال متابعة.';
-    const arRisk=q.red_flag_ar||q.red_flag_en||'لا تبالغ في الادعاءات، وافصل بين ما نفذته فعلاً وما ستطبقه في الدور.';
-    return `<article class="q-card tier-${esc((q.importance_tier||'P3').toLowerCase())}" id="q-${q.id}" data-id="${q.id}" data-tier="${esc(q.importance_tier)}" data-rank="${q.interview_rank||999}">
-      <button class="q-head" type="button" aria-expanded="false">
-        <div class="q-rank"><strong>#${q.interview_rank||'–'}</strong><span>Q${q.id}</span></div>
-        <div class="q-heading-copy">
-          <div class="q-title q-title-en">${esc(q.question_en)}</div>
-          <div class="q-title-ar-secondary rtl" lang="ar">${esc(arQuestion)}</div>
-          <div class="q-meta"><span class="tier-pill ${(q.importance_tier||'P3').toLowerCase()}">${esc(q.importance_tier||'P3')}</span><span class="tag">${esc(q.study_track||q.category_en)}</span><span class="tag confirmed">${q.target_seconds||90}s</span><span class="study-status ${getStatus(q.id)}">${esc(getStatus(q.id))}</span><span class="due-chip ${isDue(q.id)?'due':''}">${esc(dueLabel(q.id))}</span></div>
-        </div><span class="q-chevron" aria-hidden="true">⌄</span>
-      </button>
-      <div class="q-body">
-        <div class="answer answer-short"><h4>FAST ANSWER · ENGLISH</h4><p>${esc(q.short_answer_en||q.answer_en)}</p></div>
-        <div class="answer answer-primary"><h4>FULL ANSWER · ENGLISH</h4><p>${esc(q.answer_en)}</p></div>
-        <div class="experience-bridge experience-primary"><div><h4>REAL EVIDENCE FROM MY WORK · ENGLISH</h4><p>${esc(q.experience_en||'')}</p></div></div>
-        ${visualHtml(q)}
-        <section class="arabic-study-note rtl" lang="ar" aria-label="Arabic answer">
-          <div class="arabic-study-head"><div><span>إجابة جاهزة للمذاكرة</span><h4>العربي المختصر</h4></div><b>AR</b></div>
-          <div class="arabic-explainer-grid">
-            <div class="arabic-explainer wide"><b>الإجابة</b><p>${esc(arAnswer)}</p></div>
-            <div class="arabic-explainer wide"><b>مثال حقيقي من عملي</b><p>${esc(arExperience)}</p></div>
-          </div>
-        </section>
-        <details class="study-details"><summary>Sources & interview caution</summary><div class="prep-grid"><div class="prep-box research"><b>Sources</b><span>${esc(q.research_anchor_en||'')}</span></div><div class="prep-box danger"><b>Avoid</b><span>${esc(q.red_flag_en||'')}</span></div></div></details>
-        ${recallButtons(q.id)}
-        <label class="notes-label">My rehearsal notes</label><textarea class="notes" placeholder="Short keywords only…">${esc(st.notes||'')}</textarea>${statusButtons(q.id)}
-      </div>
-    </article>`;
+    const st=state[q.id]||{},reasonEn=q.importance_reason_en||'',reasonAr=q.importance_reason_ar||'',evidence=q.evidence_scope_en||'Interview preparation evidence',needsStory=/(describe a time|tell us about a time|give an example|example of|walk us through a time)/i.test(q.question_en||'');
+    return `<article class="q-card tier-${esc((q.importance_tier||'P3').toLowerCase())}" id="q-${q.id}" data-id="${q.id}" data-tier="${esc(q.importance_tier)}" data-rank="${q.interview_rank||999}"><button class="q-head" type="button" aria-expanded="false"><div class="q-rank"><strong>#${q.interview_rank||'–'}</strong><span>Q${q.id}</span></div><div class="q-heading-copy"><div class="q-title en-only">${esc(q.question_en)}</div><div class="q-title ar-only rtl">${esc(q.question_ar)}</div><div class="q-meta"><span class="tier-pill ${(q.importance_tier||'P3').toLowerCase()}">${esc(q.importance_tier||'P3')}</span><span class="tag">${esc(q.study_track||q.category_en)}</span><span class="tag confirmed">${q.target_seconds||90}s</span><span class="tag source-tag">${esc(q.source_family||'Role / research')}</span>${needsStory?'<span class="tag story-tag">Personal story</span>':''}<span class="study-status ${getStatus(q.id)}">${esc(getStatus(q.id))}</span><span class="due-chip ${isDue(q.id)?'due':''}">${esc(dueLabel(q.id))}</span></div></div><span class="q-chevron" aria-hidden="true">⌄</span></button><div class="q-body"><div class="recall-gate"><b>Before revealing:</b> answer aloud in 60–120 seconds, then compare your structure, judgement and technical accuracy.</div><div class="importance-strip"><div><b>Why this matters</b><span class="en-only">${esc(reasonEn)}</span><span class="ar-only rtl">${esc(reasonAr||reasonEn)}</span></div><div><b>Evidence boundary</b><span>${esc(evidence)}</span></div></div><div class="answer en-only"><h4>Interview-ready answer</h4><p>${esc(q.answer_en)}</p></div><div class="answer ar-only rtl"><h4>شرح عربي للمذاكرة</h4><p>${esc(q.answer_ar)}</p></div><div class="prep-grid"><div class="prep-box research"><b class="en-only">Research anchor</b><b class="ar-only">مرجع البحث</b><span class="en-only">${esc(q.research_anchor_en)}</span><span class="ar-only rtl">${esc(q.research_anchor_ar||q.research_anchor_en)}</span></div><div class="prep-box coach"><b class="en-only">How to deliver it</b><b class="ar-only">طريقة تقديم الإجابة</b><span class="en-only">${esc(q.coach_en)}</span><span class="ar-only rtl">${esc(q.coach_ar||q.coach_en)}</span></div><div class="prep-box danger"><b class="en-only">Avoid this</b><b class="ar-only">تجنب هذا الخطأ</b><span class="en-only">${esc(q.red_flag_en)}</span><span class="ar-only rtl">${esc(q.red_flag_ar||q.red_flag_en)}</span></div></div>${recallButtons(q.id)}<label class="notes-label">Rehearsal notes / ملاحظات التدريب</label><textarea class="notes" placeholder="Your own keywords, evidence, follow-up risks…">${esc(st.notes||'')}</textarea>${statusButtons(q.id)}</div></article>`;
   }
   function applyRecall(id,rating){
     const x=ensure(id),prev=Math.max(0,+x.intervalDays||0),reviews=(+x.reviews||0)+1;let days,status;

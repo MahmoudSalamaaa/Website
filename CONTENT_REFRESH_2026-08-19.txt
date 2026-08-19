@@ -1,0 +1,15 @@
+Mahmoud Salama website content refresh — 2026-08-19
+
+Preserved: original root visual design, CSS, JS, imagery and layout.
+Updated source: Frozen CV portfolio dated 2026-08-18 (MAKTABI updated).
+Key factual harmonization:
+- Current official role: Head of the Central Administration for Information Systems & Digital Transformation, UPA.
+- Executive market positioning: Technology & Digital Transformation Executive | Enterprise Architect.
+- 18+ years technology experience.
+- 54-person technology organization across four functions / seven direct reports.
+- ~60K platform users; ~90K facilities/entities; ~300 suppliers; ~1M transactions/month.
+- Databases scale to ~400GB.
+- Oman Educational Portal ~1M users.
+- Oman project wording corrected to hands-on contributor/delivery rather than unsupported leadership claims.
+- Latest Frozen CVs copied under docs/Frozen-CVs-2026-08-18 and stable resume PDF path refreshed.
+- WACA, TOGAF and existing project folders preserved.

@@ -1,8 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /organizations/
-Disallow: /waca/
-Disallow: /msf-waca-prep-2026/
-Disallow: /read/
 
 Sitemap: https://mahmoud-salama.vercel.app/sitemap.xml

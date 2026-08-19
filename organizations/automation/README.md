@@ -1,9 +1,8 @@
-# Career Data Automation
+# Automation
 
-`update_data.py` maintains the Career Intelligence datasets, performs permitted link checks, and supports approved public ATS/RSS/JSON adapters.
+`update_data.py` performs permitted link checks and is the extension point for public APIs, RSS feeds and ATS endpoints.
 
-The active scheduled workflow is already installed at repository root:
+GitHub only recognizes workflows in the repository-root `.github/workflows` directory. Because this project must remain entirely inside `organizations`, the workflow is included as a template and is not active. To activate it, copy `github-actions-template.yml` to `.github/workflows/update-career-data.yml`.
 
-`/.github/workflows/update-career-data.yml`
 
-Review source adapters before enabling new automated sources. Only public or explicitly authorized feeds should be added.
+This Full Complete Edition was rebuilt on 24 July 2026. Review adapters before automated refreshes.

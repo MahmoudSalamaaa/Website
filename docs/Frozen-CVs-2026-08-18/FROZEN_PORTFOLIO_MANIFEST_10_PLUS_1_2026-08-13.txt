@@ -1,0 +1,86 @@
+MAHMOUD SALAMA — FINAL FROZEN CV PORTFOLIO
+Verified: 18 August 2026
+
+AUTHORITATIVE ASSET LOCATION
+Google Drive folder: 11KXMtnPn5NKUQGUrmleSRJeUi3tvQM3s
+Website selector: /docs/index.html
+
+ACTIVE PORTFOLIO
+10 role-specific Frozen CVs + 1 Universal Executive CV.
+PDF = submit-ready application file.
+DOCX = editable master source.
+
+1. Information Systems Manager - Mahmoud Salama
+2. IT Manager - Mahmoud Salama
+3. Software Development & Delivery Manager - Mahmoud Salama
+4. Enterprise Architect - Mahmoud Salama
+5. Solution Architect - Mahmoud Salama
+6. Technical Project Manager - Mahmoud Salama
+7. Digital Transformation Director - Mahmoud Salama
+8. CTO & IT Director - Mahmoud Salama
+9. Lead & Senior Business Analyst - Mahmoud Salama
+10. Product Delivery Manager - Mahmoud Salama
+U. Technology Executive - Mahmoud Salama
+
+SELECTION RULE
+Defined vacancy -> closest role-specific Frozen master.
+Broad/unclear opportunity, recruiter database, executive talent pool, or one-CV platform -> Technology Executive.
+
+18 AUGUST 2026 FINAL FACT & READABILITY REFINEMENT
+Maktabi correspondence experience was also revalidated on 18 August 2026 and elevated across all active CVs as a major Integral Solutions contribution, with role-specific emphasis while avoiding unsupported leadership claims.
+All 11 active CV masters were re-audited and refined after confirmation of the following facts:
+- Current technology organization headcount is 54 people across four major functions, with seven direct reports. The CVs therefore use current-state wording (54-person technology organization) rather than "scaling to 54".
+- Current official UPA title is: Head of the Central Administration for Information Systems & Digital Transformation. Market-facing target titles remain only in each CV headline; the employment-history title uses the official title.
+- Oman Ministry of Agriculture work belongs under Integral Solutions LLC. It is not attributed to Keyframe Egypt.
+- Vendor/commercial management is not presented as a deep hands-on strength. Where relevant, wording is limited to third-party/vendor coordination rather than vendor leadership, negotiation, or commercial governance.
+
+UPA EMPLOYER NAME
+Both UPA employment entries in every active CV use the full organization name:
+The Egyptian Authority for Unified Procurement, Medical Supply and Management of Medical Technology (UPA).
+
+CURRENT SCALE
+Where role-relevant, the active masters use these confirmed current facts:
+- 54-person technology organization across four major functions; seven direct reports.
+- Approximately 20-person technical-support/customer-service operation serving approximately 60K users.
+- Unified national enterprise procurement platform serving approximately 60K users, approximately 90K facilities/entities and approximately 300 suppliers.
+- Approximately 1M transactions/month; databases up to approximately 400GB with millions of records.
+
+PLATFORM POSITIONING
+The current UPA environment is consistently presented as ONE unified national enterprise procurement platform, not a 10-platform ecosystem. The platform covers the end-to-end procurement lifecycle and related shared capabilities, including requirements/demand, approvals, tendering, supplier evaluation, award/contracting, purchase orders, delivery/receipt, reporting, auditability, workflows, documents, support, customer service and integration/data services.
+
+ROLE-SPECIFIC POSITIONING
+- Information Systems Manager: application lifecycle, service ownership, integration/data governance, support, continuity, access/auditability and third-party coordination.
+- IT Manager: IT/service operations, enterprise systems, service desk, incident/problem/change, infrastructure/security oversight and continuity/DR oversight.
+- Software Development & Delivery Manager: engineering leadership, SDLC, C#/.NET application delivery, design/code review, QA/UAT, CI/CD/release, technical debt and production readiness.
+- Enterprise Architect: capability alignment, current/target state, principles/standards, application/data/integration architecture, reusable architecture patterns, NFRs and architecture governance. No TOGAF/ArchiMate certification is claimed.
+- Solution Architect: requirements-to-design, application/data/API architecture, workflow/RBAC/CMS/DMS, security/NFRs, solution reviews and service transition. Hands-on software delivery is distinguished from integration leadership/oversight.
+- Technical Project Manager: scope/WBS, milestones, dependencies, RAID/change, requirements/design reviews, QA/UAT, cutover/go-live/hypercare and operational handover. Third parties are coordinated; no unsupported commercial/vendor ownership is claimed.
+- Digital Transformation Director: As-Is/To-Be, process redesign, platform modernization, adoption/change, data governance and measurable service/outcome improvement rather than unsupported benefits-realization claims.
+- CTO & IT Director: strategy, operating model, organization leadership, platform ownership, architecture, software/data/service leadership, risk/continuity oversight and third-party coordination.
+- Lead & Senior Business Analyst: positioned as an experienced technology leader with extensive business/systems-analysis practice, avoiding the implication that all 18+ years were spent in a formal BA title.
+- Product Delivery Manager: positioned for enterprise/platform product-style delivery, roadmaps, priorities, backlog, release, adoption and service outcomes; it is not positioned as B2C/growth/revenue product management.
+- Technology Executive: universal profile across strategy, information systems, software delivery, architecture, data/integration, technical programs, service governance and portfolio leadership.
+
+OMAN / GCC ATTRIBUTION
+Integral Solutions LLC remains the employer for Oman government client assignments (05/2016-10/2020). Its portfolio includes Oman Ministry of Education's national Educational Portal (~1M users), the Recruitment System (recipient of the Sultan Qaboos Award), International Schools Management, Crisis Management, Asset Management, Maktabi Electronic Correspondence Management System, and Ministry of Agriculture portal/application work.
+Maktabi's large-scale Electronic Correspondence Management System is treated as a major and especially substantial part of the Integral Solutions experience. The CVs describe extensive contribution to core correspondence workflows (creation, routing, forwarding, tracking and management), operational reporting, supporting database components, functional testing, defect investigation/validation, production deployment, release implementation/support and ongoing application support. The work helped digitize paper-based government correspondence into secure, traceable electronic workflows. This is presented as extensive hands-on contribution, not as a claim of project or product leadership.
+Keyframe Egypt remains the employer for 04/2011-05/2016 work, including Egypt Ministry of Health portal work, high-volume website/portal/application delivery, CMS/electronic-publishing solutions, architecture/development and team leadership.
+
+TECHNOLOGY POSITIONING
+Verified hands-on/core areas remain selective by role: C#, .NET/ASP.NET, SQL, JavaScript/React, enterprise web development, SQL Server/PostgreSQL/MySQL, workflow/RBAC, CMS/electronic publishing, REST/SOAP exposure/leadership as appropriate, Git/TFS, Jenkins, Postman/Swagger, and related engineering/data tooling. Infrastructure, information security and BC/DR are expressed as management/oversight where appropriate. Docker remains working exposure only. Cloud-native platforms, Kubernetes, RAG, vector databases, embeddings and unsupported specialist technologies are not claimed as hands-on expertise.
+
+AI POSITIONING
+AI claims remain limited to verified use: Generative AI, prompt engineering, AI-assisted coding/debugging/refactoring, requirements/documentation, SQL/data analysis, rapid prototyping, no-code solution work and enterprise AI adoption strategy. Wording does not claim a mature formal AI-governance framework beyond controlled and validated use of AI-assisted tools.
+
+READABILITY & ATS QA
+- All active CVs remain single-column and text-based with standard headings for robust ATS parsing.
+- "ATS-Optimized CV" footer labels were removed from the documents.
+- Most role-specific CVs were rebalanced so page 1 emphasizes the current role and page 2 carries the prior UPA role plus earlier career history, improving human readability.
+- Body typography was increased where page capacity allowed while retaining exactly two pages per CV.
+- CTO & IT Director and Technology Executive retain denser two-page layouts because of broader executive scope; both were visually reviewed and remain readable without clipping or overlap.
+- All 11 DOCX masters render successfully to exactly two pages each.
+- All 22 final rendered pages were visually inspected after the final refinement: no clipping, overlap, malformed pagination or missing glyphs observed.
+- PDF and DOCX assets were updated in place, preserving existing Drive IDs, exact filenames and links.
+
+SOURCE-OF-TRUTH RULE
+Do not use historical LATEST files, old 9-Frozen selectors, stale Library copies, Generic Executive variants, or earlier CV files when an active master above exists.

@@ -97,7 +97,3 @@ Duplicate pages removed:
 
 ## Airlines & Aviation Employers
 Open `airlines-aviation-employers.html` for a searchable directory of 34 airline employers across Egypt, the GCC and Africa. Records prioritize official career portals and use official corporate sites only where no dedicated career portal is published.
-
-## Career Command Center 2.0
-
-Open `career-command-center.html` for evidence-grounded job analysis, frozen-CV routing, application-pack drafting, tracker integration and follow-up. The evidence source of truth is in `data/career-profile.json`, `data/achievement-bank.json` and `data/evidence-map.json`.

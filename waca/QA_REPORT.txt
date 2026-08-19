@@ -1,0 +1,58 @@
+MSF WaCA Interview Master — Full Source Audit QA
+Generated: 2026-08-10
+
+SOURCE COVERAGE
+- MSF/OCB Feedback & Feedforward Guideline: 21/21 pages reviewed.
+- Feedback Golden Rules: 3/3 pages reviewed.
+- How-to Feedback Process: 1/1 page reviewed.
+- OCB Feedback & Feedforward Template: 618/618 parsed lines reviewed.
+- MSF Egypt Internal Regulations (English): 24/24 pages reviewed.
+- MSF Egypt Internal Regulations (Arabic scan): 20/20 pages visually reviewed.
+- AWS Domain 2 Security: 6/6 handwritten pages visually reviewed.
+- AWS Domain 3 Technology: 25/25 handwritten pages visually reviewed.
+- AWS Domain 4 Billing/Pricing: 10/10 handwritten pages visually reviewed.
+
+QUESTION BANK
+- Total ranked questions: 195
+- P0 Must Master: 47
+- IDs: unique (195/195)
+- Interview ranks: unique and continuous (1..195)
+- New source-audit questions: Q176-Q195
+- Source-family filtering: enabled
+
+INTERACTIVITY / STUDY WORKFLOW
+- Source Audit page added.
+- Question Bank source filters added.
+- Study Coach source drills added for MSF and AWS.
+- Mock AWS pool includes the complete audited question range.
+- 20-Day Sprint retuned with source-audit and AWS scenario days.
+- Final Review includes source-audit rapid decisions.
+
+HTML / ASSETS
+- Top-level HTML pages checked: 18
+- Missing local links/scripts/styles: 0
+- JavaScript syntax: all assets/js/*.js passed node --check
+- 14-day-plan.html redirects to the current 20-day plan.
+
+AWS CURRENT-STATE REVIEW
+- Current lifecycle terminology and retired/changed service notes are explicitly separated from the user's historical notebook content.
+- Lifecycle watchlist covers AWS Transform MGN, Server Migration Service, Data Pipeline, Cloud9, OpsWorks, CodeCommit, and current AWS Support Plans.
+
+PDF QA
+- Security guide: 6 pages, searchable text, visually rendered/inspected.
+- Technology guide: 8 pages, searchable text, visually rendered/inspected.
+- Billing/Cost/Governance guide: 6 pages, searchable text, visually rendered/inspected.
+- All 3 PDFs passed pdfinfo + pdftotext checks.
+- Rendered pages were visually checked after generation for clipping/overflow/diagram defects.
+
+EVIDENCE BOUNDARIES
+The project distinguishes:
+1. WaCA-confirmed evidence
+2. MSF movement evidence
+3. OCB evidence
+4. MSF Egypt policy/context
+5. User AWS source notes
+6. Current official AWS verification
+
+RESULT
+PASS — audited master package is internally consistent, source-aware, interactive, and ready for the 20-day study cycle.

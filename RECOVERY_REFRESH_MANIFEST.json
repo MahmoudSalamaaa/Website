@@ -1,0 +1,21 @@
+{
+  "generated": "2026-08-19",
+  "purpose": "Old-design preservation + latest verified content refresh",
+  "file_count": 642,
+  "folders": [
+    "_recovery_patches",
+    "_source_manifest",
+    "api",
+    "articles",
+    "assets",
+    "career-kit",
+    "case-studies",
+    "docs",
+    "executive-portfolio",
+    "images",
+    "organizations",
+    "recruiter",
+    "togaf",
+    "waca"
+  ]
+}

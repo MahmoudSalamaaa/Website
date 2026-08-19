@@ -1,16 +1,20 @@
-Mahmoud Salama website cleanup patch — 2026-08-19
+Mahmoud Salama Website Portfolio Patch — 2026-08-20
 
-Preserves the existing original design.
+Source inspected: GitHub repository MahmoudSalamaaa/Website, main branch.
 
-Changed:
-- index.html: factual title/experience cleanup, verified metrics, unsupported percentage claims removed, arbitrary skill percentages converted to categorical proficiency labels, low-value contact clutter removed, external links hardened, SEO/OG/Person structured data added, runtime text-rewrite shim removed.
-- portfolio.html: SEO metadata only; corrected portfolio content preserved.
-- case-studies/index.html: canonical URL fixed, active navigation fixed, SEO metadata added, and six real deep-dive case studies added.
-- resume.html: stale PDF viewer replaced with a factual Experience page; CV selection remains available under /docs/.
-- 404.html: clean site-consistent not-found page added.
-- sitemap.xml: stale URLs removed; current public pages added with current lastmod.
-- robots.txt: public site allowed; private CV selector /docs/ excluded from crawling.
-- vercel.json: existing security headers preserved; EmailJS API remains explicitly permitted by CSP.
-- Executive Technology Portfolio DOCX/PDF: Integral role corrected to Senior Full-Stack Developer / hands-on technical contributor (no development-team-leader claim for Oman).
+Changed files only:
+- portfolio.html
+- Mahmoud Salama - Executive Technology Portfolio.pdf
+- Mahmoud Salama - Executive Technology Portfolio.pptx
 
-No redesign was performed.
+Content corrections / improvements:
+- Preserves the existing site navigation, CSS classes, layout identity and theme behavior.
+- Strengthens Customer Service & Technical Support as a substantive leadership responsibility.
+- Adds canonical leadership/UPA scale context: 54-person organization, 7 direct reports, ~20 support/customer-service, ~60K users, ~90K facilities/entities, ~300 suppliers, ~1M transactions/month.
+- Corrects Al Wahat attribution to Royal Court Affairs.
+- Restores Integral role wording as Development Team Leader & Senior Full-Stack Developer where relevant.
+- Names the Ministry of Education Recruitment System and Sultan Qaboos Award relationship precisely.
+- Tightens Yashfeen/ITIDA wording.
+- Replaces the old downloadable portfolio with the latest premium visual PDF and editable PPTX.
+
+No redesign of the website was performed.

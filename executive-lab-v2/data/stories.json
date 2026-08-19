@@ -10,8 +10,8 @@
     ],
     "situation": "A multi-platform public-sector ecosystem needed consistent architecture, ownership and delivery controls.",
     "action": "Aligned platform governance, integration boundaries, stakeholder ownership and evidence-based reporting across the ecosystem.",
-    "result": "Scaled governance across 10 integrated platforms supporting 12,000+ entities and 320,000+ automated validations.",
-    "evidence": "mediq-national-ecosystem"
+    "result": "Governance supported national-scale procurement and medical-supply operations across 38K+ users, 11K+ facilities and ~89K stores.",
+    "evidence": "mediq"
   },
   {
     "id": "s2",
@@ -24,22 +24,22 @@
     ],
     "situation": "Cross-institution reporting depended on fragmented operational data and slow preparation cycles.",
     "action": "Designed a governed PostgreSQL-centered data environment with pipelines, master data, validation and analytics.",
-    "result": "Supported 12M+ records/day across 100+ institutions and reduced reporting preparation time by about 70%.",
-    "evidence": "national-health-data-warehouse"
+    "result": "Established governed cross-institution reporting and analytics using PostgreSQL, Power BI and Apache Superset.",
+    "evidence": "warehouse"
   },
   {
     "id": "s3",
-    "title": "Embedded government delivery in Oman",
+    "title": "Government delivery in Oman",
     "tags": [
       "gcc",
       "oman",
       "stakeholders",
       "delivery"
     ],
-    "situation": "National education services required reliable ministry-side delivery and close stakeholder coordination.",
-    "action": "Worked inside the Ministry environment across requirements, solution design, development, testing, deployment, training and support.",
-    "result": "Built direct GCC government-delivery credibility through 2.5+ years embedded at the Ministry of Education and 4+ years in Muscat.",
-    "evidence": "oman-education-portal"
+    "situation": "Government education services required reliable ministry-side delivery and close stakeholder coordination.",
+    "action": "Worked across requirements, application and database development, reporting, testing, deployment, releases and production support.",
+    "result": "Built direct GCC government-delivery experience through substantial hands-on contribution to education and ministry workflow systems.",
+    "evidence": "oman"
   },
   {
     "id": "s4",
@@ -53,7 +53,7 @@
     "situation": "Operational and procurement platforms needed controlled connectivity with Dynamics 365 ERP and CRM.",
     "action": "Aligned mappings, REST contracts, workflow ownership, reconciliation, monitoring and vendor responsibilities.",
     "result": "Established clearer integration ownership and controlled enterprise connectivity.",
-    "evidence": "d365-integration"
+    "evidence": "d365"
   },
   {
     "id": "s5",
@@ -64,9 +64,9 @@
       "training",
       "availability"
     ],
-    "situation": "Transformation value depended on production readiness, user adoption and operational continuity\u2014not software delivery alone.",
-    "action": "Embedded training, service governance, knowledge transfer and continuity into delivery.",
-    "result": "Reached 39,000+ staff while supporting 99%+ availability.",
-    "evidence": "adoption-operations"
+    "situation": "Transformation value depended on production readiness, user adoption and operational continuity—not software delivery alone.",
+    "action": "Embedded training, service governance, knowledge transfer, incident management and continuity into delivery.",
+    "result": "Strengthened training, onboarding, production readiness, support and operational continuity practices.",
+    "evidence": "adoption"
   }
 ]

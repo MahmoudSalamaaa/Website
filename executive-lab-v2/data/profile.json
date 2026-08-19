@@ -1,6 +1,8 @@
 {
   "name": "Mahmoud Salama",
   "headline": "Technology & Digital Transformation Executive | Enterprise Architect",
+  "official_current_title": "Head of the Central Administration for Information Systems & Digital Transformation",
+  "brand_line": "Technology at National Scale",
   "experience_years": "18+",
   "location": "Cairo, Egypt",
   "regions": [
@@ -10,16 +12,25 @@
     "Africa",
     "Remote / Global"
   ],
+  "target_role_families": [
+    "CTO / CIO / IT Director",
+    "Digital Transformation / Program Director",
+    "Enterprise / Solution Architect",
+    "Software / Application Development Manager",
+    "Government Technology / Digital Government Advisor"
+  ],
   "contact": {
     "email": "ma7moud.salamaaa@gmail.com",
     "linkedin": "https://www.linkedin.com/in/mahmoud-salama-30249b34",
     "github": "https://github.com/MahmoudSalamaaa"
   },
   "metrics": [
-    "EGP 150M+ technology portfolio",
-    "40+ professionals",
-    "12,000+ entities supported",
-    "4+ years lived & worked in Muscat"
+    "54-person technology organization",
+    "7 direct reports",
+    "38K+ platform users",
+    "11K+ facilities",
+    "~89K stores",
+    "~2K suppliers"
   ],
-  "policy": "Every public claim must trace to the evidence bank; no invented experience, metrics or certifications."
+  "claim_policy": "Every generated public claim must trace to verified evidence. No invented experience, metrics, certifications, employers or outcomes."
 }

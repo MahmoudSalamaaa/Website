@@ -31,4 +31,15 @@
  const items=Array.isArray(window.MS_ARTICLES)?window.MS_ARTICLES:[];
  const index=items.findIndex(item=>item.slug===slug);
  if(series&&index>=0&&items.length>1){const make=(item,label,kind)=>`<a class="series-link ${kind}" href="${item.url}"><small>${label}</small><strong>${item.title}</strong></a>`;const prev=index>0?make(items[index-1],mode==='ar'?'المقال السابق':'Previous article','series-prev'):'';const next=index<items.length-1?make(items[index+1],mode==='ar'?'المقال التالي':'Next article','series-next'):'';if(prev||next){series.innerHTML=prev+next;series.hidden=false}}
+
+ // Profile consistency patch. Keeps the article design unchanged while aligning the author identity.
+ const officialTitle='Head of the Central Administration for Information Systems & Digital Transformation';
+ document.querySelectorAll('.byline span,.author-role,.profile-panel .role').forEach(el=>{
+   if(/Chief Technology\s*&\s*Digital Transformation Officer/i.test(el.textContent||'')) el.textContent=officialTitle;
+ });
+ document.querySelectorAll('script[type="application/ld+json"]').forEach(script=>{
+   if(script.textContent.includes('Chief Technology & Digital Transformation Officer')){
+     script.textContent=script.textContent.replaceAll('Chief Technology & Digital Transformation Officer',officialTitle);
+   }
+ });
 })();

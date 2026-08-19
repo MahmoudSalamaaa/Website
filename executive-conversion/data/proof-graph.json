@@ -4,33 +4,35 @@
       "id": "leadership",
       "label": "Executive Leadership",
       "proof": [
-        "EGP 150M+ portfolio",
-        "40+ professionals"
+        "54-person technology organization",
+        "7 direct reports"
       ]
     },
     {
       "id": "scale",
-      "label": "National Scale",
+      "label": "National Operating Scale",
       "proof": [
-        "12,000+ public-sector entities",
-        "10-platform MedIQ ecosystem"
+        "38K+ platform users",
+        "11K+ facilities",
+        "~89K stores",
+        "~2K suppliers"
       ]
     },
     {
       "id": "data",
       "label": "Enterprise Data",
       "proof": [
-        "12M+ records/day",
-        "100+ institutions",
-        "~70% faster reporting preparation"
+        "Governed cross-institution reporting",
+        "PostgreSQL data environment",
+        "Power BI and Apache Superset analytics"
       ]
     },
     {
       "id": "gcc",
       "label": "GCC / Oman",
       "proof": [
-        "4+ years in Muscat",
-        "2.5+ years embedded at Oman Ministry of Education"
+        "Senior hands-on government delivery in Oman",
+        "Government education and ministry workflow systems"
       ]
     },
     {
@@ -45,8 +47,9 @@
       "id": "adoption",
       "label": "Adoption & Operations",
       "proof": [
-        "39,000+ staff reached",
-        "99%+ availability stated in evidence bank"
+        "Training and onboarding",
+        "Production readiness and support",
+        "Incident, RCA and continuity practices"
       ]
     }
   ],

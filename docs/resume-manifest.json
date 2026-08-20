@@ -1,0 +1,119 @@
+{
+  "version": "2026-08-20",
+  "status": "FINAL FROZEN",
+  "count": 11,
+  "default_cv": "docs/cvs/Technology Executive - Digital Transformation & Enterprise Systems - Mahmoud Salama - FINAL FROZEN.pdf",
+  "default_compatibility_alias": "CVSalama.pdf",
+  "roles": [
+    {
+      "key": "cto-it-director",
+      "title": "CTO & IT Director",
+      "targets": "CTO, CIO, IT Director, Technology Director, Head of IT / Technology",
+      "default": false,
+      "cv_pdf": "cvs/CTO & IT Director - Mahmoud Salama - FINAL FROZEN.pdf",
+      "cv_docx": "cvs/CTO & IT Director - Mahmoud Salama - FINAL FROZEN.docx",
+      "cover_letter_pdf": "cover-letters/CTO & IT Director - Mahmoud Salama - Cover Letter - FINAL FROZEN.pdf",
+      "cover_letter_docx": "cover-letters/CTO & IT Director - Mahmoud Salama - Cover Letter - FINAL FROZEN.docx"
+    },
+    {
+      "key": "digital-transformation",
+      "title": "Digital Transformation Director",
+      "targets": "Digital Transformation Director, Transformation Lead, Digital Strategy Director",
+      "default": false,
+      "cv_pdf": "cvs/Digital Transformation Director - Mahmoud Salama - FINAL FROZEN.pdf",
+      "cv_docx": "cvs/Digital Transformation Director - Mahmoud Salama - FINAL FROZEN.docx",
+      "cover_letter_pdf": "cover-letters/Digital Transformation Director - Mahmoud Salama - Cover Letter - FINAL FROZEN.pdf",
+      "cover_letter_docx": "cover-letters/Digital Transformation Director - Mahmoud Salama - Cover Letter - FINAL FROZEN.docx"
+    },
+    {
+      "key": "enterprise-architect",
+      "title": "Enterprise Architect",
+      "targets": "Enterprise Architect, Chief Architect, Enterprise Architecture Lead, Technology Architect",
+      "default": false,
+      "cv_pdf": "cvs/Enterprise Architect - Mahmoud Salama - FINAL FROZEN.pdf",
+      "cv_docx": "cvs/Enterprise Architect - Mahmoud Salama - FINAL FROZEN.docx",
+      "cover_letter_pdf": "cover-letters/Enterprise Architect - Mahmoud Salama - Cover Letter - FINAL FROZEN.pdf",
+      "cover_letter_docx": "cover-letters/Enterprise Architect - Mahmoud Salama - Cover Letter - FINAL FROZEN.docx"
+    },
+    {
+      "key": "it-information-systems",
+      "title": "IT & Information Systems Manager",
+      "targets": "IT Manager, Information Systems Manager, Head of IT, ICT Manager",
+      "default": false,
+      "cv_pdf": "cvs/IT & Information Systems Manager - Mahmoud Salama - FINAL FROZEN.pdf",
+      "cv_docx": "cvs/IT & Information Systems Manager - Mahmoud Salama - FINAL FROZEN.docx",
+      "cover_letter_pdf": "cover-letters/IT & Information Systems Manager - Mahmoud Salama - Cover Letter - FINAL FROZEN.pdf",
+      "cover_letter_docx": "cover-letters/IT & Information Systems Manager - Mahmoud Salama - Cover Letter - FINAL FROZEN.docx"
+    },
+    {
+      "key": "it-program-delivery",
+      "title": "IT Program & Technology Delivery Manager",
+      "targets": "IT Program Manager, IT Project Manager, Technology Delivery Manager, Technical Project Manager",
+      "default": false,
+      "cv_pdf": "cvs/IT Program & Technology Delivery Manager - Mahmoud Salama - FINAL FROZEN.pdf",
+      "cv_docx": "cvs/IT Program & Technology Delivery Manager - Mahmoud Salama - FINAL FROZEN.docx",
+      "cover_letter_pdf": "cover-letters/IT Program & Technology Delivery Manager - Mahmoud Salama - Cover Letter - FINAL FROZEN.pdf",
+      "cover_letter_docx": "cover-letters/IT Program & Technology Delivery Manager - Mahmoud Salama - Cover Letter - FINAL FROZEN.docx"
+    },
+    {
+      "key": "software-development-delivery",
+      "title": "Software Development & Delivery Manager",
+      "targets": "Software Development Manager, Engineering Manager, Application Development Manager, Software Delivery Manager",
+      "default": false,
+      "cv_pdf": "cvs/Software Development & Delivery Manager - Mahmoud Salama - FINAL FROZEN.pdf",
+      "cv_docx": "cvs/Software Development & Delivery Manager - Mahmoud Salama - FINAL FROZEN.docx",
+      "cover_letter_pdf": "cover-letters/Software Development & Delivery Manager - Mahmoud Salama - Cover Letter - FINAL FROZEN.pdf",
+      "cover_letter_docx": "cover-letters/Software Development & Delivery Manager - Mahmoud Salama - Cover Letter - FINAL FROZEN.docx"
+    },
+    {
+      "key": "product-delivery",
+      "title": "Product Delivery Manager — Enterprise Platforms",
+      "targets": "Product Delivery Manager, Platform Delivery Manager, Digital Product Delivery Manager",
+      "default": false,
+      "cv_pdf": "cvs/Product Delivery Manager - Enterprise Platforms - Mahmoud Salama - FINAL FROZEN.pdf",
+      "cv_docx": "cvs/Product Delivery Manager - Enterprise Platforms - Mahmoud Salama - FINAL FROZEN.docx",
+      "cover_letter_pdf": "cover-letters/Product Delivery Manager - Enterprise Platforms - Mahmoud Salama - Cover Letter - FINAL FROZEN.pdf",
+      "cover_letter_docx": "cover-letters/Product Delivery Manager - Enterprise Platforms - Mahmoud Salama - Cover Letter - FINAL FROZEN.docx"
+    },
+    {
+      "key": "solution-architect",
+      "title": "Solution Architect — Enterprise Applications & Integration",
+      "targets": "Solution Architect, Application Architect, Integration Architect, Enterprise Applications Architect",
+      "default": false,
+      "cv_pdf": "cvs/Solution Architect - Enterprise Applications & Integration - Mahmoud Salama - FINAL FROZEN.pdf",
+      "cv_docx": "cvs/Solution Architect - Enterprise Applications & Integration - Mahmoud Salama - FINAL FROZEN.docx",
+      "cover_letter_pdf": "cover-letters/Solution Architect - Enterprise Applications & Integration - Mahmoud Salama - Cover Letter - FINAL FROZEN.pdf",
+      "cover_letter_docx": "cover-letters/Solution Architect - Enterprise Applications & Integration - Mahmoud Salama - Cover Letter - FINAL FROZEN.docx"
+    },
+    {
+      "key": "technology-executive-generic",
+      "title": "Technology Executive — Generic",
+      "targets": "Senior Technology Executive, Technology Leader, broad or mixed senior technology roles",
+      "default": true,
+      "cv_pdf": "cvs/Technology Executive - Digital Transformation & Enterprise Systems - Mahmoud Salama - FINAL FROZEN.pdf",
+      "cv_docx": "cvs/Technology Executive - Digital Transformation & Enterprise Systems - Mahmoud Salama - FINAL FROZEN.docx",
+      "cover_letter_pdf": "cover-letters/Technology Executive - Digital Transformation & Enterprise Systems - Mahmoud Salama - Cover Letter - FINAL FROZEN.pdf",
+      "cover_letter_docx": "cover-letters/Technology Executive - Digital Transformation & Enterprise Systems - Mahmoud Salama - Cover Letter - FINAL FROZEN.docx"
+    },
+    {
+      "key": "business-analyst",
+      "title": "Lead / Senior Business Analyst",
+      "targets": "Lead Business Analyst, Senior Business Analyst, Business Systems Analyst, IT Business Analyst",
+      "default": false,
+      "cv_pdf": "cvs/Lead & Senior Business Analyst - Business Systems Analysis & Digital Transformation - Mahmoud Salama - FINAL FROZEN.pdf",
+      "cv_docx": "cvs/Lead & Senior Business Analyst - Business Systems Analysis & Digital Transformation - Mahmoud Salama - FINAL FROZEN.docx",
+      "cover_letter_pdf": "cover-letters/Lead & Senior Business Analyst - Business Systems Analysis & Digital Transformation - Mahmoud Salama - Cover Letter - FINAL FROZEN.pdf",
+      "cover_letter_docx": "cover-letters/Lead & Senior Business Analyst - Business Systems Analysis & Digital Transformation - Mahmoud Salama - Cover Letter - FINAL FROZEN.docx"
+    },
+    {
+      "key": "service-delivery-operations",
+      "title": "IT Service Delivery & Operations Manager",
+      "targets": "IT Service Delivery Manager, IT Operations Manager, IT Service Manager, Service Delivery Manager",
+      "default": false,
+      "cv_pdf": "cvs/IT Service Delivery & Operations Manager - Mahmoud Salama - FINAL FROZEN.pdf",
+      "cv_docx": "cvs/IT Service Delivery & Operations Manager - Mahmoud Salama - FINAL FROZEN.docx",
+      "cover_letter_pdf": "cover-letters/IT Service Delivery & Operations Manager - Mahmoud Salama - Cover Letter - FINAL FROZEN.pdf",
+      "cover_letter_docx": "cover-letters/IT Service Delivery & Operations Manager - Mahmoud Salama - Cover Letter - FINAL FROZEN.docx"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+Question 9.
+How do you approach data architecture and governance?
+
+Answer in English.
+I start by defining authoritative data domains and business ownership. I want consistent identifiers, shared definitions, data quality rules, lineage and clear access controls. Integration and analytics should consume governed data rather than create competing versions of truth. I also separate operational data concerns from analytical use cases while maintaining traceability. Data governance succeeds when business owners are accountable and technology provides the controls and visibility.
+
+الإجابة بالعربية.
+أبدأ بتحديد مجالات البيانات الرسمية وملكية الأعمال. أحتاج معرفات موحدة، وتعريفات مشتركة، وقواعد جودة بيانات، وتتبع المصدر، وضوابط وصول واضحة. يجب أن يستهلك التكامل والتحليل بيانات محكومة بدل إنشاء نسخ متعددة من الحقيقة. كما أفصل احتياجات البيانات التشغيلية عن الاستخدامات التحليلية مع الحفاظ على التتبع. تنجح حوكمة البيانات عندما يكون ملاك الأعمال مسؤولين وتوفر التقنية الضوابط والرؤية.
+
+------------------------------
+
+Question 10.
+How do you approach cloud architecture across Azure, GCP or AWS?
+
+Answer in English.
+I focus first on architecture principles that are portable across hyperscalers: identity, network segmentation, workload placement, resilience, observability, secrets, encryption, backup, cost governance and least privilege. My strongest practical exposure is not equally deep across every cloud provider, so I would not pretend otherwise. What I bring is the ability to evaluate services against architectural requirements and learn provider-specific implementations quickly. I would use landing-zone standards, policy-as-code where appropriate and clear workload guardrails.
+
+الإجابة بالعربية.
+أركز أولًا على مبادئ معمارية قابلة للنقل بين مزودي السحابة: الهوية، وتقسيم الشبكات، وتوزيع الأحمال، والمرونة، والمراقبة، والأسرار، والتشفير، والنسخ الاحتياطي، وضبط التكلفة، وأقل صلاحية. خبرتي العملية ليست بنفس العمق في كل مزود، ولن أدعي غير ذلك. ما أقدمه هو القدرة على تقييم الخدمات مقابل المتطلبات المعمارية والتعلم السريع لتفاصيل المزود. وأستخدم landing zones ومعايير وسياسات واضحة للأحمال.
+
+------------------------------
+
+Question 11.
+What is your experience with GCP specifically?
+
+Answer in English.
+My experience is stronger in broader cloud and enterprise architecture than in deep GCP specialization. I understand the core architectural patterns that translate directly to GCP: IAM, VPC design, managed compute, databases, integration, observability, security and resilience. If GCP is the strategic platform, I would validate the existing landing zone and service patterns first, then work with platform specialists while owning the enterprise-level architecture decisions. I would rather be precise about my depth than overstate it.
+
+الإجابة بالعربية.
+خبرتي أقوى في معمارية المؤسسات والسحابة بشكل عام من التخصص العميق في GCP تحديدًا. أفهم الأنماط الأساسية التي تنتقل مباشرة إلى GCP مثل IAM وتصميم VPC والحوسبة المدارة وقواعد البيانات والتكامل والمراقبة والأمن والمرونة. إذا كان GCP هو المنصة الاستراتيجية، سأراجع landing zone والأنماط الحالية أولًا وأعمل مع متخصصي المنصة مع احتفاظي بملكية القرارات المعمارية المؤسسية. أفضل الدقة على المبالغة.
+
+------------------------------
+
+Question 12.
+What is your experience with manufacturing, OT or IIoT?
+
+Answer in English.
+My primary domain background is government and healthcare, not manufacturing, so I would not claim direct shop-floor or OT ownership. The transferable experience is strong: distributed systems, integration, high availability, security, data flows, legacy modernization and operational continuity. In an industrial context I would deliberately learn the OT/IT boundary, plant constraints, protocols, safety implications and latency requirements before making architecture decisions. I see domain learning as a responsibility, not something to hide.
+
+الإجابة بالعربية.
+خلفيتي الأساسية في الحكومة والصحة وليست التصنيع، لذلك لن أدعي ملكية مباشرة لبيئة OT أو خطوط إنتاج. لكن الخبرة القابلة للنقل قوية: أنظمة موزعة، وتكامل، وتوافر عالٍ، وأمن، وتدفقات بيانات، وتحديث أنظمة قديمة، واستمرارية تشغيلية. في البيئة الصناعية سأتعلم عمدًا حدود OT/IT وقيود المصنع والبروتوكولات ومتطلبات السلامة والزمن قبل اتخاذ قرارات معمارية. تعلم المجال مسؤولية وليس شيئًا أخفيه.
+
+------------------------------
+
+Question 13.
+How would you architect an IIoT or edge-to-cloud platform?
+
+Answer in English.
+I would separate device and OT concerns from enterprise IT while defining controlled integration points. At the edge I would consider protocol translation, buffering, local processing, security and offline operation. In the cloud I would design ingestion, identity, device registry, streaming, storage, analytics, observability and lifecycle management. Security boundaries, certificate management, network segmentation and patching are critical. I would also define what must remain local for latency or safety and what can be centralized.
+
+الإجابة بالعربية.
+سأفصل اعتبارات الأجهزة وOT عن IT المؤسسي مع نقاط تكامل محكومة. على الحافة أراعي ترجمة البروتوكولات، والتخزين المؤقت، والمعالجة المحلية، والأمن، والعمل دون اتصال. في السحابة أصمم الاستقبال والهوية وسجل الأجهزة والبث والتخزين والتحليلات والمراقبة وإدارة دورة الحياة. حدود الأمن والشهادات وتقسيم الشبكات والتحديثات أساسية. كما أحدد ما يجب أن يبقى محليًا بسبب الزمن أو السلامة وما يمكن مركزيته.
+
+------------------------------
+
+Question 14.
+How do you balance IT security with operational availability?
+
+Answer in English.
+I treat security and availability as architecture requirements that must be designed together. Controls should be risk-based, layered and tested against operational scenarios. In critical environments I avoid controls that create unsafe workarounds or single points of failure. I use segmentation, strong identity, least privilege, secure administration, logging, backup, recovery and tested exception processes. The objective is secure operation, not security that ignores how the business actually works.
+
+الإجابة بالعربية.
+أتعامل مع الأمن والتوافر كمتطلبات معمارية يجب تصميمها معًا. تكون الضوابط مبنية على المخاطر ومتعددة الطبقات ومختبرة ضد السيناريوهات التشغيلية. في البيئات الحرجة أتجنب ضوابط تؤدي إلى حلول التفافية غير آمنة أو نقاط فشل وحيدة. أستخدم التقسيم الشبكي والهوية القوية وأقل صلاحية والإدارة الآمنة والتسجيل والنسخ والتعافي والاستثناءات المختبرة. الهدف تشغيل آمن وليس أمنًا يتجاهل الواقع.
+
+------------------------------
+
+Question 15.
+How do you handle legacy systems that cannot be replaced quickly?
+
+Answer in English.
+I first reduce risk around them. That may mean network isolation, access control, monitoring, backup, documentation and interface stabilization. Then I identify business capabilities and dependencies and decide whether to encapsulate the legacy system behind APIs, progressively extract functionality, migrate data or replace it in phases. A big-bang replacement is rarely my default. The roadmap should reduce risk continuously while preserving operations.
+
+الإجابة بالعربية.
+أبدأ بتقليل المخاطر حول النظام القديم: عزل شبكي، وضبط وصول، ومراقبة، ونسخ احتياطي، وتوثيق، وتثبيت الواجهات. ثم أحدد قدرات الأعمال والاعتماديات وأقرر هل نغلف النظام عبر APIs أو نستخرج وظائف تدريجيًا أو ننقل البيانات أو نستبدله على مراحل. الاستبدال دفعة واحدة ليس اختياري الافتراضي. يجب أن تقلل خارطة الطريق المخاطر باستمرار مع الحفاظ على التشغيل.
+
+------------------------------
+
+Question 16.
+How do you evaluate build versus buy versus SaaS?
+
+Answer in English.
+I compare strategic differentiation, time to value, total cost of ownership, security, compliance, integration, data portability, vendor lock-in, lifecycle effort and internal capability. Commodity capabilities often favor SaaS or packaged products, while differentiating capabilities may justify custom development. I also evaluate exit strategy before adoption. The decision should be documented as a business and architecture choice, not a technology preference.
+
+الإجابة بالعربية.
+أقارن التميز الاستراتيجي، وسرعة تحقيق القيمة، والتكلفة الإجمالية، والأمن، والامتثال، والتكامل، وإمكانية نقل البيانات، والاعتماد على المورد، ومجهود دورة الحياة، وقدرة الفريق الداخلي. القدرات القياسية غالبًا تميل إلى SaaS أو منتجات جاهزة، بينما القدرات المميزة قد تبرر التطوير المخصص. كما أقيّم استراتيجية الخروج قبل التبني. القرار يجب أن يكون قرار أعمال ومعمارية وليس تفضيلًا تقنيًا.
+
+------------------------------
+
+Question 17.
+How do you measure whether an architecture initiative is successful?
+
+Answer in English.
+I link architecture to measurable outcomes: service availability, incident reduction, delivery lead time, integration failure rate, infrastructure cost, security findings, user adoption, process cycle time or business KPI improvement. I also track technical outcomes such as reduction in duplicate capabilities, unsupported technologies and unmanaged interfaces. If architecture cannot show measurable business or risk impact, it becomes too theoretical.
+
+الإجابة بالعربية.
+أربط المعمارية بنتائج قابلة للقياس: توافر الخدمة، وتقليل الحوادث، وزمن التسليم، ومعدل فشل التكامل، وتكلفة البنية، والملاحظات الأمنية، وتبني المستخدمين، وزمن العملية، أو تحسن مؤشرات الأعمال. كما أتابع تقليل القدرات المكررة والتقنيات غير المدعومة والواجهات غير المحكومة. إذا لم تستطع المعمارية إظهار أثر على الأعمال أو المخاطر تصبح نظرية أكثر من اللازم.
+
+------------------------------

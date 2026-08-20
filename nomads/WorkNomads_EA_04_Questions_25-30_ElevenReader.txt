@@ -1,0 +1,65 @@
+Question 25.
+Why are you considering leaving a senior leadership role for an Enterprise Architect role?
+
+Answer in English.
+For me, progression is not only about title size. Enterprise architecture is a senior strategic role with direct influence on technology direction, investment and transformation. I enjoy leadership, but I also enjoy being close to architecture decisions and complex technology. This role gives me the opportunity to combine executive-level perspective with technical depth in an international environment, which is more important to me than simply increasing the size of a title.
+
+الإجابة بالعربية.
+بالنسبة لي التطور لا يقاس بحجم المسمى فقط. Enterprise Architecture دور استراتيجي رفيع يؤثر مباشرة في اتجاه التقنية والاستثمار والتحول. أستمتع بالقيادة لكنني أيضًا أحب البقاء قريبًا من القرارات المعمارية والتقنية المعقدة. هذا الدور يجمع المنظور التنفيذي مع العمق التقني في بيئة دولية، وهذا أهم لي من مجرد زيادة حجم المسمى.
+
+------------------------------
+
+Question 26.
+What is your biggest gap for this role?
+
+Answer in English.
+The most obvious gap is direct manufacturing and OT-domain depth. I see that clearly. I would address it by learning the operational domain quickly, spending time with plant and engineering stakeholders, understanding the OT/IT boundary and validating assumptions before standardizing architecture. I am confident in the enterprise architecture, integration, data, security and transformation disciplines; I would combine those strengths with deliberate domain learning.
+
+الإجابة بالعربية.
+أوضح فجوة هي العمق المباشر في التصنيع وOT، وأنا أراها بوضوح. سأعالجها بالتعلم السريع للمجال، والعمل مع أصحاب المصلحة في المصانع والهندسة، وفهم حدود OT/IT، والتحقق من الافتراضات قبل توحيد المعمارية. أنا واثق في معمارية المؤسسات والتكامل والبيانات والأمن والتحول، وسأجمع هذه القوة مع تعلم مقصود للمجال.
+
+------------------------------
+
+Question 27.
+What salary are you expecting?
+
+Answer in English.
+I am flexible at this stage because I would like to understand the full scope, contracting model and total package first. For a senior Enterprise Architect role with international scope, I would expect a market-competitive package aligned with the responsibilities and employment model. I am more interested in fit and scope first, and I am happy to discuss a concrete range once I understand whether the arrangement is employment or B2B.
+
+الإجابة بالعربية.
+أنا مرن في هذه المرحلة لأنني أريد أولًا فهم النطاق الكامل ونموذج التعاقد والحزمة الكلية. لدور Enterprise Architect رفيع بنطاق دولي أتوقع حزمة تنافسية تتناسب مع المسؤوليات ونموذج العمل. اهتمامي الأول هو الملاءمة والنطاق، ويمكنني مناقشة رقم محدد بعد فهم هل التعاقد Employment أم B2B.
+
+------------------------------
+
+Question 28.
+Where are you based and can you work remotely worldwide?
+
+Answer in English.
+I am currently based in Egypt and I am comfortable working remotely with distributed international teams. I applied because the role is presented as Remote Worldwide, and I would be happy to understand the contracting model WorkNomads uses for candidates based in Egypt. I am flexible in working hours for European collaboration and open to reasonable travel where required.
+
+الإجابة بالعربية.
+أنا مقيم حاليًا في مصر ومرتاح للعمل عن بُعد مع فرق دولية موزعة. تقدمت لأن الوظيفة معروضة كـRemote Worldwide، ويسعدني فهم نموذج التعاقد الذي تستخدمه WorkNomads للمرشحين المقيمين في مصر. أنا مرن في ساعات العمل للتعاون مع أوروبا ومنفتح على السفر المعقول عند الحاجة.
+
+------------------------------
+
+Question 29.
+What would your first 90 days look like?
+
+Answer in English.
+In the first 30 days I would learn the business, stakeholders, transformation priorities, architecture landscape and current industrial platforms. By 60 days I would identify the highest-risk architecture gaps, establish decision forums and validate target-state principles. By 90 days I would present a prioritized transition roadmap with a small number of high-value initiatives, clear ownership, architecture guardrails and measurable outcomes. I would focus on clarity and trust before large-scale redesign.
+
+الإجابة بالعربية.
+في أول 30 يومًا سأتعلم الأعمال وأصحاب المصلحة وأولويات التحول والمشهد المعماري والمنصات الصناعية الحالية. بحلول 60 يومًا أحدد أهم فجوات المخاطر وأثبت آليات القرار وأتحقق من مبادئ الحالة المستهدفة. بحلول 90 يومًا أقدم خارطة انتقال مرتبة بأهم المبادرات عالية القيمة وملكية واضحة وضوابط معمارية ونتائج قابلة للقياس. أركز على الوضوح والثقة قبل إعادة تصميم واسعة.
+
+------------------------------
+
+Question 30.
+What questions would you ask us at the end of the interview?
+
+Answer in English.
+I would ask: What are the three most important outcomes you expect from this role in the first year? Where are the biggest architecture pain points today: applications, data, cloud, OT/IIoT, governance or delivery? How mature is the current architecture function and what decision authority does this role have? What does success look like after six months? And finally, what contracting model do you use for a Remote Worldwide candidate based in Egypt?
+
+الإجابة بالعربية.
+سأسأل: ما أهم ثلاث نتائج تتوقعونها من هذا الدور خلال السنة الأولى؟ أين توجد أكبر مشكلات المعمارية اليوم: التطبيقات أم البيانات أم السحابة أم OT/IIoT أم الحوكمة أم التنفيذ؟ ما مستوى نضج وظيفة المعمارية حاليًا وما صلاحيات القرار لهذا الدور؟ كيف يبدو النجاح بعد ستة أشهر؟ وأخيرًا ما نموذج التعاقد لمرشح Remote Worldwide مقيم في مصر؟
+
+------------------------------

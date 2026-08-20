@@ -1,0 +1,76 @@
+Question 18.
+How do you influence executives and technical teams when they disagree?
+
+Answer in English.
+I translate the disagreement into decision criteria. Executives usually care about value, time, risk and cost; engineers care about quality, maintainability and technical feasibility. I make trade-offs explicit, present options with consequences and recommend a path rather than simply present diagrams. Once a decision is made, I document it and support the team in execution. Architecture influence comes from clarity and credibility, not authority alone.
+
+الإجابة بالعربية.
+أحول الخلاف إلى معايير قرار. الإدارة تهتم بالقيمة والوقت والمخاطر والتكلفة، والمهندسون يهتمون بالجودة وقابلية الصيانة والجدوى التقنية. أوضح المفاضلات وأعرض الخيارات بنتائجها وأوصي بمسار بدل الاكتفاء بالرسومات. بعد القرار أوثقه وأدعم الفريق في التنفيذ. تأثير المعماري يأتي من الوضوح والمصداقية وليس السلطة فقط.
+
+------------------------------
+
+Question 19.
+Tell me about a time you had to challenge a senior stakeholder.
+
+Answer in English.
+I focus on the decision, not the person. In senior environments I have had situations where a requested shortcut would increase operational or integration risk. I explain the impact in business terms, provide evidence and offer a safer alternative with a realistic timeline. If the stakeholder still chooses the higher-risk path, I make the residual risk explicit and document the decision. That keeps the relationship professional while protecting governance.
+
+الإجابة بالعربية.
+أركز على القرار وليس الشخص. في بيئات قيادية واجهت طلبات لاختصار الطريق بما يرفع المخاطر التشغيلية أو مخاطر التكامل. أوضح الأثر بلغة الأعمال وأقدم أدلة وبديلًا أكثر أمانًا بجدول واقعي. إذا اختار صاحب المصلحة المسار الأعلى خطرًا، أوضح المخاطر المتبقية وأوثق القرار. هذا يحافظ على العلاقة ويحمي الحوكمة.
+
+------------------------------
+
+Question 20.
+How do you mentor architects and senior engineers?
+
+Answer in English.
+I give people ownership of real decisions with clear guardrails. I review reasoning, not only outputs, and ask them to explain trade-offs, risks and assumptions. I encourage architecture decision records, peer review and reusable patterns. I also make sure technical specialists are exposed to business context because strong architects must understand why a decision matters, not only how to implement it.
+
+الإجابة بالعربية.
+أمنح الأشخاص ملكية قرارات حقيقية ضمن ضوابط واضحة. أراجع طريقة التفكير وليس الناتج فقط، وأطلب شرح المفاضلات والمخاطر والافتراضات. أشجع توثيق قرارات المعمارية والمراجعة بين الزملاء والأنماط القابلة لإعادة الاستخدام. كما أضمن تعرض المتخصصين للسياق التجاري لأن المعماري القوي يجب أن يفهم لماذا القرار مهم وليس فقط كيف ينفذه.
+
+------------------------------
+
+Question 21.
+How do you manage architecture across multiple vendors?
+
+Answer in English.
+I keep architecture ownership inside the organization even when delivery is outsourced. Vendors can propose designs, but enterprise standards, integration principles, data ownership, security and target-state decisions must remain governed internally. I define deliverables, architecture checkpoints, interface contracts and acceptance criteria. I also avoid vendor-specific solutions that create unnecessary lock-in unless the business value clearly justifies it.
+
+الإجابة بالعربية.
+أحافظ على ملكية المعمارية داخل المؤسسة حتى لو كان التنفيذ خارجيًا. يمكن للمورد اقتراح تصميم، لكن معايير المؤسسة ومبادئ التكامل وملكية البيانات والأمن وقرارات الحالة المستهدفة يجب أن تبقى محكومة داخليًا. أحدد المخرجات ونقاط المراجعة وعقود الواجهات ومعايير القبول. وأتجنب حلولًا خاصة بالمورد تخلق اعتمادًا غير ضروري إلا إذا كانت القيمة تبرر ذلك.
+
+------------------------------
+
+Question 22.
+How do you approach architecture documentation?
+
+Answer in English.
+I document enough to enable decisions, delivery and operations. I normally want current-state and target-state views, capability maps, integration diagrams, data flows, security boundaries, decision records, standards and transition roadmaps. Documentation must have owners and be updated as part of change. I avoid producing large documents that nobody uses; the best documentation is concise, trusted and connected to governance.
+
+الإجابة بالعربية.
+أوثق بالقدر الذي يمكّن القرار والتنفيذ والتشغيل. أحتاج عادةً رؤى للوضع الحالي والمستهدف، وخرائط قدرات، ومخططات تكامل، وتدفقات بيانات، وحدود أمن، وسجلات قرارات، ومعايير، وخارطة انتقال. يجب أن يكون للوثائق ملاك وأن تُحدث مع التغيير. أتجنب مستندات ضخمة لا يستخدمها أحد؛ أفضل وثائق مختصرة وموثوقة ومتصلة بالحوكمة.
+
+------------------------------
+
+Question 23.
+How do you approach AI architecture in an enterprise environment?
+
+Answer in English.
+I begin with the business use case and data readiness, not the model. I evaluate data sensitivity, model risk, integration, human oversight, observability, cost, privacy and failure modes. For generative AI I also consider prompt and data leakage, grounding, evaluation and access control. I prefer controlled pilots with measurable outcomes before scaling. AI should fit the enterprise architecture rather than become an isolated experiment.
+
+الإجابة بالعربية.
+أبدأ بحالة الاستخدام واستعداد البيانات وليس بالنموذج. أقيّم حساسية البيانات، ومخاطر النموذج، والتكامل، والإشراف البشري، والمراقبة، والتكلفة، والخصوصية، وأنماط الفشل. في الذكاء التوليدي أراعي تسريب البيانات، والـgrounding، والتقييم، وضبط الوصول. أفضل تجارب محكومة بنتائج قابلة للقياس قبل التوسع. يجب أن يدخل AI ضمن معمارية المؤسسة لا أن يكون تجربة معزولة.
+
+------------------------------
+
+Question 24.
+How would you approach an industrial AI transformation program?
+
+Answer in English.
+I would start with operational use cases where measurable value exists, such as quality, maintenance, energy, throughput or planning. Then I would assess data availability, OT connectivity, edge requirements, security and ownership. I would establish a reusable data and integration foundation rather than build isolated pilots. Governance should cover model lifecycle, data quality, cybersecurity and business accountability. Scale comes from reusable architecture and operating model, not from the number of proofs of concept.
+
+الإجابة بالعربية.
+أبدأ بحالات استخدام تشغيلية ذات قيمة قابلة للقياس مثل الجودة والصيانة والطاقة والإنتاجية أو التخطيط. ثم أقيّم توافر البيانات واتصال OT ومتطلبات edge والأمن والملكية. أبني أساسًا قابلاً لإعادة الاستخدام للبيانات والتكامل بدل تجارب منفصلة. تغطي الحوكمة دورة حياة النموذج وجودة البيانات والأمن السيبراني ومسؤولية الأعمال. التوسع يأتي من معمارية ونموذج تشغيل قابلين لإعادة الاستخدام وليس من عدد التجارب.
+
+------------------------------

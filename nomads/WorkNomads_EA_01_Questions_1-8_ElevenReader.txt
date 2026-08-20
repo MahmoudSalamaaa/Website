@@ -1,0 +1,87 @@
+Question 1.
+Tell me about yourself and why your background fits this Enterprise Architect role.
+
+Answer in English.
+I am a technology and digital-transformation leader with more than eighteen years of experience across software engineering, enterprise applications, integration, data, governance and technology leadership. I started as a hands-on developer and gradually moved into architecture, delivery and enterprise-level ownership. In government and healthcare environments I have led complex platforms, integrations, vendors, multidisciplinary teams and service continuity. What makes this role attractive is that it needs someone who can connect business strategy with applications, data, infrastructure and modernization. That is exactly where my experience is strongest.
+
+الإجابة بالعربية.
+أنا قائد في التكنولوجيا والتحول الرقمي بخبرة تتجاوز ثمانية عشر عامًا في هندسة البرمجيات، وتطبيقات المؤسسات، والتكامل، والبيانات، والحوكمة، والقيادة التقنية. بدأت كمطور عملي ثم انتقلت تدريجيًا إلى المعمارية وتسليم الحلول وملكية البيئات المؤسسية. في البيئات الحكومية والصحية قدت منصات معقدة، وتكاملات، وموردين، وفرقًا متعددة التخصصات، واستمرارية خدمات. ما يجذبني في هذا الدور هو الحاجة إلى شخص يربط استراتيجية الأعمال بالتطبيقات والبيانات والبنية التحتية والتحديث، وهذه هي المنطقة الأقوى في خبرتي.
+
+------------------------------
+
+Question 2.
+Why WorkNomads and why this Enterprise Architect position?
+
+Answer in English.
+I am interested in WorkNomads because the role sits at the intersection of enterprise architecture, industrial digital transformation, cloud, data, AI and operational technology. I am looking for a role where architecture is not only documentation but a practical mechanism for prioritizing modernization, reducing risk and enabling business outcomes. The Enterprise Architect position matches the way I already work: understanding business priorities, defining target architecture, governing decisions and helping delivery teams move from current state to future state.
+
+الإجابة بالعربية.
+أهتم بـWorkNomads لأن الدور يقع عند تقاطع معمارية المؤسسات، والتحول الرقمي الصناعي، والسحابة، والبيانات، والذكاء الاصطناعي، والتقنيات التشغيلية. أبحث عن دور تكون فيه المعمارية أداة عملية لتحديد أولويات التحديث وتقليل المخاطر وتحقيق نتائج الأعمال، وليس مجرد وثائق. وظيفة Enterprise Architect تتوافق مع طريقتي في العمل: فهم أولويات الأعمال، وتحديد المعمارية المستهدفة، وحوكمة القرارات، ومساعدة فرق التنفيذ على الانتقال من الوضع الحالي إلى الوضع المستقبلي.
+
+------------------------------
+
+Question 3.
+Describe the largest digital transformation environment you have led.
+
+Answer in English.
+One of my strongest examples is my work in a large government and healthcare technology ecosystem where I was responsible for enterprise applications, integrations, data platforms, service governance, vendors and multidisciplinary technical teams. The challenge was not one application; it was coordinating many systems and stakeholders while maintaining continuity. My approach was to establish ownership, map dependencies, prioritize critical services, standardize integration and governance, and use data to support management decisions. That experience taught me how to architect change across a portfolio rather than optimize systems in isolation.
+
+الإجابة بالعربية.
+من أقوى أمثلتي عملي في منظومة حكومية وصحية كبيرة كنت مسؤولًا فيها عن تطبيقات مؤسسية، وتكاملات، ومنصات بيانات، وحوكمة خدمات، وموردين، وفرق تقنية متعددة التخصصات. التحدي لم يكن تطبيقًا واحدًا؛ بل تنسيق عدد كبير من الأنظمة وأصحاب المصلحة مع الحفاظ على الاستمرارية. اعتمدت على وضوح الملكية، ورسم الاعتماديات، وترتيب الخدمات الحرجة، وتوحيد نهج التكامل والحوكمة، واستخدام البيانات لدعم القرار الإداري. هذه الخبرة علمتني إدارة التغيير على مستوى محفظة كاملة وليس تحسين نظام منفرد.
+
+------------------------------
+
+Question 4.
+How do you translate business strategy into an enterprise architecture roadmap?
+
+Answer in English.
+I start with business capabilities, strategic outcomes and measurable pain points rather than technologies. I map the current state across applications, data, integration and infrastructure, then identify capability gaps and constraints. From there I define target-state principles and transition architectures, prioritize initiatives by value, risk, dependency and feasibility, and turn them into a sequenced roadmap. Each initiative needs an owner, measurable outcome and architecture guardrails. The roadmap must remain a living management tool, not a static diagram.
+
+الإجابة بالعربية.
+أبدأ بقدرات الأعمال والنتائج الاستراتيجية ونقاط الألم القابلة للقياس، وليس بالتقنيات. أرسم الوضع الحالي للتطبيقات والبيانات والتكامل والبنية التحتية، ثم أحدد فجوات القدرات والقيود. بعدها أضع مبادئ الحالة المستهدفة ومعماريات الانتقال، وأرتب المبادرات حسب القيمة والمخاطر والاعتماديات وقابلية التنفيذ، ثم أحولها إلى خارطة طريق متسلسلة. كل مبادرة يجب أن يكون لها مالك ونتيجة قابلة للقياس وضوابط معمارية. خارطة الطريق يجب أن تكون أداة إدارة حية وليست رسمًا ثابتًا.
+
+------------------------------
+
+Question 5.
+How do you assess an enterprise architecture landscape you have just inherited?
+
+Answer in English.
+I build a fact-based baseline. I inventory business capabilities, applications, interfaces, data domains, infrastructure, cloud services, vendors, technical debt, security risks and lifecycle status. I then map dependencies and criticality and validate the picture with business and technical owners. The output is a heatmap of risk and value, not just a system list. That gives leadership a clear view of what must be stabilized, modernized, integrated, consolidated or retired.
+
+الإجابة بالعربية.
+أبني خط أساس قائمًا على حقائق. أحصر قدرات الأعمال، والتطبيقات، والواجهات، ومجالات البيانات، والبنية التحتية، والخدمات السحابية، والموردين، والدين التقني، والمخاطر الأمنية، وحالة دورة الحياة. ثم أرسم الاعتماديات والأهمية وأتحقق من الصورة مع ملاك الأعمال والتقنية. الناتج يكون خريطة للمخاطر والقيمة، وليس مجرد قائمة أنظمة. وهذا يوضح ما يجب تثبيته أو تحديثه أو دمجه أو توحيده أو إيقافه.
+
+------------------------------
+
+Question 6.
+How do you decide what to modernize, replace, consolidate or retire?
+
+Answer in English.
+I use agreed criteria: business value, operational criticality, security exposure, reliability, maintainability, integration complexity, vendor viability, cost, data portability and strategic fit. A system should not be replaced simply because it is old. If it is stable and valuable, modernization may be enough. If it duplicates capabilities or creates disproportionate risk and cost, consolidation or replacement becomes stronger. Retirement happens only after dependencies, data retention and business continuity are addressed.
+
+الإجابة بالعربية.
+أستخدم معايير متفقًا عليها: قيمة الأعمال، والأهمية التشغيلية، والمخاطر الأمنية، والموثوقية، وقابلية الصيانة، وتعقيد التكامل، واستدامة المورد، والتكلفة، وإمكانية نقل البيانات، والتوافق الاستراتيجي. لا أستبدل نظامًا فقط لأنه قديم. إذا كان مستقرًا وذا قيمة فقد يكفي تحديثه. إذا كان يكرر قدرات أخرى أو يسبب مخاطر وتكلفة غير متناسبة، يصبح التوحيد أو الاستبدال أقوى. ولا يتم الإيقاف إلا بعد معالجة الاعتماديات والاحتفاظ بالبيانات والاستمرارية.
+
+------------------------------
+
+Question 7.
+What architecture governance model do you prefer?
+
+Answer in English.
+I prefer lightweight but enforceable governance. Architecture principles should be clear, decision rights explicit and major changes reviewed through a practical architecture board or equivalent process. Standards should cover integration, identity, security, data, cloud and lifecycle. I avoid governance that becomes bureaucracy; the purpose is to improve decision quality, reduce duplication and make exceptions visible and accountable. Exceptions should be documented, time-bound and reviewed.
+
+الإجابة بالعربية.
+أفضل حوكمة خفيفة لكنها قابلة للتنفيذ. يجب أن تكون مبادئ المعمارية واضحة، وحقوق اتخاذ القرار محددة، والتغييرات الكبرى تمر بمراجعة معمارية عملية. تغطي المعايير التكامل والهوية والأمن والبيانات والسحابة ودورة الحياة. أتجنب أن تتحول الحوكمة إلى بيروقراطية؛ هدفها رفع جودة القرار وتقليل التكرار وجعل الاستثناءات واضحة ومسؤولة. ويجب توثيق الاستثناءات وتحديد مدتها ومراجعتها.
+
+------------------------------
+
+Question 8.
+Tell me about a complex integration landscape you designed or managed.
+
+Answer in English.
+I have worked extensively with enterprise and government systems where multiple platforms needed to exchange identity, operational, transactional and reporting data. My approach is to define system-of-record ownership first, then interface contracts, security, transformation rules, error handling, retries, monitoring and reconciliation. I also make support ownership explicit because many integration failures are organizational rather than technical. The goal is traceable, observable and recoverable integration rather than point-to-point connections that nobody truly owns.
+
+الإجابة بالعربية.
+عملت كثيرًا مع أنظمة مؤسسية وحكومية تتبادل بيانات الهوية والعمليات والمعاملات والتقارير. أبدأ بتحديد النظام الرسمي لكل نوع من البيانات، ثم عقود الواجهات، والأمن، وقواعد التحويل، وإدارة الأخطاء، وإعادة المحاولة، والمراقبة، والتسويات. كما أوضح ملكية الدعم لأن كثيرًا من مشاكل التكامل تنظيمية وليست تقنية فقط. الهدف هو تكامل قابل للتتبع والمراقبة والاستعادة، وليس وصلات point-to-point لا يملكها أحد فعليًا.
+
+------------------------------

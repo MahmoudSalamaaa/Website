@@ -1,0 +1,19 @@
+{
+  "specialized_card_count": 9,
+  "specialized_roles": [
+    "it-information-systems",
+    "software-dev-delivery",
+    "enterprise-architect",
+    "solution-architect",
+    "it-program-delivery",
+    "digital-transformation",
+    "cto-it-director",
+    "business-analysis",
+    "product-delivery"
+  ],
+  "canonical_total_including_universal": 10,
+  "no_duplicate_role_keys": true,
+  "universal_title": "Technology Executive · Universal",
+  "exact_frozen_folder_link_present": true,
+  "legacy_standalone_cards_absent": true
+}

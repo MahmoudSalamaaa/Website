@@ -9,6 +9,11 @@
       "source": "/togaf/cgi-bin/:path*",
       "destination": "/404.html",
       "permanent": false
+    },
+    {
+      "source": "/articles/from-digital-projects-to-institutional-capability.html",
+      "destination": "/articles/from-digital-projects-to-institutional-capability/",
+      "permanent": true
     }
   ],
   "headers": [

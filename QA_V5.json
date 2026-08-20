@@ -1,0 +1,15 @@
+{
+  "version": "V5",
+  "date": "2026-08-19",
+  "design_changed": false,
+  "waca_shared_file": "waca/assets/js/common.js",
+  "fixes": [
+    "safe local/session behavior when localStorage is blocked",
+    "language button state synchronization",
+    "theme button state and accessible labels",
+    "mobile menu aria-expanded/aria-label synchronization",
+    "Escape returns focus to menu button",
+    "desktop resize closes stale mobile navigation state",
+    "source-level noindex helper for all WACA HTML pages"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "version": "V6-mobile-ready",
+  "generated": "2026-08-19",
+  "requires_local_commands": false,
+  "requires_desktop": false,
+  "requires_node": false,
+  "requires_powershell": false,
+  "design_changed": false,
+  "overlay_files": [
+    "MOBILE_DEPLOY_GUIDE.md",
+    ".vercelignore",
+    "vercel.json",
+    "articles/index.html",
+    "articles/from-digital-projects-to-institutional-capability.html",
+    "waca/assets/js/common.js",
+    "articles/assets/article.js",
+    "executive-lab/github-profile/README_PROFILE_TEMPLATE.md"
+  ]
+}

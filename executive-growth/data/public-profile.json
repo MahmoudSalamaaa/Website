@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "generated": "2026-08-19",
+  "generated": "2026-08-22",
   "person": {
     "name": "Mahmoud Salama",
     "headline": "Technology & Digital Transformation Executive | Enterprise Architect",
@@ -23,7 +23,6 @@
       "54-person technology organization",
       "7 direct reports",
       "~60K platform users",
-      "~90K facilities/entities",
       "~90K facilities/entities",
       "~300 suppliers"
     ],
@@ -50,7 +49,6 @@
       "summary": "Led and governed enterprise systems supporting procurement, inventory, distribution, supplier interaction, reporting and supply-chain operations.",
       "metrics": [
         "~60K platform users",
-        "~90K facilities/entities",
         "~90K facilities/entities",
         "~300 suppliers"
       ],

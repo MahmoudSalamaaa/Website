@@ -2,12 +2,10 @@
   {
     "id": "mediq",
     "title": "Unified Procurement & Medical Supply Ecosystem",
-    "organization": "UPA · Egypt",
     "scope": "Technology leadership, architecture and governance",
     "summary": "Led and governed enterprise systems supporting procurement, inventory, distribution, supplier interaction, reporting and supply-chain operations.",
     "metrics": [
       "~60K platform users",
-      "~90K facilities/entities",
       "~90K facilities/entities",
       "~300 suppliers"
     ],
@@ -23,12 +21,12 @@
       "procurement",
       "supply chain"
     ],
+    "organization": "UPA · Egypt",
     "source": "/case-studies/"
   },
   {
     "id": "warehouse",
     "title": "Health-Sector Data & Analytics Environment",
-    "organization": "UPA · Egypt",
     "scope": "Enterprise data architecture and analytics leadership",
     "summary": "Designed and governed a cross-institution data environment supporting reporting, analytics, master-data alignment and decision support.",
     "metrics": [
@@ -49,12 +47,12 @@
       "public sector",
       "business intelligence"
     ],
+    "organization": "UPA · Egypt",
     "source": "/case-studies/"
   },
   {
     "id": "oman",
     "title": "Oman Ministry of Education — Educational Portal & Ministry Systems",
-    "organization": "Integral Solutions LLC · Muscat",
     "scope": "Senior hands-on technical contribution",
     "summary": "Contributed to government education platforms and ministry systems across analysis, application and database development, reporting, testing, deployment, releases and production support.",
     "metrics": [
@@ -77,12 +75,12 @@
       "production support",
       "education technology"
     ],
+    "organization": "Integral Solutions LLC · Muscat",
     "source": "/case-studies/"
   },
   {
     "id": "d365",
     "title": "Microsoft Dynamics 365 ERP & CRM Integration",
-    "organization": "UPA · Egypt",
     "scope": "Integration architecture",
     "summary": "Connected procurement, operational, stakeholder, reporting and data platforms with Microsoft Dynamics 365 ERP and CRM using controlled integration patterns.",
     "metrics": [
@@ -103,12 +101,12 @@
       "auditability",
       "vendor governance"
     ],
+    "organization": "UPA · Egypt",
     "source": "/case-studies/"
   },
   {
     "id": "leadership",
     "title": "Technology Organization Leadership",
-    "organization": "UPA · Egypt",
     "scope": "Executive technology leadership",
     "summary": "Leads technology strategy, enterprise systems, software delivery, architecture, data, integration, service operations, governance and modernization.",
     "metrics": [
@@ -124,12 +122,12 @@
       "executive reporting",
       "leadership"
     ],
+    "organization": "UPA · Egypt",
     "source": "/resume.html"
   },
   {
     "id": "adoption",
     "title": "Change, Adoption & Operations",
-    "organization": "UPA · Egypt",
     "scope": "Service and adoption leadership",
     "summary": "Embedded training, service governance, production readiness, continuity, support and operational ownership into transformation delivery.",
     "metrics": [
@@ -147,6 +145,7 @@
       "operations",
       "knowledge transfer"
     ],
+    "organization": "UPA · Egypt",
     "source": "/resume.html"
   }
 ]

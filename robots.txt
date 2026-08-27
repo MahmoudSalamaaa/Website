@@ -1,19 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /docs/
-Disallow: /organizations/
-Disallow: /career-kit/
-Disallow: /waca/
-Disallow: /togaf/
-Disallow: /brand-platform/
-Disallow: /executive-capital/
-Disallow: /executive-lab/
-Disallow: /executive-lab-v2/
-Disallow: /executive-growth/
-Disallow: /executive-os/
-Disallow: /executive-conversion/
-Disallow: /executive-platform/
-Disallow: /links/
-Disallow: /worknomads-interview.html
 
 Sitemap: https://mahmoud-salama.vercel.app/sitemap.xml

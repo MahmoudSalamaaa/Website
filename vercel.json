@@ -1,20 +1,71 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/CVSalama.pdf",
+      "destination": "https://drive.google.com/file/d/1446KDlzDx6oZkSn3uP0Pfv2yd8dligmP/view",
+      "permanent": false
+    },
+    {
+      "source": "/Mahmoud_Salama_Executive_CV_2026.pdf",
+      "destination": "https://drive.google.com/file/d/1446KDlzDx6oZkSn3uP0Pfv2yd8dligmP/view",
+      "permanent": false
+    },
+    {
+      "source": "/docs/Mahmoud_Salama_CV_CTO_IT_Director_LATEST.pdf",
+      "destination": "https://drive.google.com/file/d/1446KDlzDx6oZkSn3uP0Pfv2yd8dligmP/view",
+      "permanent": false
+    },
+    {
+      "source": "/docs/Mahmoud_Salama_CV_Digital_Transformation_Director_LATEST.pdf",
+      "destination": "https://drive.google.com/file/d/1kzkIZpasIin-eoo7HOyQD7xz1slN_CAi/view",
+      "permanent": false
+    },
+    {
+      "source": "/docs/Mahmoud_Salama_CV_Enterprise_Architect_LATEST.pdf",
+      "destination": "https://drive.google.com/file/d/1kzkIZpasIin-eoo7HOyQD7xz1slN_CAi/view",
+      "permanent": false
+    },
+    {
+      "source": "/docs/Mahmoud_Salama_CV_Software_Development_Manager_LATEST.pdf",
+      "destination": "https://drive.google.com/file/d/1fzrsOfTBxmEjSpOFoTZbxUpEfa2lTE7U/view",
+      "permanent": false
+    },
+    {
+      "source": "/docs/Mahmoud_Salama_CV_Lead_Senior_Business_Analyst_LATEST.pdf",
+      "destination": "https://drive.google.com/file/d/1NATyf5JSpiHv6yOPZ02k89pe2yKqK2Zk/view",
+      "permanent": false
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=()" },
-        { "key": "Content-Security-Policy", "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdn.vercel-insights.com https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; connect-src 'self' https://vitals.vercel-insights.com https://*.vercel-insights.com https://challenges.cloudflare.com; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://challenges.cloudflare.com; upgrade-insecure-requests" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+        }
       ]
     },
     {
       "source": "/api/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "no-store" }
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        }
       ]
     }
   ]

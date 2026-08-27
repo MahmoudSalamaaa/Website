@@ -2,7 +2,7 @@
 README.md
 DEPLOYMENT.md
 
-# Root recovery / QA / patch artifacts are not runtime assets
+# Non-runtime recovery / QA artifacts
 /FULL_*_MANIFEST.json
 /FULL_*_QA*.json
 /QA*.json
@@ -19,12 +19,13 @@ DEPLOYMENT.md
 /_recovery_patches/
 /_source_manifest/
 
-# Local patch helpers are source-control utilities, not public pages
 /docs/website-local-patch/
 /tools/
 /APPLY_V4_SOURCE_CLEANUP.cmd
 /APPLY_V5_SOURCE_CLEANUP.cmd
 
-# Legacy Python CGI analytics are incompatible with the Vercel deployment.
 /togaf/data/
 /togaf/cgi-bin/
+
+# IMPORTANT:
+# index(1).html and CVSalama.pdf MUST be deployed.

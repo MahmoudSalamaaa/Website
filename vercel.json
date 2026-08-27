@@ -1,14 +1,4 @@
 {
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/index(1).html"
-    },
-    {
-      "source": "/index.html",
-      "destination": "/index(1).html"
-    }
-  ],
   "redirects": [
     {
       "source": "/togaf/data/:path*",

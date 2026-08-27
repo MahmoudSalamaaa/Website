@@ -1,10 +1,21 @@
 {
+  "package": "OLD_DESIGN_RESTORE_V2",
   "status": "SOURCE_READY_RUNTIME_PENDING",
-  "json_valid": true,
-  "old_home_unblocked": true,
-  "root_cv_unblocked": true,
-  "home_rewrite_exact_old_file": true,
-  "docs_uses_confirmed_local_files_only": true,
-  "confirmed_local_cv_links_referenced": 14,
-  "production_runtime_test_required_after_upload": true
+  "restoration_mode": "root index.html loads exact repository index(1).html",
+  "does_not_depend_on_vercel_rewrite": true,
+  "vercelignore_blocks_old_design": false,
+  "vercelignore_blocks_root_cv": false,
+  "loader_signature_checks": [
+    "ms-intro",
+    "port_sidebar_wrapper",
+    "port_bannerbg_wrapper",
+    "Tech-OS"
+  ],
+  "direct_copy_fallback_included": true,
+  "assets_expected_existing_in_repo": [
+    "assets/",
+    "images/",
+    "custom.css"
+  ],
+  "post_deploy_runtime_test_required": true
 }

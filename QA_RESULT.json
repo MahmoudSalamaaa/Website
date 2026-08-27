@@ -1,0 +1,10 @@
+{
+  "status": "SOURCE_READY_RUNTIME_PENDING",
+  "json_valid": true,
+  "old_home_unblocked": true,
+  "root_cv_unblocked": true,
+  "home_rewrite_exact_old_file": true,
+  "docs_uses_confirmed_local_files_only": true,
+  "confirmed_local_cv_links_referenced": 14,
+  "production_runtime_test_required_after_upload": true
+}

@@ -18,18 +18,13 @@ DEPLOYMENT.md
 /V*_NOTES.md
 /_recovery_patches/
 /_source_manifest/
-/index(1).html
 
 # Local patch helpers are source-control utilities, not public pages
 /docs/website-local-patch/
 /tools/
 /APPLY_V4_SOURCE_CLEANUP.cmd
-
-# Stale root CV; current role-specific CVs live under /docs/
-/CVSalama.pdf
+/APPLY_V5_SOURCE_CLEANUP.cmd
 
 # Legacy Python CGI analytics are incompatible with the Vercel deployment.
 /togaf/data/
 /togaf/cgi-bin/
-
-/APPLY_V5_SOURCE_CLEANUP.cmd

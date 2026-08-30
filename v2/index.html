@@ -317,12 +317,8 @@ a[data-transition]:hover:after{right:0}
 }
 .page-wipe.go{animation:wipe .6s cubic-bezier(.7,0,.2,1) forwards}
 @keyframes wipe{0%{transform:translateY(100%)}45%{transform:translateY(0)}100%{transform:translateY(-100%)}}
-.progress{
-  position:fixed;top:0;left:0;height:3px;background:var(--gold);width:0;z-index:10000;
-  box-shadow:0 0 18px rgba(244,180,26,.45)
-}
 .floating-signature{
-  position:fixed;right:22px;bottom:18px;z-index:35;padding:9px 12px;border-radius:999px;
+  position:fixed;right:22px;bottom:78px;z-index:35;padding:9px 12px;border-radius:999px;
   background:rgba(255,255,255,.75);backdrop-filter:blur(10px);border:1px solid rgba(7,27,54,.08);
   font:italic 16px Georgia,serif;color:var(--ink);box-shadow:0 8px 25px rgba(7,27,54,.08)
 }
@@ -767,13 +763,8 @@ els.forEach(el=>io.observe(el));</script>
 document.body.classList.add('page-enter');
 requestAnimationFrame(()=>requestAnimationFrame(()=>document.body.classList.add('page-ready')));
 const wipe=document.createElement('div'); wipe.className='page-wipe'; document.body.appendChild(wipe);
-const prog=document.createElement('div'); prog.className='progress'; document.body.appendChild(prog);
 const sig=document.createElement('div'); sig.className='floating-signature'; sig.textContent='Mahmoud Salama'; document.body.appendChild(sig);
 
-window.addEventListener('scroll',()=>{
-  const h=document.documentElement.scrollHeight-innerHeight;
-  prog.style.width=(h>0?(scrollY/h)*100:0)+'%';
-},{passive:true});
 
 document.querySelectorAll('a[href$=".html"]').forEach(a=>{
   a.setAttribute('data-transition','');

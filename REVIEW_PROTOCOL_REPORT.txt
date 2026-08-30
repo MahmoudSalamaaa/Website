@@ -1,0 +1,38 @@
+MAHMOUD SALAMA WEBSITE - STRICT REVIEW PROTOCOL REPORT
+Date: 2026-08-30
+
+1. CONTENT / EVIDENCE AUDIT
+[PASS] No production FHIR claim
+[PASS] No microservices architecture claim
+[PASS] No RabbitMQ/Kafka production claim
+[PASS] No invented RTO/RPO values
+[PASS] GAHAC production not asserted
+[PASS] HMIS production not asserted
+[PASS] ECIC production status present
+[PASS] Blood Bank production status present
+[PASS] FHIR non-production boundary explicit
+
+2. TECHNICAL SITE QA
+[PASS] HTML files checked: 24
+[PASS] Internal link integrity: no broken local links
+[PASS] Titles / meta / canonical checks: clean
+[PASS] JSON-LD syntax: valid
+
+3. BRAND / VISUAL SYSTEM
+[PASS] Site-wide palette follows the original portfolio: navy #123d4a, teal #08777d, gold #dca63a, light background #f6f8f8, soft panel #edf4f5.
+[PASS] Recruiter, case-study, architecture, insight and CV pages share one visual system.
+[PASS] Executive One-Pager rendered and visually inspected as one A4 page with no clipping or overlap.
+
+4. DELIBERATE NON-CLAIMS / CONTROLS
+- No production FHIR implementation claim.
+- No microservices claim.
+- No RabbitMQ/Kafka production claim.
+- No invented RTO/RPO values.
+- ECIC and Blood Bank are the integrations explicitly labeled production-confirmed.
+- HMIS and GAHAC are described as integration/architecture/delivery-governance cases without production status promotion.
+- Personal coding is reserved for the separate production healthcare REST API; team-coded integrations are not represented as personally coded.
+- Recommendations are not fabricated; the data template remains empty until approved quotes are provided.
+- A genuine video is not fabricated; a recording script is provided for later use.
+
+5. RELEASE STATUS
+[PASS] Package is prepared for manual publishing only. No website deployment was performed.

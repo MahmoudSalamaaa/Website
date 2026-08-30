@@ -1,16 +1,17 @@
-MAHMOUD SALAMA WEBSITE UPDATE — 2026-08-22
+MAHMOUD SALAMA - WEBSITE RELEASE PATCH - 30 AUG 2026
 
-FILES
-- index.html                         Main page
-- projects.html                      Selected projects
-- docs/index.html                    Current CV / cover-letter links
-- portfolio.html                     Executive portfolio page
-- case-studies/index.html            Compatibility project route
+This ZIP is an overlay patch for the existing website.
 
-IMPORTANT
-- Nothing has been published or pushed.
-- Google Drive document links were updated to the current 6-CV Career Kit files.
-- Archived/old CV links were not included.
-- The Master Career History is clearly marked internal / not for application submission.
-- Content is aligned to the current CV facts: 18+ years, current official UPA title, modern stack,
-  Dynamics 365 completed integration, Board Member wording, B-READY wording, and confirmed KPIs.
+UPLOAD / REPLACE:
+1. /portfolio.html
+2. /docs/index.html
+3. /docs/Mahmoud_Salama_Executive_Technology_Portfolio.pdf
+4. /docs/cv/ (all five PDF files)
+
+No existing home, experience, recruiter, case-study or asset files need to be deleted.
+The HTML keeps the current navigation paths and site visual language.
+
+IMPORTANT:
+- The five CV PDFs in /docs/cv are the 30 Aug 2026 updated versions.
+- The portfolio PDF is generated from the refreshed portfolio HTML.
+- EVMA was intentionally NOT added as a personal-ownership claim.

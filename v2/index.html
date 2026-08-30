@@ -231,71 +231,7 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;bac
 @media(max-width:900px){.story-head,.about-grid{grid-template-columns:1fr}.story{grid-template-columns:54px 1fr}.story-art{grid-column:1/-1;border-left:0;border-top:1px solid var(--line);min-height:220px}.about-statement h2{font-size:44px}}
 @media(max-width:560px){.story-index{padding-left:16px}.story-content{padding-right:18px}.story-content h3{font-size:34px}}
 </style>
-<style>
-.decisions{padding:96px 0;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.decision-intro{display:grid;grid-template-columns:1fr .9fr;gap:60px;align-items:end;margin-bottom:42px}
-.decision-board{display:grid;grid-template-columns:.9fr 1.1fr;gap:18px}
-.decision-board > button{grid-column:1}
-.decision{
-  border:1px solid var(--line);background:#fbfcfc;border-radius:18px;padding:18px 20px;text-align:left;
-  display:flex;gap:16px;align-items:center;color:var(--ink);cursor:pointer;transition:.25s ease
-}
-.decision span{font-size:11px;color:var(--teal);font-weight:900}
-.decision b{font-size:18px}
-.decision:hover,.decision.active{border-color:#8bd6d2;background:#eefaf8;transform:translateX(4px)}
-.decision-detail{
-  grid-column:2;grid-row:1/5;border-radius:26px;padding:42px;
-  background:linear-gradient(145deg,var(--ink),#0d2c50);color:white;position:relative;overflow:hidden
-}
-.decision-detail:after{
-  content:"";position:absolute;width:260px;height:260px;border:1px solid rgba(255,255,255,.13);
-  border-radius:50%;right:-70px;bottom:-90px;box-shadow:0 0 0 24px rgba(255,255,255,.025),0 0 0 48px rgba(255,255,255,.02)
-}
-.detail-num{font-size:11px;letter-spacing:.16em;color:var(--teal2);font-weight:900}
-.decision-detail h3{font:italic 48px Georgia,serif;margin:60px 0 18px;color:var(--gold);max-width:500px}
-.decision-detail p{font-size:18px;line-height:1.75;color:#d5e0e7;max-width:620px}
 
-.journey{padding:92px 0;background:#fff8e9;border-bottom:1px solid #efe3bf}
-.journey-head{display:grid;grid-template-columns:1fr .9fr;gap:60px;align-items:end}
-.journey-line{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:56px;position:relative}
-.journey-line:before{content:"";position:absolute;top:27px;left:8%;right:8%;height:1px;background:#d9c27c}
-.j-item{position:relative;padding:0 22px 8px;text-align:center}
-.j-item span{
-  position:relative;z-index:2;width:56px;height:56px;border-radius:50%;background:var(--cream);border:2px solid var(--gold);
-  display:grid;place-items:center;margin:0 auto 18px;font-weight:900;font-size:12px
-}
-.j-item b{display:block;font-size:22px;margin-bottom:8px}
-.j-item small{display:block;color:#687480;line-height:1.5}
-
-.notes{padding:96px 0;background:#eef9fb}
-.notes-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:60px}
-.notes-left{position:sticky;top:110px;align-self:start}
-.note-list{display:grid;gap:14px}
-.note{
-  background:white;border:1px solid var(--line);border-radius:22px;padding:28px 30px;transition:.25s ease
-}
-.note:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
-.note-meta{font-size:10px;letter-spacing:.14em;font-weight:900;color:var(--teal)}
-.note h3{font:700 30px/1.15 Georgia,serif;margin:12px 0}
-.note p{color:#596674;line-height:1.65}
-
-.mini-marquee{overflow:hidden;background:var(--gold);color:var(--ink);font-weight:900;letter-spacing:.08em;text-transform:uppercase;font-size:11px}
-.mini-marquee div{white-space:nowrap;padding:11px 0;animation:marquee 24s linear infinite}
-@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-
-@media(max-width:900px){
-  .decision-intro,.journey-head,.notes-grid{grid-template-columns:1fr}
-  .decision-board{grid-template-columns:1fr}
-  .decision-detail{grid-column:1;grid-row:auto;min-height:330px}
-  .journey-line{grid-template-columns:1fr 1fr;gap:30px}
-  .journey-line:before{display:none}
-  .notes-left{position:static}
-}
-@media(max-width:560px){
-  .journey-line{grid-template-columns:1fr}
-  .decision-detail h3{font-size:38px}
-}
-</style>
 <style>
 .proof{padding:96px 0;background:#fdfdf9;border-top:1px solid var(--line)}
 .proof-head{display:grid;grid-template-columns:1fr .9fr;gap:60px;align-items:end;margin-bottom:42px}
@@ -344,11 +280,6 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;bac
 .lens-stage p{font-size:17px;line-height:1.7;color:#566573;max-width:650px}
 .foot-links{display:flex;gap:16px}
 .foot-links a:hover{color:white}
-.cursor-dot{
-  width:10px;height:10px;border-radius:50%;background:var(--gold);position:fixed;left:0;top:0;
-  pointer-events:none;z-index:9999;transform:translate(-50%,-50%);mix-blend-mode:multiply;transition:width .15s,height .15s,opacity .2s
-}
-body.hovering .cursor-dot{width:24px;height:24px;opacity:.45}
 @media(max-width:900px){
   .proof-head,.switchboard-grid{grid-template-columns:1fr}
   .proof-grid{grid-template-columns:1fr 1fr}
@@ -364,20 +295,7 @@ body.hovering .cursor-dot{width:24px;height:24px;opacity:.45}
   .lens-stage h3{font-size:34px}
 }
 </style>
-<style>
-.worlds{padding:96px 0;background:white;border-top:1px solid var(--line)}
-.worlds-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:34px}
-.world{
-  min-height:280px;border-radius:26px;padding:28px;border:1px solid var(--line);position:relative;overflow:hidden;
-  transition:.3s;background:#f8fcfb
-}
-.world:nth-child(2){background:#fff8e9}.world:nth-child(3){background:#eef9fb}.world:nth-child(4){background:var(--ink);color:white}
-.world:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
-.world small{font-weight:900;letter-spacing:.12em;color:var(--teal)}
-.world h3{font:700 38px Georgia,serif;margin:55px 0 10px}.world p{max-width:470px;color:#60707c;line-height:1.6}
-.world:nth-child(4) p{color:#c6d2da}.world:after{content:"↗";position:absolute;right:22px;bottom:20px;width:44px;height:44px;border-radius:50%;background:var(--gold);display:grid;place-items:center;color:var(--ink);font-weight:900}
-@media(max-width:800px){.worlds-grid{grid-template-columns:1fr}}
-</style>
+
 <style id="brand-v2-upgrade">
 :root{
   --ink:#071b36;--teal:#10a6a2;--teal2:#70d9d4;--gold:#f4b41a;
@@ -421,7 +339,6 @@ a[data-transition]:hover:after{right:0}
 .navbar .links a:hover:before{right:0}
 @media(max-width:700px){.floating-signature{display:none}}
 </style>
-
 <meta content="#071b36" name="theme-color"/>
 <meta content="profile" property="og:type"/>
 <meta content="Mahmoud Salama — Technology Systems &amp; Architecture" property="og:title"/>
@@ -437,22 +354,7 @@ img,svg{max-width:100%}
   *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.001ms!important}
 }
 </style>
-<style>
-.hero-constellation{position:relative;min-height:520px;border-radius:34px;background:linear-gradient(145deg,#f7fffe,#fff8e9);border:1px solid var(--line);overflow:hidden;box-shadow:0 24px 70px rgba(7,27,54,.08)}
-.hero-constellation svg{position:absolute;inset:0;width:100%;height:100%}
-.hero-constellation .orbit{fill:none;stroke:#a9d9d5;stroke-width:1.2;stroke-dasharray:7 9;animation:orbitdash 18s linear infinite}
-.hero-constellation .orbit2{fill:none;stroke:#ead597;stroke-width:1}
-.hero-constellation .node{fill:#fff;stroke:#8fcfca;stroke-width:1.2;filter:drop-shadow(0 8px 14px rgba(7,27,54,.08))}
-.hero-constellation .core-node{fill:#071b36}
-.hero-constellation .pulse{transform-origin:center;animation:pulseNode 2.8s ease-in-out infinite}
-.hero-constellation text{font-family:Inter,Segoe UI,Arial,sans-serif}
-.hero-constellation .label{font-size:10px;font-weight:800;letter-spacing:.08em;fill:#45525f}
-.hero-constellation .corelabel{font-family:Georgia,serif;font-style:italic;font-size:26px;font-weight:700;fill:#fff}
-.hero-constellation .line{stroke:#b9dcda;stroke-width:1.2;stroke-dasharray:5 7;animation:flowline 10s linear infinite}
-@keyframes orbitdash{to{stroke-dashoffset:-220}}@keyframes flowline{to{stroke-dashoffset:-160}}@keyframes pulseNode{50%{transform:scale(1.045)}}
-.hero-caption{position:absolute;left:24px;bottom:20px;font-size:10px;font-weight:900;letter-spacing:.14em;color:var(--teal)}
-@media(max-width:900px){.hero-constellation{min-height:420px}}
-</style>
+
 <style id="real-identity-hero">
 .identity-hero{
   position:relative;overflow:hidden;background:
@@ -628,7 +530,7 @@ img,svg{max-width:100%}
 @media(max-width:900px){.gateway-head{grid-template-columns:1fr}.gateway-card.featured,.gateway-card.wide,.gateway-card.small{grid-column:span 6}.secondary-links{grid-template-columns:1fr 1fr}}
 @media(max-width:620px){.home-gateway{padding:54px 0 44px}.gateway-grid{display:grid;grid-template-columns:1fr}.gateway-card.featured,.gateway-card.wide,.gateway-card.small{grid-column:auto;min-height:190px}.secondary-head{display:block}.secondary-links{grid-template-columns:1fr}.home-secondary{padding:48px 0 56px}}
 </style><meta content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"/><link href="https://mahmoud-salama.vercel.app/" rel="canonical"/><link href="site.webmanifest" rel="manifest"/><meta content="https://mahmoud-salama.vercel.app/" property="og:url"/><meta content="https://mahmoud-salama.vercel.app/kms-logo-original.png" property="og:image"/><meta content="Mahmoud Salama — KMS" property="og:image:alt"/><meta content="Mahmoud Salama — Technology Systems &amp; Architecture" name="twitter:title"/><meta content="Mahmoud Salama — Technology &amp; Digital Transformation Executive and Enterprise Architect. Explore selected work, architecture, leadership, experience, writing, CVs and portfolio." name="twitter:description"/><meta content="https://mahmoud-salama.vercel.app/kms-logo-original.png" name="twitter:image"/><script id="site-person-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Mahmoud Salama","url":"https://mahmoud-salama.vercel.app","sameAs":["https://www.linkedin.com/in/mahmoud-salama-30249b34/","https://github.com/MahmoudSalamaaa"],"jobTitle":"Technology & Digital Transformation Executive | Enterprise Architect","address":{"@type":"PostalAddress","addressLocality":"Cairo","addressCountry":"EG"}}</script></head>
-<body><a class="skip-link" href="#main">Skip to content</a><nav aria-label="Primary navigation"><div class="wrap navbar"><a class="mark" href="index.html" style="display:flex;align-items:center;gap:10px"><img alt="KMS" decoding="async" loading="lazy" src="kms-logo-original.png" style="width:50px;height:auto"/><span style="font:700 14px Inter,Segoe UI,Arial,sans-serif;letter-spacing:.11em">MAHMOUD SALAMA</span></a><div class="links"><a href="work.html">Work</a><a href="systems.html">Systems</a><a href="mindset.html">Mindset</a><a href="lab.html">Lab</a><a href="about.html">About</a><a href="notes.html">Notes</a></div><a class="pill" href="contact.html">LET'S BUILD →</a></div></nav><section class="identity-hero" id="main">
+<body><a class="skip-link" href="#main">Skip to content</a><nav aria-label="Primary navigation"><div class="wrap navbar"><a class="mark" href="index.html" style="display:flex;align-items:center;gap:10px"><img alt="KMS" decoding="async" src="kms-logo-original.png" style="width:50px;height:auto"/><span style="font:700 14px Inter,Segoe UI,Arial,sans-serif;letter-spacing:.11em">MAHMOUD SALAMA</span></a><div class="links"><a href="work.html">Work</a><a href="systems.html">Systems</a><a href="mindset.html">Mindset</a><a href="lab.html">Lab</a><a href="about.html">About</a><a href="notes.html">Notes</a></div><a class="pill" href="contact.html">LET'S BUILD →</a></div></nav><section class="identity-hero" id="main">
 <div class="wrap hero-shell">
 <div class="identity-copy">
 <div class="kicker">MAHMOUD SALAMA · TECHNOLOGY &amp; DIGITAL TRANSFORMATION</div>
@@ -641,7 +543,7 @@ img,svg{max-width:100%}
 </div>
 <div aria-label="Mahmoud Salama portrait integrated with the KMS brand mark" class="identity-visual">
 <img alt="" aria-hidden="true" class="identity-logo-ghost" decoding="async" loading="lazy" src="kms-logo-original.png"/>
-<img alt="KMS logo" class="identity-logo" decoding="async" loading="lazy" src="kms-logo-original.png"/>
+<img alt="KMS logo" class="identity-logo" decoding="async" loading="eager" src="kms-logo-original.png"/>
 <svg aria-hidden="true" class="identity-circuit" preserveaspectratio="none" viewbox="0 0 700 690">
 <path d="M640 110 H510 Q480 110 480 140 V190 H400 Q360 190 360 230 V300"></path>
 <path class="gold" d="M680 210 H560 Q530 210 530 240 V340 H450 Q410 340 410 390"></path>
@@ -650,18 +552,16 @@ img,svg{max-width:100%}
 <circle cx="480" cy="190" r="4"></circle><circle cx="530" cy="340" r="4"></circle><circle cx="520" cy="430" r="4"></circle><circle cx="470" cy="530" r="4"></circle>
 </svg>
 <div class="identity-photo-frame"></div>
-<img alt="Mahmoud Salama" class="identity-photo" decoding="async" fetchpriority="high" loading="lazy" src="mahmoud-original.webp"/>
+<img alt="Mahmoud Salama" class="identity-photo" decoding="async" fetchpriority="high" loading="eager" src="mahmoud-original.webp"/>
 <div class="identity-tag">
 <small>PERSONAL BRAND SYSTEM</small>
 <b>Builder → Architect → Executive</b>
 <span>Systems · Decisions · Impact</span>
 </div>
-<div class="hero-logo-badge"><img alt="KMS" decoding="async" loading="lazy" src="kms-logo-original.png"/></div>
+<div class="hero-logo-badge"><img alt="KMS" decoding="async" loading="eager" src="kms-logo-original.png"/></div>
 </div>
 </div>
 </section>
-
-
 <div class="mini-marquee"><div>
 SYSTEMS · DECISIONS · IMPACT · ARCHITECTURE · TRANSFORMATION · OPERATIONS · SYSTEMS · DECISIONS · IMPACT · ARCHITECTURE · TRANSFORMATION · OPERATIONS ·
 </div></div>
@@ -861,17 +761,8 @@ els.forEach(el=>el.classList.add('reveal'));
 const io=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})
 },{threshold:.12});
-els.forEach(el=>io.observe(el));
+els.forEach(el=>io.observe(el));</script>
 
-const blob=document.querySelector('.blob');
-window.addEventListener('mousemove',e=>{
-  if(!blob||window.innerWidth<900)return;
-  const x=(e.clientX/window.innerWidth-.5)*8;
-  const y=(e.clientY/window.innerHeight-.5)*8;
-  blob.style.transform=`rotate(-4deg) translate(${x}px,${y}px)`;
-});
-</script>
-<div class="cursor-dot" id="cursorDot"></div>
 <script id="brand-v2-js">
 document.body.classList.add('page-enter');
 requestAnimationFrame(()=>requestAnimationFrame(()=>document.body.classList.add('page-ready')));

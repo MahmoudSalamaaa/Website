@@ -25,3 +25,14 @@ Mahmoud Salama Brand Experience v13 — Live v2 QA cleanup
 - Optimized About page embedded identity assets
 - Preserved Digital Card design unchanged
 - Revalidated internal links and metadata
+
+
+Mahmoud Salama Brand Experience v14 — Live QA cleanup
+- Based on v13 deployed under /v2/
+- Critical above-the-fold navigation/hero images no longer lazy-loaded
+- Hero portrait uses eager loading + high fetch priority
+- Removed safely-dead homepage legacy CSS for sections no longer rendered
+- Removed obsolete old-hero mousemove code and orphaned cursor element
+- Removed duplicate generic Person JSON-LD from Digital Card
+- Digital Card visual design/content preserved
+- Root canonical URLs intentionally preserved while /v2/ remains staging

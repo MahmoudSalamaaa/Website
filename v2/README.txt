@@ -48,3 +48,16 @@ v16 Homepage Rebuild:
 - Rebuilt Home around visitor value, proof, flagship work, working philosophy and contact.
 - Removed CV/download/admin-style navigation from the homepage experience.
 - All dedicated pages and Digital Card remain unchanged.
+
+v17 — Content Migration + Final Home Cleanup
+- Home: removed inherited legacy CSS/head clutter and aligned SEO description with the visitor-facing homepage.
+- Projects: added selected earlier Oman/Keyframe delivery archive.
+- Decisions: added Scale / Governance / Delivery / Evolution decision lenses.
+- Architecture: added six-layer enterprise blueprint.
+- How I Work: added distilled Technology Operating System.
+- Leadership: added operating-model and governance framing.
+- Speaking & Governance: added selected institutional engagements with conservative wording.
+- Experience: added selected working environments.
+- About: added concise personal/system-thinking context.
+- No skill-percentage bars, old sidebar, intro animation, or homepage CV/download hub were migrated.
+- Digital Card unchanged.

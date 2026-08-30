@@ -1,42 +1,5 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "redirects": [
-    {
-      "source": "/CVSalama.pdf",
-      "destination": "https://drive.google.com/file/d/1446KDlzDx6oZkSn3uP0Pfv2yd8dligmP/view",
-      "permanent": false
-    },
-    {
-      "source": "/Mahmoud_Salama_Executive_CV_2026.pdf",
-      "destination": "https://drive.google.com/file/d/1446KDlzDx6oZkSn3uP0Pfv2yd8dligmP/view",
-      "permanent": false
-    },
-    {
-      "source": "/docs/Mahmoud_Salama_CV_CTO_IT_Director_LATEST.pdf",
-      "destination": "https://drive.google.com/file/d/1446KDlzDx6oZkSn3uP0Pfv2yd8dligmP/view",
-      "permanent": false
-    },
-    {
-      "source": "/docs/Mahmoud_Salama_CV_Digital_Transformation_Director_LATEST.pdf",
-      "destination": "https://drive.google.com/file/d/1kzkIZpasIin-eoo7HOyQD7xz1slN_CAi/view",
-      "permanent": false
-    },
-    {
-      "source": "/docs/Mahmoud_Salama_CV_Enterprise_Architect_LATEST.pdf",
-      "destination": "https://drive.google.com/file/d/1kzkIZpasIin-eoo7HOyQD7xz1slN_CAi/view",
-      "permanent": false
-    },
-    {
-      "source": "/docs/Mahmoud_Salama_CV_Software_Development_Manager_LATEST.pdf",
-      "destination": "https://drive.google.com/file/d/1fzrsOfTBxmEjSpOFoTZbxUpEfa2lTE7U/view",
-      "permanent": false
-    },
-    {
-      "source": "/docs/Mahmoud_Salama_CV_Lead_Senior_Business_Analyst_LATEST.pdf",
-      "destination": "https://drive.google.com/file/d/1NATyf5JSpiHv6yOPZ02k89pe2yKqK2Zk/view",
-      "permanent": false
-    }
-  ],
+  "cleanUrls": false,
   "headers": [
     {
       "source": "/(.*)",
@@ -46,25 +9,25 @@
           "value": "nosniff"
         },
         {
-          "key": "X-Frame-Options",
-          "value": "DENY"
-        },
-        {
           "key": "Referrer-Policy",
           "value": "strict-origin-when-cross-origin"
         },
         {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
           "key": "Permissions-Policy",
-          "value": "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+          "value": "camera=(), microphone=(), geolocation=()"
         }
       ]
     },
     {
-      "source": "/api/(.*)",
+      "source": "/(.*)\\.(css|js|png|jpg|jpeg|webp|svg|pdf)",
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "no-store"
+          "value": "public, max-age=3600, s-maxage=86400"
         }
       ]
     }

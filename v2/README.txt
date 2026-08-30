@@ -1,11 +1,27 @@
-Mahmoud Salama Brand Experience v11 — 2026-08-30
-Base: v10
-Added:
-- Awards & Recognition
-- Speaking & Governance
-- Credentials
-- Downloads Center
-- How I Work
-- Homepage and About integration
-- Current CV and portfolio downloads retained
-Open index.html to preview.
+Mahmoud Salama Brand Experience v12 — Production Candidate
+
+Built from v11 with a final production pass:
+- 30-page information architecture retained without adding new content pages
+- SEO normalization: canonical URLs, descriptions, Open Graph, Twitter metadata
+- Person structured data on Home and Digital Card
+- sitemap.xml, robots.txt, favicon.svg and web manifest
+- Accessibility hardening: skip links, focus behavior and reduced-motion compatibility
+- Responsive and print hardening
+- External-link security normalization
+- Image lazy-loading/decoding improvements where safe
+- Vercel security/cache headers
+- Current CV and portfolio downloads preserved
+- Digital Card preserved as a distinct visual experience
+
+Primary production domain: https://mahmoud-salama.vercel.app
+
+
+Mahmoud Salama Brand Experience v13 — Live v2 QA cleanup
+- Fixed homepage navigation appearing after hero
+- Removed duplicate legacy homepage hero
+- Removed duplicate marquee strip
+- Removed duplicate meta description
+- Replaced repeated base64 hero assets with shared image files for faster HTML delivery
+- Optimized About page embedded identity assets
+- Preserved Digital Card design unchanged
+- Revalidated internal links and metadata

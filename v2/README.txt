@@ -42,3 +42,9 @@ v15 Final Cleanup:
 - Removed duplicate homepage scroll progress implementation.
 - Repositioned floating signature above the Back to Top control.
 - Preserved design, content, Digital Card, SEO, documents and staging canonical behavior.
+
+
+v16 Homepage Rebuild:
+- Rebuilt Home around visitor value, proof, flagship work, working philosophy and contact.
+- Removed CV/download/admin-style navigation from the homepage experience.
+- All dedicated pages and Digital Card remain unchanged.

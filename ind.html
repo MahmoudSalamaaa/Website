@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mahmoud Salama | Technology & Digital Transformation Executive</title>
+  <meta name="description" content="Technology executive and enterprise architect with 18+ years across Egypt and Oman. Leadership across technology strategy, enterprise architecture, national platforms, integration, engineering and operational resilience.">
+  <meta name="author" content="Mahmoud Salama">
+  <link rel="canonical" href="https://mahmoud-salama.vercel.app/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mahmoud Salama | Technology & Digital Transformation Executive">
+  <meta property="og:description" content="Technology strategy, enterprise architecture, transformation and accountable delivery at national and enterprise scale.">
+  <meta property="og:url" content="https://mahmoud-salama.vercel.app/">
+  <meta property="og:image" content="https://mahmoud-salama.vercel.app/assets/og-default.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/site.css">
+  <style>
+    /* Homepage refinement only. Keeps the site's existing palette and shared components. */
+    .home-hero{padding:clamp(4.7rem,8vw,7.4rem) 0 3.6rem;position:relative;overflow:hidden;background:linear-gradient(180deg,#f9fbfb 0%,var(--bg) 100%)}
+    .home-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,119,125,.055) 1px,transparent 1px),linear-gradient(rgba(8,119,125,.045) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(to bottom,rgba(0,0,0,.42),transparent 78%);pointer-events:none}
+    .home-hero:after{content:"";position:absolute;width:620px;height:620px;right:-290px;top:-290px;border-radius:50%;background:radial-gradient(circle,rgba(8,119,125,.14),transparent 67%);pointer-events:none}
+    .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.45fr) minmax(300px,.55fr);gap:clamp(2rem,5vw,5rem);align-items:center}
+    .hero-copy h1{max-width:880px;font-size:clamp(3.1rem,6.2vw,5.9rem)}
+    .hero-copy .lede{max-width:800px;font-size:clamp(1.08rem,1.7vw,1.28rem)}
+    .hero-note{margin-top:1rem;color:var(--muted);font-size:.9rem;max-width:760px}
+    .exec-card{position:relative;padding:1.5rem;border:1px solid var(--line);border-radius:28px;background:rgba(255,255,255,.9);box-shadow:0 26px 60px rgba(18,61,74,.12);backdrop-filter:blur(12px)}
+    .exec-card:before{content:"";display:block;width:54px;height:4px;margin-bottom:1.15rem;border-radius:999px;background:var(--gold)}
+    .exec-card .label{margin:0 0 .55rem;color:var(--teal);font-size:.74rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+    .exec-card h2{font-size:1.7rem;line-height:1.15}
+    .exec-card p{margin:.8rem 0 1rem;color:var(--muted)}
+    .exec-list{display:grid;gap:.65rem;margin-top:1rem}
+    .exec-list div{padding-top:.65rem;border-top:1px solid var(--line)}
+    .exec-list strong{display:block;color:var(--navy);font-size:.86rem}
+    .exec-list span{display:block;color:var(--muted);font-size:.82rem;margin-top:.12rem}
+    .proof-strip{position:relative;z-index:2;margin-top:2.7rem;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--line);border-radius:20px;background:var(--surface);box-shadow:0 14px 36px rgba(18,61,74,.07);overflow:hidden}
+    .proof-cell{padding:1.1rem 1.2rem;border-right:1px solid var(--line)}
+    .proof-cell:last-child{border-right:0}.proof-cell strong{display:block;color:var(--navy);font-size:1.48rem;line-height:1}.proof-cell span{display:block;margin-top:.4rem;color:var(--muted);font-size:.78rem;line-height:1.45}
+    .home-section{padding:clamp(4.5rem,7vw,6.8rem) 0}.intro-grid{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);gap:clamp(2rem,6vw,6rem);align-items:start}.intro-copy{position:sticky;top:108px}.intro-copy h2{font-size:clamp(2.2rem,4vw,3.7rem)}.intro-copy p{color:var(--muted);max-width:480px}.impact-stack{display:grid;gap:.85rem}.impact-item{display:grid;grid-template-columns:96px 1fr;gap:1rem;align-items:start;padding:1.25rem 0;border-top:1px solid var(--line)}.impact-item:last-child{border-bottom:1px solid var(--line)}.impact-index{color:var(--gold);font-size:.75rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.impact-item h3{font-size:1.25rem;margin-bottom:.35rem}.impact-item p{margin:0;color:var(--muted)}
+    .case-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:1rem}.case-feature{grid-column:span 7;padding:1.7rem;border-radius:26px;background:var(--navy);color:#fff;min-height:330px;display:flex;flex-direction:column;justify-content:space-between}.case-feature h3{color:#fff;font-size:clamp(1.8rem,3vw,2.7rem);max-width:620px}.case-feature p{color:#d2e1e3;max-width:650px}.case-feature a{color:#fff;font-weight:850}.case-secondary{grid-column:span 5}.case-mini{height:100%;display:flex;flex-direction:column;justify-content:space-between}.case-mini .kicker{margin-bottom:.6rem}.case-mini h3{font-size:1.35rem}.case-mini a{font-weight:850}.case-row{grid-column:span 6}
+    .role-band{background:var(--surface-soft)}.role-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.role-line{padding:1.35rem;border:1px solid var(--line);border-radius:18px;background:#fff}.role-line .fit{color:var(--teal);font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.1em}.role-line h3{margin:.25rem 0 .45rem}.role-line p{margin:0;color:var(--muted)}
+    .decision-panel{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:2rem;align-items:center}.decision-panel .path{grid-template-columns:1fr;counter-reset:step}.decision-panel .step{display:grid;grid-template-columns:32px 1fr;gap:.8rem;align-items:start}.decision-panel .step:before{margin:0}.decision-copy p{color:#d5e4e6;max-width:520px}.decision-copy h2{max-width:650px}
+    .final-cta{padding:clamp(4.6rem,7vw,6.5rem) 0}.cta-box{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center;padding:clamp(1.8rem,4vw,3rem);border:1px solid var(--line);border-radius:28px;background:#fff;box-shadow:var(--shadow)}.cta-box p{color:var(--muted);margin:.65rem 0 0}.cta-box .actions{justify-content:flex-end;margin-top:0}
+    @media(max-width:980px){.hero-grid,.intro-grid,.decision-panel,.cta-box{grid-template-columns:1fr}.intro-copy{position:static}.proof-strip{grid-template-columns:repeat(2,1fr)}.proof-cell:nth-child(2){border-right:0}.proof-cell:nth-child(-n+2){border-bottom:1px solid var(--line)}.case-feature,.case-secondary,.case-row{grid-column:span 12}.role-grid{grid-template-columns:1fr}.cta-box .actions{justify-content:flex-start}}
+    @media(max-width:650px){.home-hero{padding-top:3.8rem}.proof-strip{grid-template-columns:1fr}.proof-cell,.proof-cell:nth-child(2){border-right:0;border-bottom:1px solid var(--line)}.proof-cell:last-child{border-bottom:0}.impact-item{grid-template-columns:1fr;gap:.35rem}.exec-card{padding:1.25rem}.case-grid{display:grid;grid-template-columns:1fr}.case-feature,.case-secondary,.case-row{grid-column:auto}}
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Mahmoud Salama","url":"https://mahmoud-salama.vercel.app/"},{"@type":"ProfilePage","name":"Mahmoud Salama | Technology & Digital Transformation Executive","url":"https://mahmoud-salama.vercel.app/","description":"Technology executive and enterprise architect with 18+ years across Egypt and Oman.","mainEntity":{"@type":"Person","name":"Mahmoud Salama","url":"https://mahmoud-salama.vercel.app/","jobTitle":"Technology & Digital Transformation Executive | Enterprise Architect","sameAs":["https://www.linkedin.com/in/mahmoud-salama-30249b34"],"email":"mailto:ma7moud.salamaaa@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Cairo","addressCountry":"EG"},"knowsAbout":["Enterprise Architecture","Technology Strategy","Digital Transformation","Enterprise Platforms","Systems Integration","Healthcare Technology","IT Operations","Business Continuity"]}}]}
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/index.html"><span class="brand-mark">MS</span><span>Mahmoud Salama<small>Technology executive</small></span></a>
+    <nav class="links">
+      <a class="active" href="/index.html">Home</a>
+      <a href="/hire-me.html">Recruiters</a>
+      <a href="/experience.html">Experience</a>
+      <a href="/case-studies/">Case Studies</a>
+      <a href="/architecture/">Architecture</a>
+      <a href="/portfolio.html">Portfolio</a>
+      <a href="/insights/">Insights</a>
+      <a href="/docs/">CVs</a>
+      <a class="nav-cta" href="/contact.html" data-track="nav_contact">Contact</a>
+    </nav>
+    <button class="menu" data-menu aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="home-hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Technology strategy · enterprise architecture · transformation</p>
+          <h1>I turn complex technology estates into clear decisions and accountable delivery.</h1>
+          <p class="lede">Technology & Digital Transformation Executive and Enterprise Architect with 18+ years across Egypt and Oman — leading strategy, modernization, integration, engineering and operational resilience in government and healthcare environments.</p>
+          <div class="hero-actions">
+            <a class="button" href="/hire-me.html" data-track="hero_recruiter">Recruiter / Hiring Manager</a>
+            <a class="button outline" href="/case-studies/" data-track="hero_cases">Explore Case Studies</a>
+            <a class="button outline" href="/docs/" data-track="hero_cv">View CVs</a>
+          </div>
+          <p class="hero-note">Best aligned to senior roles spanning Enterprise Architecture, Technology Leadership, Digital Transformation, Platforms and Applications.</p>
+        </div>
+
+        <aside class="exec-card" aria-label="Executive snapshot">
+          <p class="label">Executive snapshot</p>
+          <h2>Strategy to production, with one line of accountability.</h2>
+          <p>My work sits where architecture judgment, organizational leadership and real-world execution meet.</p>
+          <div class="exec-list">
+            <div><strong>Decision ownership</strong><span>Target-state architecture, technology selection, integration, resilience and modernization.</span></div>
+            <div><strong>Leadership scale</strong><span>54-person technology organization with 7 direct reports.</span></div>
+            <div><strong>Operating scope</strong><span>National platforms, enterprise applications, APIs, data, infrastructure and service continuity.</span></div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="proof-strip" aria-label="Selected scale and evidence">
+        <div class="proof-cell"><strong>18+</strong><span>Years across technology, software, architecture and transformation.</span></div>
+        <div class="proof-cell"><strong>EGP 150M</strong><span>Annual IT budget accountability in the current executive scope.</span></div>
+        <div class="proof-cell"><strong>38K+</strong><span>Current MedIQ users in the official operating scale.</span></div>
+        <div class="proof-cell"><strong>~6 months</strong><span>End-to-end MedIQ core replacement through controlled cutover.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section">
+    <div class="container intro-grid">
+      <div class="intro-copy">
+        <p class="eyebrow">Selected impact</p>
+        <h2>Executive scope, demonstrated through delivery.</h2>
+        <p>The strongest evidence is not a technology list. It is the quality of decisions made under constraints, the scale of systems governed and the ability to carry them into production safely.</p>
+        <div class="actions"><a class="button outline" href="/experience.html">View career progression</a></div>
+      </div>
+      <div class="impact-stack">
+        <article class="impact-item"><div class="impact-index">01 · Modernization</div><div><h3>National platform replacement</h3><p>Led the end-to-end re-architecture and replacement of MedIQ, balancing continuity, migration, testing, training, performance, security and production readiness.</p></div></article>
+        <article class="impact-item"><div class="impact-index">02 · Integration</div><div><h3>Cross-government healthcare ecosystem</h3><p>Owned architecture and technical governance across integrations spanning ECIC, MoH/HMIS, GAHAC and Blood Bank systems, with production status stated only where confirmed.</p></div></article>
+        <article class="impact-item"><div class="impact-index">03 · Enterprise platforms</div><div><h3>Dynamics 365 integration</h3><p>Completed an EGP 11M integration across procurement, supply, inventory, finance and reporting — combining enterprise architecture, vendor governance and delivery oversight.</p></div></article>
+        <article class="impact-item"><div class="impact-index">04 · Asset intelligence</div><div><h3>242,816 medical devices</h3><p>Designed geographic asset-mapping architecture using MapTiler with GS1 GTIN/GLN-based identification and QR/GPS location workflows across 164 entities.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section tint">
+    <div class="container">
+      <div class="section-head"><div><p class="eyebrow">Flagship case studies</p><h2>See the decisions behind the outcomes.</h2></div><p>Each case focuses on context, constraints, architecture choices, governance and execution — not just the final system.</p></div>
+      <div class="case-grid">
+        <article class="case-feature">
+          <div><span class="kicker">Modernization · National platform</span><h3>MedIQ Core Replacement</h3><p>How a core governmental procurement and supply-chain platform was re-architected and replaced while preserving operational continuity and controlling migration risk.</p></div>
+          <a href="/case-studies/mediq-modernization.html">Read the flagship case study →</a>
+        </article>
+        <article class="card case-secondary case-mini"><div><span class="kicker">Interoperability</span><h3>Cross-Government Healthcare Integration</h3><p>Integration architecture, data flows, technical governance and production boundaries across a multi-entity ecosystem.</p></div><a href="/case-studies/healthcare-integration.html">Read case study →</a></article>
+        <article class="card case-row case-mini"><div><span class="kicker">Workflow governance</span><h3>MedIQ E-Tender</h3><p>Enterprise workflow spanning 10 major steps, 30 operational stages, 15 Chairman approvals and 20+ governed roles.</p></div><a href="/case-studies/e-tender.html">Read case study →</a></article>
+        <article class="card case-row case-mini"><div><span class="kicker">Asset architecture</span><h3>GS1 + Geographic Mapping</h3><p>Standardized medical-asset identification and location architecture using GS1 GTIN/GLN, MapTiler, QR and GPS workflows.</p></div><a href="/case-studies/assets-gs1-mapping.html">Read case study →</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section role-band">
+    <div class="container">
+      <div class="section-head"><div><p class="eyebrow">Role alignment</p><h2>Where this profile is strongest.</h2></div><p>A focused map for recruiters and hiring managers — with a dedicated CV for each major role family.</p></div>
+      <div class="role-grid">
+        <article class="role-line"><div class="fit">Primary fit</div><h3>Enterprise / Solutions Architecture</h3><p>Target-state architecture, modernization, integration, data governance, resilience, TCO and technical decision ownership.</p></article>
+        <article class="role-line"><div class="fit">Primary fit</div><h3>Technology / IT Leadership</h3><p>Technology strategy, operating model, portfolio governance, enterprise platforms, vendors, budgets and multidisciplinary teams.</p></article>
+        <article class="role-line"><div class="fit">Strong fit</div><h3>Digital Transformation / Platform Leadership</h3><p>Modernization programs, enterprise workflow, production transition, cross-functional execution and value realization.</p></article>
+        <article class="role-line"><div class="fit">Strong fit</div><h3>Software & Applications Leadership</h3><p>Engineering governance, APIs, application platforms, SDLC, QA/UAT, release readiness and production support.</p></article>
+      </div>
+      <div class="actions"><a class="button" href="/hire-me.html">Open recruiter view</a><a class="button outline" href="/docs/">Choose the right CV</a></div>
+    </div>
+  </section>
+
+  <section class="home-section dark">
+    <div class="container decision-panel">
+      <div class="decision-copy">
+        <p class="eyebrow gold">How I lead architecture</p>
+        <h2>Pragmatic decisions, not architecture theatre.</h2>
+        <p>Real enterprise environments impose regulatory, budget, vendor, timing and operational constraints. The goal is not the most fashionable architecture; it is the strongest defensible decision that can be delivered and operated.</p>
+        <div class="actions"><a class="button gold" href="/leadership.html">Leadership & decision model</a><a class="button outline" href="/architecture/">Architecture evidence</a></div>
+      </div>
+      <div class="path">
+        <div class="step">Clarify the business outcome, constraints, risk and regulatory requirements.</div>
+        <div class="step">Compare options across architecture, dependencies, lifecycle cost and operational impact.</div>
+        <div class="step">Use a PoC when uncertainty materially affects the decision.</div>
+        <div class="step">Lead implementation, testing, security/performance validation and production readiness.</div>
+        <div class="step">Measure operating evidence and feed it back into the roadmap.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="container">
+      <div class="cta-box">
+        <div><p class="eyebrow">For hiring teams</p><h2>Need the shortest path to fit?</h2><p>The recruiter page maps role families to the most relevant CV, case studies and evidence in one view.</p></div>
+        <div class="actions"><a class="button" href="/hire-me.html" data-track="bottom_recruiter">Recruiter Start Here</a><a class="button outline" href="/contact.html" data-track="bottom_contact">Contact</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h2>Mahmoud Salama</h2><p>Technology & Digital Transformation Executive | Enterprise Architect. Leadership across strategy, architecture, platforms, integration, engineering, resilience and delivery.</p></div>
+      <div><h3>Explore</h3><div class="footer-links"><a href="/hire-me.html">Recruiter start here</a><a href="/case-studies/">Case studies</a><a href="/portfolio.html">Executive portfolio</a><a href="/docs/">CVs & documents</a></div></div>
+      <div><h3>Connect</h3><div class="footer-links"><a href="mailto:ma7moud.salamaaa@gmail.com">ma7moud.salamaaa@gmail.com</a><a href="https://www.linkedin.com/in/mahmoud-salama-30249b34" target="_blank" rel="noopener">LinkedIn</a><a href="tel:+201220156077">+20 122 015 6077</a></div></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Mahmoud Salama</span><span>Executive profile, architecture evidence and selected delivery outcomes.</span></div>
+  </div>
+</footer>
+<script src="/assets/analytics.js"></script>
+<script src="/assets/site.js"></script>
+</body>
+</html>

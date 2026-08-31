@@ -1,7 +1,6 @@
 /* ============================================================
-   V21 SITE POLISH / UX CONTROLLER
-   Consolidates navigation, motion, accessibility and small
-   performance fixes across all V2 pages.
+   V21.2 SITE POLISH / UX CONTROLLER
+   One consolidated controller only.
    ============================================================ */
 (()=>{
   'use strict';
@@ -20,9 +19,6 @@
     doc.head.appendChild(link);
   }
 
-  doc.querySelectorAll('.page-progress').forEach((el,i)=>{ if(i>0) el.remove(); });
-  doc.querySelectorAll('.back-to-top').forEach((el,i)=>{ if(i>0) el.remove(); });
-
   const nav=doc.querySelector('nav');
   const navbar=nav?.querySelector('.navbar');
   const desktopLinks=navbar?.querySelector('.links');
@@ -31,12 +27,9 @@
   if(desktopLinks){
     [...desktopLinks.querySelectorAll('a')].forEach(a=>{
       const href=(a.getAttribute('href')||'').split('#')[0].toLowerCase();
-      if(href===current){
-        a.classList.add('active');
-        a.setAttribute('aria-current','page');
-      } else {
-        a.removeAttribute('aria-current');
-      }
+      a.classList.toggle('active',href===current);
+      if(href===current) a.setAttribute('aria-current','page');
+      else a.removeAttribute('aria-current');
     });
   }
 
@@ -49,7 +42,6 @@
       toggle.innerHTML='<span></span>';
       navbar.appendChild(toggle);
     }
-
     toggle.setAttribute('aria-label','Open navigation');
     toggle.setAttribute('aria-expanded','false');
 
@@ -59,11 +51,9 @@
       menu.className='mobile-menu';
       body.appendChild(menu);
     }
-
-    const menuId='mobile-site-navigation';
-    menu.id=menuId;
+    menu.id='mobile-site-navigation';
     menu.setAttribute('aria-label','Mobile navigation');
-    toggle.setAttribute('aria-controls',menuId);
+    toggle.setAttribute('aria-controls',menu.id);
 
     let inner=menu.querySelector('.mobile-menu-inner');
     if(!inner){
@@ -73,11 +63,7 @@
     }
 
     inner.replaceChildren();
-    [...desktopLinks.querySelectorAll('a')].forEach(a=>{
-      const clone=a.cloneNode(true);
-      inner.appendChild(clone);
-    });
-
+    [...desktopLinks.querySelectorAll('a')].forEach(a=>inner.appendChild(a.cloneNode(true)));
     const cta=navbar.querySelector(':scope > .pill');
     if(cta){
       const clone=cta.cloneNode(true);
@@ -95,7 +81,6 @@
       toggle.setAttribute('aria-label','Open navigation');
       if(restore&&previousFocus===toggle) toggle.focus({preventScroll:true});
     };
-
     const openMenu=()=>{
       previousFocus=doc.activeElement;
       menu.classList.add('open');
@@ -105,37 +90,24 @@
       requestAnimationFrame(()=>focusable()[0]?.focus({preventScroll:true}));
     };
 
-    toggle.addEventListener('click',()=>{
-      menu.classList.contains('open')?closeMenu(false):openMenu();
-    });
-
-    menu.addEventListener('click',e=>{
-      if(e.target.closest('a')) closeMenu(false);
-    });
-
+    toggle.addEventListener('click',()=>menu.classList.contains('open')?closeMenu(false):openMenu());
+    menu.addEventListener('click',e=>{ if(e.target.closest('a')) closeMenu(false); });
     doc.addEventListener('click',e=>{
-      if(menu.classList.contains('open')&&!menu.contains(e.target)&&!toggle.contains(e.target)){
-        closeMenu(false);
-      }
+      if(menu.classList.contains('open')&&!menu.contains(e.target)&&!toggle.contains(e.target)) closeMenu(false);
     });
-
     doc.addEventListener('keydown',e=>{
       if(e.key==='Escape'&&menu.classList.contains('open')){
-        e.preventDefault();
-        closeMenu();
+        e.preventDefault(); closeMenu();
       }
       if(e.key==='Tab'&&menu.classList.contains('open')){
         const items=focusable();
         if(!items.length) return;
-        const first=items[0], last=items[items.length-1];
+        const first=items[0],last=items[items.length-1];
         if(e.shiftKey&&doc.activeElement===first){e.preventDefault();last.focus();}
         else if(!e.shiftKey&&doc.activeElement===last){e.preventDefault();first.focus();}
       }
     });
-
-    addEventListener('resize',()=>{
-      if(innerWidth>1000&&menu.classList.contains('open')) closeMenu(false);
-    },{passive:true});
+    addEventListener('resize',()=>{ if(innerWidth>1000) closeMenu(false); },{passive:true});
   }
 
   let progress=doc.querySelector('.page-progress');
@@ -155,16 +127,12 @@
     back.textContent='↑';
     body.appendChild(back);
   }
-
-  back.addEventListener('click',()=>{
-    scrollTo({top:0,behavior:reduced?'auto':'smooth'});
-  });
+  back.addEventListener('click',()=>scrollTo({top:0,behavior:reduced?'auto':'smooth'}));
 
   let scrollRaf=0;
   const updateScrollUI=()=>{
     const max=Math.max(doc.documentElement.scrollHeight-innerHeight,1);
-    const pct=Math.min(100,Math.max(0,scrollY/max*100));
-    progress.style.width=pct+'%';
+    progress.style.width=Math.min(100,Math.max(0,scrollY/max*100))+'%';
     back.classList.toggle('show',scrollY>720);
     nav?.classList.toggle('is-scrolled',scrollY>14);
 
@@ -173,31 +141,17 @@
       const shift=Math.min(Math.max(scrollY,0),hero.offsetHeight)*.12;
       hero.style.setProperty('--hero-shift',shift+'px');
     }
-
     scrollRaf=0;
   };
-
-  addEventListener('scroll',()=>{
-    if(!scrollRaf) scrollRaf=requestAnimationFrame(updateScrollUI);
-  },{passive:true});
+  addEventListener('scroll',()=>{ if(!scrollRaf) scrollRaf=requestAnimationFrame(updateScrollUI); },{passive:true});
   updateScrollUI();
 
   if(!reduced&&'IntersectionObserver' in window){
     const selectors=[
-      '.v20-section-head',
-      '.v20-map > *',
-      '.v20-blueprint > *',
-      '.v20-decision > *',
-      '.v20-lab-grid > *',
-      '.v20-quote',
-      '.v20-node',
-      '.contact-card',
-      '.v17-card',
-      '.storycard',
-      '.ideacard',
-      '.belief',
-      '.system-detail',
-      '.footer-title'
+      '.v20-section-head','.v20-map > *','.v20-blueprint > *','.v20-decision > *',
+      '.v20-lab-grid > *','.v20-quote','.v20-node','.contact-card',
+      '.v17-card','.storycard','.ideacard','.belief','.system-detail','.footer-title',
+      '.v212-profile-card','.v212-work-card'
     ];
     const items=[...new Set(selectors.flatMap(s=>[...doc.querySelectorAll(s)]))];
     items.forEach((el,index)=>{
@@ -213,12 +167,10 @@
       });
     },{threshold:.08,rootMargin:'0px 0px -6% 0px'});
     items.forEach(el=>observer.observe(el));
-  }else{
-    doc.querySelectorAll('.motion-reveal').forEach(el=>el.classList.add('is-visible'));
   }
 
   if(finePointer&&!reduced){
-    doc.querySelectorAll('.v20-tile,.contact-card,.storycard,.ideacard').forEach(card=>{
+    doc.querySelectorAll('.v20-tile,.contact-card,.storycard,.ideacard,.v212-profile-card,.v212-work-card').forEach(card=>{
       let raf=0;
       card.addEventListener('pointermove',event=>{
         if(raf) return;
@@ -260,29 +212,18 @@
     a.setAttribute('rel',[...rel].join(' '));
   });
 
-  doc.querySelectorAll('a[href^="#chapter"]').forEach((link,index)=>{
-    if(!link.textContent.trim()&&!link.getAttribute('aria-label')){
-      link.setAttribute('aria-label','Go to chapter '+(index+1));
-    }
-  });
-
   const images=[...doc.images];
   let preservedHero=false;
   images.forEach(img=>{
-    const isHero=!!img.closest('.v20-hero,.hero,.pagehero,.about-real-photo')&&!preservedHero&&img.alt;
-    if(isHero){
-      preservedHero=true;
-      img.fetchPriority=img.fetchPriority||'high';
-    }else if(!img.hasAttribute('loading')){
-      img.loading='lazy';
-    }
+    const isHero=!!img.closest('.v20-hero,.hero,.pagehero,.contact-hero,.about-real-photo')&&!preservedHero&&img.alt;
+    if(isHero){ preservedHero=true; img.fetchPriority='high'; }
+    else if(!img.hasAttribute('loading')) img.loading='lazy';
     if(!img.hasAttribute('decoding')) img.decoding='async';
   });
 
   if(matchMedia('(pointer:coarse)').matches) html.classList.add('ux-coarse-pointer');
-
   if(!reduced) requestAnimationFrame(()=>body.classList.add('cinematic-enter'));
 })();
 
-/* V21.1 CONTENT REPOSITIONING */
-(()=>{const s=document.createElement('script');s.src='v21.1-content-positioning.js';s.defer=true;document.head.appendChild(s)})();
+/* V21.2 native-visible content layer */
+(()=>{const s=document.createElement('script');s.src='v21.2-content-positioning.js';s.defer=true;document.head.appendChild(s)})();

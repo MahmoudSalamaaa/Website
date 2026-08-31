@@ -61,3 +61,17 @@ v17 — Content Migration + Final Home Cleanup
 - About: added concise personal/system-thinking context.
 - No skill-percentage bars, old sidebar, intro animation, or homepage CV/download hub were migrated.
 - Digital Card unchanged.
+
+
+v18 — Full Accuracy Protocol Pass
+- Applied Sources → Fact Sheet → Classification → Claim-by-Claim Audit → Structural/Language QA.
+- Evidence baseline: Master Evidence Base (30 Aug 2026), Master Career History (30 Aug 2026), current Executive Technology Portfolio.
+- Restored the missing UPA 2020–2025 General Manager role on Experience.
+- Corrected the official current UPA title on Experience.
+- Qualified healthcare integrations so only ECIC and Blood Bank are labelled production.
+- Reframed central data/AI wording as target architecture / phased roadmap where deployment is not established.
+- Reframed architecture capabilities as target-state scope.
+- Tightened MedIQ positioning to governmental procurement and supply-chain.
+- Added the evidence-supported Manama Health Congress 2022 speaking role.
+- Removed duplicate content blocks introduced during v17 migration.
+- Preserved Digital Card design and current downloadable documents.

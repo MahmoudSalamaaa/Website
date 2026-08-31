@@ -104,3 +104,24 @@ nav.is-scrolled{background:rgba(255,255,255,.94);border-color:rgba(7,27,54,.1);b
 @keyframes orbit-breathe{0%,100%{transform:scale(1);opacity:.7}50%{transform:scale(1.045);opacity:1}}
 @media(hover:hover) and (pointer:fine){.v20-portrait-float{transition:transform .22s ease-out;will-change:transform}}
 @media(prefers-reduced-motion:reduce){.motion-reveal{opacity:1!important;transform:none!important;filter:none!important}.v20-display em,.v20-section-head h2 em,.v20-end h2 em,.v20-orbit{animation:none!important}.v20-btn:after,.pill:after{display:none!important}}
+
+
+/* v20.3 — cinematic hero direction */
+.v20-hero{--hero-shift:0px;isolation:isolate}
+.v20-hero:after{content:"";position:absolute;z-index:0;inset:-20%;pointer-events:none;background:radial-gradient(circle at 74% 34%,rgba(114,221,212,.18),transparent 24%),radial-gradient(circle at 16% 62%,rgba(242,181,29,.1),transparent 22%);filter:blur(10px);animation:hero-ambient 13s ease-in-out infinite alternate}
+.v20-hero>.wrap{position:relative;z-index:2}
+.v20-hero-grid>div:first-child{transform:translate3d(0,calc(var(--hero-shift) * .18),0);will-change:transform}
+.v20-hero-grid>div:last-child{transform:translate3d(0,calc(var(--hero-shift) * -.12),0);will-change:transform}
+.cinematic-enter .v20-hero .v20-kicker{animation:cinema-rise .85s cubic-bezier(.2,.75,.2,1) .08s both}
+.cinematic-enter .v20-hero .v20-display{animation:cinema-rise 1.05s cubic-bezier(.16,.8,.2,1) .18s both}
+.cinematic-enter .v20-hero .v20-copy{animation:cinema-rise .9s cubic-bezier(.2,.75,.2,1) .38s both}
+.cinematic-enter .v20-hero .v20-actions{animation:cinema-rise .85s cubic-bezier(.2,.75,.2,1) .5s both}
+.cinematic-enter .v20-hero-grid>div:last-child{animation:cinema-portrait 1.2s cubic-bezier(.16,.8,.2,1) .22s both}
+.v20-hero .v20-display{position:relative;text-shadow:0 12px 45px rgba(7,27,54,.06)}
+.v20-hero .v20-display:after{content:"";display:block;width:clamp(70px,9vw,130px);height:3px;margin-top:28px;border-radius:999px;background:linear-gradient(90deg,var(--v20-teal),var(--v20-gold));transform-origin:left;animation:cinema-rule 1s cubic-bezier(.2,.8,.2,1) .75s both}
+@keyframes cinema-rise{from{opacity:0;transform:translate3d(0,42px,0);filter:blur(8px)}to{opacity:1;transform:none;filter:none}}
+@keyframes cinema-portrait{from{opacity:0;transform:translate3d(54px,28px,0) scale(.96);filter:blur(10px)}to{opacity:1;transform:translate3d(0,calc(var(--hero-shift) * -.12),0) scale(1);filter:none}}
+@keyframes cinema-rule{from{transform:scaleX(0);opacity:0}to{transform:scaleX(1);opacity:1}}
+@keyframes hero-ambient{from{transform:translate3d(-1.5%,-1%,0) scale(1)}to{transform:translate3d(2%,1.5%,0) scale(1.08)}}
+@media(max-width:650px){.v20-hero:after{inset:-8%;background:radial-gradient(circle at 70% 44%,rgba(114,221,212,.16),transparent 33%)}.v20-hero .v20-display:after{margin-top:20px}}
+@media(prefers-reduced-motion:reduce){.v20-hero:after,.cinematic-enter .v20-hero .v20-kicker,.cinematic-enter .v20-hero .v20-display,.cinematic-enter .v20-hero .v20-copy,.cinematic-enter .v20-hero .v20-actions,.cinematic-enter .v20-hero-grid>div:last-child,.v20-hero .v20-display:after{animation:none!important}.v20-hero-grid>div:first-child,.v20-hero-grid>div:last-child{transform:none!important}}

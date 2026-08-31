@@ -10,13 +10,13 @@ body.v20{background:var(--v20-paper)}
 linear-gradient(90deg,transparent 49.8%,rgba(15,166,160,.06) 50%,transparent 50.2%),
 linear-gradient(rgba(6,26,51,.035) 1px,transparent 1px);background-size:100% 100%,100% 44px}
 .v20-orbit{position:absolute;border:1px solid rgba(15,166,160,.18);border-radius:50%;pointer-events:none}
-.v20-display{font:800 clamp(62px,9.5vw,148px)/.82 Inter,Arial,sans-serif;letter-spacing:-.075em;margin:0}
+.v20-display{font:800 clamp(54px,6.5vw,98px)/.86 Inter,Arial,sans-serif;letter-spacing:-.07em;margin:0}
 .v20-display em{font:italic 400 .9em Georgia,serif;color:var(--v20-teal)}
 .v20-serif{font-family:Georgia,serif}
 .v20-kicker{font-size:10px;font-weight:900;letter-spacing:.18em;text-transform:uppercase;color:var(--v20-teal)}
 .v20-rule{height:1px;background:var(--v20-line)}
-.v20-hero{min-height:82vh;padding:90px 0 70px;display:flex;align-items:center}
-.v20-hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(320px,.75fr);gap:70px;align-items:center}
+.v20-hero{min-height:70vh;padding:54px 0 42px;display:flex;align-items:center}
+.v20-hero-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(340px,.72fr);gap:38px;align-items:center}
 .v20-copy{font-size:18px;line-height:1.75;color:#53616e;max-width:760px}
 .v20-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
 .v20-btn{display:inline-flex;align-items:center;gap:10px;padding:14px 18px;border:1px solid var(--v20-line);border-radius:999px;font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;background:#fff}
@@ -71,7 +71,7 @@ linear-gradient(rgba(6,26,51,.035) 1px,transparent 1px);background-size:100% 100
 .v20-end{padding:110px 0;background:linear-gradient(135deg,#eaf9f7,#fff7e4)}
 .v20-end h2{font:800 clamp(58px,8vw,116px)/.86 Inter,Arial,sans-serif;letter-spacing:-.07em;max-width:1050px;margin:0}.v20-end h2 em{font:italic 400 .9em Georgia,serif;color:var(--v20-teal)}
 @media(max-width:1000px){.v20-hero-grid,.v20-section-head{grid-template-columns:1fr}.v20-impact-grid{grid-template-columns:1fr 1fr}.v20-blueprint{grid-template-columns:repeat(3,1fr)}.v20-flow{grid-template-columns:repeat(5,1fr)}.v20-map{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:auto}.v20-tile.a,.v20-tile.b,.v20-tile.c,.v20-tile.d,.v20-tile.e,.v20-tile.f{grid-column:auto;grid-row:auto;min-height:300px}}
-@media(max-width:650px){.v20-hero{min-height:auto;padding:62px 0}.v20-display{font-size:clamp(54px,16vw,78px)}.v20-impact-grid{grid-template-columns:1fr 1fr}.v20-impact-grid>div{padding:18px 12px!important}.v20-section{padding:74px 0}.v20-blueprint{grid-template-columns:1fr 1fr}.v20-flow{grid-template-columns:1fr 1fr}.v20-decision{grid-template-columns:1fr}.v20-decision>div:nth-child(odd){border-right:0}.v20-lab-grid{grid-template-columns:1fr}.v20-map{grid-template-columns:1fr}}
+@media(max-width:650px){.v20-hero{min-height:auto;padding:40px 0 34px}.v20-display{font-size:clamp(44px,13.5vw,60px)}.v20-impact-grid{grid-template-columns:1fr 1fr}.v20-impact-grid>div{padding:18px 12px!important}.v20-section{padding:74px 0}.v20-blueprint{grid-template-columns:1fr 1fr}.v20-flow{grid-template-columns:1fr 1fr}.v20-decision{grid-template-columns:1fr}.v20-decision>div:nth-child(odd){border-right:0}.v20-lab-grid{grid-template-columns:1fr}.v20-map{grid-template-columns:1fr}}
 
 
 /* v20.1 — responsive and overflow hardening */
@@ -79,22 +79,25 @@ body.v20{max-width:100%;overflow-x:clip}
 body.v20 main,body.v20 section,body.v20 .wrap,.v20-hero-grid>*{min-width:0}
 body.v20 img{max-width:100%;height:auto}
 .v20-hero-grid>div:last-child{width:100%;max-width:100%;overflow:visible}
-.v20-hero-grid>div:last-child>img[alt="Mahmoud Salama"]{display:block;width:auto;max-width:100%;height:auto;max-height:min(590px,72vh);object-fit:contain}
-.v20-hero-grid>div:last-child>img[aria-hidden="true"]{max-width:none}
+.v20-system-portrait{position:relative;min-height:500px;display:grid;place-items:end center;isolation:isolate;overflow:hidden}
+.v20-portrait-cutout{position:absolute;z-index:3;display:block;width:auto;max-width:none;height:455px;max-height:none;bottom:0;left:50%;transform:translateX(-50%) translate3d(var(--portrait-x,0),var(--portrait-y,0),0);object-fit:contain;filter:drop-shadow(0 26px 34px rgba(6,26,51,.17))}
+.v20-organic-blob{position:absolute;z-index:1;width:90%;max-width:none;height:auto;right:5%;top:12%;opacity:.96;pointer-events:none;transform:rotate(-2deg);filter:drop-shadow(0 20px 30px rgba(6,26,51,.09))}
 .v20-tile,.v20-layer,.v20-flow-step,.v20-decision>div{min-width:0;overflow-wrap:anywhere}
 .v20-btn{min-height:44px;text-align:center;justify-content:center}
 @media(max-width:1000px){
 .v20-hero-grid{gap:32px}
-.v20-hero-grid>div:last-child{min-height:clamp(360px,62vw,560px)!important;overflow:hidden}
-.v20-hero-grid>div:last-child>img[alt="Mahmoud Salama"]{max-height:clamp(360px,62vw,540px)!important}
-.v20-hero-grid>div:last-child>img[aria-hidden="true"]{width:100%!important;right:-8%!important;top:3%!important}
+.v20-system-portrait{min-height:clamp(380px,55vw,500px)!important;overflow:hidden}
+.v20-portrait-cutout{height:450px;max-height:none!important;bottom:0}
+.v20-organic-blob{width:88%;right:6%;top:10%}
 }
 @media(max-width:650px){
 .v20-orbit{width:420px!important;height:420px!important;right:-210px!important;top:-150px!important}
-.v20-hero-grid>div:last-child{min-height:350px!important}
-.v20-hero-grid>div:last-child>img[alt="Mahmoud Salama"]{width:100%;max-height:350px!important}
-.v20-hero-grid>div:last-child>img[aria-hidden="true"]{width:94%!important;right:-3%!important}
-.v20-display{font-size:clamp(48px,15vw,68px);line-height:.88}
+.v20-hero-grid{display:flex;flex-direction:column;gap:18px}
+.v20-system-portrait{min-height:280px!important;overflow:hidden}
+.v20-system-portrait{order:-1;width:100%;margin-top:-18px}
+.v20-portrait-cutout{width:auto;height:280px;max-height:none!important;bottom:0}
+.v20-organic-blob{width:82%;right:9%;top:8%;opacity:.94}
+.v20-display{font-size:clamp(43px,13.5vw,58px);line-height:.9}
 .v20-actions{align-items:stretch}
 .v20-actions .v20-btn{flex:1 1 100%}
 .v20-impact-grid>div:nth-child(2n){border-right:0}

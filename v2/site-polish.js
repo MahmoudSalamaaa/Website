@@ -79,10 +79,24 @@
       const box=hero.getBoundingClientRect();
       const x=((event.clientX-box.left)/box.width-.5)*10;
       const y=((event.clientY-box.top)/box.height-.5)*8;
-      portrait.style.transform='translate3d('+x+'px,'+y+'px,0)';
+      portrait.style.setProperty('--portrait-x',x+'px');
+      portrait.style.setProperty('--portrait-y',y+'px');
     },{passive:true});
-    hero.addEventListener('pointerleave',()=>{portrait.style.transform=''});
+    hero.addEventListener('pointerleave',()=>{
+      portrait.style.removeProperty('--portrait-x');
+      portrait.style.removeProperty('--portrait-y');
+    });
   }
+})();
+
+
+(()=>{
+  const chapterLinks=[...document.querySelectorAll('a[href^="#chapter"]')];
+  chapterLinks.forEach((link,index)=>{
+    if(!link.textContent.trim()&&!link.getAttribute('aria-label')){
+      link.setAttribute('aria-label','Go to chapter '+(index+1));
+    }
+  });
 })();
 
 

@@ -125,3 +125,17 @@ nav.is-scrolled{background:rgba(255,255,255,.94);border-color:rgba(7,27,54,.1);b
 @keyframes hero-ambient{from{transform:translate3d(-1.5%,-1%,0) scale(1)}to{transform:translate3d(2%,1.5%,0) scale(1.08)}}
 @media(max-width:650px){.v20-hero:after{inset:-8%;background:radial-gradient(circle at 70% 44%,rgba(114,221,212,.16),transparent 33%)}.v20-hero .v20-display:after{margin-top:20px}}
 @media(prefers-reduced-motion:reduce){.v20-hero:after,.cinematic-enter .v20-hero .v20-kicker,.cinematic-enter .v20-hero .v20-display,.cinematic-enter .v20-hero .v20-copy,.cinematic-enter .v20-hero .v20-actions,.cinematic-enter .v20-hero-grid>div:last-child,.v20-hero .v20-display:after{animation:none!important}.v20-hero-grid>div:first-child,.v20-hero-grid>div:last-child{transform:none!important}}
+
+/* v20.4 — compact shared page openings after live-site audit */
+body:not(.v20) :is(.hero,.pagehero,.contact-hero){min-height:auto!important;padding-block:clamp(58px,6vw,88px)!important}
+body:not(.v20) .display{font-size:clamp(58px,6.8vw,98px)!important;line-height:.9!important;letter-spacing:-.045em!important}
+body:not(.v20) .marquee{min-height:30px;font-size:9px;letter-spacing:.08em}
+@media(min-width:981px){
+body:not(.v20) :is(.hero-grid,.contact-grid){gap:clamp(36px,5vw,72px)!important;align-items:center}
+body:not(.v20) .contact-grid{grid-template-columns:minmax(0,.72fr) minmax(480px,1.28fr)!important}
+}
+@media(max-width:640px){
+body:not(.v20) :is(.hero,.pagehero,.contact-hero){padding-block:38px!important}
+body:not(.v20) .display{font-size:clamp(42px,12vw,56px)!important;line-height:.95!important}
+body:not(.v20) .marquee{display:none}
+}

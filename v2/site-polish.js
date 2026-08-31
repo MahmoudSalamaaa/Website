@@ -84,3 +84,22 @@
     hero.addEventListener('pointerleave',()=>{portrait.style.transform=''});
   }
 })();
+
+
+(()=>{
+  const hero=document.querySelector('.v20-hero');
+  if(!hero) return;
+  const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduced) return;
+  requestAnimationFrame(()=>document.body.classList.add('cinematic-enter'));
+  let heroTick=false;
+  const updateHeroDepth=()=>{
+    const shift=Math.min(Math.max(scrollY,0),hero.offsetHeight)*.22;
+    hero.style.setProperty('--hero-shift',shift+'px');
+    heroTick=false;
+  };
+  addEventListener('scroll',()=>{
+    if(!heroTick){heroTick=true;requestAnimationFrame(updateHeroDepth)}
+  },{passive:true});
+  updateHeroDepth();
+})();

@@ -63,3 +63,14 @@ footer .footer-row{align-items:center}
 .skip-link:focus{transform:none}
 @media(max-width:640px){body{padding-bottom:env(safe-area-inset-bottom)}.hero-actions .btn,.hero-actions .pill{min-height:46px}.foot{gap:16px;flex-wrap:wrap}.foot-links{display:flex;gap:12px;flex-wrap:wrap}}
 @media print{nav,.mobile-menu,.mobile-menu-toggle,.page-progress,.back-to-top,.floating-signature,.cursor-dot,.skip-link{display:none!important}body{background:#fff!important;color:#000!important}.wrap{width:100%!important}}
+
+
+/* v20.1 — shared narrow-screen grid hardening */
+.contact-grid>*{min-width:0}
+.contact-card{grid-template-columns:90px minmax(0,1fr) 36px;max-width:100%}
+.contact-card b{min-width:0;overflow-wrap:anywhere}
+@media(max-width:640px){
+.contact-card{grid-template-columns:1fr 36px;padding:18px;gap:8px 12px}
+.contact-card small{grid-column:1/-1}
+.contact-card b{font-size:clamp(18px,5.8vw,25px)}
+}

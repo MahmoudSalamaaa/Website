@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><title>Decisions — Mahmoud Salama</title><style>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><title>Decisions — Mahmoud Salama</title><style>
 :root{--ink:#071b36;--teal:#10a6a2;--teal2:#70d9d4;--gold:#f4b41a;--cream:#fbfaf4;--paper:#fff;--sky:#eef9fb;--muted:#65717e;--line:#dfe8ea;--shadow:0 22px 70px rgba(7,27,54,.11)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,Segoe UI,Arial,sans-serif;overflow-x:hidden}a{text-decoration:none;color:inherit}.wrap{width:min(1180px,calc(100% - 40px));margin:auto}
 nav{position:sticky;top:0;z-index:50;background:rgba(251,250,244,.9);backdrop-filter:blur(16px);border-bottom:1px solid rgba(7,27,54,.07)}.navbar{height:76px;display:flex;align-items:center;justify-content:space-between}.mark{font:italic 700 34px Georgia,serif;letter-spacing:-2px}.mark i{color:var(--teal);font-style:normal}.links{display:flex;gap:24px;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.links a:hover,.links a.active{color:var(--teal)}.pill{display:inline-flex;padding:13px 18px;border-radius:999px;background:var(--gold);font-size:11px;font-weight:900;letter-spacing:.05em}
@@ -65,7 +63,7 @@ a[data-transition]:hover:after{right:0}
 .navbar .links a:hover:before{right:0}
 @media(max-width:700px){.floating-signature{display:none}}
 </style>
-<meta content="Decisions — Mahmoud Salama. Explore Mahmoud Salama’s selected technology, architecture, transformation and delivery work." name="description"/>
+<meta content="Architecture decision principles: scale, governance, delivery and evolution." name="description"/>
 <meta content="#071b36" name="theme-color"/>
 <meta content="website" property="og:type"/>
 <meta content="Decisions — Mahmoud Salama" property="og:title"/>
@@ -111,56 +109,14 @@ img,svg{max-width:100%}
 @media(max-width:900px){.v17-grid-3{grid-template-columns:1fr 1fr}.v17-flow{grid-template-columns:1fr 1fr 1fr}}
 @media(max-width:640px){.v17-grid-2,.v17-grid-3{grid-template-columns:1fr}.v17-flow{grid-template-columns:1fr 1fr}.v17-block{padding:56px 0}}
 </style>
-</head><body><a class="skip-link" href="#main">Skip to content</a><nav><div class="wrap navbar"><a class="mark" href="index.html" style="display:flex;align-items:center;gap:10px"><img alt="KMS" decoding="async" src="kms-logo-original.png" style="width:50px;height:auto"/><span style="font:700 14px Inter,Segoe UI,Arial,sans-serif;letter-spacing:.11em">MAHMOUD SALAMA</span></a><div class="links"><a href="work.html">Work</a><a href="systems.html">Systems</a><a href="mindset.html">Mindset</a><a href="lab.html">Lab</a><a href="about.html">About</a><a href="notes.html">Notes</a></div><a class="pill" href="contact.html">LET'S BUILD →</a></div></nav><div class="marquee"><div>SYSTEMS · DECISIONS · IMPACT · ARCHITECTURE · TRANSFORMATION · OPERATIONS · SYSTEMS · DECISIONS · IMPACT · ARCHITECTURE · TRANSFORMATION · OPERATIONS · </div></div><section class="hero" id="main"><div class="wrap"><div class="kicker">Decisions</div><h1 class="display">The invisible layer of <em>every system.</em></h1><p class="copy">Technology leadership is a sequence of trade-offs. These are the kinds of decisions I care about.</p></div></section><section class="wrap deck">
-<div class="d reveal"><span>01</span><h2>Replace vs. Refactor</h2><p>When structural constraints block the target state, modernization becomes a transformation problem rather than a code-cleanup exercise.</p></div>
-<div class="d reveal"><span>02</span><h2>Build vs. Buy</h2><p>Evaluate strategic differentiation, institutional capability, TCO, vendor dependency, time, integration and long-term operability — not licensing price alone.</p></div>
-<div class="d reveal"><span>03</span><h2>Centralize vs. Distribute</h2><p>Centralize what needs consistency and governance; distribute what needs domain ownership and speed. The boundary is the architecture decision.</p></div>
-<div class="d reveal"><span>04</span><h2>Resilience vs. Complexity</h2><p>Availability has a cost. Design recovery and failure handling around business criticality rather than adding infrastructure for its own sake.</p></div>
-<div class="d reveal"><span>05</span><h2>Control vs. Usability</h2><p>Security and governance should become part of the workflow. A control that users constantly bypass is an architectural failure signal.</p></div>
-</section>
-<section class="decision-manifesto"><div class="wrap manifesto-grid">
-<div class="manifesto-quote">Good architecture is often the art of saying <span>“not this.”</span></div>
-<div class="manifesto-list">
-<div><b>Not every integration needs to be real-time.</b></div>
-<div><b>Not every platform needs to become microservices.</b></div>
-<div><b>Not every control belongs in a policy document.</b></div>
-<div><b>Not every modernization problem is a cloud problem.</b></div>
+<link href="v20-experience.css" rel="stylesheet"/></head><body class="v20"><a class="skip-link" href="#main">Skip to content</a><nav><div class="wrap navbar"><a class="mark" href="index.html" style="display:flex;align-items:center;gap:10px"><img alt="KMS" decoding="async" src="kms-logo-original.png" style="width:50px;height:auto"/><span style="font:700 14px Inter,Segoe UI,Arial,sans-serif;letter-spacing:.11em">MAHMOUD SALAMA</span></a><div class="links"><a href="work.html">Work</a><a href="systems.html">Systems</a><a href="mindset.html">Mindset</a><a href="lab.html">Lab</a><a href="about.html">About</a><a href="notes.html">Notes</a></div><a class="pill" href="contact.html">LET'S BUILD →</a></div></nav><main id="main">
+<section class="v20-stage v20-hero"><div class="wrap"><div class="v20-kicker">The decision room</div><h1 class="v20-display">Every architecture is a <em>sequence of bets.</em></h1><p class="v20-copy">Make those bets explicit, affordable, reversible where possible, and aligned with institutional purpose.</p></div></section>
+<section class="v20-section"><div class="wrap"><div class="v20-decision">
+<div><small>01 · SCALE</small><h3>Will this survive growth?</h3><p>Prefer modular boundaries and reusable capabilities when scope can expand across entities, users or workflows.</p></div>
+<div><small>02 · GOVERNANCE</small><h3>Can ownership be traced?</h3><p>Approvals, accountability, auditability and separation of duties are architectural concerns.</p></div>
+<div><small>03 · DELIVERY</small><h3>Can value appear early?</h3><p>Favor phased delivery that creates usable value without closing off the target state.</p></div>
+<div><small>04 · EVOLUTION</small><h3>How expensive is change?</h3><p>Reduce lock-in and protect the platform core from avoidable coupling.</p></div>
 </div></div></section>
-<section class="v17-block" id="decision-lenses">
-<div class="wrap">
-<div class="ey">Decision lenses</div>
-<h2>Four questions before <em>the architecture hardens.</em></h2>
-<div class="v17-grid-2">
-<div class="v17-card"><small>SCALE</small><h3>Will this survive growth?</h3><p>Prefer modular boundaries and reusable capabilities when scope can expand across entities, users or workflows.</p></div>
-<div class="v17-card"><small>GOVERNANCE</small><h3>Can ownership be traced?</h3><p>In regulated environments, approvals, accountability, auditability and separation of duties are architectural concerns.</p></div>
-<div class="v17-card"><small>DELIVERY</small><h3>Can value appear early?</h3><p>Favor phased delivery that creates usable value without closing off the long-term target state.</p></div>
-<div class="v17-card"><small>EVOLUTION</small><h3>How expensive is change?</h3><p>Keep change external where possible, reduce lock-in and protect the platform core from avoidable coupling.</p></div>
-</div>
-</div>
-</section>
-<footer id="connect"><div class="wrap"><div class="kicker" style="color:var(--teal2)">What matters next</div><div class="footer-title">Build something that <em>changes how things work.</em></div><div class="footer-row"><span>Mahmoud Salama · Cairo, Egypt</span><span>Systems · Decisions · Impact</span></div></div></footer><script>
-document.querySelectorAll('.reveal').forEach(el=>{const o=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');o.unobserve(x.target)}}),{threshold:.1});o.observe(el)});
-</script>
-<script id="brand-v2-js">
-document.body.classList.add('page-enter');
-requestAnimationFrame(()=>requestAnimationFrame(()=>document.body.classList.add('page-ready')));
-const wipe=document.createElement('div'); wipe.className='page-wipe'; document.body.appendChild(wipe);
-const prog=document.createElement('div'); prog.className='progress'; document.body.appendChild(prog);
-const sig=document.createElement('div'); sig.className='floating-signature'; sig.textContent='Mahmoud Salama'; document.body.appendChild(sig);
-
-window.addEventListener('scroll',()=>{
-  const h=document.documentElement.scrollHeight-innerHeight;
-  prog.style.width=(h>0?(scrollY/h)*100:0)+'%';
-},{passive:true});
-
-document.querySelectorAll('a[href$=".html"]').forEach(a=>{
-  a.setAttribute('data-transition','');
-  a.addEventListener('click',e=>{
-    if(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
-    e.preventDefault();
-    wipe.classList.add('go');
-    setTimeout(()=>location.href=a.href,300);
-  });
-});
-</script>
-<script defer="True" src="site-polish.js"></script></body></html>
+<section class="v20-section v20-dark"><div class="wrap"><div class="v20-quote">“Consensus helps. <em>Accountability decides.</em>”</div><p class="v20-copy" style="color:#bdcad5;margin-top:28px">The objective is not perfect certainty. It is disciplined ownership of trade-offs and consequences.</p></div></section>
+<section class="v20-end"><div class="wrap"><h2>Good decisions make systems <em>easier to change.</em></h2><div class="v20-actions"><a class="v20-btn dark" href="how-i-work.html">See the operating model →</a></div></div></section>
+</main><footer id="connect"><div class="wrap"><div class="kicker" style="color:var(--teal2)">What matters next</div><div class="footer-title">Build something that <em>changes how things work.</em></div><div class="footer-row"><span>Mahmoud Salama · Cairo, Egypt</span><span>Systems · Decisions · Impact</span></div></div></footer><script defer="True" src="site-polish.js"></script></body></html>

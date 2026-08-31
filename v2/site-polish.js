@@ -12,7 +12,6 @@
   const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
   const finePointer=matchMedia('(hover:hover) and (pointer:fine)').matches;
 
-  // Load the V21 stabilization layer after all legacy/page CSS.
   if(!doc.querySelector('link[data-v21-ux]')){
     const link=doc.createElement('link');
     link.rel='stylesheet';
@@ -21,7 +20,6 @@
     doc.head.appendChild(link);
   }
 
-  // Prevent accidental duplicate widgets when older scripts coexist.
   doc.querySelectorAll('.page-progress').forEach((el,i)=>{ if(i>0) el.remove(); });
   doc.querySelectorAll('.back-to-top').forEach((el,i)=>{ if(i>0) el.remove(); });
 
@@ -30,7 +28,6 @@
   const desktopLinks=navbar?.querySelector('.links');
   const current=(location.pathname.split('/').pop()||'index.html').toLowerCase();
 
-  // Active nav + aria-current.
   if(desktopLinks){
     [...desktopLinks.querySelectorAll('a')].forEach(a=>{
       const href=(a.getAttribute('href')||'').split('#')[0].toLowerCase();
@@ -43,7 +40,6 @@
     });
   }
 
-  // Robust accessible mobile navigation.
   if(navbar&&desktopLinks){
     let toggle=navbar.querySelector('.mobile-menu-toggle');
     if(!toggle){
@@ -142,7 +138,6 @@
     },{passive:true});
   }
 
-  // Progress + compact back-to-top.
   let progress=doc.querySelector('.page-progress');
   if(!progress){
     progress=doc.createElement('div');
@@ -173,7 +168,6 @@
     back.classList.toggle('show',scrollY>720);
     nav?.classList.toggle('is-scrolled',scrollY>14);
 
-    // Subtle hero depth only; previous version was visually stronger than needed.
     const hero=doc.querySelector('.v20-hero');
     if(hero&&!reduced){
       const shift=Math.min(Math.max(scrollY,0),hero.offsetHeight)*.12;
@@ -188,7 +182,6 @@
   },{passive:true});
   updateScrollUI();
 
-  // Motion reveal: fewer targets + no blanket animation of every nested item.
   if(!reduced&&'IntersectionObserver' in window){
     const selectors=[
       '.v20-section-head',
@@ -224,7 +217,6 @@
     doc.querySelectorAll('.motion-reveal').forEach(el=>el.classList.add('is-visible'));
   }
 
-  // Pointer spotlight: keep it lightweight and only on large interactive cards.
   if(finePointer&&!reduced){
     doc.querySelectorAll('.v20-tile,.contact-card,.storycard,.ideacard').forEach(card=>{
       let raf=0;
@@ -240,7 +232,6 @@
     });
   }
 
-  // Hero portrait parallax: restrained and desktop-only.
   const portrait=doc.querySelector('.v20-hero .v20-portrait-cutout, .v20-hero img[alt="Mahmoud Salama"]');
   const hero=portrait?.closest('.v20-hero');
   if(portrait&&hero&&finePointer&&!reduced){
@@ -263,7 +254,6 @@
     });
   }
 
-  // Accessibility / semantics / safe external links.
   doc.querySelectorAll('a[target="_blank"]').forEach(a=>{
     const rel=new Set((a.getAttribute('rel')||'').split(/\s+/).filter(Boolean));
     rel.add('noopener'); rel.add('noreferrer');
@@ -276,7 +266,6 @@
     }
   });
 
-  // Images: lazy-load everything except the first meaningful hero image.
   const images=[...doc.images];
   let preservedHero=false;
   images.forEach(img=>{
@@ -290,100 +279,10 @@
     if(!img.hasAttribute('decoding')) img.decoding='async';
   });
 
-  // Mark touch/coarse-pointer environments for CSS hooks if needed.
   if(matchMedia('(pointer:coarse)').matches) html.classList.add('ux-coarse-pointer');
 
-  // Entry class for intentionally subtle first-paint animation.
   if(!reduced) requestAnimationFrame(()=>body.classList.add('cinematic-enter'));
 })();
 
-
-(()=>{
-  const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const nav=document.querySelector('nav');
-  let scrollTick=false;
-  const updateNav=()=>{
-    nav?.classList.toggle('is-scrolled',scrollY>18);
-    scrollTick=false;
-  };
-  addEventListener('scroll',()=>{if(!scrollTick){scrollTick=true;requestAnimationFrame(updateNav)}},{passive:true});
-  updateNav();
-  if(reduced) return;
-
-  const selectors=[
-    '.v20-hero .v20-kicker','.v20-hero .v20-display','.v20-hero .v20-copy','.v20-hero .v20-actions',
-    '.v20-section-head > *','.v20-map > *','.v20-blueprint > *','.v20-decision > *',
-    '.v20-lab-grid > *','.v20-quote','.v20-section > .wrap > .v20-copy',
-    '.v20-section > .wrap > .v20-actions','.contact-grid > *','.contact-card',
-    '.footer-title','.footer-nav'
-  ];
-  const revealItems=[...new Set(selectors.flatMap(selector=>[...document.querySelectorAll(selector)]))];
-  revealItems.forEach((item,index)=>{
-    item.classList.add('motion-reveal');
-    item.style.setProperty('--reveal-delay',Math.min(index%6,5)*70+'ms');
-  });
-  const observer=new IntersectionObserver(entries=>{
-    entries.forEach(entry=>{
-      if(entry.isIntersecting){
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  },{threshold:.08,rootMargin:'0px 0px -7% 0px'});
-  revealItems.forEach(item=>observer.observe(item));
-
-  const interactive=document.querySelectorAll('.v20-tile,.contact-card,.card,.tile');
-  interactive.forEach(card=>{
-    card.addEventListener('pointermove',event=>{
-      const box=card.getBoundingClientRect();
-      card.style.setProperty('--pointer-x',event.clientX-box.left+'px');
-      card.style.setProperty('--pointer-y',event.clientY-box.top+'px');
-    },{passive:true});
-  });
-
-  const portrait=document.querySelector('.v20-hero img[alt="Mahmoud Salama"]');
-  const hero=portrait?.closest('.v20-hero');
-  if(portrait&&hero&&matchMedia('(hover:hover) and (pointer:fine)').matches){
-    portrait.classList.add('v20-portrait-float');
-    hero.addEventListener('pointermove',event=>{
-      const box=hero.getBoundingClientRect();
-      const x=((event.clientX-box.left)/box.width-.5)*10;
-      const y=((event.clientY-box.top)/box.height-.5)*8;
-      portrait.style.setProperty('--portrait-x',x+'px');
-      portrait.style.setProperty('--portrait-y',y+'px');
-    },{passive:true});
-    hero.addEventListener('pointerleave',()=>{
-      portrait.style.removeProperty('--portrait-x');
-      portrait.style.removeProperty('--portrait-y');
-    });
-  }
-})();
-
-
-(()=>{
-  const chapterLinks=[...document.querySelectorAll('a[href^="#chapter"]')];
-  chapterLinks.forEach((link,index)=>{
-    if(!link.textContent.trim()&&!link.getAttribute('aria-label')){
-      link.setAttribute('aria-label','Go to chapter '+(index+1));
-    }
-  });
-})();
-
-
-(()=>{
-  const hero=document.querySelector('.v20-hero');
-  if(!hero) return;
-  const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if(reduced) return;
-  requestAnimationFrame(()=>document.body.classList.add('cinematic-enter'));
-  let heroTick=false;
-  const updateHeroDepth=()=>{
-    const shift=Math.min(Math.max(scrollY,0),hero.offsetHeight)*.22;
-    hero.style.setProperty('--hero-shift',shift+'px');
-    heroTick=false;
-  };
-  addEventListener('scroll',()=>{
-    if(!heroTick){heroTick=true;requestAnimationFrame(updateHeroDepth)}
-  },{passive:true});
-  updateHeroDepth();
-})();
+/* V21.1 CONTENT REPOSITIONING */
+(()=>{const s=document.createElement('script');s.src='v21.1-content-positioning.js';s.defer=true;document.head.appendChild(s)})();

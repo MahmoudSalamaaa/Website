@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#07111f" />
+  <meta name="description" content="Live job application tracker powered by Google Sheets." />
+  <title>Job Application Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="bg-orb bg-orb-a"></div>
+  <div class="bg-orb bg-orb-b"></div>
+
+  <main class="shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">CAREER PIPELINE</span>
+        <h1>Job Application Tracker</h1>
+        <p>Live applications, recruiter progress, interviews and outcomes — powered by Google Sheets.</p>
+      </div>
+
+      <div class="live-chip" title="Data is loaded from the Google Sheet">
+        <span class="pulse-dot"></span>
+        Live data
+      </div>
+    </header>
+
+    <section class="stats" aria-label="Application statistics">
+      <article class="stat-card">
+        <div class="stat-icon">◎</div>
+        <div><span>Total applications</span><strong id="statTotal">—</strong></div>
+      </article>
+      <article class="stat-card">
+        <div class="stat-icon">↗</div>
+        <div><span>Active / progressing</span><strong id="statActive">—</strong></div>
+      </article>
+      <article class="stat-card">
+        <div class="stat-icon">◆</div>
+        <div><span>Interviews</span><strong id="statInterviews">—</strong></div>
+      </article>
+      <article class="stat-card">
+        <div class="stat-icon">◉</div>
+        <div><span>Markets</span><strong id="statMarkets">—</strong></div>
+      </article>
+    </section>
+
+    <section class="toolbar">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/>
+        </svg>
+        <input id="searchInput" type="search" placeholder="Search company, role, location, notes…" autocomplete="off">
+        <kbd>/</kbd>
+      </div>
+
+      <div class="filter-row">
+        <select id="statusFilter" aria-label="Status">
+          <option value="">All statuses</option>
+        </select>
+        <select id="locationFilter" aria-label="Location">
+          <option value="">All locations</option>
+        </select>
+        <select id="channelFilter" aria-label="Channel">
+          <option value="">All channels</option>
+        </select>
+        <select id="sortSelect" aria-label="Sort">
+          <option value="date-desc">Newest first</option>
+          <option value="date-asc">Oldest first</option>
+          <option value="company-asc">Company A–Z</option>
+          <option value="status-asc">Status A–Z</option>
+        </select>
+        <button id="resetButton" class="ghost-button" type="button">Reset</button>
+      </div>
+
+      <div class="toolbar-footer">
+        <div><strong id="resultCount">0</strong> matching applications</div>
+        <div id="syncText">Connecting to Google Sheets…</div>
+      </div>
+    </section>
+
+    <section class="status-section">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">PIPELINE</span>
+          <h2>Applications</h2>
+        </div>
+      </div>
+
+      <div id="loadingState" class="state-panel">
+        <span class="loader"></span>
+        <p>Loading the latest applications…</p>
+      </div>
+
+      <div id="errorState" class="state-panel error-panel" hidden>
+        <div class="error-symbol">!</div>
+        <h3>Live sheet is not publicly readable yet</h3>
+        <p id="errorMessage">Publish the Applications tab or enable public link access, then refresh.</p>
+        <button id="retryButton" type="button">Retry</button>
+      </div>
+
+      <div id="emptyState" class="state-panel" hidden>
+        <h3>No matching applications</h3>
+        <p>Try clearing one or more filters.</p>
+      </div>
+
+      <div id="cardsGrid" class="cards-grid" hidden></div>
+    </section>
+
+    <footer class="footer">
+      <span>Job Application Tracker</span>
+      <span id="footerTimestamp"></span>
+    </footer>
+  </main>
+
+  <template id="cardTemplate">
+    <article class="app-card">
+      <div class="card-head">
+        <span class="status-badge"></span>
+        <time class="date"></time>
+      </div>
+
+      <div class="company-block">
+        <div class="company-mark"></div>
+        <div>
+          <h3 class="company"></h3>
+          <p class="role"></p>
+        </div>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta">
+          <span>Location</span>
+          <strong class="location"></strong>
+        </div>
+        <div class="meta">
+          <span>Channel</span>
+          <strong class="channel"></strong>
+        </div>
+        <div class="meta">
+          <span>Last update</span>
+          <strong class="last-update"></strong>
+        </div>
+        <div class="meta">
+          <span>Evidence</span>
+          <strong class="evidence"></strong>
+        </div>
+      </div>
+
+      <p class="notes"></p>
+
+      <div class="card-actions">
+        <span class="ref-id"></span>
+        <a class="source-link" target="_blank" rel="noopener noreferrer">View source ↗</a>
+      </div>
+    </article>
+  </template>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>

@@ -63,3 +63,22 @@ footer .footer-row{align-items:center}
 .skip-link:focus{transform:none}
 @media(max-width:640px){body{padding-bottom:env(safe-area-inset-bottom)}.hero-actions .btn,.hero-actions .pill{min-height:46px}.foot{gap:16px;flex-wrap:wrap}.foot-links{display:flex;gap:12px;flex-wrap:wrap}}
 @media print{nav,.mobile-menu,.mobile-menu-toggle,.page-progress,.back-to-top,.floating-signature,.cursor-dot,.skip-link{display:none!important}body{background:#fff!important;color:#000!important}.wrap{width:100%!important}}
+
+/* V21.4 — compact, consistent mobile openings across v2 */
+body:not(.v20) :is(.hero,.pagehero,.contact-hero){min-height:auto!important;padding-block:clamp(58px,6vw,86px)!important}
+@media(max-width:640px){
+  body:not(.v20) :is(.hero,.pagehero,.contact-hero){padding-block:36px!important}
+  body.v20 .v20-hero{padding:24px 0 30px!important}
+  body.v20 .v20-display{font-size:clamp(36px,10.6vw,46px)!important;line-height:.94!important}
+  body.v20 .v20-copy{font-size:14.5px!important;line-height:1.58!important}
+  body.v20 .v20-actions{margin-top:22px!important}
+  body.v20 .v20-actions .v20-btn{min-height:46px!important;padding:13px 16px!important}
+  .marquee,.mini-marquee{display:none!important}
+  .contact-grid{gap:28px!important}
+  .contact-card{grid-template-columns:minmax(0,1fr) 36px!important;padding:18px 16px!important;gap:12px!important}
+  .contact-card small{grid-column:1/-1}
+  .contact-card b{font-size:clamp(16px,4.45vw,18px)!important;letter-spacing:-.015em;overflow-wrap:anywhere;word-break:normal}
+  .contact-card[href^="mailto:"] b{font-size:14.5px!important;letter-spacing:-.02em;white-space:nowrap}
+  .contact-card i{grid-column:2;grid-row:2}
+  .hero-grid,.about-grid,.story-head{gap:28px!important}
+}

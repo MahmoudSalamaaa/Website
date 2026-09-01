@@ -1,77 +1,24 @@
-Mahmoud Salama Brand Experience v12 — Production Candidate
+MAHMOUD SALAMA — V2 FULL REPLACEMENT — V21.3
+================================================
 
-Built from v11 with a final production pass:
-- 30-page information architecture retained without adding new content pages
-- SEO normalization: canonical URLs, descriptions, Open Graph, Twitter metadata
-- Person structured data on Home and Digital Card
-- sitemap.xml, robots.txt, favicon.svg and web manifest
-- Accessibility hardening: skip links, focus behavior and reduced-motion compatibility
-- Responsive and print hardening
-- External-link security normalization
-- Image lazy-loading/decoding improvements where safe
-- Vercel security/cache headers
-- Current CV and portfolio downloads preserved
-- Digital Card preserved as a distinct visual experience
+THIS IS A COMPLETE /v2/ REPLACEMENT FOLDER.
 
-Primary production domain: https://mahmoud-salama.vercel.app
+DEPLOY:
+1. Delete the existing /v2/ folder from the repository.
+2. Upload the entire new /v2/ folder exactly as provided.
+3. Do NOT merge with old v21.1/v21.2 runtime content patches.
+4. Commit and wait for Vercel Production deployment.
 
+V21.3:
+- Native HTML positioning (no runtime content rewrite).
+- Static SEO/metadata updated on the seven main pages.
+- Unsupported tenure/budget claims from older material are intentionally excluded.
+- Verified MedIQ scale retained: 38K+ users / 11K+ healthcare facilities.
+- AI/Data language distinguishes current analytics from roadmap capabilities.
+- Architecture is positioned as a capability within broader technology leadership.
+- Consolidated UX controller.
+- v21-ui-ux.css retained.
 
-Mahmoud Salama Brand Experience v13 — Live v2 QA cleanup
-- Fixed homepage navigation appearing after hero
-- Removed duplicate legacy homepage hero
-- Removed duplicate marquee strip
-- Removed duplicate meta description
-- Replaced repeated base64 hero assets with shared image files for faster HTML delivery
-- Optimized About page embedded identity assets
-- Preserved Digital Card design unchanged
-- Revalidated internal links and metadata
-
-
-Mahmoud Salama Brand Experience v15 — Live QA cleanup
-- Based on v13 deployed under /v2/
-- Critical above-the-fold navigation/hero images no longer lazy-loaded
-- Hero portrait uses eager loading + high fetch priority
-- Removed safely-dead homepage legacy CSS for sections no longer rendered
-- Removed obsolete old-hero mousemove code and orphaned cursor element
-- Removed duplicate generic Person JSON-LD from Digital Card
-- Digital Card visual design/content preserved
-- Root canonical URLs intentionally preserved while /v2/ remains staging
-
-
-v15 Final Cleanup:
-- Removed duplicate homepage scroll progress implementation.
-- Repositioned floating signature above the Back to Top control.
-- Preserved design, content, Digital Card, SEO, documents and staging canonical behavior.
-
-
-v16 Homepage Rebuild:
-- Rebuilt Home around visitor value, proof, flagship work, working philosophy and contact.
-- Removed CV/download/admin-style navigation from the homepage experience.
-- All dedicated pages and Digital Card remain unchanged.
-
-v17 — Content Migration + Final Home Cleanup
-- Home: removed inherited legacy CSS/head clutter and aligned SEO description with the visitor-facing homepage.
-- Projects: added selected earlier Oman/Keyframe delivery archive.
-- Decisions: added Scale / Governance / Delivery / Evolution decision lenses.
-- Architecture: added six-layer enterprise blueprint.
-- How I Work: added distilled Technology Operating System.
-- Leadership: added operating-model and governance framing.
-- Speaking & Governance: added selected institutional engagements with conservative wording.
-- Experience: added selected working environments.
-- About: added concise personal/system-thinking context.
-- No skill-percentage bars, old sidebar, intro animation, or homepage CV/download hub were migrated.
-- Digital Card unchanged.
-
-
-v18 — Full Accuracy Protocol Pass
-- Applied Sources → Fact Sheet → Classification → Claim-by-Claim Audit → Structural/Language QA.
-- Evidence baseline: Master Evidence Base (30 Aug 2026), Master Career History (30 Aug 2026), current Executive Technology Portfolio.
-- Restored the missing UPA 2020–2025 General Manager role on Experience.
-- Corrected the official current UPA title on Experience.
-- Qualified healthcare integrations so only ECIC and Blood Bank are labelled production.
-- Reframed central data/AI wording as target architecture / phased roadmap where deployment is not established.
-- Reframed architecture capabilities as target-state scope.
-- Tightened MedIQ positioning to governmental procurement and supply-chain.
-- Added the evidence-supported Manama Health Congress 2022 speaking role.
-- Removed duplicate content blocks introduced during v17 migration.
-- Preserved Digital Card design and current downloadable documents.
+OBSOLETE AND INTENTIONALLY NOT INCLUDED:
+- v21.1-content-positioning.js
+- v21.2-content-positioning.js

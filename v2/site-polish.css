@@ -263,13 +263,13 @@ body .portfolio-hub .card b{display:block;font-size:16px;line-height:1.3}
 }
 
 /* V21.8.1 compact integrated hero */
-body.v20 .v20-hero{min-height:0!important;padding:52px 0 54px!important}
-body.v20 .v20-hero-grid{min-height:430px!important;margin-block:0!important;align-items:center!important}
-body.v20 .v20-system-portrait{height:430px!important;min-height:0!important;overflow:visible!important;background:transparent!important}
+html body.v20 main .v20-hero{min-height:0!important;padding:40px 0 42px!important}
+html body.v20 main .v20-hero-grid{min-height:430px!important;margin-block:0!important;align-items:center!important}
+html body.v20 main .v20-system-portrait{height:430px!important;min-height:0!important;overflow:visible!important;background:transparent!important}
 @media (max-width:700px){
-  body.v20 .v20-hero{padding:14px 0 30px!important}
-  body.v20 .v20-hero-grid{min-height:0!important;margin-block:0!important;gap:22px!important}
-  body.v20 .v20-system-portrait{height:190px!important;min-height:190px!important;margin-bottom:0!important}
+  html body.v20 main .v20-hero{min-height:0!important;padding:12px 0 24px!important}
+  html body.v20 main .v20-hero-grid{min-height:0!important;margin-block:0!important;gap:18px!important}
+  html body.v20 main .v20-system-portrait{height:190px!important;min-height:190px!important;margin:0!important}
 }
 
 /* V21.7 — evidence-led executive narrative */

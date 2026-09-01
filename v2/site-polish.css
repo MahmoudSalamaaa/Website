@@ -11,6 +11,8 @@ nav{position:sticky;top:0;z-index:9000;backdrop-filter:saturate(145%) blur(14px)
 .navbar .links a:hover,.navbar .links a.active{background:rgba(16,166,162,.09);color:var(--teal,#10a6a2)}
 .navbar .links a.active:after{content:"";position:absolute;left:50%;bottom:4px;width:16px;height:2px;border-radius:999px;background:currentColor;transform:translateX(-50%)}
 .navbar>.pill{white-space:nowrap;box-shadow:0 8px 20px rgba(7,27,54,.10)}
+.navbar .links a,.navbar>.pill{min-height:44px!important;display:inline-flex;align-items:center;justify-content:center}
+.navbar .mark{min-height:44px!important;display:inline-flex;align-items:center}
 .mobile-menu-toggle{display:none;width:44px;height:44px;border:1px solid rgba(7,27,54,.12);border-radius:50%;background:white;color:var(--ink,#071b36);align-items:center;justify-content:center;cursor:pointer;margin-left:auto;font-size:0}
 .mobile-menu-toggle span,.mobile-menu-toggle:before,.mobile-menu-toggle:after{content:"";display:block;width:18px;height:2px;background:currentColor;border-radius:3px;transition:.25s ease;position:absolute}
 .mobile-menu-toggle:before{transform:translateY(-6px)}.mobile-menu-toggle:after{transform:translateY(6px)}
@@ -92,4 +94,75 @@ body:not(.v20) :is(.hero,.pagehero,.contact-hero){min-height:auto!important;padd
   html body.v20 .v20-system-portrait{min-height:220px!important;margin-top:-12px!important}
   html body.v20 .v20-system-portrait .v20-portrait-cutout{width:auto!important;max-width:none!important;height:220px!important;bottom:0!important}
   html body.v20 .v20-system-portrait .v20-organic-blob{width:74%!important;right:13%!important;top:4%!important}
+}
+
+/* V21.5 — visual-audit refinements */
+.v20-kicker,.kicker,.contact-card small,.note-card small{color:#087d79}
+
+@media(min-width:1001px){
+  html body.v20 .v20-display{font-size:clamp(54px,5.6vw,88px)!important;line-height:.89!important}
+  body.v20 .v20-hero-grid{grid-template-columns:minmax(0,1fr) minmax(360px,.78fr);gap:46px}
+  body.v20 .v20-map{grid-auto-rows:minmax(112px,auto)}
+  body.v20 .v20-tile.b,body.v20 .v20-tile.c{min-height:250px}
+}
+
+@media(min-width:651px) and (max-width:1000px){
+  body.v20 .v20-hero{padding:44px 0 34px}
+  body.v20 .v20-display{font-size:clamp(52px,7.8vw,68px)!important;line-height:.94!important}
+  body.v20 .v20-system-portrait{min-height:clamp(280px,40vw,340px)}
+  body.v20 .v20-system-portrait .v20-portrait-cutout{height:clamp(280px,40vw,340px)}
+  body.v20 .v20-system-portrait .v20-organic-blob{width:min(68%,430px);right:16%;top:2%}
+}
+
+@media(max-width:640px){
+  .contact-card b{min-width:0}
+  .contact-card[href^="mailto:"] small{grid-column:1;grid-row:1}
+  .contact-card[href^="mailto:"] i{grid-column:2;grid-row:1}
+  .contact-card[href^="mailto:"] b{grid-column:1/-1;grid-row:2;font-size:14px!important;line-height:1.25;letter-spacing:-.025em;white-space:normal;overflow-wrap:anywhere}
+  .back-to-top{width:44px;height:44px}
+}
+
+/* Notes — keep card copy stable while scroll effects initialize. */
+body .notes-grid{grid-auto-rows:auto;align-items:stretch}
+body .notes-grid .note-card,
+body .notes-grid .note-card.motion-reveal,
+body .notes-grid .note-card.reveal{
+  opacity:1!important;
+  transform:none!important;
+  filter:none!important;
+  align-self:stretch;
+}
+body .notes-grid .note-card h2{line-height:1.08}
+
+@media(max-width:760px){
+  body .notes-grid{grid-template-columns:minmax(0,1fr)!important;gap:18px!important;padding-block:48px 72px!important}
+  body .notes-grid .note-card{min-height:0!important;padding:28px 28px 82px!important}
+  body .notes-grid .note-card h2{font-size:clamp(30px,9vw,38px)!important;line-height:1.04!important;margin:32px 0 14px!important}
+  body .notes-grid .note-card p{margin:0!important;line-height:1.65!important}
+}
+
+/* Notes portfolio map — separate the category from its destination. */
+body .portfolio-hub .card{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  justify-content:center!important;
+  gap:8px!important;
+  min-height:92px;
+  line-height:1.25;
+}
+body .portfolio-hub .card small{
+  display:block;
+  color:#087d79;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.1em;
+  line-height:1.2;
+  text-transform:uppercase;
+}
+body .portfolio-hub .card b{display:block;font-size:16px;line-height:1.3}
+
+@media(max-width:760px){
+  body .portfolio-hub .card{min-height:88px!important;padding:18px 20px!important}
+  body .portfolio-hub .card b{font-size:17px}
 }

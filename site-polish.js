@@ -48,5 +48,31 @@ if(fine&&!reduced){
 d.querySelectorAll('a[target="_blank"]').forEach(a=>{const rel=new Set((a.getAttribute('rel')||'').split(/\s+/).filter(Boolean));rel.add('noopener');rel.add('noreferrer');a.setAttribute('rel',[...rel].join(' '))});
 let heroImgPreserved=false;[...d.images].forEach(img=>{const hero=!!img.closest('.v20-hero,.contact-hero')&&!heroImgPreserved&&img.alt;if(hero){heroImgPreserved=true;img.fetchPriority='high'}else if(!img.hasAttribute('loading'))img.loading='lazy';if(!img.hasAttribute('decoding'))img.decoding='async'});
 if(matchMedia('(pointer:coarse)').matches)html.classList.add('ux-coarse-pointer');
+
+/* V29 cinematic scroll: progressive enhancement for the homepage only. */
+const cinemaHome=body.classList.contains('home-cinematic');
+if(cinemaHome&&!reduced){
+ const hero=d.querySelector('.identity-hero');
+ const cards=[...d.querySelectorAll('main > section')];
+ let cinemaRaf=0;
+ const clamp=(n,min=0,max=1)=>Math.min(max,Math.max(min,n));
+ const paintCinema=()=>{
+  const mobile=innerWidth<=700,top=62,vh=Math.max(innerHeight,1);
+  const heroProgress=hero?clamp(scrollY/Math.max(hero.offsetHeight*.9,1)):0;
+  hero?.style.setProperty('--hero-scroll',(heroProgress*34).toFixed(2));
+  cards.forEach((card,i)=>{
+   if(!mobile||i===cards.length-1){card.style.removeProperty('--stack-depth');card.style.removeProperty('--stack-lift');card.style.removeProperty('--stack-glow');return}
+   const next=cards[i+1],nextTop=next.getBoundingClientRect().top;
+   const approach=clamp((vh-nextTop)/Math.max(vh-top,1));
+   card.style.setProperty('--stack-depth',approach.toFixed(3));
+   card.style.setProperty('--stack-lift',(approach*5).toFixed(2));
+   next.style.setProperty('--stack-glow',clamp(1-Math.abs(nextTop-top)/180).toFixed(3));
+  });
+  cinemaRaf=0;
+ };
+ const requestCinema=()=>{if(!cinemaRaf)cinemaRaf=requestAnimationFrame(paintCinema)};
+ addEventListener('scroll',requestCinema,{passive:true});addEventListener('resize',requestCinema,{passive:true});paintCinema();
+ if(fine&&hero)hero.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect();hero.style.setProperty('--cinema-x',((((e.clientX-r.left)/r.width)-.5)*26).toFixed(2));hero.style.setProperty('--cinema-y',((((e.clientY-r.top)/r.height)-.5)*18).toFixed(2))},{passive:true});
+}
 if(!reduced)requestAnimationFrame(()=>body.classList.add('cinematic-enter'));
 })();

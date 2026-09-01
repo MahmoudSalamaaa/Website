@@ -41,6 +41,25 @@ footer{background:var(--ink);color:#fff;padding:68px 0 30px}.footer-title{font-s
 @media(max-width:980px){.identity-hero .hero-shell{grid-template-columns:1fr;min-height:auto}.identity-copy{padding:40px 0 10px}.identity-visual{min-height:520px}.identity-photo{right:50%;transform:translateX(50%);width:min(68vw,420px);height:500px}.identity-photo-frame{right:50%;transform:translateX(50%);width:min(72vw,440px);height:520px}.identity-logo{right:12%;width:230px}.identity-logo-ghost{right:4%;width:310px}.identity-tag{right:8%;bottom:18px}.hero-logo-badge{right:8%}}
 @media(max-width:620px){.wrap{width:calc(100% - 24px)}.v213-grid4{grid-template-columns:1fr}.identity-hero{min-height:auto;padding-top:20px}.identity-copy h1{font-size:54px}.identity-copy p{font-size:16px}.identity-visual{min-height:450px}.identity-photo{width:82vw;height:430px}.identity-photo-frame{width:86vw;height:450px}.identity-logo{width:175px;right:5%}.identity-logo-ghost{width:230px;right:-2%}.identity-tag{width:190px;min-width:0;right:10px;padding:12px}.identity-tag b{font-size:17px}.hero-logo-badge{width:66px;height:46px;right:10px}.hero-logo-badge img{width:50px}}
 @media(prefers-reduced-motion:reduce){.identity-circuit path{animation:none}.identity-actions .identity-btn{transition:none}}
+
+/* V28 micro-polish — preserve the Codex Desktop identity hero */
+.identity-hero{isolation:isolate;border-bottom:1px solid rgba(112,217,212,.16);box-shadow:inset 0 -1px 0 rgba(255,255,255,.035)}
+.identity-hero::after{content:"";position:absolute;inset:auto 0 0;height:96px;z-index:0;pointer-events:none;background:linear-gradient(180deg,transparent,rgba(3,15,30,.16))}
+.identity-copy h1{max-width:760px;text-wrap:balance}
+.identity-copy p{max-width:570px;color:#ccd8e0;text-wrap:pretty}
+.identity-actions .identity-btn{min-height:44px;padding:13px 19px;box-shadow:0 10px 28px rgba(0,0,0,.12);will-change:transform}
+.identity-actions .identity-btn.alt{background:rgba(255,255,255,.035);border-color:rgba(255,255,255,.3);box-shadow:none}
+.identity-actions .identity-btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,0,0,.18)}
+.identity-actions .identity-btn.alt:hover{background:rgba(255,255,255,.08);border-color:rgba(112,217,212,.5)}
+.identity-circuit{opacity:.82}
+.identity-photo-frame{box-shadow:16px 18px 48px rgba(0,0,0,.08)}
+.identity-tag{background:rgba(7,27,54,.82);border-color:rgba(112,217,212,.34);box-shadow:0 20px 46px rgba(0,0,0,.24),inset 0 1px 0 rgba(255,255,255,.06)}
+.hero-logo-badge{box-shadow:0 12px 30px rgba(0,0,0,.12),inset 0 1px 0 rgba(255,255,255,.05)}
+.v20-impact{position:relative;z-index:2}
+@media(max-width:980px){.identity-copy h1{max-width:800px}.identity-copy p{max-width:650px}}
+@media(max-width:620px){.identity-copy{padding-top:32px}.identity-copy h1{font-size:clamp(44px,13.5vw,54px);line-height:.9;letter-spacing:-.058em;margin:14px 0 20px;text-wrap:balance}.identity-copy p{line-height:1.65}.identity-actions{gap:10px;margin-top:24px}.identity-actions .identity-btn{padding-inline:16px}.identity-tag{max-width:calc(100% - 20px)}.identity-circuit{opacity:.68}}
+@media(max-width:420px){.identity-copy .kicker{font-size:9px;line-height:1.55;letter-spacing:.12em}.identity-actions{display:grid;grid-template-columns:1fr}.identity-actions .identity-btn{width:100%}.identity-visual{min-height:420px}.identity-photo{height:400px}.identity-photo-frame{height:420px}.identity-tag{right:6px;bottom:12px}.hero-logo-badge{right:6px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.identity-actions .identity-btn{will-change:auto}.identity-actions .identity-btn:hover{transform:none}}
 </style>
 
 </head><body class="v20"><a class="skip-link" href="#main">Skip to content</a>

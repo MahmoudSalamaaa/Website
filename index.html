@@ -25,8 +25,27 @@ footer{background:var(--ink);color:#fff;padding:68px 0 30px}.footer-title{font-s
 .footer-row{display:flex;justify-content:space-between;gap:20px;margin-top:52px;padding-top:22px;border-top:1px solid rgba(255,255,255,.16);font-size:11px;color:#aebbc8}
 .v213-grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.v213-grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .v213-card{padding:24px;border:1px solid var(--line);border-radius:20px;background:#fff;min-height:180px}.v213-card small{font-size:10px;font-weight:900;letter-spacing:.12em;color:var(--teal)}.v213-card h3{font:700 24px/1.15 Georgia,serif;margin:12px 0 10px}.v213-card p{margin:0;color:#5d6975;line-height:1.65}
+.creative-hero{position:relative;padding:48px 0 26px;background:linear-gradient(145deg,#f7fffe 0%,#fbfaf4 60%,#fff4da 145%);overflow:hidden}
+.creative-hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:44px;align-items:center;min-height:590px}
+.creative-name{font-size:clamp(52px,7.5vw,112px);line-height:.86;letter-spacing:-.065em;margin:8px 0 0;font-weight:900}
+.creative-title{font-size:clamp(30px,4vw,52px);line-height:1.02;letter-spacing:-.045em;margin:28px 0 18px;font-weight:900}
+.creative-title .hand-line{display:inline-block;position:relative;color:var(--teal)}
+.creative-title .hand-line:after{content:"";position:absolute;left:0;right:-2%;height:6px;bottom:-7px;background:var(--gold);clip-path:polygon(0 35%,100% 0,94% 70%,8% 100%);opacity:.88}
+.creative-copy{font-size:16px;line-height:1.7;color:#55626d;max-width:680px}
+.creative-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.creative-actions a{display:inline-flex;align-items:center;justify-content:center;padding:13px 17px;border:1px solid var(--ink);border-radius:999px;font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;transition:.22s ease}
+.creative-actions a:first-child{background:var(--ink);color:#fff}.creative-actions a:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(7,27,54,.1)}
+.creative-note{margin-top:18px;display:flex;gap:12px;align-items:center}.creative-award{width:40px;height:40px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:#9d6d05;font-size:17px;flex:0 0 auto}
+.creative-note strong{font-size:13px}.creative-art{position:relative;min-height:560px}.creative-art:before{content:"";position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle at 35% 30%,rgba(16,166,162,.38),rgba(16,166,162,.06) 48%,transparent 70%);right:-150px;top:12px;filter:blur(1px)}
+.creative-art:after{content:"";position:absolute;width:370px;height:210px;background:linear-gradient(135deg,rgba(244,180,26,.82),rgba(255,123,84,.52));clip-path:polygon(3% 28%,88% 0,100% 70%,23% 100%);right:-40px;bottom:66px;opacity:.62;filter:saturate(.8)}
+.creative-grid{position:absolute;inset:20px -80px 0 20px;background-image:linear-gradient(rgba(7,27,54,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(7,27,54,.055) 1px,transparent 1px);background-size:34px 34px;mask-image:linear-gradient(to left,black,transparent 76%);opacity:.72}
+.creative-portrait{position:absolute;z-index:4;right:8px;bottom:0;height:535px;max-width:100%;object-fit:contain;filter:drop-shadow(0 28px 38px rgba(7,27,54,.23))}
+.creative-scribble{position:absolute;z-index:5;right:34px;top:85px;color:var(--ink);font-family:"Segoe Print","Comic Sans MS",cursive;font-weight:700;transform:rotate(-5deg);font-size:15px}.creative-scribble:after{content:"";position:absolute;height:7px;background:var(--gold);left:-6px;right:-10px;bottom:-4px;transform:rotate(-2deg);z-index:-1;border-radius:50%}
+.creative-coord{position:absolute;z-index:5;right:0;top:205px;background:var(--teal);color:#fff;padding:10px 14px;font-weight:900;font-size:10px;letter-spacing:.08em}.creative-scroll{position:absolute;left:50%;bottom:8px;transform:translateX(-50%);font-size:9px;letter-spacing:.18em;text-transform:uppercase;writing-mode:vertical-rl;color:#6c7882}.creative-scroll:before{content:"";display:block;width:1px;height:48px;background:var(--ink);margin:0 auto 8px;opacity:.3}
 @media(max-width:900px){.links{display:none}.v213-grid4{grid-template-columns:1fr 1fr}.v213-grid3{grid-template-columns:1fr}.footer-row{flex-direction:column}}
-@media(max-width:620px){.wrap{width:calc(100% - 24px)}.v213-grid4{grid-template-columns:1fr}}
+@media(max-width:980px){.creative-hero-grid{grid-template-columns:1fr;gap:20px}.creative-art{min-height:500px}.creative-portrait{height:485px}}
+@media(max-width:620px){.wrap{width:calc(100% - 24px)}.v213-grid4{grid-template-columns:1fr}.creative-hero{padding-top:38px}.creative-hero-grid{min-height:0}.creative-name{font-size:clamp(48px,15vw,72px)}.creative-title{font-size:clamp(28px,9vw,42px)}.creative-copy{font-size:15px}.creative-art{min-height:420px}.creative-portrait{height:410px;right:-30px}.creative-coord{top:210px}.creative-scribble{font-size:14px;right:10px}.creative-scroll{display:none}}
+@media(prefers-reduced-motion:reduce){.creative-actions a{transition:none}}
 </style>
 
 </head><body class="v20"><a class="skip-link" href="#main">Skip to content</a>
@@ -35,13 +54,26 @@ footer{background:var(--ink);color:#fff;padding:68px 0 30px}.footer-title{font-s
 <div class="links"><a href="projects.html">Projects</a><a href="experience.html">Experience</a><a href="technologies.html">Technologies</a><a href="architecture.html">Architecture</a><a href="leadership.html">Leadership</a><a href="about.html">About</a></div>
 <a class="pill" href="contact.html">LET'S BUILD →</a>
 </div></nav><main id="main">
-<section class="v20-stage v20-hero"><div class="v20-orbit" style="width:650px;height:650px;right:-180px;top:-180px"></div><div class="wrap v20-hero-grid">
-<div><div class="v20-kicker">18+ years · Engineering → Enterprise leadership</div>
-<h1 class="v20-display">I make technology strategy <em>survive contact with delivery.</em></h1>
-<p class="v20-copy">I lead technology and digital transformation across enterprise architecture, platforms, data, integration, governance and service operations—connecting executive intent to systems people can run, support and improve.</p>
-<div class="v20-actions"><a class="v20-btn dark" href="work.html">See the evidence →</a><a class="v20-btn" href="experience.html">Follow the career arc</a></div></div>
-<div style="position:relative;min-height:520px;display:grid;place-items:end center"><img src="kms-logo-original.png" alt="" aria-hidden="true" style="position:absolute;width:110%;opacity:.05;right:-25%;top:0"><img src="mahmoud-original.webp" alt="Mahmoud Salama" fetchpriority="high" style="position:relative;z-index:2;max-height:540px;border-radius:32px;object-fit:cover"></div>
-</div></section>
+<section class="creative-hero">
+<div class="wrap creative-hero-grid">
+  <div>
+    <div class="kicker">Hi, I'm</div>
+    <h1 class="creative-name">Mahmoud<br>Salama</h1>
+    <h2 class="creative-title">I architect systems<br><span class="hand-line">that move institutions.</span></h2>
+    <p class="creative-copy">I lead technology and digital transformation across enterprise architecture, platforms, data, integration, governance and service operations—turning executive intent into systems people can run, support and improve.</p>
+    <div class="creative-actions"><a href="projects.html">Explore my world →</a><a href="experience.html">Follow the career arc</a></div>
+    <div class="creative-note"><div class="creative-award">✦</div><div><div class="kicker" style="color:#9d6d05">Pharma Awards 2026</div><strong>MediQ · Digital Transformation Award</strong></div></div>
+  </div>
+  <div class="creative-art" aria-label="Mahmoud Salama — technology leader in Cairo">
+    <div class="creative-grid"></div>
+    <img class="creative-portrait" src="mahmoud-original.webp" alt="Mahmoud Salama" fetchpriority="high">
+    <div class="creative-scribble">Complex problems.<br>Scalable systems.<br><span style="color:var(--teal)">Real impact.</span></div>
+    <div class="creative-coord">CAIRO, EGYPT<br><span style="font-weight:500;opacity:.8">30.0444° N · 31.2357° E</span></div>
+    <svg viewBox="0 0 600 610" style="position:absolute;inset:0;z-index:3;opacity:.55" aria-hidden="true"><path d="M55 130 C150 70 205 150 290 118 S420 75 505 130" fill="none" stroke="#0fb6aa" stroke-width="2" stroke-dasharray="7 8"/><path d="M110 350 C170 300 230 320 290 285 S420 250 530 300" fill="none" stroke="#f4b740" stroke-width="5" opacity=".6"/><circle cx="112" cy="350" r="7" fill="#f4b740"/><circle cx="530" cy="300" r="7" fill="#0fb6aa"/><path d="M390 70 l52 34 -48 31" fill="none" stroke="#071523" stroke-width="2"/></svg>
+  </div>
+</div>
+<div class="creative-scroll">scroll</div>
+</section>
 <section class="v20-impact"><div class="wrap v20-impact-grid">
 <div><strong>54</strong><span>people in the current technology organization</span></div>
 <div><strong>~60K</strong><span>users across the UPA operating landscape</span></div>

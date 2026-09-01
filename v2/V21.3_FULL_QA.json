@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "files_count": 51,
+  "missing_local_references": {},
+  "protocol_sensitive_claim_hits": {},
+  "obsolete_runtime_files_present": {
+    "v21.1-content-positioning.js": false,
+    "v21.2-content-positioning.js": false
+  }
+}

@@ -266,10 +266,12 @@ body .portfolio-hub .card b{display:block;font-size:16px;line-height:1.3}
 html body.v20 main .v20-hero{min-height:0!important;padding:40px 0 42px!important}
 html body.v20 main .v20-hero-grid{min-height:430px!important;margin-block:0!important;align-items:center!important}
 html body.v20 main .v20-system-portrait{height:430px!important;min-height:0!important;overflow:visible!important;background:transparent!important}
+html body.v20 main .v20-system-portrait .v20-portrait-cutout{height:430px!important;top:auto!important;bottom:0!important}
 @media (max-width:700px){
   html body.v20 main .v20-hero{min-height:0!important;padding:12px 0 24px!important}
   html body.v20 main .v20-hero-grid{min-height:0!important;margin-block:0!important;gap:18px!important}
   html body.v20 main .v20-system-portrait{height:190px!important;min-height:190px!important;margin:0!important}
+  html body.v20 main .v20-system-portrait .v20-portrait-cutout{height:190px!important;top:auto!important;bottom:0!important}
 }
 
 /* V21.7 — evidence-led executive narrative */

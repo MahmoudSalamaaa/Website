@@ -14,6 +14,8 @@ if(!d.getElementById('v30-stability-hotfix')){
  const s=d.createElement('style');s.id='v30-stability-hotfix';s.textContent=`
  body.v20 .motion-reveal{filter:none!important}
  body.v20 .mobile-menu-toggle{touch-action:manipulation}
+ body.v20 .navbar .links{gap:clamp(10px,1.25vw,20px)}
+ @media(max-width:1120px) and (min-width:901px){body.v20 .navbar .links{gap:10px;font-size:10px}.navbar .pill{padding-inline:14px}}
  @media(max-width:700px){
    body.home-cinematic main>section{top:var(--ux-nav,70px)!important}
    body.home-cinematic .identity-hero{top:var(--ux-nav,70px)!important}
@@ -26,6 +28,21 @@ if(!d.getElementById('v30-stability-hotfix')){
 }
 
 const nav=d.querySelector('nav'),bar=nav?.querySelector('.navbar'),links=bar?.querySelector('.links');
+/* Surface governance and recognition without redesigning the navigation. */
+if(links){
+ const ensureNavLink=(href,label,beforeHref='about.html')=>{
+  if(links.querySelector(`a[href="${href}"]`))return;
+  const a=d.createElement('a');a.href=href;a.textContent=label;
+  const before=links.querySelector(`a[href="${beforeHref}"]`);
+  before?links.insertBefore(a,before):links.appendChild(a);
+ };
+ ensureNavLink('governance.html','Governance');
+ ensureNavLink('awards.html','Recognition');
+}
+/* Home no longer maintains a separate Work destination: route the CTA to Projects. */
+if(body.classList.contains('home-cinematic')){
+ d.querySelectorAll('a[href="work.html"]').forEach(a=>{a.href='projects.html';if(/explore\s+work/i.test(a.textContent||''))a.textContent='Explore projects →'});
+}
 const current=(location.pathname.split('/').pop()||'index.html').toLowerCase();
 if(links)[...links.querySelectorAll('a')].forEach(a=>{const h=(a.getAttribute('href')||'').split('#')[0].toLowerCase();a.classList.toggle('active',h===current);if(h===current)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
 

@@ -1,4 +1,4 @@
-/* V30 stability fixes — preserve V2 design, fix runtime/mobile issues only. */
+/* V31 stability + typography fixes — preserve V2 design, unify type and mobile behavior. */
 (()=>{
 'use strict';
 const d=document,html=d.documentElement,body=d.body;
@@ -15,6 +15,19 @@ if(!d.getElementById('v30-stability-hotfix')){
  body.v20 .motion-reveal{filter:none!important}
  body.v20 .mobile-menu-toggle{touch-action:manipulation}
  body.v20 .navbar .links{gap:clamp(10px,1.25vw,20px)}
+ /* V31 typography system: one primary sans family across the site; serif is reserved
+    only for deliberate italic editorial accents/quotes. This removes the accidental
+    mix of Georgia headings, system UI fallbacks and Inter-like text. */
+ :root{--kms-sans:Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;--kms-serif:Georgia,"Times New Roman",serif}
+ body,button,input,textarea,select{font-family:var(--kms-sans)!important}
+ h1,h2,h3,h4,h5,h6,.display,.section-title,.footer-title,
+ .v20-display,.v20-section-head h2,.v20-end h2,
+ .v213-card h3,.card h3,.timeline-item h3,.project h3,.step b,
+ .v20-tile h3,.v20-decision h3,.v20-lab h3,.v20-layer h3,
+ .v20-number,.v20-impact strong,.metric b{font-family:var(--kms-sans)!important}
+ .display em,.section-title em,.footer-title em,.identity-copy h1 em,
+ .v20-display em,.v20-section-head h2 em,.v20-end h2 em,
+ .v20-quote,.quote{font-family:var(--kms-serif)!important;font-style:italic!important;font-weight:400!important}
  @media(max-width:1120px) and (min-width:901px){body.v20 .navbar .links{gap:10px;font-size:10px}.navbar .pill{padding-inline:14px}}
  @media(max-width:700px){
    body.home-cinematic main>section{top:var(--ux-nav,70px)!important}

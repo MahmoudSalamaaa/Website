@@ -1,4 +1,4 @@
-/* V21.3 consolidated UX controller — content is now native HTML. */
+/* V30 stability fixes — preserve V2 design, fix runtime/mobile issues only. */
 (()=>{
 'use strict';
 const d=document,html=d.documentElement,body=d.body;
@@ -8,6 +8,23 @@ const fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
 if(!d.querySelector('link[data-v21-ux]')){
  const l=d.createElement('link');l.rel='stylesheet';l.href='v21-ui-ux.css';l.dataset.v21Ux='1';d.head.appendChild(l);
 }
+
+/* Stability-only overrides. No visual redesign. */
+if(!d.getElementById('v30-stability-hotfix')){
+ const s=d.createElement('style');s.id='v30-stability-hotfix';s.textContent=`
+ body.v20 .motion-reveal{filter:none!important}
+ body.v20 .mobile-menu-toggle{touch-action:manipulation}
+ @media(max-width:700px){
+   body.home-cinematic main>section{top:var(--ux-nav,70px)!important}
+   body.home-cinematic .identity-hero{top:var(--ux-nav,70px)!important}
+   @supports (content-visibility:auto){
+     body.home-cinematic main>section:not(:first-child){content-visibility:visible!important;contain-intrinsic-size:auto!important}
+   }
+ }
+ @media(prefers-reduced-motion:reduce){body.v20 .motion-reveal{filter:none!important}}
+ `;d.head.appendChild(s);
+}
+
 const nav=d.querySelector('nav'),bar=nav?.querySelector('.navbar'),links=bar?.querySelector('.links');
 const current=(location.pathname.split('/').pop()||'index.html').toLowerCase();
 if(links)[...links.querySelectorAll('a')].forEach(a=>{const h=(a.getAttribute('href')||'').split('#')[0].toLowerCase();a.classList.toggle('active',h===current);if(h===current)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
@@ -21,12 +38,12 @@ if(bar&&links){
  let inner=m.querySelector('.mobile-menu-inner');if(!inner){inner=d.createElement('div');inner.className='mobile-menu-inner';m.appendChild(inner)}
  inner.replaceChildren();[...links.querySelectorAll('a')].forEach(a=>inner.appendChild(a.cloneNode(true)));
  const cta=bar.querySelector(':scope > .pill');if(cta){const c=cta.cloneNode(true);c.classList.add('mobile-cta');inner.appendChild(c)}
- const close=()=>{m.classList.remove('open');body.classList.remove('ux-menu-open');t.setAttribute('aria-expanded','false');t.setAttribute('aria-label','Open navigation')};
+ const close=(restoreFocus=false)=>{m.classList.remove('open');body.classList.remove('ux-menu-open');t.setAttribute('aria-expanded','false');t.setAttribute('aria-label','Open navigation');if(restoreFocus)requestAnimationFrame(()=>t.focus({preventScroll:true}))};
  const open=()=>{m.classList.add('open');body.classList.add('ux-menu-open');t.setAttribute('aria-expanded','true');t.setAttribute('aria-label','Close navigation');requestAnimationFrame(()=>m.querySelector('a[href]')?.focus({preventScroll:true}))};
- t.addEventListener('click',()=>m.classList.contains('open')?close():open());
- m.addEventListener('click',e=>{if(e.target.closest('a'))close()});
- d.addEventListener('keydown',e=>{if(e.key==='Escape'&&m.classList.contains('open'))close()});
- addEventListener('resize',()=>{if(innerWidth>1000)close()},{passive:true});
+ t.addEventListener('click',()=>m.classList.contains('open')?close(false):open());
+ m.addEventListener('click',e=>{if(e.target.closest('a'))close(false)});
+ d.addEventListener('keydown',e=>{if(e.key==='Escape'&&m.classList.contains('open'))close(true)});
+ addEventListener('resize',()=>{if(innerWidth>1000)close(false)},{passive:true});
 }
 
 let p=d.querySelector('.page-progress');if(!p){p=d.createElement('div');p.className='page-progress';p.setAttribute('aria-hidden','true');body.appendChild(p)}
@@ -49,15 +66,16 @@ d.querySelectorAll('a[target="_blank"]').forEach(a=>{const rel=new Set((a.getAtt
 let heroImgPreserved=false;[...d.images].forEach(img=>{const hero=!!img.closest('.v20-hero,.contact-hero')&&!heroImgPreserved&&img.alt;if(hero){heroImgPreserved=true;img.fetchPriority='high'}else if(!img.hasAttribute('loading'))img.loading='lazy';if(!img.hasAttribute('decoding'))img.decoding='async'});
 if(matchMedia('(pointer:coarse)').matches)html.classList.add('ux-coarse-pointer');
 
-/* V29 cinematic scroll: progressive enhancement for the homepage only. */
+/* Cinematic scroll: preserve the V2 effect, fix mobile nav offset and rendering stability. */
 const cinemaHome=body.classList.contains('home-cinematic');
 if(cinemaHome&&!reduced){
  const hero=d.querySelector('.identity-hero');
  const cards=[...d.querySelectorAll('main > section')];
  let cinemaRaf=0;
  const clamp=(n,min=0,max=1)=>Math.min(max,Math.max(min,n));
+ const mobileTop=()=>Math.max(0,Math.round(nav?.getBoundingClientRect().height||parseFloat(getComputedStyle(html).getPropertyValue('--ux-nav'))||70));
  const paintCinema=()=>{
-  const mobile=innerWidth<=700,top=62,vh=Math.max(innerHeight,1);
+  const mobile=innerWidth<=700,top=mobileTop(),vh=Math.max(innerHeight,1);
   const heroProgress=hero?clamp(scrollY/Math.max(hero.offsetHeight*.9,1)):0;
   hero?.style.setProperty('--hero-scroll',(heroProgress*34).toFixed(2));
   cards.forEach((card,i)=>{

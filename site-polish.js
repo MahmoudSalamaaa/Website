@@ -1,4 +1,4 @@
-/* V31 stability + typography fixes — preserve V2 design, unify type and mobile behavior. */
+/* V32 hero + cinematic stability — preserve V2, integrate portrait and prevent early card overlap. */
 (()=>{
 'use strict';
 const d=document,html=d.documentElement,body=d.body;
@@ -37,6 +37,40 @@ if(!d.getElementById('v30-stability-hotfix')){
    body.home-cinematic main>section.stack-flow{position:relative!important;top:auto!important;overflow:visible!important;transform:none!important;filter:none!important;contain:none!important;will-change:auto!important}
    body.home-cinematic main>section.stack-flow::before{display:none!important}
    body.home-cinematic main>section.stack-flow>.wrap{transform:none!important}
+
+   /* The identity hero must finish before any stacked card can enter. The portrait is
+      absolutely positioned in the original V2 CSS, so its visible height is not part of
+      scrollHeight; keeping the hero sticky lets the next section cover it too early. */
+   body.home-cinematic .identity-hero.stack-flow{
+     position:relative!important;top:auto!important;overflow:hidden!important;
+     transform:none!important;filter:none!important;contain:none!important;
+     min-height:auto!important;border-radius:0 0 28px 28px!important;
+   }
+   body.home-cinematic .identity-hero .hero-shell{min-height:0!important}
+   body.home-cinematic .identity-copy,body.home-cinematic .identity-visual{transform:none!important;will-change:auto!important}
+
+   /* Mobile portrait stage: show the complete image at its natural aspect ratio instead
+      of cropping it into a fixed-height polygon. Keep it visually inside the hero system. */
+   body.home-cinematic .identity-visual{
+     position:relative!important;min-height:0!important;margin-top:8px;
+     padding:18px 8px 76px;border-radius:26px 26px 0 0;overflow:hidden;
+     background:radial-gradient(circle at 50% 34%,rgba(112,217,212,.13),transparent 42%),
+                linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,0));
+   }
+   body.home-cinematic .identity-photo{
+     position:relative!important;right:auto!important;bottom:auto!important;
+     width:min(100%,430px)!important;height:auto!important;max-height:none!important;
+     margin:0 auto!important;display:block!important;object-fit:contain!important;
+     object-position:center bottom!important;clip-path:none!important;transform:none!important;
+     filter:drop-shadow(0 26px 42px rgba(0,0,0,.30))!important;
+   }
+   body.home-cinematic .identity-photo-frame{display:none!important}
+   body.home-cinematic .identity-logo{right:6%!important;top:6%!important;max-width:34%!important;opacity:.18!important}
+   body.home-cinematic .identity-logo-ghost{right:-5%!important;top:2%!important;max-width:48%!important;opacity:.035!important}
+   body.home-cinematic .identity-circuit{opacity:.42!important}
+   body.home-cinematic .identity-tag{left:12px!important;right:12px!important;bottom:12px!important;width:auto!important;max-width:none!important}
+   body.home-cinematic .hero-logo-badge{right:12px!important;top:12px!important}
+
    @supports (content-visibility:auto){
      body.home-cinematic main>section:not(:first-child){content-visibility:visible!important;contain-intrinsic-size:auto!important}
    }
@@ -114,7 +148,10 @@ if(cinemaHome&&!reduced){
   const usable=Math.max(vh-top-24,320);
   cards.forEach((card,i)=>{
    if(!mobile||i===cards.length-1){card.classList.remove('stack-flow');return}
-   /* Give every section enough room to be read completely before the next card arrives. */
+   /* Hero is always normal flow on mobile. Its portrait uses positioned visual layers,
+      so scrollHeight alone cannot safely determine when the section has visually ended. */
+   if(card===hero){card.classList.add('stack-flow');return}
+   /* Give every other section enough room to be read completely before the next card arrives. */
    const tooTall=card.scrollHeight>usable*1.02;
    card.classList.toggle('stack-flow',tooTall);
   });

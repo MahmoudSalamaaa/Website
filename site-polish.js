@@ -19,6 +19,11 @@ if(!d.getElementById('v30-stability-hotfix')){
  @media(max-width:700px){
    body.home-cinematic main>section{top:var(--ux-nav,70px)!important}
    body.home-cinematic .identity-hero{top:var(--ux-nav,70px)!important}
+   /* Long mobile sections must stay in normal document flow. Keeping them sticky
+      lets the following card cover content before the user can finish reading it. */
+   body.home-cinematic main>section.stack-flow{position:relative!important;top:auto!important;overflow:visible!important;transform:none!important;filter:none!important;contain:none!important;will-change:auto!important}
+   body.home-cinematic main>section.stack-flow::before{display:none!important}
+   body.home-cinematic main>section.stack-flow>.wrap{transform:none!important}
    @supports (content-visibility:auto){
      body.home-cinematic main>section:not(:first-child){content-visibility:visible!important;contain-intrinsic-size:auto!important}
    }
@@ -91,12 +96,23 @@ if(cinemaHome&&!reduced){
  let cinemaRaf=0;
  const clamp=(n,min=0,max=1)=>Math.min(max,Math.max(min,n));
  const mobileTop=()=>Math.max(0,Math.round(nav?.getBoundingClientRect().height||parseFloat(getComputedStyle(html).getPropertyValue('--ux-nav'))||70));
+ const classifyMobileCards=()=>{
+  const mobile=innerWidth<=700,top=mobileTop(),vh=Math.max(innerHeight,1);
+  const usable=Math.max(vh-top-24,320);
+  cards.forEach((card,i)=>{
+   if(!mobile||i===cards.length-1){card.classList.remove('stack-flow');return}
+   /* Give every section enough room to be read completely before the next card arrives. */
+   const tooTall=card.scrollHeight>usable*1.02;
+   card.classList.toggle('stack-flow',tooTall);
+  });
+ };
  const paintCinema=()=>{
   const mobile=innerWidth<=700,top=mobileTop(),vh=Math.max(innerHeight,1);
+  classifyMobileCards();
   const heroProgress=hero?clamp(scrollY/Math.max(hero.offsetHeight*.9,1)):0;
   hero?.style.setProperty('--hero-scroll',(heroProgress*34).toFixed(2));
   cards.forEach((card,i)=>{
-   if(!mobile||i===cards.length-1){card.style.removeProperty('--stack-depth');card.style.removeProperty('--stack-lift');card.style.removeProperty('--stack-glow');return}
+   if(!mobile||i===cards.length-1||card.classList.contains('stack-flow')){card.style.removeProperty('--stack-depth');card.style.removeProperty('--stack-lift');card.style.removeProperty('--stack-glow');return}
    const next=cards[i+1],nextTop=next.getBoundingClientRect().top;
    const approach=clamp((vh-nextTop)/Math.max(vh-top,1));
    card.style.setProperty('--stack-depth',approach.toFixed(3));

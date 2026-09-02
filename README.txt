@@ -1,33 +1,21 @@
-V2 FULL STORY CONTENT PATCH
-===========================
+V2 PRODUCTION FINISH PATCH
+==========================
 
-Purpose
-- Preserve the existing V2 visual direction.
-- Expand the professional story using the attached legacy portfolio evidence and the verified V2 content baseline.
-- Keep current executive work separate from historical client/project delivery.
-- Keep awards attributed to platforms/projects, not automatically to the individual.
+UPLOAD TO SITE ROOT AND REPLACE FILES WITH THE SAME NAMES.
+DO NOT REPLACE index.html. The V2 Design Master homepage is intentionally preserved.
 
-Files in this patch
-- experience.html
-- projects.html
-- technologies.html
-- architecture.html
-- leadership.html
-- about.html
-- governance.html
-- awards.html
-- contact.html
-- v2-story.css
-- site-polish.js
+What this patch finishes
+- Production-safe content across the main V2 story pages.
+- Sanitized MedIQ, E-Tender and Assets & Location case studies using only approved/canonical claims.
+- V2-styled resume viewer; existing PDF is preserved and not rewritten.
+- Gallery repurposed as Career Evidence / Selected Leadership Moments.
+- work.html converted into a noindex bridge to Projects.
+- robots.txt and sitemap.xml normalized.
+- Open Graph + Twitter social metadata added to production content pages.
+- Evidence link added to page footers.
+- Latest mobile/runtime site-polish.js included (dynamic nav height, cinematic stack stability, Governance/Recognition navigation, Work→Projects CTA correction, accessibility/performance safeguards).
 
 Important
-- index.html is intentionally NOT replaced. The current V2 root hero/home is preserved exactly rather than risking another visual redesign.
-- Existing root assets (site-polish.css, v20-experience.css, logos, manifest, favicon) remain in place.
-- Upload these files into the website root to update internal content while keeping Home unchanged.
-- No deployment or publish action was performed by ChatGPT.
-
-Content decisions
-- Explicitly restored the 2008–2010 Linux Systems & Web Developer foundation from the attached legacy site.
-- Preserved Integral and Keyframe as hands-on development-team leadership stages.
-- Added Dynamics 365 ERP/CRM integration, customer-care/support, order tracking, demand planning, HTA, e-pharmacy, messaging, mobile, e-signature and Track & Trace evidence.
-- Did NOT carry forward uncertain/unstable claims such as 12M records/day or conflicting MedIQ entity counts.
+- No deployment was performed by ChatGPT.
+- No new redesign was introduced.
+- Existing CV PDF at assets/documents/Mahmoud_Salama_Executive_CV_2026.pdf remains untouched.

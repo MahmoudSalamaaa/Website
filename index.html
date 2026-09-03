@@ -182,6 +182,33 @@ body.home-fixed .identity-hero{overflow:hidden!important}
 .award-principle{grid-column:1/-1;display:grid;grid-template-columns:.55fr 1fr 1.3fr;gap:24px;align-items:center;padding:20px 26px;border-radius:18px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.035)}
 .award-principle b{font-size:18px}.award-principle p{margin:0;color:#aebbc8;font-size:13px;line-height:1.55}
 @media(max-width:700px){.award-spotlight{padding:62px 0}.award-head{grid-template-columns:1fr;gap:16px}.award-grid{grid-template-columns:1fr}.award-card{min-height:360px;padding:25px}.award-card h3{margin-top:62px}.award-link{left:25px}.award-principle{grid-template-columns:1fr;gap:8px}.award-icon{font-size:60px}}
+
+/* V43 — technology stack rebuilt from verified portfolio */
+.tech-signal{padding:88px 0;background:#071b36;color:#fff;position:relative;overflow:hidden}
+.tech-signal:before{content:"";position:absolute;inset:0;background:
+ radial-gradient(circle at 82% 12%,rgba(16,166,162,.13),transparent 26%),
+ radial-gradient(circle at 12% 88%,rgba(244,180,26,.08),transparent 24%);pointer-events:none}
+.tech-signal-head{position:relative;display:grid;grid-template-columns:1.05fr .8fr;gap:48px;align-items:end;margin-bottom:32px}
+.tech-signal-head h2{font:800 clamp(43px,5.8vw,78px)/.92 Inter,Arial,sans-serif;letter-spacing:-.055em;margin:10px 0}
+.tech-signal-head h2 em{font:italic 400 .94em Georgia,serif;color:#70d9d4}
+.tech-signal-head p{margin:0;color:#acbbc7;line-height:1.72}
+.tech-core-grid{position:relative;display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.tech-core-card{padding:26px;border:1px solid rgba(255,255,255,.1);border-radius:20px;background:rgba(255,255,255,.035);min-height:190px}
+.tech-core-card.featured{background:linear-gradient(145deg,rgba(16,166,162,.14),rgba(255,255,255,.025));border-color:rgba(112,217,212,.25)}
+.tech-core-card small{display:block;font-size:9px;font-weight:900;letter-spacing:.14em;color:#70d9d4}
+.tech-core-card h3{font:800 clamp(25px,2.8vw,38px)/1.03 Inter,Arial,sans-serif;letter-spacing:-.035em;margin:42px 0 11px}
+.tech-core-card p{margin:0;color:#aebbc8;line-height:1.55;font-size:13px}
+.health-tech-note{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.health-tech-note>div{padding:18px 22px;border-radius:16px;border:1px solid rgba(244,180,26,.18);background:rgba(244,180,26,.035)}
+.health-tech-note small{display:block;font-size:8px;font-weight:900;letter-spacing:.13em;color:#f4b41a;margin-bottom:6px}
+.health-tech-note b{display:block;font-size:18px;margin-bottom:5px}.health-tech-note span{display:block;color:#9eacb8;font-size:12px;line-height:1.5}
+@media(max-width:700px){
+ .tech-signal{padding:60px 0}
+ .tech-signal-head{grid-template-columns:1fr;gap:14px}
+ .tech-core-grid,.health-tech-note{grid-template-columns:1fr}
+ .tech-core-card{min-height:0}
+ .tech-core-card h3{margin-top:30px}
+}
 </style>
 </head><body class="v20 home-fixed"><a class="skip-link" href="#main">Skip to content</a>
 <nav aria-label="Primary navigation"><div class="wrap navbar">
@@ -205,14 +232,43 @@ body.home-fixed .identity-hero{overflow:hidden!important}
 <article><small>ENGINEERING</small><h3>Technical leadership</h3><p>54-person technology organization, 7 direct reports, architecture/design reviews, SDLC governance and accountable delivery.</p></article>
 <article><small>HEALTHTECH</small><h3>Domain + integration</h3><p>Healthcare procurement and medical supply, HL7/HIS integration, HTA workflows and pharmaceutical interoperability.</p></article>
 <article><small>OPERATIONS</small><h3>Production reality</h3><p>Production readiness, service ownership, incident/RCA, continuity oversight, onboarding, adoption and executive KPIs.</p></article>
-</div></div></section><section class="st-integration-strip"><div class="wrap">
-<div class="st-signal-grid">
-<div><small>INTEROPERABILITY</small><b>HL7 · HIS · APIs</b></div>
-<div><small>ENGINEERING</small><b>C# · .NET · REST</b></div>
-<div><small>DATA</small><b>SQL · Power BI · Superset</b></div>
-<div><small>GOVERNANCE</small><b>RBAC · Audit · Release</b></div>
+</div></div></section><section class="tech-signal">
+<div class="wrap">
+<div class="tech-signal-head">
+<div>
+<div class="v20-kicker">Core technology depth</div>
+<h2>Engineering credibility behind the <em>architecture.</em></h2>
 </div>
-</div></section><section class="st-health"><div class="wrap">
+<p>Verified hands-on and leadership experience across application engineering, APIs and integration, data platforms, analytics and production delivery.</p>
+</div>
+<div class="tech-core-grid">
+<article class="tech-core-card featured">
+<small>APPLICATION ENGINEERING</small>
+<h3>C# · .NET / ASP.NET · ASP.NET Core</h3>
+<p>Entity Framework · LINQ · JavaScript · React · Node.js</p>
+</article>
+<article class="tech-core-card">
+<small>APIs + INTEGRATION</small>
+<h3>REST · SOAP · GraphQL · JSON</h3>
+<p>API Contracts · Web Services · Dynamics 365 Integration</p>
+</article>
+<article class="tech-core-card">
+<small>DATA + ANALYTICS</small>
+<h3>SQL Server · PostgreSQL · MySQL · Redis</h3>
+<p>Power BI · Apache Superset · Python / pandas · Power Query</p>
+</article>
+<article class="tech-core-card">
+<small>DEVOPS + DELIVERY</small>
+<h3>Docker · Jenkins · CI/CD · Git</h3>
+<p>Postman · Swagger / OpenAPI · QA · Release Governance</p>
+</article>
+</div>
+<div class="health-tech-note">
+<div><small>HEALTHCARE INTEROPERABILITY</small><b>HL7 / HIS integration</b><span>Architecture and leadership level; not presented as deep message-level implementation expertise.</span></div>
+<div><small>WORKING / CONCEPTUAL KNOWLEDGE</small><b>FHIR · Kubernetes · NPHIES architecture</b><span>Kept clearly separate from the core verified engineering stack.</span></div>
+</div>
+</div>
+</section><section class="st-health"><div class="wrap">
 <div class="st-health-intro"><div class="v20-kicker">Healthcare domain evidence</div><h2>From procurement to <em>healthcare operations.</em></h2><p>The healthcare domain evidence extends beyond procurement: hospital/system interoperability, health-technology assessment, pharmaceutical traceability, service operations and governed data.</p></div>
 <div class="st-health-grid"><div><b>HL7 / HIS</b><span>Healthcare-system interoperability, API/data mapping, validation and governed integration.</span></div><div><b>HTA</b><span>Evidence submission, controlled review, assessment tracking, RBAC and audit traceability.</span></div><div><b>Track &amp; Trace</b><span>National pharmaceutical governance, compliance and interoperability contribution.</span></div><div><b>Service Operations</b><span>~20-person technical support/customer-service operation, onboarding, escalation and adoption.</span></div></div></div></section>
 <section class="v37-governance-static">

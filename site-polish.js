@@ -489,3 +489,20 @@ if(cinemaHome&&!reduced){
 
 if(!reduced)requestAnimationFrame(()=>body.classList.add('cinematic-enter'));
 })();
+
+/* V36 absolute mobile overlap guard — intentionally overrides all older sticky-stack rules. */
+(()=>{
+ const d=document,s=d.createElement('style');s.id='v36-no-overlap';
+ s.textContent=`@media(max-width:700px){
+ body.home-cinematic main>section,
+ body.home-cinematic main>section.stack-card,
+ body.home-cinematic main>section.stack-flow{
+  position:relative!important;top:auto!important;transform:none!important;filter:none!important;
+  overflow:visible!important;contain:none!important;will-change:auto!important;border-radius:0!important
+ }
+ body.home-cinematic main>section::before{display:none!important}
+ body.home-cinematic main>section>.wrap{transform:none!important}
+ body.home-cinematic .identity-hero{overflow:hidden!important;border-radius:0 0 28px 28px!important;min-height:auto!important}
+}`;
+ d.head.appendChild(s);
+})();

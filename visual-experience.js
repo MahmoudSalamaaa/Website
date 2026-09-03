@@ -1,26 +1,109 @@
-(()=>{"use strict";const d=document,b=d.body;if(!b.classList.contains("home-cinematic"))return;const A="visual-assets/";
-const s=d.createElement("style");s.textContent=`
-.v34-media{height:176px;margin:-1px -1px 18px;border-radius:20px 20px 14px 14px;overflow:hidden;position:relative;background:radial-gradient(circle at 25% 25%,rgba(112,217,212,.2),transparent 24%),linear-gradient(135deg,#06172d,#0b2948)}
-.v34-media img{width:100%;height:100%;object-fit:contain;padding:30px;filter:brightness(1.1)}
-.v34-grid{position:absolute;inset:-35%;opacity:.2;transform:perspective(420px) rotateX(58deg) translateY(38%);background-image:linear-gradient(rgba(112,217,212,.35) 1px,transparent 1px),linear-gradient(90deg,rgba(112,217,212,.35) 1px,transparent 1px);background-size:32px 32px}
-.v34-screen{position:absolute;right:7%;top:18%;width:55%;height:62%;border:1px solid rgba(112,217,212,.3);border-radius:10px;background:rgba(3,15,30,.78);box-shadow:0 18px 35px #0005;transform:perspective(700px) rotateY(-9deg)}
-.v34-screen:before{content:"";position:absolute;left:9%;right:9%;top:14%;height:8px;border-radius:6px;background:linear-gradient(90deg,#70d9d4 0 40%,#ffffff15 40%);box-shadow:0 24px 0 #ffffff12,0 48px 0 #ffffff0e,0 72px 0 #ffffff0b}
-.v34-map{position:absolute;left:8%;bottom:13%;width:34%;height:48%;border:1px solid #70d9d433;border-radius:42% 58% 54% 46%;background:linear-gradient(145deg,#70d9d426,#70d9d408);transform:rotate(-8deg)}
-.v34-map:after{content:"";position:absolute;width:8px;height:8px;border-radius:50%;background:#f4b41a;left:54%;top:38%;box-shadow:20px 28px 0 #70d9d4,-17px 39px 0 #70d9d4,31px -12px 0 #70d9d4}
-.v34-flag{margin:28px 0 34px;min-height:270px;border-radius:24px;overflow:hidden;border:1px solid #70d9d42c;background:radial-gradient(circle at 70% 32%,#70d9d42b,transparent 27%),linear-gradient(135deg,#06172d,#0b2948);display:grid;grid-template-columns:.8fr 1.2fr;align-items:center}
-.v34-flag>div:first-child{padding:38px}.v34-flag img{width:min(100%,430px);display:block}.v34-scene{height:100%;min-height:270px;position:relative}.v34-scene .v34-screen{width:68%;height:68%;top:15%;right:8%}.v34-scene .v34-map{left:4%}
-.v34-evidence{padding:72px 0;background:#071b36;color:#fff;position:relative;overflow:hidden}.v34-evidence:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 15% 10%,#10a6a21e,transparent 28%),radial-gradient(circle at 85% 85%,#f4b41a12,transparent 24%)}
-.v34-head{position:relative;display:grid;grid-template-columns:1fr .75fr;gap:36px;align-items:end;margin-bottom:28px}.v34-head h2{font-size:clamp(38px,5vw,68px);letter-spacing:-.05em;line-height:.95;margin:10px 0 0}.v34-head p{color:#aebbc8;line-height:1.7;margin:0}
-.v34-rail{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.v34-mark{min-height:140px;border:1px solid #ffffff1c;border-radius:18px;background:#ffffff08;display:grid;place-items:center;padding:22px;overflow:hidden;transition:.35s}.v34-mark:hover{transform:translateY(-4px);border-color:#70d9d459;background:#ffffff0e}.v34-mark img{max-width:100%;max-height:82px;object-fit:contain;filter:grayscale(1) brightness(1.25);opacity:.74;transition:.35s}.v34-mark:hover img{filter:grayscale(.1);opacity:1}
-.v34-note{position:relative;margin-top:16px;color:#7f94a6;font-size:11px;line-height:1.6;max-width:760px}
-@media(max-width:900px){.v34-rail{grid-template-columns:repeat(2,1fr)}.v34-head{grid-template-columns:1fr}.v34-flag{grid-template-columns:1fr}}
-@media(max-width:700px){.v34-media{height:150px;margin:0 0 18px}.v34-evidence{padding:54px 0}.v34-rail{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -12px;padding:0 12px 12px;scrollbar-width:none}.v34-mark{flex:0 0 74vw;scroll-snap-align:center}.v34-flag>div:first-child{padding:28px 22px}.v34-scene{min-height:220px}}
+/* V37 — Master Career Corrected Visual Experience
+   Source hierarchy follows Mahmoud_Salama_Master_Professional_CV_Knowledge_Base.
+   Keeps V2 design and V36 no-overlap mobile rule. */
+(()=>{"use strict";
+const d=document,b=d.body;if(!b.classList.contains("home-cinematic"))return;
+const A="visual-assets/";
+const s=d.createElement("style");s.id="v37-master-visual";s.textContent=`
+.v37-master{padding:96px 0;background:#eef9fb;position:relative;overflow:hidden}
+.v37-master:before{content:"";position:absolute;inset:0;background:
+ radial-gradient(circle at 85% 15%,rgba(16,166,162,.11),transparent 26%),
+ linear-gradient(90deg,transparent 49.9%,rgba(7,27,54,.03) 50%,transparent 50.1%);pointer-events:none}
+.v37-head{position:relative;display:grid;grid-template-columns:1fr .78fr;gap:42px;align-items:end;margin-bottom:36px}
+.v37-head h2{font-size:clamp(44px,6vw,82px);line-height:.92;letter-spacing:-.055em;margin:10px 0}
+.v37-head p{color:#61707b;line-height:1.72;margin:0}
+.v37-grid{position:relative;display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+.v37-card{position:relative;min-height:285px;padding:28px;border:1px solid #dce7e8;border-radius:22px;background:#fff;overflow:hidden;box-shadow:0 16px 44px rgba(7,27,54,.04)}
+.v37-card.hero{grid-column:span 12;min-height:330px;background:
+ radial-gradient(circle at 72% 34%,rgba(112,217,212,.18),transparent 26%),
+ linear-gradient(135deg,#06172d,#0b2948);color:#fff;border-color:rgba(112,217,212,.18)}
+.v37-card.wide{grid-column:span 6}.v37-card.third{grid-column:span 4}
+.v37-card small{font-size:9px;font-weight:900;letter-spacing:.12em;color:#10a6a2}
+.v37-card.hero small{color:#70d9d4}
+.v37-card h3{font:800 clamp(27px,3vw,38px)/1.03 var(--kms-sans,Inter,Arial,sans-serif);letter-spacing:-.03em;margin:48px 0 13px}
+.v37-card.hero h3{font-size:clamp(38px,5vw,66px);max-width:760px;margin-top:62px}
+.v37-card p{color:#61707b;line-height:1.68;margin:0;max-width:760px}.v37-card.hero p{color:#c3d0d9}
+.v37-card .badge{position:absolute;right:22px;top:20px;font-size:46px;font-weight:900;line-height:1;color:rgba(7,27,54,.07)}
+.v37-card.hero .badge{color:rgba(255,255,255,.07)}
+.v37-card:after{content:"";position:absolute;width:180px;height:180px;border:1px solid rgba(16,166,162,.14);border-radius:50%;right:-82px;bottom:-82px}
+.v37-card.hero:after{width:280px;height:280px;border-color:rgba(112,217,212,.18);right:-100px;bottom:-120px}
+.v37-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.v37-meta span{padding:7px 10px;border-radius:999px;border:1px solid #dfe8ea;font-size:9px;font-weight:900;letter-spacing:.05em;text-transform:uppercase}
+.v37-card.hero .v37-meta span{border-color:rgba(255,255,255,.14);color:#dce7ef;background:rgba(255,255,255,.025)}
+.v37-journey{padding:86px 0;background:#071b36;color:#fff;position:relative}
+.v37-journey-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.v37-journey-card{padding:26px;border:1px solid rgba(255,255,255,.11);border-radius:20px;background:rgba(255,255,255,.035);min-height:220px}
+.v37-journey-card small{color:#70d9d4;font-size:9px;font-weight:900;letter-spacing:.12em}
+.v37-journey-card h3{font:800 27px/1.05 var(--kms-sans,Inter,Arial,sans-serif);margin:38px 0 12px}
+.v37-journey-card p{color:#aebbc8;line-height:1.65;margin:0}
+.v37-legacy{padding:62px 0;background:#071b36;color:#fff;position:relative;overflow:hidden;border-top:1px solid rgba(255,255,255,.08)}
+.v37-rail{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.v37-mark{min-height:132px;border:1px solid rgba(255,255,255,.11);border-radius:18px;background:rgba(255,255,255,.035);display:grid;place-items:center;padding:22px}
+.v37-mark img{max-width:100%;max-height:78px;object-fit:contain;filter:grayscale(1) brightness(1.25);opacity:.72;transition:.35s}.v37-mark:hover img{filter:grayscale(.1);opacity:1}
+.v37-note{margin-top:14px;color:#7f94a6;font-size:11px;line-height:1.6}
+@media(max-width:900px){.v37-head{grid-template-columns:1fr}.v37-card.wide,.v37-card.third{grid-column:span 12}.v37-journey-grid{grid-template-columns:1fr}.v37-rail{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.v37-master{padding:64px 0}.v37-card{grid-column:1/-1!important;min-height:230px}.v37-card.hero{min-height:290px}.v37-card h3{margin-top:36px}.v37-card.hero h3{margin-top:50px}.v37-rail{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -12px;padding:0 12px 12px;scrollbar-width:none}.v37-mark{flex:0 0 74vw;scroll-snap-align:center}}
 `;d.head.appendChild(s);
 const E=(t,c)=>{const x=d.createElement(t);if(c)x.className=c;return x};
-const tiles=[...d.querySelectorAll(".v20-map .v20-tile")];
-tiles.forEach((t,i)=>{if(t.querySelector(".v34-media"))return;const m=E("div","v34-media");m.setAttribute("aria-hidden","true");if(i===0){const im=new Image;im.src=A+"mediq-logo.webp";im.alt="";m.appendChild(im)}else{m.append(E("div","v34-grid"));if(i===2)m.append(E("div","v34-map"));m.append(E("div","v34-screen"))}t.prepend(m)});
-const sec=tiles[0]?.closest(".v20-section");if(sec){const f=E("div","v34-flag"),l=E("div"),im=new Image;im.src=A+"mediq-logo.webp";im.alt="MediQ — Governmental Procurement and Supply Chain Platform";im.loading="lazy";l.appendChild(im);const sc=E("div","v34-scene");sc.setAttribute("aria-hidden","true");sc.append(E("div","v34-grid"),E("div","v34-map"),E("div","v34-screen"));f.append(l,sc);const map=sec.querySelector(".v20-map");map?.parentNode.insertBefore(f,map)}
-const ev=E("section","v34-evidence"),w=E("div","wrap"),h=E("div","v34-head");h.innerHTML='<div><div class="v20-kicker" style="color:#70d9d4">Visual archive · earlier delivery</div><h2>Systems leave <em style="color:#f4b41a;font-family:Georgia,serif;font-weight:400">evidence.</em></h2></div><p>A curated visual layer from earlier portfolio material. Marks are presented as historical project context—not as endorsements or current client claims.</p>';
-const r=E("div","v34-rail");[["legacy-contractors.jpg","Egyptian Federation for Construction & Building Contractors"],["legacy-arab-medical-union.jpg","Arab Medical Union"],["legacy-zayed-dunes.jpg","Zayed Dunes"],["legacy-ifilc.jpg","International Gastrointestinal, Liver & Uro-Oncology Conference"],["legacy-electrolux.jpg","Electrolux"],["legacy-alfouad.jpg","Al Fouad Automotive Spare Parts"],["legacy-catering.jpg","The Catering Co. Kitchen"],["legacy-alfa-cure.jpg","Alfa Cure Centers"]].forEach(([src,alt])=>{const q=E("div","v34-mark"),im=new Image;im.src=A+src;im.alt=alt;im.loading="lazy";q.appendChild(im);r.appendChild(q)});
-const n=E("div","v34-note");n.textContent="Historical identities are used selectively as portfolio context. Detailed project pages should continue to distinguish employer, client, role and ownership level.";w.append(h,r,n);ev.appendChild(w);const dark=d.querySelector(".v20-section.v20-dark");dark?.parentNode.insertBefore(ev,dark);
+
+/* Remove the old selected-work section and V36 strategic section if present. */
+[...d.querySelectorAll(".v20-section")].forEach(sec=>{
+  const txt=(sec.textContent||"");
+  if(txt.includes("Selected work · different forms of complexity")) sec.remove();
+});
+d.querySelector(".v36-strategic")?.remove();
+
+/* Insert correct master-career project hierarchy after the scale strip. */
+const impact=d.querySelector(".v20-impact");
+if(impact){
+ const sec=E("section","v37-master"),w=E("div","wrap"),h=E("div","v37-head");
+ h.innerHTML='<div><div class="v20-kicker">Master career · flagship delivery</div><h2>The systems that <em style="font-family:Georgia,serif;font-weight:400;color:#10a6a2">define the story.</em></h2></div><p>The portfolio starts with the work that best explains the career arc: a unified national procurement platform in Egypt, then major government platforms in Oman. Supporting systems and older commercial work come later.</p>';
+ const g=E("div","v37-grid");
+ const cards=[
+  ["hero","01 · EGYPT · NATIONAL PLATFORM","Unified National Procurement Platform / MedIQ","A unified national enterprise procurement and medical-supply platform covering demand consolidation, approvals, tendering, supplier evaluation, contracting, purchase orders, delivery and receipt, inventory and warehousing, reporting, auditability, supplier services and technical support.","~60K users","~90K facilities/entities","~1M transactions/month"],
+  ["wide","02 · OMAN · MINISTRY OF EDUCATION","National Educational Portal","A nation-scale education platform serving approximately one million users across the Omani education system, combining hands-on engineering, team leadership, rollout and support.","~1M users","Government platform","Hands-on + leadership"],
+  ["wide","03 · OMAN · MINISTRY OF EDUCATION","Recruitment System","A major Ministry of Education recruitment platform to which Mahmoud contributed substantially. The system received the Sultan Qaboos Award; the recognition belongs to the project.","Sultan Qaboos Award","Government system","Substantial contribution"],
+  ["wide","04 · OMAN · GOVERNMENT","Maktabi · Electronic Correspondence Management","Extensive hands-on contribution to Maktabi’s large-scale correspondence system: secure creation, routing, forwarding and tracking of government correspondence, reporting, database components, testing, production deployment and release support.","Large-scale correspondence","Government entities","Major contribution"],
+  ["third","05 · OMAN · GOVERNMENT","International Schools Management","Government-sector platform delivered during the Integral Solutions period, part of the broader Oman portfolio spanning education and institutional systems.","Oman","Government","Enterprise application"],
+  ["third","06 · OMAN · GOVERNMENT","Crisis Management","A government crisis-management system from the Integral Solutions period, representing the operational and institutional side of the Oman delivery portfolio.","Oman","Government","Operational system"],
+  ["third","07 · OMAN · GOVERNMENT","Asset Management","Government asset-management delivery during the Integral Solutions period, complementing the education, correspondence and institutional platform portfolio.","Oman","Government","Enterprise system"]
+ ];
+ cards.forEach((c,i)=>{
+   const a=E("article","v37-card "+c[0]);a.innerHTML=`<small>${c[1]}</small><span class="badge">${String(i+1).padStart(2,"0")}</span><h3>${c[2]}</h3><p>${c[3]}</p><div class="v37-meta"><span>${c[4]}</span><span>${c[5]}</span><span>${c[6]}</span></div>`;g.appendChild(a)
+ });
+ w.append(h,g);sec.appendChild(w);impact.insertAdjacentElement("afterend",sec);
+}
+
+/* Keep governance/national contributions separate from projects. */
+const leadership=[...d.querySelectorAll(".v20-section")].find(x=>(x.textContent||"").includes("Current executive scope"));
+if(leadership){
+ const sec=E("section","v37-journey"),w=E("div","wrap"),h=E("div","v37-head");
+ h.innerHTML='<div><div class="v20-kicker" style="color:#70d9d4">National governance contributions</div><h2>Influence beyond <em style="font-family:Georgia,serif;font-weight:400;color:#f4b41a">software ownership.</em></h2></div><p style="color:#aebbc8">These are important parts of the career story, but they are governance and national-level contributions—not headline software projects.</p>';
+ const g=E("div","v37-journey-grid");
+ [
+  ["2025–2026","World Bank Group B-READY · Egypt","Digital Transformation Committee contribution supporting private-sector digitization, public-service modernization and national competitiveness."],
+  ["2021–2024","National Blood Operations Oversight","Board-level participation representing UPA, focused on digital governance, data integrity and technology standards for the national blood-supply system."],
+  ["2021–2024","National Pharmaceutical Track & Trace","Governance, compliance, stakeholder coordination and technology-roadmap contribution across UPA, EDA and Ministry of Health stakeholders."]
+ ].forEach(x=>{const c=E("article","v37-journey-card");c.innerHTML=`<small>${x[0]}</small><h3>${x[1]}</h3><p>${x[2]}</p>`;g.appendChild(c)});
+ w.append(h,g);sec.appendChild(w);leadership.insertAdjacentElement("beforebegin",sec);
+}
+
+/* Historical logos stay late and explicitly secondary. */
+d.querySelector(".v36-legacy")?.remove();
+const recognition=[...d.querySelectorAll(".v20-section")].find(x=>(x.textContent||"").includes("Recognition · attribution matters"));
+if(recognition){
+ const sec=E("section","v37-legacy"),w=E("div","wrap"),h=E("div","v37-head");
+ h.innerHTML='<div><div class="v20-kicker" style="color:#70d9d4">Keyframe · visual archive</div><h2>150+ engagements. <em style="font-family:Georgia,serif;font-weight:400;color:#f4b41a">Supporting history.</em></h2></div><p style="color:#9eafbd">Earlier client/project identities support the story of delivery volume and variety. They are deliberately placed after the national and government platform work.</p>';
+ const rail=E("div","v37-rail");
+ [
+ ["legacy-arab-medical-union.jpg","Arab Medical Union"],
+ ["legacy-ifilc.jpg","Conference platform"],
+ ["legacy-electrolux.jpg","Electrolux multi-country work"],
+ ["legacy-zayed-dunes.jpg","Zayed Dunes"],
+ ["legacy-contractors.jpg","Construction sector work"],
+ ["legacy-alfouad.jpg","Automotive sector work"],
+ ["legacy-catering.jpg","Commercial services"],
+ ["legacy-alfa-cure.jpg","Healthcare sector work"]
+ ].forEach(([src,alt])=>{const q=E("div","v37-mark"),im=new Image;im.src=A+src;im.alt=alt;im.loading="lazy";q.appendChild(im);rail.appendChild(q)});
+ const n=E("div","v37-note");n.textContent="Historical marks are portfolio context only. Court of Cassation is intentionally not included, and no uncertain second ITIDA award is claimed.";
+ w.append(h,rail,n);sec.appendChild(w);recognition.insertAdjacentElement("afterend",sec);
+}
 })();

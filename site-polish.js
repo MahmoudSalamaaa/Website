@@ -241,4 +241,28 @@ if(body.classList.contains('home-fixed') && !d.querySelector('.home-sap-evidence
     }
   }
 }
+
+/* 2026-09-04 Digital Card CTA — homepage navbar */
+if(body.classList.contains('home-fixed') && bar && !bar.querySelector('.digital-card-cta')){
+  const talk=bar.querySelector(':scope > .pill');
+  const card=d.createElement('a');
+  card.href='card.html';
+  card.className='pill digital-card-cta';
+  card.textContent='DIGITAL CARD';
+  card.setAttribute('aria-label','Open Mahmoud Salama digital card');
+  if(talk){
+    card.style.marginLeft='8px';
+    bar.insertBefore(card,talk);
+  }else{
+    bar.appendChild(card);
+  }
+
+  const menuInner=d.querySelector('.mobile-menu-inner');
+  if(menuInner && !menuInner.querySelector('a[href="card.html"]')){
+    const mobileCard=card.cloneNode(true);
+    mobileCard.classList.add('mobile-cta');
+    mobileCard.removeAttribute('style');
+    menuInner.appendChild(mobileCard);
+  }
+}
 })();

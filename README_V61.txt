@@ -1,0 +1,12 @@
+V61 — CAREER PACK SYNC FINAL
+- Synced public website claims to the reviewed Career Pack baseline.
+- MedIQ scale: 38K+ users / 11K+ facilities / 2K+ suppliers.
+- Leadership: 54-person organization / 7 direct reports / EGP 150M annual IT budget accountability.
+- Systems-first positioning: “I architect systems that connect technology, data and operations.”
+- Africa Health ExCon strengthened as a key recurring UPA digital-platform and user-training role.
+- National Blood wording normalized to governance contribution.
+- B-READY wording normalized to Egypt-side Digital Transformation Committee contributor.
+- Track & Trace remains governance/interoperability contribution.
+- Al Wahat remains Royal Guard of Oman.
+- Kubernetes and GraphQL remain practical capability; FHIR remains conceptual.
+- No deployment performed.

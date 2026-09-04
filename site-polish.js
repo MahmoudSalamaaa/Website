@@ -154,4 +154,108 @@ let heroPreserved=false;
   else if(!img.hasAttribute('loading')) img.loading='lazy';
   if(!img.hasAttribute('decoding')) img.decoding='async';
 });
+
+/* Homepage micro-signature:
+   keeps the current executive hero intact and adds one subtle transformation signal */
+if(body.classList.contains('home-fixed') && !d.querySelector('.home-signature-flow')){
+  const hero=d.querySelector('.identity-hero');
+  const impact=d.querySelector('.v20-impact');
+
+  if(hero && impact){
+    const style=d.createElement('style');
+    style.textContent=`
+      .home-signature-flow{
+        position:relative;
+        background:#06172d;
+        color:#fff;
+        border-top:1px solid rgba(112,217,212,.16);
+        border-bottom:1px solid rgba(112,217,212,.16);
+        overflow:hidden
+      }
+      .home-signature-flow .hs-inner{
+        width:min(1180px,calc(100% - 40px));
+        margin:auto;
+        min-height:62px;
+        display:grid;
+        grid-template-columns:auto 1fr auto 1fr auto 1fr auto 1fr auto;
+        align-items:center;
+        gap:13px
+      }
+      .home-signature-flow .hs-step{
+        font-size:9px;
+        font-weight:900;
+        letter-spacing:.14em;
+        text-transform:uppercase;
+        color:#d7e5ea;
+        white-space:nowrap
+      }
+      .home-signature-flow .hs-step:last-child{color:#f4b41a}
+      .home-signature-flow .hs-line{
+        height:1px;
+        position:relative;
+        overflow:hidden;
+        background:rgba(112,217,212,.18)
+      }
+      .home-signature-flow .hs-line::after{
+        content:"";
+        position:absolute;
+        top:0;
+        left:-38%;
+        width:38%;
+        height:100%;
+        background:linear-gradient(90deg,transparent,#70d9d4,#f4b41a,transparent);
+        animation:hsTravel 3.4s linear infinite
+      }
+      .home-signature-flow .hs-line:nth-of-type(4)::after{animation-delay:.25s}
+      .home-signature-flow .hs-line:nth-of-type(6)::after{animation-delay:.5s}
+      .home-signature-flow .hs-line:nth-of-type(8)::after{animation-delay:.75s}
+
+      @keyframes hsTravel{to{left:108%}}
+
+      @media(max-width:700px){
+        .home-signature-flow .hs-inner{
+          width:100%;
+          min-height:54px;
+          padding:0 14px;
+          display:flex;
+          gap:10px;
+          overflow:hidden
+        }
+        .home-signature-flow .hs-step{font-size:8px}
+        .home-signature-flow .hs-line{
+          flex:1 0 28px;
+          min-width:28px
+        }
+      }
+
+      @media(prefers-reduced-motion:reduce){
+        .home-signature-flow .hs-line::after{
+          animation:none;
+          left:0;
+          width:100%;
+          opacity:.7
+        }
+      }
+    `;
+    d.head.appendChild(style);
+
+    const flow=d.createElement('section');
+    flow.className='home-signature-flow';
+    flow.setAttribute('aria-label','Transformation flow');
+    flow.innerHTML=`
+      <div class="hs-inner">
+        <span class="hs-step">Strategy</span>
+        <i class="hs-line"></i>
+        <span class="hs-step">Architecture</span>
+        <i class="hs-line"></i>
+        <span class="hs-step">Platforms</span>
+        <i class="hs-line"></i>
+        <span class="hs-step">Delivery</span>
+        <i class="hs-line"></i>
+        <span class="hs-step">Impact</span>
+      </div>
+    `;
+    hero.insertAdjacentElement('afterend',flow);
+  }
+}
 })();

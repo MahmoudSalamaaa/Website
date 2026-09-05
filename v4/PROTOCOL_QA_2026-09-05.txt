@@ -1,0 +1,13 @@
+V4 Protocol QA Corrections — 5 Sep 2026
+
+Applied against Career Management Protocol v1.2 and current Master Career Knowledge Base:
+- Corrected MedIQ award naming to Pharmaconex Awards 2026 – Excellence in Digital Transformation.
+- Preserved award attribution at MedIQ/UPA level, not as an individual personal award.
+- Strengthened portfolio governance wording to confirmed roles: B-READY Digital Transformation Committee Member; National Blood Operations Board Member appointed by Egypt's Minister of Health; National Pharmaceutical Track & Trace Governance Lead.
+- Added full official UPA employer name on first use in Experience and About; succinct UPA definition in Portfolio.
+- Standardized top navigation across all public V4 pages and added current-page active states.
+- Added canonical URLs for V4 public pages.
+- Expanded Contact with GitHub and location; phone intentionally not made public.
+- No redesign performed.
+
+Pending after publication: live HTTP/link QA and visual browser regression check.

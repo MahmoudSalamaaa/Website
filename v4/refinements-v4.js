@@ -69,8 +69,63 @@
       `;
       document.head.appendChild(style);
     }
+
+    if (heroActions && !heroActions.querySelector('a[href="/v4/flagship-cases.html"]')) {
+      const proofLink = document.createElement('a');
+      proofLink.className = 'secondary-link';
+      proofLink.href = '/v4/flagship-cases.html';
+      proofLink.textContent = '4 flagship case studies →';
+      heroActions.appendChild(proofLink);
+    }
   }
 
+  // Link the new proof pages into the existing V4 journey.
+  const path = location.pathname;
+  const addFeatureBanner = ({target, kicker, title, copy, href, label, accent}) => {
+    if (!target || document.querySelector(`a[href="${href}"]`)) return;
+    const section = document.createElement('section');
+    section.className = 'v4-feature-link';
+    section.innerHTML = `<div class="wrap"><div class="v4-feature-card" style="--feature-accent:${accent}"><div><div class="kicker">${kicker}</div><h2>${title}</h2><p>${copy}</p></div><a class="btn" href="${href}">${label} →</a></div></div>`;
+    target.insertAdjacentElement('beforebegin', section);
+  };
+
+  if (path.endsWith('/v4/projects.html')) {
+    addFeatureBanner({
+      target: document.querySelector('.project-catalog'),
+      kicker: 'START WITH THE FLAGSHIPS',
+      title: 'Four cases. Four kinds of proof.',
+      copy: 'MedIQ, UPA × SAP, Oman National Educational Portal and HTA — presented as challenge, role, architecture and outcome before the full 94-entry catalog.',
+      href: '/v4/flagship-cases.html',
+      label: 'Open flagship cases',
+      accent: '#c5f0f7'
+    });
+  }
+
+  if (path.endsWith('/v4/architecture.html')) {
+    addFeatureBanner({
+      target: document.querySelector('.band'),
+      kicker: 'INTERACTIVE SYSTEM VIEW',
+      title: 'See how the layers connect.',
+      copy: 'Explore channels, shared platform services, integration, core systems, data and production governance as one architecture map.',
+      href: '/v4/architecture-map.html',
+      label: 'Open architecture map',
+      accent: '#e9d3f0'
+    });
+  }
+
+  if (!document.querySelector('#v4-feature-link-style')) {
+    const featureStyle = document.createElement('style');
+    featureStyle.id = 'v4-feature-link-style';
+    featureStyle.textContent = `
+      .v4-feature-link{padding:22px 0 10px;background:#fff}
+      .v4-feature-card{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center;padding:24px 26px;border:1px solid #d8e1ea;border-radius:20px;background:linear-gradient(115deg,var(--feature-accent),#fff 68%);box-shadow:0 10px 30px rgba(15,23,42,.06)}
+      .v4-feature-card h2{margin:7px 0 7px;font:900 clamp(24px,3vw,38px)/1 var(--sans);letter-spacing:-.045em;color:#0f172a}
+      .v4-feature-card p{max-width:780px;margin:0;color:#475569;font-size:12px;line-height:1.65}
+      .v4-feature-card .btn{white-space:nowrap}
+      @media(max-width:760px){.v4-feature-card{grid-template-columns:1fr}.v4-feature-card .btn{justify-self:start}}
+    `;
+    document.head.appendChild(featureStyle);
+  }
 
   // Portfolio cleanup: keep each executive story once and let the dedicated pages hold the detail.
   const portfolio = document.querySelector('#main');
@@ -80,13 +135,9 @@
       section.querySelector('.kicker')?.textContent.toUpperCase().includes(label)
     );
 
-    // The executive map already communicates the Strategy → Architecture → Delivery → Operations model.
     byKicker('HOW I LEAD TECHNOLOGY')?.remove();
-
-    // MedIQ recognition belongs in the dedicated Governance & Recognition section.
     document.querySelector('#mediq .recognition-line')?.remove();
 
-    // The SAP decision snapshot already captures ownership, governance and operational outcome.
     const sap = document.querySelector('#sap');
     if (sap) {
       [...sap.querySelectorAll('details.responsive-details')]
@@ -94,7 +145,6 @@
         ?.remove();
     }
 
-    // Keep the concise visual career arc; Experience is the home for the full chronology.
     const career = byKicker('CAREER ARC');
     if (career) {
       [...career.querySelectorAll('details.responsive-details')]
@@ -102,7 +152,6 @@
         ?.remove();
     }
 
-    // Renumber the remaining portfolio story after removing duplicated sections.
     const numbering = [
       ['EXECUTIVE SNAPSHOT', '01 · EXECUTIVE SNAPSHOT'],
       ['THE EXECUTIVE MAP', '02 · THE EXECUTIVE MAP'],
@@ -121,7 +170,6 @@
       if (kicker) kicker.textContent = replacement;
     });
 
-    // Prevent award title/subtitle collisions at every breakpoint.
     const awardFix = document.createElement('style');
     awardFix.textContent = `
       .award-strip .award{min-width:0!important}

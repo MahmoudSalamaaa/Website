@@ -1,4 +1,77 @@
 (() => {
+  // V4 home: connect strip sourced from root /card.html.
+  const isV4Home = location.pathname === '/v4/' || location.pathname.endsWith('/v4/index.html');
+  if (isV4Home) {
+    const heroActions = document.querySelector('.executive-hero .hero-actions');
+
+    if (heroActions && !heroActions.querySelector('a[href="/card.html"]')) {
+      const cardLink = document.createElement('a');
+      cardLink.className = 'secondary-link';
+      cardLink.href = '/card.html';
+      cardLink.textContent = 'Digital card →';
+      cardLink.setAttribute('aria-label', 'Open Mahmoud Salama digital card');
+      heroActions.appendChild(cardLink);
+    }
+
+    const heroCopy = document.querySelector('.executive-hero .hero-copy');
+    if (heroCopy && !document.querySelector('.home-connect-strip')) {
+      const strip = document.createElement('div');
+      strip.className = 'home-connect-strip';
+      strip.setAttribute('aria-label', 'Connect with Mahmoud Salama');
+
+      const links = [
+        ['Book a meeting', 'https://calendly.com/ma7moud-salamaaa/30min'],
+        ['Digital Card', '/card.html'],
+        ['LinkedIn', 'https://www.linkedin.com/in/mahmoud-salama-30249b34/'],
+        ['GitHub', 'https://github.com/MahmoudSalamaaa'],
+        ['Facebook', 'https://www.facebook.com/MahmoudSalamaaaa'],
+        ['WhatsApp', 'https://wa.me/201220156077'],
+        ['Personal Email', 'mailto:ma7moud.salamaaa@gmail.com'],
+        ['Call', 'tel:+201220156077']
+      ];
+
+      strip.innerHTML =
+        '<span class="home-connect-label">CONNECT</span>' +
+        links.map(([label, href], i) => {
+          const external = /^https?:/.test(href);
+          const primary = i === 0 ? ' is-primary' : '';
+          return `<a class="home-connect-link${primary}" href="${href}"${external ? ' target="_blank" rel="noopener noreferrer"' : ''}>${label}</a>`;
+        }).join('');
+
+      heroCopy.appendChild(strip);
+
+      const style = document.createElement('style');
+      style.textContent = `
+        .home-connect-strip{
+          display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+          margin-top:18px;padding-top:16px;border-top:1px solid rgba(15,23,42,.12)
+        }
+        .home-connect-label{
+          margin-right:3px;font:800 9px/1 var(--mono);
+          letter-spacing:.12em;color:#64748b
+        }
+        .home-connect-link{
+          display:inline-flex;align-items:center;min-height:34px;
+          padding:9px 11px;border:1px solid #d7e0e8;border-radius:999px;
+          background:#fff;color:#0f172a;text-decoration:none;
+          font:750 9px/1 var(--mono);transition:.18s ease
+        }
+        .home-connect-link:hover{transform:translateY(-1px);border-color:#94a3b8}
+        .home-connect-link.is-primary{
+          background:#c5f0f7;border-color:#06b6d4;
+          box-shadow:0 5px 14px rgba(6,182,212,.13)
+        }
+        @media(max-width:640px){
+          .home-connect-strip{gap:7px}
+          .home-connect-label{width:100%;margin-bottom:2px}
+          .home-connect-link{font-size:8px;padding:8px 9px}
+        }
+      `;
+      document.head.appendChild(style);
+    }
+  }
+
+
   // Portfolio cleanup: keep each executive story once and let the dedicated pages hold the detail.
   const portfolio = document.querySelector('#main');
   if (portfolio) {

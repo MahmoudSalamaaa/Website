@@ -15,3 +15,4 @@ body,body.v20{background:radial-gradient(circle at 8% 12%,rgba(11,143,137,.055),
 .portfolio-note{border-radius:8px!important;background:linear-gradient(145deg,#fffdf7,var(--yellow-accent))!important;border-color:#d5c68f!important}.gov:nth-child(1){background:linear-gradient(180deg,#fffefa,var(--mint-accent))!important}.gov:nth-child(2){background:linear-gradient(180deg,#fffefa,var(--lav-accent))!important}.gov:nth-child(3){background:linear-gradient(180deg,#fffefa,var(--yellow-accent))!important}
 .cta:before,footer:before{content:'';position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--gold),var(--teal));opacity:.8}
 @media(max-width:960px){.board-card{background:var(--surface)!important}}
+

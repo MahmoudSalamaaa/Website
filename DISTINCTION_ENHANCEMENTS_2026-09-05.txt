@@ -1,0 +1,37 @@
+V4 DISTINCTIVE EXECUTIVE ENHANCEMENTS — FINAL IMPLEMENTATION
+
+Design principle: preserve the Balanced Executive Systems Canvas. No redesign, no palette change, no dark-theme conversion, no gimmick layer.
+
+Implemented:
+- Hero executive proof chips and 60-second recruiter fast track.
+- MedIQ flagship treatment with project-level Pharmaconex 2026 recognition.
+- Transformation Before → After visual model.
+- Signature How I Lead Technology framework.
+- National Governance preview on Home.
+- Signature executive positioning statement and role-fit layer.
+- Architecture principles, SAP bi-directional integration cue, decision log, Governance-by-Design and delivery lifecycle.
+- SAP architecture Decision Snapshot: Challenge → Decision → Governance → Outcome.
+- Leadership operating-model map, transformation playbook, executive scale metrics, career inflection points and executive FAQ.
+- Technology Architecture Radar with Core / Practical / Executive Oversight trust signal.
+- Projects: stable anchors (#mediq, #sap, etc.), responsibility legend and operational outcome blocks.
+- Portfolio: stakeholder landscape, confidentiality note, print/save-PDF action and one-page Executive Profile link.
+- Governance and Recognition context timelines.
+- New executive-profile.html designed for one-page browser/print use.
+- Open Graph + Twitter Card metadata on all principal pages.
+- 1200×630 og-executive.png share image.
+- Person JSON-LD on Home.
+- Desktop micro-interactions with prefers-reduced-motion respect.
+- Mobile responsive rules for all added executive modules; canvas remains a deliberate vertical strategic stack.
+- Print CSS for portfolio/profile.
+
+Content safety / truthfulness:
+- No invented SAP modules, middleware, warehouse counts or personal SAP coding/configuration claims.
+- MedIQ recognition attributed to platform/project, not converted into a personal award.
+- Technology depth remains tiered to avoid overclaiming.
+- Public content includes an explicit confidentiality boundary.
+- Existing protocol hardening retained: no data modeling, HTML/CSS, observability, major-and-mid-sized wording, or kernel-work wording.
+
+Promotion note:
+- This package is still V4-scoped. Canonicals and OG URLs intentionally remain /v4/.
+- Root asset references remain ../favicon.svg, ../kms-logo-original.png and ../mahmoud-identity.webp while nested under /v4/.
+- Do not transform paths/canonicals until the separate Root promotion step.

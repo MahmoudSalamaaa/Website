@@ -1,0 +1,371 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root{
+  --ink:#0a2138;
+  --ink-2:#173c58;
+  --text:#1e3446;
+  --muted:#667887;
+  --paper:#f7f5ef;
+  --surface:#fffefa;
+  --surface-2:#f1f5f3;
+  --line:#cfd8d8;
+  --line-strong:#91a4a6;
+  --teal:#0b8f89;
+  --teal-soft:#dcefeb;
+  --gold:#d49b20;
+  --gold-soft:#f3ead2;
+  --blue-soft:#e3edf4;
+  --sage:#e6eee7;
+  --shadow:0 18px 48px rgba(10,33,56,.07);
+  --mono:"IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --sans:Inter, Segoe UI, Arial, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body,body.v20{
+  margin:0!important;
+  color:var(--ink)!important;
+  font-family:var(--sans)!important;
+  background:
+    linear-gradient(rgba(10,33,56,.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(10,33,56,.025) 1px,transparent 1px),
+    var(--paper)!important;
+  background-size:32px 32px!important;
+  overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{width:min(1180px,calc(100% - 40px));margin:auto}
+.skip-link{position:fixed;left:12px;top:-70px;z-index:1000;background:var(--ink);color:white;padding:10px 14px;border-radius:8px}
+.skip-link:focus{top:12px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+
+/* Executive navigation */
+nav{
+  position:sticky!important;top:0!important;z-index:70!important;
+  background:rgba(247,245,239,.94)!important;
+  backdrop-filter:blur(16px)!important;
+  border-bottom:1px solid rgba(10,33,56,.12)!important;
+  box-shadow:none!important;
+}
+.navbar{height:72px!important;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:18px!important}
+.mark{display:flex!important;align-items:center!important;gap:10px!important;font:800 12px/1 var(--sans)!important;letter-spacing:.13em!important}
+.mark img{width:44px!important;height:auto!important}
+.links{display:flex!important;align-items:center!important;gap:18px!important;font:700 10px/1 var(--mono)!important;letter-spacing:.045em!important;text-transform:uppercase!important}
+.links a{position:relative;padding:8px 0;color:#375063!important}
+.links a:hover,.links a.active{color:var(--teal)!important}
+.links a.active:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--teal)}
+.pill,.btn{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  border:1px solid var(--ink)!important;border-radius:8px!important;
+  padding:12px 16px!important;background:var(--ink)!important;color:white!important;
+  font:700 10px/1 var(--mono)!important;letter-spacing:.035em!important;text-transform:uppercase!important;
+  transition:.2s ease!important;box-shadow:none!important;
+}
+.pill:hover,.btn:hover{transform:translateY(-1px);background:var(--ink-2)!important}
+.btn.alt,.btn:not(.dark){background:var(--surface)!important;color:var(--ink)!important;border-color:var(--line-strong)!important}
+.btn.dark{background:var(--ink)!important;color:#fff!important}
+
+/* Editorial / technical hero language */
+.hero,.executive-hero,.portfolio-hero{
+  position:relative!important;padding:78px 0 66px!important;
+  background:transparent!important;color:var(--ink)!important;min-height:0!important;
+}
+.hero:before,.executive-hero:before,.portfolio-hero:before{
+  content:"";position:absolute;left:max(20px,calc((100vw - 1180px)/2));top:28px;width:76px;height:1px;background:var(--teal)
+}
+.hero:after,.executive-hero:after,.portfolio-hero:after{
+  content:"01 / EXECUTIVE SYSTEMS CANVAS";position:absolute;right:max(20px,calc((100vw - 1180px)/2));top:22px;
+  font:600 9px/1 var(--mono);letter-spacing:.09em;color:#758590
+}
+.kicker,.ey,.port_sub_heading{
+  color:var(--teal)!important;font:600 10px/1.3 var(--mono)!important;letter-spacing:.095em!important;text-transform:uppercase!important
+}
+.display,.hero-copy h1,.portfolio-title{
+  max-width:1080px!important;margin:15px 0 22px!important;
+  color:var(--ink)!important;font:800 clamp(52px,7vw,96px)/.92 var(--sans)!important;
+  letter-spacing:-.065em!important;text-transform:none!important;
+}
+.display em,.hero-copy h1 em,.portfolio-title em{font-family:Georgia,serif!important;font-style:italic!important;font-weight:400!important;color:var(--teal)!important}
+.lead,.hero-copy p,.portfolio-intro,.section-copy{
+  max-width:780px!important;color:#526675!important;font-size:17px!important;line-height:1.72!important
+}
+.hero-actions,.actions{display:flex!important;gap:10px!important;flex-wrap:wrap!important;margin-top:28px!important}
+
+/* Current home */
+.hero-grid{display:grid;grid-template-columns:1.08fr .72fr;gap:52px;align-items:center}
+.photo-card{
+  position:relative;background:var(--surface);padding:14px;border:1px solid var(--line);
+  border-radius:4px;box-shadow:var(--shadow);transform:none!important
+}
+.photo-card:before{content:"IDENTITY / EXECUTIVE";position:absolute;top:18px;left:18px;z-index:2;background:rgba(255,254,250,.9);padding:7px 9px;font:600 9px var(--mono);letter-spacing:.08em}
+.photo-frame{overflow:hidden;border-radius:2px;background:var(--surface-2)}
+.photo-frame img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.photo-label{
+  position:static!important;margin-top:12px!important;background:transparent!important;border:0!important;padding:0!important;
+  box-shadow:none!important;transform:none!important;color:#516575!important;font:600 10px/1.4 var(--mono)!important;letter-spacing:.04em!important
+}
+
+/* Metric strips */
+.impact,.v20-impact{background:var(--ink)!important;color:white!important;border:0!important}
+.impact-grid,.v20-impact-grid,.metric-row{display:grid!important;grid-template-columns:repeat(4,1fr)!important}
+.impact-grid>div,.v20-impact-grid>div,.metric{
+  min-width:0;padding:22px 20px!important;border:0!important;border-right:1px solid rgba(255,255,255,.15)!important;
+  background:transparent!important;border-radius:0!important;box-shadow:none!important
+}
+.impact-grid>div:last-child,.v20-impact-grid>div:last-child,.metric:last-child{border-right:0!important}
+.impact strong,.v20-impact strong,.metric b,.metric strong{
+  display:block;color:white!important;font:800 31px/1 var(--sans)!important;letter-spacing:-.04em!important
+}
+.impact span,.v20-impact span,.metric span{
+  display:block;color:#b8c5ce!important;font:500 10px/1.4 var(--mono)!important;margin-top:6px!important
+}
+
+/* Section framework */
+.band,.signature,.home-cases,.portfolio-section,.st-fit,.tech-signal,.v37-governance-static,.award-spotlight,.v37-master-static{
+  padding:72px 0!important;background:transparent!important;color:var(--ink)!important
+}
+.band.alt,.portfolio-section.alt{background:rgba(255,255,255,.48)!important;border-top:1px solid rgba(10,33,56,.08)!important;border-bottom:1px solid rgba(10,33,56,.08)!important}
+.band.dark,.tech-main-band,.awards-band{
+  background:var(--ink)!important;color:#fff!important;
+  border-top:0!important;border-bottom:0!important
+}
+.band.dark .section-title,.band.dark h2,.band.dark h3,.band.dark .quote,.tech-main-band h2,.awards-band h2{color:#fff!important}
+.band.dark .lead,.band.dark p,.band.dark .section-copy,.tech-main-band p,.awards-band p{color:#b8c5ce!important}
+
+.section-head,.signature-head,.tech-signal-head,.award-head,.st-head,.v37-head-static{
+  display:grid!important;grid-template-columns:1.08fr .72fr!important;gap:40px!important;align-items:end!important;margin-bottom:28px!important
+}
+.section-title,.signature h2,.wb-title,.tech-signal h2,.award-head h2,.st-head h2,.v37-head-static h2{
+  margin:8px 0 0!important;color:var(--ink)!important;font:800 clamp(38px,5.2vw,68px)/.96 var(--sans)!important;
+  letter-spacing:-.05em!important;text-transform:none!important
+}
+.section-head p,.signature-head p,.tech-signal-head p,.award-head p,.st-head p,.v37-head-static p{margin:0;color:var(--muted);line-height:1.65}
+
+/* Premium strategy canvas — the whiteboard idea without the childish styling */
+.board{
+  position:relative!important;min-height:660px!important;overflow:hidden!important;
+  background:
+    linear-gradient(rgba(10,33,56,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(10,33,56,.035) 1px,transparent 1px),
+    var(--surface)!important;
+  background-size:24px 24px!important;
+  border:1px solid var(--line)!important;border-radius:6px!important;box-shadow:var(--shadow)!important
+}
+.board:before{content:"SYSTEM MAP / OPERATING MODEL";position:absolute;left:20px;top:18px;font:600 9px var(--mono);letter-spacing:.1em;color:#6c7d88}
+.board:after{content:"MAHMOUD SALAMA · EXECUTIVE TECHNOLOGY";position:absolute;right:20px;bottom:16px;font:600 9px var(--mono);letter-spacing:.08em;color:#8a989f}
+.board-lines{position:absolute;inset:0;width:100%;height:100%;z-index:1}
+.board-lines path{stroke:rgba(10,33,56,.48)!important;stroke-width:1.35!important}
+.board-center{
+  position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;
+  width:274px!important;height:210px!important;border-radius:4px!important;background:var(--ink)!important;color:white!important;
+  border:1px solid #244760!important;outline:1px solid rgba(10,33,56,.15)!important;outline-offset:8px!important;
+  display:grid!important;place-items:center!important;text-align:left!important;padding:28px!important;z-index:3!important
+}
+.board-center h3{font:800 36px/.94 var(--sans)!important;letter-spacing:-.04em!important;margin:0!important;color:white!important}
+.board-center b{display:block;margin-top:14px;font:600 10px var(--mono)!important;letter-spacing:.08em!important;color:#74d1ca!important}
+.board-center small{display:block;margin-top:12px;font:500 11px/1.5 var(--mono)!important;color:#bdcbd3!important}
+.board-card{
+  position:absolute!important;width:246px!important;padding:16px 17px!important;z-index:3!important;
+  background:rgba(255,254,250,.97)!important;border:1px solid var(--line-strong)!important;border-left:4px solid var(--teal)!important;
+  border-radius:3px!important;box-shadow:0 10px 24px rgba(10,33,56,.06)!important;transform:none!important
+}
+.board-card:nth-of-type(even){border-left-color:var(--gold)!important}
+.board-card h4{margin:0 0 8px!important;font:800 18px/1.1 var(--sans)!important;letter-spacing:-.02em!important;color:var(--ink)!important}
+.board-card ul{margin:0!important;padding-left:16px!important;color:#506370!important;font-size:11.5px!important;line-height:1.5!important}
+.bc1{left:3%!important;top:66px!important}.bc2{right:3%!important;top:66px!important}.bc3{left:2%!important;top:280px!important}.bc4{right:2%!important;top:280px!important}.bc5{left:4%!important;bottom:54px!important}.bc6{right:4%!important;bottom:54px!important}
+.board-link{position:absolute!important;right:18px!important;bottom:42px!important;z-index:6!important;background:var(--surface)!important;color:var(--ink)!important;border:1px solid var(--line-strong)!important;border-radius:4px!important;padding:10px 12px!important;font:600 9px var(--mono)!important;text-transform:uppercase!important}
+
+/* Cards and evidence modules */
+.grid2,.grid3,.st-fit-grid,.tech-core-grid,.v37-gov-grid,.award-grid,.v37-grid-static,.case-grid,.health-depth-grid{
+  display:grid!important;gap:14px!important
+}
+.grid2{grid-template-columns:repeat(2,1fr)!important}
+.grid3,.v37-gov-grid{grid-template-columns:repeat(3,1fr)!important}
+.st-fit-grid,.tech-core-grid,.case-grid{grid-template-columns:repeat(2,1fr)!important}
+.card,.st-card,.tech-core-card,.v37-gov-grid article,.v37-card-static,.case,.health-depth-grid article,.award-principle{
+  position:relative!important;min-height:0!important;padding:24px!important;
+  background:rgba(255,254,250,.88)!important;border:1px solid var(--line)!important;border-radius:4px!important;
+  box-shadow:none!important;color:var(--ink)!important
+}
+.card:before,.st-card:before,.tech-core-card:before,.v37-card-static:before,.case:before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--teal)
+}
+.card small,.st-card small,.tech-core-card small,.v37-card-static small,.case small{
+  color:var(--teal)!important;font:600 9px var(--mono)!important;letter-spacing:.09em!important;text-transform:uppercase!important
+}
+.card h3,.st-card h3,.tech-core-card h3,.v37-card-static h3,.case h3,.health-depth-grid h3{
+  color:var(--ink)!important;font:800 25px/1.05 var(--sans)!important;letter-spacing:-.035em!important;margin:18px 0 10px!important
+}
+.card p,.st-card p,.tech-core-card p,.v37-card-static p,.case p,.health-depth-grid p{
+  color:#586b78!important;font-size:13px!important;line-height:1.62!important
+}
+.tag,.st-tags span,.v37-meta-static span,.tags span,.chip-row span{
+  display:inline-flex!important;border:1px solid var(--line)!important;border-radius:3px!important;background:var(--surface-2)!important;
+  padding:6px 8px!important;color:#405666!important;font:600 9px/1 var(--mono)!important
+}
+.meta,.st-tags,.v37-meta-static,.tags,.chip-row{display:flex!important;gap:6px!important;flex-wrap:wrap!important;margin-top:14px!important}
+
+/* Projects list */
+.project{
+  display:grid!important;grid-template-columns:72px 1fr!important;gap:22px!important;
+  padding:26px 0!important;border-bottom:1px solid var(--line)!important;background:transparent!important
+}
+.project .num{
+  color:var(--teal)!important;font:600 12px/1 var(--mono)!important;padding-top:6px!important
+}
+.project h3{font:800 29px/1.05 var(--sans)!important;letter-spacing:-.035em!important;margin:0 0 9px!important;color:var(--ink)!important}
+.project p{max-width:850px;color:#596b78!important;line-height:1.65!important}
+
+/* Career timeline */
+.timeline{display:grid!important;gap:0!important}
+.timeline-item{
+  position:relative!important;padding:30px 24px 30px 38px!important;border-left:1px solid var(--line-strong)!important;border-bottom:1px solid var(--line)!important;
+  background:rgba(255,254,250,.58)!important
+}
+.timeline-item:before{content:"";position:absolute;left:-5px;top:36px;width:9px;height:9px;border-radius:50%;background:var(--teal);border:2px solid var(--paper)}
+.timeline-item small{font:600 9px var(--mono)!important;color:var(--teal)!important;letter-spacing:.08em!important}
+.timeline-item h3{font:800 29px/1.04 var(--sans)!important;letter-spacing:-.04em!important;margin:10px 0 10px!important}
+.timeline-item p,.timeline-item li{color:#526574!important;font-size:13px!important;line-height:1.6!important}
+.timeline-item ul{columns:2;column-gap:34px}
+
+/* Flows */
+.flow{display:grid!important;grid-template-columns:repeat(6,1fr)!important;gap:0!important;border:1px solid var(--line)!important;background:var(--surface)!important}
+.step{padding:20px!important;border-right:1px solid var(--line)!important;background:transparent!important}
+.step:last-child{border-right:0!important}
+.step span{font:600 9px var(--mono)!important;color:var(--teal)!important}
+.step b{display:block;margin:18px 0 7px;font-size:16px!important}
+.step p{font-size:11px!important;color:#647580!important;line-height:1.5!important}
+
+/* Portfolio-specific system architecture */
+.portfolio-hero-grid{display:grid;grid-template-columns:1.08fr .72fr;gap:42px;align-items:end}
+.portfolio-note{
+  padding:20px!important;background:var(--surface)!important;border:1px solid var(--line-strong)!important;border-left:4px solid var(--gold)!important;
+  border-radius:3px!important;box-shadow:none!important;transform:none!important;color:#4d6070!important
+}
+.portfolio-note b{display:block;margin-bottom:7px;font:800 20px/1.1 var(--sans)!important;color:var(--ink)!important}
+.metric-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line)}
+.metric-grid .metric{background:var(--surface)!important;color:var(--ink)!important;border-right:1px solid var(--line)!important}
+.metric-grid .metric strong{color:var(--ink)!important}.metric-grid .metric span{color:#617582!important}
+.platform-grid{display:grid;grid-template-columns:.76fr 1.48fr .76fr;gap:14px;align-items:stretch}
+.sticky{
+  padding:20px!important;background:var(--surface)!important;border:1px solid var(--line)!important;border-radius:3px!important;
+  box-shadow:none!important;transform:none!important
+}
+.sticky h3{font:800 22px/1.08 var(--sans)!important;letter-spacing:-.03em!important;margin:0 0 10px!important}
+.sticky li{font-size:12px!important;line-height:1.55!important;color:#576b78!important}
+.arch-box{
+  position:relative!important;padding:48px 18px 18px!important;background:var(--surface)!important;border:1px solid var(--line-strong)!important;border-radius:4px!important
+}
+.arch-label{
+  position:absolute!important;top:14px!important;left:18px!important;transform:none!important;
+  padding:0!important;background:transparent!important;border:0!important;border-radius:0!important;
+  font:600 9px var(--mono)!important;letter-spacing:.08em!important;color:var(--teal)!important
+}
+.arch-flow{display:grid!important;grid-template-columns:1fr 1.1fr 1fr!important;gap:12px!important;align-items:stretch!important}
+.arch-system{
+  padding:16px!important;background:var(--blue-soft)!important;border:1px solid #b8c9d6!important;border-radius:3px!important;text-align:left!important
+}
+.arch-system h4{font:800 19px/1.1 var(--sans)!important;margin:0 0 10px!important}
+.arch-system li{font-size:11px!important;line-height:1.55!important;color:#4d6070!important}
+.flow-steps{display:grid!important;gap:5px!important;align-content:center!important}
+.flow-steps div{padding:8px 9px!important;background:var(--surface-2)!important;border:1px solid var(--line)!important;text-align:center!important;font:600 9px/1.3 var(--mono)!important;color:#425867!important}
+.resp-grid{display:grid!important;grid-template-columns:1fr 1fr!important;gap:14px!important;margin-top:14px!important}
+.gov-grid,.award-strip{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:14px!important}
+.gov,.award{
+  padding:22px!important;background:var(--surface)!important;border:1px solid var(--line)!important;border-radius:4px!important;box-shadow:none!important
+}
+.gov h3,.award b{font:800 22px/1.08 var(--sans)!important;letter-spacing:-.03em!important;margin:8px 0!important}
+.gov p,.award span{font-size:12px!important;line-height:1.6!important;color:#5d6f7c!important}
+
+/* Technology page overrides */
+.tech-page-hero,.awards-hero{background:transparent!important;color:var(--ink)!important}
+.tech-stack-grid{display:grid!important;grid-template-columns:repeat(2,1fr)!important;gap:14px!important}
+.tech-stack-card,.tech-stack-card.hero-card{
+  grid-column:auto!important;min-height:0!important;padding:24px!important;border-radius:4px!important;
+  background:rgba(255,255,255,.055)!important;border:1px solid rgba(255,255,255,.15)!important
+}
+.tech-stack-card.hero-card{grid-column:1/-1!important}
+.tech-stack-card h3,.tech-stack-card.hero-card h3{
+  margin:26px 0 12px!important;font:800 clamp(28px,4vw,47px)/.98 var(--sans)!important;letter-spacing:-.045em!important;color:white!important
+}
+.tech-stack-card small{font:600 9px var(--mono)!important;color:#72d5cf!important;letter-spacing:.09em!important}
+.tech-stack-card p{color:#b8c5ce!important}
+.tech-health-band{background:rgba(255,255,255,.46)!important}
+
+/* Awards — turn trophy cards into editorial evidence panels */
+.award-showcase{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:14px!important}
+.award-big,.award-big.gold,.award-big.teal,.award-big.yashfeen-card{
+  position:relative!important;min-height:500px!important;padding:28px!important;background:#102b43!important;
+  border:1px solid rgba(255,255,255,.14)!important;border-radius:4px!important;overflow:hidden!important
+}
+.award-star{right:18px!important;top:12px!important;font-size:72px!important;color:rgba(255,255,255,.06)!important}
+.award-year{margin-bottom:26px!important;color:rgba(255,255,255,.09)!important;font:800 58px/1 var(--sans)!important}
+.award-big small{font:600 9px var(--mono)!important;color:#e1b759!important;letter-spacing:.1em!important}
+.award-big h2{font:800 38px/.98 var(--sans)!important;letter-spacing:-.04em!important;margin:14px 0 8px!important;color:white!important}
+.award-big h3{font:500 19px/1.2 var(--mono)!important;color:#7ed7d2!important;margin:0 0 20px!important}
+.award-note{left:28px!important;right:28px!important;bottom:26px!important;grid-template-columns:80px 1fr!important}
+
+/* Quotes */
+.quote{
+  max-width:1040px!important;color:inherit!important;font:700 clamp(35px,5vw,68px)/1.02 var(--sans)!important;
+  letter-spacing:-.045em!important
+}
+.quote strong{color:var(--teal)!important}
+
+/* CTA + footer */
+.cta{padding:72px 0!important;background:var(--ink)!important;color:white!important}
+.cta-grid{display:flex;justify-content:space-between;gap:30px;align-items:end}
+.cta h2{font:800 clamp(42px,6vw,78px)/.92 var(--sans)!important;letter-spacing:-.05em!important;margin:8px 0 0!important}
+.cta h2 em{font-family:Georgia,serif;font-weight:400;color:#e0b75c}
+footer{padding:52px 0 30px!important;background:#071a2b!important;color:#a9b8c3!important}
+.footer-title{max-width:900px;color:white!important;font:800 clamp(32px,5vw,62px)/.96 var(--sans)!important;letter-spacing:-.045em!important}
+.footer-title em{font-family:Georgia,serif;font-weight:400;color:#e0b75c!important}
+.footer-nav{display:flex!important;flex-wrap:wrap!important;gap:16px!important;margin-top:36px!important;padding-top:18px!important;border-top:1px solid rgba(255,255,255,.13)!important}
+.footer-nav a{font:600 9px var(--mono)!important;text-transform:uppercase!important;letter-spacing:.06em!important}
+.footer-row{display:flex!important;justify-content:space-between!important;gap:20px!important;margin-top:26px!important;font:500 10px var(--mono)!important}
+
+/* Mobile: the canvas becomes an intentional executive stack, not a broken desktop board */
+@media(max-width:960px){
+  .links{display:none!important}
+  .hero-grid,.portfolio-hero-grid,.section-head,.signature-head,.tech-signal-head,.award-head,.st-head,.v37-head-static{grid-template-columns:1fr!important}
+  .hero-grid{gap:28px}
+  .photo-card{max-width:520px}
+  .impact-grid,.v20-impact-grid,.metric-row,.metric-grid{grid-template-columns:repeat(2,1fr)!important}
+  .board{min-height:0!important;padding:54px 14px 18px!important;display:flex!important;flex-direction:column!important;gap:8px!important}
+  .board-lines{display:none!important}
+  .board-center,.board-card,.board-link{
+    position:relative!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;
+    transform:none!important;width:100%!important;height:auto!important
+  }
+  .board-center{order:-1!important;text-align:left!important;padding:24px!important}
+  .board-card{padding:15px!important}
+  .board-link{text-align:center!important;margin-top:8px!important}
+  .grid3,.v37-gov-grid,.award-showcase,.gov-grid,.award-strip{grid-template-columns:repeat(2,1fr)!important}
+  .platform-grid,.arch-flow{grid-template-columns:1fr!important}
+  .timeline-item ul{columns:1}
+  .flow{grid-template-columns:repeat(3,1fr)!important}
+  .step:nth-child(3){border-right:0!important}
+  .step:nth-child(-n+3){border-bottom:1px solid var(--line)!important}
+}
+@media(max-width:600px){
+  .wrap{width:calc(100% - 24px)}
+  .navbar{height:62px!important}.mark span{font-size:10px!important}.mark img{width:38px!important}.pill{padding:10px 11px!important}
+  .hero,.executive-hero,.portfolio-hero{padding:58px 0 40px!important}
+  .hero:after,.executive-hero:after,.portfolio-hero:after{display:none}
+  .display,.hero-copy h1,.portfolio-title{font-size:47px!important;line-height:.94!important}
+  .lead,.hero-copy p,.portfolio-intro{font-size:15px!important}
+  .band,.signature,.home-cases,.portfolio-section{padding:52px 0!important}
+  .section-title,.signature h2,.wb-title{font-size:39px!important}
+  .impact-grid,.v20-impact-grid,.metric-row,.metric-grid,.grid2,.grid3,.st-fit-grid,.tech-core-grid,.case-grid,.health-depth-grid,.award-showcase,.gov-grid,.award-strip,.resp-grid,.tech-stack-grid{grid-template-columns:1fr!important}
+  .impact-grid>div,.v20-impact-grid>div,.metric{border-right:0!important;border-bottom:1px solid rgba(255,255,255,.14)!important}
+  .metric-grid .metric{border-bottom:1px solid var(--line)!important}
+  .project{grid-template-columns:42px 1fr!important;gap:12px!important}
+  .project h3{font-size:23px!important}
+  .flow{grid-template-columns:1fr!important}
+  .step{border-right:0!important;border-bottom:1px solid var(--line)!important}
+  .footer-row,.cta-grid{flex-direction:column!important;align-items:flex-start!important}
+  .award-big{min-height:470px!important}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}

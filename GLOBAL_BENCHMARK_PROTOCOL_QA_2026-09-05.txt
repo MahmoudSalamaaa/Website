@@ -1,0 +1,60 @@
+MAHMOUD SALAMA — V4 GLOBAL BENCHMARK + PROTOCOL HARDENING QA
+Date: 05 September 2026
+Status: FINAL CANDIDATE — requires Mahmoud publication and post-publish live regression before Root promotion
+
+AUTHORITATIVE GOVERNANCE
+- Career Management Protocol v1.2 reviewed live from Google Drive.
+- Master Career Knowledge Base reviewed live from Google Drive.
+- Website facts, scope, attribution, technology depth and confidentiality boundaries checked against those sources.
+
+GLOBAL BENCHMARK THEMES APPLIED
+- Immediate role/seniority/proof above the fold.
+- Layered information: fast recruiter scan -> deeper executive evidence -> case-study detail.
+- Case studies emphasize role, decisions, architecture/process and outcomes rather than decorative project galleries.
+- Fewer, stronger signals; restrained motion and visual noise.
+- Mobile navigation remains discoverable instead of hiding primary sections.
+- Clear trust signals around responsibility level and technology depth.
+
+HARDENING APPLIED IN THIS CANDIDATE
+- Home proof hierarchy strengthened and metric repetition reduced.
+- Hero secondary CTA now opens the one-page executive profile.
+- Current mandate includes 54-person organization, 7 direct reports, 4 major functions and EGP 150M annual IT budget accountability.
+- Added confirmed EGP 11M Microsoft Dynamics 365 project/integration evidence.
+- Added confirmed 10+ Oman developer leadership and 15+ Omani government-platform scope.
+- Added Operational Data Store (ODS) practical experience.
+- Added Private Cloud leadership with explicit executive/platform positioning, not public-cloud specialization.
+- Added Health Technology Assessment (HTA) system/platform design/development with acronym expanded.
+- Strengthened role-attribution tags and operational outcomes across selected projects.
+- Added additional architecture evidence without displacing SAP as the flagship architecture case.
+- One-page executive profile corrected to exact official title and improved recruiter contact utility.
+- Replaced ambiguous signature wording with a precise technology/operations statement.
+- Mobile primary navigation changed from hidden to horizontally scrollable/discoverable at <=960px.
+- Added high-priority preload/fetch priority for homepage portrait.
+- Rebuilt 1200x630 Open Graph image; inspected for clipping/overlap and passed visual check.
+- Added robots meta to principal indexable pages and preserved canonical/OG/Twitter metadata.
+
+FINAL STATIC QA
+PASS — 13 HTML files parsed.
+PASS — one H1 on every principal content page.
+PASS — titles, canonical tags, Open Graph and robots metadata present on principal pages.
+PASS — primary navigation order consistent across principal pages.
+PASS — no broken local HTML links found.
+PASS — no duplicate IDs found.
+PASS — image alt attributes present.
+PASS — target=_blank links use noopener noreferrer.
+PASS — CSS brace balance across all stylesheets.
+PASS — exact official current title present.
+PASS — correct B.Sc. Computer Science / Zagazig University education present.
+PASS — MedIQ capitalization and Pharmaconex Awards 2026 · Excellence in Digital Transformation naming preserved.
+PASS — EGP 150M / EGP 11M / 10+ developers / 15+ Oman platforms / ODS / Private Cloud / HTA evidence present with scoped wording.
+PASS — no deprecated identity, unsupported KPI or banned technology/certification strings found in public HTML.
+PASS — Maktabi remains contribution-based; SAP remains governed UPA-side enterprise integration without invented SAP modules/counts/geography.
+
+VISUAL QA LIMITATION
+- Live V4 baseline was verified by Vercel HTTP/HTML fetch after the previous publication.
+- Visualping captures exist for V4 Home, Portfolio and Architecture, but this environment did not expose those remote capture pixels for full page-by-page visual inspection.
+- The newly generated local Open Graph image was directly inspected and passed.
+- Final pixel-level live regression should be repeated after Mahmoud publishes this candidate, before Root promotion.
+
+ROOT PROMOTION CONDITION
+Do not promote to Root until this candidate is published under /v4/ and the live regression confirms content, links, layout, mobile navigation, assets, canonical URLs and 404 behavior. During Root promotion, convert /v4/ canonical/share URLs and ../ asset paths to Root equivalents and replace the Root 404 with the V4 404.

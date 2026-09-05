@@ -1,0 +1,32 @@
+Mahmoud Salama — V4 Protocol Hardening QA
+Date: 05 Sep 2026
+Status: FINAL CANDIDATE FOR LIVE V4 VALIDATION
+
+Applied micro-hardening before Root promotion:
+1. Added concise UPA first-use definition on Home, Projects, Architecture and Recognition.
+2. Removed non-frozen wording "data modeling" and "CSS" from Technologies.
+3. Replaced Architecture "observability" with evidence-safe "monitoring".
+4. Replaced Keyframe "major and mid-sized engagements" wording with confirmed 150+ websites/portals/enterprise applications/electronic systems wording.
+5. Replaced "kernel work" with confirmed "kernel modules" wording in Experience and Portfolio.
+6. Preserved the new V4 404 page for Root promotion; note that /v4/* fallback currently resolves through the root-level 404 until promotion.
+
+Regression checks:
+- No flagged terms remain: data modeling / HTML-CSS / observability / major and mid-sized / kernel work.
+- Canonical tags retained on all 11 principal V4 content pages.
+- Existing MedIQ, SAP, governance, award, education, contact and identity corrections preserved.
+- ZIP integrity: PASS.
+
+Next gate: publish this package to /v4/, then re-run live page-by-page QA before Root promotion.
+
+
+DISTINCTIVE EXECUTIVE ENHANCEMENTS — 2026-09-05
+- Preserved Balanced Executive Systems Canvas; no redesign.
+- Added hero proof, recruiter 60-second profile, MedIQ flagship recognition, transformation before/after, executive leadership framework, governance strip, signature positioning and role-fit layer.
+- Added architecture principles, decision log, SAP decision snapshot, governance-by-design and full delivery lifecycle.
+- Added operating-model map, transformation playbook, leadership scale, career inflection points and executive FAQ.
+- Added architecture depth radar with Core / Practical / Oversight trust signal.
+- Added project anchors, responsibility legend and operational outcomes.
+- Added stakeholder landscape and confidentiality statement.
+- Added one-page printable Executive Profile and print/save-PDF mode.
+- Added Open Graph, Twitter Card, share image and Person JSON-LD.
+- Added desktop micro-interactions and mobile-first responsive rules for all new sections.

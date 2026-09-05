@@ -37,3 +37,26 @@ body,body.v20{background:#f8fafc!important;color:#0f172a!important}nav,footer,.h
 @media(min-width:961px){.board-center{transform:translate(-50%,-50%)!important}}
 @media(prefers-reduced-motion:reduce){.board .board-card:hover,.btn:hover,.pill:hover{transform:none!important}}
 @media print{.hero,.executive-hero,.portfolio-hero,.board,.cta{background:#fff!important}.board .board-card,.board-center,.photo-card,.focus-preview article,.impact-grid>div,.metric-grid .metric,.card,.case,.gov,.sticky,.award,.system-overview{box-shadow:none!important;transform:none!important}}
+
+/* Fix: prevent recognition-card title/subtitle collision in v4/portfolio.html */
+.award-strip .award{min-width:0!important}
+.award-strip .award b{
+  display:block!important;
+  margin:0 0 10px!important;
+  line-height:1.08!important;
+  overflow-wrap:anywhere!important;
+}
+.award-strip .award span{
+  display:block!important;
+  line-height:1.55!important;
+  overflow-wrap:anywhere!important;
+}
+@media(max-width:720px){
+  .award-strip .award b{
+    margin-bottom:8px!important;
+    font-size:clamp(20px,6vw,28px)!important;
+  }
+  .award-strip .award span{
+    font-size:clamp(12px,3.8vw,15px)!important;
+  }
+}

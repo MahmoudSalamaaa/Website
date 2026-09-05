@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
-<title>Technology Projects | Mahmoud Salama</title>
-<meta name="description" content="Extended project portfolio covering national healthcare platforms, enterprise applications, government systems, portals, integrations and historical digital delivery by Mahmoud Salama."/>
+<title>Projects | Mahmoud Salama</title>
+<meta name="description" content="Comprehensive technology project catalog across UPA, Oman, Keyframe Egypt and independent work."/>
 <link href="../favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="executive-canvas.css" rel="stylesheet"/>
 <link href="balanced-v4.css" rel="stylesheet"/>
@@ -13,726 +13,1219 @@
 <link href="refinements-v4.css" rel="stylesheet"/>
 <link href="brand-palette-v4.css" rel="stylesheet"/>
 <style>
-.project-catalog{padding:72px 0;background:#fff}
-.catalog-intro{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end;margin-bottom:28px}
-.catalog-intro p{margin:0;color:#475569;line-height:1.7;max-width:640px}
-.catalog-stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
-.catalog-stats span{display:inline-flex;padding:8px 10px;border-radius:999px;background:#eefafd;border:1px solid #c7e8ef;font:600 10px/1.2 var(--mono);color:#0f172a}
-.catalog-tabs{display:flex;gap:10px;flex-wrap:wrap;position:sticky;top:84px;z-index:20;padding:14px;margin:0 -14px 24px;background:rgba(248,250,252,.88);backdrop-filter:blur(14px);border:1px solid #e2e8f0;border-radius:16px}
-.catalog-tab{appearance:none;border:1px solid #d5dfe8;background:#fff;color:#0f172a;padding:10px 13px;border-radius:999px;font:700 10px/1 var(--mono);cursor:pointer;transition:.2s ease}
+.project-catalog{padding:70px 0;background:#fff}
+.catalog-intro{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:end;margin-bottom:26px}
+.catalog-intro p{margin:0;color:#475569;line-height:1.7}
+.catalog-tabs{display:flex;gap:9px;flex-wrap:wrap;position:sticky;top:82px;z-index:20;padding:12px;margin:0 -12px 18px;background:rgba(248,250,252,.9);backdrop-filter:blur(14px);border:1px solid #e2e8f0;border-radius:16px}
+.catalog-tab{border:1px solid #d7e0e8;background:#fff;border-radius:999px;padding:10px 13px;font:800 10px/1 var(--mono);cursor:pointer}
 .catalog-tab span{display:inline-grid;place-items:center;min-width:22px;height:22px;margin-left:6px;padding:0 6px;border-radius:999px;background:#eef2f7}
-.catalog-tab:hover{transform:translateY(-1px)}
-.catalog-tab.active{background:#c5f0f7;border-color:#06b6d4;box-shadow:0 5px 14px #06b6d422}
-.catalog-search{width:100%;margin:0 0 18px;padding:14px 16px;border:1px solid #d5dfe8;border-radius:12px;background:#fff;color:#0f172a;font:600 14px/1.2 var(--sans);outline:none}
+.catalog-tab.active{background:#c5f0f7;border-color:#06b6d4}
+.catalog-search{width:100%;margin-bottom:18px;padding:14px 16px;border:1px solid #d5dfe8;border-radius:12px;font:600 14px var(--sans);outline:none}
 .catalog-search:focus{border-color:#06b6d4;box-shadow:0 0 0 4px #06b6d41a}
-.catalog-list{display:grid;gap:10px}
+.project-list{display:grid;gap:10px}
 .project-card{border:1px solid #d8e1ea;border-radius:14px;background:#fff;overflow:hidden;box-shadow:0 3px 12px #0f172a08}
 .project-card[open]{box-shadow:0 8px 22px #0f172a12}
-.project-card summary{display:grid;grid-template-columns:54px minmax(0,1fr) auto 30px;gap:14px;align-items:center;padding:18px 20px;cursor:pointer;list-style:none}
+.project-card summary{display:grid;grid-template-columns:52px minmax(0,1fr) auto 28px;gap:14px;align-items:center;padding:18px 20px;cursor:pointer;list-style:none}
 .project-card summary::-webkit-details-marker{display:none}
-.project-index{font:700 11px/1 var(--mono);color:#0e7490}
-.project-main{min-width:0}
-.project-title{display:block;color:#0f172a;font:800 clamp(18px,2vw,24px)/1.08 var(--sans);letter-spacing:-.025em}
-.project-meta{display:flex;gap:7px;flex-wrap:wrap;margin-top:7px;color:#64748b;font:600 10px/1.3 var(--mono)}
-.project-category{white-space:nowrap;padding:8px 10px;border-radius:999px;background:#eefafd;color:#0f172a;font:700 9px/1 var(--mono)}
-.cat-national-healthcare{background:#c5f0f7}
-.cat-enterprise-applications{background:#e9d3f0}
-.cat-oman-government{background:#c9eccc}
-.cat-web-commercial-legacy{background:#ffe0c5}
+.project-index{font:800 11px var(--mono);color:#0e7490}
+.project-title{display:block;font:850 clamp(18px,2vw,24px)/1.08 var(--sans);letter-spacing:-.025em;color:#0f172a}
+.project-meta{display:flex;flex-wrap:wrap;gap:7px;margin-top:7px;color:#64748b;font:650 10px/1.35 var(--mono)}
+.project-org{padding:8px 10px;border-radius:999px;font:800 9px/1 var(--mono);white-space:nowrap}
+.org-upa{background:#c5f0f7} .org-oman{background:#c9eccc} .org-keyframe{background:#e9d3f0} .org-other{background:#ffe0c5}
 .project-chevron{font:700 24px/1 var(--sans);transition:transform .2s ease;text-align:center}
 .project-card[open] .project-chevron{transform:rotate(45deg)}
-.project-body{padding:0 20px 20px 88px;border-top:1px solid #edf1f5}
-.project-body p{max-width:900px;margin:18px 0 12px;color:#475569;font-size:14px;line-height:1.7}
-.project-link{display:inline-flex;font:700 10px/1 var(--mono);color:#0e7490;border-bottom:1px solid currentColor;padding-bottom:2px}
-.catalog-empty{display:none;padding:30px;text-align:center;color:#64748b;border:1px dashed #cbd5e1;border-radius:14px}
-.catalog-empty.show{display:block}
-.flagship-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
-.flagship{padding:20px;border-radius:16px;border:1px solid #d7e0e8;background:#fff}
-.flagship:nth-child(1){background:#c5f0f7}.flagship:nth-child(2){background:#e9d3f0}.flagship:nth-child(3){background:#ffe0c5}
-.flagship small{font:700 9px var(--mono);letter-spacing:.08em;color:#0e7490}
-.flagship b{display:block;margin-top:10px;font:800 22px/1.05 var(--sans)}
-.flagship p{margin:9px 0 0;color:#475569;font-size:12px;line-height:1.55}
-@media(max-width:900px){
- .catalog-intro{grid-template-columns:1fr}
- .flagship-strip{grid-template-columns:1fr}
- .catalog-tabs{top:76px}
- .project-card summary{grid-template-columns:40px minmax(0,1fr) 28px}
- .project-category{grid-column:2/3;justify-self:start}
- .project-chevron{grid-column:3/4;grid-row:1/3}
- .project-body{padding-left:74px}
-}
-@media(max-width:600px){
- .project-card summary{padding:15px 14px;gap:10px}
- .project-body{padding:0 14px 16px 54px}
- .catalog-tabs{padding:10px;gap:7px}
- .catalog-tab{font-size:9px;padding:9px 10px}
-}
+.project-body{padding:0 20px 20px 86px;border-top:1px solid #edf1f5}
+.project-body p{max-width:900px;margin:18px 0 0;color:#475569;font-size:14px;line-height:1.7}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px}
+.stat{padding:18px;border-radius:15px;border:1px solid #d7e0e8;background:#fff}
+.stat:nth-child(1){background:#c5f0f7} .stat:nth-child(2){background:#c9eccc} .stat:nth-child(3){background:#e9d3f0} .stat:nth-child(4){background:#ffe0c5}
+.stat small{font:800 9px var(--mono);letter-spacing:.08em} .stat b{display:block;margin-top:8px;font:900 28px/1 var(--sans)} .stat span{display:block;margin-top:6px;font-size:11px;color:#475569}
+.empty{display:none;padding:28px;text-align:center;border:1px dashed #cbd5e1;border-radius:14px;color:#64748b} .empty.show{display:block}
+@media(max-width:900px){.catalog-intro{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.project-card summary{grid-template-columns:38px minmax(0,1fr) 28px}.project-org{grid-column:2/3;justify-self:start}.project-chevron{grid-column:3/4;grid-row:1/3}.project-body{padding-left:72px}}
+@media(max-width:600px){.stats{grid-template-columns:1fr}.project-card summary{padding:15px 14px;gap:10px}.project-body{padding:0 14px 16px 52px}.catalog-tab{font-size:9px;padding:9px 10px}}
 </style>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <nav><div class="wrap navbar"><a class="mark" href="/v4/index.html"><img alt="KMS" src="../kms-logo-original.png"/><span>MAHMOUD SALAMA</span></a><div class="links"><details class="nav-group"><summary>Work</summary><div class="nav-menu"><a href="/v4/portfolio.html">Portfolio</a><a aria-current="page" href="/v4/projects.html">Projects</a><a href="/v4/technologies.html">Technologies</a><a href="/v4/architecture.html">Architecture</a></div></details><details class="nav-group"><summary>About</summary><div class="nav-menu"><a href="/v4/experience.html">Experience</a><a href="/v4/leadership.html">Leadership</a></div></details><details class="nav-group"><summary>Proof</summary><div class="nav-menu"><a href="/v4/governance.html">Governance</a><a href="/v4/awards.html">Recognition</a></div></details></div><a class="pill" href="/v4/contact.html">LET'S TALK →</a></div></nav>
 <main id="main">
-<section class="hero">
-<div class="wrap">
-<div class="kicker">PROJECT CATALOG · NATIONAL SCALE TO HANDS-ON DELIVERY</div>
-<h1 class="display">MORE THAN FLAGSHIPS.<br/>A REAL DELIVERY CATALOG.</h1>
-<p class="lead">A broader view of the systems, platforms, integrations, portals and digital products delivered across healthcare, government, enterprise and commercial environments.</p>
-<div class="flagship-strip">
-<div class="flagship"><small>FLAGSHIP NATIONAL PLATFORM</small><b>MedIQ</b><p>Unified procurement and medical-supply ecosystem at national scale.</p></div>
-<div class="flagship"><small>FLAGSHIP INTEGRATION</small><b>SAP × UPA</b><p>Bi-directional enterprise integration across operational and financial workflows.</p></div>
-<div class="flagship"><small>GOVERNMENT SCALE</small><b>Oman Platforms</b><p>15+ government platforms, including education and award-winning recruitment systems.</p></div>
+<section class="hero"><div class="wrap">
+<div class="kicker">PROJECT CATALOG · VERIFIED CAREER EVIDENCE</div>
+<h1 class="display">A WIDER BODY OF WORK.<br/>NOT JUST THE FLAGSHIPS.</h1>
+<p class="lead">A comprehensive, evidence-led catalog spanning national healthcare platforms, UPA workstreams, Oman government systems, Keyframe delivery and independent technical work.</p>
+<div class="stats">
+<div class="stat"><small>UPA / NATIONAL</small><b>48</b><span>Named platforms, projects and workstreams</span></div>
+<div class="stat"><small>OMAN / GCC</small><b>15+</b><span>Government / enterprise platforms in the source evidence</span></div>
+<div class="stat"><small>KEYFRAME</small><b>150+</b><span>Major and mid-sized projects in the canonical career record</span></div>
+<div class="stat"><small>NAMED HERE</small><b>94</b><span>Searchable entries in this page</span></div>
 </div>
-</div>
-</section>
+</div></section>
 
-<section class="project-catalog">
-<div class="wrap">
-<div class="catalog-intro">
-<div><div class="kicker">EXTENDED PORTFOLIO</div><h2 class="section-title">Browse by domain.</h2></div>
-<div><p>The flagship case studies stay prominent, while this catalog captures the wider body of work. Use the tabs or search, then expand any project for context.</p><div class="catalog-stats"><span>40 PROJECTS</span><span>EGYPT + OMAN + GCC</span><span>HEALTHCARE · GOVERNMENT · ENTERPRISE</span></div></div>
-</div>
-<div class="catalog-tabs" role="tablist" aria-label="Project categories">
-<button class="catalog-tab active" data-category="All Projects" type="button">All Projects <span>40</span></button><button class="catalog-tab" data-category="National &amp; Healthcare" type="button">National &amp; Healthcare <span>18</span></button><button class="catalog-tab" data-category="Enterprise Applications" type="button">Enterprise Applications <span>5</span></button><button class="catalog-tab" data-category="Oman Government" type="button">Oman Government <span>3</span></button><button class="catalog-tab" data-category="Web, Commercial &amp; Legacy" type="button">Web, Commercial &amp; Legacy <span>14</span></button>
-</div>
-<input id="project-search" class="catalog-search" type="search" placeholder="Search projects, systems, domains or roles…" aria-label="Search projects"/>
-<div id="project-list" class="catalog-list">
+<section class="project-catalog"><div class="wrap">
+<div class="catalog-intro"><div><div class="kicker">MASTER PROJECT DIRECTORY</div><h2 class="section-title">Browse by career portfolio.</h2></div><p>Use the tabs to isolate a career chapter, search by project or domain, and open individual entries only when you need the detail. This keeps the page executive and readable even with a large portfolio.</p></div>
+<div class="catalog-tabs" role="tablist" aria-label="Project filters"><button class="catalog-tab active" data-org="All Projects" type="button">All Projects <span>94</span></button><button class="catalog-tab" data-org="UPA" type="button">UPA <span>48</span></button><button class="catalog-tab" data-org="Oman" type="button">Oman <span>15</span></button><button class="catalog-tab" data-org="Keyframe" type="button">Keyframe <span>28</span></button><button class="catalog-tab" data-org="Other" type="button">Other <span>3</span></button></div>
+<input class="catalog-search" id="project-search" type="search" placeholder="Search project, platform, domain, role or technology…" aria-label="Search projects"/>
+<div class="project-list">
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">01</span>
+            <span class="project-main">
+              <span class="project-title">MedIQ — Unified National Procurement &amp; Medical Supply Ecosystem</span>
+              <span class="project-meta"><b>National Platform</b><span>·</span>Executive ownership</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Unified national enterprise procurement and medical-supply ecosystem spanning demand, tendering, pharmacy, inventory, assets, integrations, data, analytics, support and operations.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">02</span>
+            <span class="project-main">
+              <span class="project-title">MedIQ E‑Tender / Institutional Procurement Workflows</span>
+              <span class="project-meta"><b>Procurement</b><span>·</span>Executive ownership</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Institutional procurement and tendering workflows within the MedIQ ecosystem.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">03</span>
+            <span class="project-main">
+              <span class="project-title">MedIQ Electronic Pharmacy</span>
+              <span class="project-meta"><b>Digital Health</b><span>·</span>Executive ownership</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Digital pharmacy capability supporting stock oversight, dispensing, expiry controls, reporting and integration with central UPA platforms.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">04</span>
+            <span class="project-main">
+              <span class="project-title">Electronic Inventory &amp; Mobile Stocktaking</span>
+              <span class="project-meta"><b>Inventory</b><span>·</span>Executive ownership</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Electronic inventory operations with mobile stocktaking/counting and operational warehouse visibility.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">05</span>
+            <span class="project-main">
+              <span class="project-title">Medical Storage Validation &amp; Inventory Governance</span>
+              <span class="project-meta"><b>Inventory Governance</b><span>·</span>Executive ownership</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Governed storage and inventory-validation workflows supporting classification, activity review and national stock visibility.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">06</span>
+            <span class="project-main">
+              <span class="project-title">Digital Budgeting</span>
+              <span class="project-meta"><b>Finance</b><span>·</span>Executive ownership</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Digital budgeting capability within the MedIQ ecosystem.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">07</span>
+            <span class="project-main">
+              <span class="project-title">Unified Assets &amp; Medical‑Device Maintenance</span>
+              <span class="project-meta"><b>Assets</b><span>·</span>Executive ownership</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Unified assets and medical-device maintenance capability within the national platform.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">08</span>
+            <span class="project-main">
+              <span class="project-title">Strategic Medical Warehouses — SAP Enterprise Integration</span>
+              <span class="project-meta"><b>Enterprise Integration</b><span>·</span>UPA-side decision owner</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Greenfield, bi-directional integration between UPA and the SAP-based Strategic Medical Warehouses environment across request and financial workflows.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">09</span>
+            <span class="project-main">
+              <span class="project-title">Microsoft Dynamics 365 ERP / Unified Financial System</span>
+              <span class="project-meta"><b>ERP / Integration</b><span>·</span>Integration leadership</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Enterprise integration and financial-workflow alignment with Microsoft Dynamics 365.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">10</span>
+            <span class="project-main">
+              <span class="project-title">Health Technology Assessment (HTA) Platform</span>
+              <span class="project-meta"><b>Healthcare Platform</b><span>·</span>Designed / developed</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Technology platform designed and developed for HTA workflow and submission management.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">11</span>
+            <span class="project-main">
+              <span class="project-title">Private Cloud Platform</span>
+              <span class="project-meta"><b>Infrastructure / Platform</b><span>·</span>Leadership</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Private-cloud environment and initiative led as part of enterprise platform strategy and production operations.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">12</span>
+            <span class="project-main">
+              <span class="project-title">National Pharmaceutical Track &amp; Trace Program</span>
+              <span class="project-meta"><b>National Program</b><span>·</span>Governance lead</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>National pharmaceutical track-and-trace program covering governance, compliance, stakeholder coordination and technology roadmap.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">13</span>
+            <span class="project-main">
+              <span class="project-title">Enterprise &amp; Healthcare Integrations</span>
+              <span class="project-meta"><b>Integration</b><span>·</span>Architecture leadership</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Integration landscape spanning healthcare entities, government interfaces and enterprise systems.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">14</span>
+            <span class="project-main">
+              <span class="project-title">Operational Data Store (ODS)</span>
+              <span class="project-meta"><b>Data Platform</b><span>·</span>Practical experience</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Operational data-store capability supporting governed enterprise data and reporting.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">15</span>
+            <span class="project-main">
+              <span class="project-title">UPA Public Portal</span>
+              <span class="project-meta"><b>Web / Portal</b><span>·</span>Directed delivery</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Public procurement and institutional portal for announcements, tenders, events and transparency.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">16</span>
+            <span class="project-main">
+              <span class="project-title">Customer Service / Technical Support Platform</span>
+              <span class="project-meta"><b>Service Platform</b><span>·</span>Executive ownership</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Customer-service, CRM-supported case handling, support and escalation workflows.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">17</span>
+            <span class="project-main">
+              <span class="project-title">MedIQ Mobile App</span>
+              <span class="project-meta"><b>Mobile</b><span>·</span>Portfolio project</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Mobile application workstream within the 2026 digital-transformation portfolio.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">18</span>
+            <span class="project-main">
+              <span class="project-title">Government Sector Inventory Registration &amp; Follow-up</span>
+              <span class="project-meta"><b>Inventory</b><span>·</span>Portfolio project</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Government-sector inventory registration and follow-up initiative.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">19</span>
+            <span class="project-main">
+              <span class="project-title">Health Egypt Assets System Update</span>
+              <span class="project-meta"><b>Assets</b><span>·</span>Portfolio project</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Update and modernization workstream for health-asset operations.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">20</span>
+            <span class="project-main">
+              <span class="project-title">Supply &amp; Procurement Data Audit (IQVIA)</span>
+              <span class="project-meta"><b>Data / Audit</b><span>·</span>Portfolio project</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Supply and procurement data-quality and audit workstream with IQVIA.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">21</span>
+            <span class="project-main">
+              <span class="project-title">Drug Data Flow &amp; Tracking Platform (IQVIA)</span>
+              <span class="project-meta"><b>Data Integration</b><span>·</span>Portfolio project</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Drug-data flow and tracking platform for medicine visibility and planning.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">22</span>
+            <span class="project-main">
+              <span class="project-title">Central Data Warehouse</span>
+              <span class="project-meta"><b>Data Platform</b><span>·</span>Portfolio project</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Centralized enterprise data-warehouse initiative.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">23</span>
+            <span class="project-main">
+              <span class="project-title">MedIQ Permissions Governance / RBAC</span>
+              <span class="project-meta"><b>Governance</b><span>·</span>Portfolio project</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Role-based access governance and permissions standardization across MedIQ and connected systems.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">24</span>
+            <span class="project-main">
+              <span class="project-title">Integration Between Health Entity Systems</span>
+              <span class="project-meta"><b>Integration</b><span>·</span>Portfolio project</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Integration workstream connecting health-entity systems.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">25</span>
+            <span class="project-main">
+              <span class="project-title">AI Application in MedIQ / Solution Gate</span>
+              <span class="project-meta"><b>AI / Analytics</b><span>·</span>Portfolio project</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>AI-enabled analytics and decision-support initiative within MedIQ.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">26</span>
+            <span class="project-main">
+              <span class="project-title">DAF Private-Sector Payment Integration</span>
+              <span class="project-meta"><b>Payments</b><span>·</span>Portfolio project</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Private-sector payment integration with controlled status exchange and reconciliation readiness.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">27</span>
+            <span class="project-main">
+              <span class="project-title">Paperless / Collaborative Programs</span>
+              <span class="project-meta"><b>Digital Workplace</b><span>·</span>Portfolio project</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Paperless collaboration, onboarding and controlled digital-workflow rollout.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">28</span>
+            <span class="project-main">
+              <span class="project-title">Direct Purchase Digitization</span>
+              <span class="project-meta"><b>Procurement</b><span>·</span>Portfolio project</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Digitization of direct-purchase workflows and structured operational tracking.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">29</span>
+            <span class="project-main">
+              <span class="project-title">Electronic Signature Enablement</span>
+              <span class="project-meta"><b>Governance / Integration</b><span>·</span>Workstream</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Electronic-signature workflow and integration enablement.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">30</span>
+            <span class="project-main">
+              <span class="project-title">Africa Health ExCon Training Project</span>
+              <span class="project-meta"><b>Training</b><span>·</span>Workstream</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Training workstream associated with Africa Health ExCon.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">31</span>
+            <span class="project-main">
+              <span class="project-title">National Strategic Dashboard</span>
+              <span class="project-meta"><b>Analytics</b><span>·</span>Led</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Strategic KPI and government-reporting dashboard capability.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">32</span>
+            <span class="project-main">
+              <span class="project-title">Dynamic Report Engine</span>
+              <span class="project-meta"><b>Reporting</b><span>·</span>Directed delivery</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Unified automated reporting engine for financial, operational, audit and supply-chain reporting.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">33</span>
+            <span class="project-main">
+              <span class="project-title">Supply &amp; Procurement Analytics Enablement</span>
+              <span class="project-meta"><b>Analytics</b><span>·</span>Led</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Analytics enablement across procurement and medical-supply data.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">34</span>
+            <span class="project-main">
+              <span class="project-title">Real-Time Notifications Service</span>
+              <span class="project-meta"><b>Shared Service</b><span>·</span>Directed delivery</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Real-time notification service supporting platform workflows.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">35</span>
+            <span class="project-main">
+              <span class="project-title">Order Tracking System</span>
+              <span class="project-meta"><b>Operations</b><span>·</span>Directed delivery</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Order-tracking capability across procurement and delivery workflows.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">36</span>
+            <span class="project-main">
+              <span class="project-title">Entities Demand Planning System</span>
+              <span class="project-meta"><b>Planning</b><span>·</span>Directed delivery</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Demand-planning system supporting entity-level planning.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">37</span>
+            <span class="project-main">
+              <span class="project-title">SMS Notification / Omnichannel SMS Service</span>
+              <span class="project-meta"><b>Integration</b><span>·</span>Analysis / delivery leadership</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Omnichannel SMS and notification integration service.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">38</span>
+            <span class="project-main">
+              <span class="project-title">Unified Mobile Application</span>
+              <span class="project-meta"><b>Mobile</b><span>·</span>Directed delivery</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Unified mobile-services workstream.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">39</span>
+            <span class="project-main">
+              <span class="project-title">Integration with Medical Authorities</span>
+              <span class="project-meta"><b>Integration</b><span>·</span>Architecture leadership</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Integration with medical and health-sector authorities.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">40</span>
+            <span class="project-main">
+              <span class="project-title">Financial &amp; Product Data Auditing</span>
+              <span class="project-meta"><b>Data / Governance</b><span>·</span>Led</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Financial and product-data auditing, validation and reconciliation controls.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">41</span>
+            <span class="project-main">
+              <span class="project-title">Supply Chain System Enhancements</span>
+              <span class="project-meta"><b>Supply Chain</b><span>·</span>Directed modernization</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Enhancements across procurement, supply, inventory and operational workflows.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">42</span>
+            <span class="project-main">
+              <span class="project-title">UPA Delivery Mobile App</span>
+              <span class="project-meta"><b>Mobile</b><span>·</span>Directed delivery</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Mobile-enabled delivery operations.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">43</span>
+            <span class="project-main">
+              <span class="project-title">Health Assets Mobile</span>
+              <span class="project-meta"><b>Mobile</b><span>·</span>Directed delivery</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Mobile capability supporting health-assets visibility and tracking.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">44</span>
+            <span class="project-main">
+              <span class="project-title">Procurement</span>
+              <span class="project-meta"><b>Enterprise Application</b><span>·</span>Delivered</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Procurement workflows and enterprise application delivery.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">45</span>
+            <span class="project-main">
+              <span class="project-title">Tenders</span>
+              <span class="project-meta"><b>Enterprise Application</b><span>·</span>Delivered</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Tendering workflows and enterprise application delivery.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">46</span>
+            <span class="project-main">
+              <span class="project-title">Correspondence Management</span>
+              <span class="project-meta"><b>Enterprise Application</b><span>·</span>Delivered</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Correspondence-management workflows.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">47</span>
+            <span class="project-main">
+              <span class="project-title">Asset Management</span>
+              <span class="project-meta"><b>Enterprise Application</b><span>·</span>Delivered</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Enterprise asset-management application.</p></div>
+        </details>
+        <details class="project-card" data-org="UPA">
+          <summary>
+            <span class="project-index">48</span>
+            <span class="project-main">
+              <span class="project-title">Crises Management</span>
+              <span class="project-meta"><b>Enterprise Application</b><span>·</span>Delivered</span>
+            </span>
+            <span class="project-org org-upa">UPA</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Crisis-management application and workflows.</p></div>
+        </details>
+        <details class="project-card" data-org="Oman">
+          <summary>
+            <span class="project-index">49</span>
+            <span class="project-main">
+              <span class="project-title">Oman National Educational Portal</span>
+              <span class="project-meta"><b>National Education Platform</b><span>·</span>Core technical contributor</span>
+            </span>
+            <span class="project-org org-oman">Oman</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>National education platform serving approximately one million users, with hands-on work across analysis, application/database development, reporting, testing, deployment, rollout and support.</p></div>
+        </details>
+        <details class="project-card" data-org="Oman">
+          <summary>
+            <span class="project-index">50</span>
+            <span class="project-main">
+              <span class="project-title">Maktabi / Morasalat Electronic Correspondence Management</span>
+              <span class="project-meta"><b>Government Workflow</b><span>·</span>Major hands-on contribution</span>
+            </span>
+            <span class="project-org org-oman">Oman</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Large correspondence-management platform covering creation, routing, forwarding, tracking, reporting, database components, testing, deployment and production support.</p></div>
+        </details>
+        <details class="project-card" data-org="Oman">
+          <summary>
+            <span class="project-index">51</span>
+            <span class="project-main">
+              <span class="project-title">Oman Ministry of Education Recruitment System</span>
+              <span class="project-meta"><b>Government HR</b><span>·</span>Technical owner</span>
+            </span>
+            <span class="project-org org-oman">Oman</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>End-to-end recruitment platform associated with the Sultan Qaboos Award.</p></div>
+        </details>
+        <details class="project-card" data-org="Oman">
+          <summary>
+            <span class="project-index">52</span>
+            <span class="project-main">
+              <span class="project-title">Student Incident Management System</span>
+              <span class="project-meta"><b>Education</b><span>·</span>Technical owner</span>
+            </span>
+            <span class="project-org org-oman">Oman</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>System for recording, following up and reporting student incidents.</p></div>
+        </details>
+        <details class="project-card" data-org="Oman">
+          <summary>
+            <span class="project-index">53</span>
+            <span class="project-main">
+              <span class="project-title">International Schools Management System</span>
+              <span class="project-meta"><b>Education</b><span>·</span>Core technical contributor</span>
+            </span>
+            <span class="project-org org-oman">Oman</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>International-schools management application delivered during the Integral period.</p></div>
+        </details>
+        <details class="project-card" data-org="Oman">
+          <summary>
+            <span class="project-index">54</span>
+            <span class="project-main">
+              <span class="project-title">Crisis Management System</span>
+              <span class="project-meta"><b>Government Operations</b><span>·</span>Development leadership + hands-on</span>
+            </span>
+            <span class="project-org org-oman">Oman</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Government crisis-management system.</p></div>
+        </details>
+        <details class="project-card" data-org="Oman">
+          <summary>
+            <span class="project-index">55</span>
+            <span class="project-main">
+              <span class="project-title">Asset Management System</span>
+              <span class="project-meta"><b>IT Operations</b><span>·</span>Development leadership + hands-on</span>
+            </span>
+            <span class="project-org org-oman">Oman</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Government asset-management system.</p></div>
+        </details>
+        <details class="project-card" data-org="Oman">
+          <summary>
+            <span class="project-index">56</span>
+            <span class="project-main">
+              <span class="project-title">IT Asset &amp; Hardware Management</span>
+              <span class="project-meta"><b>IT Operations</b><span>·</span>Core technical contributor</span>
+            </span>
+            <span class="project-org org-oman">Oman</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Hardware-focused inventory and operational-control system in the Ministry of Education environment.</p></div>
+        </details>
+        <details class="project-card" data-org="Oman">
+          <summary>
+            <span class="project-index">57</span>
+            <span class="project-main">
+              <span class="project-title">Ministry of Agriculture Portal</span>
+              <span class="project-meta"><b>Government Portal</b><span>·</span>Technical owner</span>
+            </span>
+            <span class="project-org org-oman">Oman</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Government portal for the Oman Ministry of Agriculture.</p></div>
+        </details>
+        <details class="project-card" data-org="Oman">
+          <summary>
+            <span class="project-index">58</span>
+            <span class="project-main">
+              <span class="project-title">Omani Dates Market</span>
+              <span class="project-meta"><b>Government / Commerce</b><span>·</span>Technical owner</span>
+            </span>
+            <span class="project-org org-oman">Oman</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Portal and purchasing/request workflows for the Ministry of Agriculture environment.</p></div>
+        </details>
+        <details class="project-card" data-org="Oman">
+          <summary>
+            <span class="project-index">59</span>
+            <span class="project-main">
+              <span class="project-title">Al Wahat Club Management System</span>
+              <span class="project-meta"><b>Membership &amp; Events</b><span>·</span>Core technical contributor</span>
+            </span>
+            <span class="project-org org-oman">Oman</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Royal Court Affairs club management covering memberships, reservations, approvals and events.</p></div>
+        </details>
+        <details class="project-card" data-org="Oman">
+          <summary>
+            <span class="project-index">60</span>
+            <span class="project-main">
+              <span class="project-title">Police Civil Registry Integration</span>
+              <span class="project-meta"><b>Integration</b><span>·</span>Remembered evidence</span>
+            </span>
+            <span class="project-org org-oman">Oman</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Oman integration work remembered in the career knowledge base; keep wording moderate until full scope is re-confirmed.</p></div>
+        </details>
+        <details class="project-card" data-org="Oman">
+          <summary>
+            <span class="project-index">61</span>
+            <span class="project-main">
+              <span class="project-title">HR / Attendance System</span>
+              <span class="project-meta"><b>HR System</b><span>·</span>Remembered evidence</span>
+            </span>
+            <span class="project-org org-oman">Oman</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>HR and attendance system remembered from the Oman portfolio.</p></div>
+        </details>
+        <details class="project-card" data-org="Oman">
+          <summary>
+            <span class="project-index">62</span>
+            <span class="project-main">
+              <span class="project-title">Recruitment / Appointments Workflows</span>
+              <span class="project-meta"><b>Government HR</b><span>·</span>Remembered evidence</span>
+            </span>
+            <span class="project-org org-oman">Oman</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Recruitment and appointment workflows from the Oman period.</p></div>
+        </details>
+        <details class="project-card" data-org="Oman">
+          <summary>
+            <span class="project-index">63</span>
+            <span class="project-main">
+              <span class="project-title">Other Omani Government Portals &amp; Enterprise Applications</span>
+              <span class="project-meta"><b>Portfolio</b><span>·</span>15+ platforms total</span>
+            </span>
+            <span class="project-org org-oman">Oman</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Additional Integral Solutions delivery across 15+ government / enterprise platforms in Oman and the GCC.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">64</span>
+            <span class="project-main">
+              <span class="project-title">Reusable .NET CMS &amp; Electronic Publishing Platform</span>
+              <span class="project-meta"><b>Product Foundation</b><span>·</span>Technical owner</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Reusable multilingual/RTL CMS with pages, articles, news, events, galleries, permissions, workflows, search, SEO, analytics and integration extensions.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">65</span>
+            <span class="project-main">
+              <span class="project-title">Reusable Conference Management Platform</span>
+              <span class="project-meta"><b>Product Foundation</b><span>·</span>Technical owner</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Reusable conference platform covering registration, attendance, sessions, speakers, research evaluation, certificates, communications, administration and reporting.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">66</span>
+            <span class="project-main">
+              <span class="project-title">Egypt Ministry of Health &amp; Population Portal</span>
+              <span class="project-meta"><b>Government / Healthcare</b><span>·</span>Technical owner</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Large government health portal with CMS, services, electronic library, FAQ, newsletter, polls, media, reporting, security and deployment.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">67</span>
+            <span class="project-main">
+              <span class="project-title">Egypt Ministry of Planning Portal</span>
+              <span class="project-meta"><b>Government</b><span>·</span>Technical owner / SRS author</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Portal delivered from analysis and SRS through architecture, database, CMS, development, testing and deployment.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">68</span>
+            <span class="project-main">
+              <span class="project-title">MSAD — Ministry of State for Administrative Development</span>
+              <span class="project-meta"><b>Digital Government</b><span>·</span>Technical delivery</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Government digital-services portal/work.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">69</span>
+            <span class="project-main">
+              <span class="project-title">Rate Your Services</span>
+              <span class="project-meta"><b>Digital Government</b><span>·</span>Technical delivery</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Citizen/public-service feedback initiative.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">70</span>
+            <span class="project-main">
+              <span class="project-title">National Management Institute</span>
+              <span class="project-meta"><b>Government / Institutional</b><span>·</span>Technical delivery</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Institutional portal and digital-service work.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">71</span>
+            <span class="project-main">
+              <span class="project-title">National Anti-Corruption Committee Portal</span>
+              <span class="project-meta"><b>Digital Government</b><span>·</span>Technical delivery</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Government portal in the Keyframe digital-government suite.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">72</span>
+            <span class="project-main">
+              <span class="project-title">Egypt Calendar</span>
+              <span class="project-meta"><b>Public Information</b><span>·</span>Technical delivery</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>National/public-information digital experience.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">73</span>
+            <span class="project-main">
+              <span class="project-title">Elections in Egypt</span>
+              <span class="project-meta"><b>Public Information</b><span>·</span>Technical delivery</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Election-information digital experience.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">74</span>
+            <span class="project-main">
+              <span class="project-title">Online Surveys</span>
+              <span class="project-meta"><b>Government / Institutional</b><span>·</span>Technical delivery</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Survey and data-collection capabilities.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">75</span>
+            <span class="project-main">
+              <span class="project-title">Arab Medical Union Conference Management</span>
+              <span class="project-meta"><b>Healthcare / Events</b><span>·</span>Technical owner</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Conference-management implementation using the reusable conference platform.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">76</span>
+            <span class="project-main">
+              <span class="project-title">UCHID Conference Platform</span>
+              <span class="project-meta"><b>Healthcare / Events</b><span>·</span>Technical owner</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Conference-platform implementation.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">77</span>
+            <span class="project-main">
+              <span class="project-title">BGICC Conference Platform</span>
+              <span class="project-meta"><b>Events</b><span>·</span>Technical owner</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Conference-platform implementation.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">78</span>
+            <span class="project-main">
+              <span class="project-title">Arab Organizers Conference Platform</span>
+              <span class="project-meta"><b>Events</b><span>·</span>Technical owner</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Conference-platform implementation.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">79</span>
+            <span class="project-main">
+              <span class="project-title">Yashfeen Medical Portal</span>
+              <span class="project-meta"><b>Digital Health</b><span>·</span>Technical owner</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Medical portal recognized through an ITIDA award during the Keyframe period.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">80</span>
+            <span class="project-main">
+              <span class="project-title">Traffic Reporting &amp; Officers&#x27; Affairs System</span>
+              <span class="project-meta"><b>Public Safety</b><span>·</span>Technical owner</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Complete solution delivered from analysis and database design through testing and deployment.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">81</span>
+            <span class="project-main">
+              <span class="project-title">Electronic Examinations &amp; Educational Review System</span>
+              <span class="project-meta"><b>Education</b><span>·</span>Technical owner</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Electronic-examination and curriculum-review system.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">82</span>
+            <span class="project-main">
+              <span class="project-title">Electrolux Multi-Country Websites</span>
+              <span class="project-meta"><b>Commercial</b><span>·</span>Technical owner</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Reusable CMS implementation customized for Egypt, Saudi Arabia, UAE and Turkey.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">83</span>
+            <span class="project-main">
+              <span class="project-title">Zayed Dunes — Company Website</span>
+              <span class="project-meta"><b>Commercial</b><span>·</span>Confirmed remembered project</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Company website project confirmed for public use.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">84</span>
+            <span class="project-main">
+              <span class="project-title">Tasheed</span>
+              <span class="project-meta"><b>Commercial</b><span>·</span>Remembered project</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Historical Keyframe project remembered in the authoritative knowledge base.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">85</span>
+            <span class="project-main">
+              <span class="project-title">Support Desk</span>
+              <span class="project-meta"><b>Service Platform</b><span>·</span>Remembered project</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Historical support-desk project remembered in the authoritative knowledge base.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">86</span>
+            <span class="project-main">
+              <span class="project-title">Education Portal</span>
+              <span class="project-meta"><b>Education</b><span>·</span>Remembered evidence</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Additional education-portal work from the broader Keyframe portfolio.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">87</span>
+            <span class="project-main">
+              <span class="project-title">Student Incidents</span>
+              <span class="project-meta"><b>Education</b><span>·</span>Remembered evidence</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Student-incidents system remembered in the broader portfolio.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">88</span>
+            <span class="project-main">
+              <span class="project-title">Recruitment / Appointments</span>
+              <span class="project-meta"><b>HR System</b><span>·</span>Remembered evidence</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Recruitment/appointments system remembered in the broader portfolio.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">89</span>
+            <span class="project-main">
+              <span class="project-title">HR / Attendance</span>
+              <span class="project-meta"><b>HR System</b><span>·</span>Remembered evidence</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>HR/attendance system remembered in the broader portfolio.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">90</span>
+            <span class="project-main">
+              <span class="project-title">International Schools</span>
+              <span class="project-meta"><b>Education</b><span>·</span>Remembered evidence</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>International-schools work remembered in the broader portfolio.</p></div>
+        </details>
+        <details class="project-card" data-org="Keyframe">
+          <summary>
+            <span class="project-index">91</span>
+            <span class="project-main">
+              <span class="project-title">Disaster / Crisis Management Systems</span>
+              <span class="project-meta"><b>Government Operations</b><span>·</span>Remembered evidence</span>
+            </span>
+            <span class="project-org org-keyframe">Keyframe</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Disaster/crisis-management work remembered in the broader portfolio.</p></div>
+        </details>
+        <details class="project-card" data-org="Other">
+          <summary>
+            <span class="project-index">92</span>
+            <span class="project-main">
+              <span class="project-title">Salamat Healthcare Platform</span>
+              <span class="project-meta"><b>Independent Venture</b><span>·</span>Founder / sole product &amp; application developer</span>
+            </span>
+            <span class="project-org org-other">Other</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Bilingual healthcare platform developed as an independent product venture.</p></div>
+        </details>
+        <details class="project-card" data-org="Other">
+          <summary>
+            <span class="project-index">93</span>
+            <span class="project-main">
+              <span class="project-title">Custom Linux Distribution Contribution</span>
+              <span class="project-meta"><b>Systems</b><span>·</span>Contributor</span>
+            </span>
+            <span class="project-org org-other">Other</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Contribution to Egypt&#x27;s first Linux distribution, including Linux From Scratch and system-level work.</p></div>
+        </details>
+        <details class="project-card" data-org="Other">
+          <summary>
+            <span class="project-index">94</span>
+            <span class="project-main">
+              <span class="project-title">Secure Internal ASP.NET / SQL Server Applications</span>
+              <span class="project-meta"><b>Internal Systems</b><span>·</span>Developer</span>
+            </span>
+            <span class="project-org org-other">Other</span>
+            <span class="project-chevron">+</span>
+          </summary>
+          <div class="project-body"><p>Secure internal application development during Egyptian Armed Forces service.</p></div>
+        </details></div>
+<div id="empty" class="empty">No projects match this filter.</div>
+</div></section>
 
-    <details class="project-card" data-category="National &amp; Healthcare">
-      <summary>
-        <span class="project-index">01</span>
-        <span class="project-main">
-          <span class="project-title">SAP Strategic Medical Warehouses Integration</span>
-          <span class="project-meta"><b>Integration</b><span>·</span>Led integration architecture and delivery</span>
-        </span>
-        <span class="project-category cat-national-healthcare">National &amp; Healthcare</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>UPA-side integration architecture and end-to-end delivery connecting request and financial workflows with the SAP-based Strategic Medical Warehouses environment, including master-data harmonization, security, UAT, go-live and production support.</p>
-        
-      </div>
-    </details>
-    <details class="project-card" data-category="National &amp; Healthcare">
-      <summary>
-        <span class="project-index">02</span>
-        <span class="project-main">
-          <span class="project-title">Private Cloud Platform</span>
-          <span class="project-meta"><b>Platform</b><span>·</span>Led platform strategy and operations</span>
-        </span>
-        <span class="project-category cat-national-healthcare">National &amp; Healthcare</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Enterprise private-cloud environment led as part of platform strategy, production operations and service continuity.</p>
-        
-      </div>
-    </details>
-    <details class="project-card" data-category="Enterprise Applications">
-      <summary>
-        <span class="project-index">03</span>
-        <span class="project-main">
-          <span class="project-title">Procurement</span>
-          <span class="project-meta"><b>Application</b><span>·</span>Led architecture and delivery governance</span>
-        </span>
-        <span class="project-category cat-enterprise-applications">Enterprise Applications</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Unified e-Procurement platform covering vendor onboarding, master data, RFP/RFQ authoring with templates, multi-criteria evaluation, automatic scoring aggregation, approval workflows (parallel/serial), contract generation, and full audit trail. Includes supplier performance KPIs, SLA tracking, and analytics exported to BI dashboards for spend visibility and compliance.</p>
-        
-      </div>
-    </details>
-    <details class="project-card" data-category="Enterprise Applications">
-      <summary>
-        <span class="project-index">04</span>
-        <span class="project-main">
-          <span class="project-title">Tenders</span>
-          <span class="project-meta"><b>Application</b><span>·</span>Led architecture and delivery governance</span>
-        </span>
-        <span class="project-category cat-enterprise-applications">Enterprise Applications</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Centralized tender lifecycle: eligibility screening, document purchase, bid submission, encryption, technical/financial opening, weighted scoring matrices, clarifications, and award recommendations. Public disclosure modules improve transparency while internal reports support governance, savings tracking, and supplier diversity.</p>
-        
-      </div>
-    </details>
-    <details class="project-card" data-category="Enterprise Applications">
-      <summary>
-        <span class="project-index">05</span>
-        <span class="project-main">
-          <span class="project-title">Correspondence Management</span>
-          <span class="project-meta"><b>Application</b><span>·</span>Directed delivery</span>
-        </span>
-        <span class="project-category cat-enterprise-applications">Enterprise Applications</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Enterprise correspondence &amp; registry with auto-numbering, SLA timers, multi-level routing, attachments with versioning, granular permissions, and advanced search. Dashboards highlight overdue items and bottlenecks, while exports provide compliance evidence for audits.</p>
-        
-      </div>
-    </details>
-    <details class="project-card" data-category="Enterprise Applications">
-      <summary>
-        <span class="project-index">06</span>
-        <span class="project-main">
-          <span class="project-title">Asset Management</span>
-          <span class="project-meta"><b>Application</b><span>·</span>Directed delivery</span>
-        </span>
-        <span class="project-category cat-enterprise-applications">Enterprise Applications</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Lifecycle management for medical/critical assets: acquisition, tagging, warranty, PM/CM schedules, work orders, spare parts, utilization, and depreciation. Integrates with inventory and finance; provides health-index scoring and failure analytics to optimize replacement planning.</p>
-        
-      </div>
-    </details>
-    <details class="project-card" data-category="Enterprise Applications">
-      <summary>
-        <span class="project-index">07</span>
-        <span class="project-main">
-          <span class="project-title">Crises Management</span>
-          <span class="project-meta"><b>Application</b><span>·</span>Directed delivery</span>
-        </span>
-        <span class="project-category cat-enterprise-applications">Enterprise Applications</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Emergency operations center with incident logging, resource allocation, checklists/SOPs, real-time status boards, and GIS overlays. Supports multi-agency coordination, role-based access, communication templates, after-action reporting, and scenario drills.</p>
-        
-      </div>
-    </details>
-    <details class="project-card" data-category="Oman Government">
-      <summary>
-        <span class="project-index">08</span>
-        <span class="project-main">
-          <span class="project-title">Recruitment</span>
-          <span class="project-meta"><b>Application</b><span>·</span>Directed delivery</span>
-        </span>
-        <span class="project-category cat-oman-government">Oman Government</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>ATS with requisitions, postings, candidate profiles, skill matching, pipelines, structured interviews, and offer approvals. Provides DEI metrics, time-to-hire analytics, and vacancy forecasting. Integrates with HRIS for onboarding handoff.</p>
-        
-      </div>
-    </details>
-    <details class="project-card" data-category="Oman Government">
-      <summary>
-        <span class="project-index">09</span>
-        <span class="project-main">
-          <span class="project-title">Educational Gate of Oman</span>
-          <span class="project-meta"><b>Application</b><span>·</span>Led enterprise portal delivery</span>
-        </span>
-        <span class="project-category cat-oman-government">Oman Government</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Nation-scale education portal: curriculum content delivery, assessments, timetable management, guardian access, and analytics for attendance and performance. Built for high availability and multi-role security with mobile-friendly UX.</p>
-        <a class="project-link" href="https://moe.gov.om/" target="_blank" rel="noopener">Open live site ↗</a>
-      </div>
-    </details>
-    <details class="project-card" data-category="National &amp; Healthcare">
-      <summary>
-        <span class="project-index">10</span>
-        <span class="project-main">
-          <span class="project-title">Ministry of Health and Population of Egypt</span>
-          <span class="project-meta"><b>Website / Portal</b><span>·</span>Led portal delivery</span>
-        </span>
-        <span class="project-category cat-national-healthcare">National &amp; Healthcare</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Official MOHP portal with integrated services directory, health campaigns, press updates, and accessibility features. Designed for high traffic and fast content publishing with editorial workflows.</p>
-        <a class="project-link" href="https://www.mohp.gov.eg/" target="_blank" rel="noopener">Open live site ↗</a>
-      </div>
-    </details>
-    <details class="project-card" data-category="National &amp; Healthcare">
-      <summary>
-        <span class="project-index">11</span>
-        <span class="project-main">
-          <span class="project-title">Egyptian Authority for Unified Procurement “UPA”</span>
-          <span class="project-meta"><b>Website / Portal</b><span>·</span>Directed portal delivery</span>
-        </span>
-        <span class="project-category cat-national-healthcare">National &amp; Healthcare</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Public-facing procurement portal for announcements, tenders, events, and press. Emphasis on transparency, accessibility, and structured content taxonomy for discoverability.</p>
-        <a class="project-link" href="https://upa.gov.eg/" target="_blank" rel="noopener">Open live site ↗</a>
-      </div>
-    </details>
-    <details class="project-card" data-category="Web, Commercial &amp; Legacy">
-      <summary>
-        <span class="project-index">12</span>
-        <span class="project-main">
-          <span class="project-title">Rate Your Services</span>
-          <span class="project-meta"><b>Website / Portal</b><span>·</span>Contributed to solution delivery</span>
-        </span>
-        <span class="project-category cat-web-commercial-legacy">Web, Commercial &amp; Legacy</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Citizen feedback system with web forms, QR-based collection, and dashboards that surface satisfaction trends, service-level breaches, and geographic heatmaps.</p>
-        <a class="project-link" href="https://www.facebook.com/rateyourservices/" target="_blank" rel="noopener">Open live site ↗</a>
-      </div>
-    </details>
-    <details class="project-card" data-category="Oman Government">
-      <summary>
-        <span class="project-index">13</span>
-        <span class="project-main">
-          <span class="project-title">Ministry Of Agriculture Of Oman</span>
-          <span class="project-meta"><b>Website / Portal</b><span>·</span>Led portal delivery</span>
-        </span>
-        <span class="project-category cat-oman-government">Oman Government</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Government portal delivering permits, forms, and GIS overlays with service-level guidance. Built with structured IA and multilingual content readiness.</p>
-        <a class="project-link" href="https://gov.om/en/ministry-of-agriculture-fisheries-and-water-resources" target="_blank" rel="noopener">Open live site ↗</a>
-      </div>
-    </details>
-    <details class="project-card" data-category="National &amp; Healthcare">
-      <summary>
-        <span class="project-index">14</span>
-        <span class="project-main">
-          <span class="project-title">MedIQ / Unified Procurement &amp; Medical Supply Ecosystem</span>
-          <span class="project-meta"><b>Application</b><span>·</span>Led architecture and governance</span>
-        </span>
-        <span class="project-category cat-national-healthcare">National &amp; Healthcare</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Integrated 10-platform procurement and medical-supply ecosystem supporting RFPs, approvals, inventory, distribution, supplier processes, and supply-chain controls across 12,000+ public-sector entities.</p>
-        
-      </div>
-    </details>
-    <details class="project-card" data-category="National &amp; Healthcare">
-      <summary>
-        <span class="project-index">15</span>
-        <span class="project-main">
-          <span class="project-title">Microsoft Dynamics 365 ERP &amp; CRM Integration</span>
-          <span class="project-meta"><b>Application</b><span>·</span>Directed integration architecture</span>
-        </span>
-        <span class="project-category cat-national-healthcare">National &amp; Healthcare</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Integration architecture connecting procurement, operations, stakeholder services, reporting, and data platforms with Microsoft Dynamics 365 ERP and CRM through controlled exchange, mapping, validation, reconciliation, workflow alignment, monitoring, and audit controls.</p>
-        
-      </div>
-    </details>
-    <details class="project-card" data-category="National &amp; Healthcare">
-      <summary>
-        <span class="project-index">16</span>
-        <span class="project-main">
-          <span class="project-title">National Strategic Dashboard, Analytics &amp; Reporting Engine</span>
-          <span class="project-meta"><b>Application</b><span>·</span>Led data and analytics architecture</span>
-        </span>
-        <span class="project-category cat-national-healthcare">National &amp; Healthcare</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Executive KPI and operational intelligence ecosystem using governed data, Power BI, Apache Superset, validation controls, and standardized reporting to strengthen decision-making and reporting consistency.</p>
-        
-      </div>
-    </details>
-    <details class="project-card" data-category="National &amp; Healthcare">
-      <summary>
-        <span class="project-index">17</span>
-        <span class="project-main">
-          <span class="project-title">Customer Care &amp; Technical Support System</span>
-          <span class="project-meta"><b>Application</b><span>·</span>Directed delivery</span>
-        </span>
-        <span class="project-category cat-national-healthcare">National &amp; Healthcare</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Unified CRM, IVR, ticketing, SLA dashboards, and customer journey tracking to enhance national support operations.</p>
-        
-      </div>
-    </details>
-    <details class="project-card" data-category="National &amp; Healthcare">
-      <summary>
-        <span class="project-index">18</span>
-        <span class="project-main">
-          <span class="project-title">Real-Time Notifications Service</span>
-          <span class="project-meta"><b>Application</b><span>·</span>Directed platform delivery</span>
-        </span>
-        <span class="project-category cat-national-healthcare">National &amp; Healthcare</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Event-driven real-time alerts for requests, stock, deliveries, and system events using WebSockets infrastructure.</p>
-        
-      </div>
-    </details>
-    <details class="project-card" data-category="National &amp; Healthcare">
-      <summary>
-        <span class="project-index">19</span>
-        <span class="project-main">
-          <span class="project-title">Order Tracking</span>
-          <span class="project-meta"><b>Application</b><span>·</span>Led architecture and delivery governance</span>
-        </span>
-        <span class="project-category cat-national-healthcare">National &amp; Healthcare</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>End-to-end tracking of supply requests, POs, delivery notes, inspection documents, and warehouse activities in a unified timeline.</p>
-        
-      </div>
-    </details>
-    <details class="project-card" data-category="National &amp; Healthcare">
-      <summary>
-        <span class="project-index">20</span>
-        <span class="project-main">
-          <span class="project-title">Demand Planning</span>
-          <span class="project-meta"><b>Application</b><span>·</span>Led data-platform enablement</span>
-        </span>
-        <span class="project-category cat-national-healthcare">National &amp; Healthcare</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Demand-planning and forecasting support using governed data, planning KPIs, historical consumption patterns, and scenario analysis to guide procurement quantities and reduce supply risk.</p>
-        
-      </div>
-    </details>
-    <details class="project-card" data-category="National &amp; Healthcare">
-      <summary>
-        <span class="project-index">21</span>
-        <span class="project-main">
-          <span class="project-title">Health Technology Assessment Platform</span>
-          <span class="project-meta"><b>Application</b><span>·</span>Directed architecture and workflow digitization</span>
-        </span>
-        <span class="project-category cat-national-healthcare">National &amp; Healthcare</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Digital platform supporting evidence submission, controlled review, assessment tracking, role-based access, audit traceability, dashboards, and compliance reporting.</p>
-        
-      </div>
-    </details>
-    <details class="project-card" data-category="National &amp; Healthcare">
-      <summary>
-        <span class="project-index">22</span>
-        <span class="project-main">
-          <span class="project-title">Electronic Pharmacy System</span>
-          <span class="project-meta"><b>Application</b><span>·</span>Directed delivery</span>
-        </span>
-        <span class="project-category cat-national-healthcare">National &amp; Healthcare</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Digital pharmacy system enabling stock oversight, dispensing, expiry alerts, and unified reporting integrated with UPA’s central platforms.</p>
-        
-      </div>
-    </details>
-    <details class="project-card" data-category="National &amp; Healthcare">
-      <summary>
-        <span class="project-index">23</span>
-        <span class="project-main">
-          <span class="project-title">SMS Integration Service</span>
-          <span class="project-meta"><b>Application</b><span>·</span>Directed integration delivery</span>
-        </span>
-        <span class="project-category cat-national-healthcare">National &amp; Healthcare</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>SMS gateway integration enabling role-based real-time alerts for supply chain, approvals, and operational updates.</p>
-        
-      </div>
-    </details>
-    <details class="project-card" data-category="National &amp; Healthcare">
-      <summary>
-        <span class="project-index">24</span>
-        <span class="project-main">
-          <span class="project-title">Supply &amp; Procurement Analytics Enablement</span>
-          <span class="project-meta"><b>Application</b><span>·</span>Led technology and data-platform enablement</span>
-        </span>
-        <span class="project-category cat-national-healthcare">National &amp; Healthcare</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Technology and data-platform enablement for demand planning, procurement monitoring, anomaly identification, risk assessment, and cost-optimization analysis across the public healthcare procurement chain.</p>
-        
-      </div>
-    </details>
-    <details class="project-card" data-category="National &amp; Healthcare">
-      <summary>
-        <span class="project-index">25</span>
-        <span class="project-main">
-          <span class="project-title">National Health Sector Data Warehouse</span>
-          <span class="project-meta"><b>Application</b><span>·</span>Led enterprise data architecture</span>
-        </span>
-        <span class="project-category cat-national-healthcare">National &amp; Healthcare</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Governed national health-sector data environment using PostgreSQL, data pipelines, master data, operational data stores, validation controls, Power BI, and Apache Superset; the reporting layer processes 12M+ records daily.</p>
-        
-      </div>
-    </details>
-    <details class="project-card" data-category="Web, Commercial &amp; Legacy">
-      <summary>
-        <span class="project-index">26</span>
-        <span class="project-main">
-          <span class="project-title">Unified Mobile Application</span>
-          <span class="project-meta"><b>Application</b><span>·</span>Directed delivery</span>
-        </span>
-        <span class="project-category cat-web-commercial-legacy">Web, Commercial &amp; Legacy</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>A single mobile app consolidating supply chain services, stock operations, tracking, reporting, and notifications into one unified UX.</p>
-        
-      </div>
-    </details>
-    <details class="project-card" data-category="National &amp; Healthcare">
-      <summary>
-        <span class="project-index">27</span>
-        <span class="project-main">
-          <span class="project-title">Electronic Signature </span>
-          <span class="project-meta"><b>Application</b><span>·</span>Directed delivery</span>
-        </span>
-        <span class="project-category cat-national-healthcare">National &amp; Healthcare</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Digital signature implementation for supply requests, contracts, delivery notes, inspection reports with full legal compliance.</p>
-        
-      </div>
-    </details>
-    <details class="project-card" data-category="National &amp; Healthcare">
-      <summary>
-        <span class="project-index">28</span>
-        <span class="project-main">
-          <span class="project-title">National Pharmaceutical Track &amp; Trace Program</span>
-          <span class="project-meta"><b>Application</b><span>·</span>Governance lead and technology roadmap owner</span>
-        </span>
-        <span class="project-category cat-national-healthcare">National &amp; Healthcare</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>National program governance covering vision, compliance, cross-agency coordination, interoperability principles, and the technology roadmap across UPA, the Egyptian Drug Authority, and the Ministry of Health.</p>
-        
-      </div>
-    </details>
-    <details class="project-card" data-category="Web, Commercial &amp; Legacy">
-      <summary>
-        <span class="project-index">29</span>
-        <span class="project-main">
-          <span class="project-title">BGICC</span>
-          <span class="project-meta"><b>Website / Portal</b><span>·</span>Developed and delivered</span>
-        </span>
-        <span class="project-category cat-web-commercial-legacy">Web, Commercial &amp; Legacy</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Annual Breast &amp; Gynecological International Cancer Conference website covering agenda, speakers, registrations, and archives with SEO-friendly schemas.</p>
-        <a class="project-link" href="https://bgicc.net/" target="_blank" rel="noopener">Open live site ↗</a>
-      </div>
-    </details>
-    <details class="project-card" data-category="Web, Commercial &amp; Legacy">
-      <summary>
-        <span class="project-index">30</span>
-        <span class="project-main">
-          <span class="project-title">ESCD</span>
-          <span class="project-meta"><b>Website / Portal</b><span>·</span>Developed and delivered</span>
-        </span>
-        <span class="project-category cat-web-commercial-legacy">Web, Commercial &amp; Legacy</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Society portal for programs, publications, member resources, and events. Optimized for content editors with role-based workflows.</p>
-        <a class="project-link" href="https://www.escd-egypt.org/" target="_blank" rel="noopener">Open live site ↗</a>
-      </div>
-    </details>
-    <details class="project-card" data-category="Web, Commercial &amp; Legacy">
-      <summary>
-        <span class="project-index">31</span>
-        <span class="project-main">
-          <span class="project-title">Arab Organizers</span>
-          <span class="project-meta"><b>Website / Portal</b><span>·</span>Developed and delivered</span>
-        </span>
-        <span class="project-category cat-web-commercial-legacy">Web, Commercial &amp; Legacy</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Events portfolio with online registration, agenda builder, sponsor tiers, and media gallery. Built with modular components for rapid event cloning.</p>
-        <a class="project-link" href="https://araborganizers.org/" target="_blank" rel="noopener">Open live site ↗</a>
-      </div>
-    </details>
-    <details class="project-card" data-category="Web, Commercial &amp; Legacy">
-      <summary>
-        <span class="project-index">32</span>
-        <span class="project-main">
-          <span class="project-title">Egyptian Federation for Construction and Building</span>
-          <span class="project-meta"><b>Website / Portal</b><span>·</span>Developed and delivered</span>
-        </span>
-        <span class="project-category cat-web-commercial-legacy">Web, Commercial &amp; Legacy</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Federation portal with member enrollment, sector updates, and document repository. Built for clarity and low-friction navigation.</p>
-        <a class="project-link" href="https://www.facebook.com/efcbc/" target="_blank" rel="noopener">Open live site ↗</a>
-      </div>
-    </details>
-    <details class="project-card" data-category="Web, Commercial &amp; Legacy">
-      <summary>
-        <span class="project-index">33</span>
-        <span class="project-main">
-          <span class="project-title">Arab Medical Union</span>
-          <span class="project-meta"><b>Website / Portal</b><span>·</span>Developed and delivered</span>
-        </span>
-        <span class="project-category cat-web-commercial-legacy">Web, Commercial &amp; Legacy</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Official union portal with initiatives, accredited training, publications, and a professional directory powered by structured data.</p>
-        <a class="project-link" href="https://amunion.org/" target="_blank" rel="noopener">Open live site ↗</a>
-      </div>
-    </details>
-    <details class="project-card" data-category="Web, Commercial &amp; Legacy">
-      <summary>
-        <span class="project-index">34</span>
-        <span class="project-main">
-          <span class="project-title">Zayed Dunes</span>
-          <span class="project-meta"><b>Website / Portal</b><span>·</span>Developed and delivered</span>
-        </span>
-        <span class="project-category cat-web-commercial-legacy">Web, Commercial &amp; Legacy</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Real-estate marketing site with projects, galleries, and contact flows. Optimized for lead-gen and cross-device performance.</p>
-        <a class="project-link" href="https://zayeddunes.com/" target="_blank" rel="noopener">Open live site ↗</a>
-      </div>
-    </details>
-    <details class="project-card" data-category="Web, Commercial &amp; Legacy">
-      <summary>
-        <span class="project-index">35</span>
-        <span class="project-main">
-          <span class="project-title">International Gastrointestinal, Liver &amp; Uro-Oncology Conference</span>
-          <span class="project-meta"><b>Website / Portal</b><span>·</span>Developed and delivered</span>
-        </span>
-        <span class="project-category cat-web-commercial-legacy">Web, Commercial &amp; Legacy</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>IGILUC conference portal: program, speaker profiles, registration, and scientific publications. Built with strong content governance and SEO.</p>
-        <a class="project-link" href="https://www.igiluc.com/" target="_blank" rel="noopener">Open live site ↗</a>
-      </div>
-    </details>
-    <details class="project-card" data-category="Web, Commercial &amp; Legacy">
-      <summary>
-        <span class="project-index">36</span>
-        <span class="project-main">
-          <span class="project-title">Alfouad for Automotive Spare Parts</span>
-          <span class="project-meta"><b>Website / Portal</b><span>·</span>Developed and delivered</span>
-        </span>
-        <span class="project-category cat-web-commercial-legacy">Web, Commercial &amp; Legacy</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Corporate and catalog presence for automotive parts with improved IA, structured metadata, and scalable product content.</p>
-        <a class="project-link" href="https://www.alfouad.co/" target="_blank" rel="noopener">Open live site ↗</a>
-      </div>
-    </details>
-    <details class="project-card" data-category="Web, Commercial &amp; Legacy">
-      <summary>
-        <span class="project-index">37</span>
-        <span class="project-main">
-          <span class="project-title">The Catering Co Kitchen</span>
-          <span class="project-meta"><b>Website / Portal</b><span>·</span>Developed and delivered</span>
-        </span>
-        <span class="project-category cat-web-commercial-legacy">Web, Commercial &amp; Legacy</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Restaurant brand site with menus, reservation/contact flows, and gallery—optimized for mobile discovery and conversions.</p>
-        <a class="project-link" href="https://www.thecateringcokitchen.com/" target="_blank" rel="noopener">Open live site ↗</a>
-      </div>
-    </details>
-    <details class="project-card" data-category="Web, Commercial &amp; Legacy">
-      <summary>
-        <span class="project-index">38</span>
-        <span class="project-main">
-          <span class="project-title">Electrolux Saudi Arabia</span>
-          <span class="project-meta"><b>Website / Portal</b><span>·</span>Contributed to regional delivery</span>
-        </span>
-        <span class="project-category cat-web-commercial-legacy">Web, Commercial &amp; Legacy</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Regional site for Electrolux with product catalogs, support, service locator, and localized content for the KSA market.</p>
-        <a class="project-link" href="https://www.electrolux.sa/" target="_blank" rel="noopener">Open live site ↗</a>
-      </div>
-    </details>
-    <details class="project-card" data-category="Web, Commercial &amp; Legacy">
-      <summary>
-        <span class="project-index">39</span>
-        <span class="project-main">
-          <span class="project-title">Alfa Cure Center</span>
-          <span class="project-meta"><b>Website / Portal</b><span>·</span>Developed and delivered</span>
-        </span>
-        <span class="project-category cat-web-commercial-legacy">Web, Commercial &amp; Legacy</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Oncology &amp; nuclear medicine center site featuring services, branches, certifications, and patient information in a clean UX.</p>
-        <a class="project-link" href="https://alfacurecenter.com/en/" target="_blank" rel="noopener">Open live site ↗</a>
-      </div>
-    </details>
-    <details class="project-card" data-category="Web, Commercial &amp; Legacy">
-      <summary>
-        <span class="project-index">40</span>
-        <span class="project-main">
-          <span class="project-title">International Group for Accounting and Auditing</span>
-          <span class="project-meta"><b>Website / Portal</b><span>·</span>Developed and delivered</span>
-        </span>
-        <span class="project-category cat-web-commercial-legacy">Web, Commercial &amp; Legacy</span>
-        <span class="project-chevron" aria-hidden="true">+</span>
-      </summary>
-      <div class="project-body">
-        <p>Professional services site for accounting, assurance, tax, and training—structured for credibility and lead capture.</p>
-        <a class="project-link" href="https://igta.net" target="_blank" rel="noopener">Open live site ↗</a>
-      </div>
-    </details>
-</div>
-<div id="catalog-empty" class="catalog-empty">No projects match this filter.</div>
-</div>
-</section>
-
-<section class="cta"><div class="wrap cta-grid"><div><div class="kicker" style="color:var(--teal2)">NEXT</div><h2>See the systems-level view.<br/><em>Then start a conversation.</em></h2></div><div class="hero-actions"><a class="btn" href="/v4/portfolio.html">Executive portfolio →</a><a class="btn alt" href="/v4/contact.html">Contact</a></div></div></section>
+<section class="cta"><div class="wrap cta-grid"><div><div class="kicker" style="color:var(--teal2)">NEXT</div><h2>See the executive systems view.<br/><em>Then start a conversation.</em></h2></div><div class="hero-actions"><a class="btn" href="/v4/portfolio.html">Executive portfolio →</a><a class="btn alt" href="/v4/contact.html">Contact</a></div></div></section>
 </main>
 <footer><div class="wrap"><div class="footer-title">Technology leadership grounded in <em>real delivery.</em></div><div class="footer-nav"><a href="/v4/portfolio.html">Portfolio</a><a href="/v4/projects.html">Projects</a><a href="/v4/experience.html">Experience</a><a href="/v4/technologies.html">Technologies</a><a href="/v4/architecture.html">Architecture</a><a href="/v4/leadership.html">Leadership</a><a href="/v4/governance.html">Governance</a><a href="/v4/awards.html">Recognition</a><a href="/v4/contact.html">Contact</a></div><div class="footer-row"><span>Mahmoud Salama · Cairo, Egypt</span><span>Systems · Architecture · Delivery · Impact</span></div></div></footer>
 <script>
 (() => {
-  const tabs=[...document.querySelectorAll('.catalog-tab')];
-  const cards=[...document.querySelectorAll('.project-card')];
-  const search=document.querySelector('#project-search');
-  const empty=document.querySelector('#catalog-empty');
-  let category='All Projects';
-  const apply=()=>{
-    const q=(search.value||'').trim().toLowerCase();
-    let visible=0;
-    cards.forEach(card=>{
-      const byCat=category==='All Projects'||card.dataset.category===category;
-      const byText=!q||card.textContent.toLowerCase().includes(q);
-      const show=byCat&&byText;
+ const tabs=[...document.querySelectorAll('.catalog-tab')];
+ const cards=[...document.querySelectorAll('.project-card')];
+ const search=document.querySelector('#project-search');
+ const empty=document.querySelector('#empty');
+ let org='All Projects';
+ const apply=()=>{
+   const q=(search.value||'').trim().toLowerCase();
+   let visible=0;
+   cards.forEach(card=>{
+      const show=(org==='All Projects'||card.dataset.org===org)&&(!q||card.textContent.toLowerCase().includes(q));
       card.hidden=!show;
       if(show) visible++;
-    });
-    empty.classList.toggle('show',visible===0);
-  };
-  tabs.forEach(tab=>tab.addEventListener('click',()=>{
-    tabs.forEach(t=>t.classList.remove('active'));
-    tab.classList.add('active');
-    category=tab.dataset.category;
-    apply();
-  }));
-  search.addEventListener('input',apply);
+   });
+   empty.classList.toggle('show',visible===0);
+ };
+ tabs.forEach(tab=>tab.addEventListener('click',()=>{
+   tabs.forEach(t=>t.classList.remove('active'));
+   tab.classList.add('active');
+   org=tab.dataset.org;
+   apply();
+ }));
+ search.addEventListener('input',apply);
 })();
 </script>
 <script defer src="refinements-v4.js"></script>
-</body></html>
+</body>
+</html>

@@ -9,6 +9,50 @@
 <meta content="website" property="og:type"/><meta content="Mahmoud Salama · Executive Technology Portfolio" property="og:site_name"/><meta content="Mahmoud Salama | Technology Executive &amp; Enterprise Architect" property="og:title"/><meta content="Technology executive with 18+ years across Egypt and Oman, leading enterprise architecture, national digital platforms, integration and transformation." property="og:description"/><meta content="https://mahmoud-salama.vercel.app/v4/" property="og:url"/><meta content="https://mahmoud-salama.vercel.app/v4/og-executive.png" property="og:image"/><meta content="1200" property="og:image:width"/><meta content="630" property="og:image:height"/><meta content="Mahmoud Salama — Technology Executive · Enterprise Architecture · Digital Transformation" property="og:image:alt"/><meta content="summary_large_image" name="twitter:card"/><meta content="Mahmoud Salama | Technology Executive &amp; Enterprise Architect" name="twitter:title"/><meta content="Technology executive with 18+ years across Egypt and Oman, leading enterprise architecture, national digital platforms, integration and transformation." name="twitter:description"/><meta content="https://mahmoud-salama.vercel.app/v4/og-executive.png" name="twitter:image"/><meta content="#fbfaf4" name="theme-color"/>
 <link href="https://mahmoud-salama.vercel.app/v4/" rel="canonical"/><link as="image" fetchpriority="high" href="../mahmoud-identity.webp" rel="preload" type="image/webp"/><link href="../favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="executive-canvas.css" rel="stylesheet"/><link href="balanced-v4.css" rel="stylesheet"/><link href="enhancements-v4.css" rel="stylesheet"/>
+<style>
+.pm-canvas{--pm-bg:#fbfaf4;--pm-ink:#16233a;--pm-navy:#16314f;--pm-navy-deep:#0b1e33;--pm-teal:#0f6b62;--pm-gold:#a97c3d;--pm-line:rgba(22,49,79,.30);--pm-card-bg:#ffffff;--pm-card-border:#e7e1cf;--pm-shadow:0 14px 34px -16px rgba(11,30,51,.28);background:var(--pm-bg);padding:88px 0 96px;}
+.pm-canvas .wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+.pm-head{max-width:680px;margin:0 auto 56px;text-align:center;}
+.pm-kicker{font:600 12px/1 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;letter-spacing:.14em;color:var(--pm-teal);margin-bottom:14px;}
+.pm-head h2{font:600 32px/1.22 Georgia,"Times New Roman",serif;color:var(--pm-navy-deep);margin:0 0 14px;}
+.pm-head p{font:400 16px/1.6 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:#4b5a6b;margin:0;}
+.pm-map{position:relative;width:100%;padding-bottom:64%;margin-top:8px;}
+.pm-map-inner{position:absolute;inset:0;}
+.pm-lines{position:absolute;inset:0;width:100%;height:100%;z-index:1;}
+
+.pm-hub{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:3;width:clamp(168px,20vw,220px);aspect-ratio:1/1;border-radius:50%;background:linear-gradient(160deg,var(--pm-navy) 0%,var(--pm-navy-deep) 100%);box-shadow:var(--pm-shadow),inset 0 0 0 1px rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;text-align:center;padding:14px;}
+.pm-hub-eyebrow{display:block;font:600 9.5px/1.3 system-ui,sans-serif;letter-spacing:.12em;color:#b9c6d6;margin-bottom:6px;}
+.pm-hub h3{margin:0;font:600 20px/1.18 Georgia,"Times New Roman",serif;color:#fff;}
+.pm-hub-sub{display:block;margin-top:8px;font:400 10.5px/1.4 system-ui,sans-serif;color:#93a4b8;}
+.pm-node{position:absolute;z-index:2;background:var(--pm-card-bg);border:1px solid var(--pm-card-border);border-radius:14px;padding:18px 20px;box-shadow:var(--pm-shadow);}
+.pm-node-top{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.pm-num{font:600 11px/1 Georgia,serif;color:var(--pm-gold);border:1px solid rgba(169,124,61,.4);border-radius:5px;padding:3px 6px;letter-spacing:.02em;}
+.pm-icon{width:30px;height:30px;border-radius:8px;background:rgba(22,49,79,.06);display:flex;align-items:center;justify-content:center;color:var(--pm-navy);flex-shrink:0;}
+.pm-icon svg{width:16px;height:16px;}
+.pm-node h4{margin:0 0 8px;font:600 15px/1.3 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--pm-navy-deep);}
+.pm-node ul{margin:0;padding:0;list-style:none;}
+.pm-node li{position:relative;padding-left:13px;font:400 12.5px/1.55 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:#57667a;margin-bottom:3px;}
+.pm-node li::before{content:"";position:absolute;left:0;top:8px;width:4px;height:4px;border-radius:50%;background:var(--pm-teal);}
+.pm-n1{left:0;width:31%;top:16%;transform:translateY(-50%);}
+.pm-n2{right:0;width:31%;top:16%;transform:translateY(-50%);}
+.pm-n3{left:0;width:31%;top:50%;transform:translateY(-50%);}
+.pm-n4{right:0;width:31%;top:50%;transform:translateY(-50%);}
+.pm-n5{left:0;width:31%;top:84%;transform:translateY(-50%);}
+.pm-n6{right:0;width:31%;top:84%;transform:translateY(-50%);}
+.pm-cta-wrap{text-align:center;}
+.pm-cta{display:inline-flex;align-items:center;gap:8px;margin:52px auto 0;padding:13px 26px;border-radius:999px;border:1px solid var(--pm-navy);color:var(--pm-navy);font:600 13px/1 system-ui,sans-serif;text-decoration:none;}
+.pm-cta:hover{background:var(--pm-navy);color:#fff;}
+@media (max-width:880px){
+.pm-canvas{padding:64px 0 72px;}
+.pm-map{padding-bottom:0;}
+.pm-map-inner{position:relative;display:flex;flex-direction:column;align-items:center;gap:18px;}
+.pm-map-inner::before{content:"";position:absolute;top:6px;bottom:6px;left:50%;width:2px;background:var(--pm-line);z-index:0;}
+.pm-lines{display:none;}
+.pm-hub{position:relative;left:auto;top:auto;transform:none;width:100%;max-width:400px;aspect-ratio:auto;border-radius:20px;padding:26px 24px;z-index:1;margin-bottom:2px;}
+.pm-node{position:relative;width:100%;max-width:460px;z-index:1;}
+.pm-n1,.pm-n2,.pm-n3,.pm-n4,.pm-n5,.pm-n6{left:auto;right:auto;top:auto;transform:none;}
+}
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://mahmoud-salama.vercel.app/v4/#person","name":"Mahmoud Salama","jobTitle":"Head of the Central Administration for Information Systems & Digital Transformation","url":"https://mahmoud-salama.vercel.app/v4/","sameAs":["https://www.linkedin.com/in/mahmoud-salama-30249b34/","https://github.com/MahmoudSalamaaa"],"alumniOf":{"@type":"CollegeOrUniversity","name":"Zagazig University"}},{"@type":"WebSite","@id":"https://mahmoud-salama.vercel.app/v4/#website","url":"https://mahmoud-salama.vercel.app/v4/","name":"Mahmoud Salama · Executive Technology Portfolio","publisher":{"@id":"https://mahmoud-salama.vercel.app/v4/#person"}},{"@type":"ProfilePage","@id":"https://mahmoud-salama.vercel.app/v4/#webpage","url":"https://mahmoud-salama.vercel.app/v4/","name":"Mahmoud Salama | Technology Executive & Enterprise Architect","description":"Technology executive with 18+ years across Egypt and Oman, leading enterprise architecture, national digital platforms, integration and transformation.","mainEntity":{"@id":"https://mahmoud-salama.vercel.app/v4/#person"}}]}</script></head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -45,32 +89,40 @@
 <div><strong>~1M</strong><span>users on Oman’s National Educational Portal</span></div>
 </div>
 </section>
-<section class="band" style="padding-top:24px;padding-bottom:24px"><div class="wrap"><div class="fast-track"><div><div class="label">CURRENT MANDATE</div><b>54-person technology organization</b><span>7 direct reports · 4 major functions · EGP 150M annual IT budget accountability.</span></div><div><div class="label">NATIONAL PLATFORM</div><b>MedIQ</b><span>38K+ users · 11K+ healthcare facilities · 2K+ suppliers.</span></div><div><div class="label">ENTERPRISE INTEGRATION</div><b>SAP + Dynamics 365</b><span>Greenfield SAP integration; EGP 11M Dynamics 365 integration/project value.</span></div><div><div class="label">BUILDER ROOTS</div><b>Egypt + Oman delivery</b><span>150+ systems at Keyframe · 15+ Omani government platforms · ~1M-user education portal.</span></div></div></div></section>
-<section class="signature">
+<section class="band" style="padding-top:24px;padding-bottom:24px"><div class="wrap"><div class="fast-track"><div><div class="label">CURRENT MANDATE</div><b>54-person technology organization</b><span>7 direct reports · 4 major functions · EGP 150M annual IT budget accountability.</span></div><div><div class="label">NATIONAL PLATFORM</div><b>MedIQ</b><span>38K+ users · 11K+ healthcare facilities · 2K+ suppliers.</span></div><div><div class="label">ENTERPRISE INTEGRATION</div><b>SAP + Dynamics 365</b><span>Greenfield SAP integration; confirmed EGP 11M Dynamics 365 integration/project value.</span></div><div><div class="label">BUILDER ROOTS</div><b>Egypt + Oman delivery</b><span>150+ systems at Keyframe · 15+ Omani government platforms · ~1M-user education portal.</span></div></div></div></section>
+<section class="pm-canvas">
 <div class="wrap">
-<div class="signature-head">
-<div><div class="kicker">SIGNATURE VIEW · EXECUTIVE SYSTEMS CANVAS</div><h2>Turning complexity into real impact.</h2></div>
+<div class="pm-head">
+<div class="pm-kicker">SIGNATURE VIEW · EXECUTIVE SYSTEMS CANVAS</div>
+<h2>Turning complexity into real impact.</h2>
 <p>A one-screen map of how strategy, architecture, national platforms, integration, delivery and governance connect in my work.</p>
 </div>
-<div class="board">
-<svg aria-hidden="true" class="board-lines" preserveaspectratio="none" viewbox="0 0 1180 680">
-<g fill="none" opacity=".8" stroke="#17324f" stroke-width="3">
-<path d="M590 330 C410 240 335 180 220 145"></path><path d="M590 330 C770 240 850 180 960 145"></path>
-<path d="M590 350 C390 350 315 355 190 355"></path><path d="M590 350 C795 350 865 355 990 355"></path>
-<path d="M570 410 C410 495 335 535 225 570"></path><path d="M610 410 C770 495 850 535 960 570"></path>
+<div class="pm-map">
+<div class="pm-map-inner">
+<svg aria-hidden="true" class="pm-lines" preserveaspectratio="none" viewbox="0 0 1000 640">
+<g fill="none" stroke="#22506f" stroke-width="1.6">
+<path d="M310 102 L500 320"></path><path d="M690 102 L500 320"></path>
+<path d="M310 320 L500 320"></path><path d="M690 320 L500 320"></path>
+<path d="M310 538 L500 320"></path><path d="M690 538 L500 320"></path>
+</g>
+<g fill="#16314f">
+<circle cx="310" cy="102" r="4"></circle><circle cx="690" cy="102" r="4"></circle>
+<circle cx="310" cy="320" r="4"></circle><circle cx="690" cy="320" r="4"></circle>
+<circle cx="310" cy="538" r="4"></circle><circle cx="690" cy="538" r="4"></circle>
 </g>
 </svg>
-<div class="board-center">
-<div><h3>Mahmoud<br/>Salama</h3><b>TECHNOLOGY EXECUTIVE</b><small>People · Platforms<br/>Architecture · Impact</small></div>
+<div class="pm-hub">
+<div><span class="pm-hub-eyebrow">TECHNOLOGY EXECUTIVE</span><h3>Mahmoud<br/>Salama</h3><span class="pm-hub-sub">People · Platforms · Architecture · Impact</span></div>
 </div>
-<article class="board-card bc1"><h4>Leadership &amp; Strategy</h4><ul><li>Technology vision &amp; priorities</li><li>54-person organization</li><li>7 direct reports</li><li>Executive governance</li></ul></article>
-<article class="board-card bc2"><h4>National Platforms</h4><ul><li>MedIQ ecosystem</li><li>E-Tendering</li><li>E-Pharmacy</li><li>Inventory &amp; asset initiatives</li></ul></article>
-<article class="board-card bc3"><h4>Enterprise Architecture</h4><ul><li>Target-state roadmaps</li><li>Solution architecture</li><li>NFRs &amp; resilience</li><li>Modular shared services</li></ul></article>
-<article class="board-card bc4"><h4>Integration &amp; Data</h4><ul><li>SAP strategic warehouses</li><li>Dynamics 365 integration</li><li>Master/reference data</li><li>Validation &amp; reconciliation</li></ul></article>
-<article class="board-card bc5"><h4>Delivery &amp; Execution</h4><ul><li>Requirements → production</li><li>QA / UAT / release</li><li>Incident &amp; RCA governance</li><li>Adoption &amp; support</li></ul></article>
-<article class="board-card bc6"><h4>Teams &amp; Governance</h4><ul><li>Applications &amp; delivery</li><li>Data &amp; integration</li><li>Infrastructure/security oversight</li><li>Service management</li></ul></article>
-<a class="board-link" href="portfolio.html">Explore the full executive canvas →</a>
+<article class="pm-node pm-n1"><div class="pm-node-top"><span class="pm-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M15 9l-3.5 1.5L10 14l3.5-1.5L15 9z"></path></svg></span><span class="pm-num">01</span></div><h4>Leadership &amp; Strategy</h4><ul><li>Technology vision &amp; priorities</li><li>54-person organization</li><li>7 direct reports</li><li>Executive governance</li></ul></article>
+<article class="pm-node pm-n2"><div class="pm-node-top"><span class="pm-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9s1-6.5 3.5-9z"></path></svg></span><span class="pm-num">02</span></div><h4>National Platforms</h4><ul><li>MedIQ ecosystem</li><li>E-Tendering</li><li>E-Pharmacy</li><li>Inventory &amp; asset initiatives</li></ul></article>
+<article class="pm-node pm-n3"><div class="pm-node-top"><span class="pm-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z"></path><path d="M3 13l9 5 9-5"></path></svg></span><span class="pm-num">03</span></div><h4>Enterprise Architecture</h4><ul><li>Target-state roadmaps</li><li>Solution architecture</li><li>NFRs &amp; resilience</li><li>Modular shared services</li></ul></article>
+<article class="pm-node pm-n4"><div class="pm-node-top"><span class="pm-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"></path><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"></path></svg></span><span class="pm-num">04</span></div><h4>Integration &amp; Data</h4><ul><li>SAP strategic warehouses</li><li>Dynamics 365 integration</li><li>Master/reference data</li><li>Validation &amp; reconciliation</li></ul></article>
+<article class="pm-node pm-n5"><div class="pm-node-top"><span class="pm-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="4.2"></circle><circle cx="12" cy="12" fill="currentColor" r=".9" stroke="none"></circle></svg></span><span class="pm-num">05</span></div><h4>Delivery &amp; Execution</h4><ul><li>Requirements → production</li><li>QA / UAT / release</li><li>Incident &amp; RCA governance</li><li>Adoption &amp; support</li></ul></article>
+<article class="pm-node pm-n6"><div class="pm-node-top"><span class="pm-icon"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"></path></svg></span><span class="pm-num">06</span></div><h4>Teams &amp; Governance</h4><ul><li>Applications &amp; delivery</li><li>Data &amp; integration</li><li>Infrastructure/security oversight</li><li>Service management</li></ul></article>
 </div>
+</div>
+<div class="pm-cta-wrap"><a class="pm-cta" href="portfolio.html">Explore the full executive canvas →</a></div>
 </div>
 </section>
 <section class="home-cases">
@@ -81,7 +133,7 @@
 </div>
 <div class="case-grid">
 <article class="case featured"><div class="flagship-badge">Flagship National Platform</div><small>01 · NATIONAL DIGITAL ECOSYSTEM</small><h3>MedIQ · National Procurement &amp; Medical-Supply Ecosystem</h3><p>End-to-end executive leadership across e-tendering, e-pharmacy, electronic inventory/mobile operations, storage validation, digital budgeting, asset maintenance, enterprise integrations, data, analytics, security and operations.</p><div class="tags"><span>38K+ users</span><span>11K+ healthcare facilities</span><span>2K+ suppliers</span></div><div class="recognition-line">Pharmaconex Awards 2026 · Excellence in Digital Transformation</div></article>
-<article class="case"><small>02 · ENTERPRISE INTEGRATION</small><h3>SAP Strategic Medical Warehouses · UPA — Egypt’s Unified Procurement Authority</h3><p>Led UPA-side integration architecture and end-to-end delivery between the SAP-based Strategic Medical Warehouses system and UPA’s unified procurement platform, owning requirements, technical standards, master-data harmonization, security, UAT, go-live and production support across bi-directional request and financial workflows.</p><div class="tags"><span>Production</span><span>Bi-directional</span><span>Request + financial workflows</span></div></article>
+<article class="case"><small>02 · ENTERPRISE INTEGRATION</small><h3>SAP Strategic Medical Warehouses · UPA — Egypt’s Unified Procurement Authority</h3><p>Led UPA-side requirements, architecture coordination and end-to-end bi-directional integration between the SAP-based warehouse environment and UPA systems, covering request and financial workflows through production.</p><div class="tags"><span>Production</span><span>Bi-directional</span><span>Request + financial workflows</span></div></article>
 </div>
 </div>
 </section>
@@ -99,4 +151,3 @@
 <footer><div class="wrap footer-row"><span>Mahmoud Salama · Cairo, Egypt</span><span>Systems · Architecture · Delivery · Impact</span></div></footer>
 </body>
 </html>
-

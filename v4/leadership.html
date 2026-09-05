@@ -1,257 +1,28 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Leadership — Mahmoud Salama</title>
-<meta name="description" content="Technology leadership across engineering, architecture, delivery, operations and digital transformation.">
-<style>
-:root{
-  --ink:#0b1530;
-  --muted:#526176;
-  --line:#d9e4ea;
-  --paper:#f4fbfd;
-  --white:#fff;
-  --cyan:#c9f0f4;
-  --cyan-strong:#14b8d4;
-  --lav:#ecd9f1;
-  --purple:#ad24bf;
-  --peach:#ffe0c3;
-  --orange:#ff963c;
-  --blue:#cfe4fb;
-  --blue-strong:#2699ea;
-  --green:#cceacb;
-  --shadow:0 12px 30px rgba(15,34,58,.06);
-  --radius:24px;
-  --sans:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  --mono:"SFMono-Regular",Consolas,"Liberation Mono",monospace;
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Leadership — Mahmoud Salama</title><meta name="description" content="Technology leadership across engineering, architecture, delivery, operations and digital transformation."><meta name="theme-color" content="#f7f5ef"><link rel="canonical" href="https://mahmoud-salama.vercel.app/v4/leadership.html"><link rel="icon" href="../favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="executive-canvas.css"><link rel="stylesheet" href="balanced-v4.css"><style id="strict-qa-fix">
+/* STRICT QA PASS · 2026-09-06 */
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+.display,.portfolio-title,.section-title,.wb-title,h1,h2,h3{overflow-wrap:normal;word-break:normal;text-wrap:balance;hyphens:none}
+.lead,.section-copy,.card p,.portfolio-hero-copy,.project p,.gov p{overflow-wrap:anywhere;text-wrap:pretty}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+@media(max-width:760px){
+  .display{font-size:clamp(42px,12vw,62px)!important;line-height:.98!important;letter-spacing:-.05em!important}
+  .lead{font-size:16px!important;line-height:1.64!important}
+  .card h3,.project h3,.gov h3{line-height:1.08!important}
+  .card p,.project p,.gov p{line-height:1.62!important}
+  .pill,.btn{min-height:44px!important}
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
-a{color:inherit}
-.wrap{width:min(1180px,calc(100% - 44px));margin:auto}
-nav{position:sticky;top:0;z-index:20;background:rgba(244,251,253,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(11,21,48,.08)}
-.navbar{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:22px}
-.brand{text-decoration:none;font-weight:900;letter-spacing:.04em}
-.links{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;font-weight:750}
-.links a{text-decoration:none;opacity:.72}.links a.active,.links a:hover{opacity:1}
-.pill{padding:11px 15px;border:1px solid var(--ink);border-radius:999px;text-decoration:none;font-weight:850;font-size:12px}
-.hero{padding:92px 0 76px}
-.kicker,.ey{font:800 12px/1.35 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#217d93}
-.kicker::before,.ey::before{content:"";display:inline-block;width:34px;height:3px;background:var(--orange);margin-right:12px;vertical-align:middle}
-.display{max-width:980px;margin:18px 0 24px;font-size:clamp(48px,8vw,104px);line-height:.91;letter-spacing:-.065em;font-weight:950}
-.lead{max-width:860px;margin:0;color:var(--muted);font-size:clamp(18px,2.2vw,27px);line-height:1.5}
-.hero-note{margin-top:24px;display:inline-flex;gap:10px;align-items:center;padding:10px 14px;background:#fff;border:1px solid var(--line);border-radius:999px;font:750 11px/1 var(--mono);letter-spacing:.04em;color:#405166}
-.band{padding:86px 0}
-.band.white{background:#fff}
-.band.tight{padding-top:62px;padding-bottom:62px}
-.section-head{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);gap:46px;align-items:end;margin-bottom:34px}
-.section-title{max-width:900px;margin:13px 0 0;font-size:clamp(38px,5.6vw,74px);line-height:.98;letter-spacing:-.055em;font-weight:950}
-.section-copy{margin:0;color:var(--muted);font-size:17px;line-height:1.68}
-.evidence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
-.evidence-card{position:relative;min-height:250px;padding:30px 34px 34px;border:1px solid rgba(11,21,48,.08);border-radius:30px;box-shadow:var(--shadow);overflow:hidden}
-.evidence-card::before{content:"";position:absolute;left:0;right:0;top:0;height:10px;background:var(--accent)}
-.evidence-card b{display:block;margin:13px 0 16px;font-size:clamp(48px,7vw,80px);line-height:.95;letter-spacing:-.055em}
-.evidence-card h3{margin:0 0 9px;font-size:21px;line-height:1.2}
-.evidence-card p{margin:0;color:#48576b;font:650 15px/1.58 var(--mono)}
-.e1{background:var(--green);--accent:var(--cyan-strong)}
-.e2{background:var(--lav);--accent:var(--purple)}
-.e3{background:var(--peach);--accent:var(--orange)}
-.e4{background:var(--blue);--accent:var(--blue-strong)}
-.timeline{position:relative;padding-left:56px;display:grid;gap:20px}
-.timeline::before{content:"";position:absolute;left:18px;top:0;bottom:0;width:4px;background:#53627a}
-.stage{position:relative;background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px 30px;box-shadow:0 8px 22px rgba(15,34,58,.035)}
-.stage::before{content:"";position:absolute;left:-52px;top:34px;width:26px;height:26px;border-radius:50%;background:#17c3df;border:4px solid var(--ink);box-shadow:0 0 0 5px var(--paper)}
-.stage small{font:800 12px/1 var(--mono);letter-spacing:.08em;color:#247b90}
-.stage h3{margin:12px 0 8px;font-size:30px;letter-spacing:-.03em}
-.stage .stage-tag{margin:0 0 12px;color:#293a52;font-weight:800}
-.stage p{margin:0;max-width:820px;color:var(--muted);font-size:16px;line-height:1.65}
-.operating-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-.op-card{padding:30px;border:1px solid var(--line);border-top:9px solid var(--accent);border-radius:24px;background:#fff;box-shadow:var(--shadow)}
-.op-card .num{font:800 12px/1 var(--mono);letter-spacing:.08em;color:#267e92}
-.op-card h3{margin:14px 0 10px;font-size:30px;line-height:1.06;letter-spacing:-.035em}
-.op-card p{margin:0;color:var(--muted);font-size:16px;line-height:1.65}
-.playbook{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border:1px solid #cad8df;border-radius:30px;overflow:hidden;background:#fff}
-.step{min-height:290px;padding:32px 34px;border-right:1px solid rgba(11,21,48,.08);border-bottom:1px solid rgba(11,21,48,.08)}
-.step:nth-child(even){border-right:0}.step:nth-last-child(-n+2){border-bottom:0}
-.step:nth-child(1),.step:nth-child(4){background:#d6f2f4}
-.step:nth-child(2),.step:nth-child(5){background:#eeddf2}
-.step:nth-child(3),.step:nth-child(6){background:#ffe2c7}
-.step small{font:800 12px/1 var(--mono);letter-spacing:.08em}
-.step h3{margin:19px 0 12px;font-size:36px;line-height:1.05;letter-spacing:-.04em}
-.step p{margin:0;color:#536176;font-size:17px;line-height:1.65}
-.principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-.principle{padding:26px 26px 28px;background:#fff;border:1px solid var(--line);border-radius:22px}
-.principle b{display:block;margin-bottom:10px;font-size:21px}
-.principle p{margin:0;color:var(--muted);font-size:15px;line-height:1.62}
-.quote{padding:72px 0;background:var(--ink);color:#fff}
-.quote blockquote{max-width:980px;margin:0;font-size:clamp(34px,5vw,66px);line-height:1.02;letter-spacing:-.05em;font-weight:900}
-.quote span{color:#8ce4ef}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 17px;border-radius:999px;border:1px solid #c9d6dd;background:#fff;text-decoration:none;font-weight:850;font-size:13px}
-.btn.dark{background:var(--ink);color:#fff;border-color:var(--ink)}
-footer{padding:46px 0 58px;background:#fff;border-top:1px solid var(--line)}
-.footer-title{font-size:28px;font-weight:900;letter-spacing:-.03em}
-.footer-row{margin-top:16px;color:var(--muted);font-size:13px}
-@media(max-width:820px){
-  .wrap{width:min(100% - 28px,1180px)}
-  .links{display:none}
-  .hero{padding:68px 0 56px}
-  .display{font-size:clamp(46px,14vw,70px);line-height:.94}
-  .band{padding:58px 0}
-  .section-head{grid-template-columns:1fr;gap:18px;margin-bottom:26px}
-  .section-title{font-size:clamp(38px,10vw,58px);line-height:1.01}
-  .section-copy{font-size:16px}
-  .evidence-grid,.operating-grid,.principles{grid-template-columns:1fr}
-  .evidence-card{min-height:0;padding:27px 26px 29px}
-  .timeline{padding-left:42px}
-  .timeline::before{left:12px}
-  .stage{padding:24px 22px}
-  .stage::before{left:-42px;width:23px;height:23px}
-  .stage h3{font-size:27px}
-  .playbook{grid-template-columns:1fr}
-  .step{min-height:0;padding:27px 24px;border-right:0!important;border-bottom:1px solid rgba(11,21,48,.08)!important}
-  .step:last-child{border-bottom:0!important}
-  .step h3{font-size:31px}
-  .quote{padding:54px 0}
-}
-@media(max-width:480px){
-  .navbar{min-height:62px}.pill{padding:9px 11px;font-size:10px}
-  .brand{font-size:13px}
-  .hero{padding-top:52px}
-  .display{font-size:clamp(42px,13vw,58px);letter-spacing:-.055em}
-  .lead{font-size:18px}
-  .kicker,.ey{font-size:10px;letter-spacing:.11em}
-  .kicker::before,.ey::before{width:26px;margin-right:8px}
-  .evidence-card b{font-size:54px}
-  .evidence-card p{font-size:13px}
-}
-</style>
-</head>
-<body>
-<nav>
-  <div class="wrap navbar">
-    <a class="brand" href="index.html">MAHMOUD SALAMA</a>
-    <div class="links">
-      <a href="projects.html">Projects</a><a href="experience.html">Experience</a>
-      <a href="architecture.html">Architecture</a><a class="active" href="leadership.html">Leadership</a>
-      <a href="governance.html">Governance</a><a href="about.html">About</a>
-    </div>
-    <a class="pill" href="contact.html">LET'S TALK →</a>
-  </div>
-</nav>
-
-<main>
-<section class="hero">
-  <div class="wrap">
-    <div class="kicker">Technology leadership · people · delivery · operations</div>
-    <h1 class="display">I lead technology because I’ve built it.</h1>
-    <p class="lead">My leadership style is grounded in engineering reality: understand the system, make ownership explicit, connect architecture to delivery, and stay accountable after go-live. The scope has grown from hands-on development to enterprise technology leadership, but the operating principle has remained the same — own the outcome, not just the activity.</p>
-    <div class="hero-note">ENGINEERING DEPTH → TEAM LEADERSHIP → ENTERPRISE ACCOUNTABILITY</div>
-  </div>
-</section>
-
-<section class="band white">
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <div class="ey">Leadership evidence · across the career</div>
-        <h2 class="section-title">The scope grew. The principle stayed the same: own the outcome.</h2>
-      </div>
-      <p class="section-copy">My career moved from hands-on software engineering to development leadership, enterprise delivery and national-scale technology management. Each step expanded the span of accountability — from code and systems to teams, architecture, operations, governance and institutional outcomes.</p>
-    </div>
-
-    <div class="evidence-grid">
-      <article class="evidence-card e1"><b>4</b><h3>Major technology functions today</h3><p>Leadership across applications and delivery, data and reporting, infrastructure and security, and cloud/DevOps — connected through one operating model rather than isolated silos.</p></article>
-      <article class="evidence-card e2"><b>10+</b><h3>Developers led in Oman</h3><p>Led development teams while remaining hands-on across analysis, coding, databases, reporting, testing, deployment, rollout and production support.</p></article>
-      <article class="evidence-card e3"><b>15+</b><h3>Government and enterprise platforms delivered in Oman</h3><p>Delivery experience included national education, correspondence, recruitment and other operational platforms in demanding public-sector environments.</p></article>
-      <article class="evidence-card e4"><b>EGP 11M</b><h3>Dynamics 365 integration / project value</h3><p>Enterprise integration leadership combining business-process alignment, data exchange, delivery governance, stakeholder coordination and production accountability.</p></article>
-    </div>
-  </div>
-</section>
-
-<section class="band">
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <div class="ey">Career progression</div>
-        <h2 class="section-title">Leadership widened without losing technical depth.</h2>
-      </div>
-      <p class="section-copy">The progression is not a jump from “technical” to “managerial.” It is a widening of responsibility: first build systems, then lead teams, then shape architecture and delivery, and finally own the operating model and business outcome.</p>
-    </div>
-
-    <div class="timeline">
-      <article class="stage"><small>01</small><h3>Engineer</h3><p class="stage-tag">Build before you govern.</p><p>Developed the systems and software depth needed to reason about architecture, databases, integrations, production behavior and technical trade-offs from the inside.</p></article>
-      <article class="stage"><small>02</small><h3>Team Leader</h3><p class="stage-tag">Turn individual delivery into team capability.</p><p>Moved from personal execution to leading developers, structuring delivery, resolving blockers and taking accountability for quality, timing and operational readiness.</p></article>
-      <article class="stage"><small>03</small><h3>Enterprise Delivery Leader</h3><p class="stage-tag">Connect technology decisions to stakeholder outcomes.</p><p>Expanded responsibility across government and enterprise platforms, balancing hands-on technical judgment with planning, coordination, testing, deployment and client-facing delivery.</p></article>
-      <article class="stage"><small>04</small><h3>Technology Executive</h3><p class="stage-tag">Own the system of delivery, not just the project.</p><p>Lead strategy, architecture, applications, data, service operations, governance and modernization as one technology system — with clear ownership from investment decision through production performance.</p></article>
-    </div>
-  </div>
-</section>
-
-<section class="band white">
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <div class="ey">Current operating model</div>
-        <h2 class="section-title">Four functions. One technology operating system.</h2>
-      </div>
-      <p class="section-copy">The functions are managed as an interconnected operating model. Architecture shapes delivery; delivery creates production services; data makes performance visible; infrastructure and security protect continuity; support and governance close the feedback loop.</p>
-    </div>
-
-    <div class="operating-grid">
-      <article class="op-card" style="--accent:#14b8d4"><span class="num">01</span><h3>Applications &amp; Delivery</h3><p>Enterprise applications, business analysis, software delivery, requirements, QA/UAT, release readiness and modernization. The goal is not simply to ship features, but to move controlled change safely into production.</p></article>
-      <article class="op-card" style="--accent:#ad24bf"><span class="num">02</span><h3>Data, Reporting &amp; Publishing</h3><p>Data quality, reconciliation, reporting, analytics, executive evidence and electronic publishing. This function turns operational activity into information leaders and teams can actually use.</p></article>
-      <article class="op-card" style="--accent:#ff963c"><span class="num">03</span><h3>Infrastructure &amp; Security</h3><p>Resilience, continuity, security governance, access controls, monitoring requirements and risk ownership — ensuring that platforms remain supportable, protected and recoverable.</p></article>
-      <article class="op-card" style="--accent:#2699ea"><span class="num">04</span><h3>Cloud, DevOps &amp; Service Readiness</h3><p>CI/CD, deployment discipline, production readiness, technical support, incident escalation, service quality and operational feedback. Delivery is complete only when the service works reliably for its users.</p></article>
-    </div>
-  </div>
-</section>
-
-<section class="band">
-  <div class="wrap">
-    <div class="section-head">
-      <div>
-        <div class="ey">Transformation playbook</div>
-        <h2 class="section-title">How I move from a problem to institutional capability.</h2>
-      </div>
-      <p class="section-copy">Transformation is not a sequence of technology purchases. It is a controlled movement from understanding the current operating reality to designing, delivering, adopting and governing a better one.</p>
-    </div>
-
-    <div class="playbook">
-      <article class="step"><small>01</small><h3>Assess the operating reality</h3><p>Understand how the process actually works. Map pain points, dependencies, risks, ownership, data gaps and measurable outcomes before choosing a solution.</p></article>
-      <article class="step"><small>02</small><h3>Architect the target state</h3><p>Translate priorities into an achievable architecture with clear boundaries, standards, integration principles, controls and ownership.</p></article>
-      <article class="step"><small>03</small><h3>Prioritize for value and risk</h3><p>Sequence work by business value, dependency, delivery risk and operational readiness so that each increment creates progress rather than new fragmentation.</p></article>
-      <article class="step"><small>04</small><h3>Deliver with production in mind</h3><p>Build, test, UAT and release through defined quality gates. Treat security, supportability, observability and transition to service as part of delivery — not afterthoughts.</p></article>
-      <article class="step"><small>05</small><h3>Drive adoption, not just training</h3><p>Prepare roles, procedures, onboarding, support and feedback loops so people understand both how the system works and how the operating model has changed.</p></article>
-      <article class="step"><small>06</small><h3>Institutionalize and improve</h3><p>Embed KPIs, governance, decision rights, service ownership and continuous improvement so the capability survives beyond the implementation team.</p></article>
-    </div>
-  </div>
-</section>
-
-<section class="band white tight">
-  <div class="wrap">
-    <div class="section-head">
-      <div><div class="ey">Leadership principles</div><h2 class="section-title">Simple principles. Applied rigorously.</h2></div>
-      <p class="section-copy">The language stays practical because leadership becomes real only when it changes decisions, delivery behavior and operational performance.</p>
-    </div>
-    <div class="principles">
-      <article class="principle"><b>Make ownership explicit.</b><p>Every outcome, risk, decision and service needs a named owner. Ambiguity becomes delay, rework and operational debt.</p></article>
-      <article class="principle"><b>Architecture must guide execution.</b><p>Architecture is useful when it makes boundaries, standards and trade-offs clearer for delivery teams and stakeholders.</p></article>
-      <article class="principle"><b>Go-live starts operational accountability.</b><p>Release is not the finish line. Service quality, incidents, adoption, support demand and measurable value determine whether the change actually worked.</p></article>
-    </div>
-  </div>
-</section>
-
-<section class="quote">
-  <div class="wrap">
-    <blockquote>Understand the system. Make accountability visible. <span>Build what matters — and own what happens next.</span></blockquote>
-    <div class="actions"><a class="btn" href="projects.html">Explore project evidence →</a><a class="btn" href="architecture.html">See architecture approach →</a></div>
-  </div>
-</section>
-</main>
-
-<footer><div class="wrap"><div class="footer-title">Technology leadership grounded in real delivery.</div><div class="footer-row">Mahmoud Salama · Technology &amp; Digital Transformation</div></div></footer>
-</body>
-</html>
+</style><style>
+.leadership-evidence{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.leadership-evidence article{position:relative;min-width:0;padding:26px 28px 28px;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);overflow:hidden;background:var(--surface)}.leadership-evidence article:before{content:"";position:absolute;left:0;right:0;top:0;height:7px;background:var(--accent)}.leadership-evidence article:nth-child(1){background:linear-gradient(180deg,#fffefa,var(--mint-accent));--accent:#17b7cf}.leadership-evidence article:nth-child(2){background:linear-gradient(180deg,#fffefa,var(--lav-accent));--accent:#a928b8}.leadership-evidence article:nth-child(3){background:linear-gradient(180deg,#fffefa,#ffe5cc);--accent:#ff963c}.leadership-evidence article:nth-child(4){background:linear-gradient(180deg,#fffefa,var(--sky-accent));--accent:#249be8}.leadership-evidence b{display:block;margin:8px 0 12px;font:800 clamp(40px,5vw,64px)/.95 var(--sans);letter-spacing:-.05em}.leadership-evidence h3{margin:0 0 8px;font:800 20px/1.1 var(--sans);letter-spacing:-.025em}.leadership-evidence p{margin:0;color:#526675;font:500 13px/1.62 var(--mono)}
+.career-line{position:relative;padding-left:46px;display:grid;gap:14px}.career-line:before{content:"";position:absolute;left:14px;top:8px;bottom:8px;width:3px;background:#536779}.career-stage{position:relative;padding:24px 26px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}.career-stage:before{content:"";position:absolute;left:-43px;top:29px;width:21px;height:21px;border-radius:50%;background:#19bfd8;border:4px solid var(--ink)}.career-stage small,.play-step small{font:700 10px/1 var(--mono);letter-spacing:.08em;color:var(--teal)}.career-stage h3{margin:10px 0 6px;font:800 27px/1.05 var(--sans);letter-spacing:-.035em}.career-stage strong{display:block;margin-bottom:8px;color:#2a4256;font-size:14px}.career-stage p{margin:0;color:#5a6e7d;line-height:1.62}
+.operating-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.operating-grid .card{border-top:6px solid var(--accent)!important}.operating-grid .card:nth-child(1){--accent:#17b7cf}.operating-grid .card:nth-child(2){--accent:#a928b8}.operating-grid .card:nth-child(3){--accent:#ff963c}.operating-grid .card:nth-child(4){--accent:#249be8}
+.playbook{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--surface)}.play-step{min-height:220px;padding:26px 28px;border-right:1px solid rgba(10,33,56,.1);border-bottom:1px solid rgba(10,33,56,.1)}.play-step:nth-child(even){border-right:0}.play-step:nth-last-child(-n+2){border-bottom:0}.play-step:nth-child(1),.play-step:nth-child(4){background:#ddf3f4}.play-step:nth-child(2),.play-step:nth-child(5){background:#efe2f2}.play-step:nth-child(3),.play-step:nth-child(6){background:#ffe5ce}.play-step h3{margin:14px 0 9px;font:800 29px/1.05 var(--sans);letter-spacing:-.035em}.play-step p{margin:0;color:#536777;line-height:1.62}
+.leadership-close{padding:66px 0;background:var(--ink);color:white;position:relative}.leadership-close:before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--gold),var(--teal))}.leadership-close blockquote{max-width:980px;margin:0;color:white;font:800 clamp(34px,5vw,62px)/1.02 var(--sans);letter-spacing:-.045em}.leadership-close blockquote em{font-family:Georgia,serif;font-weight:400;color:#e0b75c}.leadership-close .actions{margin-top:25px!important}
+@media(max-width:760px){.leadership-evidence,.operating-grid,.playbook{grid-template-columns:1fr}.leadership-evidence article{padding:24px}.career-line{padding-left:38px}.career-line:before{left:10px}.career-stage{padding:22px 20px}.career-stage:before{left:-38px;width:20px;height:20px}.play-step{min-height:0;border-right:0!important;border-bottom:1px solid rgba(10,33,56,.1)!important;padding:24px 22px}.play-step:last-child{border-bottom:0!important}.play-step h3{font-size:27px}}
+</style></head><body><a class="skip-link" href="#main">Skip to content</a><nav><div class="wrap navbar"><a class="mark" href="index.html"><img alt="KMS" src="../kms-logo-original.png"><span>MAHMOUD SALAMA</span></a><div class="links"><a href="portfolio.html">Portfolio</a><a href="projects.html">Projects</a><a href="experience.html">Experience</a><a href="technologies.html">Technologies</a><a href="architecture.html">Architecture</a><a class="active" href="leadership.html">Leadership</a><a href="governance.html">Governance</a><a href="awards.html">Recognition</a></div><a class="pill" href="contact.html">LET'S TALK →</a></div></nav><main id="main">
+<section class="hero"><div class="wrap"><div class="kicker">TECHNOLOGY LEADERSHIP · PEOPLE · DELIVERY · OPERATIONS</div><h1 class="display">I lead technology because I’ve built it.</h1><p class="lead">My leadership model is grounded in engineering reality: understand the system, make ownership explicit, connect architecture to delivery, and stay accountable after go-live. The scope expanded from hands-on development to enterprise leadership; the principle did not — own the outcome, not just the activity.</p></div></section>
+<section class="band"><div class="wrap"><div class="section-head"><div><div class="ey">LEADERSHIP EVIDENCE · ACROSS THE CAREER</div><h2 class="section-title">The scope grew. Accountability grew with it.</h2></div><p class="section-copy">Each career step widened the operating span — from software and systems to teams, enterprise delivery, architecture, governance and production ownership.</p></div><div class="leadership-evidence"><article><b>4</b><h3>Major technology functions today</h3><p>Applications and delivery, data and reporting, infrastructure and security, and cloud/DevOps governed as one operating model.</p></article><article><b>10+</b><h3>Developers led in Oman</h3><p>Team leadership while remaining hands-on across analysis, coding, databases, testing, deployment and support.</p></article><article><b>15+</b><h3>Government and enterprise platforms in Oman</h3><p>National education, correspondence, recruitment and other operational systems delivered in public-sector environments.</p></article><article><b>EGP 11M</b><h3>Completed Dynamics 365 integration</h3><p>End-to-end integration across procurement, supply, inventory, finance and reporting through production handover.</p></article></div></div></section>
+<section class="band alt"><div class="wrap"><div class="section-head"><div><div class="ey">CAREER PROGRESSION</div><h2 class="section-title">Leadership widened without losing technical judgment.</h2></div><p class="section-copy">I did not move from “technical” to “managerial.” I widened responsibility: build systems, lead teams, govern enterprise delivery, then own the operating model around the technology.</p></div><div class="career-line"><article class="career-stage"><small>01</small><h3>Engineer</h3><strong>Build before you govern.</strong><p>Develop the systems depth needed to reason about software, databases, integration, production behavior and technical trade-offs.</p></article><article class="career-stage"><small>02</small><h3>Team Leader</h3><strong>Turn individual execution into team capability.</strong><p>Lead developers, structure delivery, resolve blockers and own quality, timing and operational readiness.</p></article><article class="career-stage"><small>03</small><h3>Enterprise Delivery Leader</h3><strong>Connect technology decisions to stakeholder outcomes.</strong><p>Balance technical judgment with planning, testing, deployment, support and client-facing delivery across government platforms.</p></article><article class="career-stage"><small>04</small><h3>Technology Executive</h3><strong>Own the system of delivery, not only the project.</strong><p>Lead strategy, architecture, applications, data, service operations, governance and modernization as one technology system.</p></article></div></div></section>
+<section class="band"><div class="wrap"><div class="section-head"><div><div class="ey">CURRENT OPERATING MODEL</div><h2 class="section-title">Four functions. One technology operating system.</h2></div><p class="section-copy">Architecture shapes delivery. Delivery creates production services. Data makes performance visible. Infrastructure, security, support and governance keep the system reliable and accountable.</p></div><div class="operating-grid"><article class="card"><small>01</small><h3>Applications & Delivery</h3><p>Enterprise applications, requirements, software delivery, QA/UAT, release readiness and modernization — controlled change from idea to production.</p></article><article class="card"><small>02</small><h3>Data, Reporting & Publishing</h3><p>Data quality, reconciliation, reporting, analytics, executive evidence and electronic publishing that turn operations into usable information.</p></article><article class="card"><small>03</small><h3>Infrastructure & Security</h3><p>Resilience, continuity, security governance, access controls, monitoring requirements and risk ownership around critical services.</p></article><article class="card"><small>04</small><h3>Cloud, DevOps & Service Readiness</h3><p>CI/CD, deployment discipline, production readiness, support, incident escalation and operational feedback after release.</p></article></div></div></section>
+<section class="band alt"><div class="wrap"><div class="section-head"><div><div class="ey">TRANSFORMATION PLAYBOOK</div><h2 class="section-title">Move from a problem to institutional capability.</h2></div><p class="section-copy">Transformation is not a technology purchase. It is a controlled movement from understanding the operating reality to designing, delivering, adopting and governing a better one.</p></div><div class="playbook"><article class="play-step"><small>01</small><h3>Assess the reality</h3><p>Map the process as it actually works: pain points, dependencies, risks, ownership, data gaps and measurable outcomes.</p></article><article class="play-step"><small>02</small><h3>Architect the target state</h3><p>Define boundaries, standards, integrations, controls and ownership so delivery teams share one direction.</p></article><article class="play-step"><small>03</small><h3>Prioritize value and risk</h3><p>Sequence work by business value, dependency, delivery risk and operational readiness.</p></article><article class="play-step"><small>04</small><h3>Deliver for production</h3><p>Build, test, UAT and release through quality gates with security, monitoring, supportability and service transition designed in.</p></article><article class="play-step"><small>05</small><h3>Drive adoption</h3><p>Prepare roles, procedures, onboarding, support and feedback so the operating change becomes usable in daily work.</p></article><article class="play-step"><small>06</small><h3>Institutionalize improvement</h3><p>Embed KPIs, decision rights, service ownership and continuous improvement so the capability survives the project.</p></article></div></div></section>
+<section class="leadership-close"><div class="wrap"><blockquote>Understand the system. Make accountability visible. <em>Build what matters — and own what happens next.</em></blockquote><div class="actions"><a class="btn alt" href="projects.html">Explore project evidence →</a><a class="btn alt" href="architecture.html">See architecture approach →</a></div></div></section>
+</main><footer><div class="wrap"><div class="footer-title">Technology leadership grounded in <em>real delivery.</em></div><div class="footer-nav"><a href="portfolio.html">Portfolio</a><a href="projects.html">Projects</a><a href="experience.html">Experience</a><a href="technologies.html">Technologies</a><a href="architecture.html">Architecture</a><a href="leadership.html">Leadership</a><a href="governance.html">Governance</a><a href="awards.html">Recognition</a><a href="about.html">About</a><a href="contact.html">Contact</a></div><div class="footer-row"><span>Mahmoud Salama · Cairo, Egypt</span><span>Systems · Architecture · Delivery · Impact</span></div></div></footer></body></html>

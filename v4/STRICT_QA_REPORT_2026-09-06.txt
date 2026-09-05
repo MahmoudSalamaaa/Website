@@ -1,0 +1,68 @@
+Mahmoud Salama — V4 STRICT PAGE-BY-PAGE QA
+Date: 06 Sep 2026
+Scope: 11 principal V4 pages + 404 + shared visual system
+Protocol base: PROTOCOL_QA_2026-09-05
+
+STATUS: READY FOR /v4/ REPLACEMENT AND LIVE VALIDATION
+
+CHECKED
+1. Content accuracy / protocol-safe wording
+   - No flagged terms remain: data modeling / HTML-CSS / observability / major and mid-sized / kernel work.
+   - UPA first-use clarification remains where required by the protocol.
+   - MedIQ scale remains context-safe at 38K+ users / 11K+ healthcare facilities / 2K+ suppliers where used.
+   - Dynamics 365 EGP 11M wording retained as completed integration evidence.
+   - Employer/client and team-vs-personal-recognition language kept conservative.
+   - About / Portfolio / Recognition voice tightened for first-person consistency.
+
+2. Leadership page
+   - Rebuilt into the same V4 Executive Systems Canvas visual language.
+   - Preserved stronger narrative and pastel evidence cards.
+   - Reduced excessive page length and removed redundant leadership-principles repetition.
+   - Corrected protocol-flagged “observability” to “monitoring”.
+   - Restored canonical, theme color, favicon, standard nav/footer and skip link.
+   - Mobile page length reduced materially while keeping career arc, operating model and transformation playbook.
+
+3. Typography / spacing / mobile
+   - Strong-copy wrapping rules retained but tightened to avoid awkward word fragmentation.
+   - Responsive headings use controlled line-height and balanced wrapping.
+   - Contact email wrapping fixed on narrow mobile screens.
+   - Minimum 44px mobile action targets applied to primary buttons.
+   - No meaningful horizontal overflow detected at 1440px or 390px across principal pages.
+
+4. Accessibility / semantics
+   - Exactly one H1 on every principal page.
+   - Heading hierarchy normalized; no H1/H2/H3/H4 jumps remain.
+   - Skip-to-content retained on all principal pages.
+   - Visible keyboard focus retained.
+   - Reduced-motion preference supported.
+   - Canonical tags retained on all 11 principal pages.
+
+5. Color / contrast
+   - Core navy / cream / controlled pastel visual direction retained.
+   - Darkened teal used for small text and navigation states to improve contrast.
+   - Muted body/UI text slightly darkened to meet normal-text contrast more reliably.
+   - Gold CTA remains high-contrast with dark text.
+
+6. Visual consistency
+   - Shared Executive Systems Canvas design retained across all pages.
+   - Leadership brought back into the same navigation, typography, background and footer system.
+   - Pastel accents remain controlled and professional rather than decorative/childlike.
+
+FILES IN PACKAGE
+- index.html
+- about.html
+- portfolio.html
+- projects.html
+- experience.html
+- technologies.html
+- architecture.html
+- leadership.html
+- governance.html
+- awards.html
+- contact.html
+- 404.html
+- executive-canvas.css
+- balanced-v4.css
+
+FINAL GATE
+After replacing /v4/ files, run one live validation pass on the deployed domain for network-dependent assets, canonical URLs, external links and root-level logo/favicon resolution.

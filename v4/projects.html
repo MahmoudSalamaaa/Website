@@ -50,6 +50,16 @@
 .project-featured h3{font-size:clamp(22px,2.2vw,29px)}
 .project-featured .project-visual{min-height:285px}
 .project-link.muted{opacity:.68}
+</style><link href="hierarchy-v4.css" rel="stylesheet"/><style>
+.project-card{grid-template-areas:"visual content"}
+.project-visual{grid-area:visual}.project-content{grid-area:content;display:flex;flex-direction:column}
+.project-actions{margin-top:auto}
+@media(max-width:760px){
+ .project-card{grid-template-areas:"content" "visual"!important}
+ .project-content{padding-bottom:16px}
+ .project-visual{height:190px!important}
+ .project-actions{margin-top:16px}
+}
 </style></head><body>
 <a class="skip-link" href="#main">Skip to content</a>
 <nav><div class="wrap navbar"><a class="mark" href="/v4/index.html"><img alt="KMS" src="../kms-logo-original.png"/><span>MAHMOUD SALAMA</span></a><div class="links"><details class="nav-group"><summary>Work</summary><div class="nav-menu"><a href="/v4/portfolio.html">Portfolio</a><a aria-current="page" href="/v4/projects.html">Projects</a><a href="/v4/technologies.html">Technologies</a><a href="/v4/architecture.html">Architecture</a></div></details><details class="nav-group"><summary>About</summary><div class="nav-menu"><a href="/v4/experience.html">Experience</a><a href="/v4/leadership.html">Leadership</a><a href="/v4/about.html">About</a></div></details><details class="nav-group"><summary>Proof</summary><div class="nav-menu"><a href="/v4/governance.html">Governance</a><a href="/v4/awards.html">Recognition</a></div></details></div><a class="pill" href="/v4/contact.html">LET'S TALK →</a></div></nav>

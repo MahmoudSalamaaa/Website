@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "reviewed_pages": [
+    "index.html",
+    "portfolio.html",
+    "projects.html",
+    "technologies.html",
+    "architecture.html",
+    "experience.html",
+    "leadership.html",
+    "governance.html",
+    "awards.html",
+    "about.html",
+    "contact.html"
+  ],
+  "principles": [
+    "Use rounded marketing totals such as 80+, 240K+, 160+ where exact counts are brittle or unnecessarily precise.",
+    "Keep exact structural facts where precision matters: 54-person organization, 7 direct reports, EGP 150M budget, EGP 11M integration, dated career periods, and governed workflow step counts.",
+    "Keep exact UI/filter counts when they describe the current directory structure, except the requested project total which is now presented as 80+.",
+    "Use evidence-safe contribution language for project/team work and avoid sole-ownership wording where not explicitly supported."
+  ],
+  "remaining_flagged_patterns": {
+    "81 projects": [],
+    "242,816": [],
+    "164 entities": [],
+    "personally designed and developed": [],
+    "Designed / developed": [],
+    "Technical owner": [],
+    "capabilityies": [],
+    "\\g<1>": [],
+    "Linux From Scratch": [],
+    "Linux Optimization": [],
+    "150+ websites": [],
+    "observability": [],
+    "data modeling": []
+  },
+  "changed_files": {
+    "index.html": 8,
+    "projects.html": 22,
+    "portfolio.html": 1,
+    "awards.html": 1,
+    "about.html": 0,
+    "architecture.html": 0,
+    "contact.html": 0,
+    "experience.html": 0,
+    "governance.html": 0,
+    "leadership.html": 0,
+    "technologies.html": 0
+  }
+}

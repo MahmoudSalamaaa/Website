@@ -1,0 +1,65 @@
+{
+  "qa": {
+    "status": "PASS",
+    "projects": 86,
+    "all_project_visuals_local": true,
+    "remote_project_images_remaining": 0,
+    "preview_services_remaining": 0,
+    "normalized_canvas": "1200x800 WebP",
+    "local_images_folder": "project-images-fixed/",
+    "replaced_remote_visuals": 10,
+    "note": "The 10 previously remote assets were replaced with distinct project-specific local visuals so the publish package has no runtime image dependency."
+  },
+  "replacements": [
+    {
+      "project": 1,
+      "old": "https://play-lh.googleusercontent.com/Ge9Xhc7swLrnHSxP26P5h4NvBSmD9Jtlk7cCq6IwJoB0M77E9uzIioo2-Pjj83Y_nRNCGsab_RMnHOyabV0F=w526-h296",
+      "new": "project-images-fixed/01-mediq-ecosystem-local.webp"
+    },
+    {
+      "project": 2,
+      "old": "https://play-lh.googleusercontent.com/apoznS2OlN2TYNeqx-DlOCQ2AiXigdKQ9X5B5GAkSaK_8ypDDT5MKM15ArxcTumEhHaubpmdTeFWCSIet0sc=w526-h296",
+      "new": "project-images-fixed/02-mediq-etender-local.webp"
+    },
+    {
+      "project": 3,
+      "old": "https://play-lh.googleusercontent.com/IKajJzhv4_TAJcoWCjvDbU0EGKPP6E-usZ1l4RAYRavZ9cc9xkJ2sRaveMcLSlofLLtub63mWWr9P6Q8hjixeg=w526-h296",
+      "new": "project-images-fixed/03-mediq-pharmacy-local.webp"
+    },
+    {
+      "project": 4,
+      "old": "https://play-lh.googleusercontent.com/1LI17Og1Jq-xkabv9ZqdUJ_14EuArJIoilcXMGf5Civ4mKYrKek9Rd-gsXZn8CLSjSEBdc6oeddUCZiffK6l6A=w526-h296",
+      "new": "project-images-fixed/04-mediq-stocktaking-local.webp"
+    },
+    {
+      "project": 17,
+      "old": "https://play-lh.googleusercontent.com/HjX664FUK0FiyH6dwVqE_8TOTbIAsnmKk_3o4Wt10cZ-qlvr-LVRCK_JdpAb7ciG5z_cLNlnJFQYEGIvuWS6Kw=w526-h296",
+      "new": "project-images-fixed/17-mediq-mobile-local.webp"
+    },
+    {
+      "project": 43,
+      "old": "https://home.moe.gov.om/templates/newmoe/assets/images/icons/pe-scroll-small-icon-edu.png",
+      "new": "project-images-fixed/43-oman-education-portal-local.webp"
+    },
+    {
+      "project": 45,
+      "old": "https://home.moe.gov.om/templates/moe/assets/images/sqw.png",
+      "new": "project-images-fixed/45-oman-recruitment-local.webp"
+    },
+    {
+      "project": 51,
+      "old": "https://pf.mafwr.gov.om/login/main-logo.png",
+      "new": "project-images-fixed/51-oman-agriculture-local.webp"
+    },
+    {
+      "project": 52,
+      "old": "https://pf.mafwr.gov.om/login/main-logo.png",
+      "new": "project-images-fixed/52-omani-dates-market-local.webp"
+    },
+    {
+      "project": 69,
+      "old": "https://uchid.org/wp-content/uploads/2026/02/UCHID-Logo-2-300x112.png",
+      "new": "project-images-fixed/69-uchid-conference-local.webp"
+    }
+  ]
+}

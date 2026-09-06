@@ -1,0 +1,59 @@
+
+/* Project image system v2 — one consistent media frame everywhere */
+.project-card{
+  grid-template-columns:minmax(230px,36%) minmax(0,1fr) !important;
+  align-items:stretch !important;
+}
+.project-visual{
+  position:relative !important;
+  width:100% !important;
+  min-height:280px !important;
+  height:100% !important;
+  overflow:hidden !important;
+  background:#f8fafc !important;
+}
+.project-visual img{
+  width:100% !important;
+  height:100% !important;
+  min-height:280px !important;
+  object-fit:cover !important;
+  object-position:50% 50% !important;
+  display:block !important;
+  transform:none !important;
+  filter:saturate(.96) contrast(.98) brightness(1.02) !important;
+}
+.project-card:hover .project-visual img{
+  transform:scale(1.018) !important;
+}
+
+/* The image area should read as one designed module, not arbitrary source dimensions. */
+.project-visual::before{
+  background:linear-gradient(135deg,rgba(6,182,212,.08),rgba(139,92,246,.045) 52%,rgba(245,158,11,.055)) !important;
+  mix-blend-mode:soft-light !important;
+  opacity:.6 !important;
+}
+.project-visual::after{
+  background:linear-gradient(to top,rgba(15,23,42,.08),transparent 34%) !important;
+  opacity:.75 !important;
+}
+.visual-note{z-index:4 !important}
+
+/* Featured work gets the same ratio but a little more breathing room. */
+.project-featured .project-visual{min-height:310px !important}
+.project-featured .project-visual img{min-height:310px !important}
+
+@media(max-width:1100px){
+  .project-card{grid-template-columns:240px minmax(0,1fr) !important}
+}
+@media(max-width:760px){
+  .project-card{grid-template-columns:1fr !important}
+  .project-visual{
+    height:auto !important;
+    min-height:0 !important;
+    aspect-ratio:3 / 2 !important;
+  }
+  .project-visual img{
+    min-height:0 !important;
+    aspect-ratio:3 / 2 !important;
+  }
+}

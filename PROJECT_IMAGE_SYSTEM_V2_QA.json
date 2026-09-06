@@ -1,0 +1,1016 @@
+{
+  "qa": {
+    "status": "PASS_WITH_REMOTE_SOURCE_NOTE",
+    "projects": 86,
+    "sequential": true,
+    "local_project_images_normalized": 76,
+    "normalized_canvas": "1200x800 WebP",
+    "browser_media_ratio": "3:2 on mobile; fixed visual column on desktop",
+    "remote_project_images_remaining": 10,
+    "remote_note": "The remaining remote researched images cannot be copied into the package from this runtime. They are visually normalized by the same frame CSS, but are not yet hosted locally.",
+    "new_folder": "project-images-fixed/",
+    "stylesheet": "project-image-system-v2.css"
+  },
+  "processed": [
+    {
+      "source": "project-generated-visuals/05-medical-storage-validation-inventory-governance.svg",
+      "output": "project-images-fixed/05-medical-storage-validation-inventory-governance.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/06-digital-budgeting.svg",
+      "output": "project-images-fixed/06-digital-budgeting.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/07-unified-assets-medical-device-maintenance.svg",
+      "output": "project-images-fixed/07-unified-assets-medical-device-maintenance.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/08-strategic-medical-warehouses-sap-enterprise-integratio.svg",
+      "output": "project-images-fixed/08-strategic-medical-warehouses-sap-enterprise-integratio.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/09-microsoft-dynamics-365-erp-unified-financial-system.svg",
+      "output": "project-images-fixed/09-microsoft-dynamics-365-erp-unified-financial-system.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/10-health-technology-assessment-hta-platform.svg",
+      "output": "project-images-fixed/10-health-technology-assessment-hta-platform.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/11-private-cloud-platform.svg",
+      "output": "project-images-fixed/11-private-cloud-platform.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/12-national-pharmaceutical-track-trace-program.svg",
+      "output": "project-images-fixed/12-national-pharmaceutical-track-trace-program.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/13-healthcare-government-integration-program.svg",
+      "output": "project-images-fixed/13-healthcare-government-integration-program.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/14-operational-data-store-ods.svg",
+      "output": "project-images-fixed/14-operational-data-store-ods.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/15-upa-public-portal.svg",
+      "output": "project-images-fixed/15-upa-public-portal.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/16-customer-service-technical-support-platform.svg",
+      "output": "project-images-fixed/16-customer-service-technical-support-platform.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/18-government-sector-inventory-registration-follow-up.svg",
+      "output": "project-images-fixed/18-government-sector-inventory-registration-follow-up.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/19-health-egypt-assets-system-update.svg",
+      "output": "project-images-fixed/19-health-egypt-assets-system-update.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/20-supply-procurement-data-audit-iqvia.svg",
+      "output": "project-images-fixed/20-supply-procurement-data-audit-iqvia.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/21-drug-data-flow-tracking-platform-iqvia.svg",
+      "output": "project-images-fixed/21-drug-data-flow-tracking-platform-iqvia.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/22-central-data-warehouse.svg",
+      "output": "project-images-fixed/22-central-data-warehouse.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/23-mediq-permissions-governance-rbac.svg",
+      "output": "project-images-fixed/23-mediq-permissions-governance-rbac.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/25-daf-private-sector-payment-integration.svg",
+      "output": "project-images-fixed/25-daf-private-sector-payment-integration.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/26-paperless-collaborative-programs.svg",
+      "output": "project-images-fixed/26-paperless-collaborative-programs.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/27-direct-purchase-digitization.svg",
+      "output": "project-images-fixed/27-direct-purchase-digitization.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/28-electronic-signature-enablement.svg",
+      "output": "project-images-fixed/28-electronic-signature-enablement.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/29-africa-health-excon-training-project.svg",
+      "output": "project-images-fixed/29-africa-health-excon-training-project.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/30-national-strategic-dashboard.svg",
+      "output": "project-images-fixed/30-national-strategic-dashboard.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/31-dynamic-report-engine.svg",
+      "output": "project-images-fixed/31-dynamic-report-engine.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/32-supply-procurement-analytics-enablement.svg",
+      "output": "project-images-fixed/32-supply-procurement-analytics-enablement.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/33-real-time-notifications-service.svg",
+      "output": "project-images-fixed/33-real-time-notifications-service.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/34-order-tracking-system.svg",
+      "output": "project-images-fixed/34-order-tracking-system.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/35-entities-demand-planning-system.svg",
+      "output": "project-images-fixed/35-entities-demand-planning-system.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/36-sms-notification-omnichannel-sms-service.svg",
+      "output": "project-images-fixed/36-sms-notification-omnichannel-sms-service.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/37-financial-product-data-auditing.svg",
+      "output": "project-images-fixed/37-financial-product-data-auditing.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/38-supply-chain-system-enhancements.svg",
+      "output": "project-images-fixed/38-supply-chain-system-enhancements.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/39-upa-delivery-mobile-app.svg",
+      "output": "project-images-fixed/39-upa-delivery-mobile-app.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/40-health-assets-mobile.svg",
+      "output": "project-images-fixed/40-health-assets-mobile.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/41-correspondence-management.svg",
+      "output": "project-images-fixed/41-correspondence-management.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/42-crises-management.svg",
+      "output": "project-images-fixed/42-crises-management.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/44-maktabi-morasalat-electronic-correspondence-management.svg",
+      "output": "project-images-fixed/44-maktabi-morasalat-electronic-correspondence-management.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/46-student-incident-management-system.svg",
+      "output": "project-images-fixed/46-student-incident-management-system.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/47-international-schools-management-system.svg",
+      "output": "project-images-fixed/47-international-schools-management-system.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/48-crisis-management-system.svg",
+      "output": "project-images-fixed/48-crisis-management-system.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/49-asset-management-system.svg",
+      "output": "project-images-fixed/49-asset-management-system.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/50-it-asset-hardware-management.svg",
+      "output": "project-images-fixed/50-it-asset-hardware-management.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/53-al-wahat-club-management-system.svg",
+      "output": "project-images-fixed/53-al-wahat-club-management-system.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/54-police-civil-registry-integration.svg",
+      "output": "project-images-fixed/54-police-civil-registry-integration.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/55-hr-attendance-system.svg",
+      "output": "project-images-fixed/55-hr-attendance-system.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/56-other-omani-government-portals-enterprise-applications.svg",
+      "output": "project-images-fixed/56-other-omani-government-portals-enterprise-applications.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/57-reusable-net-cms-electronic-publishing-platform.svg",
+      "output": "project-images-fixed/57-reusable-net-cms-electronic-publishing-platform.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/58-reusable-conference-management-platform.svg",
+      "output": "project-images-fixed/58-reusable-conference-management-platform.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/59-egypt-ministry-of-health-population-portal.svg",
+      "output": "project-images-fixed/59-egypt-ministry-of-health-population-portal.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/60-egypt-ministry-of-planning-portal.svg",
+      "output": "project-images-fixed/60-egypt-ministry-of-planning-portal.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/61-msad-ministry-of-state-for-administrative-development.svg",
+      "output": "project-images-fixed/61-msad-ministry-of-state-for-administrative-development.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/62-rate-your-services.svg",
+      "output": "project-images-fixed/62-rate-your-services.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/63-national-management-institute.svg",
+      "output": "project-images-fixed/63-national-management-institute.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/64-national-anti-corruption-committee-portal.svg",
+      "output": "project-images-fixed/64-national-anti-corruption-committee-portal.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/65-egypt-calendar.svg",
+      "output": "project-images-fixed/65-egypt-calendar.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/66-elections-in-egypt.svg",
+      "output": "project-images-fixed/66-elections-in-egypt.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/67-online-surveys.svg",
+      "output": "project-images-fixed/67-online-surveys.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/70-bgicc-conference-platform.svg",
+      "output": "project-images-fixed/70-bgicc-conference-platform.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/71-arab-organizers-conference-platform.svg",
+      "output": "project-images-fixed/71-arab-organizers-conference-platform.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/72-yashfeen-medical-portal.svg",
+      "output": "project-images-fixed/72-yashfeen-medical-portal.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/73-traffic-reporting-officers-affairs-system.svg",
+      "output": "project-images-fixed/73-traffic-reporting-officers-affairs-system.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/74-electronic-examinations-educational-review-system.svg",
+      "output": "project-images-fixed/74-electronic-examinations-educational-review-system.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/83-support-desk.svg",
+      "output": "project-images-fixed/83-support-desk.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/84-salamat-healthcare-platform.svg",
+      "output": "project-images-fixed/84-salamat-healthcare-platform.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/85-linux-administration-secure-internal-systems.svg",
+      "output": "project-images-fixed/85-linux-administration-secure-internal-systems.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-generated-visuals/86-secure-internal-asp-net-sql-server-applications.svg",
+      "output": "project-images-fixed/86-secure-internal-asp-net-sql-server-applications.webp",
+      "original": [
+        1200,
+        800
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-images/ai-application.jpg",
+      "output": "project-images-fixed/ai-application.webp",
+      "original": [
+        1536,
+        960
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-images/alfa-cure-centers.jpg",
+      "output": "project-images-fixed/alfa-cure-centers.webp",
+      "original": [
+        1536,
+        1025
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-images/alfouad-automotive.jpg",
+      "output": "project-images-fixed/alfouad-automotive.webp",
+      "original": [
+        1536,
+        1025
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-images/arab-medical-union.jpg",
+      "output": "project-images-fixed/arab-medical-union.webp",
+      "original": [
+        1536,
+        1025
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-images/catering-company.jpg",
+      "output": "project-images-fixed/catering-company.webp",
+      "original": [
+        1536,
+        1025
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-images/electrolux.jpg",
+      "output": "project-images-fixed/electrolux.webp",
+      "original": [
+        1536,
+        1025
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-images/igiluc-conference.jpg",
+      "output": "project-images-fixed/igiluc-conference.webp",
+      "original": [
+        1536,
+        1025
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-images/igta-training.jpg",
+      "output": "project-images-fixed/igta-training.webp",
+      "original": [
+        1536,
+        1025
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-images/tasheed.jpg",
+      "output": "project-images-fixed/tasheed.webp",
+      "original": [
+        1536,
+        1025
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    },
+    {
+      "source": "project-images/zayed-dunes.jpg",
+      "output": "project-images-fixed/zayed-dunes.webp",
+      "original": [
+        1536,
+        1025
+      ],
+      "final": [
+        1200,
+        800
+      ],
+      "mode": "cover"
+    }
+  ],
+  "remaining_remote": [
+    "https://play-lh.googleusercontent.com/Ge9Xhc7swLrnHSxP26P5h4NvBSmD9Jtlk7cCq6IwJoB0M77E9uzIioo2-Pjj83Y_nRNCGsab_RMnHOyabV0F=w526-h296",
+    "https://play-lh.googleusercontent.com/apoznS2OlN2TYNeqx-DlOCQ2AiXigdKQ9X5B5GAkSaK_8ypDDT5MKM15ArxcTumEhHaubpmdTeFWCSIet0sc=w526-h296",
+    "https://play-lh.googleusercontent.com/IKajJzhv4_TAJcoWCjvDbU0EGKPP6E-usZ1l4RAYRavZ9cc9xkJ2sRaveMcLSlofLLtub63mWWr9P6Q8hjixeg=w526-h296",
+    "https://play-lh.googleusercontent.com/1LI17Og1Jq-xkabv9ZqdUJ_14EuArJIoilcXMGf5Civ4mKYrKek9Rd-gsXZn8CLSjSEBdc6oeddUCZiffK6l6A=w526-h296",
+    "https://play-lh.googleusercontent.com/HjX664FUK0FiyH6dwVqE_8TOTbIAsnmKk_3o4Wt10cZ-qlvr-LVRCK_JdpAb7ciG5z_cLNlnJFQYEGIvuWS6Kw=w526-h296",
+    "https://home.moe.gov.om/templates/newmoe/assets/images/icons/pe-scroll-small-icon-edu.png",
+    "https://home.moe.gov.om/templates/moe/assets/images/sqw.png",
+    "https://pf.mafwr.gov.om/login/main-logo.png",
+    "https://pf.mafwr.gov.om/login/main-logo.png",
+    "https://uchid.org/wp-content/uploads/2026/02/UCHID-Logo-2-300x112.png"
+  ]
+}

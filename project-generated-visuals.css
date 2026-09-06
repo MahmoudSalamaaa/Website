@@ -1,0 +1,10 @@
+
+/* Unique project visuals generated for entries that previously shared generic category artwork */
+.project-card img[src^="project-generated-visuals/"]{
+  object-fit:cover;
+  object-position:center;
+  background:#f8fafc;
+}
+.project-card:hover img[src^="project-generated-visuals/"]{
+  transform:scale(1.015);
+}

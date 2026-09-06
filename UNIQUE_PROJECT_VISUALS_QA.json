@@ -1,0 +1,406 @@
+{
+  "status": "PASS",
+  "total_projects": 86,
+  "projects_given_unique_generated_visuals": 66,
+  "previously_shared_generic_visuals_remaining": 0,
+  "approach": "Custom bright executive SVG illustration per project; public/user-supplied project images preserved unchanged.",
+  "visual_system": "Light, cheerful, professional; semantic motifs selected by project domain; no fake screenshots or unsupported product UI.",
+  "changed_projects": [
+    {
+      "index": 5,
+      "title": "Medical Storage Validation & Inventory Governance",
+      "theme": "health",
+      "image": "project-generated-visuals/05-medical-storage-validation-inventory-governance.svg"
+    },
+    {
+      "index": 6,
+      "title": "Digital Budgeting",
+      "theme": "operations",
+      "image": "project-generated-visuals/06-digital-budgeting.svg"
+    },
+    {
+      "index": 7,
+      "title": "Unified Assets & Medical‑Device Maintenance",
+      "theme": "health",
+      "image": "project-generated-visuals/07-unified-assets-medical-device-maintenance.svg"
+    },
+    {
+      "index": 8,
+      "title": "Strategic Medical Warehouses — SAP Enterprise Integration",
+      "theme": "health",
+      "image": "project-generated-visuals/08-strategic-medical-warehouses-sap-enterprise-integratio.svg"
+    },
+    {
+      "index": 9,
+      "title": "Microsoft Dynamics 365 ERP / Unified Financial System",
+      "theme": "integration",
+      "image": "project-generated-visuals/09-microsoft-dynamics-365-erp-unified-financial-system.svg"
+    },
+    {
+      "index": 10,
+      "title": "Health Technology Assessment (HTA) Platform",
+      "theme": "health",
+      "image": "project-generated-visuals/10-health-technology-assessment-hta-platform.svg"
+    },
+    {
+      "index": 11,
+      "title": "Private Cloud Platform",
+      "theme": "platform",
+      "image": "project-generated-visuals/11-private-cloud-platform.svg"
+    },
+    {
+      "index": 12,
+      "title": "National Pharmaceutical Track & Trace Program",
+      "theme": "enterprise",
+      "image": "project-generated-visuals/12-national-pharmaceutical-track-trace-program.svg"
+    },
+    {
+      "index": 13,
+      "title": "Healthcare & Government Integration Program",
+      "theme": "health",
+      "image": "project-generated-visuals/13-healthcare-government-integration-program.svg"
+    },
+    {
+      "index": 14,
+      "title": "Operational Data Store (ODS)",
+      "theme": "data",
+      "image": "project-generated-visuals/14-operational-data-store-ods.svg"
+    },
+    {
+      "index": 15,
+      "title": "UPA Public Portal",
+      "theme": "portal",
+      "image": "project-generated-visuals/15-upa-public-portal.svg"
+    },
+    {
+      "index": 16,
+      "title": "Customer Service / Technical Support Platform",
+      "theme": "enterprise",
+      "image": "project-generated-visuals/16-customer-service-technical-support-platform.svg"
+    },
+    {
+      "index": 18,
+      "title": "Government Sector Inventory Registration & Follow-up",
+      "theme": "operations",
+      "image": "project-generated-visuals/18-government-sector-inventory-registration-follow-up.svg"
+    },
+    {
+      "index": 19,
+      "title": "Health Egypt Assets System Update",
+      "theme": "health",
+      "image": "project-generated-visuals/19-health-egypt-assets-system-update.svg"
+    },
+    {
+      "index": 20,
+      "title": "Supply & Procurement Data Audit (IQVIA)",
+      "theme": "data",
+      "image": "project-generated-visuals/20-supply-procurement-data-audit-iqvia.svg"
+    },
+    {
+      "index": 21,
+      "title": "Drug Data Flow & Tracking Platform (IQVIA)",
+      "theme": "health",
+      "image": "project-generated-visuals/21-drug-data-flow-tracking-platform-iqvia.svg"
+    },
+    {
+      "index": 22,
+      "title": "Central Data Warehouse",
+      "theme": "data",
+      "image": "project-generated-visuals/22-central-data-warehouse.svg"
+    },
+    {
+      "index": 23,
+      "title": "MedIQ Permissions Governance / RBAC",
+      "theme": "platform",
+      "image": "project-generated-visuals/23-mediq-permissions-governance-rbac.svg"
+    },
+    {
+      "index": 25,
+      "title": "DAF Private-Sector Payment Integration",
+      "theme": "integration",
+      "image": "project-generated-visuals/25-daf-private-sector-payment-integration.svg"
+    },
+    {
+      "index": 26,
+      "title": "Paperless / Collaborative Programs",
+      "theme": "integration",
+      "image": "project-generated-visuals/26-paperless-collaborative-programs.svg"
+    },
+    {
+      "index": 27,
+      "title": "Direct Purchase Digitization",
+      "theme": "operations",
+      "image": "project-generated-visuals/27-direct-purchase-digitization.svg"
+    },
+    {
+      "index": 28,
+      "title": "Electronic Signature Enablement",
+      "theme": "integration",
+      "image": "project-generated-visuals/28-electronic-signature-enablement.svg"
+    },
+    {
+      "index": 29,
+      "title": "Africa Health ExCon Training Project",
+      "theme": "health",
+      "image": "project-generated-visuals/29-africa-health-excon-training-project.svg"
+    },
+    {
+      "index": 30,
+      "title": "National Strategic Dashboard",
+      "theme": "data",
+      "image": "project-generated-visuals/30-national-strategic-dashboard.svg"
+    },
+    {
+      "index": 31,
+      "title": "Dynamic Report Engine",
+      "theme": "data",
+      "image": "project-generated-visuals/31-dynamic-report-engine.svg"
+    },
+    {
+      "index": 32,
+      "title": "Supply & Procurement Analytics Enablement",
+      "theme": "data",
+      "image": "project-generated-visuals/32-supply-procurement-analytics-enablement.svg"
+    },
+    {
+      "index": 33,
+      "title": "Real-Time Notifications Service",
+      "theme": "mobile",
+      "image": "project-generated-visuals/33-real-time-notifications-service.svg"
+    },
+    {
+      "index": 34,
+      "title": "Order Tracking System",
+      "theme": "operations",
+      "image": "project-generated-visuals/34-order-tracking-system.svg"
+    },
+    {
+      "index": 35,
+      "title": "Entities Demand Planning System",
+      "theme": "operations",
+      "image": "project-generated-visuals/35-entities-demand-planning-system.svg"
+    },
+    {
+      "index": 36,
+      "title": "SMS Notification / Omnichannel SMS Service",
+      "theme": "mobile",
+      "image": "project-generated-visuals/36-sms-notification-omnichannel-sms-service.svg"
+    },
+    {
+      "index": 37,
+      "title": "Financial & Product Data Auditing",
+      "theme": "data",
+      "image": "project-generated-visuals/37-financial-product-data-auditing.svg"
+    },
+    {
+      "index": 38,
+      "title": "Supply Chain System Enhancements",
+      "theme": "operations",
+      "image": "project-generated-visuals/38-supply-chain-system-enhancements.svg"
+    },
+    {
+      "index": 39,
+      "title": "UPA Delivery Mobile App",
+      "theme": "operations",
+      "image": "project-generated-visuals/39-upa-delivery-mobile-app.svg"
+    },
+    {
+      "index": 40,
+      "title": "Health Assets Mobile",
+      "theme": "health",
+      "image": "project-generated-visuals/40-health-assets-mobile.svg"
+    },
+    {
+      "index": 41,
+      "title": "Correspondence Management",
+      "theme": "integration",
+      "image": "project-generated-visuals/41-correspondence-management.svg"
+    },
+    {
+      "index": 42,
+      "title": "Crises Management",
+      "theme": "enterprise",
+      "image": "project-generated-visuals/42-crises-management.svg"
+    },
+    {
+      "index": 44,
+      "title": "Maktabi / Morasalat Electronic Correspondence Management",
+      "theme": "integration",
+      "image": "project-generated-visuals/44-maktabi-morasalat-electronic-correspondence-management.svg"
+    },
+    {
+      "index": 46,
+      "title": "Student Incident Management System",
+      "theme": "resilience",
+      "image": "project-generated-visuals/46-student-incident-management-system.svg"
+    },
+    {
+      "index": 47,
+      "title": "International Schools Management System",
+      "theme": "portal",
+      "image": "project-generated-visuals/47-international-schools-management-system.svg"
+    },
+    {
+      "index": 48,
+      "title": "Crisis Management System",
+      "theme": "resilience",
+      "image": "project-generated-visuals/48-crisis-management-system.svg"
+    },
+    {
+      "index": 49,
+      "title": "Asset Management System",
+      "theme": "operations",
+      "image": "project-generated-visuals/49-asset-management-system.svg"
+    },
+    {
+      "index": 50,
+      "title": "IT Asset & Hardware Management",
+      "theme": "platform",
+      "image": "project-generated-visuals/50-it-asset-hardware-management.svg"
+    },
+    {
+      "index": 53,
+      "title": "Al Wahat Club Management System",
+      "theme": "portal",
+      "image": "project-generated-visuals/53-al-wahat-club-management-system.svg"
+    },
+    {
+      "index": 54,
+      "title": "Police Civil Registry Integration",
+      "theme": "integration",
+      "image": "project-generated-visuals/54-police-civil-registry-integration.svg"
+    },
+    {
+      "index": 55,
+      "title": "HR / Attendance System",
+      "theme": "enterprise",
+      "image": "project-generated-visuals/55-hr-attendance-system.svg"
+    },
+    {
+      "index": 56,
+      "title": "Other Omani Government Portals & Enterprise Applications",
+      "theme": "portal",
+      "image": "project-generated-visuals/56-other-omani-government-portals-enterprise-applications.svg"
+    },
+    {
+      "index": 57,
+      "title": "Reusable .NET CMS & Electronic Publishing Platform",
+      "theme": "portal",
+      "image": "project-generated-visuals/57-reusable-net-cms-electronic-publishing-platform.svg"
+    },
+    {
+      "index": 58,
+      "title": "Reusable Conference Management Platform",
+      "theme": "portal",
+      "image": "project-generated-visuals/58-reusable-conference-management-platform.svg"
+    },
+    {
+      "index": 59,
+      "title": "Egypt Ministry of Health & Population Portal",
+      "theme": "health",
+      "image": "project-generated-visuals/59-egypt-ministry-of-health-population-portal.svg"
+    },
+    {
+      "index": 60,
+      "title": "Egypt Ministry of Planning Portal",
+      "theme": "operations",
+      "image": "project-generated-visuals/60-egypt-ministry-of-planning-portal.svg"
+    },
+    {
+      "index": 61,
+      "title": "MSAD — Ministry of State for Administrative Development",
+      "theme": "enterprise",
+      "image": "project-generated-visuals/61-msad-ministry-of-state-for-administrative-development.svg"
+    },
+    {
+      "index": 62,
+      "title": "Rate Your Services",
+      "theme": "enterprise",
+      "image": "project-generated-visuals/62-rate-your-services.svg"
+    },
+    {
+      "index": 63,
+      "title": "National Management Institute",
+      "theme": "enterprise",
+      "image": "project-generated-visuals/63-national-management-institute.svg"
+    },
+    {
+      "index": 64,
+      "title": "National Anti-Corruption Committee Portal",
+      "theme": "portal",
+      "image": "project-generated-visuals/64-national-anti-corruption-committee-portal.svg"
+    },
+    {
+      "index": 65,
+      "title": "Egypt Calendar",
+      "theme": "portal",
+      "image": "project-generated-visuals/65-egypt-calendar.svg"
+    },
+    {
+      "index": 66,
+      "title": "Elections in Egypt",
+      "theme": "portal",
+      "image": "project-generated-visuals/66-elections-in-egypt.svg"
+    },
+    {
+      "index": 67,
+      "title": "Online Surveys",
+      "theme": "portal",
+      "image": "project-generated-visuals/67-online-surveys.svg"
+    },
+    {
+      "index": 70,
+      "title": "BGICC Conference Platform",
+      "theme": "portal",
+      "image": "project-generated-visuals/70-bgicc-conference-platform.svg"
+    },
+    {
+      "index": 71,
+      "title": "Arab Organizers Conference Platform",
+      "theme": "portal",
+      "image": "project-generated-visuals/71-arab-organizers-conference-platform.svg"
+    },
+    {
+      "index": 72,
+      "title": "Yashfeen Medical Portal",
+      "theme": "health",
+      "image": "project-generated-visuals/72-yashfeen-medical-portal.svg"
+    },
+    {
+      "index": 73,
+      "title": "Traffic Reporting & Officers' Affairs System",
+      "theme": "data",
+      "image": "project-generated-visuals/73-traffic-reporting-officers-affairs-system.svg"
+    },
+    {
+      "index": 74,
+      "title": "Electronic Examinations & Educational Review System",
+      "theme": "portal",
+      "image": "project-generated-visuals/74-electronic-examinations-educational-review-system.svg"
+    },
+    {
+      "index": 83,
+      "title": "Support Desk",
+      "theme": "platform",
+      "image": "project-generated-visuals/83-support-desk.svg"
+    },
+    {
+      "index": 84,
+      "title": "Salamat Healthcare Platform",
+      "theme": "health",
+      "image": "project-generated-visuals/84-salamat-healthcare-platform.svg"
+    },
+    {
+      "index": 85,
+      "title": "Linux Administration & Secure Internal Systems",
+      "theme": "platform",
+      "image": "project-generated-visuals/85-linux-administration-secure-internal-systems.svg"
+    },
+    {
+      "index": 86,
+      "title": "Secure Internal ASP.NET / SQL Server Applications",
+      "theme": "enterprise",
+      "image": "project-generated-visuals/86-secure-internal-asp-net-sql-server-applications.svg"
+    }
+  ]
+}

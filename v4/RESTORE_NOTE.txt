@@ -1,0 +1,6 @@
+RESTORED APPROVED V4 DESIGN LAYER
+- Restored grouped navigation: Work / About / Proof
+- Restored the additive V4 design stack: enhancements-v4.css, executive-board.css, refinements-v4.css, brand-palette-v4.css
+- Restored refinements-v4.js behavior
+- Preserved the latest strict-QA wording/content corrections
+- CSS/JS assets already exist in /v4 on the site; this package updates HTML references and menu markup only.

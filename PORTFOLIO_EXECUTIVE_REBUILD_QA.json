@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "checks": {
+    "has_challenge_leadership_architecture_outcome": true,
+    "has_dynamics_case": true,
+    "has_egp11m": true,
+    "no_six_months": true,
+    "safe_oman_award": true,
+    "has_mobile_css": true
+  }
+}

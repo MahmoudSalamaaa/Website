@@ -1,0 +1,64 @@
+
+/* Portfolio UX rework — executive clarity, hierarchy and scanability */
+@media (min-width: 1px){
+  .portfolio-context-strip{
+    width:min(1180px,calc(100% - 32px));
+    margin:18px auto 42px;
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    border:1px solid rgba(15,23,42,.10);
+    border-radius:22px;
+    overflow:hidden;
+    background:rgba(255,255,255,.78);
+    box-shadow:0 14px 40px rgba(15,23,42,.06);
+  }
+  .portfolio-context-strip>div{
+    padding:20px 22px;
+    min-width:0;
+  }
+  .portfolio-context-strip>div+div{border-left:1px solid rgba(15,23,42,.09)}
+  .portfolio-context-strip strong{
+    display:block;
+    color:#0f172a;
+    font-size:clamp(18px,2vw,27px);
+    letter-spacing:-.035em;
+    line-height:1.05;
+    margin-bottom:7px;
+  }
+  .portfolio-context-strip span{
+    display:block;
+    color:#475569;
+    font-size:12px;
+    line-height:1.45;
+  }
+
+  /* Better reading rhythm */
+  main section{scroll-margin-top:120px}
+  .section-head,.section-header{max-width:850px}
+  .section-head p,.section-header p{max-width:720px;line-height:1.7}
+  .card p,.case-card p,.project-card p{line-height:1.62}
+}
+
+@media (max-width:820px){
+  .portfolio-context-strip{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    margin-top:12px;
+    margin-bottom:30px;
+    border-radius:18px;
+  }
+  .portfolio-context-strip>div{padding:16px}
+  .portfolio-context-strip>div+div{border-left:0}
+  .portfolio-context-strip>div:nth-child(even){border-left:1px solid rgba(15,23,42,.09)}
+  .portfolio-context-strip>div:nth-child(n+3){border-top:1px solid rgba(15,23,42,.09)}
+}
+
+@media (max-width:520px){
+  .portfolio-context-strip{
+    width:calc(100% - 24px);
+    gap:0;
+  }
+  .portfolio-context-strip strong{font-size:17px}
+  .portfolio-context-strip span{font-size:10.5px}
+  /* Reduce cognitive load on dense cards */
+  .card,.case-card,.project-card{border-radius:18px}
+}

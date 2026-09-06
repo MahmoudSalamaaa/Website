@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "changes": [
+    "Mobile hero buttons remain side-by-side in a 2-column grid.",
+    "Horizontal mobile rail gets persistent left/right arrow affordances.",
+    "Edge fades reinforce that the rail is horizontally scrollable."
+  ],
+  "changed_pages": [
+    "index.html",
+    "portfolio.html",
+    "projects.html",
+    "technologies.html",
+    "architecture.html",
+    "experience.html",
+    "leadership.html",
+    "governance.html",
+    "awards.html",
+    "about.html",
+    "contact.html"
+  ],
+  "new_file": "mobile-ui-polish-fix.css"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "root_cause_addressed": "Mobile rail removed from .navbar/.wrap layout entirely; new full-viewport independent DOM scroller.",
+  "changed_pages": [
+    "index.html",
+    "portfolio.html",
+    "projects.html",
+    "technologies.html",
+    "architecture.html",
+    "experience.html",
+    "leadership.html",
+    "governance.html",
+    "awards.html",
+    "about.html",
+    "contact.html"
+  ],
+  "new_file": "mobile-primary-rail-fix.css",
+  "menu": "Refined compact glass-style Menu button retained.",
+  "scrolling": "Native overflow-x:auto; no JavaScript."
+}

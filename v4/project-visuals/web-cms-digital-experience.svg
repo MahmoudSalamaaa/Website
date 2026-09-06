@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675">
+    <rect width="1200" height="675" fill="#fff0dd"/>
+    <circle cx="1020" cy="120" r="150" fill="#9a5c12" opacity=".10"/>
+    <circle cx="150" cy="590" r="220" fill="#9a5c12" opacity=".08"/>
+    <path d="M110 130h340M110 190h480M110 250h270" stroke="#9a5c12" stroke-width="20" stroke-linecap="round" opacity=".22"/>
+    <rect x="110" y="350" width="980" height="160" rx="34" fill="white" opacity=".78"/>
+    <text x="155" y="420" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#9a5c12">MAHMOUD SALAMA · PROJECT PORTFOLIO</text>
+    <text x="155" y="470" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="800" fill="#0f172a">Web, CMS &amp; Digital Experience</text>
+    </svg>

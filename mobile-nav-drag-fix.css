@@ -1,0 +1,58 @@
+/* Robust mobile horizontal nav */
+@media (max-width:960px){
+  .navbar{
+    height:auto!important;
+    min-height:72px!important;
+    flex-wrap:wrap!important;
+    padding:10px 0 8px!important;
+  }
+
+  .desktop-links{
+    display:flex!important;
+    order:3!important;
+    flex:0 0 100%!important;
+    min-width:0!important;
+    width:100%!important;
+    max-width:100%!important;
+    gap:24px!important;
+    overflow-x:scroll!important;
+    overflow-y:hidden!important;
+    white-space:nowrap!important;
+    -webkit-overflow-scrolling:touch!important;
+    scrollbar-width:none!important;
+    scroll-behavior:auto!important;
+    scroll-snap-type:none!important;
+    padding:8px 4px 10px!important;
+    margin:0!important;
+    cursor:grab!important;
+    user-select:none!important;
+    touch-action:none!important;
+  }
+
+  .desktop-links.is-dragging{cursor:grabbing!important}
+
+  .desktop-links::-webkit-scrollbar{
+    display:none!important;
+    width:0!important;
+    height:0!important;
+  }
+
+  .desktop-links>a,
+  .desktop-links>.desktop-more{
+    flex:0 0 auto!important;
+    min-width:max-content!important;
+  }
+
+  .desktop-links>a,
+  .desktop-more>summary{
+    white-space:nowrap!important;
+  }
+
+  nav{overflow:visible!important}
+  .navbar{overflow:hidden!important}
+}
+
+@media (max-width:600px){
+  .navbar{min-height:62px!important}
+  .desktop-links{gap:22px!important}
+}

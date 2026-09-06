@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "fix": "Dedicated touch-drag and mouse-drag scrolling for the horizontal primary nav on <=960px.",
+  "changed_pages": [
+    "index.html",
+    "portfolio.html",
+    "projects.html",
+    "technologies.html",
+    "architecture.html",
+    "experience.html",
+    "leadership.html",
+    "governance.html",
+    "awards.html",
+    "about.html",
+    "contact.html"
+  ],
+  "files": [
+    "mobile-nav-drag-fix.css",
+    "mobile-nav-drag-fix.js"
+  ]
+}

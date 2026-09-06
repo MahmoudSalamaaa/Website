@@ -1,0 +1,3 @@
+Repair baseline: last known-good V4 deployment before regression.
+Restored grouped Work/About/Proof navigation and full technology directory structure.
+Do not replace CSS/JS with older snapshots.

@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "goal": "Replace research/audit-note tone with visitor-facing portfolio copy",
+  "changes": [
+    "Removed the technical link-classification legend from the top of the page",
+    "Removed the separate public-links disclaimer note",
+    "Reframed the section as Explore the Work",
+    "Changed badge labels to VISIT / OFFICIAL / REFERENCE / RELATED / HISTORICAL",
+    "Rewrote terse evidence-style CTAs into natural visitor actions",
+    "Kept link provenance distinctions visually available without making the page read like QA notes"
+  ],
+  "project_cards": 86,
+  "sequential_1_to_86": true,
+  "old_note_phrases_removed": true
+}

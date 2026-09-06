@@ -1,0 +1,12 @@
+
+/* LIVE CORRECTION — mobile rail sizing and document overflow */
+@media (max-width:960px){
+  .mobile-rail-shell{
+    width:100%!important;
+    max-width:100%!important;
+  }
+  .mobile-primary-rail{
+    width:100%!important;
+    max-width:100%!important;
+  }
+}

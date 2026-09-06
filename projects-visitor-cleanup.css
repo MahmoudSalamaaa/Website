@@ -1,0 +1,13 @@
+
+/* Projects visitor cleanup — no audit/reference chrome */
+.public-link-badge{display:none !important}
+.public-link-wrap{gap:0 !important}
+.research-evidence-copy{
+  max-width:780px !important;
+}
+.research-evidence-copy h2{
+  margin:.35rem 0 .7rem !important;
+}
+.research-evidence-copy p{
+  max-width:720px !important;
+}

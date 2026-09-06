@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checks": {
+    "8_categories": true,
+    "HL7": true,
+    "Dynamics": true,
+    "SAP": true,
+    "Kubernetes": true,
+    "CI_CD": true,
+    "Linux": true,
+    "mobile": true
+  }
+}

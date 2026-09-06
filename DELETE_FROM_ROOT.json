@@ -1,0 +1,10 @@
+{
+  "delete": [
+    "case-studies/"
+  ],
+  "note": "Delete this legacy directory from the production root after applying the overlay.",
+  "replace_with_noindex_redirect": [
+    "index-4.html",
+    "executive-profile.html"
+  ]
+}

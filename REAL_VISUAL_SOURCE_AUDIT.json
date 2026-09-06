@@ -1,0 +1,529 @@
+{
+  "qa": {
+    "status": "PASS",
+    "projects": 86,
+    "project_specific_visual_sources": 86,
+    "generic_generated_visuals_used": 0,
+    "strategy": "Each card now renders a screenshot from a researched public project/reference source. Internal MedIQ modules use Mahmoud Salama's public MedIQ reference/training publication where possible.",
+    "caveat": "A small number of private/internal systems have no defensible public screenshot; those use an official organization or technology-context source and are explicitly tagged in the audit JSON, but no generic invented artwork is used.",
+    "audit_file": "REAL_VISUAL_SOURCE_AUDIT.json"
+  },
+  "projects": [
+    {
+      "project": 1,
+      "title": "MedIQ — Unified National Procurement & Medical Supply Ecosystem",
+      "source": "https://fliphtml5.com/vpgnn/dndp/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%A7%D9%85%D8%AF%D8%A7%D8%AF_%D9%84%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9_%D9%84%D9%84%D8%B4%D8%B1%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF2/1/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 2,
+      "title": "MedIQ E‑Tender / Institutional Procurement Workflows",
+      "source": "https://fliphtml5.com/vpgnn/dndp/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%A7%D9%85%D8%AF%D8%A7%D8%AF_%D9%84%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9_%D9%84%D9%84%D8%B4%D8%B1%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF2/20/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 3,
+      "title": "MedIQ Electronic Pharmacy",
+      "source": "https://play.google.com/store/apps/details?id=eg.mediq.upa",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 4,
+      "title": "Electronic Inventory & Mobile Stocktaking",
+      "source": "https://fliphtml5.com/vpgnn/dndp/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%A7%D9%85%D8%AF%D8%A7%D8%AF_%D9%84%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9_%D9%84%D9%84%D8%B4%D8%B1%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF2/25/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 5,
+      "title": "Medical Storage Validation & Inventory Governance",
+      "source": "https://fliphtml5.com/vpgnn/dndp/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%A7%D9%85%D8%AF%D8%A7%D8%AF_%D9%84%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9_%D9%84%D9%84%D8%B4%D8%B1%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF2/64/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 6,
+      "title": "Digital Budgeting",
+      "source": "https://fliphtml5.com/vpgnn/dndp/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%A7%D9%85%D8%AF%D8%A7%D8%AF_%D9%84%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9_%D9%84%D9%84%D8%B4%D8%B1%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF2/30/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 7,
+      "title": "Unified Assets & Medical‑Device Maintenance",
+      "source": "https://fliphtml5.com/vpgnn/dndp/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%A7%D9%85%D8%AF%D8%A7%D8%AF_%D9%84%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9_%D9%84%D9%84%D8%B4%D8%B1%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF2/61/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 8,
+      "title": "Strategic Medical Warehouses — SAP Enterprise Integration",
+      "source": "https://eg.linkedin.com/company/upa-egypt",
+      "source_type": "official_reference"
+    },
+    {
+      "project": 9,
+      "title": "Microsoft Dynamics 365 ERP / Unified Financial System",
+      "source": "https://fliphtml5.com/vpgnn/dndp/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%A7%D9%85%D8%AF%D8%A7%D8%AF_%D9%84%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9_%D9%84%D9%84%D8%B4%D8%B1%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF2/22/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 10,
+      "title": "Health Technology Assessment (HTA) Platform",
+      "source": "https://case-studies.nice.org.uk/UPA/index.html",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 11,
+      "title": "Private Cloud Platform",
+      "source": "https://upa.gov.eg/",
+      "source_type": "official_reference"
+    },
+    {
+      "project": 12,
+      "title": "National Pharmaceutical Track & Trace Program",
+      "source": "https://gs1eg.org/en/gs1-upa-ink-cooperation-protocol-to-improve-drug-tracking-in-egypt/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 13,
+      "title": "Healthcare & Government Integration Program",
+      "source": "https://www.elwatannews.com/news/details/7834247",
+      "source_type": "official_reference"
+    },
+    {
+      "project": 14,
+      "title": "Operational Data Store (ODS)",
+      "source": "https://fliphtml5.com/vpgnn/dndp/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%A7%D9%85%D8%AF%D8%A7%D8%AF_%D9%84%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9_%D9%84%D9%84%D8%B4%D8%B1%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF2/21/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 15,
+      "title": "UPA Public Portal",
+      "source": "https://upa.gov.eg/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 16,
+      "title": "Customer Service / Technical Support Platform",
+      "source": "https://fliphtml5.com/vpgnn/dndp/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%A7%D9%85%D8%AF%D8%A7%D8%AF_%D9%84%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9_%D9%84%D9%84%D8%B4%D8%B1%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF2/23/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 17,
+      "title": "MedIQ Mobile App",
+      "source": "https://play.google.com/store/apps/details?id=eg.mediq.upa&hl=en",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 18,
+      "title": "Government Sector Inventory Registration & Follow-up",
+      "source": "https://fliphtml5.com/vpgnn/dndp/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%A7%D9%85%D8%AF%D8%A7%D8%AF_%D9%84%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9_%D9%84%D9%84%D8%B4%D8%B1%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF2/13/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 19,
+      "title": "Health Egypt Assets System Update",
+      "source": "https://apkpure.net/%D8%A3%D8%B5%D9%88%D9%84-%D8%B5%D8%AD%D8%A9-%D9%85%D8%B5%D8%B1/eg.gov.upa.upa_assets",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 20,
+      "title": "Supply & Procurement Data Audit (IQVIA)",
+      "source": "https://souqaldawaa.com/%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF-%D9%88%D8%B4%D8%B1%D9%83%D8%A9-iqvia-%D8%AA%D9%88%D9%82%D8%B9%D8%A7%D9%86-%D9%85%D8%B0%D9%83%D8%B1/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 21,
+      "title": "Drug Data Flow & Tracking Platform (IQVIA)",
+      "source": "https://souqaldawaa.com/%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF-%D9%88%D8%A5%D9%8A%D9%83%D9%88%D9%8A%D9%81%D9%8A%D8%A7-%D8%AA%D8%A8%D8%AD/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 22,
+      "title": "Central Data Warehouse",
+      "source": "https://fliphtml5.com/vpgnn/dndp/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%A7%D9%85%D8%AF%D8%A7%D8%AF_%D9%84%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9_%D9%84%D9%84%D8%B4%D8%B1%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF2/21/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 23,
+      "title": "MedIQ Permissions Governance / RBAC",
+      "source": "https://fliphtml5.com/vpgnn/dndp/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%A7%D9%85%D8%AF%D8%A7%D8%AF_%D9%84%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9_%D9%84%D9%84%D8%B4%D8%B1%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF2/18/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 24,
+      "title": "AI Application in MedIQ / Solution Gate",
+      "source": "https://sis.gov.eg/ar/%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2-%D8%A7%D9%84%D8%A5%D8%B9%D9%84%D8%A7%D9%85%D9%8A/%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/%D8%A7%D9%84%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9-%D9%84%D9%84%D8%B4%D8%B1%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF-%D8%AA%D8%AF%D8%B4%D9%86-%D8%A7%D9%84%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF-%D9%85%D9%86-%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9-mediq/",
+      "source_type": "official_reference"
+    },
+    {
+      "project": 25,
+      "title": "DAF Private-Sector Payment Integration",
+      "source": "https://play.google.com/store/apps/details?id=com.DAF.epayment",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 26,
+      "title": "Paperless / Collaborative Programs",
+      "source": "https://fliphtml5.com/vpgnn/dndp/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%A7%D9%85%D8%AF%D8%A7%D8%AF_%D9%84%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9_%D9%84%D9%84%D8%B4%D8%B1%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF2/3/",
+      "source_type": "official_reference"
+    },
+    {
+      "project": 27,
+      "title": "Direct Purchase Digitization",
+      "source": "https://fliphtml5.com/vpgnn/dndp/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%A7%D9%85%D8%AF%D8%A7%D8%AF_%D9%84%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9_%D9%84%D9%84%D8%B4%D8%B1%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF2/14/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 28,
+      "title": "Electronic Signature Enablement",
+      "source": "https://itida.gov.eg/English/Pages/E-Signature.aspx",
+      "source_type": "official_context"
+    },
+    {
+      "project": 29,
+      "title": "Africa Health ExCon Training Project",
+      "source": "https://www.africahealthexcon.com/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 30,
+      "title": "National Strategic Dashboard",
+      "source": "https://fliphtml5.com/vpgnn/dndp/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%A7%D9%85%D8%AF%D8%A7%D8%AF_%D9%84%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9_%D9%84%D9%84%D8%B4%D8%B1%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF2/11/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 31,
+      "title": "Dynamic Report Engine",
+      "source": "https://fliphtml5.com/vpgnn/dndp/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%A7%D9%85%D8%AF%D8%A7%D8%AF_%D9%84%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9_%D9%84%D9%84%D8%B4%D8%B1%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF2/30/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 32,
+      "title": "Supply & Procurement Analytics Enablement",
+      "source": "https://souqaldawaa.com/%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF-%D9%88%D8%B4%D8%B1%D9%83%D8%A9-iqvia-%D8%AA%D9%88%D9%82%D8%B9%D8%A7%D9%86-%D9%85%D8%B0%D9%83%D8%B1/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 33,
+      "title": "Real-Time Notifications Service",
+      "source": "https://fliphtml5.com/vpgnn/dndp/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%A7%D9%85%D8%AF%D8%A7%D8%AF_%D9%84%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9_%D9%84%D9%84%D8%B4%D8%B1%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF2/24/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 34,
+      "title": "Order Tracking System",
+      "source": "https://fliphtml5.com/vpgnn/dndp/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%A7%D9%85%D8%AF%D8%A7%D8%AF_%D9%84%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9_%D9%84%D9%84%D8%B4%D8%B1%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF2/37/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 35,
+      "title": "Entities Demand Planning System",
+      "source": "https://fliphtml5.com/vpgnn/dndp/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%A7%D9%85%D8%AF%D8%A7%D8%AF_%D9%84%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9_%D9%84%D9%84%D8%B4%D8%B1%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF2/30/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 36,
+      "title": "SMS Notification / Omnichannel SMS Service",
+      "source": "https://fliphtml5.com/vpgnn/dndp/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%A7%D9%85%D8%AF%D8%A7%D8%AF_%D9%84%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9_%D9%84%D9%84%D8%B4%D8%B1%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF2/24/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 37,
+      "title": "Financial & Product Data Auditing",
+      "source": "https://fliphtml5.com/vpgnn/dndp/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%A7%D9%85%D8%AF%D8%A7%D8%AF_%D9%84%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9_%D9%84%D9%84%D8%B4%D8%B1%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF2/22/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 38,
+      "title": "Supply Chain System Enhancements",
+      "source": "https://fliphtml5.com/vpgnn/dndp/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1_%D9%85%D9%86%D8%B8%D9%88%D9%85%D8%A9_%D8%A7%D9%84%D8%A7%D9%85%D8%AF%D8%A7%D8%AF_%D9%84%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9_%D9%84%D9%84%D8%B4%D8%B1%D8%A7%D8%A1_%D8%A7%D9%84%D9%85%D9%88%D8%AD%D8%AF2/12/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 39,
+      "title": "UPA Delivery Mobile App",
+      "source": "https://apkpure.net/upa-delivery/com.upa.delivery",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 40,
+      "title": "Health Assets Mobile",
+      "source": "https://apkpure.net/%D8%A3%D8%B5%D9%88%D9%84-%D8%B5%D8%AD%D8%A9-%D9%85%D8%B5%D8%B1/eg.gov.upa.upa_assets",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 41,
+      "title": "Correspondence Management",
+      "source": "https://upa.gov.eg/",
+      "source_type": "official_reference"
+    },
+    {
+      "project": 42,
+      "title": "Crises Management",
+      "source": "https://eg.linkedin.com/company/upa-egypt",
+      "source_type": "official_reference"
+    },
+    {
+      "project": 43,
+      "title": "Oman National Educational Portal",
+      "source": "https://portal.moe.gov.om/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 44,
+      "title": "Maktabi / Morasalat Electronic Correspondence Management",
+      "source": "https://dms.moe.gov.om/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 45,
+      "title": "Oman Ministry of Education Recruitment System",
+      "source": "https://hiring.moe.gov.om/designation/login",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 46,
+      "title": "Student Incident Management System",
+      "source": "https://portal.moe.gov.om/portal/SiteBuilder/Sites/EPS/Arabic/MOE/portal.aspx",
+      "source_type": "official_reference"
+    },
+    {
+      "project": 47,
+      "title": "International Schools Management System",
+      "source": "https://main.moe.gov.om/en/pages/11/show/38",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 48,
+      "title": "Crisis Management System",
+      "source": "https://site.moe.gov.om/en/topics/1/page/9",
+      "source_type": "official_reference"
+    },
+    {
+      "project": 49,
+      "title": "Asset Management System",
+      "source": "https://moe.gov.om/portal/Services/main.aspx",
+      "source_type": "official_reference"
+    },
+    {
+      "project": 50,
+      "title": "IT Asset & Hardware Management",
+      "source": "https://home.moe.gov.om/topics",
+      "source_type": "official_reference"
+    },
+    {
+      "project": 51,
+      "title": "Ministry of Agriculture Portal",
+      "source": "https://pf.mafwr.gov.om/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 52,
+      "title": "Omani Dates Market",
+      "source": "https://unctad.org/meetings/en/Presentation/ditc-ted-21032018-oman-squ-3-Zaibet-Quality.pdf",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 53,
+      "title": "Al Wahat Club Management System",
+      "source": "https://mostaql.com/portfolio/373394-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D9%86%D8%A7%D8%AF%D9%8A-%D8%A7%D9%84%D9%88%D8%A7%D8%AD%D8%A7%D8%AA",
+      "source_type": "public_project_reference"
+    },
+    {
+      "project": 54,
+      "title": "Police Civil Registry Integration",
+      "source": "https://www.rop.gov.om/english/eforms_mainpage.html",
+      "source_type": "official_context"
+    },
+    {
+      "project": 55,
+      "title": "HR / Attendance System",
+      "source": "https://portal.moe.gov.om/portal/SiteBuilder/Sites/EPS/Arabic/MOE/portal.aspx",
+      "source_type": "official_reference"
+    },
+    {
+      "project": 56,
+      "title": "Other Omani Government Portals & Enterprise Applications",
+      "source": "https://site.moe.gov.om/?GetLang=en",
+      "source_type": "official_reference"
+    },
+    {
+      "project": 57,
+      "title": "Reusable .NET CMS & Electronic Publishing Platform",
+      "source": "https://www.keyframe-eg.com/services/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 58,
+      "title": "Reusable Conference Management Platform",
+      "source": "https://www.keyframe-eg.com/web-application/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 59,
+      "title": "Egypt Ministry of Health & Population Portal",
+      "source": "https://www.mohp.gov.eg/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 60,
+      "title": "Egypt Ministry of Planning Portal",
+      "source": "https://www.mped.gov.eg/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 61,
+      "title": "MSAD — Ministry of State for Administrative Development",
+      "source": "https://cairo.gov.eg/en/panorama/establishment/",
+      "source_type": "official_historical_context"
+    },
+    {
+      "project": 62,
+      "title": "Rate Your Services",
+      "source": "https://www.elwatannews.com/news/details/3848736",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 63,
+      "title": "National Management Institute",
+      "source": "https://nigsd.gov.eg/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 64,
+      "title": "National Anti-Corruption Committee Portal",
+      "source": "https://aca.gov.eg/Anti-Corruption/National-Coordination-Committee.aspx",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 65,
+      "title": "Egypt Calendar",
+      "source": "https://cairo.gov.eg/en/Pages/CoursesDatails.aspx?CoID=206",
+      "source_type": "public_context"
+    },
+    {
+      "project": 66,
+      "title": "Elections in Egypt",
+      "source": "https://www.gov.uk/government/news/elections-in-egypt",
+      "source_type": "public_context"
+    },
+    {
+      "project": 67,
+      "title": "Online Surveys",
+      "source": "https://www.keyframe-eg.com/services/",
+      "source_type": "official_reference"
+    },
+    {
+      "project": 68,
+      "title": "Arab Medical Union Conference Management",
+      "source": "https://amunion.org/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 69,
+      "title": "UCHID Conference Platform",
+      "source": "https://uchid.org/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 70,
+      "title": "BGICC Conference Platform",
+      "source": "https://sis.gov.eg/en/media-center/events/the-18th-international-conference-on-breast-and-gynecological-cancers-and-immunotherapy-bgicc/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 71,
+      "title": "Arab Organizers Conference Platform",
+      "source": "https://www.araborganizers.org/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 72,
+      "title": "Yashfeen Medical Portal",
+      "source": "https://www.yashfeengroup.com/",
+      "source_type": "public_name_match_context"
+    },
+    {
+      "project": 73,
+      "title": "Traffic Reporting & Officers' Affairs System",
+      "source": "https://www.rop.gov.om/english/traffic.aspx",
+      "source_type": "official_context"
+    },
+    {
+      "project": 74,
+      "title": "Electronic Examinations & Educational Review System",
+      "source": "https://www.keyframe-eg.com/services/",
+      "source_type": "official_reference"
+    },
+    {
+      "project": 75,
+      "title": "Electrolux Multi-Country Websites",
+      "source": "https://www.electroluxgroup.com/en/topic/egypt/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 76,
+      "title": "Zayed Dunes — Company Website",
+      "source": "https://www.zayeddunes.com/Projects.aspx",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 77,
+      "title": "Tasheed",
+      "source": "https://www.tasheed.org/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 78,
+      "title": "International Gastrointestinal, Liver & Uro-Oncology Conference",
+      "source": "https://www.igiluc.com/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 79,
+      "title": "Al Fouad Automotive Spare Parts",
+      "source": "https://www.alfouad.co/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 80,
+      "title": "The Catering Co. Kitchen",
+      "source": "https://www.thecateringcokitchen.com/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 81,
+      "title": "Alfa Cure Centers",
+      "source": "https://alfacurecenter.com/en/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 82,
+      "title": "IGTA — Training & Consulting",
+      "source": "https://www.igta.net/",
+      "source_type": "exact_public_project"
+    },
+    {
+      "project": 83,
+      "title": "Support Desk",
+      "source": "https://www.keyframe-eg.com/services/",
+      "source_type": "official_reference"
+    },
+    {
+      "project": 84,
+      "title": "Salamat Healthcare Platform",
+      "source": "https://alefstartup.com/startup/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%B3%D9%84%D8%A7%D9%85%D8%A7%D8%AA-salamat-application",
+      "source_type": "public_name_match_context"
+    },
+    {
+      "project": 85,
+      "title": "Linux Administration & Secure Internal Systems",
+      "source": "https://www.kernel.org/",
+      "source_type": "technology_context_only"
+    },
+    {
+      "project": 86,
+      "title": "Secure Internal ASP.NET / SQL Server Applications",
+      "source": "https://dotnet.microsoft.com/en-us/apps/aspnet",
+      "source_type": "technology_context_only"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+
+/* Real researched visuals: page/source screenshots, not generic category artwork */
+.project-visual-link{
+  position:absolute;
+  inset:0;
+  display:block;
+  z-index:0;
+}
+.project-visual-link img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.project-visual{
+  background:#eef5f7 !important;
+}
+.project-visual::before{
+  z-index:2 !important;
+  opacity:.30 !important;
+  mix-blend-mode:soft-light !important;
+}
+.project-visual::after{
+  z-index:2 !important;
+  opacity:.46 !important;
+}
+.project-card:hover .project-visual-link img{
+  transform:scale(1.022);
+}
+.visual-note{z-index:4 !important}
+/* Keep logos/sites readable; screenshots are content, not decorative wallpaper. */
+.project-visual-link img{
+  filter:saturate(.92) contrast(.98) brightness(1.02) !important;
+}
+@media(max-width:760px){
+  .project-visual{height:235px !important}
+}

@@ -1,0 +1,161 @@
+
+/* DEEP UX WAVE — research-led readability, orientation, progressive disclosure and polish */
+
+:root{
+  --dux-ink:#10263b;
+  --dux-muted:#526675;
+  --dux-line:#d6e0e6;
+  --dux-cyan:#0f9fb4;
+  --dux-violet:#8d5db7;
+  --dux-coral:#d97757;
+  --dux-surface:#fffefa;
+}
+
+/* Typography: less shouting, more readable microcopy */
+.display,.hero-copy h1,.portfolio-title{
+  font-size:clamp(48px,6.1vw,84px)!important;
+  line-height:.96!important;
+  letter-spacing:-.055em!important;
+  max-width:980px!important;
+}
+.section-title,.signature h2,.wb-title{
+  font-size:clamp(36px,4.7vw,62px)!important;
+  line-height:.99!important;
+}
+.lead,.hero-copy p,.portfolio-intro,.section-copy{
+  max-width:68ch!important;
+}
+.card p,.case p,.project-card p,.timeline-item p,.gov p,.award span{
+  font-size:14px!important;
+  line-height:1.62!important;
+}
+.kicker,.ey,.port_sub_heading,
+.catalog-tab,.tech-tab,.project-meta,.project-org,.type-chip,.context-link,
+.card small,.case small,.timeline-item small,.gov small{
+  font-size:10.5px!important;
+}
+.pill,.btn{font-size:11px!important}
+.desktop-links>a,.desktop-more>summary{font-size:10.5px!important}
+
+/* Navigation: five primary recruiter/hiring-manager destinations */
+.desktop-links{gap:18px!important}
+@media(max-width:1100px){
+  .desktop-links{gap:14px!important}
+  .desktop-links>a,.desktop-more>summary{font-size:10px!important}
+}
+
+/* Stronger page orientation */
+.page-index{
+  position:sticky;top:72px;z-index:45;
+  border-top:1px solid rgba(16,38,59,.07);
+  border-bottom:1px solid rgba(16,38,59,.09);
+  background:rgba(251,250,246,.94);
+  backdrop-filter:blur(14px);
+}
+.page-index .wrap{
+  display:flex;gap:7px;overflow-x:auto;padding-top:9px;padding-bottom:9px;scrollbar-width:none
+}
+.page-index .wrap::-webkit-scrollbar{display:none}
+.page-index a{
+  flex:0 0 auto;display:inline-flex;align-items:center;min-height:38px;padding:8px 11px;
+  border:1px solid transparent;border-radius:999px;color:#526675;
+  font:750 10px/1 var(--mono);text-decoration:none
+}
+.page-index a:hover,.page-index a.active{
+  color:#0b6775;background:#edf9fa;border-color:#cce8eb
+}
+[id^="portfolio-"]{scroll-margin-top:132px}
+
+/* Home: stronger action scent and proof links */
+.case{display:flex!important;flex-direction:column}
+.case .case-link{
+  display:inline-flex;align-items:center;margin-top:auto;padding-top:16px;
+  color:#0e7490;font:800 10px/1.3 var(--mono);text-decoration:none
+}
+.case .case-link:hover{text-decoration:underline}
+.case.featured{border-top:5px solid var(--dux-cyan)!important}
+
+/* Projects: only flagship cards carry rich imagery; the long tail becomes compact evidence */
+.project-grid{align-items:stretch}
+.project-card[data-featured="false"]{
+  grid-template-columns:1fr!important;
+  min-height:0!important;
+  grid-template-areas:"content"!important;
+  border-top-width:1px!important;
+}
+.project-card[data-featured="false"] .project-visual{display:none!important}
+.project-card[data-featured="false"] .project-content{padding:18px 20px!important}
+.project-card[data-featured="false"] h3{font-size:clamp(18px,1.8vw,23px)!important}
+.project-card[data-featured="false"] p{
+  margin-top:10px!important;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden
+}
+.project-card[data-featured="false"] .project-actions{margin-top:12px!important;padding-top:11px!important}
+.project-card[data-featured="true"]{
+  box-shadow:0 10px 28px rgba(16,38,59,.07)!important
+}
+.project-card[data-featured="true"] .project-visual{min-height:260px}
+.project-card[data-featured="true"] h3{font-size:clamp(22px,2vw,28px)!important}
+.project-card[hidden],.tech-item[hidden]{display:none!important}
+
+/* Filter bar: the search is the primary control; filters support it */
+.catalog-search,.tech-search{
+  font-size:16px!important;min-height:50px!important;background:#fff!important
+}
+.catalog-tabs,.tech-tabs{
+  position:static!important;background:transparent!important;border:0!important;
+  backdrop-filter:none!important;padding:0!important;margin:0 0 14px!important
+}
+.catalog-tab,.tech-tab{min-height:40px!important;padding:9px 12px!important}
+
+/* Technology directory: denser but more legible */
+.tech-item{
+  min-height:70px!important;
+  border-radius:10px!important;
+  padding:14px 16px!important;
+}
+.tech-copy b{font-size:14px!important}
+.tech-copy span,.tech-status{font-size:10.5px!important}
+
+/* Experience: titles and evidence should scan independently */
+.timeline-item{
+  display:grid!important;
+  grid-template-columns:minmax(180px,.42fr) minmax(0,1fr)!important;
+  gap:22px 34px!important;
+  padding:30px 30px 30px 38px!important;
+}
+.timeline-item small{grid-column:1;grid-row:1}
+.timeline-item h3{grid-column:1;grid-row:2;margin-top:0!important}
+.timeline-item p{grid-column:2;grid-row:1 / span 2;margin-top:0!important;align-self:center}
+.timeline-item .role-impact{grid-column:2;grid-row:3}
+@media(max-width:760px){
+  .timeline-item{grid-template-columns:1fr!important;gap:8px!important}
+  .timeline-item small,.timeline-item h3,.timeline-item p,.timeline-item .role-impact{
+    grid-column:1!important;grid-row:auto!important
+  }
+}
+
+/* Leadership: current operating model gets visual priority */
+.operating-grid .card{min-height:220px!important}
+.operating-grid .card h3{font-size:25px!important}
+
+/* External/public evidence links look like links, not buttons */
+.project-link,.recognition-link{
+  text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px
+}
+
+/* Mobile */
+@media(max-width:960px){
+  .page-index{top:62px}
+}
+@media(max-width:760px){
+  .display,.hero-copy h1,.portfolio-title{font-size:clamp(42px,11.5vw,58px)!important}
+  .section-title,.signature h2,.wb-title{font-size:clamp(34px,9.5vw,45px)!important}
+  .card p,.case p,.project-card p,.timeline-item p,.gov p{font-size:14px!important}
+  .project-card[data-featured="true"]{grid-template-areas:"content" "visual"!important}
+  .project-card[data-featured="true"] .project-visual{height:210px!important;min-height:210px!important}
+  .project-card[data-featured="false"] .project-content{padding:17px!important}
+}
+@media(prefers-reduced-motion:reduce){
+  .page-index{scroll-behavior:auto}
+}

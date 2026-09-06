@@ -1,0 +1,19 @@
+
+/* Supplied project logos / imagery */
+.project-card .project-visual img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.project-card[data-org="Keyframe"] .project-visual img[src^="project-images/"]{
+  object-fit:contain;
+  background:#f7f7f6;
+  padding:14px;
+}
+.project-card .project-visual img[src$="ai-application.jpg"]{
+  object-fit:cover;
+  padding:0;
+}
+@media(max-width:620px){
+  .project-card[data-org="Keyframe"] .project-visual img[src^="project-images/"]{padding:10px}
+}

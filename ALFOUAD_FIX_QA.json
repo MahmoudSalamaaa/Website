@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "corrected_project_name": "Al Fouad Automotive Spare Parts",
+  "checks": {
+    "old_name_removed": true,
+    "new_name_present": true,
+    "image_renamed": true
+  }
+}

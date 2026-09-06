@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "detailed_projects": 86,
+  "public_wording": "85+ projects",
+  "keyframe_historical_scale": "150+ major and mid-sized engagements",
+  "checks": {
+    "sequential_indices_1_to_86": true,
+    "no_80_plus_left": true,
+    "uses_85_plus": true
+  }
+}

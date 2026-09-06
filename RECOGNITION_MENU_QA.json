@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "checks": {
+    "recognition_not_hidden": true,
+    "mobile_rail_fix_preserved": true
+  }
+}

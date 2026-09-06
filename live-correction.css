@@ -1,4 +1,3 @@
-
 /* LIVE CORRECTION — mobile rail sizing and document overflow */
 @media (max-width:960px){
   .mobile-rail-shell{
@@ -11,14 +10,5 @@
   }
 }
 
-
-/* Recognition merged into Governance — remove obsolete separate Recognition navigation item */
-nav a[href="awards.html"],
-nav a[href="./awards.html"],
-nav a[href="/awards.html"],
-.desktop-links a[href="awards.html"],
-.mobile-primary-rail a[href="awards.html"],
-.nav-menu a[href="awards.html"],
-a.nav-link[href="awards.html"]{
-  display:none !important;
-}
+/* Recognition stays visible in the menu.
+   awards.html redirects to governance.html#recognition. */

@@ -1,0 +1,48 @@
+
+/* V4 WOW REVIEW — executive polish without gimmicks */
+:root{--wow-cyan:#14b8c9;--wow-violet:#a55ec3;--wow-coral:#ee8c62;--wow-blue:#557fe3;--wow-ink:#10263b}
+html{scroll-behavior:smooth}
+body{background:
+radial-gradient(circle at 8% 4%,rgba(20,184,201,.065),transparent 25rem),
+radial-gradient(circle at 92% 18%,rgba(165,94,195,.05),transparent 28rem),
+#fbfaf6}
+nav{background:rgba(251,250,246,.88)!important;backdrop-filter:blur(18px) saturate(145%);
+border-bottom:1px solid rgba(16,38,59,.08);box-shadow:0 8px 28px rgba(16,38,59,.035)}
+.navbar{position:relative}.navbar:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;
+background:linear-gradient(90deg,transparent,var(--wow-cyan),var(--wow-violet),transparent);opacity:.42}
+.nav-group>summary,.pill,.btn,.card,.case,.gov,.award,.strategy-card,.timeline-item,.project-card,.tech-item,.career-stage,.play-step{
+transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.nav-group>summary:hover,.pill:hover,.btn:hover{transform:translateY(-2px)}
+.pill:hover,.btn:hover{box-shadow:0 12px 28px rgba(16,38,59,.12)}
+.hero,.executive-hero,.portfolio-hero{position:relative;isolation:isolate}
+.hero:before,.executive-hero:before,.portfolio-hero:before{content:"";position:absolute;z-index:-1;inset:0;
+background:linear-gradient(120deg,rgba(20,184,201,.08),transparent 34%),
+linear-gradient(310deg,rgba(165,94,195,.065),transparent 38%),
+radial-gradient(circle at 80% 24%,rgba(238,140,98,.08),transparent 13rem)}
+.executive-hero h1 em,.portfolio-title em,.cta h2 em{
+background:linear-gradient(90deg,var(--wow-cyan),var(--wow-violet),var(--wow-coral));
+-webkit-background-clip:text;background-clip:text;color:transparent;font-style:normal}
+.photo-card{transform:rotate(1deg);box-shadow:0 28px 70px rgba(16,38,59,.14)!important}
+.photo-card:hover{transform:rotate(0deg) translateY(-5px)}
+.impact-grid>div:hover,.metric:hover,.card:hover,.case:hover,.gov:hover,.award:hover,.strategy-card:hover,
+.timeline-item:hover,.project-card:hover,.tech-item:hover,.career-stage:hover{
+transform:translateY(-4px);box-shadow:0 16px 36px rgba(16,38,59,.10)!important;border-color:rgba(20,184,201,.34)!important}
+.impact-grid strong,.metric strong,.leadership-evidence b{
+background:linear-gradient(90deg,var(--wow-ink),var(--wow-blue));
+-webkit-background-clip:text;background-clip:text;color:transparent}
+.band,.portfolio-section,.home-cases,.signature,.project-catalog,.tech-directory,.home-mandate{position:relative}
+.band+.band:before,.portfolio-section+.portfolio-section:before,.home-cases:before,.signature:before,.project-catalog:before,.tech-directory:before{
+content:"";position:absolute;left:50%;top:0;transform:translateX(-50%);width:min(1160px,88vw);height:1px;
+background:linear-gradient(90deg,transparent,rgba(16,38,59,.12),transparent)}
+.project-visual img{transition:transform .35s ease,filter .35s ease}
+.project-card:hover .project-visual img{transform:scale(1.035);filter:saturate(1.04)}
+.project-card:nth-child(5n+1){border-top:4px solid #14b8c9}.project-card:nth-child(5n+2){border-top:4px solid #a55ec3}
+.project-card:nth-child(5n+3){border-top:4px solid #ee8c62}.project-card:nth-child(5n+4){border-top:4px solid #58b879}
+.project-card:nth-child(5n){border-top:4px solid #557fe3}
+.catalog-tab.active,.tech-tab.active{box-shadow:inset 0 0 0 1px rgba(20,184,201,.25),0 6px 16px rgba(20,184,201,.10)}
+.section-title,.display,.portfolio-title,.executive-hero h1{text-wrap:balance}
+.lead,.section-copy,.project-card p,.case p,.card p{text-wrap:pretty}
+.cta{position:relative;overflow:hidden}.cta:after{content:"";position:absolute;width:320px;height:320px;border-radius:50%;
+right:-100px;bottom:-180px;background:radial-gradient(circle,rgba(20,184,201,.20),rgba(165,94,195,.08),transparent 70%)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.photo-card{transform:none!important}}
+@media(max-width:760px){.project-card:hover,.tech-item:hover,.card:hover,.case:hover{transform:none}}

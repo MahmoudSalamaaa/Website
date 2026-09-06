@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "checks": {
+    "18plus": true,
+    "54person": true,
+    "7direct": true,
+    "egp150m": true,
+    "oman_15plus": true,
+    "oman_1m": true,
+    "keyframe_150plus": true,
+    "safe_armed_forces": true,
+    "mobile_css": true
+  }
+}

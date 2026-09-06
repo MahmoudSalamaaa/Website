@@ -1,0 +1,119 @@
+
+/* Experience Executive Rebuild */
+.experience-hero{padding-bottom:48px}
+.experience-summary{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+  margin-top:30px;border:1px solid rgba(15,23,42,.10);border-radius:22px;
+  overflow:hidden;background:rgba(255,255,255,.80);box-shadow:0 14px 40px rgba(15,23,42,.055)
+}
+.experience-summary article{padding:20px 22px;min-width:0}
+.experience-summary article+article{border-left:1px solid rgba(15,23,42,.09)}
+.experience-summary strong{display:block;font-size:clamp(20px,2.3vw,31px);line-height:1;letter-spacing:-.04em;color:#0f172a}
+.experience-summary span{display:block;margin-top:6px;font-size:11px;color:#64748b;line-height:1.4}
+
+.career-ribbon{margin-top:18px!important}
+.career-ribbon span{background:rgba(255,255,255,.88)!important}
+
+.experience-throughline{padding:34px 0 54px;background:#fff}
+.throughline-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:18px}
+.throughline-grid>div{
+  padding:20px;border:1px solid rgba(15,23,42,.10);border-radius:20px;background:#f8fafc
+}
+.throughline-grid>div:nth-child(1){background:rgba(6,182,212,.07)}
+.throughline-grid>div:nth-child(2){background:rgba(250,204,21,.08)}
+.throughline-grid>div:nth-child(3){background:rgba(168,85,247,.06)}
+.throughline-grid>div:nth-child(4){background:rgba(34,197,94,.06)}
+.throughline-grid span{font:700 10px/1 "IBM Plex Mono",monospace;letter-spacing:.12em;color:#0b8fa3}
+.throughline-grid h2{margin:10px 0 7px;font-size:24px;letter-spacing:-.035em}
+.throughline-grid p{margin:0;font-size:13px;line-height:1.58;color:#475569}
+
+.experience-timeline-section{padding-top:76px;padding-bottom:84px}
+.section-intro{max-width:920px;margin-bottom:34px}
+.section-intro>p{max-width:760px;color:#475569;line-height:1.7}
+
+.executive-timeline{position:relative;display:grid;gap:18px}
+.executive-timeline:before{
+  content:"";position:absolute;left:67px;top:24px;bottom:24px;width:1px;background:rgba(15,23,42,.12)
+}
+.executive-timeline .timeline-item{
+  display:grid!important;grid-template-columns:110px minmax(0,1fr)!important;
+  gap:24px!important;padding:0!important;border:0!important;background:transparent!important;
+}
+.timeline-marker{
+  position:relative;z-index:1;align-self:start;justify-self:start;
+  min-width:74px;padding:9px 10px;border-radius:999px;text-align:center;
+  background:#fff;border:1px solid rgba(15,23,42,.12);
+  font:700 9px/1 "IBM Plex Mono",monospace;letter-spacing:.07em;color:#334155
+}
+.current-role .timeline-marker{background:#0f172a;color:#67e8f9;border-color:#0f172a}
+.timeline-content{
+  padding:26px 28px;border:1px solid rgba(15,23,42,.10);
+  border-radius:24px;background:rgba(255,255,255,.86);box-shadow:0 12px 34px rgba(15,23,42,.05)
+}
+.current-role .timeline-content{
+  background:
+  radial-gradient(circle at 92% 5%,rgba(6,182,212,.12),transparent 28%),
+  rgba(255,255,255,.94);
+  border-color:rgba(6,182,212,.25)
+}
+.timeline-content small{
+  display:block;font:700 10px/1.45 "IBM Plex Mono",monospace;
+  letter-spacing:.06em;color:#0b8fa3;margin-bottom:10px
+}
+.timeline-content h3{margin:0 0 12px;font-size:clamp(22px,2.5vw,34px);line-height:1.08;letter-spacing:-.035em}
+.role-summary{margin:0;color:#475569;line-height:1.68;max-width:960px}
+.role-lens{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:20px
+}
+.role-lens>div{padding:14px;border-radius:15px;background:#f8fafc;border:1px solid rgba(15,23,42,.08)}
+.role-lens b{display:block;font-size:12px;margin-bottom:5px;color:#0f172a}
+.role-lens span{display:block;font-size:10.5px;line-height:1.45;color:#64748b}
+.role-impact{margin-top:18px!important}
+.role-note{margin-top:15px;padding-top:14px;border-top:1px solid rgba(15,23,42,.08);font-size:12px;line-height:1.55;color:#64748b}
+
+.experience-evolution{padding:82px 0;background:#f8fbfc}
+.evolution-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:28px}
+.evolution-grid article{
+  padding:24px;border:1px solid rgba(15,23,42,.10);border-radius:22px;background:#fff;
+  box-shadow:0 10px 28px rgba(15,23,42,.045)
+}
+.evolution-grid small{font:700 10px/1 "IBM Plex Mono",monospace;letter-spacing:.12em;color:#0b8fa3}
+.evolution-grid h3{margin:10px 0 8px;font-size:21px;line-height:1.15;letter-spacing:-.025em}
+.evolution-grid p{margin:0;color:#475569;font-size:13px;line-height:1.62}
+
+.experience-cta{padding:58px 0;background:#fff}
+.experience-cta-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}
+.experience-cta h2{max-width:760px;margin:8px 0 0;font-size:clamp(26px,3.4vw,46px);line-height:1.04;letter-spacing:-.045em}
+.experience-actions{display:flex;gap:10px;flex:0 0 auto}
+
+@media(max-width:860px){
+  .experience-summary{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .experience-summary article:nth-child(odd){border-left:0}
+  .experience-summary article:nth-child(n+3){border-top:1px solid rgba(15,23,42,.09)}
+  .throughline-grid{grid-template-columns:1fr 1fr}
+  .role-lens{grid-template-columns:1fr 1fr}
+  .experience-cta-inner{display:block}
+  .experience-actions{margin-top:24px}
+}
+@media(max-width:620px){
+  .experience-hero{padding-bottom:30px}
+  .experience-summary{border-radius:18px}
+  .experience-summary article{padding:15px}
+  .experience-summary strong{font-size:20px}
+  .experience-summary span{font-size:10px}
+  .throughline-grid{grid-template-columns:1fr}
+  .experience-timeline-section{padding-top:54px}
+  .executive-timeline:before{display:none}
+  .executive-timeline .timeline-item{grid-template-columns:1fr!important;gap:8px!important}
+  .timeline-marker{min-width:auto}
+  .timeline-content{padding:19px;border-radius:19px}
+  .timeline-content h3{font-size:23px}
+  .role-lens{grid-template-columns:1fr 1fr}
+  .evolution-grid{grid-template-columns:1fr}
+  .experience-actions{display:grid;grid-template-columns:1fr 1fr;width:100%}
+  .experience-actions .btn{width:100%;min-width:0;padding:10px 8px;text-align:center;justify-content:center;font-size:10px}
+}
+@media(max-width:390px){
+  .role-lens{grid-template-columns:1fr}
+  .experience-actions .btn{font-size:9px}
+}

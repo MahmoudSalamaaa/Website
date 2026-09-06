@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "checks": {
+    "solution_architecture": true,
+    "healthcare_interoperability": true,
+    "HL7": true,
+    "HIS": true,
+    "REST": true,
+    "GS1": true,
+    "SAP_case": true,
+    "SIT_UAT": true,
+    "no_NPHIES_overclaim": true
+  }
+}

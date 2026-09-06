@@ -1,0 +1,195 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Patrick+Hand&display=swap');
+
+:root{
+  --ink:#071b36;
+  --ink2:#17324f;
+  --teal:#10a6a2;
+  --teal2:#70d9d4;
+  --gold:#f4b41a;
+  --cream:#fbfaf4;
+  --paper:#fffef9;
+  --line:#dfe8ea;
+  --muted:#65717e;
+  --sky:#dff1ff;
+  --mint:#d7f3df;
+  --pink:#ffe0e5;
+  --yellow:#ffef9f;
+  --lav:#e6ddff;
+  --shadow:0 20px 60px rgba(7,27,54,.09);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,Segoe UI,Arial,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{width:min(1180px,calc(100% - 40px));margin:auto}
+.hand{font-family:"Patrick Hand","Segoe Print","Comic Sans MS",cursive}
+.kicker{font-size:11px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+.skip-link{position:fixed;left:12px;top:-60px;z-index:1000;background:var(--ink);color:#fff;padding:10px 14px;border-radius:10px}
+.skip-link:focus{top:12px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+
+/* shared nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(251,250,244,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(7,27,54,.07)}
+.navbar{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.mark{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.11em;font-size:13px}
+.mark img{width:48px;height:auto}
+.links{display:flex;gap:22px;font-size:11px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}
+.links a:hover,.links a.active{color:var(--teal)}
+.pill{display:inline-flex;padding:12px 17px;border-radius:999px;background:var(--gold);font-size:11px;font-weight:900;letter-spacing:.04em}
+
+/* home hero */
+.executive-hero{padding:72px 0 52px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:center}
+.hero-copy h1{font-size:clamp(54px,7.3vw,102px);line-height:.87;letter-spacing:-.065em;margin:14px 0 24px}
+.hero-copy h1 em{font:italic 500 .94em Georgia,serif;color:var(--teal)}
+.hero-copy p{max-width:720px;color:#465564;font-size:18px;line-height:1.7}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;border-radius:14px;background:var(--ink);color:#fff;font-size:12px;font-weight:900}
+.btn.alt{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.photo-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:28px;padding:20px;box-shadow:var(--shadow);transform:rotate(1deg)}
+.photo-frame{overflow:hidden;border-radius:21px;background:linear-gradient(145deg,#e8f8f7,#fff4d8)}
+.photo-frame img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.photo-label{position:absolute;left:-18px;bottom:54px;background:var(--yellow);border:2px solid var(--ink);padding:11px 15px;border-radius:11px;font-family:"Patrick Hand";font-size:22px;transform:rotate(-4deg);box-shadow:4px 5px 0 rgba(7,27,54,.11)}
+.impact{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
+.impact-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.impact-grid div{padding:22px 18px;border-right:1px solid var(--line)}
+.impact-grid div:last-child{border-right:0}
+.impact strong{display:block;font-size:32px;letter-spacing:-.04em}
+.impact span{display:block;color:var(--muted);font-size:12px;line-height:1.35;margin-top:4px}
+
+/* signature whiteboard */
+.signature{padding:90px 0}
+.signature-head{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:end;margin-bottom:28px}
+.signature h2,.portfolio-title{font-family:"Patrick Hand";font-size:clamp(48px,6vw,82px);line-height:.92;margin:4px 0}
+.signature-head p{color:var(--muted);line-height:1.65;max-width:520px}
+.board{
+  position:relative;
+  min-height:680px;
+  background:
+    radial-gradient(circle at 1px 1px,rgba(7,27,54,.055) 1px,transparent 1px) 0 0/18px 18px,
+    var(--paper);
+  border:1px solid #dedbd0;
+  border-radius:26px;
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+.board-center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:270px;height:270px;border-radius:50%;background:#fff;border:4px solid var(--teal);outline:2px solid rgba(16,166,162,.35);outline-offset:10px;display:grid;place-items:center;text-align:center;z-index:3}
+.board-center h3{font-family:"Patrick Hand";font-size:42px;line-height:.9;margin:0}
+.board-center b{font-size:12px;letter-spacing:.08em;display:block;margin-top:11px}
+.board-center small{font-family:"Patrick Hand";font-size:19px;line-height:1.05;display:block;margin-top:12px}
+.board-card{position:absolute;width:245px;padding:15px 16px;border:2px solid var(--ink);border-radius:14px;box-shadow:5px 6px 0 rgba(7,27,54,.09);z-index:3}
+.board-card h4{font-family:"Patrick Hand";font-size:26px;margin:0 0 6px}
+.board-card ul{margin:0;padding-left:17px;font-size:12.5px;line-height:1.45}
+.bc1{left:3%;top:65px;background:var(--mint)} .bc2{right:3%;top:65px;background:var(--lav)}
+.bc3{left:2%;top:285px;background:var(--sky)} .bc4{right:2%;top:285px;background:var(--yellow)}
+.bc5{left:4%;bottom:55px;background:var(--pink)} .bc6{right:4%;bottom:55px;background:#ddf6e4}
+.board-lines{position:absolute;inset:0;width:100%;height:100%;z-index:1}
+.board-link{position:absolute;right:22px;bottom:20px;z-index:5;background:var(--ink);color:#fff;border-radius:999px;padding:12px 17px;font-size:12px;font-weight:800}
+
+/* home cases */
+.home-cases{padding:20px 0 90px}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:24px}
+.section-head h2{font-size:clamp(42px,5vw,72px);line-height:.92;letter-spacing:-.05em;margin:7px 0}
+.section-head p{max-width:520px;color:var(--muted);line-height:1.6}
+.case-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+.case{padding:28px;border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:0 12px 30px rgba(7,27,54,.05)}
+.case.featured{background:linear-gradient(145deg,#e9faf8,#fff)}
+.case small{font-size:10px;font-weight:900;letter-spacing:.13em;color:var(--teal)}
+.case h3{font-size:29px;line-height:1.05;margin:12px 0}
+.case p{color:#52606e;line-height:1.65}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}
+.tags span{font-size:10px;font-weight:800;background:var(--cream);border:1px solid var(--line);border-radius:999px;padding:7px 9px}
+
+/* portfolio */
+.portfolio-hero{padding:64px 0 36px}
+.portfolio-hero-grid{display:grid;grid-template-columns:1fr .65fr;gap:40px;align-items:end}
+.portfolio-title{font-size:clamp(58px,8vw,110px)}
+.portfolio-intro{font-size:18px;line-height:1.7;color:#4b5b68}
+.portfolio-note{background:var(--yellow);border:2px solid var(--ink);border-radius:15px;padding:18px;transform:rotate(1.5deg);box-shadow:5px 6px 0 rgba(7,27,54,.08)}
+.portfolio-note b{font-family:"Patrick Hand";font-size:28px}
+.portfolio-section{padding:66px 0}
+.portfolio-section.alt{background:#fff}
+.wb-title{font-family:"Patrick Hand";font-size:clamp(42px,5vw,70px);line-height:.95;margin:5px 0 22px}
+.metric-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.metric{padding:20px;border:2px solid var(--ink);border-radius:14px;box-shadow:4px 5px 0 rgba(7,27,54,.08)}
+.metric:nth-child(1){background:var(--mint)}.metric:nth-child(2){background:var(--lav)}.metric:nth-child(3){background:var(--yellow)}.metric:nth-child(4){background:var(--sky)}
+.metric strong{font-family:"Patrick Hand";font-size:38px;display:block}.metric span{font-size:12px;color:#425160}
+.platform-grid{display:grid;grid-template-columns:.78fr 1.45fr .78fr;gap:18px;align-items:stretch}
+.sticky{padding:20px;border:2px solid var(--ink);border-radius:15px;box-shadow:5px 6px 0 rgba(7,27,54,.08)}
+.sticky h3{font-family:"Patrick Hand";font-size:28px;margin:0 0 8px}
+.sticky ul{margin:0;padding-left:18px;line-height:1.55;font-size:13px}
+.arch-box{position:relative;background:var(--paper);border:2px dashed #72b8c3;border-radius:18px;padding:55px 18px 20px}
+.arch-label{position:absolute;top:-17px;left:50%;transform:translateX(-50%);background:var(--mint);border:2px solid #2e766d;border-radius:10px;padding:8px 14px;font-weight:900;font-size:12px;white-space:nowrap}
+.arch-flow{display:grid;grid-template-columns:1fr 1.3fr 1fr;gap:14px;align-items:center}
+.arch-system{background:#e9f5ff;border:2px solid #4e98dc;border-radius:19px;padding:16px;text-align:center}
+.arch-system h4{font-family:"Patrick Hand";font-size:27px;margin:0 0 8px}
+.arch-system ul{list-style:none;padding:0;margin:0;font-size:12px;line-height:1.55}
+.flow-steps{display:grid;gap:7px}
+.flow-steps div{padding:8px;text-align:center;background:#f0f8ff;border-top:1px solid #a9d0e9;border-bottom:1px solid #a9d0e9;font-size:11px}
+.resp-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
+.resp-grid .sticky:nth-child(1){background:var(--yellow)} .resp-grid .sticky:nth-child(2){background:var(--pink)}
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.timeline article{position:relative;padding:20px;border:1px solid var(--line);border-radius:16px;background:#fff}
+.timeline article:before{content:"";position:absolute;left:20px;top:-7px;width:54px;height:13px;background:#ffe681aa;transform:rotate(-2deg)}
+.timeline small{font-size:10px;font-weight:900;color:var(--teal);letter-spacing:.1em}
+.timeline h3{font-family:"Patrick Hand";font-size:25px;margin:8px 0}
+.timeline p{font-size:12px;color:#566571;line-height:1.55}
+.gov-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gov{padding:22px;border:2px solid var(--ink);border-radius:15px;background:var(--paper);box-shadow:4px 5px 0 rgba(7,27,54,.07)}
+.gov h3{font-family:"Patrick Hand";font-size:26px;margin:5px 0 8px}
+.gov p{font-size:12.5px;line-height:1.55;color:#4e5d69}
+.award-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+.award{border-radius:14px;padding:18px;background:#fff;border:1px solid var(--line)}
+.award b{display:block;font-family:"Patrick Hand";font-size:24px;margin-bottom:5px}
+.cta{padding:82px 0;background:var(--ink);color:#fff}
+.cta-grid{display:flex;justify-content:space-between;gap:30px;align-items:end}
+.cta h2{font-size:clamp(44px,6vw,82px);line-height:.9;letter-spacing:-.05em;margin:8px 0 0}
+.cta h2 em{font:italic 500 .95em Georgia,serif;color:var(--gold)}
+.cta .btn{background:var(--gold);color:var(--ink)}
+footer{padding:28px 0;background:#041426;color:#9fb0c0}
+.footer-row{display:flex;justify-content:space-between;gap:20px;font-size:11px}
+
+/* mobile first correction */
+@media(max-width:900px){
+  .links{display:none}
+  .hero-grid,.signature-head,.case-grid,.portfolio-hero-grid,.platform-grid,.arch-flow,.cta-grid{grid-template-columns:1fr}
+  .hero-grid{gap:28px}
+  .photo-card{max-width:520px;margin:auto}
+  .impact-grid{grid-template-columns:repeat(2,1fr)}
+  .impact-grid div:nth-child(2){border-right:0}
+  .board{min-height:0;padding:22px 14px;display:flex;flex-direction:column;gap:12px}
+  .board-lines{display:none}
+  .board-center,.board-card,.board-link{position:relative;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;transform:none!important;width:100%;height:auto}
+  .board-center{border-radius:20px;padding:24px 16px;order:-1}
+  .board-center h3{font-size:37px}
+  .board-card{padding:14px}
+  .board-link{display:block;text-align:center;margin-top:6px}
+  .metric-grid{grid-template-columns:repeat(2,1fr)}
+  .timeline,.gov-grid,.award-strip{grid-template-columns:1fr 1fr}
+  .arch-flow{display:flex;flex-direction:column}
+  .arch-system,.flow-steps{width:100%}
+}
+@media(max-width:560px){
+  .wrap{width:calc(100% - 24px)}
+  .navbar{height:64px}.mark span{font-size:11px}.mark img{width:40px}.pill{padding:10px 12px;font-size:10px}
+  .executive-hero{padding:44px 0 34px}
+  .hero-copy h1{font-size:52px}
+  .hero-copy p,.portfolio-intro{font-size:15px}
+  .impact-grid{grid-template-columns:1fr 1fr}
+  .impact-grid div{padding:16px 11px}.impact strong{font-size:26px}.impact span{font-size:10px}
+  .signature,.portfolio-section{padding:52px 0}
+  .signature h2{font-size:49px}
+  .section-head{display:block}
+  .case{padding:21px}
+  .portfolio-hero{padding:42px 0 20px}
+  .portfolio-title{font-size:60px}
+  .metric-grid,.resp-grid,.timeline,.gov-grid,.award-strip{grid-template-columns:1fr}
+  .metric{padding:16px}
+  .arch-box{padding:44px 10px 12px}
+  .arch-label{width:calc(100% - 20px);white-space:normal;text-align:center}
+  .footer-row{flex-direction:column}
+  .cta{padding:58px 0}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}

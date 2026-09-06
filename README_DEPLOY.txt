@@ -1,11 +1,6 @@
-FILES TO REPLACE / ADD
-1) /index.html          — hybrid homepage: current executive direction + whiteboard signature section
-2) /portfolio.html      — full whiteboard/war-room executive portfolio
-3) /war-room.css        — shared responsive styling
+MAHMOUD SALAMA — BALANCED EXECUTIVE SYSTEMS CANVAS · TRIAL
 
-Existing assets reused:
-- /kms-logo-original.png
-- /mahmoud-identity.webp
-- /favicon.svg
+Direction: roughly 70% memorable War Room personality + 30% executive restraint.
+Keeps controlled pastel accents, systems-map identity and visual energy while avoiding handwritten fonts, rotated sticky notes and doodle/classroom styling.
 
-No existing project/experience/architecture/leadership/governance/awards/contact files need to change.
+NOT PUBLISHED.

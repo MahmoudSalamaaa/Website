@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checks": {
+    "recognition_merged_into_governance": true,
+    "mediq_present": true,
+    "oman_present": true,
+    "yashfeen_present": true,
+    "award_attribution_rule": true,
+    "awards_redirect": true,
+    "recognition_removed_from_menu": true,
+    "mobile_responsive": true
+  }
+}

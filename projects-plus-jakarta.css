@@ -1,0 +1,78 @@
+
+/* Projects-only typography experiment:
+   Plus Jakarta Sans for ordinary copy and UI text.
+   Existing title/headline typography is intentionally preserved. */
+
+:root{
+  --projects-body-font:"Plus Jakarta Sans","Segoe UI",Arial,sans-serif;
+}
+
+/* Body copy + interface text */
+body,
+p,
+li,
+button,
+input,
+textarea,
+select,
+.project-card p,
+.project-meta,
+.project-link,
+.project-public-link,
+.project-card a,
+.catalog-intro p,
+.search-input,
+.filter-chip,
+.type-chip,
+.visual-note,
+.project-index,
+.project-facts,
+.project-facts span,
+.project-facts strong,
+.project-subtitle,
+.project-description,
+.project-role,
+.project-context,
+.project-outcome{
+  font-family:var(--projects-body-font) !important;
+}
+
+/* Preserve the current title / heading treatment */
+h1,h2,h3,h4,h5,h6,
+.hero-title,
+.section-title,
+.project-card h3,
+.project-title,
+.eyebrow,
+.kicker,
+.brand,
+.logo,
+nav summary,
+.nav-group summary{
+  font-family:inherit !important;
+}
+
+/* Tune copy for the new font */
+.project-card p,
+.project-description,
+.project-role,
+.project-context,
+.project-outcome{
+  line-height:1.68 !important;
+  letter-spacing:-0.006em;
+}
+
+.project-meta,
+.project-link,
+.project-public-link,
+.filter-chip,
+.type-chip,
+.visual-note,
+.project-index{
+  letter-spacing:.005em;
+}
+
+.catalog-intro p{
+  line-height:1.72 !important;
+  letter-spacing:-0.005em;
+}

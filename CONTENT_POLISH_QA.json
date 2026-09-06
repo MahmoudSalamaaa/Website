@@ -1,0 +1,234 @@
+{
+  "qa": {
+    "status": "PASS",
+    "scope": [
+      "index.html",
+      "portfolio.html",
+      "projects.html",
+      "technologies.html",
+      "architecture.html",
+      "experience.html",
+      "leadership.html",
+      "governance.html",
+      "contact.html"
+    ],
+    "design_files_changed": false,
+    "css_changed": false,
+    "js_changed": false,
+    "html_structure_intentionally_redesigned": false,
+    "copy_only": true,
+    "internal_note_blocks_removed": 2,
+    "remaining_known_internal_phrases": {},
+    "changed_pages": {
+      "index.html": 11,
+      "portfolio.html": 3,
+      "projects.html": 4,
+      "technologies.html": 5,
+      "architecture.html": 3,
+      "experience.html": 4,
+      "leadership.html": 4,
+      "governance.html": 9,
+      "contact.html": 2
+    }
+  },
+  "changes": {
+    "index.html": [
+      {
+        "from": "Leading national-scale platforms, enterprise architecture and technology transformation across healthcare and government — combining executive ownership with deep engineering judgment.",
+        "to": "I lead national-scale platforms and technology transformation across healthcare and government, bringing executive accountability together with the engineering depth to make difficult decisions practical."
+      },
+      {
+        "from": "Selected enterprise impact.",
+        "to": "Where the work changed the operating reality."
+      },
+      {
+        "from": "Selected cases show enterprise integration, governed procurement, healthcare APIs, asset operations and GCC national-platform delivery.",
+        "to": "A few examples of the work: connecting enterprise systems, redesigning governed procurement, integrating healthcare platforms, improving asset operations and delivering government technology at scale."
+      },
+      {
+        "from": "Claims should be inspectable — not just impressive.",
+        "to": "Recognition and public coverage around the work."
+      },
+      {
+        "from": "Selected public sources independently validate the platform recognition, national operating scale and the broader data-and-decision-support direction around UPA.",
+        "to": "Independent recognition and published coverage add useful context to the scale, reach and institutional impact of the platforms."
+      },
+      {
+        "from": "OFFICIAL ORGANIZATION COVERAGE",
+        "to": "OFFICIAL COVERAGE"
+      },
+      {
+        "from": "PUBLIC NATIONAL SCALE",
+        "to": "OPERATING SCALE"
+      },
+      {
+        "from": "Public coverage of UPA's medical inventory-governance ecosystem confirms the modern national-scale figures used throughout this portfolio.",
+        "to": "Published coverage reports the current MedIQ operating scale across users, healthcare facilities and suppliers."
+      },
+      {
+        "from": "Verify Platform Scale →",
+        "to": "Read Scale Coverage →"
+      },
+      {
+        "from": "Read External Evidence →",
+        "to": "Read IQVIA Collaboration →"
+      },
+      {
+        "removed": "source/date labels beneath external links",
+        "count": 4
+      }
+    ],
+    "portfolio.html": [
+      {
+        "from": "18+ years from hands-on engineering to executive technology leadership across Egypt and Oman — shaping national platforms, enterprise integrations, architecture decisions and delivery organizations where reliability, accountability and adoption matter.",
+        "to": "Over 18+ years in Egypt and Oman, I have moved from hands-on engineering to executive technology leadership while staying close to how systems are actually built, integrated, operated and improved."
+      },
+      {
+        "from": "Linux administration, shell scripting, Microsoft/.NET technologies and web application development during Egyptian Armed Forces service; confidential identifiers are omitted.",
+        "to": "Linux administration, shell scripting, Microsoft/.NET technologies and web application development in a secure internal environment during Egyptian Armed Forces service."
+      },
+      {
+        "from": "150+ major and mid-sized engagements spanning websites, portals, enterprise applications and digital services across government, healthcare, education and commercial sectors; small projects excluded.",
+        "to": "150+ major and mid-sized engagements spanning portals, enterprise applications and digital services across government, healthcare, education and commercial sectors."
+      }
+    ],
+    "projects.html": [
+      {
+        "from": "Selected platforms, systems and digital programs.",
+        "to": "Platforms, systems and digital programs built for real operating environments."
+      },
+      {
+        "from": "Explore work across healthcare, government, enterprise integration, data, operations and digital services.",
+        "to": "Work spanning healthcare, government, enterprise integration, data, operations and digital services."
+      },
+      {
+        "from": "Start with a curated set of flagship work, then explore the full 85+ project portfolio. Each project captures the challenge, delivery context and my contribution, with selected links to live platforms and relevant public references.",
+        "to": "The portfolio spans 85+ projects, from national platforms and enterprise integrations to operational systems and digital products. Each entry focuses on what was built, the environment around it and the contribution I made."
+      },
+      {
+        "from": "Five broad portfolios keep the page scannable. Featured projects open the page; the complete directory remains one click away.",
+        "to": "The work is grouped into five portfolios so you can move quickly from flagship programs to the full project history."
+      }
+    ],
+    "technologies.html": [
+      {
+        "from": "Instead of a long directory of individual tools, this page groups my experience into the technology domains I use to shape enterprise platforms, integrations, delivery environments and production operations.",
+        "to": "My work spans the technology domains needed to shape enterprise platforms, connect systems, support delivery teams and keep production environments dependable."
+      },
+      {
+        "from": "Eight technology domains cover the stack I work across.",
+        "to": "The stack is broad, but the decisions fall naturally into eight domains."
+      },
+      {
+        "from": "The grouping makes the portfolio easier to scan and better reflects how technology decisions are made in enterprise and healthcare environments.",
+        "to": "These domains reflect how I actually work: choosing capabilities around the operating problem, the architecture and the responsibilities that continue after go-live."
+      },
+      {
+        "from": "I do not position myself as a specialist in 160 separate tools. I position the stack around the problems it solves.",
+        "to": "The value is not in naming more tools. It is in combining the right capabilities around the problem."
+      },
+      {
+        "from": "The result is a clearer executive technology profile: architecture, healthcare interoperability, enterprise integration, application engineering, cloud/platform operations, data, infrastructure and delivery.",
+        "to": "That is how I use architecture, healthcare interoperability, integration, engineering, cloud/platform operations, data and infrastructure as one connected technology practice."
+      }
+    ],
+    "architecture.html": [
+      {
+        "from": "My Solution Architecture approach connects business capability, solution boundaries, integration contracts, data responsibilities, non-functional requirements and operating ownership — so architecture remains useful from the first decision through go-live and stabilization.",
+        "to": "I use architecture to turn a complex operating problem into decisions people can build, test, run and own — connecting business capability, system boundaries, integration contracts, data responsibilities and non-functional requirements from the start."
+      },
+      {
+        "from": "Good architecture reduces ambiguity before it becomes operational cost.",
+        "to": "Good architecture makes hard decisions clearer before they become expensive in production."
+      },
+      {
+        "from": "That means clearer boundaries, cleaner contracts, fewer hidden assumptions and stronger ownership from design through production.",
+        "to": "Clear boundaries, explicit contracts and visible ownership reduce the hidden assumptions that usually surface later as delivery friction or operational risk."
+      }
+    ],
+    "experience.html": [
+      {
+        "from": "My career has expanded in scope without losing the engineering foundation: building systems, leading delivery teams, shaping enterprise platforms, governing integrations and ultimately owning technology strategy, architecture, operations and transformation.",
+        "to": "My career has grown from building systems myself to leading the teams, platforms and technology decisions around them. The scope changed; the engineering foundation stayed with me."
+      },
+      {
+        "from": "Selected environment:",
+        "to": "Where I worked:"
+      },
+      {
+        "from": "The former About page is now part of the career story — keeping identity, leadership scope, geographic experience and education in one place instead of repeating them across the site.",
+        "to": "The career story is also the personal through-line: what I build, how I lead, the environments that shaped my judgment and the responsibility I am prepared to carry next."
+      },
+      {
+        "from": "The title changed. The pattern stayed consistent: take on harder systems, broader ownership and more consequential decisions.",
+        "to": "The titles changed, but the pattern stayed consistent: take on harder systems, broader ownership and decisions with greater consequences."
+      }
+    ],
+    "leadership.html": [
+      {
+        "from": "Current scale makes the leadership model tangible.",
+        "to": "The current mandate makes that leadership model concrete."
+      },
+      {
+        "from": "Each career step widened the operating span — from software and systems to teams, enterprise delivery, architecture, governance and production ownership.",
+        "to": "Each career step widened the span of responsibility — from software and systems to teams, enterprise delivery, architecture, governance and production ownership."
+      },
+      {
+        "from": "Explore project evidence →",
+        "to": "Explore selected projects →"
+      },
+      {
+        "from": "Transformation is not a technology purchase. It is a controlled movement from understanding the operating reality to designing, delivering, adopting and governing a better one.",
+        "to": "Transformation is not a technology purchase. It starts by understanding how the organization really works, then designing, delivering and embedding a better way of operating."
+      }
+    ],
+    "governance.html": [
+      {
+        "from": "Recognition that supports the governance story — without overstating individual credit.",
+        "to": "Recognition matters most when it reflects work that changed how an institution operates."
+      },
+      {
+        "from": "I keep external validation concise: name the recognized platform or project, state my contribution separately, and link evidence only where it materially strengthens credibility.",
+        "to": "These examples recognize platforms and projects I helped lead or deliver. The credit belongs to the institutions and teams behind the work, with my contribution stated clearly alongside each one."
+      },
+      {
+        "from": "MedIQ / UPA received the 2026 Excellence in Digital Transformation recognition at Pharmaconex, validating the platform’s national digital-transformation impact.",
+        "to": "MedIQ / UPA received the 2026 Excellence in Digital Transformation recognition at Pharmaconex, reflecting the institutional and technical work behind a platform operating at national scale."
+      },
+      {
+        "from": "PUBLIC SCALE",
+        "to": "OPERATING SCALE"
+      },
+      {
+        "from": "Verify recognition ↗",
+        "to": "Read recognition ↗"
+      },
+      {
+        "from": "Public system reference ↗",
+        "to": "View the system ↗"
+      },
+      {
+        "from": "Healthcare project recognition associated with the Yashfeen portal during the Keyframe period. It is presented as project/team recognition, not as a personal award.",
+        "to": "Recognition was associated with the Yashfeen Medical Portal during the Keyframe period. My contribution was part of the project team’s delivery."
+      },
+      {
+        "from": "See project context →",
+        "to": "Explore the project →"
+      },
+      {
+        "removed": "internal attribution-standard note",
+        "count": 1
+      }
+    ],
+    "contact.html": [
+      {
+        "from": "Open to Director and Head-level technology leadership, enterprise architecture and digital transformation opportunities in Egypt, the GCC, and selected international or remote environments.",
+        "to": "I’m open to Director and Head-level technology leadership, enterprise architecture and digital transformation opportunities in Egypt, the GCC, and selected international or remote environments."
+      },
+      {
+        "from": "Focused on senior technology leadership, enterprise architecture and transformation roles across Egypt, the GCC and international/remote environments.",
+        "to": "Most interested in roles where technology leadership, architecture and transformation are connected to meaningful operating responsibility."
+      }
+    ]
+  }
+}

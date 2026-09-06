@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "checks": {
+    "HL7_visible": true,
+    "HIS_visible": true,
+    "healthcare_APIs": true,
+    "GS1_GTIN": true,
+    "SIT_UAT": true,
+    "SAP": true,
+    "Dynamics365": true,
+    "Kubernetes": true,
+    "CICD": true,
+    "no_NPHIES_overclaim": true
+  }
+}

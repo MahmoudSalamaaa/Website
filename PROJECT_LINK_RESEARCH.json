@@ -1,0 +1,576 @@
+{
+  "status": "PASS",
+  "project_count": 86,
+  "links_added": 23,
+  "method": "Project-by-project web search using exact titles, organizations, domain variants and official/public evidence sources; internal/private systems were not given speculative links.",
+  "link_policy": {
+    "LIVE": "official live product/system or delivered site with strong attribution",
+    "PUBLIC": "official current organization/project reference; not claimed as the exact historical build",
+    "EVIDENCE": "authoritative external evidence relevant to the project",
+    "ARCHIVE": "historical/known public URL; current availability may vary"
+  },
+  "projects": [
+    {
+      "index": 1,
+      "title": "MedIQ — Unified National Procurement & Medical Supply Ecosystem",
+      "status": "verified_live_or_exact",
+      "url": "https://play.google.com/store/apps/details?id=eg.mediq.upa",
+      "ux_label": "Open MedIQ on Google Play",
+      "note": "Official live product"
+    },
+    {
+      "index": 2,
+      "title": "MedIQ E‑Tender / Institutional Procurement Workflows",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 3,
+      "title": "MedIQ Electronic Pharmacy",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 4,
+      "title": "Electronic Inventory & Mobile Stocktaking",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 5,
+      "title": "Medical Storage Validation & Inventory Governance",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 6,
+      "title": "Digital Budgeting",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 7,
+      "title": "Unified Assets & Medical‑Device Maintenance",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 8,
+      "title": "Strategic Medical Warehouses — SAP Enterprise Integration",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 9,
+      "title": "Microsoft Dynamics 365 ERP / Unified Financial System",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 10,
+      "title": "Health Technology Assessment (HTA) Platform",
+      "status": "verified_external_evidence",
+      "url": "https://case-studies.nice.org.uk/UPA/index.html",
+      "ux_label": "View HTA public evidence",
+      "note": "NICE / UPA evidence"
+    },
+    {
+      "index": 11,
+      "title": "Private Cloud Platform",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 12,
+      "title": "National Pharmaceutical Track & Trace Program",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 13,
+      "title": "Healthcare & Government Integration Program",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 14,
+      "title": "Operational Data Store (ODS)",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 15,
+      "title": "UPA Public Portal",
+      "status": "verified_public_reference",
+      "url": "https://upa.gov.eg/",
+      "ux_label": "Open UPA official portal",
+      "note": "Official organization portal"
+    },
+    {
+      "index": 16,
+      "title": "Customer Service / Technical Support Platform",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 17,
+      "title": "MedIQ Mobile App",
+      "status": "verified_live_or_exact",
+      "url": "https://play.google.com/store/apps/details?id=eg.mediq.upa",
+      "ux_label": "Open MedIQ mobile app",
+      "note": "Official live product"
+    },
+    {
+      "index": 18,
+      "title": "Government Sector Inventory Registration & Follow-up",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 19,
+      "title": "Health Egypt Assets System Update",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 20,
+      "title": "Supply & Procurement Data Audit (IQVIA)",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 21,
+      "title": "Drug Data Flow & Tracking Platform (IQVIA)",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 22,
+      "title": "Central Data Warehouse",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 23,
+      "title": "MedIQ Permissions Governance / RBAC",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 24,
+      "title": "AI Application in MedIQ / Solution Gate",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 25,
+      "title": "DAF Private-Sector Payment Integration",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 26,
+      "title": "Paperless / Collaborative Programs",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 27,
+      "title": "Direct Purchase Digitization",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 28,
+      "title": "Electronic Signature Enablement",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 29,
+      "title": "Africa Health ExCon Training Project",
+      "status": "verified_public_reference",
+      "url": "https://www.africahealthexcon.com/",
+      "ux_label": "Open Africa Health ExCon",
+      "note": "Official event site"
+    },
+    {
+      "index": 30,
+      "title": "National Strategic Dashboard",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 31,
+      "title": "Dynamic Report Engine",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 32,
+      "title": "Supply & Procurement Analytics Enablement",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 33,
+      "title": "Real-Time Notifications Service",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 34,
+      "title": "Order Tracking System",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 35,
+      "title": "Entities Demand Planning System",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 36,
+      "title": "SMS Notification / Omnichannel SMS Service",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 37,
+      "title": "Financial & Product Data Auditing",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 38,
+      "title": "Supply Chain System Enhancements",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 39,
+      "title": "UPA Delivery Mobile App",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 40,
+      "title": "Health Assets Mobile",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 41,
+      "title": "Correspondence Management",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 42,
+      "title": "Crises Management",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 43,
+      "title": "Oman National Educational Portal",
+      "status": "verified_live_or_exact",
+      "url": "https://portal.moe.gov.om/",
+      "ux_label": "Open Oman Education Portal",
+      "note": "Official live system"
+    },
+    {
+      "index": 44,
+      "title": "Maktabi / Morasalat Electronic Correspondence Management",
+      "status": "verified_public_reference",
+      "url": "https://dms.moe.gov.om/",
+      "ux_label": "Open correspondence system",
+      "note": "Public system endpoint"
+    },
+    {
+      "index": 45,
+      "title": "Oman Ministry of Education Recruitment System",
+      "status": "verified_live_or_exact",
+      "url": "https://hiring.moe.gov.om/designation/login",
+      "ux_label": "Open recruitment system",
+      "note": "Official live system"
+    },
+    {
+      "index": 46,
+      "title": "Student Incident Management System",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 47,
+      "title": "International Schools Management System",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 48,
+      "title": "Crisis Management System",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 49,
+      "title": "Asset Management System",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 50,
+      "title": "IT Asset & Hardware Management",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 51,
+      "title": "Ministry of Agriculture Portal",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 52,
+      "title": "Omani Dates Market",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 53,
+      "title": "Al Wahat Club Management System",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 54,
+      "title": "Police Civil Registry Integration",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 55,
+      "title": "HR / Attendance System",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 56,
+      "title": "Other Omani Government Portals & Enterprise Applications",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 57,
+      "title": "Reusable .NET CMS & Electronic Publishing Platform",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 58,
+      "title": "Reusable Conference Management Platform",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 59,
+      "title": "Egypt Ministry of Health & Population Portal",
+      "status": "verified_public_reference",
+      "url": "https://www.mohp.gov.eg/",
+      "ux_label": "Open Ministry of Health",
+      "note": "Official public reference"
+    },
+    {
+      "index": 60,
+      "title": "Egypt Ministry of Planning Portal",
+      "status": "verified_public_reference",
+      "url": "https://www.mped.gov.eg/",
+      "ux_label": "Open Ministry of Planning",
+      "note": "Official public reference"
+    },
+    {
+      "index": 61,
+      "title": "MSAD — Ministry of State for Administrative Development",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 62,
+      "title": "Rate Your Services",
+      "status": "historical_or_known_public_url",
+      "url": "https://www.rateyourservices.gov.eg/",
+      "ux_label": "Open Rate Your Services",
+      "note": "Historical public URL"
+    },
+    {
+      "index": 63,
+      "title": "National Management Institute",
+      "status": "verified_public_reference",
+      "url": "https://nigsd.gov.eg/",
+      "ux_label": "Open institute successor site",
+      "note": "Current institutional reference"
+    },
+    {
+      "index": 64,
+      "title": "National Anti-Corruption Committee Portal",
+      "status": "verified_external_evidence",
+      "url": "https://aca.gov.eg/Anti-Corruption/National-Coordination-Committee.aspx",
+      "ux_label": "Open committee reference",
+      "note": "Official government reference"
+    },
+    {
+      "index": 65,
+      "title": "Egypt Calendar",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 66,
+      "title": "Elections in Egypt",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 67,
+      "title": "Online Surveys",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 68,
+      "title": "Arab Medical Union Conference Management",
+      "status": "verified_public_reference",
+      "url": "https://amunion.org/",
+      "ux_label": "Open Arab Medical Union",
+      "note": "Official public reference"
+    },
+    {
+      "index": 69,
+      "title": "UCHID Conference Platform",
+      "status": "verified_public_reference",
+      "url": "https://uchid.org/",
+      "ux_label": "Open UCHID",
+      "note": "Public project reference"
+    },
+    {
+      "index": 70,
+      "title": "BGICC Conference Platform",
+      "status": "verified_external_evidence",
+      "url": "https://sis.gov.eg/en/media-center/events/the-18th-international-conference-on-breast-and-gynecological-cancers-and-immunotherapy-bgicc/",
+      "ux_label": "View BGICC public evidence",
+      "note": "State Information Service"
+    },
+    {
+      "index": 71,
+      "title": "Arab Organizers Conference Platform",
+      "status": "verified_public_reference",
+      "url": "https://www.araborganizers.org/",
+      "ux_label": "Open Arab Organizers",
+      "note": "Official public reference"
+    },
+    {
+      "index": 72,
+      "title": "Yashfeen Medical Portal",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 73,
+      "title": "Traffic Reporting & Officers' Affairs System",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 74,
+      "title": "Electronic Examinations & Educational Review System",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 75,
+      "title": "Electrolux Multi-Country Websites",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 76,
+      "title": "Zayed Dunes — Company Website",
+      "status": "verified_live_or_exact",
+      "url": "https://www.zayeddunes.com/Projects.aspx",
+      "ux_label": "Open verified delivered site",
+      "note": "Site credits KEY FRAME"
+    },
+    {
+      "index": 77,
+      "title": "Tasheed",
+      "status": "historical_or_known_public_url",
+      "url": "https://www.tasheed.org/",
+      "ux_label": "Open EFCBC / Tasheed",
+      "note": "Known public domain"
+    },
+    {
+      "index": 78,
+      "title": "International Gastrointestinal, Liver & Uro-Oncology Conference",
+      "status": "verified_public_reference",
+      "url": "https://www.igiluc.com/",
+      "ux_label": "Open IGILUC",
+      "note": "Official conference site"
+    },
+    {
+      "index": 79,
+      "title": "Al Fouad Automotive Spare Parts",
+      "status": "verified_public_reference",
+      "url": "https://www.alfouad.co/",
+      "ux_label": "Open Al Fouad",
+      "note": "Official company site"
+    },
+    {
+      "index": 80,
+      "title": "The Catering Co. Kitchen",
+      "status": "verified_public_reference",
+      "url": "https://www.thecateringcokitchen.com/",
+      "ux_label": "Open The Catering Co.",
+      "note": "Official company site"
+    },
+    {
+      "index": 81,
+      "title": "Alfa Cure Centers",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 82,
+      "title": "IGTA — Training & Consulting",
+      "status": "verified_live_or_exact",
+      "url": "https://www.igta.net/",
+      "ux_label": "Open verified delivered site",
+      "note": "Site footer credits KeyFrame"
+    },
+    {
+      "index": 83,
+      "title": "Support Desk",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 84,
+      "title": "Salamat Healthcare Platform",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 85,
+      "title": "Linux Administration & Secure Internal Systems",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    },
+    {
+      "index": 86,
+      "title": "Secure Internal ASP.NET / SQL Server Applications",
+      "status": "no_reliable_public_link_found_or_internal_private",
+      "url": null
+    }
+  ]
+}

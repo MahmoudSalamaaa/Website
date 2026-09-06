@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "reviewed_projects": 86,
+  "cards_with_public_evidence_or_reference": 44,
+  "total_public_links_rendered": 48,
+  "research_policy": "Only links with defensible identity, public-reference, capability, archival, or contextual value are surfaced. Context links are explicitly labelled so they are not mistaken for proof of a specific implementation.",
+  "major_new_findings": [
+    {
+      "project": 78,
+      "finding": "IGILUC live site footer credits KEYFrame",
+      "url": "https://www.igiluc.com/"
+    },
+    {
+      "project": 79,
+      "finding": "Al Fouad live site says Designed & Developed by KeyFrame",
+      "url": "https://www.alfouad.co/"
+    },
+    {
+      "project": 82,
+      "finding": "IGTA live site footer credits KeyFrame",
+      "url": "https://www.igta.net/"
+    },
+    {
+      "project": 76,
+      "finding": "Zayed Dunes live site credits KEY FRAME",
+      "url": "https://www.zayeddunes.com/Projects.aspx"
+    },
+    {
+      "project": 68,
+      "finding": "Keyframe current portfolio lists Arab Medical Union",
+      "url": "https://www.keyframe-eg.com/web-portal/"
+    },
+    {
+      "project": 69,
+      "finding": "Keyframe current portfolio lists UCHID",
+      "url": "https://www.keyframe-eg.com/web-application/"
+    },
+    {
+      "project": 77,
+      "finding": "Keyframe current portfolio lists Tasheed",
+      "url": "https://www.keyframe-eg.com/web-portal/"
+    },
+    {
+      "project": 39,
+      "finding": "Historical public UPA Delivery app listing found",
+      "url": "https://apkpure.net/upa-delivery/com.upa.delivery"
+    },
+    {
+      "project": 40,
+      "finding": "Historical public Health Egypt Assets app listing found",
+      "url": "https://apkpure.net/%D8%A3%D8%B5%D9%88%D9%84-%D8%B5%D8%AD%D8%A9-%D9%85%D8%B5%D8%B1/eg.gov.upa.upa_assets"
+    },
+    {
+      "project": 52,
+      "finding": "UNCTAD presentation cites historical Ministry Omani Dates Market URL",
+      "url": "https://unctad.org/meetings/en/Presentation/ditc-ted-21032018-oman-squ-3-Zaibet-Quality.pdf"
+    },
+    {
+      "project": 12,
+      "finding": "GS1 Egypt has an exact UPA Track & Trace cooperation article",
+      "url": "https://gs1eg.org/en/gs1-upa-ink-cooperation-protocol-to-improve-drug-tracking-in-egypt/"
+    }
+  ],
+  "qa": {
+    "project_count": 86,
+    "indices_1_to_86": true,
+    "all_external_secure_attrs": true,
+    "85_plus_present": true
+  }
+}

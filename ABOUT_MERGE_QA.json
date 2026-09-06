@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "changes": {
+    "about_content_merged_into_experience": true,
+    "professional_identity_preserved": true,
+    "education_preserved": true,
+    "current_scope_preserved": true,
+    "about_redirects_to_experience": true,
+    "about_hidden_from_desktop_menu": true,
+    "about_hidden_from_mobile_menu": true
+  }
+}

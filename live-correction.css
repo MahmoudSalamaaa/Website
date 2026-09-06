@@ -10,3 +10,15 @@
     max-width:100%!important;
   }
 }
+
+
+/* About merged into Experience — remove obsolete navigation item site-wide */
+nav a[href="about.html"],
+nav a[href="./about.html"],
+nav a[href="/about.html"],
+.desktop-links a[href="about.html"],
+.mobile-primary-rail a[href="about.html"],
+.nav-menu a[href="about.html"],
+a.nav-link[href="about.html"]{
+  display:none !important;
+}

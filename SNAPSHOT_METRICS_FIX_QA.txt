@@ -1,0 +1,5 @@
+PASS
+- Replaced homepage snapshot metric "7 direct reports" with "85+ projects across healthcare, government & enterprise".
+- Preserved 7 direct reports in the detailed executive mandate paragraph.
+- Forced all headline metrics, including "EGP 150M" and "2,000+", to stay on one line.
+- Desktop snapshot uses seven fluid columns at wide widths, four below 1320px, two below 760px.

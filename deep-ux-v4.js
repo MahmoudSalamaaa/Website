@@ -18,7 +18,7 @@
   // Fix Escape behavior: close open menus and return focus to the trigger.
   document.addEventListener('keydown', e => {
     if (e.key !== 'Escape') return;
-    const open = [...document.querySelectorAll('details[open]')];
+    const open = [...document.querySelectorAll('details.desktop-more[open], details.mobile-nav[open]')];
     open.forEach(d => {
       const trigger = d.querySelector(':scope > summary');
       d.removeAttribute('open');

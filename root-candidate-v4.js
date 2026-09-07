@@ -1,24 +1,54 @@
-
 (() => {
-  // Projects: read URL query and preserve shareable filter/search state.
-  if (document.querySelector('#project-search')) {
-    const buttons=[...document.querySelectorAll('.catalog-tab')];
-    const cards=[...document.querySelectorAll('.project-card')];
-    const search=document.querySelector('#project-search');
-    const empty=document.querySelector('#empty');
-    const count=document.querySelector('#project-result-count');
-    const params=new URLSearchParams(location.search);
-    let type=params.get('view')||'Featured';
-    const q0=params.get('q')||'';
-    if(q0) search.value=q0;
-    const valid=new Set(buttons.map(b=>b.dataset.type));
-    if(!valid.has(type)) type=q0?'All':'Featured';
-    if(q0&&type==='Featured')type='All';
-    const setActive=(v)=>{type=v;buttons.forEach(b=>{const on=b.dataset.type===v;b.classList.toggle('active',on);b.setAttribute('aria-pressed',on?'true':'false');});};
-    const sync=()=>{const p=new URLSearchParams(location.search),q=search.value.trim();if(q)p.set('q',q);else p.delete('q');if(type!=='Featured')p.set('view',type);else p.delete('view');history.replaceState(null,'',location.pathname+(p.toString()?`?${p}`:''));};
-    const apply=()=>{const q=search.value.trim().toLowerCase();let visible=0;cards.forEach(c=>{const byType=type==='All'||(type==='Featured'&&c.dataset.featured==='true')||c.dataset.type===type;const show=byType&&(!q||c.textContent.toLowerCase().includes(q));c.hidden=!show;if(show)visible++;});empty.classList.toggle('show',visible===0);count.textContent=q?`${visible} project${visible===1?'':'s'} match “${search.value.trim()}”`:(type==='Featured'?`Showing ${visible} featured projects`:`Showing ${visible} projects`);sync();};
-    buttons.forEach(b=>b.addEventListener('click',()=>{setActive(b.dataset.type);apply();}));
-    search.addEventListener('input',()=>{if(search.value.trim()&&type==='Featured')setActive('All');apply();});
-    setActive(type);apply();
-  }
+  const search = document.querySelector('#project-search');
+  if (!search) return;
+  const buttons = [...document.querySelectorAll('.catalog-tab')];
+  const cards = [...document.querySelectorAll('.project-card')];
+  const empty = document.querySelector('#empty');
+  const count = document.querySelector('#project-result-count');
+  const reset = document.querySelector('#project-reset');
+  if (!empty || !count || !buttons.length) return;
+  const valid = new Set(buttons.map(button => button.dataset.type));
+  let type = 'Featured';
+  const inGroup = (card, group) => group === 'All' || (group === 'Featured' ? card.dataset.featured === 'true' : card.dataset.type === group);
+  buttons.forEach(button => {
+    const badge = button.querySelector('span');
+    if (badge) badge.textContent = cards.filter(card => inGroup(card, button.dataset.type)).length;
+  });
+  const setActive = value => {
+    type = value;
+    buttons.forEach(button => {
+      const active = button.dataset.type === type;
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-pressed', String(active));
+    });
+  };
+  const apply = (sync = true) => {
+    const query = search.value.trim();
+    let visible = 0;
+    cards.forEach(card => {
+      card.hidden = !(inGroup(card, type) && (!query || card.textContent.toLowerCase().includes(query.toLowerCase())));
+      if (!card.hidden) visible++;
+    });
+    empty.classList.toggle('show', visible === 0);
+    count.textContent = query ? visible + (visible === 1 ? ' project matches “' : ' projects match “') + query + '”' : 'Showing ' + visible + (type === 'Featured' ? ' featured projects' : ' projects');
+    if (reset) reset.disabled = !query && type === 'Featured';
+    if (sync) {
+      const params = new URLSearchParams(location.search);
+      if (query) params.set('q', query); else params.delete('q');
+      if (type !== 'Featured') params.set('view', type); else params.delete('view');
+      history.replaceState(null, '', location.pathname + (params.size ? '?' + params.toString() : '') + location.hash);
+    }
+  };
+  const restore = () => {
+    const params = new URLSearchParams(location.search);
+    search.value = params.get('q') || '';
+    const requested = params.get('view');
+    setActive(valid.has(requested) ? requested : search.value ? 'All' : 'Featured');
+    apply(false);
+  };
+  buttons.forEach(button => button.addEventListener('click', () => { setActive(button.dataset.type); apply(); }));
+  search.addEventListener('input', () => { if (search.value.trim() && type === 'Featured') setActive('All'); apply(); });
+  reset?.addEventListener('click', () => { search.value = ''; setActive('Featured'); apply(); search.focus(); });
+  window.addEventListener('popstate', restore);
+  restore();
 })();

@@ -1,0 +1,28 @@
+/* Shared accessibility and usability without replacing page designs. */
+:root{--anchor-offset:100px}
+main{min-width:0}
+.mediq-story,.mediq-map{min-width:0}
+.mediq-map h3{overflow-wrap:anywhere}
+body>nav{background:#f7f5ef!important}
+main [id]{scroll-margin-top:var(--anchor-offset)}
+:where(a,button,summary,input,select,textarea):focus-visible{outline:3px solid #007c91!important;outline-offset:4px!important}
+.skip-link:focus{position:fixed!important;top:12px!important;left:12px!important;z-index:10000!important;transform:none!important}
+.catalog-search-tools,.contact-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:12px 0 20px}
+.catalog-search-tools p{margin:0;color:#475569;font-size:14px;line-height:1.6}
+.catalog-reset,.copy-email{min-height:44px;padding:10px 16px;border:1px solid #657b8b;border-radius:12px;background:#fff;color:#10263b;font:700 14px/1.4 var(--sans);cursor:pointer}
+.catalog-reset:hover,.copy-email:hover{background:#eaf9fa}
+.copy-status{display:block;min-height:1.5em;font-size:14px;color:#334155}
+.contact-primary h3{overflow-wrap:anywhere!important}
+.node{min-height:44px;font-size:12px!important;line-height:1.5!important}
+.node[aria-pressed="true"]{box-shadow:0 0 0 3px #007c91}
+.map-detail{scroll-margin-top:var(--anchor-offset)}
+.map-detail p{font-size:15px!important;line-height:1.7}
+.layer small,.crosscut small{font-size:11px!important}
+.page-index{scroll-padding-inline:16px}
+.page-index a{min-height:44px;display:inline-flex;align-items:center}
+@media(max-width:960px){:root{--anchor-offset:154px}.mobile-nav-panel{max-height:calc(100dvh - 90px);overflow-y:auto;overscroll-behavior:contain}}
+@media(max-width:600px){.catalog-search{font-size:16px!important}.contact-actions .btn{max-width:100%;white-space:normal}.map-shell{padding:14px!important}}
+@media(max-width:480px){.grid2 .contact-primary h3{font-size:clamp(16px,4.2vw,20px)!important;letter-spacing:-.025em!important}}
+.related-work{padding:24px 0 40px}.related-work .wrap{display:flex;align-items:center;gap:16px;flex-wrap:wrap}.related-work p{margin:0;font-size:16px;line-height:1.6}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media print{body>nav,.mobile-rail-shell,.page-index,.catalog-search-tools,.catalog-search,.catalog-tabs,.contact-actions,body>footer{display:none!important}main [id]{scroll-margin-top:0}body{background:#fff!important;color:#111!important}a{color:inherit!important}.project-card[hidden]{display:none!important}}

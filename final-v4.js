@@ -9,8 +9,8 @@
   });
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
+      const trigger = details.find(d => d.open)?.querySelector(':scope > summary');
       details.forEach(d => d.removeAttribute('open'));
-      const trigger = document.querySelector('details[open] > summary');
       if (trigger) trigger.focus();
     }
   });

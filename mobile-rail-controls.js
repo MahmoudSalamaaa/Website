@@ -26,8 +26,9 @@
     next.disabled = rail.scrollLeft >= max - 2;
   };
 
-  prev.addEventListener('click', () => rail.scrollBy({left:-step(), behavior:'smooth'}));
-  next.addEventListener('click', () => rail.scrollBy({left: step(), behavior:'smooth'}));
+  const behavior = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+  prev.addEventListener('click', () => rail.scrollBy({left:-step(), behavior:behavior()}));
+  next.addEventListener('click', () => rail.scrollBy({left: step(), behavior:behavior()}));
   rail.addEventListener('scroll', sync, {passive:true});
   window.addEventListener('resize', sync, {passive:true});
   requestAnimationFrame(sync);

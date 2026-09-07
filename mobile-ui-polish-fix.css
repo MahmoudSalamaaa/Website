@@ -1,11 +1,19 @@
 
 /* Repair wave: real mobile rail controls */
+.mobile-rail-shell{display:none}
 @media (max-width:960px){
   .mobile-rail-shell{
+    display:block;
+    position:relative;
     width:100%!important;
     max-width:100%!important;
     -webkit-mask-image:none!important;
     mask-image:none!important;
+  }
+  .mobile-rail-shell .mobile-primary-rail{
+    padding-left:48px!important;
+    padding-right:48px!important;
+    scroll-padding-inline:48px;
   }
   .mobile-rail-shell::before,
   .mobile-rail-shell::after{

@@ -226,3 +226,58 @@
     margin-bottom: 16px !important;
   }
 }
+
+/* 2026-09-07 MedIQ desktop balance fix
+   Rebalance the two-column flagship section so the right-side ecosystem
+   carries more vertical weight and the section no longer leaves a large
+   empty white field beneath the map. */
+@media (min-width: 1180px) {
+  .mediq-flagship .mediq-grid {
+    grid-template-columns: minmax(0, 1.12fr) minmax(420px, 0.88fr) !important;
+    gap: clamp(36px, 3.2vw, 56px) !important;
+    align-items: start !important;
+  }
+
+  .mediq-flagship .mediq-story > p {
+    max-width: 66ch;
+  }
+
+  .mediq-flagship .mediq-map {
+    align-self: stretch;
+  }
+
+  .mediq-flagship .mediq-ecosystem {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 14px !important;
+  }
+
+  .mediq-flagship .mediq-node {
+    min-height: 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .mediq-flagship .mediq-facts {
+    gap: 14px !important;
+  }
+
+  .mediq-flagship .award-badge {
+    margin-top: 20px !important;
+  }
+
+  .mediq-flagship .section-action {
+    margin-top: 14px !important;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1179px) {
+  .mediq-flagship .mediq-grid {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr) !important;
+    gap: 30px !important;
+  }
+
+  .mediq-flagship .mediq-ecosystem {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}

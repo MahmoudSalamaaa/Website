@@ -323,3 +323,70 @@
     font-size: clamp(2rem, 10vw, 3rem) !important;
   }
 }
+
+/* 2026-09-07 executive snapshot v2
+   Eight high-value proof metrics, large single-line figures, and restrained motion. */
+.exec-snapshot-grid {
+  grid-template-columns: repeat(8, minmax(0, 1fr)) !important;
+}
+
+.exec-snapshot-grid > div {
+  min-width: 0 !important;
+  padding-inline: clamp(14px, 1.25vw, 24px) !important;
+}
+
+.exec-snapshot-grid strong {
+  display: block;
+  white-space: nowrap !important;
+  font-size: clamp(2.15rem, 2.75vw, 3.55rem) !important;
+  line-height: .96 !important;
+  letter-spacing: -0.045em !important;
+  font-variant-numeric: tabular-nums;
+}
+
+.exec-snapshot-grid span {
+  display: block;
+  margin-top: 10px;
+  max-width: 24ch;
+  line-height: 1.35;
+}
+
+/* Motion is progressive enhancement: content remains visible if JS is unavailable. */
+.metrics-animate-ready .exec-snapshot-grid > div {
+  opacity: .42;
+  transform: translateY(8px);
+  transition: opacity .48s ease, transform .48s ease;
+}
+
+.metrics-animate-ready .exec-snapshot-grid > div.metric-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 1540px) {
+  .exec-snapshot-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+
+  .exec-snapshot-grid strong {
+    font-size: clamp(2.5rem, 4.4vw, 3.7rem) !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .exec-snapshot-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .exec-snapshot-grid strong {
+    font-size: clamp(2.05rem, 10vw, 3rem) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .metrics-animate-ready .exec-snapshot-grid > div {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

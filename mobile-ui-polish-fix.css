@@ -1,4 +1,3 @@
-
 /* Repair wave: real mobile rail controls */
 .mobile-rail-shell{display:none}
 @media (max-width:960px){
@@ -43,5 +42,12 @@
     opacity:.28;
     cursor:default;
     box-shadow:none;
+  }
+}
+
+/* Home mobile portrait contract: show only the compact identity crop. */
+@media (max-width:640px){
+  .executive-hero .photo-card{
+    display:none!important;
   }
 }

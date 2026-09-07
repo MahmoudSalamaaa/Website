@@ -1,38 +1,4 @@
 (() => {
-
-  // Home-only typography: use Plus Jakarta Sans for normal reading text.
-  if (!document.getElementById('home-jakarta-font')) {
-    const fontLink = document.createElement('link');
-    fontLink.id = 'home-jakarta-font';
-    fontLink.rel = 'stylesheet';
-    fontLink.href = 'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap';
-    document.head.appendChild(fontLink);
-
-    const typography = document.createElement('style');
-    typography.id = 'home-jakarta-typography';
-    typography.textContent = `
-      .executive-hero p,
-      .exec-snapshot span,
-      .mediq-flagship p,
-      .mediq-facts span,
-      .mediq-node span,
-      .mandate-copy p,
-      .mandate-chips span,
-      .home-cases .section-head p,
-      .home-cases .case p,
-      .home-cases .tags span,
-      .recognition-copy,
-      .operating-copy,
-      .operating-card p,
-      .home-cta p,
-      footer p,
-      footer span {
-        font-family: 'Plus Jakarta Sans', Inter, Arial, sans-serif !important;
-      }
-    `;
-    document.head.appendChild(typography);
-  }
-
   const grid = document.querySelector('.exec-snapshot-grid');
   if (!grid) return;
 

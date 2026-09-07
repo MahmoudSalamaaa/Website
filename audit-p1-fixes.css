@@ -771,3 +771,100 @@
     font-size: .88rem !important;
   }
 }
+
+
+/* 2026-09-07 executive-home trim
+   Keep only high-signal proof on Home: five flagship rows + compact external validation. */
+.home-cases .case-grid.root-priority {
+  grid-template-columns: 1fr !important;
+  gap: 0 !important;
+  border-top: 1px solid #dbe5ea;
+}
+.home-cases .case-grid.root-priority .case,
+.home-cases .case-grid.root-priority .case:last-child {
+  grid-column: auto !important;
+  display: grid !important;
+  grid-template-columns: minmax(210px,.72fr) minmax(260px,1fr) minmax(0,1.7fr) minmax(220px,.9fr) !important;
+  grid-template-areas: "eyebrow title copy tags" !important;
+  gap: 22px !important;
+  align-items: center !important;
+  min-height: 0 !important;
+  padding: 22px 0 !important;
+  border: 0 !important;
+  border-bottom: 1px solid #dbe5ea !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+.home-cases .case-grid.root-priority .case:hover,
+.home-cases .case-grid.root-priority .case:last-child:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  background: rgba(255,255,255,.55) !important;
+}
+.home-cases .case-grid.root-priority .case small,
+.home-cases .case-grid.root-priority .case:last-child small { grid-area: eyebrow !important; margin:0 !important; align-self:center !important; }
+.home-cases .case-grid.root-priority .case h3,
+.home-cases .case-grid.root-priority .case:last-child h3 { grid-area:title !important; margin:0 !important; font-size:1.15rem !important; }
+.home-cases .case-grid.root-priority .case p,
+.home-cases .case-grid.root-priority .case:last-child p { grid-area:copy !important; margin:0 !important; max-width:none !important; }
+.home-cases .case-grid.root-priority .case .tags,
+.home-cases .case-grid.root-priority .case:last-child .tags { grid-area:tags !important; margin:0 !important; justify-content:flex-start !important; max-width:none !important; }
+
+.recognition-strip {
+  padding: clamp(40px,5vw,62px) 0;
+  background: #fff;
+  border-top: 1px solid #e4ebef;
+  border-bottom: 1px solid #e4ebef;
+}
+.recognition-strip-inner {
+  display:grid;
+  grid-template-columns:minmax(250px,.78fr) minmax(0,1.5fr);
+  gap:clamp(28px,5vw,72px);
+  align-items:center;
+}
+.recognition-strip-copy h2 {
+  margin:8px 0 0;
+  max-width:15ch;
+  font-size:clamp(1.8rem,2.5vw,2.75rem);
+  line-height:1.04;
+  letter-spacing:-.035em;
+  color:#10263b;
+}
+.recognition-strip-items {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  border-left:1px solid #dfe8ed;
+}
+.recognition-strip-items article {
+  padding:8px clamp(20px,2.4vw,34px);
+}
+.recognition-strip-items article + article { border-left:1px solid #dfe8ed; }
+.recognition-strip-items strong { display:block; color:#0f172a; font-size:1rem; line-height:1.25; }
+.recognition-strip-items span { display:block; margin-top:7px; color:#526675; font-size:.86rem; line-height:1.5; }
+.recognition-strip-items a { display:inline-block; margin-top:10px; font-size:.78rem; font-weight:800; color:#0f8fa3; text-decoration:none; }
+.recognition-strip-items a:hover,.recognition-strip-items a:focus-visible { text-decoration:underline; }
+
+@media (max-width:1100px) {
+  .home-cases .case-grid.root-priority .case,
+  .home-cases .case-grid.root-priority .case:last-child {
+    grid-template-columns:minmax(180px,.7fr) minmax(230px,1fr) minmax(0,1.55fr) !important;
+    grid-template-areas:"eyebrow title copy" "eyebrow title tags" !important;
+  }
+}
+@media (max-width:760px) {
+  .home-cases .case-grid.root-priority .case,
+  .home-cases .case-grid.root-priority .case:last-child {
+    display:block !important;
+    padding:20px 0 !important;
+  }
+  .home-cases .case-grid.root-priority .case h3 { margin-top:8px !important; }
+  .home-cases .case-grid.root-priority .case p { margin-top:10px !important; }
+  .home-cases .case-grid.root-priority .case .tags { margin-top:13px !important; }
+  .recognition-strip-inner { grid-template-columns:1fr; gap:24px; }
+  .recognition-strip-copy h2 { max-width:18ch; }
+  .recognition-strip-items { grid-template-columns:1fr; border-left:0; border-top:1px solid #dfe8ed; }
+  .recognition-strip-items article { padding:18px 0; }
+  .recognition-strip-items article + article { border-left:0; border-top:1px solid #dfe8ed; }
+}

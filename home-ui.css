@@ -1,0 +1,64 @@
+/* Homepage-only scale: bounded headings, readable text and compact sections. */
+body.home-page .wrap{max-width:1120px!important}
+body.home-page .executive-hero{padding:44px 0!important}
+body.home-page .hero-grid{grid-template-columns:minmax(0,1.65fr) minmax(220px,.8fr)!important;gap:48px!important;align-items:center}
+body.home-page .executive-hero .hero-name{font-size:20px!important;line-height:1.35!important;letter-spacing:-.02em!important;margin:0 0 8px!important}
+body.home-page .executive-hero .kicker{font-size:10px!important;line-height:1.6!important;letter-spacing:.08em!important}
+body.home-page .hero-copy h1{font-size:clamp(38px,4vw,56px)!important;line-height:1.1!important;letter-spacing:-.035em!important;font-weight:750!important;max-width:22ch!important;margin:16px 0 20px!important;text-wrap:balance}
+body.home-page .executive-hero .hero-copy p{font-size:16px!important;line-height:1.65!important;max-width:64ch;margin:0 0 22px!important}
+body.home-page .hero-actions{gap:12px!important;margin-top:18px!important;flex-wrap:wrap}
+body.home-page .btn{min-height:44px!important;padding:12px 18px!important;font-size:11px!important;line-height:1.4!important;white-space:normal}
+body.home-page .executive-hero .hero-actions .btn{font-size:12px!important;line-height:1.4!important;white-space:normal!important;padding:10px 14px!important}
+body.home-page .home-cases,body.home-page .public-evidence{padding:48px 0!important}
+body.home-page .photo-card{width:100%;max-width:280px!important;padding:10px!important;margin:0 auto!important;transform:none!important;box-shadow:0 12px 28px #10263b12!important}
+body.home-page .photo-frame img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+body.home-page .photo-label{font-size:10px!important;margin-top:8px!important;padding:4px!important}
+body.home-page .exec-snapshot{padding:12px 0!important}
+body.home-page .exec-snapshot-grid>div{padding:14px 12px!important;min-width:0}
+body.home-page .exec-snapshot strong{font-size:26px!important;line-height:1.15!important;white-space:nowrap}
+body.home-page .exec-snapshot span{font-size:10px!important;line-height:1.5!important;font-weight:500!important}
+body.home-page .band,body.home-page .home-mandate,body.home-page .mediq-flagship,body.home-page .etender-flow,body.home-page .signature{padding:48px 0!important}
+body.home-page main h2{font-size:clamp(26px,2.6vw,36px)!important;line-height:1.22!important;letter-spacing:-.025em!important;font-weight:750!important;margin-bottom:16px!important}
+body.home-page .section-copy{font-size:16px!important;line-height:1.65!important;max-width:72ch!important}
+body.home-page .mediq-grid{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:20px}
+body.home-page .mediq-story,body.home-page .mediq-map,body.home-page .mandate-grid{padding:24px!important;border-radius:16px!important;box-shadow:none!important}
+body.home-page .mediq-map h3{font-size:22px!important;line-height:1.3!important}
+body.home-page .mediq-facts b,body.home-page .etender-stats b{font-size:22px!important;line-height:1.25!important}
+body.home-page .mediq-facts span,body.home-page .etender-stats span,body.home-page .mediq-node span,body.home-page .workflow-step span{font-size:11px!important;line-height:1.5!important}
+body.home-page .mediq-node,body.home-page .workflow-step{padding:12px!important;min-height:0!important}
+body.home-page .mediq-node b,body.home-page .workflow-step b{font-size:14px!important;line-height:1.35!important}
+body.home-page .mandate-grid{gap:28px}
+body.home-page .case-grid{gap:18px!important}
+body.home-page .case-grid.root-priority .case{min-height:0!important;padding:24px!important;border-radius:16px!important;box-shadow:none!important}
+body.home-page .case-grid.root-priority .case h3{font-size:22px!important;line-height:1.3!important;letter-spacing:-.02em!important}
+body.home-page .case p,body.home-page .mandate-copy p{font-size:15px!important;line-height:1.7!important}
+body.home-page .workflow-visual{padding:18px!important;gap:12px}
+body.home-page .cta{padding:40px 0!important}
+body.home-page .footer-title{font-size:clamp(24px,2.8vw,36px)!important;line-height:1.25!important}
+body.home-page footer{padding:36px 0 24px!important}
+.home-section-links{display:flex;gap:8px 20px;flex-wrap:wrap;margin-top:18px}
+.home-section-links a{display:inline-flex;align-items:center;min-height:44px;color:#285064;font-size:13px;font-weight:600;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:1000px){
+  body.home-page .exec-snapshot-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+  body.home-page .mediq-grid,body.home-page .etender-grid{grid-template-columns:minmax(0,1fr)!important}
+}
+@media(max-width:760px){
+  body.home-page .home-cases,body.home-page .public-evidence{padding:32px 0!important}
+  body.home-page .executive-hero{padding:28px 0!important}
+  body.home-page .hero-grid{grid-template-columns:minmax(0,1fr)!important;gap:24px!important}
+  body.home-page .hero-copy h1{font-size:clamp(30px,7.6vw,40px)!important;line-height:1.15!important;max-width:24ch!important;margin:14px 0 16px!important}
+  body.home-page .executive-hero .hero-name{font-size:18px!important}
+  body.home-page .photo-card{max-width:180px!important}
+  body.home-page .band,body.home-page .home-mandate,body.home-page .mediq-flagship,body.home-page .etender-flow,body.home-page .signature{padding:32px 0!important}
+  body.home-page main h2{font-size:26px!important;line-height:1.25!important}
+  body.home-page .mediq-story,body.home-page .mediq-map,body.home-page .mandate-grid,body.home-page .case-grid.root-priority .case{padding:18px!important}
+  body.home-page .case-grid{grid-template-columns:minmax(0,1fr)!important}
+  body.home-page .exec-snapshot-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  body.home-page .exec-snapshot-grid>div{border-bottom:1px solid #ffffff24}
+  body.home-page .exec-snapshot-grid>div:nth-child(2n){border-right:0}
+  body.home-page .exec-snapshot-grid>div:last-child{grid-column:1/-1;border-bottom:0}
+  body.home-page .mediq-ecosystem{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  body.home-page .workflow-visual{grid-template-columns:repeat(2,minmax(0,1fr))!important;padding:14px!important}
+  body.home-page .workflow-step:after{display:none}
+}
+@media(max-width:360px){body.home-page .mediq-ecosystem{grid-template-columns:minmax(0,1fr)!important}}

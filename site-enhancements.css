@@ -20,6 +20,67 @@ main [id]{scroll-margin-top:var(--anchor-offset)}
 .layer small,.crosscut small{font-size:11px!important}
 .page-index{scroll-padding-inline:16px}
 .page-index a{min-height:44px;display:inline-flex;align-items:center}
+
+/* 07 Sep desktop density / mobile-rail hotfix.
+   This file loads after the historical CSS layers, so these rules deliberately
+   normalize desktop composition without redesigning the underlying sections. */
+@media (min-width:961px){
+  /* Mobile rail and its JS-created arrows must never leak onto desktop. */
+  .mobile-rail-shell,
+  .mobile-rail-button{
+    display:none!important;
+  }
+
+  /* MedIQ: balance the two columns and make the capability map consume the
+     available card height instead of leaving a large blank lower-right area. */
+  .mediq-grid{
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    gap:24px!important;
+    align-items:stretch!important;
+  }
+  .mediq-story h2{
+    font-size:clamp(40px,3.7vw,58px)!important;
+    line-height:1!important;
+  }
+  .mediq-map{
+    display:flex!important;
+    flex-direction:column!important;
+    height:100%!important;
+  }
+  .mediq-ecosystem{
+    flex:1 1 auto!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    grid-template-rows:repeat(3,minmax(0,1fr))!important;
+    align-content:stretch!important;
+  }
+  .mediq-node{
+    min-height:0!important;
+    height:100%!important;
+  }
+
+  /* E‑Tender: use a denser 3-column process map so the workflow occupies the
+     right-hand column vertically instead of appearing as a short strip. */
+  .etender-grid{
+    grid-template-columns:minmax(430px,.82fr) minmax(0,1.18fr)!important;
+    gap:28px!important;
+    align-items:stretch!important;
+  }
+  .workflow-visual{
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    grid-auto-rows:minmax(105px,1fr)!important;
+    align-content:stretch!important;
+    align-self:stretch!important;
+    height:100%!important;
+  }
+  .workflow-step{
+    min-height:0!important;
+    height:100%!important;
+  }
+  .workflow-step:after{
+    display:none!important;
+  }
+}
+
 @media(max-width:960px){:root{--anchor-offset:154px}.mobile-nav-panel{max-height:calc(100dvh - 90px);overflow-y:auto;overscroll-behavior:contain}}
 @media(max-width:600px){.catalog-search{font-size:16px!important}.contact-actions .btn{max-width:100%;white-space:normal}.map-shell{padding:14px!important}}
 @media(max-width:480px){.grid2 .contact-primary h3{font-size:clamp(16px,4.2vw,20px)!important;letter-spacing:-.025em!important}}

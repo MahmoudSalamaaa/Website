@@ -1064,3 +1064,11 @@
     font-size: .85rem !important;
   }
 }
+
+/* 2026-09-07 leadership consolidation: standalone page retired from navigation. */
+.desktop-links > a[href="leadership.html"],
+.mobile-nav-panel > a[href="leadership.html"],
+.mobile-primary-rail > a[href="leadership.html"],
+.final-footer .footer-nav > a[href="leadership.html"] {
+  display:none !important;
+}

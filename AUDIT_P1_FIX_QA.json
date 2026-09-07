@@ -1,0 +1,69 @@
+{
+  "index.html": {
+    "h1_count": 1,
+    "p1_css_linked": true,
+    "projects_js_linked": null
+  },
+  "portfolio.html": {
+    "h1_count": 1,
+    "p1_css_linked": true,
+    "projects_js_linked": null
+  },
+  "experience.html": {
+    "h1_count": 1,
+    "p1_css_linked": true,
+    "projects_js_linked": null
+  },
+  "projects.html": {
+    "h1_count": 1,
+    "p1_css_linked": true,
+    "projects_js_linked": true
+  },
+  "architecture.html": {
+    "h1_count": 1,
+    "p1_css_linked": true,
+    "projects_js_linked": null
+  },
+  "leadership.html": {
+    "h1_count": 1,
+    "p1_css_linked": true,
+    "projects_js_linked": null
+  },
+  "technologies.html": {
+    "h1_count": 1,
+    "p1_css_linked": true,
+    "projects_js_linked": null
+  },
+  "governance.html": {
+    "h1_count": 1,
+    "p1_css_linked": true,
+    "projects_js_linked": null
+  },
+  "contact.html": {
+    "h1_count": 1,
+    "p1_css_linked": true,
+    "projects_js_linked": null
+  },
+  "flagship-cases.html": {
+    "h1_count": 1,
+    "p1_css_linked": true,
+    "projects_js_linked": null
+  },
+  "architecture-map.html": {
+    "h1_count": 1,
+    "p1_css_linked": true,
+    "projects_js_linked": null
+  },
+  "projects_card_count": 86,
+  "css_checks": {
+    "desktop_max_64px": true,
+    "footer_color_526675": true,
+    "mobile_discovery_rule": true
+  },
+  "js_checks": {
+    "mobile_breakpoint_640": true,
+    "moves_existing_search": true,
+    "restores_desktop_order": true
+  },
+  "status": "PASS"
+}

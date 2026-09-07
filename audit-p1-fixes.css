@@ -1,0 +1,197 @@
+/* 2026-09-07 live-audit P1 refinements
+   Scope: secondary-page hero scale, footer contrast, mobile Projects discovery.
+   No component redesign. */
+
+/* Secondary-page hero hierarchy. Home H1 is intentionally unaffected. */
+.hero .display,
+.hero .portfolio-title {
+  font-size: clamp(3.25rem, 4.4vw, 4rem) !important;
+  line-height: 1.02 !important;
+}
+
+/* Footer supporting copy: WCAG-oriented contrast correction. */
+.final-footer .footer-intro,
+.final-footer .footer-row,
+.final-footer .footer-row span {
+  color: #526675 !important;
+}
+
+/* Projects: mobile search controls are relocated by audit-p1-fixes.js. */
+.projects-mobile-discovery {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .hero .display,
+  .hero .portfolio-title {
+    font-size: clamp(2.375rem, 5.4vw, 2.875rem) !important;
+    line-height: 1.04 !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero .display,
+  .hero .portfolio-title {
+    font-size: clamp(1.875rem, 9vw, 2.625rem) !important;
+    line-height: 1.06 !important;
+  }
+
+  .projects-mobile-discovery {
+    display: block;
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(15, 23, 42, 0.10);
+  }
+
+  .projects-mobile-discovery .catalog-search {
+    margin-bottom: 0.75rem;
+  }
+
+  .projects-mobile-discovery .catalog-search-tools {
+    margin-bottom: 0.85rem;
+  }
+
+  .projects-mobile-discovery .catalog-tabs {
+    margin-bottom: 0.75rem;
+  }
+}
+
+
+/* 2026-09-07 visual-audit follow-up
+   Scope: one mobile navigation model, denser internal hero composition,
+   earlier identity proof on Home mobile, and clearer CTA hierarchy. */
+
+/* One header contract: desktop navigation above 960px, Menu-only at and below 960px. */
+@media (max-width: 960px) {
+  .mobile-rail-shell,
+  .mobile-primary-rail,
+  .mobile-rail-button {
+    display: none !important;
+  }
+
+  :root {
+    --anchor-offset: 92px;
+  }
+}
+
+/* Keep the mobile menu's current-page state visually explicit. */
+.mobile-nav-panel a[aria-current="page"],
+.mobile-nav-panel a.active {
+  font-weight: 800;
+  color: #10263b;
+  background: rgba(6, 182, 212, 0.10);
+  border-radius: 10px;
+}
+
+/* Internal heroes: reduce empty vertical travel and keep explanation close to headline. */
+@media (min-width: 961px) {
+  .hero,
+  .portfolio-hero {
+    padding-top: clamp(54px, 6vw, 84px) !important;
+    padding-bottom: clamp(46px, 5vw, 72px) !important;
+  }
+
+  .hero .wrap,
+  .portfolio-hero .wrap {
+    min-height: 0 !important;
+  }
+
+  .hero .display,
+  .hero .portfolio-title,
+  .portfolio-hero .portfolio-title {
+    max-width: 15.5ch;
+    text-wrap: balance;
+  }
+
+  .hero .lead,
+  .portfolio-hero .portfolio-intro {
+    max-width: 72ch;
+    margin-top: 20px !important;
+  }
+
+  .portfolio-hero-grid {
+    align-items: center !important;
+    gap: clamp(28px, 4vw, 56px) !important;
+  }
+}
+
+.portfolio-hero-action {
+  margin-top: 24px;
+}
+
+.portfolio-hero-action .btn {
+  width: fit-content;
+}
+
+/* CTA hierarchy: primary stays dominant; secondary remains available but quieter. */
+.hero-actions .btn:not(.alt),
+.portfolio-hero-action .btn {
+  box-shadow: 0 8px 22px rgba(15, 159, 180, 0.16);
+}
+
+.hero-actions .btn.alt {
+  background: transparent !important;
+  box-shadow: none !important;
+  opacity: 0.82;
+}
+
+.hero-actions .btn.alt:hover,
+.hero-actions .btn.alt:focus-visible {
+  opacity: 1;
+}
+
+/* Home mobile: show a compact identity crop directly after the headline. */
+.mobile-identity-peek {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .executive-hero {
+    padding-top: 28px !important;
+    padding-bottom: 36px !important;
+  }
+
+  .executive-hero .hero-grid {
+    gap: 22px !important;
+  }
+
+  .executive-hero .hero-copy h1 {
+    margin-bottom: 14px !important;
+  }
+
+  .mobile-identity-peek {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 7;
+    overflow: hidden;
+    border-radius: 18px;
+    margin: 10px 0 16px;
+    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.10);
+  }
+
+  .mobile-identity-peek img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center 24%;
+  }
+
+  .executive-hero .hero-actions {
+    gap: 10px !important;
+    margin-top: 20px !important;
+  }
+
+  .executive-hero .hero-actions .btn {
+    min-height: 44px;
+  }
+
+  /* Full portrait remains available, but with less dead space before it. */
+  .executive-hero .photo-card {
+    margin-top: 2px !important;
+  }
+
+  .portfolio-hero-action {
+    margin-top: 18px;
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "scope": "visual audit follow-up only",
+  "changed_files": [
+    "index.html",
+    "portfolio.html",
+    "audit-p1-fixes.css"
+  ],
+  "checks": {
+    "mobile_menu_only_under_960": true,
+    "portfolio_primary_cta": true,
+    "home_mobile_identity_peek": true,
+    "photo_label_four_terms": true,
+    "secondary_hero_compaction": true,
+    "cta_hierarchy": true
+  },
+  "notes": [
+    "No project cards, content catalog, images folder, JS logic, or desktop navigation markup changed.",
+    "Upload over the already-published P1 package."
+  ]
+}

@@ -1,0 +1,5 @@
+PASS
+- MedIQ ecosystem cards: 10
+- Added: Budgeting & Demand Planning
+- Copy: Budget allocation · demand planning · financial controls
+- No CSS or other content changed

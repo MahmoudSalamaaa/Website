@@ -441,3 +441,12 @@
     transition:none!important;
   }
 }
+
+
+/* Photo label leadership extension */
+.executive-hero .photo-label::after{
+  content:" → Leadership";
+  color:var(--home-cyan-deep)!important;
+  font-weight:800!important;
+  letter-spacing:.01em;
+}

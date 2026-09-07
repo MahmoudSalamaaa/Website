@@ -6,8 +6,7 @@
   grid.innerHTML = `
     <div><strong class="metric-count" data-count="18" data-suffix="+">18+</strong><span>years of technology leadership</span></div>
     <div><strong class="metric-count" data-count="54">54</strong><span>people in the technology organization</span></div>
-    <div><strong class="metric-count" data-count="7">7</strong><span>direct reports</span></div>
-    <div><strong class="metric-count" data-count="150" data-prefix="EGP " data-suffix="M">EGP 150M</strong><span>annual IT budget accountability</span></div>
+<div><strong class="metric-count" data-count="150" data-prefix="EGP " data-suffix="M">EGP 150M</strong><span>annual IT budget accountability</span></div>
     <div><strong class="metric-count" data-count="200" data-suffix="+">200+</strong><span>projects across healthcare, government &amp; enterprise</span></div>
   `;
 

@@ -51,3 +51,19 @@
     display:none!important;
   }
 }
+
+/* HERO IDENTITY RESTORE — single joyful framed portrait */
+.mobile-identity-peek{display:none!important}
+.executive-hero .photo-card{
+  display:block!important;position:relative;
+  border:2px solid #20b8d0!important;border-radius:24px!important;padding:10px!important;
+  background:linear-gradient(145deg,#fff 0%,#f2fcff 100%)!important;
+  box-shadow:0 18px 42px rgba(15,159,180,.16),8px 8px 0 rgba(32,184,208,.10)!important
+}
+.executive-hero .photo-frame{overflow:hidden!important;border-radius:17px!important;border:1px solid rgba(32,184,208,.35)!important}
+.executive-hero .photo-label{display:block!important}
+@media(max-width:640px){
+  .mobile-identity-peek{display:none!important}
+  .executive-hero .photo-card{display:block!important;width:min(100%,420px)!important;margin:8px auto 0!important}
+  .executive-hero .photo-frame img{width:100%!important;height:auto!important;display:block!important}
+}

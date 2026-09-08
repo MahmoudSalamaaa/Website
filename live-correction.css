@@ -737,16 +737,44 @@ footer .footer-row span:last-child{
   }
 }
 
-/* ========== HOME OUTFIT BODY TEXT TEST ========== */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap');
+/* ========== DISTINCTIVE HOME TYPOGRAPHY ========== */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap');
 
-/* Regular/readable copy on Home only.
-   Keep headings, kickers, buttons and mono labels unchanged. */
+/*
+  Home typography system:
+  Display / major headings → Syne
+  Reading copy → Space Grotesk
+  Technical labels / metrics → existing IBM Plex Mono
+*/
+
+/* Display voice */
+.executive-hero h1,
+.mediq-flagship h2,
+.home-mandate .section-title,
+.home-cases .section-head h2,
+.recognition-strip h2,
+.operating-summary h2,
+.cta h2,
+footer .footer-title{
+  font-family:"Syne",sans-serif!important;
+  font-weight:700!important;
+  letter-spacing:-.035em;
+}
+
+/* Keep smaller card headings calmer and highly readable */
+.mediq-map h3,
+.home-cases .case h3,
+.operating-summary article h3{
+  font-family:"Space Grotesk",sans-serif!important;
+  font-weight:600!important;
+  letter-spacing:-.018em;
+}
+
+/* Reading voice */
 .executive-hero p,
 .exec-snapshot span,
 .mediq-story p,
 .mediq-facts span,
-.mediq-map h3,
 .mediq-node span,
 .mandate-copy p,
 .home-cases .section-head > p,
@@ -756,14 +784,52 @@ footer .footer-row span:last-child{
 .operating-summary article p,
 footer .footer-intro,
 footer .footer-row{
-  font-family:"Outfit",sans-serif!important;
+  font-family:"Space Grotesk",sans-serif!important;
+  font-weight:400;
+  letter-spacing:-.006em;
 }
 
-/* Slightly tune body-copy rhythm for Outfit */
-.executive-hero p,
-.mediq-story p,
-.mandate-copy p,
-.home-cases .case p,
-.operating-summary article p{
-  letter-spacing:.002em;
+/* Navigation/actions: Space Grotesk for a coherent modern UI */
+.executive-hero .hero-actions .btn{
+  font-family:"Space Grotesk",sans-serif!important;
+  font-weight:700!important;
+  letter-spacing:.01em;
+}
+
+/* Preserve engineering/technical voice */
+.executive-hero .kicker,
+.mediq-flagship .kicker,
+.home-mandate .kicker,
+.home-cases .kicker,
+.recognition-strip .kicker,
+.operating-summary .kicker,
+.cta .kicker,
+.exec-snapshot strong,
+.home-cases .case small,
+.home-cases .tags,
+.mediq-facts b,
+.photo-label{
+  font-family:"IBM Plex Mono",monospace!important;
+}
+
+/* Syne needs slightly more breathing room on mobile */
+@media(max-width:760px){
+  .executive-hero h1,
+  .mediq-flagship h2,
+  .home-mandate .section-title,
+  .home-cases .section-head h2,
+  .recognition-strip h2,
+  .operating-summary h2,
+  .cta h2,
+  footer .footer-title{
+    letter-spacing:-.025em;
+  }
+
+  .executive-hero p,
+  .mediq-story p,
+  .mandate-copy p,
+  .home-cases .case p,
+  .operating-summary article p{
+    line-height:1.62;
+  }
 }

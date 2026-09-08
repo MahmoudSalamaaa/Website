@@ -128,11 +128,11 @@
         max-width:900px!important;
         margin:10px 0 0!important;
         font-family:"DM Sans",Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
-        font-size:13.5px!important;
-        line-height:1.5!important;
+        font-size:11.5px!important;
+        line-height:1.45!important;
         font-weight:400!important;
         letter-spacing:0!important;
-        color:rgba(244,250,255,.78)!important;
+        color:rgba(244,250,255,.68)!important;
         text-shadow:none!important;
       }
 
@@ -208,8 +208,8 @@
 
         footer .footer-intro{
           margin-top:9px!important;
-          font-size:13px!important;
-          line-height:1.48!important;
+          font-size:11px!important;
+          line-height:1.42!important;
         }
 
         footer .footer-links{

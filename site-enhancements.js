@@ -27,7 +27,9 @@
      normalized illustration set. Existing local image remains the fallback. */
   if (document.querySelector('.project-grid')) {
     const exactVisuals = {
+      /* MedIQ procurement workflow — official UPA MedIQ app screenshot. */
       '02': 'https://play-lh.googleusercontent.com/apoznS2OlN2TYNeqx-DlOCQ2AiXigdKQ9X5B5GAkSaK_8ypDDT5MKM15ArxcTumEhHaubpmdTeFWCSIet0sc=w1200-h800',
+
       '03': 'https://play-lh.googleusercontent.com/IKajJzhv4_TAJcoWCjvDbU0EGKPP6E-usZ1l4RAYRavZ9cc9xkJ2sRaveMcLSlofLLtub63mWWr9P6Q8hjixeg=w1200-h800',
       '04': 'https://play-lh.googleusercontent.com/1LI17Og1Jq-xkabv9ZqdUJ_14EuArJIoilcXMGf5Civ4mKYrKek9Rd-gsXZn8CLSjSEBdc6oeddUCZiffK6l6A=w1200-h800',
       '17': 'https://play-lh.googleusercontent.com/HjX664FUK0FiyH6dwVqE_8TOTbIAsnmKk_3o4Wt10cZ-qlvr-LVRCK_JdpAb7ciG5z_cLNlnJFQYEGIvuWS6Kw=w1200-h800',
@@ -36,6 +38,22 @@
       '51': 'https://pf.mafwr.gov.om/login/main-logo.png',
       '52': 'https://pf.mafwr.gov.om/login/main-logo.png',
       '69': 'https://uchid.org/wp-content/uploads/2026/02/UCHID-Logo-2-300x112.png'
+    };
+
+    /* Curated public pages used as reliable, context-rich project visuals.
+       They are rendered as clean card-sized screenshots by WordPress mShots. */
+    const exactPages = {
+      /* Unified Assets & Medical-Device Maintenance — exact public app reference. */
+      '07': 'https://apkpure.net/%D8%A3%D8%B5%D9%88%D9%84-%D8%B5%D8%AD%D8%A9-%D9%85%D8%B5%D8%B1/eg.gov.upa.upa_assets',
+
+      /* Microsoft Dynamics 365 ERP / Unified Financial System — official Microsoft product page. */
+      '09': 'https://www.microsoft.com/en-us/dynamics-365/products/finance',
+
+      /* Healthcare & Government Integration Program — public reference used in the project evidence audit. */
+      '13': 'https://www.elwatannews.com/news/details/7834247',
+
+      /* Reusable .NET CMS & Electronic Publishing Platform — official .NET platform page. */
+      '57': 'https://dotnet.microsoft.com/en-us/'
     };
 
     const screenshot = (url) =>
@@ -94,6 +112,7 @@
       }
 
       const exact = exactVisuals[index];
+      const exactPage = exactPages[index];
 
       const publicLink =
         card.querySelector('.public-link-live a[href]') ||
@@ -103,7 +122,11 @@
         card.querySelector('.public-link-archive a[href]') ||
         card.querySelector('.public-link-historical a[href]');
 
-      const target = exact || (publicLink ? screenshot(publicLink.href) : null);
+      const target =
+        exact ||
+        (exactPage ? screenshot(exactPage) : null) ||
+        (publicLink ? screenshot(publicLink.href) : null);
+
       if (!target || target === fallback) return;
 
       image.referrerPolicy = 'no-referrer';

@@ -931,3 +931,86 @@ footer .footer-intro{
     letter-spacing:.08em!important;
   }
 }
+
+/* ========== EXECUTIVE METRIC CARDS V2 ========== */
+/*
+  Clear executive stat tiles.
+  Deliberately NOT sticky: this is a fast-scan metrics strip, not a storytelling section.
+*/
+@media (min-width: 761px){
+  .exec-snapshot{
+    margin-top:30px!important;
+  }
+
+  .exec-snapshot-grid{
+    display:grid!important;
+    grid-template-columns:repeat(4,minmax(0,1fr))!important;
+    gap:16px!important;
+    align-items:stretch!important;
+  }
+
+  .exec-snapshot-grid > div{
+    position:relative!important;
+    overflow:hidden!important;
+    min-height:150px!important;
+    padding:26px 24px 22px!important;
+    border:1px solid rgba(15,23,42,.14)!important;
+    border-radius:18px!important;
+    background:rgba(255,255,255,.94)!important;
+    box-shadow:
+      0 1px 2px rgba(15,23,42,.04),
+      0 10px 28px rgba(15,23,42,.07)!important;
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:flex-start!important;
+    transition:
+      transform .22s ease,
+      box-shadow .22s ease,
+      border-color .22s ease!important;
+  }
+
+  /* subtle visual anchor so each card reads as a distinct tile */
+  .exec-snapshot-grid > div::before{
+    content:""!important;
+    position:absolute!important;
+    left:0!important;
+    right:0!important;
+    top:0!important;
+    height:4px!important;
+    background:linear-gradient(90deg,#f7d44a 0 33%,#73d8e8 33% 66%,#f29ab2 66% 100%)!important;
+    opacity:.92!important;
+  }
+
+  .exec-snapshot-grid > div:hover{
+    transform:translateY(-3px)!important;
+    border-color:rgba(15,23,42,.22)!important;
+    box-shadow:
+      0 2px 4px rgba(15,23,42,.05),
+      0 16px 36px rgba(15,23,42,.11)!important;
+  }
+
+  .exec-snapshot .metric-count,
+  .exec-snapshot strong{
+    display:block!important;
+    margin:0 0 14px!important;
+    font-size:clamp(32px,2.65vw,42px)!important;
+    line-height:.98!important;
+    font-weight:700!important;
+    letter-spacing:-.055em!important;
+    white-space:nowrap!important;
+  }
+
+  /* Give the longer EGP value enough room while keeping all four numbers aligned */
+  .exec-snapshot-grid > div:nth-child(3) .metric-count,
+  .exec-snapshot-grid > div:nth-child(3) strong{
+    font-size:clamp(29px,2.25vw,38px)!important;
+  }
+
+  .exec-snapshot-grid > div > span:not(.metric-count){
+    display:block!important;
+    max-width:24ch!important;
+    font-size:14px!important;
+    line-height:1.48!important;
+    font-weight:500!important;
+  }
+}

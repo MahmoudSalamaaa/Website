@@ -95,16 +95,16 @@
     const footerStyle = document.createElement('style');
     footerStyle.id = 'compact-executive-footer';
     footerStyle.textContent = `
-      body.home-page footer{
+      footer{
         min-height:0!important;
       }
 
-      body.home-page footer .final-footer{
+      footer .final-footer{
         max-width:1180px!important;
         padding:28px 24px 18px!important;
       }
 
-      body.home-page footer .footer-title{
+      footer .footer-title{
         max-width:680px!important;
         margin:0!important;
         font-family:"DM Sans",Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
@@ -114,17 +114,17 @@
         letter-spacing:-.025em!important;
       }
 
-      body.home-page footer .footer-title em{
+      footer .footer-title em{
         font-weight:650!important;
       }
 
-      body.home-page footer .footer-title em::after{
+      footer .footer-title em::after{
         height:3px!important;
         bottom:-3px!important;
         opacity:.62!important;
       }
 
-      body.home-page footer .footer-intro{
+      footer .footer-intro{
         max-width:900px!important;
         margin:10px 0 0!important;
         font-family:"DM Sans",Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
@@ -136,12 +136,12 @@
         text-shadow:none!important;
       }
 
-      body.home-page footer .footer-links{
+      footer .footer-links{
         gap:7px!important;
         margin-top:14px!important;
       }
 
-      body.home-page footer .footer-links a{
+      footer .footer-links a{
         min-height:34px!important;
         padding:6px 11px!important;
         font-family:"DM Sans",Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
@@ -153,7 +153,7 @@
         background:rgba(255,255,255,.055)!important;
       }
 
-      body.home-page footer .footer-row{
+      footer .footer-row{
         margin-top:16px!important;
         padding-top:13px!important;
         font-family:"DM Sans",Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
@@ -165,30 +165,30 @@
         color:rgba(236,244,250,.67)!important;
       }
 
-      body.home-page footer .footer-row span:first-child{
+      footer .footer-row span:first-child{
         color:rgba(236,244,250,.67)!important;
       }
 
-      body.home-page footer .footer-row span:last-child{
+      footer .footer-row span:last-child{
         color:rgba(255,255,255,.82)!important;
         font-weight:500!important;
       }
 
-      body.home-page footer::before{
+      footer::before{
         width:125px!important;
         height:16px!important;
         top:14px!important;
         opacity:.65!important;
       }
 
-      body.home-page footer::after{
+      footer::after{
         width:90px!important;
         height:13px!important;
         bottom:16px!important;
         opacity:.58!important;
       }
 
-      body.home-page footer .final-footer::after{
+      footer .final-footer::after{
         top:18px!important;
         right:24px!important;
         font-size:10px!important;
@@ -197,45 +197,45 @@
       }
 
       @media(max-width:760px){
-        body.home-page footer .final-footer{
+        footer .final-footer{
           padding:24px 20px 17px!important;
         }
 
-        body.home-page footer .footer-title{
+        footer .footer-title{
           font-size:20px!important;
           line-height:1.24!important;
         }
 
-        body.home-page footer .footer-intro{
+        footer .footer-intro{
           margin-top:9px!important;
           font-size:13px!important;
           line-height:1.48!important;
         }
 
-        body.home-page footer .footer-links{
+        footer .footer-links{
           margin-top:12px!important;
           gap:6px!important;
         }
 
-        body.home-page footer .footer-links a{
+        footer .footer-links a{
           min-height:32px!important;
           padding:6px 10px!important;
           font-size:12px!important;
         }
 
-        body.home-page footer .footer-row{
+        footer .footer-row{
           margin-top:14px!important;
           padding-top:12px!important;
           font-size:11.5px!important;
         }
 
-        body.home-page footer::before{
+        footer::before{
           width:82px!important;
           height:12px!important;
           top:10px!important;
         }
 
-        body.home-page footer::after{
+        footer::after{
           width:64px!important;
           height:10px!important;
           bottom:12px!important;

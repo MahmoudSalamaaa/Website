@@ -27,7 +27,6 @@
      normalized illustration set. Existing local image remains the fallback. */
   if (document.querySelector('.project-grid')) {
     const exactVisuals = {
-      '01': 'https://play-lh.googleusercontent.com/Ge9Xhc7swLrnHSxP26P5h4NvBSmD9Jtlk7cCq6IwJoB0M77E9uzIioo2-Pjj83Y_nRNCGsab_RMnHOyabV0F=w1200-h800',
       '02': 'https://play-lh.googleusercontent.com/apoznS2OlN2TYNeqx-DlOCQ2AiXigdKQ9X5B5GAkSaK_8ypDDT5MKM15ArxcTumEhHaubpmdTeFWCSIet0sc=w1200-h800',
       '03': 'https://play-lh.googleusercontent.com/IKajJzhv4_TAJcoWCjvDbU0EGKPP6E-usZ1l4RAYRavZ9cc9xkJ2sRaveMcLSlofLLtub63mWWr9P6Q8hjixeg=w1200-h800',
       '04': 'https://play-lh.googleusercontent.com/1LI17Og1Jq-xkabv9ZqdUJ_14EuArJIoilcXMGf5Civ4mKYrKek9Rd-gsXZn8CLSjSEBdc6oeddUCZiffK6l6A=w1200-h800',
@@ -42,12 +41,58 @@
     const screenshot = (url) =>
       `https://s.wordpress.com/mshots/v1/${encodeURIComponent(url)}?w=1200&h=800`;
 
-    document.querySelectorAll('.project-card').forEach(card => {
+    const cards = [...document.querySelectorAll('.project-card')];
+
+    cards.forEach(card => {
       const image = card.querySelector('.project-visual img');
       const index = card.querySelector('.project-index')?.textContent.trim();
       if (!image || !index) return;
 
       const fallback = image.getAttribute('src');
+      image.dataset.fallbackSrc = fallback;
+
+      /* Project 01: official MedIQ app logo/artwork.
+         Apple lookup is used because it returns the official artwork URL
+         for app id 6772464842 published by Unified Procurement Authority (UPA). */
+      if (index === '01') {
+        const applyMedIQLogo = (src) => {
+          image.onerror = () => {
+            image.onerror = null;
+            image.src = image.dataset.fallbackSrc;
+          };
+          image.src = src;
+          image.alt = 'MedIQ official app logo — Unified Procurement Authority (UPA)';
+          image.style.objectFit = 'contain';
+          image.style.objectPosition = 'center';
+          image.style.padding = '28px';
+          image.style.boxSizing = 'border-box';
+          image.style.background = '#ffffff';
+        };
+
+        fetch('https://itunes.apple.com/lookup?id=6772464842&country=eg')
+          .then(response => {
+            if (!response.ok) throw new Error('MedIQ artwork lookup failed');
+            return response.json();
+          })
+          .then(data => {
+            const app = data?.results?.[0];
+            const artwork = app?.artworkUrl512 || app?.artworkUrl100 || app?.artworkUrl60;
+            if (!artwork) throw new Error('MedIQ artwork URL unavailable');
+            applyMedIQLogo(artwork.replace(/100x100bb|60x60bb/g, '512x512bb'));
+          })
+          .catch(() => {
+            /* Stable fallback: official App Store page screenshot rather than a
+               generic category illustration. */
+            const appStore = 'https://apps.apple.com/eg/app/mediq/id6772464842';
+            image.onerror = () => {
+              image.onerror = null;
+              image.src = image.dataset.fallbackSrc;
+            };
+            image.src = screenshot(appStore);
+          });
+        return;
+      }
+
       const exact = exactVisuals[index];
 
       const publicLink =
@@ -61,7 +106,6 @@
       const target = exact || (publicLink ? screenshot(publicLink.href) : null);
       if (!target || target === fallback) return;
 
-      image.dataset.fallbackSrc = fallback;
       image.referrerPolicy = 'no-referrer';
       image.onerror = () => {
         image.onerror = null;

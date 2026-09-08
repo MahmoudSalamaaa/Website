@@ -798,3 +798,19 @@ footer .footer-row{
     max-width:22ch!important;
   }
 }
+
+/* ========== FOOTER IDENTITY CONTRAST FIX ========== */
+footer .footer-intro{
+  color:rgba(255,255,255,.96)!important;
+  opacity:1!important;
+  font-weight:600!important;
+  text-shadow:0 1px 0 rgba(0,0,0,.18);
+}
+
+@media (min-width:761px){
+  footer .footer-intro{
+    font-size:15px!important;
+    line-height:1.55!important;
+    letter-spacing:.01em!important;
+  }
+}

@@ -1035,35 +1035,34 @@ footer .footer-intro{
   }
 }
 
-/* ========== DESKTOP METRICS SECTION SPACING FIX ========== */
-/*
-  Keep the four verified executive metrics.
-  Remove the dead space after the cards instead of inventing a fifth metric.
-*/
+/* ========== EXECUTIVE METRICS FINAL SPACING ========== */
+/* Desktop only: tighten the vertical rhythm after the 4 executive metric cards. */
 @media (min-width:761px){
-  .exec-snapshot{
-    margin-top:28px!important;
-    margin-bottom:18px!important;
-    padding-bottom:0!important;
-  }
 
-  .exec-snapshot-grid{
+  .exec-snapshot{
+    padding-top:22px!important;
+    padding-bottom:18px!important;
+    margin-top:0!important;
     margin-bottom:0!important;
   }
 
-  .executive-hero{
-    padding-bottom:30px!important;
+  .exec-snapshot-grid{
+    gap:18px!important;
+    margin-bottom:0!important;
   }
 
-  .executive-hero + section,
-  .executive-hero + .section,
-  .exec-snapshot + section,
-  .exec-snapshot + .section{
-    margin-top:0!important;
+  .exec-snapshot-grid > div{
+    min-height:146px!important;
+    padding:24px 24px 21px!important;
   }
 
-  /* Pull the following section up slightly while preserving breathing room */
+  /* Reduce dead space before the MedIQ section without making it cramped */
   .mediq-flagship{
-    padding-top:46px!important;
+    padding-top:38px!important;
+  }
+
+  /* Neutralize inherited large separation where present */
+  .exec-snapshot + .mediq-flagship{
+    margin-top:0!important;
   }
 }

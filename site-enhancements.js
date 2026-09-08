@@ -29,6 +29,13 @@
 
   const projectGrid = document.querySelector('.project-grid');
   if (!projectGrid) return;
+
+  /* Projects page content cleanup:
+     the static page repeats the same portfolio message three times before
+     the actual project directory (evidence strip, hero, catalogue intro).
+     Keep the hero as the single introduction and remove the two redundant blocks. */
+  document.querySelector('.research-evidence-strip')?.remove();
+  document.querySelector('.catalog-intro')?.remove();
   document.body.classList.add('projects-refresh');
 
 

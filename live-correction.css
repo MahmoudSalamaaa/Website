@@ -815,10 +815,10 @@ footer .footer-intro{
   }
 }
 
-/* ========== JOSEFIN ACCENT TYPOGRAPHY TEST ========== */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600;700&display=swap');
+/* ========== HOME NEUTON BODY TEXT TEST ========== */
+@import url('https://fonts.googleapis.com/css2?family=Neuton:wght@400;700&display=swap');
 
-/* Body/readable copy stays with the original site sans */
+/* Neuton for readable/narrative text only */
 .executive-hero .hero-copy > p,
 .exec-snapshot-grid > div > span:not(.metric-count),
 .mediq-story > p,
@@ -832,68 +832,69 @@ footer .footer-intro{
 .operating-summary article > p,
 footer .footer-intro,
 footer .footer-row{
-  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
+  font-family:"Neuton",Georgia,serif!important;
+  font-weight:400!important;
+  letter-spacing:.005em!important;
 }
 
-/* Josefin Sans as the distinctive accent language */
-.executive-hero .kicker,
-.mediq-flagship .kicker,
-.home-mandate .kicker,
-.home-cases .kicker,
-.recognition-strip .kicker,
-.operating-summary .kicker,
-.cta .kicker,
-.photo-label,
-.home-cases .case small{
-  font-family:"Josefin Sans",Inter,sans-serif!important;
-  font-weight:700!important;
-  letter-spacing:.10em!important;
-  text-transform:uppercase;
+/* Neuton is compact, so give narrative copy enough presence */
+.executive-hero .hero-copy > p{
+  font-size:19px!important;
+  line-height:1.52!important;
 }
 
-/* Metric numbers: Josefin gives personality without hurting readability */
-.exec-snapshot .metric-count,
+.mediq-story > p,
+.mandate-copy > p,
+.operating-summary .signature-head > p{
+  font-size:18px!important;
+  line-height:1.55!important;
+}
+
+.home-cases .case p,
+.operating-summary article > p{
+  font-size:16.5px!important;
+  line-height:1.55!important;
+}
+
+/* Supporting text stays compact */
+.exec-snapshot-grid > div > span:not(.metric-count),
+.mediq-facts span,
+.mediq-node span,
+.recognition-strip span{
+  font-size:15.5px!important;
+  line-height:1.48!important;
+}
+
+/* Preserve existing headline / technical hierarchy */
+.executive-hero h1,
+.section-title,
+.mediq-flagship h2,
+.home-cases h2,
+.operating-summary h2,
+footer .footer-title,
+.btn,
+.kicker,
+.metric-count,
 .exec-snapshot strong,
-.mediq-facts b{
-  font-family:"Josefin Sans",Inter,sans-serif!important;
-  font-weight:700!important;
-  letter-spacing:-.035em!important;
-}
-
-/* Chips / compact UI labels */
-.mandate-chips span,
-.home-cases .tags span{
-  font-family:"Josefin Sans",Inter,sans-serif!important;
-  font-weight:600!important;
-  letter-spacing:.035em!important;
-}
-
-/* Fine tune Josefin so it doesn't feel too decorative */
-.executive-hero .kicker,
-.mediq-flagship .kicker,
-.home-mandate .kicker,
-.home-cases .kicker,
-.recognition-strip .kicker,
-.operating-summary .kicker,
-.cta .kicker{
-  font-size:11px!important;
-  line-height:1.45!important;
-}
-
 .photo-label{
-  font-size:11px!important;
-  line-height:1.4!important;
+  font-family:inherit;
 }
 
 @media(max-width:760px){
-  .executive-hero .kicker,
-  .mediq-flagship .kicker,
-  .home-mandate .kicker,
-  .home-cases .kicker,
-  .recognition-strip .kicker,
-  .operating-summary .kicker,
-  .cta .kicker{
-    font-size:10px!important;
-    letter-spacing:.085em!important;
+  .executive-hero .hero-copy > p{
+    font-size:18px!important;
+    line-height:1.52!important;
+  }
+
+  .mediq-story > p,
+  .mandate-copy > p,
+  .operating-summary .signature-head > p{
+    font-size:17px!important;
+    line-height:1.55!important;
+  }
+
+  .home-cases .case p,
+  .operating-summary article > p{
+    font-size:16px!important;
   }
 }

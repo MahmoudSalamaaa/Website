@@ -92,3 +92,109 @@ body nav details.desktop-more[open] > summary::after{
   margin:3px 1px 0 0!important;
   transform:rotate(225deg)!important;
 }
+
+/* Projects — stronger visual ownership between each image and its content. */
+body .project-grid{
+  gap:28px!important;
+}
+
+body .project-card{
+  position:relative!important;
+  overflow:hidden!important;
+  border:1px solid rgba(15,53,72,.16)!important;
+  border-radius:18px!important;
+  background:#fff!important;
+  box-shadow:0 8px 24px rgba(15,53,72,.08)!important;
+  isolation:isolate!important;
+  transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease!important;
+}
+
+body .project-card:hover{
+  transform:translateY(-2px)!important;
+  border-color:rgba(0,124,145,.28)!important;
+  box-shadow:0 14px 34px rgba(15,53,72,.12)!important;
+}
+
+body .project-card .project-visual{
+  position:relative!important;
+  overflow:hidden!important;
+  margin:0!important;
+  border:0!important;
+  border-bottom:1px solid rgba(15,53,72,.12)!important;
+  border-radius:0!important;
+  background:#eef4f5!important;
+}
+
+body .project-card .project-visual img{
+  display:block!important;
+  width:100%!important;
+  height:220px!important;
+  margin:0!important;
+  object-fit:cover!important;
+  object-position:center!important;
+}
+
+body .project-card .project-content{
+  position:relative!important;
+  padding:20px 20px 22px!important;
+  background:#fff!important;
+}
+
+body .project-card .project-topline{
+  margin-bottom:10px!important;
+}
+
+body .project-card h3{
+  margin-top:0!important;
+}
+
+body .project-card .project-actions{
+  margin-top:16px!important;
+}
+
+/* A subtle footer edge makes the end of each card unmistakable. */
+body .project-card::after{
+  content:""!important;
+  position:absolute!important;
+  left:18px!important;
+  right:18px!important;
+  bottom:0!important;
+  height:3px!important;
+  border-radius:999px 999px 0 0!important;
+  background:linear-gradient(90deg,rgba(0,124,145,.34),rgba(0,124,145,0))!important;
+  pointer-events:none!important;
+}
+
+/* Mobile: one card should read as one self-contained block before the next begins. */
+@media(max-width:760px){
+  body .project-grid{
+    gap:24px!important;
+  }
+
+  body .project-card{
+    border-radius:16px!important;
+    box-shadow:0 7px 20px rgba(15,53,72,.09)!important;
+  }
+
+  body .project-card:hover{
+    transform:none!important;
+  }
+
+  body .project-card .project-visual img{
+    height:200px!important;
+  }
+
+  body .project-card .project-content{
+    padding:17px 16px 20px!important;
+  }
+}
+
+@media(max-width:480px){
+  body .project-grid{
+    gap:22px!important;
+  }
+
+  body .project-card .project-visual img{
+    height:188px!important;
+  }
+}

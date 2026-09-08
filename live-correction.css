@@ -428,6 +428,11 @@
     height:7px;
   }
 
+  .exec-snapshot-grid{
+    gap:16px!important;
+    row-gap:16px!important;
+  }
+
   .exec-snapshot-grid > div{
     border-radius:18px!important;
   }
@@ -969,7 +974,6 @@ footer .footer-intro{
       border-color .22s ease!important;
   }
 
-  /* subtle visual anchor so each card reads as a distinct tile */
   .exec-snapshot-grid > div::before{
     content:""!important;
     position:absolute!important;
@@ -1000,7 +1004,6 @@ footer .footer-intro{
     white-space:nowrap!important;
   }
 
-  /* Give the longer EGP value enough room while keeping all four numbers aligned */
   .exec-snapshot-grid > div:nth-child(3) .metric-count,
   .exec-snapshot-grid > div:nth-child(3) strong{
     font-size:clamp(29px,2.25vw,38px)!important;
@@ -1036,7 +1039,6 @@ footer .footer-intro{
 }
 
 /* ========== EXECUTIVE METRICS FINAL SPACING ========== */
-/* Desktop only: tighten the vertical rhythm after the 4 executive metric cards. */
 @media (min-width:761px){
 
   .exec-snapshot{
@@ -1056,19 +1058,16 @@ footer .footer-intro{
     padding:24px 24px 21px!important;
   }
 
-  /* Reduce dead space before the MedIQ section without making it cramped */
   .mediq-flagship{
     padding-top:38px!important;
   }
 
-  /* Neutralize inherited large separation where present */
   .exec-snapshot + .mediq-flagship{
     margin-top:0!important;
   }
 }
 
 /* ========== FOOTER IDENTITY FINAL FIX ========== */
-/* Force the executive identity line to render as clean, true white text. */
 footer .footer-intro,
 footer .final-footer .footer-intro,
 .final-footer .footer-intro{
@@ -1102,7 +1101,6 @@ footer .final-footer .footer-intro,
 }
 
 /* ========== EXECUTIVE METRICS FULL-WIDTH DISTRIBUTION ========== */
-/* Keep 4 metrics, but distribute them across the full available desktop width. */
 @media (min-width: 761px){
   .exec-snapshot .wrap{
     width:min(1728px, calc(100% - 64px))!important;

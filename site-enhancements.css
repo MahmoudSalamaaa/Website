@@ -48,13 +48,13 @@ body footer .final-footer p.footer-intro{
   }
 }
 
-/* Navigation chevrons — vertically centered beside Menu / More labels. */
+/* Navigation chevrons — CSS-drawn, optically centered beside Menu / More. */
 body nav details.mobile-nav > summary,
 body nav details.desktop-more > summary{
   display:inline-flex!important;
   align-items:center!important;
   justify-content:center!important;
-  gap:6px!important;
+  gap:8px!important;
   line-height:1!important;
   list-style:none!important;
 }
@@ -70,24 +70,25 @@ body nav details.desktop-more > summary::marker{
   font-size:0!important;
 }
 
+/* Do not use a text glyph here: its baseline renders too low in some browsers. */
 body nav details.mobile-nav > summary::after,
 body nav details.desktop-more > summary::after{
-  content:"⌄"!important;
-  display:inline-flex!important;
-  align-items:center!important;
-  justify-content:center!important;
-  width:12px!important;
-  height:12px!important;
-  margin:0!important;
-  font-family:Arial,sans-serif!important;
-  font-size:12px!important;
-  font-weight:700!important;
-  line-height:12px!important;
-  transform:translateY(-1px)!important;
+  content:""!important;
+  display:block!important;
+  flex:0 0 auto!important;
+  width:6px!important;
+  height:6px!important;
+  margin:0 1px 3px 0!important;
+  border-right:1.5px solid currentColor!important;
+  border-bottom:1.5px solid currentColor!important;
+  box-sizing:border-box!important;
+  transform:rotate(45deg)!important;
   transform-origin:center!important;
+  transition:transform .18s ease, margin .18s ease!important;
 }
 
 body nav details.mobile-nav[open] > summary::after,
 body nav details.desktop-more[open] > summary::after{
-  transform:translateY(0) rotate(180deg)!important;
+  margin:3px 1px 0 0!important;
+  transform:rotate(225deg)!important;
 }

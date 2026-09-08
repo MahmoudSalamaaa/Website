@@ -631,3 +631,55 @@ footer .final-footer::after{
     transition:none!important;
   }
 }
+
+/* ========== FOOTER CONTRAST CORRECTION ========== */
+/* Preserve the current footer design; increase legibility of secondary copy and nav. */
+
+footer .footer-intro{
+  color:rgba(244,250,255,.90)!important;
+}
+
+footer .footer-nav,
+footer .footer-links{
+  color:#fff!important;
+}
+
+footer .footer-nav a,
+footer .footer-links a{
+  color:rgba(255,255,255,.96)!important;
+  opacity:1!important;
+  text-shadow:0 1px 0 rgba(0,0,0,.14);
+}
+
+footer .footer-nav a:hover,
+footer .footer-links a:hover{
+  color:#fff!important;
+}
+
+footer .footer-row{
+  color:rgba(236,244,250,.84)!important;
+}
+
+footer .footer-row span:first-child{
+  color:rgba(236,244,250,.84)!important;
+}
+
+footer .footer-row span:last-child{
+  color:#fff!important;
+}
+
+@media(max-width:760px){
+  footer .footer-intro{
+    color:rgba(248,252,255,.94)!important;
+  }
+
+  footer .footer-nav a,
+  footer .footer-links a{
+    color:rgba(255,255,255,.98)!important;
+  }
+
+  footer .footer-row,
+  footer .footer-row span:first-child{
+    color:rgba(242,248,252,.90)!important;
+  }
+}

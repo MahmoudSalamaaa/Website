@@ -168,58 +168,6 @@ body.projects-refresh .catalog-intro .section-title{
 }
 body.projects-refresh .catalog-intro p{color:#5a7081!important;font-size:15px!important;line-height:1.72!important}
 
-/* MedIQ product clarity block */
-body.projects-refresh .mediq-product-split{
-  margin:0 0 32px!important;
-  padding:28px!important;
-  border:1px solid rgba(20,48,71,.08)!important;
-  border-radius:26px!important;
-  background:linear-gradient(135deg,rgba(233,251,253,.92),rgba(255,255,255,.96) 46%,rgba(255,245,199,.68))!important;
-  box-shadow:var(--project-shadow)!important
-}
-body.projects-refresh .mediq-split-head{
-  display:grid!important;grid-template-columns:minmax(0,1fr) minmax(280px,.8fr)!important;gap:30px!important;align-items:end!important;margin-bottom:22px!important
-}
-body.projects-refresh .mediq-split-eyebrow{
-  display:inline-flex!important;margin-bottom:9px!important;color:#067283!important;font:800 11px/1.2 "Plus Jakarta Sans",Inter,sans-serif!important;letter-spacing:.12em!important
-}
-body.projects-refresh .mediq-split-head h2{
-  margin:0!important;color:var(--project-ink)!important;font-family:"Plus Jakarta Sans",Inter,sans-serif!important;font-size:clamp(28px,4vw,44px)!important;
-  line-height:1.04!important;letter-spacing:-.045em!important
-}
-body.projects-refresh .mediq-split-head p{margin:0!important;color:#5c7283!important;font-size:15px!important;line-height:1.7!important}
-body.projects-refresh .mediq-split-grid{display:grid!important;grid-template-columns:1fr 1fr!important;gap:18px!important}
-body.projects-refresh .mediq-split-card{
-  overflow:hidden!important;border:1px solid rgba(20,48,71,.10)!important;border-radius:22px!important;background:#fff!important;
-  box-shadow:0 12px 30px rgba(19,48,71,.07)!important
-}
-body.projects-refresh .mediq-split-card--web{box-shadow:inset 0 4px 0 #00a7bd,0 12px 30px rgba(19,48,71,.07)!important}
-body.projects-refresh .mediq-split-card--mobile{box-shadow:inset 0 4px 0 #f0b43c,0 12px 30px rgba(19,48,71,.07)!important}
-body.projects-refresh .mediq-split-media{position:relative!important;height:220px!important;overflow:hidden!important;background:#edf4f5!important}
-body.projects-refresh .mediq-split-media img{width:100%!important;height:100%!important;display:block!important;object-fit:cover!important}
-body.projects-refresh .mediq-split-label{
-  position:absolute!important;left:14px!important;bottom:14px!important;display:inline-flex!important;padding:8px 10px!important;border-radius:999px!important;
-  background:rgba(20,48,71,.86)!important;color:#fff!important;font:800 9px/1.1 "Plus Jakarta Sans",Inter,sans-serif!important;letter-spacing:.08em!important;backdrop-filter:blur(8px)!important
-}
-body.projects-refresh .mediq-split-copy{position:relative!important;padding:22px!important}
-body.projects-refresh .mediq-split-number{
-  position:absolute!important;right:20px!important;top:20px!important;color:rgba(20,48,71,.18)!important;
-  font:800 28px/1 "Plus Jakarta Sans",Inter,sans-serif!important
-}
-body.projects-refresh .mediq-split-copy h3{
-  max-width:80%!important;margin:0!important;color:var(--project-ink)!important;font-family:"Plus Jakarta Sans",Inter,sans-serif!important;
-  font-size:clamp(22px,2.2vw,30px)!important;line-height:1.08!important;letter-spacing:-.035em!important
-}
-body.projects-refresh .mediq-split-copy p{margin:12px 0 0!important;color:#5b7081!important;font-size:14px!important;line-height:1.7!important}
-body.projects-refresh .mediq-split-actions{display:flex!important;gap:9px!important;flex-wrap:wrap!important;margin-top:18px!important}
-body.projects-refresh .mediq-primary-action,
-body.projects-refresh .mediq-secondary-action{
-  display:inline-flex!important;align-items:center!important;justify-content:center!important;min-height:42px!important;padding:10px 14px!important;border-radius:12px!important;
-  font:800 12px/1.2 "Plus Jakarta Sans",Inter,sans-serif!important;text-decoration:none!important;cursor:pointer!important
-}
-body.projects-refresh .mediq-primary-action{border:1px solid #16384f!important;background:#16384f!important;color:#fff!important}
-body.projects-refresh .mediq-secondary-action{border:1px solid rgba(0,167,189,.28)!important;background:#effbfc!important;color:#067283!important}
-
 /* Search and filter control panel */
 body.projects-refresh .catalog-search{
   margin:0!important;

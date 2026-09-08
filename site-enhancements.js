@@ -311,6 +311,29 @@
   });
 
 
+
+  /* Final catalogue order:
+     01 = MedIQ National Ecosystem
+     02 = MedIQ Mobile App
+     then the remaining projects continue sequentially. */
+  const mobileCardForReorder = cards.find(
+    card => card.querySelector('.project-index')?.textContent.trim() === '17'
+  );
+
+  if (mobileCardForReorder) {
+    const firstCard = projectGrid.querySelector('.project-card');
+    if (firstCard) firstCard.insertAdjacentElement('afterend', mobileCardForReorder);
+  }
+
+  [...projectGrid.querySelectorAll('.project-card')].forEach((card, position) => {
+    const indexEl = card.querySelector('.project-index');
+    if (!indexEl) return;
+    const newIndex = String(position + 1).padStart(2, '0');
+    indexEl.textContent = newIndex;
+    indexEl.removeAttribute('data-added-index');
+    card.dataset.catalogIndex = newIndex;
+  });
+
   /* Project card clarity + accessible project details modal.
      Technologies are shown only where they are explicitly confirmed. */
   const confirmedProjectDetails = {
@@ -318,11 +341,11 @@
       technologies: [],
       role: 'National web / enterprise procurement and medical-supply ecosystem'
     },
-    '17': {
+    '02': {
       technologies: ['Android', 'Offline synchronization', 'Barcode / QR scanning', 'PIN / OTP approvals'],
       role: 'Official mobile operational companion to the MedIQ ecosystem'
     },
-    '09': {
+    '10': {
       technologies: ['Microsoft Dynamics 365 ERP'],
       role: 'Enterprise systems integration / cross-system process continuity'
     },
@@ -350,70 +373,6 @@
       role: 'Digital knowledge / library platform for physicians'
     }
   };
-
-  /* MedIQ product separation — one programme, two distinct user experiences. */
-  const mediqWebCard = cards.find(card => card.querySelector('.project-index')?.textContent.trim() === '01');
-  const mediqMobileCard = cards.find(card => card.querySelector('.project-index')?.textContent.trim() === '17');
-  const catalogIntro = document.querySelector('.catalog-intro');
-
-  if (catalogIntro && mediqWebCard && mediqMobileCard && !document.querySelector('.mediq-product-split')) {
-    const getImage = card => {
-      const img = card.querySelector('.project-visual img');
-      return {
-        src: img?.getAttribute('src') || '',
-        alt: img?.getAttribute('alt') || ''
-      };
-    };
-
-    const webImage = getImage(mediqWebCard);
-    const mobileImage = getImage(mediqMobileCard);
-
-    const split = document.createElement('section');
-    split.className = 'mediq-product-split';
-    split.setAttribute('aria-labelledby', 'mediq-split-title');
-    split.innerHTML = `
-      <div class="mediq-split-head">
-        <div>
-          <span class="mediq-split-eyebrow">MEDIQ · PRODUCT CLARITY</span>
-          <h2 id="mediq-split-title">One ecosystem. Two distinct products.</h2>
-        </div>
-        <p>The national web / enterprise ecosystem and the mobile application serve related workflows, but they are not the same product. They are presented separately here so the distinction is immediate.</p>
-      </div>
-      <div class="mediq-split-grid">
-        <article class="mediq-split-card mediq-split-card--web">
-          <div class="mediq-split-media">
-            ${webImage.src ? `<img src="${webImage.src}" alt="${webImage.alt || 'MedIQ web ecosystem'}">` : ''}
-            <span class="mediq-split-label">WEB / ENTERPRISE ECOSYSTEM</span>
-          </div>
-          <div class="mediq-split-copy">
-            <div class="mediq-split-number">01</div>
-            <h3>MedIQ National Ecosystem</h3>
-            <p>National procurement and medical-supply platform across connected enterprise workflows, data, integrations and operations.</p>
-            <div class="mediq-split-actions">
-              <a class="mediq-primary-action" href="https://sc.upa.gov.eg/" target="_blank" rel="noopener noreferrer">Open web platform ↗</a>
-              <button class="mediq-secondary-action" type="button" data-open-project="01">View project details</button>
-            </div>
-          </div>
-        </article>
-        <article class="mediq-split-card mediq-split-card--mobile">
-          <div class="mediq-split-media">
-            ${mobileImage.src ? `<img src="${mobileImage.src}" alt="${mobileImage.alt || 'MedIQ mobile application'}">` : ''}
-            <span class="mediq-split-label">MOBILE APPLICATION</span>
-          </div>
-          <div class="mediq-split-copy">
-            <div class="mediq-split-number">17</div>
-            <h3>MedIQ Mobile App</h3>
-            <p>Official operational mobile companion for authorized users, with inventory, scanning, approvals, notifications and offline synchronization.</p>
-            <div class="mediq-split-actions">
-              <a class="mediq-primary-action" href="https://play.google.com/store/apps/details?id=eg.mediq.upa" target="_blank" rel="noopener noreferrer">Open mobile app ↗</a>
-              <button class="mediq-secondary-action" type="button" data-open-project="17">View project details</button>
-            </div>
-          </div>
-        </article>
-      </div>
-    `;
-    catalogIntro.insertAdjacentElement('afterend', split);
-  }
 
   /* Native dialog gives modal semantics, focus containment and an inert background. */
   const modal = document.createElement('dialog');

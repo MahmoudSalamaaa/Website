@@ -26,3 +26,24 @@ main [id]{scroll-margin-top:var(--anchor-offset)}
 .related-work{padding:24px 0 40px}.related-work .wrap{display:flex;align-items:center;gap:16px;flex-wrap:wrap}.related-work p{margin:0;font-size:16px;line-height:1.6}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 @media print{body>nav,.mobile-rail-shell,.page-index,.catalog-search-tools,.catalog-search,.catalog-tabs,.contact-actions,body>footer{display:none!important}main [id]{scroll-margin-top:0}body{background:#fff!important;color:#111!important}a{color:inherit!important}.project-card[hidden]{display:none!important}}
+
+/* Footer identity line — compact supporting text, not a headline. */
+body footer .final-footer p.footer-intro{
+  margin:8px 0 0!important;
+  max-width:900px!important;
+  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
+  font-size:12px!important;
+  line-height:1.45!important;
+  font-weight:400!important;
+  letter-spacing:.005em!important;
+  color:rgba(244,250,255,.74)!important;
+  text-shadow:none!important;
+}
+
+@media(max-width:760px){
+  body footer .final-footer p.footer-intro{
+    margin-top:7px!important;
+    font-size:11.5px!important;
+    line-height:1.42!important;
+  }
+}

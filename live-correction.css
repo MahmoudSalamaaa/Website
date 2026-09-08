@@ -1100,3 +1100,45 @@ footer .final-footer .footer-intro,
     font-weight:650!important;
   }
 }
+
+/* ========== EXECUTIVE METRICS FULL-WIDTH DISTRIBUTION ========== */
+/* Keep 4 metrics, but distribute them across the full available desktop width. */
+@media (min-width: 761px){
+  .exec-snapshot .wrap{
+    width:min(1728px, calc(100% - 64px))!important;
+    max-width:none!important;
+  }
+
+  .exec-snapshot-grid{
+    width:100%!important;
+    max-width:none!important;
+    grid-template-columns:repeat(4, minmax(0, 1fr))!important;
+    gap:26px!important;
+  }
+
+  .exec-snapshot-grid > div{
+    width:auto!important;
+    min-width:0!important;
+    min-height:170px!important;
+    padding:30px 26px 25px!important;
+  }
+
+  .exec-snapshot .metric-count,
+  .exec-snapshot-grid > div strong{
+    font-size:clamp(34px, 2.6vw, 46px)!important;
+    margin-bottom:22px!important;
+  }
+
+  .exec-snapshot-grid > div > span:not(.metric-count){
+    max-width:27ch!important;
+    font-size:15px!important;
+    line-height:1.48!important;
+  }
+}
+
+@media (min-width: 1500px){
+  .exec-snapshot .wrap{
+    width:calc(100% - 96px)!important;
+    max-width:1728px!important;
+  }
+}

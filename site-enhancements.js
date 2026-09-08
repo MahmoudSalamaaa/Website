@@ -29,6 +29,7 @@
 
   const projectGrid = document.querySelector('.project-grid');
   if (!projectGrid) return;
+  document.body.classList.add('projects-refresh');
 
 
   /* Two newly confirmed Ministry of Health projects.
@@ -237,6 +238,53 @@
       }
     }
 
+
+    if (index === '01') {
+      card.dataset.mediqProduct = 'ecosystem';
+
+      const title = card.querySelector('h3');
+      if (title) title.textContent = 'MedIQ — National Procurement & Medical Supply Ecosystem';
+
+      const meta = card.querySelector('.project-meta');
+      if (meta) meta.innerHTML = '<span>Web / Enterprise Ecosystem</span><span>·</span><span>National Platform</span><span>·</span><span>Executive ownership</span>';
+
+      const description = card.querySelector('.project-content p');
+      if (description) {
+        description.textContent = 'The MedIQ enterprise ecosystem serving national procurement and medical-supply workflows across demand, tendering, pharmacy, inventory, assets, integrations, data, analytics and operations. This is the web / enterprise platform, distinct from the MedIQ mobile application.';
+      }
+
+      let action = card.querySelector('.public-link-wrap');
+      if (!action) {
+        action = document.createElement('span');
+        action.className = 'public-link-wrap public-link-live';
+        card.querySelector('.project-actions')?.appendChild(action);
+      }
+      action.innerHTML = '<a aria-label="Open MedIQ web platform — opens in a new tab" class="project-link public-project-link" href="https://sc.upa.gov.eg/" rel="noopener noreferrer" target="_blank" title="MedIQ web platform">Open MedIQ web platform ↗</a>';
+    }
+
+    if (index === '17') {
+      card.dataset.mediqProduct = 'mobile';
+
+      const title = card.querySelector('h3');
+      if (title) title.textContent = 'MedIQ Mobile App — Official UPA Mobile Application';
+
+      const meta = card.querySelector('.project-meta');
+      if (meta) meta.innerHTML = '<span>Mobile Application</span><span>·</span><span>UPA</span><span>·</span><span>Operational companion</span>';
+
+      const description = card.querySelector('.project-content p');
+      if (description) {
+        description.textContent = 'The official MedIQ mobile application for authorized UPA ecosystem users, supporting operational workflows such as inventory, stocktaking, assets, pharmacy, warehouses, purchasing, receiving, smart scanning, notifications and offline synchronization. It is a separate mobile product from the MedIQ web / enterprise ecosystem.';
+      }
+
+      let action = card.querySelector('.public-link-wrap');
+      if (!action) {
+        action = document.createElement('span');
+        action.className = 'public-link-wrap public-link-live';
+        card.querySelector('.project-actions')?.appendChild(action);
+      }
+      action.innerHTML = '<a aria-label="Open MedIQ mobile app on Google Play — opens in a new tab" class="project-link public-project-link" href="https://play.google.com/store/apps/details?id=eg.mediq.upa" rel="noopener noreferrer" target="_blank" title="Official MedIQ mobile application">Open mobile app ↗</a>';
+    }
+
     const image = card.querySelector('.project-visual img');
     if (image && approvedImages[index]) {
       image.onerror = null;
@@ -266,6 +314,14 @@
   /* Project card clarity + accessible project details modal.
      Technologies are shown only where they are explicitly confirmed. */
   const confirmedProjectDetails = {
+    '01': {
+      technologies: [],
+      role: 'National web / enterprise procurement and medical-supply ecosystem'
+    },
+    '17': {
+      technologies: ['Android', 'Offline synchronization', 'Barcode / QR scanning', 'PIN / OTP approvals'],
+      role: 'Official mobile operational companion to the MedIQ ecosystem'
+    },
     '09': {
       technologies: ['Microsoft Dynamics 365 ERP'],
       role: 'Enterprise systems integration / cross-system process continuity'
@@ -295,69 +351,82 @@
     }
   };
 
-  const modalStyle = document.createElement('style');
-  modalStyle.id = 'project-details-modal-styles';
-  modalStyle.textContent = `
-    .project-grid{row-gap:32px!important}
-    .project-card{position:relative;overflow:hidden;border:1px solid rgba(15,55,75,.13)!important;border-radius:18px!important;background:#fff!important;box-shadow:0 10px 28px rgba(15,55,75,.07)!important;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease!important}
-    .project-card:hover{transform:translateY(-2px);box-shadow:0 16px 36px rgba(15,55,75,.11)!important;border-color:rgba(0,124,145,.28)!important}
-    .project-card .project-visual{position:relative;overflow:hidden;border-bottom:1px solid rgba(15,55,75,.10)!important}
-    .project-card .project-visual img{display:block;width:100%;height:100%;object-fit:cover}
-    .project-card .project-content{position:relative}
-    .project-card .project-topline{margin-bottom:8px}
-    .project-card .project-details-btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:38px;margin-top:12px;padding:8px 12px;border:1px solid rgba(0,124,145,.34);border-radius:999px;background:#f3fbfb;color:#075e6b;font:700 12px/1.2 var(--sans,Inter,sans-serif);letter-spacing:.01em;cursor:pointer;transition:background .18s ease,border-color .18s ease,transform .18s ease}
-    .project-card .project-details-btn:hover{background:#e5f6f7;border-color:#007c91;transform:translateY(-1px)}
-    .project-card .project-details-btn:focus-visible{outline:3px solid #007c91;outline-offset:3px}
-    body.project-modal-open{overflow:hidden}
-    .project-modal[hidden]{display:none!important}
-    .project-modal{position:fixed;inset:0;z-index:12000;display:grid;place-items:center;padding:24px;background:rgba(5,19,28,.66);backdrop-filter:blur(5px)}
-    .project-modal-dialog{position:relative;width:min(860px,100%);max-height:min(86vh,860px);overflow:auto;border:1px solid rgba(255,255,255,.2);border-radius:22px;background:#fff;box-shadow:0 30px 90px rgba(0,0,0,.34)}
-    .project-modal-close{position:sticky;top:14px;float:right;z-index:2;width:42px;height:42px;margin:14px 14px -56px 0;border:1px solid rgba(15,55,75,.16);border-radius:50%;background:rgba(255,255,255,.94);color:#10263b;font:700 24px/1 sans-serif;cursor:pointer;box-shadow:0 5px 18px rgba(0,0,0,.12)}
-    .project-modal-close:hover{background:#eefafa}
-    .project-modal-hero{display:grid;grid-template-columns:minmax(240px,38%) 1fr;min-height:250px;background:linear-gradient(135deg,#eefafb 0%,#f8fbfc 100%)}
-    .project-modal-image{min-height:250px;background:#e7eef1}
-    .project-modal-image img{display:block;width:100%;height:100%;min-height:250px;object-fit:cover}
-    .project-modal-head{padding:38px 46px 30px 34px;align-self:center}
-    .project-modal-kicker{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px;color:#007c91;font:800 12px/1.3 var(--sans,Inter,sans-serif);text-transform:uppercase;letter-spacing:.08em}
-    .project-modal-title{margin:0;color:#10263b;font-size:clamp(24px,3vw,38px);line-height:1.08;letter-spacing:-.035em}
-    .project-modal-meta{margin:14px 0 0;color:#536474;font-size:14px;line-height:1.6}
-    .project-modal-body{padding:30px 36px 36px}
-    .project-modal-section+.project-modal-section{margin-top:25px;padding-top:22px;border-top:1px solid #e6edf0}
-    .project-modal-section h4{margin:0 0 10px;color:#10263b;font:800 13px/1.3 var(--sans,Inter,sans-serif);text-transform:uppercase;letter-spacing:.07em}
-    .project-modal-section p{margin:0;color:#334a5d;font-size:16px;line-height:1.75}
-    .project-tech-list{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
-    .project-tech-list span{display:inline-flex;align-items:center;min-height:34px;padding:7px 11px;border:1px solid #cae7e9;border-radius:999px;background:#f3fbfb;color:#075e6b;font:700 12px/1.2 var(--sans,Inter,sans-serif)}
-    .project-modal-public{margin-top:24px}
-    .project-modal-public a{display:inline-flex;align-items:center;min-height:42px;padding:9px 14px;border-radius:12px;background:#10263b;color:#fff!important;text-decoration:none;font:700 13px/1.2 var(--sans,Inter,sans-serif)}
-    @media(max-width:700px){
-      .project-grid{row-gap:26px!important}
-      .project-card{border-radius:16px!important}
-      .project-modal{padding:12px;place-items:end center}
-      .project-modal-dialog{width:100%;max-height:91vh;border-radius:20px 20px 14px 14px}
-      .project-modal-hero{grid-template-columns:1fr}
-      .project-modal-image,.project-modal-image img{min-height:190px;max-height:240px}
-      .project-modal-head{padding:24px 22px 24px}
-      .project-modal-body{padding:24px 22px 30px}
-      .project-modal-close{top:10px;margin:10px 10px -52px 0;width:40px;height:40px}
-      .project-modal-section p{font-size:15px;line-height:1.7}
-    }
-    @media(prefers-reduced-motion:reduce){.project-card,.project-details-btn{transition:none!important}}
-  `;
-  document.head.appendChild(modalStyle);
+  /* MedIQ product separation — one programme, two distinct user experiences. */
+  const mediqWebCard = cards.find(card => card.querySelector('.project-index')?.textContent.trim() === '01');
+  const mediqMobileCard = cards.find(card => card.querySelector('.project-index')?.textContent.trim() === '17');
+  const catalogIntro = document.querySelector('.catalog-intro');
 
-  const modal = document.createElement('div');
+  if (catalogIntro && mediqWebCard && mediqMobileCard && !document.querySelector('.mediq-product-split')) {
+    const getImage = card => {
+      const img = card.querySelector('.project-visual img');
+      return {
+        src: img?.getAttribute('src') || '',
+        alt: img?.getAttribute('alt') || ''
+      };
+    };
+
+    const webImage = getImage(mediqWebCard);
+    const mobileImage = getImage(mediqMobileCard);
+
+    const split = document.createElement('section');
+    split.className = 'mediq-product-split';
+    split.setAttribute('aria-labelledby', 'mediq-split-title');
+    split.innerHTML = `
+      <div class="mediq-split-head">
+        <div>
+          <span class="mediq-split-eyebrow">MEDIQ · PRODUCT CLARITY</span>
+          <h2 id="mediq-split-title">One ecosystem. Two distinct products.</h2>
+        </div>
+        <p>The national web / enterprise ecosystem and the mobile application serve related workflows, but they are not the same product. They are presented separately here so the distinction is immediate.</p>
+      </div>
+      <div class="mediq-split-grid">
+        <article class="mediq-split-card mediq-split-card--web">
+          <div class="mediq-split-media">
+            ${webImage.src ? `<img src="${webImage.src}" alt="${webImage.alt || 'MedIQ web ecosystem'}">` : ''}
+            <span class="mediq-split-label">WEB / ENTERPRISE ECOSYSTEM</span>
+          </div>
+          <div class="mediq-split-copy">
+            <div class="mediq-split-number">01</div>
+            <h3>MedIQ National Ecosystem</h3>
+            <p>National procurement and medical-supply platform across connected enterprise workflows, data, integrations and operations.</p>
+            <div class="mediq-split-actions">
+              <a class="mediq-primary-action" href="https://sc.upa.gov.eg/" target="_blank" rel="noopener noreferrer">Open web platform ↗</a>
+              <button class="mediq-secondary-action" type="button" data-open-project="01">View project details</button>
+            </div>
+          </div>
+        </article>
+        <article class="mediq-split-card mediq-split-card--mobile">
+          <div class="mediq-split-media">
+            ${mobileImage.src ? `<img src="${mobileImage.src}" alt="${mobileImage.alt || 'MedIQ mobile application'}">` : ''}
+            <span class="mediq-split-label">MOBILE APPLICATION</span>
+          </div>
+          <div class="mediq-split-copy">
+            <div class="mediq-split-number">17</div>
+            <h3>MedIQ Mobile App</h3>
+            <p>Official operational mobile companion for authorized users, with inventory, scanning, approvals, notifications and offline synchronization.</p>
+            <div class="mediq-split-actions">
+              <a class="mediq-primary-action" href="https://play.google.com/store/apps/details?id=eg.mediq.upa" target="_blank" rel="noopener noreferrer">Open mobile app ↗</a>
+              <button class="mediq-secondary-action" type="button" data-open-project="17">View project details</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    `;
+    catalogIntro.insertAdjacentElement('afterend', split);
+  }
+
+  /* Native dialog gives modal semantics, focus containment and an inert background. */
+  const modal = document.createElement('dialog');
   modal.className = 'project-modal';
-  modal.hidden = true;
-  modal.setAttribute('aria-hidden', 'true');
+  modal.setAttribute('aria-labelledby', 'project-modal-title');
   modal.innerHTML = `
-    <div class="project-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="project-modal-title" tabindex="-1">
+    <div class="project-modal-shell">
       <button class="project-modal-close" type="button" aria-label="Close project details">×</button>
       <div class="project-modal-content"></div>
     </div>
   `;
   document.body.appendChild(modal);
 
-  const modalDialog = modal.querySelector('.project-modal-dialog');
   const modalContent = modal.querySelector('.project-modal-content');
   const modalClose = modal.querySelector('.project-modal-close');
   let lastProjectTrigger = null;
@@ -393,18 +462,23 @@
   const openProjectModal = (card, trigger) => {
     const info = getProjectInfo(card);
     lastProjectTrigger = trigger || card;
+
     const techSection = info.technologies.length ? `
       <section class="project-modal-section">
         <h4>Technologies / Platforms</h4>
         <div class="project-tech-list">${info.technologies.map(t => `<span>${escapeHtml(t)}</span>`).join('')}</div>
       </section>` : '';
+
     const roleSection = info.role ? `
       <section class="project-modal-section">
         <h4>Role / Project Scope</h4>
         <p>${escapeHtml(info.role)}</p>
       </section>` : '';
+
     const linkSection = info.publicHref ? `
-      <div class="project-modal-public"><a href="${escapeHtml(info.publicHref)}" target="_blank" rel="noopener noreferrer">${escapeHtml(info.publicLabel)}</a></div>` : '';
+      <div class="project-modal-public">
+        <a href="${escapeHtml(info.publicHref)}" target="_blank" rel="noopener noreferrer">${escapeHtml(info.publicLabel)}</a>
+      </div>` : '';
 
     modalContent.innerHTML = `
       <div class="project-modal-hero">
@@ -426,29 +500,38 @@
         ${linkSection}
       </div>`;
 
-    modal.hidden = false;
-    modal.setAttribute('aria-hidden', 'false');
     document.body.classList.add('project-modal-open');
-    requestAnimationFrame(() => modalDialog.focus());
+    modal.showModal();
+    requestAnimationFrame(() => modalClose.focus());
   };
 
   const closeProjectModal = () => {
-    if (modal.hidden) return;
-    modal.hidden = true;
-    modal.setAttribute('aria-hidden', 'true');
-    document.body.classList.remove('project-modal-open');
-    lastProjectTrigger?.focus?.();
+    if (!modal.open) return;
+    modal.close();
   };
 
+  /* Actions are placed immediately after each image for faster scanning. */
   cards.forEach(card => {
-    const actions = card.querySelector('.project-actions') || card.querySelector('.project-content');
-    if (!actions || actions.querySelector('.project-details-btn')) return;
+    if (card.querySelector('.project-quick-actions')) return;
+
+    const visual = card.querySelector('.project-visual');
+    if (!visual) return;
+
+    const quickActions = document.createElement('div');
+    quickActions.className = 'project-quick-actions';
+
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'project-details-btn';
     button.textContent = 'View details';
     button.setAttribute('aria-label', `View details for ${card.querySelector('h3')?.textContent.trim() || 'project'}`);
-    actions.appendChild(button);
+    quickActions.appendChild(button);
+
+    const existingPublicWrap = card.querySelector('.project-actions .public-link-wrap');
+    if (existingPublicWrap) quickActions.appendChild(existingPublicWrap);
+
+    visual.insertAdjacentElement('afterend', quickActions);
+
     button.addEventListener('click', event => {
       event.preventDefault();
       event.stopPropagation();
@@ -456,22 +539,28 @@
     });
   });
 
-  modalClose.addEventListener('click', closeProjectModal);
-  modal.addEventListener('click', event => {
-    if (event.target === modal) closeProjectModal();
+  document.querySelectorAll('[data-open-project]').forEach(button => {
+    button.addEventListener('click', () => {
+      const index = button.dataset.openProject;
+      const card = cards.find(item => item.querySelector('.project-index')?.textContent.trim() === index);
+      if (card) openProjectModal(card, button);
+    });
   });
-  document.addEventListener('keydown', event => {
-    if (modal.hidden) return;
-    if (event.key === 'Escape') closeProjectModal();
-    if (event.key === 'Tab') {
-      const focusable = [...modal.querySelectorAll('button,[href],input,select,textarea,[tabindex]:not([tabindex="-1"])')]
-        .filter(el => !el.hasAttribute('disabled') && el.offsetParent !== null);
-      if (!focusable.length) return;
-      const first = focusable[0];
-      const last = focusable[focusable.length - 1];
-      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
-      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
-    }
+
+  modalClose.addEventListener('click', closeProjectModal);
+
+  modal.addEventListener('click', event => {
+    if (event.target !== modal) return;
+    const shell = modal.querySelector('.project-modal-shell');
+    const rect = shell.getBoundingClientRect();
+    const inside = event.clientX >= rect.left && event.clientX <= rect.right &&
+      event.clientY >= rect.top && event.clientY <= rect.bottom;
+    if (!inside) closeProjectModal();
+  });
+
+  modal.addEventListener('close', () => {
+    document.body.classList.remove('project-modal-open');
+    lastProjectTrigger?.focus?.();
   });
 
   const refreshProjectTabCounts = () => {

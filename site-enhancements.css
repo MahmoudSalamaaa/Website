@@ -47,3 +47,47 @@ body footer .final-footer p.footer-intro{
     line-height:1.42!important;
   }
 }
+
+/* Navigation chevrons — vertically centered beside Menu / More labels. */
+body nav details.mobile-nav > summary,
+body nav details.desktop-more > summary{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:6px!important;
+  line-height:1!important;
+  list-style:none!important;
+}
+
+body nav details.mobile-nav > summary::-webkit-details-marker,
+body nav details.desktop-more > summary::-webkit-details-marker{
+  display:none!important;
+}
+
+body nav details.mobile-nav > summary::marker,
+body nav details.desktop-more > summary::marker{
+  content:""!important;
+  font-size:0!important;
+}
+
+body nav details.mobile-nav > summary::after,
+body nav details.desktop-more > summary::after{
+  content:"⌄"!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  width:12px!important;
+  height:12px!important;
+  margin:0!important;
+  font-family:Arial,sans-serif!important;
+  font-size:12px!important;
+  font-weight:700!important;
+  line-height:12px!important;
+  transform:translateY(-1px)!important;
+  transform-origin:center!important;
+}
+
+body nav details.mobile-nav[open] > summary::after,
+body nav details.desktop-more[open] > summary::after{
+  transform:translateY(0) rotate(180deg)!important;
+}

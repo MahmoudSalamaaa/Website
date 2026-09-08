@@ -18,123 +18,267 @@
       if (menu.open) menus.filter(other => other !== menu).forEach(other => { other.open = false; });
     });
     menu.addEventListener('focusout', () => {
-      requestAnimationFrame(() => { if (!menu.contains(document.activeElement)) menu.open = false; });
+      requestAnimationFrame(() => {
+        if (!menu.contains(document.activeElement)) menu.open = false;
+      });
     });
-    menu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => { menu.open = false; }));
+    menu.querySelectorAll('a').forEach(link =>
+      link.addEventListener('click', () => { menu.open = false; })
+    );
   });
 
-  /* Projects: restore project-specific/public visuals instead of the generic
-     normalized illustration set. Existing local image remains the fallback. */
-  if (document.querySelector('.project-grid')) {
-    const exactVisuals = {
-      /* MedIQ procurement workflow — official UPA MedIQ app screenshot. */
-      '02': 'https://play-lh.googleusercontent.com/apoznS2OlN2TYNeqx-DlOCQ2AiXigdKQ9X5B5GAkSaK_8ypDDT5MKM15ArxcTumEhHaubpmdTeFWCSIet0sc=w1200-h800',
+  const projectGrid = document.querySelector('.project-grid');
+  if (!projectGrid) return;
 
-      '03': 'https://play-lh.googleusercontent.com/IKajJzhv4_TAJcoWCjvDbU0EGKPP6E-usZ1l4RAYRavZ9cc9xkJ2sRaveMcLSlofLLtub63mWWr9P6Q8hjixeg=w1200-h800',
-      '04': 'https://play-lh.googleusercontent.com/1LI17Og1Jq-xkabv9ZqdUJ_14EuArJIoilcXMGf5Civ4mKYrKek9Rd-gsXZn8CLSjSEBdc6oeddUCZiffK6l6A=w1200-h800',
-      '17': 'https://play-lh.googleusercontent.com/HjX664FUK0FiyH6dwVqE_8TOTbIAsnmKk_3o4Wt10cZ-qlvr-LVRCK_JdpAb7ciG5z_cLNlnJFQYEGIvuWS6Kw=w1200-h800',
-      '43': 'https://home.moe.gov.om/templates/newmoe/assets/images/icons/pe-scroll-small-icon-edu.png',
-      '45': 'https://home.moe.gov.om/templates/moe/assets/images/sqw.png',
-      '51': 'https://pf.mafwr.gov.om/login/main-logo.png',
-      '52': 'https://pf.mafwr.gov.om/login/main-logo.png',
-      '69': 'https://uchid.org/wp-content/uploads/2026/02/UCHID-Logo-2-300x112.png'
-    };
 
-    /* Curated public pages used as reliable, context-rich project visuals.
-       They are rendered as clean card-sized screenshots by WordPress mShots. */
-    const exactPages = {
-      /* Unified Assets & Medical-Device Maintenance — exact public app reference. */
-      '07': 'https://apkpure.net/%D8%A3%D8%B5%D9%88%D9%84-%D8%B5%D8%AD%D8%A9-%D9%85%D8%B5%D8%B1/eg.gov.upa.upa_assets',
+  /* Two newly confirmed Ministry of Health projects.
+     Added at runtime to preserve the current projects.html structure. */
+  const appendConfirmedProject = ({ index, type, title, meta, description, image, imageAlt }) => {
+    if (projectGrid.querySelector(`.project-index[data-added-index="${index}"]`)) return;
 
-      /* Microsoft Dynamics 365 ERP / Unified Financial System — official Microsoft product page. */
-      '09': 'https://www.microsoft.com/en-us/dynamics-365/products/finance',
+    const article = document.createElement('article');
+    article.className = 'project-card';
+    article.dataset.featured = 'false';
+    article.dataset.org = 'Keyframe';
+    article.dataset.priority = '99';
+    article.dataset.type = type;
 
-      /* Healthcare & Government Integration Program — public reference used in the project evidence audit. */
-      '13': 'https://www.elwatannews.com/news/details/7834247',
+    article.innerHTML = `
+      <div class="project-visual">
+        <img
+          alt="${imageAlt}"
+          decoding="async"
+          loading="lazy"
+          referrerpolicy="no-referrer"
+          src="${image}"
+        />
+      </div>
+      <div class="project-content">
+        <div class="project-topline">
+          <span class="project-index" data-added-index="${index}">${index}</span>
+          <span class="project-org">KEYFRAME</span>
+        </div>
+        <h3>${title}</h3>
+        <div class="project-meta">${meta}</div>
+        <p>${description}</p>
+        <div class="project-actions">
+          <span class="type-chip">${type}</span>
+        </div>
+      </div>
+    `;
+    projectGrid.appendChild(article);
+  };
 
-      /* Reusable .NET CMS & Electronic Publishing Platform — official .NET platform page. */
-      '57': 'https://dotnet.microsoft.com/en-us/'
-    };
+  appendConfirmedProject({
+    index: '87',
+    type: 'National & Sector Platforms',
+    title: 'Egypt Ministry of Health & Population — Ambulance GIS / Mapping System',
+    meta: '<span>Healthcare / Government</span><span>·</span><span>GIS / Mapping</span><span>·</span><span>Keyframe Egypt</span>',
+    description: 'GIS / mapping system delivered for Egypt’s Ministry of Health & Population to support ambulance-related geographic and operational use cases. Kept deliberately concise until the remaining historical functional detail is reconstructed.',
+    image: 'project-images/mohp-ambulance-gis.jpg',
+    imageAlt: 'Ambulance in an urban response environment — visual for the Ministry of Health Ambulance GIS and Mapping System'
+  });
 
-    const screenshot = (url) =>
-      `https://s.wordpress.com/mshots/v1/${encodeURIComponent(url)}?w=1200&h=800`;
+  appendConfirmedProject({
+    index: '88',
+    type: 'Digital Products & Experience',
+    title: 'Egypt Ministry of Health & Population — Doctors’ Digital Library',
+    meta: '<span>Healthcare / Government</span><span>·</span><span>Digital Knowledge Platform</span><span>·</span><span>Keyframe Egypt</span>',
+    description: 'Digital library / knowledge platform delivered for physicians within the Ministry of Health & Population engagement. The project is confirmed; detailed historical feature scope is intentionally not overstated.',
+    image: 'project-images/mohp-doctors-digital-library.jpg',
+    imageAlt: 'Doctor using a laptop with medical books — visual for the Ministry of Health Doctors Digital Library'
+  });
 
-    const cards = [...document.querySelectorAll('.project-card')];
+  const cards = [...projectGrid.querySelectorAll('.project-card')];
 
-    cards.forEach(card => {
-      const image = card.querySelector('.project-visual img');
-      const index = card.querySelector('.project-index')?.textContent.trim();
-      if (!image || !index) return;
+  /* User-approved project images only. */
+  const approvedImages = {
+    '01': 'project-images/medIQ.jpeg',
+    '02': 'project-images/Tenders[1].jpg',
+    '03': 'project-images/images.jpeg',
+    '09': 'project-images/fin(1).webp',
+    '68': 'project-images/02(3).jpg',
+    '75': 'project-images/7(3).jpg',
+    '76': 'project-images/03(3).jpg',
+    '77': 'project-images/01(3).jpg',
+    '78': 'project-images/5(3).jpg',
+    '79': 'project-images/6(3).jpg',
+    '80': 'project-images/8(3).jpg',
+    '81': 'project-images/9(3).jpg',
+    '82': 'project-images/10(1).jpg',
+    '10': 'project-images/hta.jpg',
+    '22': 'project-images/data_warehouse.JPG',
+    '24': 'project-images/ai(1).jpg',
+    '30': 'project-images/dashboard.webp',
+    '41': 'project-images/Correspondence.jpg',
+    '42': 'project-images/crisis.jpg',
+    '43': 'project-images/EPortal.jpg',
+    '49': 'project-images/AssetManagement.jpg',
+    '51': 'project-images/maf(1).jpg',
+    '70': 'project-images/bgicc.jpg',
+    '71': 'project-images/araborganizers.jpg',
+    '83': 'project-images/crm.jpg',
+    '85': 'project-images/escd-egypt.jpg',
+    '15': 'project-images/UPA.jpg',
+    '36': 'project-images/sms.webp',
+    '45': 'project-images/RecruitmentSystem.jpg',
+    '59': 'project-images/mohp.jpg'
+  };
 
-      const fallback = image.getAttribute('src');
-      image.dataset.fallbackSrc = fallback;
+  cards.forEach(card => {
+    const index = card.querySelector('.project-index')?.textContent.trim();
+    if (!index) return;
 
-      /* Project 01: official MedIQ app logo/artwork.
-         Apple lookup is used because it returns the official artwork URL
-         for app id 6772464842 published by Unified Procurement Authority (UPA). */
-      if (index === '01') {
-        const applyMedIQLogo = (src) => {
-          image.onerror = () => {
-            image.onerror = null;
-            image.src = image.dataset.fallbackSrc;
-          };
-          image.src = src;
-          image.alt = 'MedIQ official app logo — Unified Procurement Authority (UPA)';
-          image.style.objectFit = 'contain';
-          image.style.objectPosition = 'center';
-          image.style.padding = '28px';
-          image.style.boxSizing = 'border-box';
-          image.style.background = '#ffffff';
-        };
+    if (index === '83') {
+      card.dataset.org = 'UPA';
+      card.dataset.type = 'Enterprise Systems & Integration';
 
-        fetch('https://itunes.apple.com/lookup?id=6772464842&country=eg')
-          .then(response => {
-            if (!response.ok) throw new Error('MedIQ artwork lookup failed');
-            return response.json();
-          })
-          .then(data => {
-            const app = data?.results?.[0];
-            const artwork = app?.artworkUrl512 || app?.artworkUrl100 || app?.artworkUrl60;
-            if (!artwork) throw new Error('MedIQ artwork URL unavailable');
-            applyMedIQLogo(artwork.replace(/100x100bb|60x60bb/g, '512x512bb'));
-          })
-          .catch(() => {
-            /* Stable fallback: official App Store page screenshot rather than a
-               generic category illustration. */
-            const appStore = 'https://apps.apple.com/eg/app/mediq/id6772464842';
-            image.onerror = () => {
-              image.onerror = null;
-              image.src = image.dataset.fallbackSrc;
-            };
-            image.src = screenshot(appStore);
-          });
-        return;
+      const org = card.querySelector('.project-org');
+      if (org) org.textContent = 'UPA';
+
+      const title = card.querySelector('h3');
+      if (title) title.textContent = 'CRM Integration — UPA Enterprise Systems';
+
+      const meta = card.querySelector('.project-meta');
+      if (meta) meta.innerHTML = '<span>Enterprise Integration</span><span>·</span><span>Confirmed UPA project</span>';
+
+      const description = card.querySelector('.project-content p');
+      if (description) {
+        description.textContent = 'Enterprise CRM integration connecting CRM-supported service and case workflows with UPA operational systems and governed data flows. Positioned as an integration project, not as development of the CRM product itself.';
       }
 
-      const exact = exactVisuals[index];
-      const exactPage = exactPages[index];
+      const chip = card.querySelector('.type-chip');
+      if (chip) chip.textContent = 'Enterprise Systems & Integration';
 
-      const publicLink =
-        card.querySelector('.public-link-live a[href]') ||
-        card.querySelector('.public-link-reference a[href]') ||
-        card.querySelector('.public-link-evidence a[href]') ||
-        card.querySelector('.public-link-context a[href]') ||
-        card.querySelector('.public-link-archive a[href]') ||
-        card.querySelector('.public-link-historical a[href]');
+      const action = card.querySelector('.public-link-wrap');
+      if (action) action.remove();
+    }
 
-      const target =
-        exact ||
-        (exactPage ? screenshot(exactPage) : null) ||
-        (publicLink ? screenshot(publicLink.href) : null);
+    if (index === '85') {
+      card.dataset.org = 'Keyframe';
+      card.dataset.type = 'Digital Products & Experience';
 
-      if (!target || target === fallback) return;
+      const org = card.querySelector('.project-org');
+      if (org) org.textContent = 'KEYFRAME';
 
-      image.referrerPolicy = 'no-referrer';
-      image.onerror = () => {
-        image.onerror = null;
-        image.src = image.dataset.fallbackSrc;
-      };
-      image.src = target;
+      const title = card.querySelector('h3');
+      if (title) title.textContent = 'ESCD — Egypt’s Society for Culture & Development Digital Portal';
+
+      const meta = card.querySelector('.project-meta');
+      if (meta) meta.innerHTML = '<span>Community / Culture / NGO</span><span>·</span><span>Historical Keyframe project</span>';
+
+      const description = card.querySelector('.project-content p');
+      if (description) {
+        description.textContent = 'Historical Keyframe digital portal / website project for Egypt’s Society for Culture & Development (ESCD), an Egyptian NGO providing cultural, educational and community-development services.';
+      }
+
+      const chip = card.querySelector('.type-chip');
+      if (chip) chip.textContent = 'Digital Products & Experience';
+
+      const action = card.querySelector('.public-link-wrap');
+      if (action) {
+        action.innerHTML = '<a aria-label="Open ESCD official website — opens in a new tab" class="project-link public-project-link" href="https://www.escd-egypt.org.eg/" rel="noopener noreferrer" target="_blank" title="Official organization website">Open ESCD website ↗</a>';
+        action.className = 'public-link-wrap public-link-live';
+      }
+    }
+
+    if (index === '15') {
+      const title = card.querySelector('h3');
+      if (title) title.textContent = 'UPA Official Website / Public Portal';
+      const meta = card.querySelector('.project-meta');
+      if (meta) meta.innerHTML = '<span>Official Public Website</span><span>·</span><span>UPA digital project</span>';
+      const description = card.querySelector('.project-content p');
+      if (description) {
+        description.textContent = 'Official website of the Egyptian Authority for Unified Procurement (UPA), providing public access to procurement opportunities, initiatives, tenders, events and institutional information while serving as a communication channel with healthcare entities, suppliers and partners.';
+      }
+    }
+
+    if (index === '36') {
+      const title = card.querySelector('h3');
+      if (title) title.textContent = 'SMS / Notification Integration';
+      const meta = card.querySelector('.project-meta');
+      if (meta) meta.innerHTML = '<span>Enterprise Integration</span><span>·</span><span>Standalone UPA project</span>';
+      const description = card.querySelector('.project-content p');
+      if (description) {
+        description.textContent = 'Standalone enterprise SMS and notification integration project supporting governed operational messaging across UPA systems and workflows.';
+      }
+    }
+
+    if (index === '45') {
+      const title = card.querySelector('h3');
+      if (title) title.textContent = 'Oman Ministry of Education Recruitment System — Sultan Qaboos Award';
+      const meta = card.querySelector('.project-meta');
+      if (meta) meta.innerHTML = '<span>Government Recruitment System</span><span>·</span><span>Award-winning project</span>';
+      const description = card.querySelector('.project-content p');
+      if (description) {
+        description.textContent = 'Recruitment and appointments system for Oman Ministry of Education. This is the confirmed project associated with the Sultan Qaboos Award.';
+      }
+    }
+
+    if (index === '51') {
+      const title = card.querySelector('h3');
+      if (title) title.textContent = 'Oman Ministry of Agriculture, Fisheries and Water Resources — Official Website';
+      const meta = card.querySelector('.project-meta');
+      if (meta) meta.innerHTML = '<span>Government Website</span><span>·</span><span>Integral Solutions / Oman</span>';
+      const description = card.querySelector('.project-content p');
+      if (description) {
+        description.textContent = 'Official ministry website built by Mahmoud Salama during the Integral Solutions / Oman period for the Ministry of Agriculture, Fisheries and Water Resources (وزارة الثروة الزراعية والسمكية وموارد المياه).';
+      }
+    }
+
+    if (index === '59') {
+      const title = card.querySelector('h3');
+      if (title) title.textContent = 'Egypt Ministry of Health & Population — Official Website';
+      const meta = card.querySelector('.project-meta');
+      if (meta) meta.innerHTML = '<span>Government / Healthcare Website</span><span>·</span><span>Keyframe Egypt</span>';
+      const description = card.querySelector('.project-content p');
+      if (description) {
+        description.textContent = 'Official Ministry of Health & Population website built during the Keyframe Egypt period. The broader engagement also included additional substantive systems; those systems are kept separate until their exact scope is fully enumerated.';
+      }
+    }
+
+    const image = card.querySelector('.project-visual img');
+    if (image && approvedImages[index]) {
+      image.onerror = null;
+      image.src = approvedImages[index];
+      image.removeAttribute('referrerpolicy');
+      image.style.objectFit = 'cover';
+      image.style.objectPosition = 'center';
+      image.style.padding = '0';
+      image.style.background = '';
+    }
+
+    if (index === '09') {
+      const title = card.querySelector('h3');
+      if (title) title.textContent = 'Microsoft Dynamics 365 ERP / Unified Financial System Integration';
+
+      const meta = card.querySelector('.project-meta');
+      if (meta) meta.innerHTML = '<span>Enterprise Integration</span><span>·</span><span>Integration leadership</span>';
+
+      const description = card.querySelector('.project-content p');
+      if (description) {
+        description.textContent = 'Integration of Microsoft Dynamics 365 ERP / the unified financial environment with surrounding enterprise systems and operational workflows, enabling governed data exchange and cross-system process continuity.';
+      }
+    }
+  });
+  const refreshProjectTabCounts = () => {
+    const currentCards = [...projectGrid.querySelectorAll('.project-card')];
+    document.querySelectorAll('.catalog-tab[data-type]').forEach(tab => {
+      const type = tab.dataset.type;
+      const countEl = tab.querySelector('span');
+      if (!countEl) return;
+
+      if (type === 'Featured') {
+        countEl.textContent = currentCards.filter(c => c.dataset.featured === 'true').length;
+      } else if (type === 'All') {
+        countEl.textContent = currentCards.length;
+      } else {
+        countEl.textContent = currentCards.filter(c => c.dataset.type === type).length;
+      }
     });
-  }
+  };
+
+  refreshProjectTabCounts();
+  window.refreshProjectCatalog?.();
+
 })();

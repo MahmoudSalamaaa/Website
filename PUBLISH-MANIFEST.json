@@ -1,0 +1,45 @@
+{
+  "structure": {
+    "root": [
+      "site-enhancements.js",
+      "root-candidate-v4.js",
+      "PUBLISH-MANIFEST.json"
+    ],
+    "project-images/": [
+      "01(3).jpg",
+      "02(3).jpg",
+      "03(3).jpg",
+      "10(1).jpg",
+      "5(3).jpg",
+      "6(3).jpg",
+      "7(3).jpg",
+      "8(3).jpg",
+      "9(3).jpg",
+      "AssetManagement.jpg",
+      "Correspondence.jpg",
+      "EPortal.jpg",
+      "RecruitmentSystem.jpg",
+      "Tenders[1].jpg",
+      "UPA.jpg",
+      "ai(1).jpg",
+      "araborganizers.jpg",
+      "bgicc.jpg",
+      "crisis.jpg",
+      "crm.jpg",
+      "dashboard.webp",
+      "data_warehouse.JPG",
+      "escd-egypt.jpg",
+      "fin(1).webp",
+      "hta.jpg",
+      "images.jpeg",
+      "maf(1).jpg",
+      "medIQ.jpeg",
+      "mohp-ambulance-gis.jpg",
+      "mohp-doctors-digital-library.jpg",
+      "mohp.jpg",
+      "sms.webp"
+    ]
+  },
+  "instructions": "Upload root files to site root. Upload the entire project-images folder to site root as /project-images/.",
+  "image_count": 32
+}

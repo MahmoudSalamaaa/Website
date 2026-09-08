@@ -736,3 +736,34 @@ footer .footer-row span:last-child{
     grid-template-columns:1fr!important;
   }
 }
+
+/* ========== HOME OUTFIT BODY TEXT TEST ========== */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap');
+
+/* Regular/readable copy on Home only.
+   Keep headings, kickers, buttons and mono labels unchanged. */
+.executive-hero p,
+.exec-snapshot span,
+.mediq-story p,
+.mediq-facts span,
+.mediq-map h3,
+.mediq-node span,
+.mandate-copy p,
+.home-cases .section-head > p,
+.home-cases .case p,
+.recognition-strip span,
+.operating-summary .signature-head > p,
+.operating-summary article p,
+footer .footer-intro,
+footer .footer-row{
+  font-family:"Outfit",sans-serif!important;
+}
+
+/* Slightly tune body-copy rhythm for Outfit */
+.executive-hero p,
+.mediq-story p,
+.mandate-copy p,
+.home-cases .case p,
+.operating-summary article p{
+  letter-spacing:.002em;
+}

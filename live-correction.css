@@ -683,3 +683,56 @@ footer .footer-row span:last-child{
     color:rgba(242,248,252,.90)!important;
   }
 }
+
+/* ========== MOBILE HERO CTA AFTER PORTRAIT ========== */
+/* Reading flow on mobile: message → portrait/proof → actions. */
+
+@media(max-width:760px){
+  .executive-hero .hero-grid{
+    display:flex!important;
+    flex-direction:column!important;
+  }
+
+  .executive-hero .hero-copy{
+    display:contents!important;
+  }
+
+  .executive-hero .hero-name{order:1}
+  .executive-hero .kicker{order:2}
+  .executive-hero h1{order:3}
+  .executive-hero .hero-copy > p{order:4}
+
+  .executive-hero .photo-card{
+    order:5!important;
+    width:100%!important;
+    margin-top:22px!important;
+  }
+
+  .executive-hero .hero-actions{
+    order:6!important;
+    width:100%!important;
+    margin-top:18px!important;
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    gap:12px!important;
+  }
+
+  .executive-hero .hero-actions .btn{
+    width:100%!important;
+    min-height:54px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    text-align:center!important;
+  }
+
+  .executive-hero .mobile-identity-peek{
+    display:none!important;
+  }
+}
+
+@media(max-width:520px){
+  .executive-hero .hero-actions{
+    grid-template-columns:1fr!important;
+  }
+}

@@ -6,7 +6,7 @@
   grid.innerHTML = `
     <div><strong class="metric-count" data-count="18" data-suffix="+">18+</strong><span>years of technology leadership</span></div>
     <div><strong class="metric-count" data-count="54">54</strong><span>people in the technology organization</span></div>
-<div><strong class="metric-count" data-count="150" data-prefix="EGP " data-suffix="M">EGP 150M</strong><span>annual IT budget accountability</span></div>
+    <div><strong class="metric-count" data-count="150" data-prefix="EGP " data-suffix="M">EGP 150M</strong><span>annual IT budget accountability</span></div>
     <div><strong class="metric-count" data-count="200" data-suffix="+">200+</strong><span>projects across healthcare, government &amp; enterprise</span></div>
   `;
 
@@ -14,9 +14,8 @@
     const style = document.createElement('style');
     style.id = 'executive-metrics-five';
     style.textContent = `
-      .exec-snapshot-grid{grid-template-columns:repeat(5,minmax(0,1fr))!important}
-      @media(max-width:1100px){.exec-snapshot-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
-      @media(max-width:760px){.exec-snapshot-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+      .exec-snapshot-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}
+      @media(max-width:1100px){.exec-snapshot-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
       @media(max-width:420px){.exec-snapshot-grid{grid-template-columns:1fr!important}}
     `;
     document.head.appendChild(style);

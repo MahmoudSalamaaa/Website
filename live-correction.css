@@ -736,3 +736,32 @@ footer .footer-row span:last-child{
     grid-template-columns:1fr!important;
   }
 }
+
+/* ========== HOME GEORGIA BODY TEXT TEST ========== */
+/* Editorial serif experiment: body/readable copy only on Home. */
+.executive-hero p,
+.exec-snapshot span,
+.mediq-story p,
+.mediq-facts span,
+.mediq-node span,
+.mandate-copy p,
+.home-cases .section-head > p,
+.home-cases .case p,
+.recognition-strip span,
+.operating-summary .signature-head > p,
+.operating-summary article p,
+footer .footer-intro,
+footer .footer-row{
+  font-family:Georgia,"Times New Roman",serif!important;
+  font-weight:400!important;
+  letter-spacing:-.012em;
+}
+
+/* Georgia benefits from slightly more line-height in long copy. */
+.executive-hero p,
+.mediq-story p,
+.mandate-copy p,
+.home-cases .case p,
+.operating-summary article p{
+  line-height:1.68!important;
+}

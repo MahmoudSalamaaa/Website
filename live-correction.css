@@ -814,3 +814,86 @@ footer .footer-intro{
     letter-spacing:.01em!important;
   }
 }
+
+/* ========== JOSEFIN ACCENT TYPOGRAPHY TEST ========== */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600;700&display=swap');
+
+/* Body/readable copy stays with the original site sans */
+.executive-hero .hero-copy > p,
+.exec-snapshot-grid > div > span:not(.metric-count),
+.mediq-story > p,
+.mediq-facts span,
+.mediq-node span,
+.mandate-copy > p,
+.home-cases .section-head > p,
+.home-cases .case p,
+.recognition-strip span,
+.operating-summary .signature-head > p,
+.operating-summary article > p,
+footer .footer-intro,
+footer .footer-row{
+  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
+}
+
+/* Josefin Sans as the distinctive accent language */
+.executive-hero .kicker,
+.mediq-flagship .kicker,
+.home-mandate .kicker,
+.home-cases .kicker,
+.recognition-strip .kicker,
+.operating-summary .kicker,
+.cta .kicker,
+.photo-label,
+.home-cases .case small{
+  font-family:"Josefin Sans",Inter,sans-serif!important;
+  font-weight:700!important;
+  letter-spacing:.10em!important;
+  text-transform:uppercase;
+}
+
+/* Metric numbers: Josefin gives personality without hurting readability */
+.exec-snapshot .metric-count,
+.exec-snapshot strong,
+.mediq-facts b{
+  font-family:"Josefin Sans",Inter,sans-serif!important;
+  font-weight:700!important;
+  letter-spacing:-.035em!important;
+}
+
+/* Chips / compact UI labels */
+.mandate-chips span,
+.home-cases .tags span{
+  font-family:"Josefin Sans",Inter,sans-serif!important;
+  font-weight:600!important;
+  letter-spacing:.035em!important;
+}
+
+/* Fine tune Josefin so it doesn't feel too decorative */
+.executive-hero .kicker,
+.mediq-flagship .kicker,
+.home-mandate .kicker,
+.home-cases .kicker,
+.recognition-strip .kicker,
+.operating-summary .kicker,
+.cta .kicker{
+  font-size:11px!important;
+  line-height:1.45!important;
+}
+
+.photo-label{
+  font-size:11px!important;
+  line-height:1.4!important;
+}
+
+@media(max-width:760px){
+  .executive-hero .kicker,
+  .mediq-flagship .kicker,
+  .home-mandate .kicker,
+  .home-cases .kicker,
+  .recognition-strip .kicker,
+  .operating-summary .kicker,
+  .cta .kicker{
+    font-size:10px!important;
+    letter-spacing:.085em!important;
+  }
+}

@@ -765,3 +765,36 @@ footer .footer-row{
 .operating-summary article p{
   line-height:1.68!important;
 }
+
+/* ========== DESKTOP SNAPSHOT SPACING FIX ========== */
+@media (min-width: 761px){
+  .exec-snapshot-grid{
+    display:grid!important;
+    grid-template-columns:repeat(4,minmax(0,1fr))!important;
+    gap:18px!important;
+    align-items:stretch!important;
+  }
+
+  .exec-snapshot-grid > div{
+    min-height:132px!important;
+    padding:24px 22px 20px!important;
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:flex-start!important;
+  }
+
+  .exec-snapshot .metric-count{
+    display:block!important;
+    margin:0 0 12px!important;
+    font-size:clamp(24px,2.15vw,34px)!important;
+    line-height:1!important;
+    letter-spacing:-.04em!important;
+  }
+
+  .exec-snapshot-grid > div > span:not(.metric-count){
+    display:block!important;
+    font-size:13.5px!important;
+    line-height:1.45!important;
+    max-width:22ch!important;
+  }
+}

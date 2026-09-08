@@ -737,17 +737,17 @@ footer .footer-row span:last-child{
   }
 }
 
-/* ========== DISTINCTIVE HOME TYPOGRAPHY ========== */
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap');
+/* ========== DISTINCTIVE HOME TYPOGRAPHY V2 ========== */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap');
 
 /*
-  Home typography system:
-  Display / major headings → Syne
-  Reading copy → Space Grotesk
-  Technical labels / metrics → existing IBM Plex Mono
+  More visible contrast:
+  Big display voice → Bricolage Grotesque
+  Reading/UI voice → Manrope
+  Technical labels → JetBrains Mono
 */
 
-/* Display voice */
+/* Major display headings */
 .executive-hero h1,
 .mediq-flagship h2,
 .home-mandate .section-title,
@@ -756,21 +756,22 @@ footer .footer-row span:last-child{
 .operating-summary h2,
 .cta h2,
 footer .footer-title{
-  font-family:"Syne",sans-serif!important;
+  font-family:"Bricolage Grotesque",sans-serif!important;
   font-weight:700!important;
-  letter-spacing:-.035em;
+  letter-spacing:-.045em!important;
+  font-variation-settings:"opsz" 72;
 }
 
-/* Keep smaller card headings calmer and highly readable */
+/* Stronger personality in section/card headings too */
 .mediq-map h3,
 .home-cases .case h3,
 .operating-summary article h3{
-  font-family:"Space Grotesk",sans-serif!important;
+  font-family:"Bricolage Grotesque",sans-serif!important;
   font-weight:600!important;
-  letter-spacing:-.018em;
+  letter-spacing:-.028em!important;
 }
 
-/* Reading voice */
+/* Main body copy */
 .executive-hero p,
 .exec-snapshot span,
 .mediq-story p,
@@ -784,19 +785,19 @@ footer .footer-title{
 .operating-summary article p,
 footer .footer-intro,
 footer .footer-row{
-  font-family:"Space Grotesk",sans-serif!important;
-  font-weight:400;
-  letter-spacing:-.006em;
+  font-family:"Manrope",sans-serif!important;
+  font-weight:400!important;
+  letter-spacing:-.012em!important;
 }
 
-/* Navigation/actions: Space Grotesk for a coherent modern UI */
+/* Buttons / navigation inside hero */
 .executive-hero .hero-actions .btn{
-  font-family:"Space Grotesk",sans-serif!important;
+  font-family:"Manrope",sans-serif!important;
   font-weight:700!important;
-  letter-spacing:.01em;
+  letter-spacing:.015em!important;
 }
 
-/* Preserve engineering/technical voice */
+/* Technical / systems voice */
 .executive-hero .kicker,
 .mediq-flagship .kicker,
 .home-mandate .kicker,
@@ -809,10 +810,15 @@ footer .footer-row{
 .home-cases .tags,
 .mediq-facts b,
 .photo-label{
-  font-family:"IBM Plex Mono",monospace!important;
+  font-family:"JetBrains Mono",monospace!important;
+  font-weight:600!important;
 }
 
-/* Syne needs slightly more breathing room on mobile */
+/* Make the hero difference obvious */
+.executive-hero h1{
+  line-height:.98!important;
+}
+
 @media(max-width:760px){
   .executive-hero h1,
   .mediq-flagship h2,
@@ -822,7 +828,7 @@ footer .footer-row{
   .operating-summary h2,
   .cta h2,
   footer .footer-title{
-    letter-spacing:-.025em;
+    letter-spacing:-.035em!important;
   }
 
   .executive-hero p,
@@ -830,6 +836,6 @@ footer .footer-row{
   .mandate-copy p,
   .home-cases .case p,
   .operating-summary article p{
-    line-height:1.62;
+    line-height:1.64!important;
   }
 }

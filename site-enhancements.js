@@ -35,7 +35,9 @@
   /* Two newly confirmed Ministry of Health projects.
      Added at runtime to preserve the current projects.html structure. */
   const appendConfirmedProject = ({ index, type, title, meta, description, image, imageAlt }) => {
-    if (projectGrid.querySelector(`.project-index[data-added-index="${index}"]`)) return;
+    const alreadyExists = [...projectGrid.querySelectorAll('.project-index')]
+      .some(el => el.textContent.trim() === index);
+    if (alreadyExists) return;
 
     const article = document.createElement('article');
     article.className = 'project-card';
@@ -90,14 +92,21 @@
     imageAlt: 'Doctor using a laptop with medical books — visual for the Ministry of Health Doctors Digital Library'
   });
 
-  const cards = [...projectGrid.querySelectorAll('.project-card')];
-
-  /* Keep a stable source identity for every project. All content/image mappings
-     use this source index; display numbering is handled separately. */
-  cards.forEach(card => {
+  /* Defensive cleanup: each historical project number may exist only once.
+     This also prevents duplicate runtime cards if the page already contains 87/88. */
+  const seenSourceIndexes = new Set();
+  [...projectGrid.querySelectorAll('.project-card')].forEach(card => {
     const sourceIndex = card.querySelector('.project-index')?.textContent.trim();
-    if (sourceIndex) card.dataset.sourceIndex = sourceIndex;
+    if (!sourceIndex) return;
+    if (seenSourceIndexes.has(sourceIndex)) {
+      card.remove();
+      return;
+    }
+    seenSourceIndexes.add(sourceIndex);
+    card.dataset.sourceIndex = sourceIndex;
   });
+
+  const cards = [...projectGrid.querySelectorAll('.project-card')];
 
   /* User-approved project images only. */
   const approvedImages = {
@@ -361,11 +370,11 @@
       technologies: [],
       role: 'National web / enterprise procurement and medical-supply ecosystem'
     },
-    '02': {
+    '17': {
       technologies: ['Android', 'Offline synchronization', 'Barcode / QR scanning', 'PIN / OTP approvals'],
       role: 'Official mobile operational companion to the MedIQ ecosystem'
     },
-    '10': {
+    '09': {
       technologies: ['Microsoft Dynamics 365 ERP'],
       role: 'Enterprise systems integration / cross-system process continuity'
     },
@@ -419,7 +428,7 @@
     const type = card.querySelector('.type-chip')?.textContent.trim() || card.dataset.type || '';
     const image = card.querySelector('.project-visual img');
     const publicLink = card.querySelector('.public-project-link, .project-link[href]');
-    const confirmed = confirmedProjectDetails[index] || {};
+    const confirmed = confirmedProjectDetails[card.dataset.sourceIndex] || {};
     return {
       index, org, title, meta, description, type,
       imageSrc: image?.getAttribute('src') || '',
@@ -542,6 +551,34 @@
     lastProjectTrigger?.focus?.();
   });
 
+  const renumberVisibleProjects = () => {
+    const visibleCards = [...projectGrid.querySelectorAll('.project-card')]
+      .filter(card => !card.hidden);
+
+    visibleCards.forEach((card, position) => {
+      const indexEl = card.querySelector('.project-index');
+      if (indexEl) indexEl.textContent = String(position + 1).padStart(2, '0');
+    });
+  };
+
+  /* Filtering changes the native hidden attribute in root-candidate-v4.js.
+     Observe those changes so numbering always remains visually sequential. */
+  let renumberFrame = 0;
+  const scheduleVisibleRenumber = () => {
+    cancelAnimationFrame(renumberFrame);
+    renumberFrame = requestAnimationFrame(renumberVisibleProjects);
+  };
+
+  const projectVisibilityObserver = new MutationObserver(mutations => {
+    if (mutations.some(m => m.type === 'attributes' && m.attributeName === 'hidden')) {
+      scheduleVisibleRenumber();
+    }
+  });
+
+  [...projectGrid.querySelectorAll('.project-card')].forEach(card => {
+    projectVisibilityObserver.observe(card, { attributes: true, attributeFilter: ['hidden'] });
+  });
+
   const refreshProjectTabCounts = () => {
     const currentCards = [...projectGrid.querySelectorAll('.project-card')];
     document.querySelectorAll('.catalog-tab[data-type]').forEach(tab => {
@@ -561,5 +598,6 @@
 
   refreshProjectTabCounts();
   window.refreshProjectCatalog?.();
+  scheduleVisibleRenumber();
 
 })();

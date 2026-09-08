@@ -92,6 +92,13 @@
 
   const cards = [...projectGrid.querySelectorAll('.project-card')];
 
+  /* Keep a stable source identity for every project. All content/image mappings
+     use this source index; display numbering is handled separately. */
+  cards.forEach(card => {
+    const sourceIndex = card.querySelector('.project-index')?.textContent.trim();
+    if (sourceIndex) card.dataset.sourceIndex = sourceIndex;
+  });
+
   /* User-approved project images only. */
   const approvedImages = {
     '01': 'project-images/medIQ.jpeg',
@@ -127,7 +134,7 @@
   };
 
   cards.forEach(card => {
-    const index = card.querySelector('.project-index')?.textContent.trim();
+    const index = card.dataset.sourceIndex;
     if (!index) return;
 
     if (index === '83') {
@@ -312,25 +319,38 @@
 
 
 
-  /* Final catalogue order:
-     01 = MedIQ National Ecosystem
-     02 = MedIQ Mobile App
-     then the remaining projects continue sequentially. */
-  const mobileCardForReorder = cards.find(
-    card => card.querySelector('.project-index')?.textContent.trim() === '17'
-  );
+  /* Final catalogue order is deterministic:
+     01 = MedIQ National Ecosystem (source 01)
+     02 = MedIQ Mobile App (source 17)
+     03..17 = former source 02..16
+     18..88 keep their historical order. */
+  const orderedCards = [...cards].sort((a, b) => {
+    const sourceA = Number(a.dataset.sourceIndex || 999);
+    const sourceB = Number(b.dataset.sourceIndex || 999);
 
+    const rank = source => {
+      if (source === 1) return 1;
+      if (source === 17) return 2;
+      if (source >= 2 && source <= 16) return source + 1;
+      return source;
+    };
+
+    return rank(sourceA) - rank(sourceB);
+  });
+
+  orderedCards.forEach(card => projectGrid.appendChild(card));
+
+  const mobileCardForReorder = orderedCards.find(card => card.dataset.sourceIndex === '17');
   if (mobileCardForReorder) {
-    const firstCard = projectGrid.querySelector('.project-card');
-    if (firstCard) firstCard.insertAdjacentElement('afterend', mobileCardForReorder);
+    mobileCardForReorder.dataset.featured = 'true';
+    mobileCardForReorder.dataset.priority = '2';
   }
 
-  [...projectGrid.querySelectorAll('.project-card')].forEach((card, position) => {
+  orderedCards.forEach((card, position) => {
     const indexEl = card.querySelector('.project-index');
     if (!indexEl) return;
     const newIndex = String(position + 1).padStart(2, '0');
     indexEl.textContent = newIndex;
-    indexEl.removeAttribute('data-added-index');
     card.dataset.catalogIndex = newIndex;
   });
 

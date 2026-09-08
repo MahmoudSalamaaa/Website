@@ -815,10 +815,11 @@ footer .footer-intro{
   }
 }
 
-/* ========== HOME NEUTON BODY TEXT TEST ========== */
-@import url('https://fonts.googleapis.com/css2?family=Neuton:wght@400;700&display=swap');
+/* ========== EXECUTIVE TYPOGRAPHY SYSTEM TEST ========== */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Josefin+Sans:wght@600;700&family=Manrope:wght@600;700;800&display=swap');
 
-/* Neuton for readable/narrative text only */
+/* BODY — clean, highly readable screen typography */
+body.home-page,
 .executive-hero .hero-copy > p,
 .exec-snapshot-grid > div > span:not(.metric-count),
 .mediq-story > p,
@@ -832,69 +833,101 @@ footer .footer-intro{
 .operating-summary article > p,
 footer .footer-intro,
 footer .footer-row{
-  font-family:"Neuton",Georgia,serif!important;
-  font-weight:400!important;
-  letter-spacing:.005em!important;
+  font-family:"DM Sans",Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
 }
 
-/* Neuton is compact, so give narrative copy enough presence */
+/* HEADLINES — executive, contemporary, slightly more character than Inter */
+.executive-hero .hero-name,
+.executive-hero h1,
+.section-title,
+.mediq-flagship h2,
+.home-mandate h2,
+.home-cases h2,
+.home-cases .case h3,
+.operating-summary h2,
+.operating-summary article h3,
+footer .footer-title{
+  font-family:"Manrope",Inter,sans-serif!important;
+  letter-spacing:-.035em!important;
+}
+
+.executive-hero h1,
+.mediq-flagship h2,
+.home-mandate h2,
+.home-cases h2,
+.operating-summary h2,
+footer .footer-title{
+  font-weight:800!important;
+}
+
+.home-cases .case h3,
+.operating-summary article h3,
+.executive-hero .hero-name{
+  font-weight:700!important;
+}
+
+/* ACCENT — distinctive labels without compromising paragraph readability */
+.executive-hero .kicker,
+.mediq-flagship .kicker,
+.home-mandate .kicker,
+.home-cases .kicker,
+.recognition-strip .kicker,
+.operating-summary .kicker,
+.cta .kicker,
+.photo-label{
+  font-family:"Josefin Sans",sans-serif!important;
+  font-weight:700!important;
+  letter-spacing:.095em!important;
+  text-transform:uppercase;
+}
+
+/* TECHNICAL — preserve the engineering/data language */
+.exec-snapshot .metric-count,
+.exec-snapshot strong,
+.mediq-facts b,
+.home-cases .case small{
+  font-family:"IBM Plex Mono",monospace!important;
+}
+
+/* Body sizing tuned for DM Sans */
 .executive-hero .hero-copy > p{
-  font-size:19px!important;
-  line-height:1.52!important;
+  font-size:17px!important;
+  line-height:1.68!important;
+  font-weight:400!important;
+  letter-spacing:-.008em!important;
 }
 
 .mediq-story > p,
 .mandate-copy > p,
 .operating-summary .signature-head > p{
-  font-size:18px!important;
-  line-height:1.55!important;
+  font-size:15.5px!important;
+  line-height:1.72!important;
 }
 
 .home-cases .case p,
 .operating-summary article > p{
-  font-size:16.5px!important;
-  line-height:1.55!important;
+  line-height:1.65!important;
 }
 
-/* Supporting text stays compact */
-.exec-snapshot-grid > div > span:not(.metric-count),
-.mediq-facts span,
-.mediq-node span,
-.recognition-strip span{
-  font-size:15.5px!important;
-  line-height:1.48!important;
-}
-
-/* Preserve existing headline / technical hierarchy */
-.executive-hero h1,
-.section-title,
-.mediq-flagship h2,
-.home-cases h2,
-.operating-summary h2,
-footer .footer-title,
-.btn,
-.kicker,
-.metric-count,
-.exec-snapshot strong,
-.photo-label{
-  font-family:inherit;
+/* Keep footer identity strong against the dark background */
+footer .footer-intro{
+  color:rgba(255,255,255,.96)!important;
+  font-weight:600!important;
 }
 
 @media(max-width:760px){
   .executive-hero .hero-copy > p{
-    font-size:18px!important;
-    line-height:1.52!important;
-  }
-
-  .mediq-story > p,
-  .mandate-copy > p,
-  .operating-summary .signature-head > p{
-    font-size:17px!important;
-    line-height:1.55!important;
-  }
-
-  .home-cases .case p,
-  .operating-summary article > p{
     font-size:16px!important;
+    line-height:1.66!important;
+  }
+
+  .executive-hero .kicker,
+  .mediq-flagship .kicker,
+  .home-mandate .kicker,
+  .home-cases .kicker,
+  .recognition-strip .kicker,
+  .operating-summary .kicker,
+  .cta .kicker{
+    letter-spacing:.08em!important;
   }
 }

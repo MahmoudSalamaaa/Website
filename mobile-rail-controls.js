@@ -34,7 +34,7 @@
       .v5-case{background:var(--v5-bg);border:1px solid var(--v5-border);border-radius:18px;padding:22px;box-shadow:0 8px 24px rgba(15,23,42,.04)}
       .v5-case small{display:block;margin-bottom:10px;font:800 9px/1.3 var(--mono,monospace);letter-spacing:.04em;color:var(--v5-accent)}
       .v5-case h3{margin:0 0 14px;font-size:clamp(20px,2vw,26px)}.v5-case dl{margin:0}.v5-case dt{margin-top:12px;font:800 9px/1.2 var(--mono,monospace);text-transform:uppercase;letter-spacing:.04em;color:#475569}.v5-case dd{margin:5px 0 0;color:var(--v5-text);font-size:13px;line-height:1.62}
-      .v5-career-actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px;margin-top:16px}.v5-career-actions a{text-decoration:none}.v5-career-actions .v5-secondary{display:inline-flex;align-items:center;gap:6px;min-height:32px;padding:0;border:0;background:transparent;color:#334155;font:800 9px/1.2 var(--mono,monospace);letter-spacing:.02em}.v5-career-actions .v5-secondary:hover{color:#0f172a;text-decoration:underline;text-underline-offset:4px}@media(max-width:760px){.executive-hero .v5-career-actions{order:7!important;width:100%!important;gap:14px;margin-top:14px!important;justify-content:flex-start}.v5-career-actions .v5-secondary{font-size:8px;min-height:30px}}
+      .v5-card-footer-link{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font:800 9px/1.25 var(--mono,monospace);letter-spacing:.035em;text-transform:uppercase;color:inherit;opacity:.82;transition:opacity .18s ease,text-decoration-color .18s ease}.v5-card-footer-link:hover{opacity:1;text-decoration:underline;text-underline-offset:4px}.v5-card-footer-link::after{content:'↗';font-size:11px}.v5-card-footer-wrap{display:flex;align-items:center;margin-top:10px}@media(max-width:760px){.v5-card-footer-wrap{margin-top:12px}.v5-card-footer-link{font-size:8px;min-height:30px}}
       .project-card{box-shadow:0 4px 14px rgba(15,23,42,.04)!important}.project-card p{font-size:13px!important}.visual-note{border-radius:8px!important}.audit-note{display:none!important}
       html,body{max-width:100%;overflow-x:clip}img{max-width:100%}
       @media(max-width:980px){.v5-case-grid{grid-template-columns:1fr}.v5-case-head{grid-template-columns:1fr;gap:14px}}
@@ -171,28 +171,27 @@
   ensureCareerMetric();
   normalizeProjectLanguage();
 
-  /* Career CTAs: secondary links belong at the end of the hero copy,
-     after the primary portfolio/project actions — never above the identity. */
-  const existingCareerActions = document.querySelector('.v5-career-actions');
-  const homeHeroCopy = document.querySelector('.executive-hero .hero-copy, .hero .hero-copy');
-  const contactTarget = document.querySelector('main .contact-primary-actions, main .contact-actions, main .cta-grid');
+  /* Digital business card: keep the hero focused on primary portfolio actions.
+     One secondary contact hub link is added to the footer across portfolio pages. */
+  document.querySelectorAll('.v5-career-actions').forEach((node) => node.remove());
 
-  if (isHome && homeHeroCopy) {
-    const wrap = existingCareerActions || document.createElement('div');
-    wrap.className = 'v5-career-actions';
-    if (!existingCareerActions) {
-      wrap.innerHTML = `
-        <a class="v5-secondary" href="CVSalama.pdf" target="_blank" rel="noopener">Executive CV ↗</a>
-        <a class="v5-secondary" href="https://www.linkedin.com/in/mahmoud-salama-30249b34" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>`;
+  if (!pathName.endsWith('/card.html')) {
+    const footer = document.querySelector('footer');
+    if (footer && !footer.querySelector('[data-v5-card-link]')) {
+      const link = document.createElement('a');
+      link.className = 'v5-card-footer-link';
+      link.dataset.v5CardLink = 'true';
+      link.href = 'card.html';
+      link.textContent = 'Digital Business Card';
+      link.setAttribute('aria-label', 'Open Mahmoud Salama digital business card');
+
+      const wrap = document.createElement('div');
+      wrap.className = 'v5-card-footer-wrap';
+      wrap.appendChild(link);
+
+      const preferredTarget = footer.querySelector('.footer-links, .footer-nav, .footer-actions, .footer-meta, .wrap, .container, .footer-shell');
+      (preferredTarget || footer).appendChild(wrap);
     }
-    homeHeroCopy.appendChild(wrap);
-  } else if (!isHome && contactTarget && !existingCareerActions) {
-    const wrap = document.createElement('div');
-    wrap.className = 'v5-career-actions';
-    wrap.innerHTML = `
-      <a class="v5-secondary" href="CVSalama.pdf" target="_blank" rel="noopener">Executive CV ↗</a>
-      <a class="v5-secondary" href="https://www.linkedin.com/in/mahmoud-salama-30249b34" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>`;
-    contactTarget.insertAdjacentElement('afterend', wrap);
   }
 
   /* Person structured data. */

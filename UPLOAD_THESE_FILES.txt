@@ -1,0 +1,18 @@
+Mahmoud Salama Portfolio — V5 Metric Consistency
+
+UPLOAD / REPLACE THESE TWO FILES IN THE WEBSITE ROOT:
+1) mobile-rail-controls.js
+2) snapshot-metrics.js
+
+No Python. No HTML edits. No extra CSS. No publish was performed.
+
+Number policy:
+- 200+ = total Career Projects & Engagements across healthcare, government & enterprise.
+- 150+ = Keyframe-period major & mid-sized engagements only.
+- 88 = selected/documented projects currently displayed in the portfolio (86 static + projects 87 and 88 added by site-enhancements.js).
+
+The updated mobile-rail-controls.js adds the 200+ career metric to Experience and Portfolio at runtime and normalizes generic 200+ wording.
+The updated snapshot-metrics.js keeps the Home executive snapshot at 200+ Career Projects & Engagements.
+
+Projects page stale 85+ wording is normalized to 88 selected projects at runtime.
+No projects are deleted.

@@ -35,10 +35,12 @@
       .v5-case small{display:block;margin-bottom:10px;font:800 9px/1.3 var(--mono,monospace);letter-spacing:.04em;color:var(--v5-accent)}
       .v5-case h3{margin:0 0 14px;font-size:clamp(20px,2vw,26px)}.v5-case dl{margin:0}.v5-case dt{margin-top:12px;font:800 9px/1.2 var(--mono,monospace);text-transform:uppercase;letter-spacing:.04em;color:#475569}.v5-case dd{margin:5px 0 0;color:var(--v5-text);font-size:13px;line-height:1.62}
       .v5-card-footer-link{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font:800 9px/1.25 var(--mono,monospace);letter-spacing:.035em;text-transform:uppercase;color:inherit;opacity:.82;transition:opacity .18s ease,text-decoration-color .18s ease}.v5-card-footer-link:hover{opacity:1;text-decoration:underline;text-underline-offset:4px}.v5-card-footer-link::after{content:'↗';font-size:11px}.v5-card-footer-wrap{display:flex;align-items:center;margin-top:10px}@media(max-width:760px){.v5-card-footer-wrap{margin-top:12px}.v5-card-footer-link{font-size:8px;min-height:30px}}
+
+      .v5-toolkit-section{padding:68px 0;background:#fff}.v5-toolkit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:24px}.v5-toolkit-grid article{padding:20px;border:1px solid var(--v5-border);border-radius:16px;background:var(--v5-soft)}.v5-toolkit-grid small{display:block;margin-bottom:13px;font:800 9px/1.2 var(--mono,monospace);letter-spacing:.05em;color:var(--v5-accent)}.v5-toolkit-tags{display:flex;flex-wrap:wrap;gap:7px}.v5-toolkit-tags span{padding:8px 10px;border:1px solid #dbe3ea;border-radius:999px;background:#fff;color:#334155;font:750 9px/1.15 var(--mono,monospace)}
       .project-card{box-shadow:0 4px 14px rgba(15,23,42,.04)!important}.project-card p{font-size:13px!important}.visual-note{border-radius:8px!important}.audit-note{display:none!important}
       html,body{max-width:100%;overflow-x:clip}img{max-width:100%}
       @media(max-width:980px){.v5-case-grid{grid-template-columns:1fr}.v5-case-head{grid-template-columns:1fr;gap:14px}}
-      @media(max-width:760px){.v5-case-studies{padding:48px 0}.v5-case{padding:18px}.recognition-strip{padding-top:34px!important;padding-bottom:34px!important}}
+      @media(max-width:760px){.v5-case-studies{padding:48px 0}.v5-case{padding:18px}.recognition-strip{padding-top:34px!important;padding-bottom:34px!important}.v5-toolkit-section{padding:48px 0}.v5-toolkit-grid{grid-template-columns:1fr}.v5-toolkit-tags span{font-size:8px}}
     `;
     document.head.appendChild(style);
   }
@@ -300,10 +302,81 @@
   };
 
   syncP1Consistency();
+  syncP2Content();
   window.addEventListener('DOMContentLoaded', () => {
     syncP1Consistency();
+    syncP2Content();
     setTimeout(syncProjectDirectoryCounts, 0);
   }, { once: true });
+
+
+  /* P2 content cleanup: improve capability taxonomy and claim precision. */
+  const syncP2Content = () => {
+    const on = (name) => pathName.endsWith('/' + name);
+
+    if (on('technologies.html')) {
+      const categories = [...document.querySelectorAll('.tech-category')];
+      const findCategory = (label) => categories.find((card) =>
+        (card.querySelector('small')?.textContent || '').trim().toUpperCase() === label.toUpperCase()
+      );
+
+      const architectureCard = findCategory('ENTERPRISE & SOLUTION ARCHITECTURE');
+      const deliveryCard = findCategory('DELIVERY, TESTING & OPERATIONS');
+      const healthcareCard = findCategory('HEALTHCARE INTEROPERABILITY');
+
+      // Keep methodology/delivery tools in the delivery domain rather than architecture.
+      if (architectureCard && deliveryCard) {
+        const targetCloud = deliveryCard.querySelector('.tag-cloud');
+        ['Waterfall', 'Jira'].forEach((label) => {
+          const tag = [...architectureCard.querySelectorAll('.tag-cloud span')]
+            .find((span) => (span.textContent || '').trim() === label);
+          if (tag && targetCloud) targetCloud.appendChild(tag);
+        });
+      }
+
+      // Keep healthcare interoperability wording evidence-safe.
+      if (healthcareCard) {
+        [...healthcareCard.querySelectorAll('.tag-cloud span')].forEach((span) => {
+          if ((span.textContent || '').trim() === 'HL7') span.textContent = 'HL7 Context / Familiarity';
+        });
+      }
+
+      // Add a concise toolkit section for important technologies that were previously underrepresented.
+      if (!document.querySelector('[data-v5-toolkit]')) {
+        const section = document.createElement('section');
+        section.className = 'band v5-toolkit-section';
+        section.dataset.v5Toolkit = 'true';
+        section.innerHTML = `
+          <div class="wrap">
+            <div class="section-head">
+              <div><div class="kicker">ENGINEERING &amp; PLATFORM TOOLKIT</div><h2 class="section-title">Hands-on foundations that still inform architecture and executive decisions.</h2></div>
+              <p class="section-copy">A focused view of the engineering, data and delivery tools used across my career. This complements the capability map without turning the page into a keyword inventory.</p>
+            </div>
+            <div class="v5-toolkit-grid">
+              <article><small>APPLICATION ENGINEERING</small><div class="v5-toolkit-tags"><span>C#</span><span>.NET / ASP.NET</span><span>Entity Framework</span><span>LINQ</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>GraphQL</span></div></article>
+              <article><small>DATA &amp; ANALYTICS</small><div class="v5-toolkit-tags"><span>SQL Server</span><span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span><span>Redis</span><span>Power BI</span><span>Apache Superset</span></div></article>
+              <article><small>DELIVERY &amp; PLATFORM</small><div class="v5-toolkit-tags"><span>Docker</span><span>Kubernetes</span><span>IIS</span><span>Nginx</span><span>Git / GitHub</span><span>Jenkins</span><span>CI/CD</span><span>GitOps</span></div></article>
+              <article><small>ENTERPRISE UI &amp; REPORTING</small><div class="v5-toolkit-tags"><span>Kendo UI</span><span>Telerik UI</span><span>Syncfusion</span><span>Crystal Reports</span><span>Power BI Report Server</span></div></article>
+            </div>
+          </div>`;
+        const anchor = document.querySelector('.technology-depth') || document.querySelector('.technology-categories');
+        if (anchor) anchor.insertAdjacentElement('afterend', section);
+      }
+    }
+
+    if (on('architecture.html')) {
+      // Align architecture wording with the same evidence-safe HL7 positioning used on Technologies.
+      document.querySelectorAll('.healthcare-signals span').forEach((span) => {
+        if ((span.textContent || '').trim() === 'HL7') span.textContent = 'HL7 Context / Familiarity';
+      });
+      document.querySelectorAll('.architecture-lens span, .healthcare-flow p, .healthcare-copy').forEach((el) => {
+        if (!el.textContent) return;
+        el.textContent = el.textContent
+          .replace(/\bHL7 context\b/gi, 'HL7 context / familiarity')
+          .replace(/\bHL7 familiarity\b/gi, 'HL7 context / familiarity');
+      });
+    }
+  };
 
   /* Person structured data. */
   if (!document.querySelector('script[data-v5-person-schema]')) {

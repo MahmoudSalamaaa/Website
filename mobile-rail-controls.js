@@ -194,6 +194,117 @@
     }
   }
 
+
+  /* P1 consistency pass: fix visible copy, navigation and metadata without adding new page-specific files. */
+  const syncP1Consistency = () => {
+    const on = (name) => pathName.endsWith('/' + name);
+
+    // Leadership content now lives inside Experience; remove unnecessary redirect hops everywhere.
+    document.querySelectorAll('a[href="leadership.html"]').forEach((a) => {
+      a.href = 'experience.html#leadership-model';
+      a.setAttribute('title', 'Leadership Model — Experience');
+    });
+
+    // Experience: correct wording and add an international-level explainer under the official title.
+    if (on('experience.html')) {
+      document.querySelectorAll('.experience-hero .kicker, .hero.experience-hero .kicker').forEach((el) => {
+        el.textContent = (el.textContent || '').replace(/→\s*EXECUTE\b/i, '→ EXECUTIVE');
+      });
+      const currentRole = document.querySelector('.timeline-item.current-role .timeline-content');
+      if (currentRole && !currentRole.querySelector('[data-v5-role-explainer]')) {
+        const h3 = currentRole.querySelector('h3');
+        if (h3) {
+          const note = document.createElement('p');
+          note.dataset.v5RoleExplainer = 'true';
+          note.style.margin = '6px 0 0';
+          note.style.color = '#64748b';
+          note.style.fontSize = '12px';
+          note.style.fontWeight = '700';
+          note.textContent = 'Executive technology function lead · Chief Technology & Digital Transformation scope';
+          h3.insertAdjacentElement('afterend', note);
+        }
+      }
+    }
+
+    // Portfolio: remove redundant “Over 18+”.
+    if (on('portfolio.html')) {
+      const intro = document.querySelector('.portfolio-intro');
+      if (intro) intro.textContent = (intro.textContent || '').replace(/^Over\s+18\+\s+years/i, 'Across 18+ years');
+    }
+
+    // Contact: raise the positioning to executive level while keeping Director/Head roles in scope.
+    if (on('contact.html')) {
+      const desc = document.querySelector('meta[name="description"]');
+      if (desc) desc.content = 'Contact Mahmoud Salama for executive technology leadership, CTO / Head of Technology, enterprise architecture, digital transformation and Director-level opportunities.';
+      const ogDesc = document.querySelector('meta[property="og:description"]');
+      if (ogDesc) ogDesc.content = 'Executive technology leadership, enterprise architecture and digital transformation opportunities across Egypt, the GCC and selected international environments.';
+      const intro = document.querySelector('.contact-hero-copy p');
+      if (intro) intro.textContent = 'I’m open to executive technology leadership, CTO / Head of Technology, enterprise architecture, digital transformation and selected Director-level opportunities across Egypt, the GCC, and international or remote environments.';
+      const focus = document.querySelector('.contact-availability strong');
+      if (focus) focus.textContent = 'Executive / CTO / Head of Technology roles';
+    }
+
+    // Governance: keep social metadata aligned with the actual page title and remove a redundant in-page CTA.
+    if (on('governance.html')) {
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      if (ogTitle) ogTitle.content = 'Governance & Recognition — Mahmoud Salama';
+      document.querySelectorAll('.section-action a[href="governance.html#recognition"]').forEach((a) => a.closest('.section-action')?.remove());
+    }
+
+    // Footer: complete the navigation and keep the Business Card as the single personal-links hub.
+    const footerNav = document.querySelector('footer .footer-nav');
+    if (footerNav) {
+      const ensureFooterLink = (href, label, beforeHref = null) => {
+        if (footerNav.querySelector(`a[href="${href}"]`)) return;
+        const a = document.createElement('a');
+        a.href = href;
+        a.textContent = label;
+        const before = beforeHref ? footerNav.querySelector(`a[href="${beforeHref}"]`) : null;
+        if (before) footerNav.insertBefore(a, before); else footerNav.appendChild(a);
+      };
+      ensureFooterLink('technologies.html', 'Technologies', 'experience.html');
+      ensureFooterLink('governance.html', 'Governance', 'governance.html#recognition');
+    }
+  };
+
+  const syncProjectDirectoryCounts = () => {
+    if (!pathName.endsWith('/projects.html')) return;
+    const cards = [...document.querySelectorAll('.project-grid .project-card')];
+    if (!cards.length) return;
+
+    // Truth lives in the rendered directory: after site-enhancements adds 87/88, recalculate each portfolio count.
+    const total = new Set(cards.map((c) => c.querySelector('.project-index')?.textContent.trim()).filter(Boolean)).size;
+    document.querySelectorAll('.catalog-tab[data-type]').forEach((tab) => {
+      const type = tab.dataset.type;
+      const count = tab.querySelector('span');
+      if (!count) return;
+      if (type === 'All') {
+        count.textContent = String(total || facts.portfolioProjects);
+        return;
+      }
+      if (type === 'Featured') {
+        count.textContent = String(cards.filter((c) => c.dataset.featured === 'true').length);
+        return;
+      }
+      count.textContent = String(cards.filter((c) => c.dataset.type === type).length);
+    });
+
+    const heroTitle = document.querySelector('.hero #page-title');
+    if (heroTitle) heroTitle.textContent = `${total || facts.portfolioProjects} selected projects. Five technology portfolios.`;
+    const heroLead = document.querySelector('.hero .lead');
+    if (heroLead) heroLead.textContent = `The directory contains ${total || facts.portfolioProjects} selected projects, from national platforms and enterprise integrations to operational systems and digital products. Each entry focuses on what was built, the environment around it and the contribution I made.`;
+    const sectionTitle = document.querySelector('.catalog-intro .section-title');
+    if (sectionTitle) sectionTitle.textContent = `${total || facts.portfolioProjects} selected projects across five clear portfolios.`;
+    const search = document.querySelector('#project-search');
+    if (search) search.placeholder = `Search ${total || facts.portfolioProjects} selected projects by system, organization, role or technology…`;
+  };
+
+  syncP1Consistency();
+  window.addEventListener('DOMContentLoaded', () => {
+    syncP1Consistency();
+    setTimeout(syncProjectDirectoryCounts, 0);
+  }, { once: true });
+
   /* Person structured data. */
   if (!document.querySelector('script[data-v5-person-schema]')) {
     const schema = {

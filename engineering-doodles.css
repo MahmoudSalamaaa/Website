@@ -1,0 +1,112 @@
+/* P29 — Engineering Doodles
+   Measured 5–8% decorative presence. CSS-only, pointer-safe, executive/technical rather than cartoonish. */
+:root{
+  --doodle-teal:rgba(20,184,201,.34);
+  --doodle-violet:rgba(139,92,246,.26);
+  --doodle-amber:rgba(245,158,11,.28);
+  --doodle-ink:rgba(71,85,105,.20);
+}
+
+/* Keep decorative layers out of interaction and text flow. */
+.executive-hero,.hero,.portfolio-hero,.mediq-flagship,.home-cases,.arch-map-section,.cta{position:relative;overflow:hidden}
+.executive-hero::after,.hero::after,.portfolio-hero::after,.home-cases::after,.arch-map-section::after,.cta::after{
+  pointer-events:none!important;
+  user-select:none!important;
+  position:absolute;
+  z-index:0;
+}
+.executive-hero>.wrap,.hero>.wrap,.portfolio-hero>.wrap,.home-cases>.wrap,.arch-map-section>.wrap,.cta>.wrap{position:relative;z-index:1}
+
+/* Hero: one restrained architecture-path sketch. */
+.executive-hero::after,.hero::after,.portfolio-hero::after{
+  content:"";
+  width:220px;height:150px;
+  right:clamp(18px,4vw,64px);bottom:18px;
+  opacity:.72;
+  background:
+    radial-gradient(circle at 15% 72%,transparent 0 7px,var(--doodle-teal) 7.5px 9px,transparent 9.5px),
+    radial-gradient(circle at 48% 33%,transparent 0 5px,var(--doodle-violet) 5.5px 7px,transparent 7.5px),
+    radial-gradient(circle at 84% 66%,transparent 0 6px,var(--doodle-amber) 6.5px 8px,transparent 8.5px),
+    linear-gradient(28deg,transparent 0 42%,var(--doodle-ink) 42.5% 43.3%,transparent 43.8% 100%),
+    linear-gradient(150deg,transparent 0 53%,var(--doodle-ink) 53.5% 54.2%,transparent 54.7% 100%);
+  transform:rotate(-4deg);
+}
+
+/* Home proof area: hand-drawn bracket / systems-note feel. */
+.home-cases::after{
+  content:"";
+  width:150px;height:112px;
+  left:clamp(12px,2.5vw,40px);top:34px;
+  opacity:.5;
+  border-left:2px solid var(--doodle-teal);
+  border-top:2px solid var(--doodle-violet);
+  border-radius:22px 0 0 0;
+  transform:rotate(-3deg);
+  box-shadow:-8px 10px 0 -7px var(--doodle-amber);
+}
+
+/* MedIQ gets tiny node cues without competing with its existing atmospheric layer. */
+.mediq-flagship::after{
+  content:"";position:absolute;pointer-events:none;z-index:0;
+  width:132px;height:94px;right:3vw;top:46px;opacity:.46;
+  background:
+    radial-gradient(circle at 14% 52%,var(--doodle-teal) 0 3px,transparent 3.5px),
+    radial-gradient(circle at 52% 20%,var(--doodle-violet) 0 3px,transparent 3.5px),
+    radial-gradient(circle at 86% 60%,var(--doodle-amber) 0 3px,transparent 3.5px),
+    linear-gradient(29deg,transparent 0 45%,var(--doodle-ink) 45.5% 46.5%,transparent 47% 100%),
+    linear-gradient(151deg,transparent 0 51%,var(--doodle-ink) 51.5% 52.5%,transparent 53% 100%);
+}
+
+/* Architecture: more room for engineering notation. */
+.arch-map-section::after{
+  content:"01  →  02  →  03";
+  right:clamp(16px,4vw,54px);top:26px;
+  font:700 9px/1.2 var(--mono,monospace);
+  letter-spacing:.14em;
+  color:rgba(71,85,105,.28);
+  transform:rotate(2deg);
+}
+.map-shell{position:relative}
+.map-shell::before{
+  content:"";position:absolute;pointer-events:none;
+  width:90px;height:90px;right:18px;bottom:18px;opacity:.42;
+  border:1.5px dashed var(--doodle-violet);border-radius:50%;
+  box-shadow:inset 0 0 0 14px transparent,0 0 0 10px rgba(20,184,201,.035);
+}
+.map-shell::after{
+  content:"↗";position:absolute;pointer-events:none;right:50px;bottom:49px;
+  font:700 21px/1 var(--mono,monospace);color:var(--doodle-teal);opacity:.52;transform:rotate(-8deg)
+}
+
+/* Selected cards: tiny technical corner marks, not full illustrations. */
+.case,.project-card,.featured-card,.architecture-card,.decision-card,.domain-card,.case-card{position:relative}
+.case:nth-child(odd)::after,.featured-card:nth-child(odd)::after,.architecture-card:nth-child(odd)::after,.case-card:nth-child(odd)::after{
+  content:"";position:absolute;pointer-events:none;right:12px;top:12px;width:20px;height:20px;opacity:.38;
+  border-top:1.5px solid var(--doodle-teal);border-right:1.5px solid var(--doodle-violet);border-radius:0 7px 0 0;
+}
+
+/* CTA: one loose underline-like stroke. */
+.cta::after{
+  content:"";width:120px;height:24px;left:8vw;bottom:10px;opacity:.4;
+  border-top:2px solid var(--doodle-amber);border-radius:50%;transform:rotate(-2deg)
+}
+
+/* Governance / Experience stay calmer: doodles are intentionally sparse there. */
+.governance-hero::after,.experience-hero::after{opacity:.35}
+
+@media(max-width:760px){
+  .executive-hero::after,.hero::after,.portfolio-hero::after{width:112px;height:76px;right:8px;bottom:8px;opacity:.32}
+  .home-cases::after{width:72px;height:52px;left:8px;top:18px;opacity:.25}
+  .mediq-flagship::after{width:76px;height:54px;right:4px;top:26px;opacity:.25}
+  .arch-map-section::after{display:none}
+  .map-shell::before,.map-shell::after{display:none}
+  .case:nth-child(odd)::after,.featured-card:nth-child(odd)::after,.architecture-card:nth-child(odd)::after,.case-card:nth-child(odd)::after{opacity:.22}
+  .cta::after{width:72px;opacity:.22}
+}
+@media(max-width:420px){
+  .executive-hero::after,.hero::after,.portfolio-hero::after{opacity:.18}
+  .home-cases::after,.mediq-flagship::after{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  .executive-hero::after,.hero::after,.portfolio-hero::after,.home-cases::after,.mediq-flagship::after,.arch-map-section::after,.cta::after{transform:none!important}
+}

@@ -1,0 +1,120 @@
+/* P24 — Home mobile UX only. Layout/rhythm/touch refinements; no palette or desktop changes. */
+@media (max-width: 960px){
+  .executive-hero{padding-top:34px!important;padding-bottom:42px!important}
+  .executive-hero .hero-grid{grid-template-columns:1fr!important;gap:28px!important;align-items:start!important}
+  .executive-hero .hero-copy{max-width:720px!important}
+  .executive-hero .hero-copy h1{max-width:13.5ch!important;margin-top:12px!important;margin-bottom:16px!important}
+  .executive-hero .hero-copy>p{max-width:62ch!important;margin-top:0!important}
+  .executive-hero .photo-card{width:min(100%,390px)!important;margin:0 auto!important;justify-self:center!important}
+  .executive-hero .photo-label{text-align:center!important}
+  .mobile-identity-peek{display:none!important}
+
+  .exec-snapshot{padding-top:0!important;padding-bottom:42px!important}
+  .exec-snapshot-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+  .exec-snapshot-grid>div{min-height:108px!important;padding:16px!important}
+
+  .mediq-flagship{padding-top:48px!important;padding-bottom:52px!important}
+  .mediq-flagship .mediq-grid{grid-template-columns:1fr!important;gap:30px!important}
+  .mediq-flagship .mediq-story>h2{max-width:18ch!important}
+  .mediq-flagship .mediq-facts{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+  .mediq-flagship .mediq-facts article{min-width:0!important;padding:14px!important}
+  .mediq-flagship .mediq-map{min-width:0!important}
+  .mediq-flagship .mediq-ecosystem{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+  .mediq-flagship .mediq-node{min-width:0!important;min-height:108px!important;padding:14px!important}
+
+  .home-mandate{padding-top:46px!important;padding-bottom:46px!important}
+  .mandate-grid{grid-template-columns:1fr!important;gap:20px!important;padding:24px!important}
+
+  .home-cases{padding-top:48px!important;padding-bottom:52px!important}
+  .home-cases .section-head{grid-template-columns:1fr!important;gap:12px!important;align-items:start!important}
+  .home-cases .case-grid.root-priority .case{min-width:0!important}
+
+  .recognition-strip{padding-top:42px!important;padding-bottom:42px!important}
+  .recognition-strip-inner{grid-template-columns:1fr!important;gap:22px!important}
+
+  .signature.operating-summary{padding-top:48px!important;padding-bottom:52px!important}
+  .signature-head{grid-template-columns:1fr!important;gap:12px!important}
+  .operating-steps{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+  .operating-steps article{min-width:0!important;padding:18px!important}
+
+  .cta{padding-top:42px!important;padding-bottom:42px!important}
+  .cta-grid{grid-template-columns:1fr!important;gap:22px!important;align-items:start!important}
+  .cta-grid>.btn{width:fit-content!important}
+}
+
+@media (max-width: 760px){
+  .wrap{padding-left:20px!important;padding-right:20px!important}
+  .executive-hero{padding-top:28px!important;padding-bottom:34px!important}
+  .executive-hero .hero-grid{gap:22px!important}
+  .executive-hero .hero-name{margin-bottom:8px!important}
+  .executive-hero .kicker{max-width:34ch!important;line-height:1.5!important}
+  .executive-hero .hero-copy h1{font-size:clamp(34px,10.5vw,48px)!important;line-height:1.01!important;letter-spacing:-.045em!important;max-width:12.5ch!important}
+  .executive-hero .hero-copy>p{font-size:15.5px!important;line-height:1.68!important}
+  .hero-actions{display:grid!important;grid-template-columns:1fr 1fr!important;gap:10px!important;width:100%!important;margin-top:20px!important}
+  .hero-actions .btn{width:100%!important;min-width:0!important;justify-content:center!important;text-align:center!important;padding-left:12px!important;padding-right:12px!important;white-space:normal!important}
+  .executive-hero .photo-card{width:min(86vw,330px)!important}
+
+  .exec-snapshot{padding-bottom:36px!important}
+  .exec-snapshot-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+  .exec-snapshot-grid>div{min-height:100px!important;padding:14px!important}
+  .exec-snapshot-grid strong{font-size:clamp(29px,9vw,42px)!important;line-height:1!important}
+  .exec-snapshot-grid span{font-size:11.5px!important;line-height:1.4!important;margin-top:8px!important}
+
+  .mediq-flagship{padding-top:42px!important;padding-bottom:46px!important}
+  .mediq-flagship .mediq-grid{gap:24px!important}
+  .mediq-flagship .mediq-story>h2{font-size:clamp(29px,8vw,38px)!important;line-height:1.08!important;max-width:none!important}
+  .mediq-flagship .mediq-story>p{font-size:14.5px!important;line-height:1.68!important}
+  .mediq-flagship .mediq-facts{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .mediq-flagship .mediq-facts article{min-height:88px!important;padding:12px!important}
+  .mediq-flagship .mediq-facts b{font-size:20px!important}
+  .mediq-flagship .award-badge{align-items:flex-start!important;gap:10px!important;padding:14px!important}
+  .mediq-flagship .mediq-map h3{font-size:20px!important;line-height:1.2!important}
+  .mediq-flagship .mediq-ecosystem{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important}
+  .mediq-flagship .mediq-node{min-height:100px!important;padding:12px!important}
+  .mediq-flagship .mediq-node b{font-size:12px!important;line-height:1.25!important}
+  .mediq-flagship .mediq-node span{font-size:10.5px!important;line-height:1.4!important}
+
+  .home-mandate{padding-top:40px!important;padding-bottom:40px!important}
+  .mandate-grid{padding:20px!important;border-radius:18px!important}
+  .mandate-grid .section-title{font-size:clamp(28px,8vw,38px)!important;line-height:1.08!important}
+  .mandate-copy p{font-size:14px!important;line-height:1.65!important}
+  .mandate-chips{gap:7px!important}
+  .mandate-chips span{font-size:10px!important;padding:8px 10px!important}
+
+  .home-cases{padding-top:42px!important;padding-bottom:46px!important}
+  .home-cases .section-head h2{font-size:clamp(28px,8.2vw,38px)!important;line-height:1.07!important}
+  .home-cases .section-head>p{font-size:14px!important;line-height:1.6!important}
+  .home-cases .case-grid.root-priority .case{padding:17px 14px 17px 16px!important}
+  .home-cases .case h3{font-size:17px!important;line-height:1.22!important}
+  .home-cases .case p{font-size:13px!important;line-height:1.55!important}
+  .home-cases .case .tags{gap:5px!important}
+  .home-cases .case .tags span{font-size:9.5px!important;white-space:normal!important}
+
+  .recognition-strip{padding-top:38px!important;padding-bottom:38px!important}
+  .recognition-strip-copy h2{font-size:clamp(27px,8vw,36px)!important;line-height:1.08!important;max-width:17ch!important}
+  .recognition-strip-items{grid-template-columns:1fr!important}
+  .recognition-strip-items article{padding:17px 0!important}
+
+  .signature.operating-summary{padding-top:42px!important;padding-bottom:46px!important}
+  .signature-head h2{font-size:clamp(28px,8vw,38px)!important;line-height:1.08!important}
+  .signature-head>p{font-size:14px!important;line-height:1.6!important}
+  .operating-steps{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+  .operating-steps article{padding:15px!important}
+  .operating-steps h3{font-size:16px!important;line-height:1.2!important}
+  .operating-steps p{font-size:12px!important;line-height:1.5!important}
+
+  .cta{padding-top:36px!important;padding-bottom:38px!important}
+  .cta h2{font-size:clamp(28px,8.5vw,40px)!important;line-height:1.05!important}
+  .cta-grid>.btn{width:100%!important;justify-content:center!important;text-align:center!important}
+}
+
+@media (max-width: 420px){
+  .wrap{padding-left:16px!important;padding-right:16px!important}
+  .hero-actions{grid-template-columns:1fr!important}
+  .exec-snapshot-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .exec-snapshot-grid>div{min-height:94px!important;padding:12px!important}
+  .exec-snapshot-grid strong{font-size:clamp(27px,8.5vw,36px)!important}
+  .mediq-flagship .mediq-ecosystem{grid-template-columns:1fr 1fr!important}
+  .mediq-flagship .mediq-node{min-height:94px!important;padding:10px!important}
+  .operating-steps{grid-template-columns:1fr!important}
+}

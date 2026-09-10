@@ -1,0 +1,49 @@
+/* P26 — Footer balance only. Preserves existing palette and visual identity. */
+.final-footer{
+  padding-top:clamp(28px,4vw,48px)!important;
+  padding-bottom:clamp(20px,3vw,34px)!important;
+}
+.footer-title{
+  max-width:820px!important;
+  margin-bottom:10px!important;
+  font-size:clamp(25px,3.2vw,42px)!important;
+  line-height:1.05!important;
+  letter-spacing:-.035em!important;
+}
+.footer-intro{
+  max-width:760px!important;
+  margin:0 0 18px!important;
+  font-size:clamp(13px,1.3vw,15px)!important;
+  line-height:1.55!important;
+}
+.footer-nav{
+  margin-top:0!important;
+  padding-top:16px!important;
+  gap:8px 16px!important;
+}
+.footer-nav a{
+  font-size:12px!important;
+  line-height:1.25!important;
+}
+.v5-card-footer-wrap{margin-top:14px!important}
+.v5-card-footer-link{min-height:40px!important;padding:9px 14px!important}
+.footer-row{
+  margin-top:16px!important;
+  padding-top:14px!important;
+  font-size:11px!important;
+  line-height:1.4!important;
+}
+@media(max-width:760px){
+  .final-footer{padding-top:24px!important;padding-bottom:18px!important}
+  .footer-title{font-size:clamp(22px,7vw,29px)!important;line-height:1.06!important;margin-bottom:8px!important}
+  .footer-intro{font-size:12.5px!important;line-height:1.5!important;margin-bottom:14px!important}
+  .footer-nav{padding-top:12px!important;gap:7px 12px!important}
+  .footer-nav a{font-size:11px!important;padding:3px 0!important}
+  .v5-card-footer-wrap{margin-top:10px!important}
+  .v5-card-footer-link{min-height:38px!important;padding:8px 12px!important;font-size:11px!important}
+  .footer-row{margin-top:12px!important;padding-top:10px!important;gap:4px!important;font-size:10px!important}
+}
+@media(max-width:390px){
+  .footer-title{font-size:22px!important}
+  .footer-nav{gap:6px 10px!important}
+}

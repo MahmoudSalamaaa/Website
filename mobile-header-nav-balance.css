@@ -1,0 +1,132 @@
+/* P27 — Mobile header/navigation balance.
+   Mobile/tablet only. Preserves the existing palette, typography and visual identity. */
+
+@media (max-width: 900px){
+  nav[aria-label="Primary navigation"]{
+    position:sticky!important;
+    top:0!important;
+    z-index:1000!important;
+    backdrop-filter:blur(16px)!important;
+    -webkit-backdrop-filter:blur(16px)!important;
+  }
+  .navbar{
+    min-height:62px!important;
+    padding-top:8px!important;
+    padding-bottom:8px!important;
+    gap:12px!important;
+  }
+  .navbar .mark{
+    min-width:0!important;
+    gap:9px!important;
+  }
+  .navbar .mark img{
+    width:38px!important;
+    height:auto!important;
+    flex:0 0 auto!important;
+  }
+  .navbar .mark span{
+    font-size:11px!important;
+    line-height:1.1!important;
+    letter-spacing:.055em!important;
+    white-space:nowrap!important;
+  }
+  .desktop-links,.desktop-contact{display:none!important}
+  .mobile-nav{display:block!important;margin-left:auto!important;position:relative!important}
+  .mobile-nav>summary{
+    min-height:44px!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    padding:0 14px!important;
+    border-radius:999px!important;
+    cursor:pointer!important;
+    user-select:none!important;
+    -webkit-tap-highlight-color:transparent!important;
+  }
+  .mobile-nav-panel{
+    right:0!important;
+    left:auto!important;
+    top:calc(100% + 8px)!important;
+    width:min(86vw,320px)!important;
+    max-height:min(70vh,560px)!important;
+    overflow:auto!important;
+    padding:10px!important;
+    border-radius:18px!important;
+    box-shadow:0 18px 48px rgba(15,23,42,.16)!important;
+    overscroll-behavior:contain!important;
+  }
+  .mobile-nav-panel a{
+    min-height:44px!important;
+    display:flex!important;
+    align-items:center!important;
+    padding:10px 12px!important;
+    border-radius:11px!important;
+    line-height:1.25!important;
+  }
+  .mobile-nav-panel .mobile-contact{margin-top:6px!important;justify-content:center!important}
+
+  .mobile-rail-shell{
+    display:block!important;
+    border-top:1px solid rgba(148,163,184,.18)!important;
+  }
+  .mobile-primary-rail{
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    gap:6px!important;
+    overflow-x:auto!important;
+    overscroll-behavior-x:contain!important;
+    -webkit-overflow-scrolling:touch!important;
+    scrollbar-width:none!important;
+    padding:7px max(16px,env(safe-area-inset-left)) 8px!important;
+    scroll-padding-inline:16px!important;
+  }
+  .mobile-primary-rail::-webkit-scrollbar{display:none!important}
+  .mobile-primary-rail a{
+    flex:0 0 auto!important;
+    min-height:36px!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    padding:7px 11px!important;
+    border-radius:999px!important;
+    font-size:10px!important;
+    line-height:1!important;
+    white-space:nowrap!important;
+    scroll-snap-align:start!important;
+  }
+  .mobile-primary-rail .active,
+  .mobile-primary-rail a[aria-current="page"]{
+    font-weight:800!important;
+  }
+
+  /* Keep page opening compact and intentional after the two-row mobile header. */
+  main>.hero:first-child,
+  main>.portfolio-hero:first-child,
+  main>.contact-hero:first-child,
+  main>.executive-hero:first-child{
+    scroll-margin-top:116px!important;
+  }
+}
+
+@media (max-width: 760px){
+  .navbar{
+    min-height:56px!important;
+    padding-top:6px!important;
+    padding-bottom:6px!important;
+  }
+  .navbar .mark img{width:34px!important}
+  .navbar .mark span{font-size:10px!important;letter-spacing:.045em!important}
+  .mobile-nav>summary{min-height:40px!important;padding:0 12px!important;font-size:11px!important}
+  .mobile-nav-panel{width:min(90vw,304px)!important;padding:8px!important}
+  .mobile-nav-panel a{min-height:42px!important;padding:9px 11px!important;font-size:12px!important}
+  .mobile-primary-rail{gap:5px!important;padding-top:6px!important;padding-bottom:7px!important}
+  .mobile-primary-rail a{min-height:34px!important;padding:7px 10px!important;font-size:9.5px!important}
+}
+
+@media (max-width: 390px){
+  .navbar .mark{gap:7px!important}
+  .navbar .mark img{width:31px!important}
+  .navbar .mark span{font-size:9.25px!important;letter-spacing:.035em!important}
+  .mobile-nav>summary{padding:0 10px!important}
+  .mobile-primary-rail{padding-left:12px!important;padding-right:12px!important}
+}

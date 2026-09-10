@@ -1,0 +1,54 @@
+/* P28 — Executive Joy Accent
+   Adds a measured layer of warmth and energy without changing layout, typography, header or footer geometry. */
+:root{--joy-teal:rgba(20,184,201,.12);--joy-violet:rgba(139,92,246,.10);--joy-amber:rgba(245,158,11,.11);--joy-rose:rgba(244,114,182,.08)}
+
+/* Section atmosphere: deliberately subtle and sparse. */
+.mediq-flagship,.home-cases,.recognition-strip,.exec-snapshot,
+.projects-hero,.experience-hero,.contact-hero,.portfolio-hero,.architecture-hero,
+.technology-hero,.governance-hero{
+  position:relative;
+}
+.mediq-flagship::before,.home-cases::before,.recognition-strip::before{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:.7;
+  background:
+    radial-gradient(circle at 8% 14%,var(--joy-teal),transparent 24%),
+    radial-gradient(circle at 92% 82%,var(--joy-violet),transparent 25%);
+}
+.home-cases::before{background:radial-gradient(circle at 92% 10%,var(--joy-amber),transparent 23%),radial-gradient(circle at 6% 88%,var(--joy-teal),transparent 24%)}
+.recognition-strip::before{background:radial-gradient(circle at 10% 50%,var(--joy-violet),transparent 26%),radial-gradient(circle at 90% 50%,var(--joy-rose),transparent 24%)}
+.mediq-flagship>.wrap,.home-cases>.wrap,.recognition-strip>.wrap{position:relative;z-index:1}
+
+/* High-signal elements get the color, not long-form content. */
+.kicker{position:relative}
+.kicker::after{content:"";display:inline-block;width:22px;height:3px;border-radius:99px;margin-left:8px;vertical-align:middle;background:linear-gradient(90deg,#14b8c9,#8b5cf6,#f59e0b)}
+
+.exec-snapshot-grid>div,.mediq-facts article,.case,.recognition-strip-items article,
+.metric,.stat,.project-card,.featured-card,.gov-card,.technology-card,.toolkit-card,
+.case-card,.fact,.architecture-card,.decision-card,.domain-card{
+  transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease;
+}
+.exec-snapshot-grid>div:nth-child(4n+1),.mediq-facts article:nth-child(4n+1){border-top-color:#14b8c9!important}
+.exec-snapshot-grid>div:nth-child(4n+2),.mediq-facts article:nth-child(4n+2){border-top-color:#8b5cf6!important}
+.exec-snapshot-grid>div:nth-child(4n+3),.mediq-facts article:nth-child(4n+3){border-top-color:#f59e0b!important}
+.exec-snapshot-grid>div:nth-child(4n),.mediq-facts article:nth-child(4n){border-top-color:#ec4899!important}
+.exec-snapshot-grid>div,.mediq-facts article{border-top-width:3px!important}
+
+.tags span,.mandate-chips span{transition:transform .18s ease,box-shadow .18s ease}
+.tags span:nth-child(3n+1),.mandate-chips span:nth-child(3n+1){box-shadow:inset 0 0 0 1px rgba(20,184,201,.18)}
+.tags span:nth-child(3n+2),.mandate-chips span:nth-child(3n+2){box-shadow:inset 0 0 0 1px rgba(139,92,246,.16)}
+.tags span:nth-child(3n),.mandate-chips span:nth-child(3n){box-shadow:inset 0 0 0 1px rgba(245,158,11,.18)}
+
+.btn,.pill,.context-link{transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}
+@media (hover:hover){
+  .case:hover,.project-card:hover,.featured-card:hover,.gov-card:hover,.technology-card:hover,.toolkit-card:hover,.case-card:hover,.architecture-card:hover,.decision-card:hover,.domain-card:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(15,23,42,.10)}
+  .btn:hover,.pill:hover{transform:translateY(-2px);filter:saturate(1.08)}
+  .tags span:hover,.mandate-chips span:hover{transform:translateY(-1px)}
+}
+
+/* Mobile: keep the joy quieter so the UI stays clean. */
+@media(max-width:760px){
+  .mediq-flagship::before,.home-cases::before,.recognition-strip::before{opacity:.45}
+  .kicker::after{width:16px;height:2px;margin-left:6px}
+  .exec-snapshot-grid>div,.mediq-facts article{border-top-width:2px!important}
+}
+@media(prefers-reduced-motion:reduce){.exec-snapshot-grid>div,.mediq-facts article,.case,.project-card,.featured-card,.gov-card,.technology-card,.toolkit-card,.case-card,.architecture-card,.decision-card,.domain-card,.btn,.pill,.tags span,.mandate-chips span{transition:none!important}}

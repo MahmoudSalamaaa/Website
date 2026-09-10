@@ -1,0 +1,96 @@
+/* P30 — Executive Visual Polish
+   Fine-grained rhythm, focus, readability and surface consistency only.
+   Preserves P16 visual identity, P28 joy accents and P29 engineering doodles. */
+
+/* 1) Optical rhythm and readable measure */
+.section-head,
+.signature-head,
+.recognition-strip-inner,
+.mandate-grid,
+.mediq-grid,
+.cta-grid{align-items:center}
+.section-head>p,.signature-head>p{max-width:62ch}
+.hero-copy>p,.portfolio-hero-copy,.section-copy{max-width:68ch}
+
+/* 2) Card surface consistency without flattening the colorful identity */
+.case,.project-card,.featured-card,.gov-card,.technology-card,.toolkit-card,
+.case-card,.architecture-card,.decision-card,.domain-card,.mediq-node,
+.operating-steps article,.recognition-strip-items article,.exec-snapshot-grid>div,
+.mediq-facts article{
+  isolation:isolate;
+  backface-visibility:hidden;
+}
+.case h3,.project-card h3,.featured-card h3,.gov-card h3,.technology-card h3,
+.toolkit-card h3,.case-card h3,.architecture-card h3,.decision-card h3,.domain-card h3,
+.operating-steps article h3,.mediq-node b{
+  text-wrap:balance;
+}
+.case p,.project-card p,.featured-card p,.gov-card p,.technology-card p,
+.toolkit-card p,.case-card p,.architecture-card p,.decision-card p,.domain-card p,
+.operating-steps article p{
+  text-wrap:pretty;
+}
+
+/* 3) High-signal numerics: slightly crisper, never louder */
+.metric-count,.mediq-facts b,.exec-snapshot-grid strong{
+  font-variant-numeric:tabular-nums;
+  letter-spacing:-.035em;
+}
+.exec-snapshot-grid span,.mediq-facts span{line-height:1.4}
+
+/* 4) Buttons / links: clearer affordance and keyboard polish */
+.btn,.pill,.context-link,.footer-nav a,.mobile-primary-rail a,.mobile-nav-panel a{
+  text-underline-offset:3px;
+}
+.btn:focus-visible,.pill:focus-visible,.context-link:focus-visible,
+.footer-nav a:focus-visible,.mobile-primary-rail a:focus-visible,.mobile-nav-panel a:focus-visible,
+.mark:focus-visible,.desktop-links a:focus-visible,.desktop-more summary:focus-visible{
+  outline:3px solid rgba(20,184,201,.38)!important;
+  outline-offset:3px!important;
+  border-radius:10px;
+}
+.context-link{font-weight:750}
+
+/* 5) Photography and hero surfaces: subtle executive finish */
+.photo-card,.photo-frame{transform:translateZ(0)}
+.photo-frame img,.mobile-identity-peek img{
+  image-rendering:auto;
+}
+.photo-card{box-shadow:0 20px 54px rgba(15,23,42,.10)}
+
+/* 6) Keep long-page scanning easy */
+section[id],article[id]{scroll-margin-top:126px}
+.tags,.mandate-chips{align-items:center}
+.tags span,.mandate-chips span{line-height:1.2}
+
+/* 7) Secondary-page hero polish — no structural changes */
+.projects-hero,.experience-hero,.contact-hero,.portfolio-hero,.architecture-hero,
+.technology-hero,.governance-hero{
+  position:relative;
+}
+.projects-hero h1,.experience-hero h1,.contact-hero h1,.portfolio-hero h1,
+.architecture-hero h1,.technology-hero h1,.governance-hero h1{
+  text-wrap:balance;
+}
+
+/* 8) Responsive optical balance */
+@media(max-width:900px){
+  section[id],article[id]{scroll-margin-top:118px}
+  .section-head,.signature-head,.recognition-strip-inner,.mandate-grid,.mediq-grid,.cta-grid{align-items:start}
+  .photo-card{box-shadow:0 14px 34px rgba(15,23,42,.08)}
+}
+@media(max-width:760px){
+  .section-head>p,.signature-head>p,.hero-copy>p,.portfolio-hero-copy,.section-copy{max-width:none}
+  .metric-count,.mediq-facts b,.exec-snapshot-grid strong{letter-spacing:-.025em}
+  .case h3,.project-card h3,.featured-card h3,.gov-card h3,.technology-card h3,
+  .toolkit-card h3,.case-card h3,.architecture-card h3,.decision-card h3,.domain-card h3,
+  .operating-steps article h3{line-height:1.12}
+}
+@media(max-width:420px){
+  section[id],article[id]{scroll-margin-top:108px}
+}
+
+/* 9) Motion stays quiet and respectful */
+@media(prefers-reduced-motion:reduce){
+  .photo-card{transform:none!important}
+}

@@ -7,61 +7,13 @@
 <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
 <link href="executive-canvas.css" rel="stylesheet"/><link href="balanced-v4.css" rel="stylesheet"/>
 <link href="enhancements-v4.css" rel="stylesheet"/><link href="executive-board.css" rel="stylesheet"/>
-<link href="v4-foundation.css" rel="stylesheet"/>
+<link href="refinements-v4.css" rel="stylesheet"/><link href="brand-palette-v4.css" rel="stylesheet"/>
 <style>
 .project-catalog{padding:68px 0 82px;background:#fff}.catalog-intro{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:end;margin-bottom:26px}.catalog-intro p{margin:0;color:#475569;line-height:1.72}.catalog-tabs{display:flex;gap:10px;flex-wrap:wrap;position:sticky;top:82px;z-index:20;padding:10px 12px;margin:0 -12px 22px;background:rgba(248,250,252,.92);backdrop-filter:blur(14px);border:1px solid #e2e8f0;border-radius:16px}.catalog-tab{border:1px solid #d7e0e8;background:#fff;border-radius:999px;padding:10px 13px;font:800 9px/1.15 var(--mono);cursor:pointer}.catalog-tab span{display:inline-grid;place-items:center;min-width:21px;height:21px;margin-left:5px;padding:0 5px;border-radius:999px;background:#eef2f7}.catalog-tab.active{background:#c5f0f7;border-color:#06b6d4}.catalog-search{width:100%;margin-bottom:22px;padding:15px 17px;border:1px solid #d5dfe8;border-radius:12px;font:600 14px var(--sans);outline:none}.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.project-card{display:grid;grid-template-columns:190px minmax(0,1fr);grid-template-areas:"visual content";min-height:250px;border:1px solid #d8e1ea;border-radius:18px;background:#fff;overflow:hidden;box-shadow:0 5px 18px #0f172a0b}.project-featured{min-height:285px;background:linear-gradient(180deg,#fff,#fbfeff)}.project-featured h3{font-size:clamp(22px,2.2vw,29px)}.project-featured .project-visual{min-height:285px}.project-visual{grid-area:visual;position:relative;min-height:100%;background:#f1f5f9;overflow:hidden}.project-visual img{width:100%;height:100%;object-fit:cover;display:block}.project-content{grid-area:content;display:flex;flex-direction:column;padding:20px;min-width:0}.project-topline{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}.project-index{font:800 10px var(--mono);color:#0e7490}.project-org{padding:7px 9px;border-radius:999px;background:#eef2f7;font:800 8px/1 var(--mono)}.project-card h3{margin:0;font:850 clamp(19px,2vw,25px)/1.05 var(--sans);letter-spacing:-.025em;color:#0f172a}.project-meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;color:#64748b;font:650 9px/1.35 var(--mono)}.project-card p{margin:14px 0 0;color:#475569;font-size:12px;line-height:1.62}.project-actions{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:auto;padding-top:14px;border-top:1px solid #edf1f5}.type-chip{padding:7px 9px;border-radius:999px;background:#ecfeff;color:#155e75;font:800 8px/1.15 var(--mono)}.project-link{font:800 9px/1.2 var(--mono);color:#0e7490;text-decoration:none}.project-link:hover{text-decoration:underline}.empty{display:none;padding:34px;text-align:center;border:1px dashed #cbd5e1;border-radius:14px;color:#64748b}.empty.show{display:block}@media(max-width:1100px){.project-grid{grid-template-columns:1fr}}@media(max-width:760px){.catalog-intro{grid-template-columns:1fr;gap:14px}.project-card{grid-template-columns:1fr;grid-template-areas:"content" "visual"!important}.project-visual{height:190px!important}.catalog-tabs{position:static!important;display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 18px!important;padding:0!important;background:transparent!important;border:0!important;backdrop-filter:none!important}.catalog-tab:first-child{grid-column:1/-1}}
 </style>
-<style data-p20-source="wow-v4.css">
-/* V4 WOW REVIEW — executive polish without gimmicks */
-:root{--wow-cyan:#14b8c9;--wow-violet:#a55ec3;--wow-coral:#ee8c62;--wow-blue:#557fe3;--wow-ink:#10263b}
-html{scroll-behavior:smooth}
-body{background:
-radial-gradient(circle at 8% 4%,rgba(20,184,201,.065),transparent 25rem),
-radial-gradient(circle at 92% 18%,rgba(165,94,195,.05),transparent 28rem),
-#fbfaf6}
-nav{background:rgba(251,250,246,.88)!important;backdrop-filter:blur(18px) saturate(145%);
-border-bottom:1px solid rgba(16,38,59,.08);box-shadow:0 8px 28px rgba(16,38,59,.035)}
-.navbar{position:relative}.navbar:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;
-background:linear-gradient(90deg,transparent,var(--wow-cyan),var(--wow-violet),transparent);opacity:.42}
-.nav-group>summary,.pill,.btn,.card,.case,.gov,.award,.strategy-card,.timeline-item,.project-card,.tech-item,.career-stage,.play-step{
-transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
-.nav-group>summary:hover,.pill:hover,.btn:hover{transform:translateY(-2px)}
-.pill:hover,.btn:hover{box-shadow:0 12px 28px rgba(16,38,59,.12)}
-.hero,.executive-hero,.portfolio-hero{position:relative;isolation:isolate}
-.hero:before,.executive-hero:before,.portfolio-hero:before{content:"";position:absolute;z-index:-1;inset:0;
-background:linear-gradient(120deg,rgba(20,184,201,.08),transparent 34%),
-linear-gradient(310deg,rgba(165,94,195,.065),transparent 38%),
-radial-gradient(circle at 80% 24%,rgba(238,140,98,.08),transparent 13rem)}
-.executive-hero h1 em,.portfolio-title em,.cta h2 em{
-background:linear-gradient(90deg,var(--wow-cyan),var(--wow-violet),var(--wow-coral));
--webkit-background-clip:text;background-clip:text;color:transparent;font-style:normal}
-.photo-card{transform:rotate(1deg);box-shadow:0 28px 70px rgba(16,38,59,.14)!important}
-.photo-card:hover{transform:rotate(0deg) translateY(-5px)}
-.impact-grid>div:hover,.metric:hover,.card:hover,.case:hover,.gov:hover,.award:hover,.strategy-card:hover,
-.timeline-item:hover,.project-card:hover,.tech-item:hover,.career-stage:hover{
-transform:translateY(-4px);box-shadow:0 16px 36px rgba(16,38,59,.10)!important;border-color:rgba(20,184,201,.34)!important}
-.impact-grid strong,.metric strong,.leadership-evidence b{
-background:linear-gradient(90deg,var(--wow-ink),var(--wow-blue));
--webkit-background-clip:text;background-clip:text;color:transparent}
-.band,.portfolio-section,.home-cases,.signature,.project-catalog,.tech-directory,.home-mandate{position:relative}
-.band+.band:before,.portfolio-section+.portfolio-section:before,.home-cases:before,.signature:before,.project-catalog:before,.tech-directory:before{
-content:"";position:absolute;left:50%;top:0;transform:translateX(-50%);width:min(1160px,88vw);height:1px;
-background:linear-gradient(90deg,transparent,rgba(16,38,59,.12),transparent)}
-.project-visual img{transition:transform .35s ease,filter .35s ease}
-.project-card:hover .project-visual img{transform:scale(1.035);filter:saturate(1.04)}
-.project-card:nth-child(5n+1){border-top:4px solid #14b8c9}.project-card:nth-child(5n+2){border-top:4px solid #a55ec3}
-.project-card:nth-child(5n+3){border-top:4px solid #ee8c62}.project-card:nth-child(5n+4){border-top:4px solid #58b879}
-.project-card:nth-child(5n){border-top:4px solid #557fe3}
-.catalog-tab.active,.tech-tab.active{box-shadow:inset 0 0 0 1px rgba(20,184,201,.25),0 6px 16px rgba(20,184,201,.10)}
-.section-title,.display,.portfolio-title,.executive-hero h1{text-wrap:balance}
-.lead,.section-copy,.project-card p,.case p,.card p{text-wrap:pretty}
-.cta{position:relative;overflow:hidden}.cta:after{content:"";position:absolute;width:320px;height:320px;border-radius:50%;
-right:-100px;bottom:-180px;background:radial-gradient(circle,rgba(20,184,201,.20),rgba(165,94,195,.08),transparent 70%)}
-@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.photo-card{transform:none!important}}
-@media(max-width:760px){.project-card:hover,.tech-item:hover,.card:hover,.case:hover{transform:none}}
-</style>
-<link href="hierarchy-v4.css" rel="stylesheet"/>
+<link href="wow-v4.css" rel="stylesheet"/><link href="hierarchy-v4.css" rel="stylesheet"/>
 <meta content="index,follow,max-image-preview:large" name="robots"/><link href="https://mahmoud-salama.vercel.app/projects.html" rel="canonical"/><meta content="website" property="og:type"/><meta content="Projects — Mahmoud Salama" property="og:title"/><meta content="88 selected technology projects across national platforms, enterprise systems, supply chain, data and digital products." property="og:description"/><meta content="https://mahmoud-salama.vercel.app/projects.html" property="og:url"/>
+<link href="final-v4.css" rel="stylesheet"/><link href="deep-ux-v4.css" rel="stylesheet"/><link href="evidence-v4.css" rel="stylesheet"/><link href="root-candidate-v4.css" rel="stylesheet"/><link href="mobile-system-final.css" rel="stylesheet"/><link href="live-correction.css" rel="stylesheet"/><link href="project-image-placement.css" rel="stylesheet"/><link href="project-public-links.css" rel="stylesheet"/><link href="project-generated-visuals.css" rel="stylesheet"/><link href="projects-uiux-mood.css" rel="stylesheet"/><link href="project-image-system-v2.css" rel="stylesheet"/><link href="projects-plus-jakarta.css" rel="stylesheet"/><link href="projects-visitor-cleanup.css" rel="stylesheet"/><link href="site-enhancements.css" rel="stylesheet"/><link href="audit-p1-fixes.css" rel="stylesheet"/>
 <link rel="stylesheet" href="runtime-final.css"/>
 <meta content="https://mahmoud-salama.vercel.app/og-executive-card.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="https://mahmoud-salama.vercel.app/og-executive-card.png" name="twitter:image"/>
 <meta content="Projects — Mahmoud Salama" name="twitter:title"/><meta content="88 selected technology projects across national platforms, enterprise systems, supply chain, data and digital products." name="twitter:description"/></head><body>

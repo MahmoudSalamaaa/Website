@@ -12,6 +12,7 @@
     .replace(/Explore selected projects\s*→?/gi, 'Explore career project registry →')
     .replace(/88 selected projects/gi, 'career project registry')
     .replace(/broader 15\+ platform Oman portfolio/gi, '14-record Oman / Integral portfolio')
+    .replace(/15\+ government and enterprise platforms/gi, '14 tracked Oman / Integral project records')
     .replace(/15\+ platform portfolio/gi, '14-record Oman / Integral portfolio');
 
   const normalizeCareerClaims = () => {
@@ -26,6 +27,24 @@
 
     document.querySelectorAll('[data-v5-career-projects] strong').forEach((el) => { el.textContent = '179'; });
     document.querySelectorAll('[data-v5-career-projects] span').forEach((el) => { el.textContent = 'tracked career records'; });
+  };
+
+  const syncRecognition = () => {
+    const portfolioAwards = document.querySelector('.award-strip');
+    if (portfolioAwards) {
+      portfolioAwards.innerHTML = `
+        <div class="award"><b>MedIQ / UPA</b><span>Pharmaconex Awards 2026 · Excellence in Digital Transformation · executive technology leadership</span></div>
+        <div class="award"><b>Three Consecutive ITIDA Wins · 2013–2015</b><span>Yashfeen · Rate Your Services · Kasr Al Ainy Liver Tumor Unit Management System · Keyframe delivery period</span></div>
+        <div class="award"><b>Oman Ministry of Education</b><span>Educational Portal eGovernment recognition · official Sultan Qaboos Award evidence</span></div>`;
+    }
+
+    const homeRecognition = document.querySelector('.recognition-strip-items');
+    if (homeRecognition && !homeRecognition.querySelector('[data-itida-sequence]')) {
+      const article = document.createElement('article');
+      article.dataset.itidaSequence = 'true';
+      article.innerHTML = '<strong>Three Consecutive ITIDA Wins · 2013–2015</strong><span>Yashfeen · Rate Your Services · Kasr Al Ainy Liver Tumor Unit Management System</span><a href="governance.html#recognition">View recognition record →</a>';
+      homeRecognition.appendChild(article);
+    }
   };
 
   const ensureEvidenceLinks = () => {
@@ -44,6 +63,7 @@
 
   const runQualityPass = () => {
     normalizeCareerClaims();
+    syncRecognition();
     ensureEvidenceLinks();
 
     document.querySelectorAll('a[target="_blank"]').forEach((a) => {
@@ -94,5 +114,5 @@
     document.head.appendChild(node);
   }
 
-  document.documentElement.dataset.portfolioVersion = 'career-evidence-179-qa2';
+  document.documentElement.dataset.portfolioVersion = 'career-evidence-179-qa3';
 })();

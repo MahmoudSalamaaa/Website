@@ -8,4 +8,11 @@
     openMenu.open = false;
     requestAnimationFrame(() => trigger?.focus());
   }, true);
+  if (!document.querySelector('script[data-career-upgrade]')) {
+    const s = document.createElement('script');
+    s.src = 'career-upgrade.js?v=20260912';
+    s.defer = true;
+    s.dataset.careerUpgrade = 'true';
+    document.head.appendChild(s);
+  }
 })();

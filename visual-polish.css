@@ -1,6 +1,6 @@
-/* P30 — Executive Visual Polish
-   Fine-grained rhythm, focus, readability and surface consistency only.
-   Preserves P16 visual identity, P28 joy accents and P29 engineering doodles. */
+/* P31 — Executive Visual Polish
+   Final cascade layer for rhythm, focus, readability and responsive consistency.
+   Preserves the established visual identity while resolving accumulated CSS conflicts. */
 
 /* 1) Optical rhythm and readable measure */
 .section-head,
@@ -12,26 +12,26 @@
 .section-head>p,.signature-head>p{max-width:62ch}
 .hero-copy>p,.portfolio-hero-copy,.section-copy{max-width:68ch}
 
-/* 2) Card surface consistency without flattening the colorful identity */
+/* 2) Card surface consistency without flattening the identity */
 .case,.project-card,.featured-card,.gov-card,.technology-card,.toolkit-card,
 .case-card,.architecture-card,.decision-card,.domain-card,.mediq-node,
 .operating-steps article,.recognition-strip-items article,.exec-snapshot-grid>div,
-.mediq-facts article{
+.mediq-facts article,.registry-card,.evidence-card,.recognition-year{
   isolation:isolate;
   backface-visibility:hidden;
 }
 .case h3,.project-card h3,.featured-card h3,.gov-card h3,.technology-card h3,
 .toolkit-card h3,.case-card h3,.architecture-card h3,.decision-card h3,.domain-card h3,
-.operating-steps article h3,.mediq-node b{
+.operating-steps article h3,.mediq-node b,.registry-card h3{
   text-wrap:balance;
 }
 .case p,.project-card p,.featured-card p,.gov-card p,.technology-card p,
 .toolkit-card p,.case-card p,.architecture-card p,.decision-card p,.domain-card p,
-.operating-steps article p{
+.operating-steps article p,.registry-card p{
   text-wrap:pretty;
 }
 
-/* 3) High-signal numerics: slightly crisper, never louder */
+/* 3) High-signal numerics: crisp but restrained */
 .metric-count,.mediq-facts b,.exec-snapshot-grid strong{
   font-variant-numeric:tabular-nums;
   letter-spacing:-.035em;
@@ -44,40 +44,85 @@
 }
 .btn:focus-visible,.pill:focus-visible,.context-link:focus-visible,
 .footer-nav a:focus-visible,.mobile-primary-rail a:focus-visible,.mobile-nav-panel a:focus-visible,
-.mark:focus-visible,.desktop-links a:focus-visible,.desktop-more summary:focus-visible{
+.mark:focus-visible,.desktop-links a:focus-visible,.desktop-more summary:focus-visible,
+.registry-filter:focus-visible,.registry-search:focus-visible,.tech-tab:focus-visible,.tech-search:focus-visible{
   outline:3px solid rgba(20,184,201,.38)!important;
   outline-offset:3px!important;
   border-radius:10px;
 }
 .context-link{font-weight:750}
 
-/* 5) Photography and hero surfaces: subtle executive finish */
+/* 5) Photography and hero surfaces */
 .photo-card,.photo-frame{transform:translateZ(0)}
-.photo-frame img,.mobile-identity-peek img{
-  image-rendering:auto;
-}
+.photo-frame img,.mobile-identity-peek img{image-rendering:auto}
 .photo-card{box-shadow:0 20px 54px rgba(15,23,42,.10)}
 
-/* 6) Keep long-page scanning easy */
-section[id],article[id]{scroll-margin-top:126px}
+/* 6) Long-page scanning */
+section[id],article[id]{scroll-margin-top:104px}
 .tags,.mandate-chips{align-items:center}
 .tags span,.mandate-chips span{line-height:1.2}
 
-/* 7) Secondary-page hero polish — no structural changes */
+/* 7) Secondary-page hero polish */
 .projects-hero,.experience-hero,.contact-hero,.portfolio-hero,.architecture-hero,
-.technology-hero,.governance-hero{
-  position:relative;
-}
+.technology-hero,.governance-hero,.evidence-hero{position:relative}
 .projects-hero h1,.experience-hero h1,.contact-hero h1,.portfolio-hero h1,
-.architecture-hero h1,.technology-hero h1,.governance-hero h1{
+.architecture-hero h1,.technology-hero h1,.governance-hero h1,.evidence-hero h1{
   text-wrap:balance;
 }
 
-/* 8) Responsive optical balance */
+/* 8) One mobile navigation model.
+   The dropdown Menu is the primary mobile navigation; the duplicate rail is removed. */
+@media(max-width:960px){
+  .mobile-rail-shell,.mobile-primary-rail,.mobile-rail-button{display:none!important}
+  nav[aria-label="Primary navigation"]{border-bottom:1px solid rgba(148,163,184,.18)}
+}
+
+/* 9) Home: keep mobile identity proof once, not twice. */
+@media(max-width:640px){
+  .executive-hero .mobile-identity-peek{display:block!important}
+  .executive-hero .photo-card{display:none!important}
+  .executive-hero .hero-grid{grid-template-columns:1fr!important}
+}
+
+/* 10) Recognition now has three high-value proof items. */
+.recognition-strip-items{
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  gap:0!important;
+}
+.recognition-strip-items article{min-width:0}
+.recognition-strip-items article+article{border-left:1px solid rgba(148,163,184,.24)}
+.recognition-strip-items strong{display:block;line-height:1.18;text-wrap:balance}
+.recognition-strip-items span{display:block;line-height:1.55;text-wrap:pretty}
+
+/* 11) Search / filter controls should feel touch-ready and deliberate. */
+.registry-filter,.tech-tab{min-height:40px}
+.registry-search,.tech-search{min-height:48px}
+.registry-tools{box-shadow:0 10px 28px rgba(15,23,42,.045)}
+.registry-card{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+@media(hover:hover) and (pointer:fine){
+  .registry-card:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(15,23,42,.07);border-color:#c8d7e2}
+}
+
+/* 12) Contact / evidence resilience for long text and URLs. */
+.contact-email-address,.registry-link,.evidence-card a,.recognition-year a{
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
+
+/* 13) Footer: cleaner visual ending. */
+.final-footer .footer-nav{row-gap:10px;column-gap:18px}
+.final-footer .footer-row{padding-top:18px}
+
+/* 14) Responsive optical balance */
 @media(max-width:900px){
-  section[id],article[id]{scroll-margin-top:118px}
+  section[id],article[id]{scroll-margin-top:84px}
   .section-head,.signature-head,.recognition-strip-inner,.mandate-grid,.mediq-grid,.cta-grid{align-items:start}
   .photo-card{box-shadow:0 14px 34px rgba(15,23,42,.08)}
+  .recognition-strip-items{grid-template-columns:1fr!important}
+  .recognition-strip-items article{padding:18px 0!important;border-left:0!important}
+  .recognition-strip-items article+article{border-top:1px solid rgba(148,163,184,.24)}
+  .registry-grid{grid-template-columns:1fr!important}
 }
 @media(max-width:760px){
   .section-head>p,.signature-head>p,.hero-copy>p,.portfolio-hero-copy,.section-copy{max-width:none}
@@ -85,12 +130,14 @@ section[id],article[id]{scroll-margin-top:126px}
   .case h3,.project-card h3,.featured-card h3,.gov-card h3,.technology-card h3,
   .toolkit-card h3,.case-card h3,.architecture-card h3,.decision-card h3,.domain-card h3,
   .operating-steps article h3{line-height:1.12}
+  .registry-filter,.tech-tab{min-height:44px}
+  .registry-filters{gap:7px}
 }
 @media(max-width:420px){
-  section[id],article[id]{scroll-margin-top:108px}
+  section[id],article[id]{scroll-margin-top:76px}
 }
 
-/* 9) Motion stays quiet and respectful */
+/* 15) Motion stays quiet and respectful */
 @media(prefers-reduced-motion:reduce){
-  .photo-card{transform:none!important}
+  .photo-card,.registry-card{transform:none!important;transition:none!important}
 }

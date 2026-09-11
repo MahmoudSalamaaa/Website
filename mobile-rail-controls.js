@@ -5,13 +5,27 @@
   const pathName = location.pathname.toLowerCase();
   const isHome = pathName === '/' || pathName.endsWith('/index.html');
 
+  const replaceText = (text) => text
+    .replace(/200\+ career projects\s*&\s*engagements/gi, '179 tracked career records')
+    .replace(/200\+ career projects and engagements/gi, '179 tracked career records')
+    .replace(/Browse 88 selected projects\s*→?/gi, 'Browse career project registry →')
+    .replace(/Explore selected projects\s*→?/gi, 'Explore career project registry →')
+    .replace(/88 selected projects/gi, 'career project registry')
+    .replace(/broader 15\+ platform Oman portfolio/gi, '14-record Oman / Integral portfolio')
+    .replace(/15\+ platform portfolio/gi, '14-record Oman / Integral portfolio');
+
   const normalizeCareerClaims = () => {
-    document.querySelectorAll('strong, b, span, h2, h3, p').forEach((el) => {
-      const t = (el.textContent || '').trim();
-      if (t === '200+' || t === '200+ career projects & engagements') {
-        el.textContent = t.includes('career') ? '179 tracked career records' : '179';
-      }
+    document.querySelectorAll('a,strong,b,span,h1,h2,h3,p,small').forEach((el) => {
+      if (el.children.length) return;
+      const before = el.textContent || '';
+      let after = replaceText(before);
+      if (before.trim() === '200+') after = '179';
+      if (before.trim() === '88') after = '179';
+      if (after !== before) el.textContent = after;
     });
+
+    document.querySelectorAll('[data-v5-career-projects] strong').forEach((el) => { el.textContent = '179'; });
+    document.querySelectorAll('[data-v5-career-projects] span').forEach((el) => { el.textContent = 'tracked career records'; });
   };
 
   const ensureEvidenceLinks = () => {
@@ -31,10 +45,19 @@
   const runQualityPass = () => {
     normalizeCareerClaims();
     ensureEvidenceLinks();
+
     document.querySelectorAll('a[target="_blank"]').forEach((a) => {
       const rel = new Set((a.getAttribute('rel') || '').split(/\s+/).filter(Boolean));
       rel.add('noopener'); rel.add('noreferrer');
       a.setAttribute('rel', [...rel].join(' '));
+    });
+
+    document.querySelectorAll('a[href]').forEach((a) => {
+      const href = a.getAttribute('href') || '';
+      if (/^https?:\/\//i.test(href) && !a.hasAttribute('target')) {
+        a.setAttribute('target', '_blank');
+        a.setAttribute('rel', 'noopener noreferrer');
+      }
     });
 
     const footerNav = document.querySelector('footer .footer-nav');
@@ -71,5 +94,5 @@
     document.head.appendChild(node);
   }
 
-  document.documentElement.dataset.portfolioVersion = 'career-evidence-179';
+  document.documentElement.dataset.portfolioVersion = 'career-evidence-179-qa2';
 })();

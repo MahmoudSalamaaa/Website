@@ -1,6 +1,6 @@
-/* P31 — Executive Visual Polish
-   Final cascade layer for rhythm, focus, readability and responsive consistency.
-   Preserves the established visual identity while resolving accumulated CSS conflicts. */
+/* P32 — Executive Luxury Pass
+   Final cascade layer for premium hierarchy, restraint and emphasis.
+   Keeps the established identity while making Home, MedIQ and Recognition feel more executive and less template-driven. */
 
 /* 1) Optical rhythm and readable measure */
 .section-head,
@@ -31,14 +31,14 @@
   text-wrap:pretty;
 }
 
-/* 3) High-signal numerics: crisp but restrained */
+/* 3) High-signal numerics */
 .metric-count,.mediq-facts b,.exec-snapshot-grid strong{
   font-variant-numeric:tabular-nums;
   letter-spacing:-.035em;
 }
 .exec-snapshot-grid span,.mediq-facts span{line-height:1.4}
 
-/* 4) Buttons / links: clearer affordance and keyboard polish */
+/* 4) Buttons / links */
 .btn,.pill,.context-link,.footer-nav a,.mobile-primary-rail a,.mobile-nav-panel a{
   text-underline-offset:3px;
 }
@@ -52,50 +52,209 @@
 }
 .context-link{font-weight:750}
 
-/* 5) Photography and hero surfaces */
-.photo-card,.photo-frame{transform:translateZ(0)}
-.photo-frame img,.mobile-identity-peek img{image-rendering:auto}
-.photo-card{box-shadow:0 20px 54px rgba(15,23,42,.10)}
-
-/* 6) Long-page scanning */
-section[id],article[id]{scroll-margin-top:104px}
-.tags,.mandate-chips{align-items:center}
-.tags span,.mandate-chips span{line-height:1.2}
-
-/* 7) Secondary-page hero polish */
-.projects-hero,.experience-hero,.contact-hero,.portfolio-hero,.architecture-hero,
-.technology-hero,.governance-hero,.evidence-hero{position:relative}
-.projects-hero h1,.experience-hero h1,.contact-hero h1,.portfolio-hero h1,
-.architecture-hero h1,.technology-hero h1,.governance-hero h1,.evidence-hero h1{
+/* 5) Home hero — quieter, more editorial, stronger executive confidence */
+.executive-hero{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 82% 22%,rgba(20,184,201,.08),transparent 28%),
+    radial-gradient(circle at 18% 92%,rgba(139,92,246,.045),transparent 32%);
+}
+.executive-hero::after{
+  content:"";
+  position:absolute;
+  inset:auto 0 0;
+  height:1px;
+  background:linear-gradient(90deg,transparent,rgba(15,23,42,.12),transparent);
+}
+.executive-hero .hero-grid{gap:clamp(42px,6vw,88px)!important;align-items:center!important}
+.executive-hero .hero-copy{position:relative;z-index:1}
+.executive-hero .hero-name{
+  letter-spacing:.14em!important;
+  text-transform:uppercase;
+  opacity:.82;
+}
+.executive-hero h1{
+  max-width:11.5ch!important;
+  font-size:clamp(3.8rem,6.5vw,7.1rem)!important;
+  line-height:.92!important;
+  letter-spacing:-.058em!important;
   text-wrap:balance;
 }
-
-/* 8) One mobile navigation model.
-   The dropdown Menu is the primary mobile navigation; the duplicate rail is removed. */
-@media(max-width:960px){
-  .mobile-rail-shell,.mobile-primary-rail,.mobile-rail-button{display:none!important}
-  nav[aria-label="Primary navigation"]{border-bottom:1px solid rgba(148,163,184,.18)}
+.executive-hero .hero-copy>p{
+  max-width:58ch!important;
+  font-size:clamp(1rem,1.22vw,1.16rem)!important;
+  line-height:1.72!important;
+  color:#465b6d!important;
+}
+.executive-hero .hero-actions{margin-top:28px!important;gap:11px!important}
+.executive-hero .hero-actions .btn{
+  min-height:48px;
+  padding-inline:19px!important;
+  border-radius:999px!important;
+}
+.photo-card,.photo-frame{transform:translateZ(0)}
+.photo-frame img,.mobile-identity-peek img{image-rendering:auto}
+.executive-hero .photo-card{
+  border:1px solid rgba(255,255,255,.74)!important;
+  border-radius:28px!important;
+  box-shadow:0 28px 72px rgba(15,23,42,.13)!important;
+  overflow:hidden;
+}
+.executive-hero .photo-label{
+  letter-spacing:.08em!important;
+  font-size:8.5px!important;
 }
 
-/* 9) Home: keep mobile identity proof once, not twice. */
-@media(max-width:640px){
-  .executive-hero .mobile-identity-peek{display:block!important}
-  .executive-hero .photo-card{display:none!important}
-  .executive-hero .hero-grid{grid-template-columns:1fr!important}
+/* 6) Executive snapshot — dossier strip rather than generic cards */
+.exec-snapshot{position:relative;background:#fff!important}
+.exec-snapshot-grid{
+  gap:0!important;
+  border-top:1px solid rgba(15,23,42,.09);
+  border-bottom:1px solid rgba(15,23,42,.09);
+}
+.exec-snapshot-grid>div{
+  position:relative;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  padding-block:28px!important;
+}
+.exec-snapshot-grid>div+div::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:22%;
+  bottom:22%;
+  width:1px;
+  background:rgba(15,23,42,.10);
+}
+.exec-snapshot-grid strong{font-size:clamp(2.3rem,3vw,3.7rem)!important;color:#10263b!important}
+.exec-snapshot-grid span{max-width:23ch;color:#607181!important}
+
+/* 7) MedIQ — visual centerpiece */
+.mediq-flagship{
+  position:relative;
+  background:linear-gradient(145deg,#0e2437 0%,#102f47 56%,#12394f 100%)!important;
+  color:#fff!important;
+  overflow:hidden;
+}
+.mediq-flagship::before{
+  content:"";
+  position:absolute;
+  width:560px;
+  height:560px;
+  right:-180px;
+  top:-160px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(20,184,201,.16),rgba(20,184,201,0) 68%);
+  pointer-events:none;
+}
+.mediq-flagship .kicker{color:#80e4ef!important}
+.mediq-flagship .mediq-story>h2,
+.mediq-flagship h2{color:#fff!important;max-width:17ch!important;letter-spacing:-.045em!important}
+.mediq-flagship .mediq-story>p{color:#cad7df!important;max-width:62ch!important}
+.mediq-flagship .mediq-facts{gap:10px!important}
+.mediq-flagship .mediq-facts article{
+  background:rgba(255,255,255,.065)!important;
+  border:1px solid rgba(255,255,255,.11)!important;
+  box-shadow:none!important;
+  backdrop-filter:blur(8px);
+}
+.mediq-flagship .mediq-facts b{color:#fff!important}
+.mediq-flagship .mediq-facts span{color:#b9cbd5!important}
+.mediq-flagship .award-badge{
+  width:fit-content;
+  border:1px solid rgba(245,199,94,.32)!important;
+  background:rgba(245,199,94,.09)!important;
+  box-shadow:none!important;
+}
+.mediq-flagship .award-badge strong{color:#fff6d6!important}
+.mediq-flagship .award-badge small{color:#d9c48f!important}
+.mediq-flagship .context-link{color:#8ce9f3!important}
+.mediq-flagship .mediq-map{
+  padding:clamp(22px,2.4vw,32px)!important;
+  border:1px solid rgba(255,255,255,.12)!important;
+  background:rgba(255,255,255,.055)!important;
+  border-radius:26px!important;
+  box-shadow:0 26px 60px rgba(0,0,0,.14)!important;
+  backdrop-filter:blur(12px);
+}
+.mediq-flagship .mediq-map>h3{color:#fff!important;max-width:24ch!important}
+.mediq-flagship .mediq-node{
+  border:1px solid rgba(255,255,255,.10)!important;
+  background:rgba(255,255,255,.055)!important;
+  box-shadow:none!important;
+}
+.mediq-flagship .mediq-node b{color:#fff!important}
+.mediq-flagship .mediq-node span{color:#bdcbd4!important}
+
+/* 8) Current mandate — restrained executive brief */
+.home-mandate{background:#fbfaf6!important}
+.mandate-grid{
+  border:0!important;
+  border-top:1px solid #dbe3ea!important;
+  border-bottom:1px solid #dbe3ea!important;
+  border-radius:0!important;
+  background:transparent!important;
+  padding-inline:0!important;
+  box-shadow:none!important;
+}
+.mandate-chips span{
+  background:#fff!important;
+  border-color:#dbe3ea!important;
+  box-shadow:none!important;
 }
 
-/* 10) Recognition now has three high-value proof items. */
+/* 9) Flagship proof — make content feel curated */
+.home-cases{background:#fff!important}
+.home-cases .case-grid.root-priority{gap:14px!important}
+.home-cases .case-grid.root-priority .case{
+  border:1px solid #dfe6eb!important;
+  border-top:1px solid #dfe6eb!important;
+  background:#fff!important;
+  border-radius:18px!important;
+  box-shadow:none!important;
+  padding:24px!important;
+}
+.home-cases .case-grid.root-priority .case:first-child{
+  grid-column:span 2;
+  background:linear-gradient(135deg,#f5fbfc,#fff 68%)!important;
+  border-color:#cce7eb!important;
+}
+.home-cases .case small{color:#68808d!important}
+.home-cases .case h3{color:#10263b!important}
+@media(hover:hover) and (pointer:fine){
+  .home-cases .case-grid.root-priority .case:hover{
+    transform:translateY(-2px)!important;
+    box-shadow:0 16px 34px rgba(15,23,42,.055)!important;
+    border-color:#c7d9e2!important;
+  }
+}
+
+/* 10) Recognition — premium editorial strip */
+.recognition-strip{background:#0f1f2c!important;color:#fff!important}
+.recognition-strip .kicker{color:#77dfe9!important}
+.recognition-strip-copy h2{color:#fff!important;max-width:14ch!important}
 .recognition-strip-items{
   display:grid!important;
   grid-template-columns:repeat(3,minmax(0,1fr))!important;
   gap:0!important;
+  border-top:1px solid rgba(255,255,255,.12);
+  border-bottom:1px solid rgba(255,255,255,.12);
 }
-.recognition-strip-items article{min-width:0}
-.recognition-strip-items article+article{border-left:1px solid rgba(148,163,184,.24)}
-.recognition-strip-items strong{display:block;line-height:1.18;text-wrap:balance}
-.recognition-strip-items span{display:block;line-height:1.55;text-wrap:pretty}
+.recognition-strip-items article{
+  min-width:0;
+  padding:24px clamp(18px,2vw,30px)!important;
+  background:transparent!important;
+}
+.recognition-strip-items article+article{border-left:1px solid rgba(255,255,255,.12)!important}
+.recognition-strip-items strong{display:block;color:#fff!important;line-height:1.18;text-wrap:balance}
+.recognition-strip-items span{display:block;color:#b9c7d0!important;line-height:1.55;text-wrap:pretty}
+.recognition-strip-items a{color:#82e5ef!important}
 
-/* 11) Search / filter controls should feel touch-ready and deliberate. */
+/* 11) Search / filter controls */
 .registry-filter,.tech-tab{min-height:40px}
 .registry-search,.tech-search{min-height:48px}
 .registry-tools{box-shadow:0 10px 28px rgba(15,23,42,.045)}
@@ -104,24 +263,38 @@ section[id],article[id]{scroll-margin-top:104px}
   .registry-card:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(15,23,42,.07);border-color:#c8d7e2}
 }
 
-/* 12) Contact / evidence resilience for long text and URLs. */
+/* 12) Contact / evidence resilience */
 .contact-email-address,.registry-link,.evidence-card a,.recognition-year a{
   overflow-wrap:anywhere;
   word-break:break-word;
 }
 
-/* 13) Footer: cleaner visual ending. */
+/* 13) Footer */
 .final-footer .footer-nav{row-gap:10px;column-gap:18px}
 .final-footer .footer-row{padding-top:18px}
 
-/* 14) Responsive optical balance */
+/* 14) Secondary-page hero polish */
+.projects-hero,.experience-hero,.contact-hero,.portfolio-hero,.architecture-hero,
+.technology-hero,.governance-hero,.evidence-hero{position:relative}
+.projects-hero h1,.experience-hero h1,.contact-hero h1,.portfolio-hero h1,
+.architecture-hero h1,.technology-hero h1,.governance-hero h1,.evidence-hero h1{text-wrap:balance}
+
+/* 15) One mobile navigation model */
+@media(max-width:960px){
+  .mobile-rail-shell,.mobile-primary-rail,.mobile-rail-button{display:none!important}
+  nav[aria-label="Primary navigation"]{border-bottom:1px solid rgba(148,163,184,.18)}
+}
+
+/* 16) Responsive optical balance */
+@media(max-width:1000px){
+  .home-cases .case-grid.root-priority .case:first-child{grid-column:auto}
+}
 @media(max-width:900px){
   section[id],article[id]{scroll-margin-top:84px}
   .section-head,.signature-head,.recognition-strip-inner,.mandate-grid,.mediq-grid,.cta-grid{align-items:start}
-  .photo-card{box-shadow:0 14px 34px rgba(15,23,42,.08)}
   .recognition-strip-items{grid-template-columns:1fr!important}
-  .recognition-strip-items article{padding:18px 0!important;border-left:0!important}
-  .recognition-strip-items article+article{border-top:1px solid rgba(148,163,184,.24)}
+  .recognition-strip-items article{padding:20px 0!important;border-left:0!important}
+  .recognition-strip-items article+article{border-top:1px solid rgba(255,255,255,.12)!important}
   .registry-grid{grid-template-columns:1fr!important}
 }
 @media(max-width:760px){
@@ -132,12 +305,28 @@ section[id],article[id]{scroll-margin-top:104px}
   .operating-steps article h3{line-height:1.12}
   .registry-filter,.tech-tab{min-height:44px}
   .registry-filters{gap:7px}
+  .executive-hero{padding-top:34px!important}
+  .executive-hero h1{font-size:clamp(3rem,13vw,4.35rem)!important;max-width:none!important;line-height:.94!important}
+  .executive-hero .hero-copy>p{font-size:15.5px!important;line-height:1.68!important}
+  .exec-snapshot-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .exec-snapshot-grid>div{padding:22px 16px!important}
+  .exec-snapshot-grid>div:nth-child(odd)::before{display:none}
+  .exec-snapshot-grid>div:nth-child(n+3){border-top:1px solid rgba(15,23,42,.08)!important}
+  .mediq-flagship .mediq-map{padding:18px!important;border-radius:20px!important}
+}
+@media(max-width:640px){
+  .executive-hero .mobile-identity-peek{display:block!important;border-radius:22px!important;box-shadow:0 18px 38px rgba(15,23,42,.10)!important}
+  .executive-hero .photo-card{display:none!important}
+  .executive-hero .hero-grid{grid-template-columns:1fr!important}
 }
 @media(max-width:420px){
   section[id],article[id]{scroll-margin-top:76px}
+  .exec-snapshot-grid{grid-template-columns:1fr!important}
+  .exec-snapshot-grid>div+div::before{display:none}
+  .exec-snapshot-grid>div:nth-child(n+2){border-top:1px solid rgba(15,23,42,.08)!important}
 }
 
-/* 15) Motion stays quiet and respectful */
+/* 17) Motion stays quiet */
 @media(prefers-reduced-motion:reduce){
   .photo-card,.registry-card{transform:none!important;transition:none!important}
 }

@@ -13,7 +13,8 @@
     .replace(/88 selected projects/gi, 'career project registry')
     .replace(/broader 15\+ platform Oman portfolio/gi, '14-record Oman / Integral portfolio')
     .replace(/15\+ government and enterprise platforms/gi, '14 tracked Oman / Integral project records')
-    .replace(/15\+ platform portfolio/gi, '14-record Oman / Integral portfolio');
+    .replace(/15\+ platform portfolio/gi, '14-record Oman / Integral portfolio')
+    .replace(/Oman Ministry of Education Recruitment System\s*[—-]\s*Sultan Qaboos Award-associated project/gi, 'Oman Ministry of Education Recruitment System');
 
   const normalizeCareerClaims = () => {
     document.querySelectorAll('a,strong,b,span,h1,h2,h3,p,small').forEach((el) => {
@@ -114,5 +115,5 @@
     document.head.appendChild(node);
   }
 
-  document.documentElement.dataset.portfolioVersion = 'career-evidence-179-qa3';
+  document.documentElement.dataset.portfolioVersion = 'career-evidence-179-qa4';
 })();

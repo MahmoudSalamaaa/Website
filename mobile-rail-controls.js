@@ -52,6 +52,25 @@
     cardLink.href = 'card.html';
     cardLink.setAttribute('aria-label', 'Open Mahmoud Salama digital business card');
     cardLink.textContent = 'Open Digital Card';
+
+    let socials = cardWrap.querySelector('.footer-socials');
+    if (!socials) {
+      socials = document.createElement('div');
+      socials.className = 'footer-socials';
+      cardWrap.appendChild(socials);
+    }
+    const socialLinks = [
+      ['LinkedIn','https://www.linkedin.com/in/mahmoud-salama-30249b34/'],
+      ['GitHub','https://github.com/MahmoudSalamaaa'],
+      ['Email','mailto:ma7moud.salamaaa@gmail.com']
+    ];
+    socials.replaceChildren(...socialLinks.map(([label, href]) => {
+      const link = document.createElement('a');
+      link.href = href;
+      link.textContent = label;
+      link.setAttribute('aria-label', label === 'Email' ? 'Email Mahmoud Salama' : `Open Mahmoud Salama on ${label}`);
+      return link;
+    }));
   };
 
   const runQualityPass = () => {

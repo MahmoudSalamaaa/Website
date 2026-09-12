@@ -1,0 +1,17 @@
+/* P33 — Shared premium interaction layer */
+.section-action{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.premium-case-link{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 15px;border:1px solid rgba(20,184,201,.36);border-radius:999px;background:rgba(20,184,201,.07);color:#0f6671;text-decoration:none;font-size:12px;font-weight:800;letter-spacing:.01em;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease,background .2s ease}
+.premium-case-link:hover{transform:translateY(-1px);border-color:rgba(20,184,201,.58);background:rgba(20,184,201,.11);box-shadow:0 10px 24px rgba(15,23,42,.07)}
+.premium-case-link:focus-visible{outline:3px solid rgba(20,184,201,.35);outline-offset:3px}
+.mediq-flagship .premium-case-link,.registry-card.is-flagship .premium-case-link{color:#9aedf4;border-color:rgba(128,228,239,.3);background:rgba(128,228,239,.08)}
+.registry-card{position:relative;overflow:hidden}
+.registry-card.is-flagship{background:linear-gradient(145deg,#0e2437,#12384d)!important;color:#fff!important;border-color:rgba(20,184,201,.32)!important;box-shadow:0 18px 42px rgba(15,23,42,.11)!important}
+.registry-card.is-flagship h3{color:#fff!important}.registry-card.is-flagship p,.registry-card.is-flagship .registry-meta,.registry-card.is-flagship .registry-era,.registry-card.is-flagship .registry-id{color:#bdd0da!important}.registry-card.is-flagship .registry-link{color:#8ce9f3!important}
+.registry-card.is-recognized:not(.is-flagship)::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,#caa64f,#f0d889,#caa64f)}
+.registry-card.is-recognized:not(.is-flagship){border-color:#e7dcc1!important}
+.registry-card .registry-link,.registry-card .premium-case-link{width:fit-content}
+.premium-reveal{opacity:.001;transform:translateY(8px)}
+.premium-reveal.is-visible{opacity:1;transform:none;transition:opacity .48s ease,transform .48s cubic-bezier(.2,.75,.25,1)}
+@media(hover:hover) and (pointer:fine){.registry-card:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(15,23,42,.075)}.registry-card.is-flagship:hover{box-shadow:0 22px 46px rgba(15,23,42,.16)!important}}
+@media(max-width:760px){.premium-case-link{min-height:44px;padding-inline:16px}.section-action{align-items:stretch}.section-action .premium-case-link{width:100%}}
+@media(prefers-reduced-motion:reduce){.premium-reveal,.premium-reveal.is-visible,.premium-case-link,.registry-card{opacity:1!important;transform:none!important;transition:none!important}}

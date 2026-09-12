@@ -8,7 +8,7 @@
       const a = document.createElement('a');
       a.className = 'premium-case-link';
       a.href = 'mediq.html';
-      a.textContent = 'Open MedIQ case study →';
+      a.textContent = 'Case study ↗';
       a.setAttribute('aria-label', 'Open the MedIQ executive case study');
       return a;
     };

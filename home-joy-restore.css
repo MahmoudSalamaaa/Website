@@ -164,7 +164,7 @@
 .mediq-flagship .mediq-facts span{color:#b9cbd5!important}
 .mediq-flagship .award-badge{color:#fff!important}
 .mediq-flagship .section-action .context-link{color:#8ce9f3!important;border-color:rgba(140,233,243,.30)!important}
-.mediq-flagship .mediq-story .section-action{display:flex!important;gap:12px!important;flex-wrap:wrap!important;margin-top:20px!important}
+.mediq-flagship .mediq-story .section-action{display:flex!important;gap:12px!important;flex-wrap:nowrap!important;margin-top:20px!important;width:100%!important}
 .mediq-flagship .mediq-story .section-action .context-link,
 .mediq-flagship .mediq-story .section-action .premium-case-link{
   display:inline-flex!important;align-items:center!important;justify-content:center!important;
@@ -173,8 +173,10 @@
   background:#12384d!important;color:#d8f8fb!important;
   box-shadow:3px 4px 0 rgba(20,184,201,.19)!important;
   font-size:.77rem!important;font-weight:850!important;line-height:1.2!important;text-decoration:none!important;
-  transform:rotate(-.3deg)!important;
+  transform:rotate(-.3deg)!important;flex:1 1 0!important;min-width:0!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;
 }
+.mediq-flagship .mediq-story .section-action .context-link{background:#0f7f91!important;border-color:#8ce9f3!important}
+.mediq-flagship .mediq-story .section-action .premium-case-link{background:#6751bd!important;border-color:#cbbfff!important}
 .mediq-flagship .mediq-story .section-action .context-link:hover,
 .mediq-flagship .mediq-story .section-action .premium-case-link:hover{
   border-color:#f2bd3f!important;background:#f2bd3f!important;color:#10263b!important;
@@ -293,6 +295,8 @@ body.home-page{
 .recognition-strip-items article:nth-child(3n){border-top:3px solid #f2bd3f!important}
 
 @media(max-width:760px){
+  .mediq-flagship .mediq-story .section-action{gap:8px!important}
+  .mediq-flagship .mediq-story .section-action .context-link,.mediq-flagship .mediq-story .section-action .premium-case-link{padding:10px 8px!important;font-size:.62rem!important;letter-spacing:-.02em!important}
   .executive-hero .hero-name::after{width:24px;height:7px;margin-left:8px}
   .executive-hero .hero-copy h1::after{width:122px!important;height:6px!important;margin-top:9px!important}
   .exec-snapshot::before{width:92px;height:62px;right:0;top:12px;opacity:.42}

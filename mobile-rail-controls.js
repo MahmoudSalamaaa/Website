@@ -19,8 +19,44 @@
     document.querySelectorAll('.desktop-links,.mobile-nav-panel,.mobile-primary-rail,footer .footer-nav').forEach((n) => add(n, true));
   };
 
+  const normalizeFooter = () => {
+    const footer = document.querySelector('footer .final-footer');
+    if (!footer) return;
+    const nav = footer.querySelector('.footer-nav');
+    if (nav) {
+      const links = [
+        ['Portfolio','portfolio.html'],['Projects','projects.html'],
+        ['Experience','experience.html'],['Architecture','architecture.html'],
+        ['Technologies','technologies.html'],['Governance','governance.html'],
+        ['Evidence','evidence.html'],['Contact','contact.html']
+      ];
+      nav.replaceChildren(...links.map(([label, href]) => {
+        const link = document.createElement('a');
+        link.href = href;
+        link.textContent = label;
+        return link;
+      }));
+    }
+    let cardWrap = footer.querySelector('.v5-card-footer-wrap');
+    if (!cardWrap) {
+      cardWrap = document.createElement('div');
+      cardWrap.className = 'v5-card-footer-wrap';
+      footer.appendChild(cardWrap);
+    }
+    let cardLink = cardWrap.querySelector('a');
+    if (!cardLink) {
+      cardLink = document.createElement('a');
+      cardWrap.appendChild(cardLink);
+    }
+    cardLink.className = 'v5-card-footer-link';
+    cardLink.href = 'card.html';
+    cardLink.setAttribute('aria-label', 'Open Mahmoud Salama digital business card');
+    cardLink.textContent = 'Open Digital Card';
+  };
+
   const runQualityPass = () => {
     ensureEvidenceLinks();
+    normalizeFooter();
 
     document.querySelectorAll('a[target="_blank"]').forEach((a) => {
       const rel = new Set((a.getAttribute('rel') || '').split(/\s+/).filter(Boolean));

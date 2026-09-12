@@ -1,0 +1,151 @@
+/* Site-wide visual energy: restrained colour, engineering notation and depth. */
+:root{
+  --signal-cyan:#17b8ca;
+  --signal-violet:#8067dc;
+  --signal-amber:#eeb83f;
+  --signal-rose:#dc6e9d;
+  --signal-blue:#4d8fd8;
+}
+
+/* Each major route has a distinct atmosphere while staying in one system. */
+.portfolio-hero,.experience-hero,.architecture-hero,.technologies-hero,
+.governance-hero,.contact-hero,.evidence-hero,.projects-hero,.hero{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  background-color:#fbfdfe;
+}
+.portfolio-hero{background-image:radial-gradient(circle at 88% 18%,rgba(23,184,202,.13),transparent 28%),radial-gradient(circle at 10% 94%,rgba(128,103,220,.08),transparent 30%)}
+.experience-hero{background-image:radial-gradient(circle at 86% 22%,rgba(238,184,63,.14),transparent 27%),radial-gradient(circle at 8% 92%,rgba(23,184,202,.08),transparent 31%)}
+.architecture-hero{background-image:radial-gradient(circle at 88% 18%,rgba(128,103,220,.13),transparent 28%),radial-gradient(circle at 8% 90%,rgba(77,143,216,.09),transparent 32%)}
+.technologies-hero{background-image:radial-gradient(circle at 86% 18%,rgba(23,184,202,.14),transparent 27%),radial-gradient(circle at 12% 92%,rgba(220,110,157,.07),transparent 30%)}
+.governance-hero{background-image:radial-gradient(circle at 88% 20%,rgba(238,184,63,.12),transparent 27%),radial-gradient(circle at 8% 90%,rgba(77,143,216,.075),transparent 31%)}
+.contact-hero{background-image:radial-gradient(circle at 84% 20%,rgba(220,110,157,.10),transparent 28%),radial-gradient(circle at 10% 90%,rgba(23,184,202,.10),transparent 31%)}
+.evidence-hero,.projects-hero{background-image:radial-gradient(circle at 88% 18%,rgba(77,143,216,.11),transparent 27%),radial-gradient(circle at 8% 92%,rgba(238,184,63,.075),transparent 30%)}
+
+/* A technical path doodle, kept behind content and below editorial hierarchy. */
+.portfolio-hero::after,.experience-hero::after,.architecture-hero::after,
+.technologies-hero::after,.governance-hero::after,.contact-hero::after,
+.evidence-hero::after,.projects-hero::after,.hero::after{
+  content:""!important;
+  position:absolute!important;
+  z-index:-1!important;
+  top:clamp(28px,7vw,88px)!important;
+  right:clamp(14px,4vw,58px)!important;
+  bottom:auto!important;
+  width:clamp(170px,23vw,330px)!important;
+  height:clamp(120px,17vw,230px)!important;
+  opacity:.62!important;
+  pointer-events:none!important;
+  border:0!important;
+  box-shadow:none!important;
+  background:
+    radial-gradient(circle at 12% 70%,transparent 0 7px,rgba(23,184,202,.52) 7.5px 9px,transparent 9.5px),
+    radial-gradient(circle at 50% 24%,transparent 0 5px,rgba(128,103,220,.43) 5.5px 7px,transparent 7.5px),
+    radial-gradient(circle at 88% 67%,transparent 0 6px,rgba(238,184,63,.52) 6.5px 8px,transparent 8.5px),
+    linear-gradient(30deg,transparent 0 42%,rgba(71,85,105,.19) 42.5% 43.2%,transparent 43.7%),
+    linear-gradient(151deg,transparent 0 52%,rgba(71,85,105,.18) 52.5% 53.2%,transparent 53.7%)!important;
+  transform:rotate(-3deg)!important;
+}
+.architecture-hero::after{transform:rotate(4deg)!important;opacity:.74!important}
+.governance-hero::after,.evidence-hero::after{opacity:.44!important}
+.contact-hero::after{transform:rotate(-7deg)!important}
+
+/* Editorial colour signals: slim, repeatable and never decorative clutter. */
+.kicker::after{
+  content:"";
+  display:inline-block;
+  width:24px;
+  height:3px;
+  margin-left:9px;
+  border-radius:99px;
+  vertical-align:middle;
+  background:linear-gradient(90deg,var(--signal-cyan),var(--signal-violet),var(--signal-amber));
+}
+.section-title::after,.section-head h2::after,.signature-head h2::after{
+  content:"";
+  display:block;
+  width:54px;
+  height:4px;
+  margin-top:13px;
+  border-radius:99px;
+  background:linear-gradient(90deg,var(--signal-cyan),var(--signal-violet));
+  opacity:.78;
+}
+
+/* Cards carry colour only at the edge; content remains calm and executive. */
+.case,.project-card,.featured-card,.gov,.gov-card,.technology-card,.tech-category,
+.architecture-card,.decision-card,.domain-card,.evidence-card,.recognition-year,
+.registry-card,.award,.metric,.stat,.portfolio-note,.truth-note{
+  position:relative;
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+}
+.case::before,.project-card::before,.featured-card::before,.gov::before,.gov-card::before,
+.technology-card::before,.tech-category::before,.architecture-card::before,.decision-card::before,
+.domain-card::before,.evidence-card::before,.recognition-year::before,.registry-card::before{
+  content:"";
+  position:absolute;
+  left:18px;
+  top:-1px;
+  width:42px;
+  height:3px;
+  border-radius:0 0 99px 99px;
+  background:var(--signal-cyan);
+  opacity:.72;
+}
+.case:nth-child(3n+2)::before,.project-card:nth-child(3n+2)::before,.gov:nth-child(3n+2)::before,
+.technology-card:nth-child(3n+2)::before,.tech-category:nth-child(3n+2)::before,
+.architecture-card:nth-child(3n+2)::before,.evidence-card:nth-child(3n+2)::before,
+.recognition-year:nth-child(3n+2)::before,.registry-card:nth-child(3n+2)::before{background:var(--signal-violet)}
+.case:nth-child(3n)::before,.project-card:nth-child(3n)::before,.gov:nth-child(3n)::before,
+.technology-card:nth-child(3n)::before,.tech-category:nth-child(3n)::before,
+.architecture-card:nth-child(3n)::before,.evidence-card:nth-child(3n)::before,
+.recognition-year:nth-child(3n)::before,.registry-card:nth-child(3n)::before{background:var(--signal-amber)}
+
+.tags span:nth-child(4n+1),.mandate-chips span:nth-child(4n+1){border-color:rgba(23,184,202,.28)!important;background:rgba(23,184,202,.045)!important}
+.tags span:nth-child(4n+2),.mandate-chips span:nth-child(4n+2){border-color:rgba(128,103,220,.23)!important;background:rgba(128,103,220,.04)!important}
+.tags span:nth-child(4n+3),.mandate-chips span:nth-child(4n+3){border-color:rgba(238,184,63,.28)!important;background:rgba(238,184,63,.05)!important}
+.tags span:nth-child(4n),.mandate-chips span:nth-child(4n){border-color:rgba(220,110,157,.20)!important;background:rgba(220,110,157,.035)!important}
+
+.recognition-year>strong,.registry-summary strong,.technology-summary strong,
+.architecture-lens strong{color:#12324a}
+.recognition-year:nth-child(3n+1)>strong,.registry-summary article:nth-child(4n+1) strong{color:#078a9b}
+.recognition-year:nth-child(3n+2)>strong,.registry-summary article:nth-child(4n+2) strong{color:#6650bf}
+.recognition-year:nth-child(3n)>strong,.registry-summary article:nth-child(4n+3) strong{color:#a66d00}
+
+@media(hover:hover){
+  .case:hover,.project-card:hover,.featured-card:hover,.gov:hover,.gov-card:hover,
+  .technology-card:hover,.tech-category:hover,.architecture-card:hover,.decision-card:hover,
+  .domain-card:hover,.evidence-card:hover,.recognition-year:hover,.registry-card:hover{
+    transform:translateY(-3px);
+    border-color:rgba(23,184,202,.24)!important;
+    box-shadow:0 17px 38px rgba(15,35,52,.09)!important;
+  }
+}
+
+/* Doodle density drops sharply on smaller screens. */
+@media(max-width:760px){
+  .portfolio-hero::after,.experience-hero::after,.architecture-hero::after,
+  .technologies-hero::after,.governance-hero::after,.contact-hero::after,
+  .evidence-hero::after,.projects-hero::after,.hero::after{
+    width:116px!important;
+    height:80px!important;
+    right:2px!important;
+    top:18px!important;
+    opacity:.27!important;
+  }
+  .kicker::after{width:16px;height:2px;margin-left:6px}
+  .section-title::after,.section-head h2::after,.signature-head h2::after{width:40px;height:3px;margin-top:10px}
+  .case::before,.project-card::before,.featured-card::before,.gov::before,.gov-card::before,
+  .technology-card::before,.tech-category::before,.architecture-card::before,.decision-card::before,
+  .domain-card::before,.evidence-card::before,.recognition-year::before,.registry-card::before{width:30px;height:2px}
+}
+@media(max-width:420px){
+  .portfolio-hero::after,.experience-hero::after,.architecture-hero::after,
+  .technologies-hero::after,.governance-hero::after,.contact-hero::after,
+  .evidence-hero::after,.projects-hero::after,.hero::after{opacity:.18!important}
+}
+@media(prefers-reduced-motion:reduce){
+  .case,.project-card,.featured-card,.gov,.gov-card,.technology-card,.tech-category,
+  .architecture-card,.decision-card,.domain-card,.evidence-card,.recognition-year,.registry-card{transition:none!important}
+}

@@ -1,0 +1,280 @@
+SANTECHTURE — DIRECTOR OF SOLUTIONS ARCHITECTURE
+CEO INTERVIEW — TOP 25 MUST-MASTER
+Evidence-Aligned v3 — 12 September 2026
+Mahmoud Salama
+
+Master the logic and proof points. Do not memorize sentence by sentence.
+
+1. Tell me about yourself.
+
+I’m a technology and digital transformation leader with more than 18 years of experience, starting from hands-on systems and software engineering and growing into enterprise architecture and executive technology leadership.
+
+Today, I lead Information Systems and Digital Transformation at Egypt’s Unified Procurement Authority. My current scope includes strategy, enterprise applications, architecture, integration, data, platform operations, infrastructure and security oversight, service continuity, and investment governance. I lead a 54-person multidisciplinary technology organization with seven direct reports and an annual IT budget of around EGP 150 million.
+
+One of my strongest experiences is MedIQ, a national healthcare procurement and medical-supply ecosystem. I led the target-state replacement and production transition across a platform serving more than 38,000 users, 11,000 healthcare facilities and 2,000 suppliers. My role covered architecture boundaries, migration and reconciliation, QA and UAT, security and performance readiness, cutover, stabilization and integration direction across SAP, Dynamics 365, CRM, GS1/GLN, HMIS and analytics.
+
+What I am looking for now is to bring that combination of engineering depth, architecture, operating-model leadership and healthcare technology experience into a product company where architecture directly supports regional scale and business growth.
+
+2. Why SANTECHTURE?
+
+SANTECHTURE interests me because the company is solving a business-critical healthcare problem, not only building software features.
+
+RCM is where clinical and administrative work becomes financial outcome. The technology has to help prevent documentation, coding, authorization and claim problems before they become denials or delayed cash.
+
+That is attractive to me because my own career has been built around complex healthcare and government platforms where architecture, integration, data quality, governance and production reliability all matter at the same time. I have led national platforms, enterprise integrations and major production transitions, so I understand the difference between a good design on paper and a platform that has to survive real operational pressure.
+
+I also like the regional challenge: different healthcare systems, regulators, payer platforms, deployment models and customer environments. That is exactly where reusable architecture and strong solution leadership create business value.
+
+3. Why are you leaving your current executive role for a Director role?
+
+For me, the move is about scope and environment, not title.
+
+I already lead a large technology function with 54 people, seven direct reports and responsibility for strategy, architecture, operations and a significant annual budget. I am not looking for a title upgrade.
+
+What I want is a different challenge: moving from a government national-platform environment into a product-driven healthcare company where architecture is closer to product strategy, customers, engineering scale, pre-sales and regional growth.
+
+If the role gives me meaningful ownership, strong technical problems and the ability to influence how the company scales, I am comfortable with the title Director. I evaluate the opportunity by impact, decision scope and growth, not by whether the title says Chief or Director.
+
+4. Why should I hire you?
+
+Because I bring a combination that is difficult to get from one profile: hands-on engineering roots, enterprise and solution architecture, healthcare technology, complex integration, production accountability and executive leadership.
+
+I can speak with executives about business outcomes, risk, TCO and investment priorities. I can work with customers and business teams on discovery and solution feasibility. And I can challenge engineering designs around boundaries, data, integration, NFRs, security, observability and production readiness.
+
+I have done this at national scale. I currently lead a 54-person technology organization, and I have directed major platform replacement and integrations such as MedIQ, SAP Strategic Medical Warehouses and an EGP 11 million Dynamics 365 programme.
+
+I would not try to replace SANTECHTURE’s RCM experts. My value is to turn domain knowledge into scalable architecture, stronger engineering decisions and reliable regional delivery.
+
+5. You don't have deep RCM experience. Why should I hire you instead of an RCM specialist?
+
+I would not claim to have deeper RCM knowledge than someone who has spent many years only in revenue cycle management.
+
+What I bring is the other half of the problem: architecture, engineering, enterprise integration, data governance, modernization, production operations and technology leadership in healthcare and government environments.
+
+I have led platforms where different systems, stakeholders, master data, security controls, workflows and external integrations all have to work together reliably. For example, I led UPA-side architecture and production transition for SAP and Dynamics integrations, and I directed MedIQ’s large-scale replacement and stabilization.
+
+So I would depend on strong RCM domain experts for the deepest business rules, while I make sure that their expertise becomes reusable, testable, observable and scalable technology. I can learn the RCM specifics quickly while contributing immediately to the architecture and leadership challenges of the role.
+
+6. What do you understand about SANTECHTURE's business?
+
+I see SANTECHTURE as a healthcare revenue-cycle technology company focused on helping providers improve financial outcomes through better workflow, rules, automation, integration and intelligence.
+
+The business value is not simply submitting claims. It is preventing problems earlier: improving documentation and coding quality, validating requirements, reducing manual work, reducing denials and making cash flow more predictable.
+
+From an architecture perspective, that means combining deterministic medical, coding, payer and regulatory rules with AI-assisted capabilities, while integrating with HIS, EHR, payer and government platforms.
+
+The key business question for architecture is simple: does the platform make customer onboarding faster, regulatory change safer, integrations more reusable, operations more reliable and revenue outcomes better? If architecture does not improve those things, it is not creating enough value.
+
+7. What is your experience with pre-sales?
+
+My experience is mainly on the technical and solutioning side of pre-sales rather than carrying a sales quota or owning commercial closing.
+
+I have worked with senior business stakeholders, government entities, partners and vendors to understand needs, run discovery and solution discussions, assess feasibility, define architecture and integration approaches, identify dependencies and risks, support estimation and evaluate build-versus-buy choices.
+
+For example, in programmes such as SAP and Dynamics 365, I was involved from business and integration requirements through architecture, technical acceptance and production transition. That requires the same discipline that good technical pre-sales needs: understand the real problem, make assumptions visible, explain trade-offs and avoid promising something engineering cannot support.
+
+I would rather surface a constraint early than win a deal based on a promise that damages trust later.
+
+8. Walk me through your pre-sales approach for a new enterprise customer.
+
+I start with discovery, not with a demo.
+
+First, I want to understand the business outcome, current workflow, systems landscape, integration points, data ownership, transaction volumes, security and regulatory constraints, operational pain and success criteria.
+
+Then I map the need against existing product capabilities. I separate what can be configured, what needs integration, what is a genuine product gap and what may be a customer-specific request.
+
+After that, I define the solution architecture, assumptions, dependencies, NFRs, implementation approach, risks, rough sizing and what a successful PoC or first phase would prove.
+
+My goal is not to match every requested feature. It is to show a solution that creates value for the customer and is realistic for SANTECHTURE to build, operate and support.
+
+9. Sales promised something Engineering says cannot be delivered on time. What do you do?
+
+First, I remove emotion and establish the facts: what exactly was promised, what the customer truly needs, what engineering can deliver safely, and which date or requirement is actually fixed.
+
+Then I bring Sales, Product, Architecture and Engineering together around options. We may phase the scope, reuse an existing capability, change the implementation approach or offer an alternative that achieves the same business outcome.
+
+I am used to coordinating business, technical and third-party dependencies in programmes such as Dynamics 365, where integration, testing and production readiness all had to move together.
+
+If the commitment is genuinely impossible or creates unacceptable risk, I will say that clearly. Protecting credibility with the customer is more important than protecting an unrealistic promise.
+
+10. A strategic customer requests a customization that could damage the product architecture. Do you accept it?
+
+I separate the customer’s business need from the technical implementation they requested.
+
+First, I look for a configuration option, a reusable extension point or a product capability that can solve the need without changing the core in a customer-specific way.
+
+If it is genuinely unique, I evaluate strategic value, revenue impact, implementation cost, support burden, security and long-term architecture debt. I also ask whether the capability may be useful for other customers or markets.
+
+My own architecture work is based on explicit system boundaries and decision rights. I have learned that one shortcut inside the core can become a permanent cost every time the platform changes.
+
+So I will work hard to solve the customer’s problem, but I will not casually trade long-term product health for a short-term customization.
+
+11. What is your leadership style?
+
+My leadership style is mainly situational, with a strong bias toward clarity, ownership and outcomes.
+
+With strong senior people, I give context, expected outcomes and decision boundaries, then give them room to execute. With someone who is still developing, I use more coaching, closer checkpoints and faster feedback.
+
+Today I lead a 54-person multidisciplinary technology organization with seven direct reports across applications, analysis, QA and reporting, DevOps, mobile, data and integration, support, and infrastructure and security oversight. That scale only works if capable people have real ownership.
+
+During a serious incident or time-critical decision, I can become more direct because clarity and speed matter. The style can change; accountability does not.
+
+12. Which management approaches do you actually use?
+
+I do not use one management method for every situation.
+
+My default is situational leadership combined with management by outcomes: clear objectives, clear ownership, measurable results and regular feedback.
+
+I use coaching when capability can be developed, delegation when the person is ready, collaborative decision-making when team knowledge matters, and more direct leadership during incidents or urgent situations.
+
+I also use operating mechanisms, not only leadership style: architecture and design reviews, release gates, service KPIs, incident and RCA discipline, clear escalation, and post-production learning.
+
+For me, management is not a label. It is choosing the right level of direction, support and governance for the person, the risk and the situation.
+
+13. How do you handle an underperforming employee?
+
+I start by diagnosing the real cause before deciding on the action.
+
+The issue may be capability, unclear expectations, workload, motivation, behavior, or a mismatch between the person and the role.
+
+I use specific examples and evidence, agree on measurable expectations, define the support or coaching needed and set a clear review period. I follow up regularly rather than waiting until the end.
+
+If the person improves, that is the best outcome. If performance does not improve after fair support and clear expectations, I take the appropriate formal action.
+
+In a large team, avoiding an underperformance problem is not kindness. It transfers the cost to the stronger people and weakens accountability.
+
+14. Your strongest engineer is toxic and damaging team morale. What do you do?
+
+I would address it directly and early.
+
+A strong engineer creates value through both technical output and the effect they have on the team. If their behavior damages collaboration, trust or retention, then the total impact may be negative.
+
+I would give specific examples, explain the impact, set a clear expectation for behavior and give the person a fair opportunity to change.
+
+I would also make sure technical disagreement is not being incorrectly labeled as “toxicity.” Strong challenge is healthy; disrespect, intimidation or repeated destructive behavior is not.
+
+If the behavior continues after clear feedback and support, I would act. I would not allow one high performer to lower the standard for the entire team.
+
+15. Two senior architects strongly disagree. How do you resolve it?
+
+First, I make sure the two architects are solving the same problem and using the same assumptions.
+
+Then I define the decision criteria: business need, scalability, reliability, security, cost, delivery time, operational complexity, data impact and reversibility.
+
+I ask both sides to present evidence and trade-offs. I move the discussion away from “my technology is better” toward “which option best fits this problem?”
+
+If we still cannot agree, the accountable decision owner makes the decision, the reasoning is documented and the team commits.
+
+I welcome strong technical disagreement. I do not allow it to become personal or stay open forever.
+
+16. How would you scale SANTECHTURE across different hospitals and GCC markets?
+
+I would design for one strong core and controlled variation.
+
+The core product should contain the capabilities that are common across customers and markets. Regional, payer and hospital differences should be isolated through configuration, rules, adapters, terminology mappings and clearly defined extension points.
+
+This is close to the way I approach national platforms and enterprise integration today: define boundaries, data ownership, interface contracts and NFRs so variation does not spread everywhere.
+
+I would also create reusable onboarding patterns, certification tests and observability for each integration type.
+
+My principle would be: localize at the edge, standardize at the core. Hospital number one hundred should be easier to onboard than hospital number ten.
+
+17. How would you handle dozens of HIS, EHR, payer and regulatory integrations?
+
+I would avoid uncontrolled point-to-point integration.
+
+I would define clear integration contracts, canonical business concepts where useful, versioned APIs and events, reusable adapters, validation, security, idempotency, error handling and end-to-end traceability.
+
+Different systems can still require different mappings, but the internal product should not become coupled to every customer’s data model.
+
+This is an area where I have direct experience. In the SAP Strategic Medical Warehouses integration, I led UPA-side boundaries, data flows, mappings, master-data harmonization, security, error handling, logging, UAT, go-live and production reconciliation. I have also governed integrations across Dynamics 365, CRM, GS1/GLN and HMIS.
+
+The architecture must make the next integration cheaper and safer than the previous one.
+
+18. How would you modernize our legacy architecture?
+
+I would not start by saying, “We need microservices.”
+
+First, I would identify where the current architecture is hurting the business: slow releases, tight coupling, scaling limits, reliability issues, difficult testing, customer-specific change or high operational cost.
+
+Then I would modernize incrementally around business capability boundaries, using the Strangler pattern where appropriate and protecting production continuity.
+
+I have already led this type of transition: modernizing established .NET Framework and Telerik solutions toward React, Node.js services, C#/.NET APIs, PostgreSQL, Redis, Docker and Apache Superset while keeping operations running.
+
+The goal is not more services. The goal is lower cost and risk of change, better ownership and safer delivery.
+
+19. How would you manage millions of rules and frequent regulatory changes?
+
+I would treat rules as governed product assets, not scattered code.
+
+Each rule should have clear ownership, version, effective dates, market or payer scope, source or rationale, tests, audit history and rollback capability.
+
+Changes should move through automated regression tests and controlled deployment. Customer-specific configuration must be separated from the shared rule core.
+
+My own background includes translating regulatory and governance requirements into RBAC, segregation of duties, audit trails, traceability, retention and controlled approvals. The same governance mindset applies to a large rules platform.
+
+When rules affect claims and revenue, we need to know exactly which rule version made which decision and why.
+
+20. Where should AI be used in SANTECHTURE, and where should it not?
+
+I would use AI where probability and pattern recognition create clear value, and deterministic logic where correctness and auditability must be guaranteed.
+
+Good AI use cases include denial-risk prediction, anomaly detection, documentation assistance, coding suggestions, prioritization, knowledge retrieval and engineering productivity.
+
+I would keep regulatory constraints, hard eligibility rules, security controls and final irreversible financial actions behind deterministic guardrails unless there is a very strong governance model.
+
+The architecture should include confidence thresholds, explainability, human review where needed, audit trails and model monitoring.
+
+AI should improve a controlled workflow. It should not become an unobservable decision-maker inside a financial healthcare process.
+
+21. What happens when NPHIES or another external platform is unavailable?
+
+I design external dependencies assuming they will eventually fail.
+
+For NPHIES or another external platform, I would use timeouts, circuit breakers, controlled retries with backoff, durable queues where appropriate, idempotency and clear transaction state.
+
+The user and operations teams need visibility: is the transaction accepted, pending, failed locally or waiting for an external system?
+
+I would also define reconciliation and replay procedures so recovery does not create duplicates.
+
+This matches how I think about production accountability today: release, monitoring, supportability, continuity and recovery are part of the solution, not operations work that starts after development ends.
+
+22. How do you make decisions when you do not have complete information?
+
+I first classify the decision by risk and reversibility.
+
+If it is easy to reverse, I am comfortable making the decision with enough evidence and learning quickly. If it is expensive or dangerous to reverse, I spend more time validating assumptions.
+
+I make the unknowns explicit, get input from the people closest to the problem, and define what evidence would change the decision.
+
+My architecture work often includes current-to-target decisions, build-versus-buy, TCO, PoCs and production transition. Those decisions rarely have perfect information.
+
+The skill is not waiting for certainty. It is making a responsible decision with visible assumptions and a clear way to learn.
+
+23. What would your first 90 days look like?
+
+My first 90 days would have three phases.
+
+In the first 30 days, I would learn: products, architecture, engineering teams, top customers, integrations, deployment models, recent incidents, security constraints, technical debt and business roadmap. I would spend time with Product, Sales, Delivery and customer-facing teams, not only Engineering.
+
+From days 31 to 60, I would create an architecture baseline: major capabilities, system boundaries, integration map, NFR risks, ownership and a prioritized list of areas to keep, improve, modernize or replace.
+
+From days 61 to 90, I would want at least one visible improvement delivered—not only a document. It might be an integration standard, better claim-level observability, a modernization pilot or stronger quality gates.
+
+By day 90, leadership should have a clear architecture baseline, priority roadmap and confidence that Architecture is helping delivery move faster and more safely.
+
+24. What is your biggest weakness?
+
+One weakness I actively manage is that, because I grew from hands-on engineering, I can naturally go very deep into technical detail when a problem is important.
+
+That depth helps in architecture reviews and major incidents, but at executive scale it can become a bottleneck if I stay involved longer than necessary.
+
+I manage it by being explicit about decision boundaries, delegating implementation ownership and asking myself whether my involvement is improving the decision or simply making me feel closer to the technical work.
+
+Leading a 54-person organization has made that discipline much stronger.
+
+I still want technical context, but I do not need to own every technical answer.
+
+25. If I joined, what would I need to accomplish in the first 12 months for you to consider the hiring decision a great one?
+
+WHY ASK: Best closing question. It asks Anas to define measurable first-year success in his own words.

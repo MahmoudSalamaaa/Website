@@ -1,0 +1,137 @@
+/* Home identity restoration — joyful, credible, and intentionally visible. */
+.executive-hero{
+  background:
+    radial-gradient(circle at 80% 18%,rgba(20,184,201,.17),transparent 27%),
+    radial-gradient(circle at 12% 88%,rgba(139,92,246,.11),transparent 30%),
+    linear-gradient(135deg,#fffefa 0%,#f7fcfd 52%,#fff9e8 100%)!important;
+}
+
+/* Restore the architecture doodle that the later polish layer had replaced. */
+.executive-hero::after{
+  content:""!important;
+  inset:auto clamp(12px,3vw,46px) 22px auto!important;
+  width:250px!important;
+  height:170px!important;
+  opacity:.86!important;
+  pointer-events:none!important;
+  background:
+    radial-gradient(circle at 13% 72%,transparent 0 8px,rgba(20,184,201,.55) 8.5px 10.5px,transparent 11px),
+    radial-gradient(circle at 49% 28%,transparent 0 6px,rgba(139,92,246,.42) 6.5px 8.5px,transparent 9px),
+    radial-gradient(circle at 86% 66%,transparent 0 7px,rgba(245,158,11,.52) 7.5px 9.5px,transparent 10px),
+    linear-gradient(28deg,transparent 0 42%,rgba(71,85,105,.24) 42.5% 43.3%,transparent 43.8% 100%),
+    linear-gradient(150deg,transparent 0 53%,rgba(71,85,105,.24) 53.5% 54.2%,transparent 54.7% 100%)!important;
+  transform:rotate(-4deg)!important;
+}
+
+.executive-hero .hero-grid{
+  grid-template-columns:minmax(0,1fr) minmax(390px,.78fr)!important;
+  gap:clamp(36px,5vw,72px)!important;
+}
+
+.executive-hero .photo-card{
+  width:min(100%,520px)!important;
+  justify-self:end!important;
+  position:relative!important;
+  padding:13px 13px 18px!important;
+  overflow:visible!important;
+  border:2px solid rgba(20,184,201,.30)!important;
+  border-radius:34px!important;
+  background:linear-gradient(145deg,rgba(255,255,255,.96),rgba(239,252,253,.92) 58%,rgba(255,247,218,.94))!important;
+  box-shadow:0 30px 72px rgba(15,23,42,.15),0 0 0 8px rgba(139,92,246,.055)!important;
+  transform:rotate(1deg)!important;
+}
+.executive-hero .photo-card::before{
+  content:"EXECUTIVE / BUILDER"!important;
+  top:22px!important;
+  left:-18px!important;
+  padding:8px 11px!important;
+  border:1px solid rgba(139,92,246,.28)!important;
+  border-radius:999px!important;
+  background:#fff!important;
+  color:#5b4aa0!important;
+  box-shadow:0 8px 22px rgba(15,23,42,.10)!important;
+}
+.executive-hero .photo-card::after{
+  content:"✦"!important;
+  position:absolute!important;
+  right:-15px!important;
+  top:54px!important;
+  width:42px!important;
+  height:42px!important;
+  display:grid!important;
+  place-items:center!important;
+  border-radius:50%!important;
+  background:#f7bf3c!important;
+  color:#172b3d!important;
+  font-size:19px!important;
+  box-shadow:0 9px 24px rgba(245,158,11,.28)!important;
+}
+.executive-hero .photo-frame{
+  border:0!important;
+  border-radius:24px!important;
+  overflow:hidden!important;
+  background:#eaf6f7!important;
+}
+.executive-hero .photo-frame img{
+  width:100%!important;
+  aspect-ratio:4/5!important;
+  object-fit:cover!important;
+  object-position:center top!important;
+}
+
+.hero-award{
+  display:grid;
+  grid-template-columns:38px 1fr;
+  align-items:center;
+  gap:10px;
+  position:absolute;
+  left:-34px;
+  bottom:64px;
+  z-index:3;
+  width:min(320px,82%);
+  padding:12px 15px;
+  border:1px solid rgba(245,158,11,.34);
+  border-radius:16px;
+  background:rgba(15,35,52,.94);
+  color:#fff;
+  text-decoration:none;
+  box-shadow:0 16px 34px rgba(15,23,42,.22);
+  backdrop-filter:blur(12px);
+  transform:rotate(-1.5deg);
+}
+.hero-award>span:first-child{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:#f7bf3c;color:#172b3d;font-size:19px}
+.hero-award strong{display:block;font:800 13px/1.2 var(--sans);letter-spacing:-.01em}
+.hero-award small{display:block;margin-top:4px;color:#bfeff4;font:650 8.5px/1.35 var(--mono);letter-spacing:.035em}
+.hero-award:hover{transform:rotate(-1.5deg) translateY(-3px);box-shadow:0 20px 40px rgba(15,23,42,.26)}
+.hero-award:focus-visible{outline:3px solid rgba(20,184,201,.52);outline-offset:4px}
+
+.executive-hero .photo-label{
+  margin:13px 0 0 8px!important;
+  padding:8px 12px!important;
+  border-color:rgba(245,158,11,.40)!important;
+  border-radius:999px!important;
+  background:#fff2b8!important;
+  color:#4c4a36!important;
+}
+
+@media(max-width:980px){
+  .executive-hero .hero-grid{grid-template-columns:1fr!important}
+  .executive-hero .photo-card{justify-self:center!important;width:min(86vw,470px)!important;margin-top:8px!important}
+}
+@media(max-width:760px){
+  .executive-hero::after{width:132px!important;height:92px!important;right:4px!important;bottom:8px!important;opacity:.48!important}
+  .executive-hero .photo-card{width:min(88vw,390px)!important;padding:10px 10px 15px!important;border-radius:27px!important;transform:none!important}
+  .executive-hero .photo-card::before{left:-8px!important;top:18px!important;font-size:8px!important}
+  .executive-hero .photo-card::after{right:-8px!important;top:48px!important;width:36px!important;height:36px!important}
+  .hero-award{left:12px;bottom:58px;width:calc(100% - 34px);transform:none;padding:10px 12px}
+  .hero-award:hover{transform:translateY(-2px)}
+  .executive-hero .photo-label{margin-left:4px!important;font-size:8px!important}
+}
+@media(max-width:420px){
+  .executive-hero::after{opacity:.30!important}
+  .hero-award{grid-template-columns:32px 1fr;left:8px;width:calc(100% - 20px)}
+  .hero-award>span:first-child{width:32px;height:32px;border-radius:10px}
+  .hero-award strong{font-size:11px}
+  .hero-award small{font-size:7.7px}
+}
+@media(prefers-reduced-motion:reduce){.hero-award{transition:none!important}}

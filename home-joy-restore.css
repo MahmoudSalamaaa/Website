@@ -246,6 +246,7 @@ body.home-page{
   background:rgba(255,255,255,.9)!important;
   box-shadow:0 14px 32px rgba(15,35,52,.065)!important;
 }
+.exec-snapshot-grid{gap:22px!important}
 .home-mandate{
   background:
     radial-gradient(circle at 94% 12%,rgba(245,158,11,.13),transparent 24%),
@@ -298,6 +299,7 @@ body.home-page{
   .home-mandate::after{width:62px;height:62px;right:-16px;bottom:18px;opacity:.58}
   .home-cases::after{display:block!important;width:68px!important;height:50px!important;opacity:.42!important}
   .executive-hero .photo-card{box-shadow:0 20px 44px rgba(15,23,42,.17),5px 6px 0 rgba(128,103,220,.12),-4px -4px 0 rgba(245,158,11,.10)!important}
+  .exec-snapshot-grid{gap:28px!important}
 }
 @media(max-width:420px){
   .exec-snapshot::before{opacity:.30}
@@ -516,32 +518,3 @@ body.home-page{
   transition:transform .18s ease,background .18s ease,color .18s ease,box-shadow .18s ease!important;
 }
 .recognition-strip-items article:nth-child(2) a{
-  border-color:#6751bd!important;
-  background:#6751bd!important;
-  box-shadow:3px 4px 0 rgba(245,158,11,.28)!important;
-}
-.recognition-strip-items a:hover{
-  background:#14aabc!important;
-  border-color:#14aabc!important;
-  color:#fff!important;
-  text-decoration:none!important;
-  transform:translateY(-2px) rotate(0deg)!important;
-  box-shadow:5px 6px 0 rgba(15,35,52,.14)!important;
-}
-.recognition-strip-items a:focus-visible{
-  outline:3px solid rgba(20,184,201,.38)!important;
-  outline-offset:4px!important;
-}
-
-@media(max-width:900px){
-  .recognition-strip-inner{grid-template-columns:1fr!important;gap:34px!important}
-  .recognition-strip-copy h2{max-width:20ch!important}
-}
-@media(max-width:640px){
-  .recognition-strip{padding:52px 0!important}
-  .recognition-strip-inner{gap:28px!important}
-  .recognition-strip-items{grid-template-columns:1fr!important;gap:20px!important}
-  .recognition-strip-items article,.recognition-strip-items article.premium-reveal{min-height:0!important;padding:28px 22px 23px!important}
-  .recognition-strip-items article+article{border-left:1px solid rgba(15,35,52,.13)!important;border-top:1px solid rgba(15,35,52,.13)!important}
-  .recognition-strip-items a{margin-top:20px!important;padding:11px 15px!important}
-}

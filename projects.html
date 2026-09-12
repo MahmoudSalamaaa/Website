@@ -101,9 +101,9 @@
       [30744505, 'Organized library shelves with books', '50% 50%', ['News System / News Portal','Reusable CMS / Electronic Publishing Platform','Egypt 2.0']],
       [18860448, 'Farmer working in an agricultural field', '50% 50%', ['Oman Agricultural Investment','Oman Ministry of Agriculture, Fisheries and Water Resources — Official Website']],
     ];
-    const photo = photoGroups.find(([, , , names]) => names.includes(project.name));
+    const photo = photoGroups.find(group => Array.isArray(group[3]) && group[3].includes(project.name));
     if (photo) {
-      const [id, alt, position] = photo;
+      const id = photo[0], alt = photo[1], position = photo[2];
       return `<figure class="registry-card-art reviewed-photo" style="margin:0 0 18px"><div class="registry-visual"><img src="https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&amp;w=900&amp;q=85" alt="${escapeHtml(alt)} — illustrative photo" width="900" height="600" style="object-position:${position};aspect-ratio:3/2;height:auto" loading="lazy" decoding="async" onerror="this.closest('figure').remove()"><span class="visual-doodle" aria-hidden="true">✦</span></div><figcaption style="padding:8px 2px;font:500 11px/1.5 system-ui;color:#526879"><a href="https://www.pexels.com/photo/${id}/" target="_blank" rel="noopener noreferrer" style="color:inherit">Illustrative photo · Pexels ↗</a></figcaption></figure>`;
     }
     const verifiedById={1:'01-mediq-ecosystem-local.webp',2:'02-mediq-etender-local.webp',3:'03-mediq-pharmacy-local.webp',4:'04-mediq-stocktaking-local.webp',5:'05-medical-storage-validation-inventory-governance.webp',6:'06-digital-budgeting.webp',7:'07-unified-assets-medical-device-maintenance.webp',8:'08-strategic-medical-warehouses-sap-enterprise-integratio.webp',9:'09-microsoft-dynamics-365-erp-unified-financial-system.webp',10:'10-health-technology-assessment-hta-platform.webp',11:'11-private-cloud-platform.webp',12:'12-national-pharmaceutical-track-trace-program.webp',13:'13-healthcare-government-integration-program.webp',14:'14-operational-data-store-ods.webp',15:'15-upa-public-portal.webp',16:'16-customer-service-technical-support-platform.webp',17:'17-mediq-mobile-local.webp',18:'18-government-sector-inventory-registration-follow-up.webp'};

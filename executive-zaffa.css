@@ -1,0 +1,115 @@
+/* Executive Zaffa — a visible, controlled joy layer. 2026-09-13 */
+:root{
+  --z-navy:#0d2c3d;--z-ink:#10263b;--z-teal:#14b8c9;--z-cyan:#8ce9f3;
+  --z-yellow:#ffd968;--z-pink:#f3a8c5;--z-violet:#b9a8f4;--z-paper:#fffdf7;
+}
+body{background:var(--z-paper)}
+main{overflow:hidden}
+
+/* A slim celebratory thread that makes the new release unmistakable. */
+body::before{
+  content:"STRATEGY  ✦  ARCHITECTURE  ✦  DELIVERY  ✦  IMPACT";
+  position:relative;z-index:20;display:block;width:100%;padding:8px 18px;
+  overflow:hidden;background:linear-gradient(90deg,var(--z-yellow),#fff1a9 28%,var(--z-cyan) 62%,var(--z-pink));
+  color:var(--z-navy);font:800 11px/1.2 var(--mono,monospace);letter-spacing:.13em;text-align:center;
+}
+nav{border-bottom:1px solid rgba(13,44,61,.12)!important;box-shadow:0 10px 34px rgba(13,44,61,.06)}
+.mark img,.mq-brand{filter:drop-shadow(3px 4px 0 rgba(20,184,201,.15))}
+
+/* Hero: paper-board composition, not a generic corporate banner. */
+.executive-hero,.projects-type-hero,.governance-hero,.evidence-hero,.contact-hero,.hero{
+  position:relative;isolation:isolate;
+  background:
+    radial-gradient(circle at 8% 18%,rgba(185,168,244,.2),transparent 23%),
+    radial-gradient(circle at 92% 20%,rgba(255,217,104,.24),transparent 22%),
+    radial-gradient(circle at 74% 92%,rgba(243,168,197,.16),transparent 24%),
+    linear-gradient(135deg,#fff 0%,#f8fdff 54%,#fffaf0 100%)!important;
+}
+.executive-hero::before,.projects-type-hero::before,.governance-hero::before,.evidence-hero::before,.contact-hero::before,.hero::before{
+  content:"✦";position:absolute;z-index:-1;left:clamp(14px,4vw,58px);top:clamp(20px,6vw,72px);
+  display:grid;place-items:center;width:48px;height:48px;border:2px solid var(--z-teal);border-radius:50%;
+  color:var(--z-teal);font-size:24px;transform:rotate(-9deg);box-shadow:6px 7px 0 rgba(20,184,201,.12)
+}
+.executive-hero::after,.projects-type-hero::after,.governance-hero::after,.evidence-hero::after,.contact-hero::after,.hero::after{
+  content:"BUILD → SCALE → PROVE";position:absolute;z-index:-1;right:clamp(-38px,2vw,32px);bottom:32px;
+  padding:10px 16px;background:var(--z-yellow);color:var(--z-navy);font:800 10px/1 var(--mono,monospace);
+  letter-spacing:.08em;transform:rotate(-3deg);box-shadow:5px 6px 0 rgba(13,44,61,.1)
+}
+.kicker{display:inline-flex!important;align-items:center;gap:8px;padding:7px 10px!important;border-radius:5px!important;background:#e8fbfd!important;color:#08798a!important;box-shadow:3px 4px 0 rgba(20,184,201,.11)}
+.kicker::before{content:"✦";color:#f09b2e}
+
+/* Sticky-note rhythm for facts and proof. */
+.exec-snapshot{padding-block:clamp(44px,6vw,72px)!important;background:#fff!important}
+.exec-snapshot-grid{gap:clamp(14px,2vw,24px)!important}
+.exec-snapshot-grid>div,.project-type-summary article{
+  position:relative;border:1px solid rgba(13,44,61,.13)!important;border-radius:10px 14px 12px 9px!important;
+  box-shadow:8px 10px 0 rgba(13,44,61,.08)!important;transition:transform .22s ease,box-shadow .22s ease
+}
+.exec-snapshot-grid>div:nth-child(1),.project-type-summary article:nth-child(1){background:#dcf8fb!important;transform:rotate(-.6deg)}
+.exec-snapshot-grid>div:nth-child(2),.project-type-summary article:nth-child(2){background:#eee9ff!important;transform:rotate(.45deg)}
+.exec-snapshot-grid>div:nth-child(3),.project-type-summary article:nth-child(3){background:#fff1b8!important;transform:rotate(-.35deg)}
+.exec-snapshot-grid>div:nth-child(4),.project-type-summary article:nth-child(4){background:#ffedf5!important;transform:rotate(.55deg)}
+.exec-snapshot-grid>div::before,.project-type-summary article::before{
+  content:"";position:absolute;left:50%;top:-8px;width:62px;height:17px;border-radius:2px;
+  background:rgba(255,217,104,.62);transform:translateX(-50%) rotate(-1deg)
+}
+.exec-snapshot-grid>div:hover,.project-type-summary article:hover{transform:translateY(-4px) rotate(0)!important;box-shadow:10px 14px 0 rgba(13,44,61,.1)!important}
+
+/* Projects: breathing room, numbered editorial cards, no stock imagery. */
+.registry-grid{gap:clamp(22px,3vw,34px)!important}
+.registry-card{
+  overflow:visible!important;min-height:0!important;padding:clamp(22px,3vw,30px)!important;
+  border-radius:16px 22px 18px 14px!important;box-shadow:8px 10px 0 rgba(13,44,61,.075),0 20px 46px rgba(13,44,61,.06)!important
+}
+.registry-card:nth-child(3n+1){background:linear-gradient(145deg,#fff,#f1fcfd)!important}
+.registry-card:nth-child(3n+2){background:linear-gradient(145deg,#fff,#fffaf0)!important}
+.registry-card:nth-child(3n){background:linear-gradient(145deg,#fff,#fff4f8)!important}
+.registry-card::before{content:"";position:absolute;right:18px;top:-8px;width:54px;height:16px;background:rgba(185,168,244,.43);transform:rotate(3deg)}
+.registry-card:nth-child(even)::before{background:rgba(255,217,104,.58);transform:rotate(-3deg)}
+.registry-card h3{font-size:clamp(1.2rem,2vw,1.5rem)!important;line-height:1.15!important}
+.registry-card>p{font-size:1rem!important;line-height:1.65!important}
+.registry-card details{border-top:2px dashed rgba(20,184,201,.28)!important}
+.registry-filter{border-width:1px!important;box-shadow:3px 4px 0 rgba(13,44,61,.07)}
+.registry-filter:nth-child(2n){background:#fff4c9}.registry-filter:nth-child(3n){background:#f7eefa}
+.registry-filter.active{background:var(--z-navy)!important;color:#fff!important;box-shadow:4px 5px 0 rgba(20,184,201,.35)!important}
+
+/* Sections gain a restrained scrapbook edge. */
+.mediq-flagship,.home-cases,.recognition-strip,.signature,.band,.evidence-band,.registry-shell,.contact-hub{position:relative}
+.mediq-flagship::before,.home-cases::before,.recognition-strip::before,.signature::before,.band::before,.evidence-band::before,.registry-shell::before,.contact-hub::before{
+  content:"";position:absolute;left:clamp(18px,4vw,64px);top:18px;width:72px;height:8px;
+  border-top:3px solid var(--z-pink);border-bottom:2px solid var(--z-teal);transform:rotate(-4deg);opacity:.85
+}
+.case,.recognition-year,.evidence-card,.contact-channel,.mediq-node{
+  transition:transform .2s ease,box-shadow .2s ease
+}
+.case:hover,.recognition-year:hover,.evidence-card:hover,.contact-channel:hover,.mediq-node:hover{transform:translateY(-4px);box-shadow:7px 9px 0 rgba(20,184,201,.1)}
+
+/* Make action hierarchy joyful and obvious. */
+.hero-actions{gap:11px!important;flex-wrap:wrap}
+.hero-actions .btn,.section-action .btn,.context-link{border-radius:9px 13px 10px 8px!important;box-shadow:4px 5px 0 rgba(13,44,61,.12)!important}
+.hero-actions .btn:nth-child(2){background:#e9faff!important;color:var(--z-navy)!important;border-color:#72d9e4!important}
+.hero-actions .btn:nth-child(3){background:#fff0b8!important;color:var(--z-navy)!important;border-color:#efc64c!important}
+.hero-actions .btn:hover,.section-action .btn:hover,.context-link:hover{transform:translateY(-3px) rotate(-.35deg)!important}
+
+/* Footer is a composed final board. */
+footer{position:relative;border-top:6px solid transparent!important;border-image:linear-gradient(90deg,var(--z-teal),var(--z-yellow),var(--z-pink),var(--z-violet)) 1!important}
+.v5-card-footer-link{background:linear-gradient(135deg,#163f54,#0d2c3d)!important;border-color:var(--z-cyan)!important}
+.footer-socials a:nth-child(1){border-color:rgba(140,233,243,.45)!important}.footer-socials a:nth-child(2){border-color:rgba(255,217,104,.45)!important}.footer-socials a:nth-child(3){border-color:rgba(243,168,197,.45)!important}
+
+@media(max-width:760px){
+  body::before{padding:7px 8px;font-size:8px;letter-spacing:.075em;white-space:nowrap}
+  .executive-hero::before,.projects-type-hero::before,.governance-hero::before,.evidence-hero::before,.contact-hero::before,.hero::before{width:34px;height:34px;left:auto;right:15px;top:18px;font-size:17px}
+  .executive-hero::after,.projects-type-hero::after,.governance-hero::after,.evidence-hero::after,.contact-hero::after,.hero::after{right:-35px;bottom:18px;font-size:8px;opacity:.72}
+  .kicker{font-size:.68rem!important;line-height:1.35!important;max-width:calc(100% - 10px)}
+  .exec-snapshot-grid{gap:18px!important}
+  .exec-snapshot-grid>div{transform:none!important}
+  .project-type-summary{gap:16px!important}
+  .project-type-summary article{transform:none!important;min-height:126px}
+  .registry-grid{gap:26px!important}
+  .registry-card{padding:22px 18px!important;margin:0 2px!important}
+  .registry-card h3,.registry-card>p,.registry-card-head,.registry-role,.registry-links{margin-left:0!important;margin-right:0!important}
+  .registry-card>p{font-size:.96rem!important}
+  .registry-filters{gap:10px!important}
+  .registry-filter{min-height:44px!important}
+}
+@media(prefers-reduced-motion:reduce){.registry-card,.case,.recognition-year,.evidence-card,.contact-channel,.mediq-node,.exec-snapshot-grid>div{transition:none!important;transform:none!important}}

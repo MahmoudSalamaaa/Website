@@ -2,9 +2,6 @@
 (() => {
   'use strict';
 
-  const pathName = location.pathname.toLowerCase();
-  const isHome = pathName === '/' || pathName.endsWith('/index.html');
-
   const ensureEvidenceLinks = () => {
     const add = (container, beforeContact = false) => {
       if (!container || container.querySelector('a[href="evidence.html"]')) return;
@@ -16,27 +13,14 @@
         if (contact) container.insertBefore(a, contact); else container.appendChild(a);
       } else container.appendChild(a);
     };
-    document.querySelectorAll('.desktop-links,.mobile-nav-panel,.mobile-primary-rail,footer .footer-nav').forEach((n) => add(n, true));
+    document.querySelectorAll('.desktop-links,.mobile-nav-panel,.mobile-primary-rail').forEach((n) => add(n, true));
   };
 
   const normalizeFooter = () => {
     const footer = document.querySelector('footer .final-footer');
     if (!footer) return;
     const nav = footer.querySelector('.footer-nav');
-    if (nav) {
-      const links = [
-        ['Portfolio','portfolio.html'],['Projects','projects.html'],
-        ['Experience','experience.html'],['Architecture','architecture.html'],
-        ['Technologies','technologies.html'],['Governance','governance.html'],
-        ['Evidence','evidence.html'],['Contact','contact.html']
-      ];
-      nav.replaceChildren(...links.map(([label, href]) => {
-        const link = document.createElement('a');
-        link.href = href;
-        link.textContent = label;
-        return link;
-      }));
-    }
+    if (nav) nav.remove();
     let cardWrap = footer.querySelector('.v5-card-footer-wrap');
     if (!cardWrap) {
       cardWrap = document.createElement('div');
@@ -60,15 +44,17 @@
       cardWrap.appendChild(socials);
     }
     const socialLinks = [
+      ['Contact','contact.html'],
       ['LinkedIn','https://www.linkedin.com/in/mahmoud-salama-30249b34/'],
       ['GitHub','https://github.com/MahmoudSalamaaa'],
-      ['Email','mailto:ma7moud.salamaaa@gmail.com']
+      ['Download CV','assets/documents/Mahmoud_Salama_Executive_CV_2026.pdf']
     ];
     socials.replaceChildren(...socialLinks.map(([label, href]) => {
       const link = document.createElement('a');
       link.href = href;
       link.textContent = label;
-      link.setAttribute('aria-label', label === 'Email' ? 'Email Mahmoud Salama' : `Open Mahmoud Salama on ${label}`);
+      if (label === 'Download CV') link.setAttribute('download', '');
+      link.setAttribute('aria-label', label === 'Contact' ? 'Contact Mahmoud Salama' : label === 'Download CV' ? 'Download Mahmoud Salama executive CV' : `Open Mahmoud Salama on ${label}`);
       return link;
     }));
   };
@@ -92,21 +78,6 @@
       }
     });
 
-    const footerNav = document.querySelector('footer .footer-nav');
-    if (footerNav) {
-      const seen = new Set();
-      [...footerNav.querySelectorAll('a[href]')].forEach((a) => {
-        const key = a.getAttribute('href');
-        if (!key) return;
-        if (seen.has(key)) { a.remove(); return; }
-        seen.add(key);
-      });
-      [...footerNav.querySelectorAll('a[href]')].forEach((a) => {
-        const base = (a.getAttribute('href') || '').split('#')[0].toLowerCase();
-        const current = (isHome && (base === '' || base === 'index.html')) || (!isHome && base && pathName.endsWith('/' + base));
-        if (current) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
-      });
-    }
   };
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', runQualityPass, { once: true });

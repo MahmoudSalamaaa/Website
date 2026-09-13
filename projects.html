@@ -36,22 +36,7 @@
   };
   const descriptions = {'National Platforms':'Large-scale public and institutional platforms designed for reach, governance and sustained operation.','Enterprise Systems':'Business-critical applications supporting structured workflows, controls and organizational delivery.','Data & Integration':'APIs, interoperability, analytics and data platforms connecting decisions with reliable information.','Digital Platforms':'Web products, service portals and digital experiences built for customers, citizens and professional users.','Mobile & Operations':'Operational systems and mobile tools that bring processes closer to frontline teams.'};
   const visualLabels = {'National Platforms':'NATIONAL SCALE','Enterprise Systems':'ENTERPRISE FLOW','Data & Integration':'DATA CONNECTED','Digital Platforms':'DIGITAL EXPERIENCE','Mobile & Operations':'FIELD OPERATIONS'};
-  const visualFor = project => {
-    const name=String(project.name||'').toLowerCase();
-    const photos={health:['photo-1576091160399-112ba8d25d1d','photo-1559757148-5c350d0d3c56','photo-1538108149393-fbbd81895907'],inventory:['photo-1586528116311-ad8dd3c8310d','photo-1553413077-190dd305871c','photo-1566576912321-d58ddd7a6088'],data:['photo-1551288049-bebda4e38f71','photo-1460925895917-afdab827c52f','photo-1558494949-ef010cbdcc31'],mobile:['photo-1512941937669-90a1b58e7e9c','photo-1551650975-87deedd944c3','photo-1516321318423-f06f85e504b3'],education:['photo-1523240795612-9a054b0db644','photo-1509062522246-3755977927d7','photo-1523050854058-8df90110c9f1'],government:['photo-1529107386315-e1a2ed48a620','photo-1497366754035-f200968a6e72','photo-1556761175-b413da4baf72'],commerce:['photo-1556742049-0cfed4f6a45d','photo-1556740749-887f6717d7e4','photo-1472851294608-062f824d29cc'],property:['photo-1560518883-ce09059eeffa','photo-1486406146926-c627a92ad1ab','photo-1600585154340-be6161a56a0c'],technology:['photo-1518770660439-4636190af475','photo-1451187580459-43490279c0fa','photo-1488590528505-98d2b5aba04b']};
-    let theme='technology';
-    if(/inventory|stock|warehouse|asset|supply|delivery|logistics/.test(name))theme='inventory';
-    else if(/pharmacy|medical|health|hospital|drug|blood|hta|mediq/.test(name))theme='health';
-    else if(/data|analytics|dashboard|report|integration|api|cloud|erp|dynamics|sap/.test(name))theme='data';
-    else if(/mobile|notification|sms|tracking/.test(name))theme='mobile';
-    else if(/school|student|education|exam|training|academy/.test(name))theme='education';
-    else if(/ministry|government|national|police|public/.test(name))theme='government';
-    else if(/market|commerce|booking|catering|restaurant|electrolux/.test(name))theme='commerce';
-    else if(/real estate|property|construction|dunes|contractor/.test(name))theme='property';
-    const photo=photos[theme][Number(project.id||0)%photos[theme].length];
-    const url=`https://images.unsplash.com/${photo}?auto=format&fit=crop&crop=entropy&w=900&h=520&q=82&v=3`;
-    return `<div class="registry-card-art"><div class="registry-visual"><img src="${url}" alt="${escapeHtml(theme)} visual for ${escapeHtml(project.name)}" loading="lazy" referrerpolicy="no-referrer"><span class="visual-doodle">✦</span></div></div>`;
-  };
+  const visualFor = () => '';
   const projects = data.filter(project => project.public === 'yes').map(project => ({...project, category: categoryOf(project)}));
   const categoryIds = {'National Platforms':'count-national','Enterprise Systems':'count-enterprise','Data & Integration':'count-data','Digital Platforms':'count-digital','Mobile & Operations':'count-operations'};
   Object.entries(categoryIds).forEach(([category,id]) => { const element = document.getElementById(id); if (element) element.textContent = projects.filter(project => project.category === category).length; });

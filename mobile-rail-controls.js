@@ -47,14 +47,14 @@
       ['Contact','contact.html'],
       ['LinkedIn','https://www.linkedin.com/in/mahmoud-salama-30249b34/'],
       ['GitHub','https://github.com/MahmoudSalamaaa'],
-      ['Download CV','assets/documents/Mahmoud_Salama_Executive_CV_2026.pdf']
+      ['CV','assets/documents/Mahmoud_Salama_Executive_CV_2026.pdf']
     ];
     socials.replaceChildren(...socialLinks.map(([label, href]) => {
       const link = document.createElement('a');
       link.href = href;
       link.textContent = label;
-      if (label === 'Download CV') link.setAttribute('download', '');
-      link.setAttribute('aria-label', label === 'Contact' ? 'Contact Mahmoud Salama' : label === 'Download CV' ? 'Download Mahmoud Salama executive CV' : `Open Mahmoud Salama on ${label}`);
+      if (label === 'CV') link.setAttribute('download', '');
+      link.setAttribute('aria-label', label === 'Contact' ? 'Contact Mahmoud Salama' : label === 'CV' ? 'Download Mahmoud Salama executive CV' : `Open Mahmoud Salama on ${label}`);
       return link;
     }));
   };

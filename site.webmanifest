@@ -1,0 +1,11 @@
+{
+  "name": "Mahmoud Salama — Executive Portfolio",
+  "short_name": "Mahmoud Salama",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbfaf4",
+  "theme_color": "#10263b",
+  "icons": [
+    {"src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}
+  ]
+}

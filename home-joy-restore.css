@@ -563,3 +563,5 @@ body.home-page{
   .recognition-strip-items article.premium-reveal{width:100%!important;box-sizing:border-box!important;min-width:0!important}
   .recognition-strip-items article+article{border-left:1px solid rgba(15,35,52,.13)!important;border-top:1px solid rgba(15,35,52,.13)!important}
 }
+.hero-actions .cv-btn{background:#fff3b8!important;border-color:#e9bf41!important;color:#19384a!important}
+@media(max-width:760px){.hero-actions{display:grid!important;grid-template-columns:1fr 1fr!important;gap:9px!important}.hero-actions .btn{width:100%!important;min-width:0!important;padding-inline:10px!important;text-align:center!important}.hero-actions .cv-btn{grid-column:1/-1!important}}

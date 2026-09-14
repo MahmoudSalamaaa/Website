@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Manrope:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap');
+
 /* LIVE CORRECTION — mobile rail sizing and document overflow */
 @media (max-width:960px){
   .mobile-rail-shell{
@@ -742,8 +744,8 @@ footer .footer-row span:last-child{
   }
 }
 
-/* ========== HOME GEORGIA BODY TEXT TEST ========== */
-/* Editorial serif experiment: body/readable copy only on Home. */
+/* ========== HOME BODY TYPOGRAPHY ========== */
+/* Roboto is the single body/readable-copy family. */
 .executive-hero p,
 .exec-snapshot span,
 .mediq-story p,
@@ -757,12 +759,12 @@ footer .footer-row span:last-child{
 .operating-summary article p,
 footer .footer-intro,
 footer .footer-row{
-  font-family:Georgia,"Times New Roman",serif!important;
+  font-family:"Roboto","Segoe UI",Arial,sans-serif!important;
   font-weight:400!important;
   letter-spacing:-.012em;
 }
 
-/* Georgia benefits from slightly more line-height in long copy. */
+/* Comfortable line-height for long copy. */
 .executive-hero p,
 .mediq-story p,
 .mandate-copy p,
@@ -821,8 +823,6 @@ footer .footer-intro{
 }
 
 /* ========== EXECUTIVE TYPOGRAPHY SYSTEM TEST ========== */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Josefin+Sans:wght@600;700&family=Manrope:wght@600;700;800&display=swap');
-
 /* BODY — clean, highly readable screen typography */
 body.home-page,
 .executive-hero .hero-copy > p,
@@ -838,7 +838,7 @@ body.home-page,
 .operating-summary article > p,
 footer .footer-intro,
 footer .footer-row{
-  font-family:"DM Sans",Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
+  font-family:"Roboto","Segoe UI",Arial,sans-serif!important;
 }
 
 /* HEADLINES — executive, contemporary, slightly more character than Inter */
@@ -894,7 +894,7 @@ footer .footer-title{
   font-family:"IBM Plex Mono",monospace!important;
 }
 
-/* Body sizing tuned for DM Sans */
+/* Body sizing tuned for Roboto */
 .executive-hero .hero-copy > p{
   font-size:17px!important;
   line-height:1.68!important;
@@ -1022,7 +1022,7 @@ footer .footer-intro{
 footer .footer-intro{
   color:#ffffff!important;
   opacity:1!important;
-  font-family:"DM Sans",Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important;
+  font-family:"Roboto","Segoe UI",Arial,sans-serif!important;
   font-size:16px!important;
   line-height:1.55!important;
   font-weight:700!important;

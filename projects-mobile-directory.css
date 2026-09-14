@@ -1,0 +1,8 @@
+/* Mobile project directory: preserve every evidence record without forcing a 96-card initial scroll. */
+.mobile-directory-toggle{display:none}
+@media(max-width:680px){
+  #project-registry .mobile-directory-hidden{display:none!important}
+  .mobile-directory-toggle{display:flex;align-items:center;justify-content:center;width:100%;min-height:48px;margin:20px 0 4px;padding:12px 18px;border:1px solid #10263b;border-radius:999px;background:#10263b;color:#fff;font:800 .82rem/1.2 Inter,"Segoe UI",Arial,sans-serif;letter-spacing:.01em;box-shadow:0 10px 22px rgba(16,38,59,.14);cursor:pointer}
+  .mobile-directory-toggle[hidden]{display:none!important}
+  .mobile-directory-toggle:focus-visible{outline:3px solid #f2bd3f;outline-offset:4px}
+}

@@ -1,4 +1,14 @@
 User-agent: *
 Allow: /
 
+# Archive and experimental generations kept in the repository, not part of the public portfolio.
+Disallow: /old/
+Disallow: /v2/
+Disallow: /executive-lab/
+Disallow: /executive-lab-v2/
+Disallow: /executive-platform/
+Disallow: /brand-platform/
+Disallow: /executive-capital/
+Disallow: /executive-growth/
+
 Sitemap: https://mahmoud-salama.vercel.app/sitemap.xml

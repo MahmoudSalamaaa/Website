@@ -31,7 +31,7 @@ main [id]{scroll-margin-top:var(--anchor-offset)}
 body footer .final-footer p.footer-intro{
   margin:8px 0 0!important;
   max-width:900px!important;
-  font-family:var(--body,"Roboto","Segoe UI",Arial,sans-serif)!important;
+  font-family:var(--body,"Eagle Lake",Georgia,serif)!important;
   font-size:12px!important;
   line-height:1.45!important;
   font-weight:400!important;

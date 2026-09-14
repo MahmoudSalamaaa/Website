@@ -743,7 +743,7 @@ footer .footer-row span:last-child{
 }
 
 /* ========== HOME BODY TYPOGRAPHY ========== */
-/* Roboto is the single body/readable-copy family. */
+/* Eagle Lake is the single body/readable-copy family. */
 .executive-hero p,
 .exec-snapshot span,
 .mediq-story p,
@@ -757,7 +757,7 @@ footer .footer-row span:last-child{
 .operating-summary article p,
 footer .footer-intro,
 footer .footer-row{
-  font-family:var(--body,"Roboto","Segoe UI",Arial,sans-serif)!important;
+  font-family:var(--body,"Eagle Lake",Georgia,serif)!important;
   font-weight:400!important;
   letter-spacing:-.012em;
 }
@@ -836,7 +836,7 @@ body.home-page,
 .operating-summary article > p,
 footer .footer-intro,
 footer .footer-row{
-  font-family:var(--body,"Roboto","Segoe UI",Arial,sans-serif)!important;
+  font-family:var(--body,"Eagle Lake",Georgia,serif)!important;
 }
 
 /* HEADLINES — executive, contemporary, slightly more character than Inter */
@@ -892,7 +892,7 @@ footer .footer-title{
   font-family:"IBM Plex Mono",monospace!important;
 }
 
-/* Body sizing tuned for Roboto */
+/* Body sizing tuned for Eagle Lake */
 .executive-hero .hero-copy > p{
   font-size:17px!important;
   line-height:1.68!important;
@@ -1020,7 +1020,7 @@ footer .footer-intro{
 footer .footer-intro{
   color:#ffffff!important;
   opacity:1!important;
-  font-family:var(--body,"Roboto","Segoe UI",Arial,sans-serif)!important;
+  font-family:var(--body,"Eagle Lake",Georgia,serif)!important;
   font-size:16px!important;
   line-height:1.55!important;
   font-weight:700!important;

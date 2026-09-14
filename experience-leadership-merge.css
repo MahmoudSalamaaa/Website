@@ -5,7 +5,7 @@
 .leadership-merge-head>p{margin:0;max-width:62ch;color:#526675;font-size:1rem;line-height:1.68}
 .leadership-principles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;border:0}
 .leadership-principles article{position:relative;padding:23px 22px 25px;border:1px solid #dbe5eb!important;border-radius:13px 19px 16px 12px;background:#e8f9fb;box-shadow:6px 8px 0 rgba(13,44,61,.055)}
-.leadership-principles article:nth-child(2){background:#f1edff}.leadership-principles article:nth-child(3){background:#fff5c9}.leadership-principles article:nth-child(4){background:#fff0f6}
+.leadership-principles article:nth-child(2){background:#e8f7ee}.leadership-principles article:nth-child(3){background:#fff5c9}.leadership-principles article:nth-child(4){background:#fff0f6}
 .leadership-principles article:last-child{border-right:0}
 .leadership-principles span{font:700 .68rem/1.1 "IBM Plex Mono",monospace;letter-spacing:.09em;color:#0e93a8}
 .leadership-principles h3{margin:11px 0 8px;font-size:1.2rem;line-height:1.12;letter-spacing:-.02em;color:#10263b}

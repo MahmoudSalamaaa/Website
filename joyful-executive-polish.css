@@ -1,7 +1,7 @@
 /* Executive Zaffa — a visible, controlled joy layer. 2026-09-13 */
 :root{
   --z-navy:#0d2c3d;--z-ink:#10263b;--z-teal:#14b8c9;--z-cyan:#8ce9f3;
-  --z-yellow:#ffd968;--z-pink:#f3a8c5;--z-violet:#b9a8f4;--z-paper:#fffdf7;
+  --z-yellow:#ffd968;--z-pink:#f3a8c5;--z-mint:#a8dfc1;--z-paper:#fffdf7;
 }
 body{
   background:var(--z-paper);
@@ -40,7 +40,7 @@ nav{border-bottom:1px solid rgba(13,44,61,.12)!important;box-shadow:0 10px 34px 
 .executive-hero,.projects-type-hero,.governance-hero,.evidence-hero,.contact-hero,.hero{
   position:relative;isolation:isolate;
   background:
-    radial-gradient(circle at 8% 18%,rgba(185,168,244,.2),transparent 23%),
+    radial-gradient(circle at 8% 18%,rgba(140,233,243,.22),transparent 23%),
     radial-gradient(circle at 92% 20%,rgba(255,217,104,.24),transparent 22%),
     radial-gradient(circle at 74% 92%,rgba(243,168,197,.16),transparent 24%),
     linear-gradient(135deg,#fff 0%,#f8fdff 54%,#fffaf0 100%)!important;
@@ -57,7 +57,7 @@ nav{border-bottom:1px solid rgba(13,44,61,.12)!important;box-shadow:0 10px 34px 
   box-shadow:8px 10px 0 rgba(13,44,61,.08)!important;transition:transform .22s ease,box-shadow .22s ease
 }
 .exec-snapshot-grid>div:nth-child(1),.project-type-summary article:nth-child(1){background:#dcf8fb!important}
-.exec-snapshot-grid>div:nth-child(2),.project-type-summary article:nth-child(2){background:#eee9ff!important}
+.exec-snapshot-grid>div:nth-child(2),.project-type-summary article:nth-child(2){background:#e7f7ee!important}
 .exec-snapshot-grid>div:nth-child(3),.project-type-summary article:nth-child(3){background:#fff1b8!important}
 .exec-snapshot-grid>div:nth-child(4),.project-type-summary article:nth-child(4){background:#ffedf5!important}
 .exec-snapshot-grid>div::before,.project-type-summary article::before{
@@ -75,7 +75,7 @@ nav{border-bottom:1px solid rgba(13,44,61,.12)!important;box-shadow:0 10px 34px 
 .registry-card:nth-child(3n+1){background:linear-gradient(145deg,#fff,#f1fcfd)!important}
 .registry-card:nth-child(3n+2){background:linear-gradient(145deg,#fff,#fffaf0)!important}
 .registry-card:nth-child(3n){background:linear-gradient(145deg,#fff,#fff4f8)!important}
-.registry-card::before{content:"";position:absolute;right:18px;top:-7px;width:54px;height:14px;border-radius:2px;background:rgba(185,168,244,.38)}
+.registry-card::before{content:"";position:absolute;right:18px;top:-7px;width:54px;height:14px;border-radius:2px;background:rgba(140,233,243,.42)}
 .registry-card:nth-child(even)::before{background:rgba(255,217,104,.52)}
 .registry-card h3{font-size:clamp(1.2rem,2vw,1.5rem)!important;line-height:1.15!important}
 .registry-card>p{font-size:1rem!important;line-height:1.65!important}
@@ -100,7 +100,7 @@ nav{border-bottom:1px solid rgba(13,44,61,.12)!important;box-shadow:0 10px 34px 
 .hero-actions .btn:hover,.section-action .btn:hover,.context-link:hover{transform:translateY(-3px)!important}
 
 /* Footer is a composed final board. */
-footer{position:relative;border-top:6px solid transparent!important;border-image:linear-gradient(90deg,var(--z-teal),var(--z-yellow),var(--z-pink),var(--z-violet)) 1!important}
+footer{position:relative;border-top:6px solid transparent!important;border-image:linear-gradient(90deg,var(--z-teal),var(--z-yellow),var(--z-pink),var(--z-mint)) 1!important}
 .v5-card-footer-link{background:linear-gradient(135deg,#163f54,#0d2c3d)!important;border-color:var(--z-cyan)!important}
 .footer-socials a:nth-child(1){border-color:rgba(140,233,243,.45)!important}.footer-socials a:nth-child(2){border-color:rgba(255,217,104,.45)!important}.footer-socials a:nth-child(3){border-color:rgba(243,168,197,.45)!important}
 

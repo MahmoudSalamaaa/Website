@@ -15,8 +15,93 @@
     return id;
   };
 
+  const ensureNavStyles = () => {
+    if (document.querySelector('link[data-site-nav-styles]')) return;
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = '/site-nav.css';
+    link.dataset.siteNavStyles = 'true';
+    document.head.appendChild(link);
+  };
+
+  const currentSection = () => {
+    const page = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    if (page === 'portfolio.html') return 'portfolio';
+    if (['projects.html','mediq.html','flagship-cases.html'].includes(page)) return 'projects';
+    if (page === 'experience.html') return 'experience';
+    if (['architecture.html','architecture-map.html'].includes(page)) return 'architecture';
+    if (page === 'technologies.html') return 'technologies';
+    if (page === 'contributions.html') return 'contributions';
+    if (page === 'governance.html') return 'recognition';
+    if (page === 'evidence.html') return 'evidence';
+    if (page === 'contact.html') return 'contact';
+    return '';
+  };
+
+  const navLink = (href, label, key, active) => {
+    const cls = key === active ? ' class="active" aria-current="page"' : '';
+    return `<a href="${href}"${cls}>${label}</a>`;
+  };
+
+  const installUnifiedNavigation = () => {
+    const existing = document.querySelector('nav[aria-label="Primary navigation"], nav:first-of-type');
+    if (!existing) return;
+
+    ensureNavStyles();
+    const active = currentSection();
+    const moreActive = ['technologies','contributions','recognition','evidence'].includes(active);
+
+    const nav = document.createElement('nav');
+    nav.className = 'site-global-nav';
+    nav.setAttribute('aria-label', 'Primary navigation');
+    nav.innerHTML = `
+      <div class="site-nav-inner">
+        <a class="site-brand" href="/index.html" aria-label="Mahmoud Salama — home">
+          <img src="/kms-logo-original.png" width="40" height="40" alt="" aria-hidden="true">
+          <span>MAHMOUD SALAMA</span>
+        </a>
+        <div class="site-desktop-links">
+          ${navLink('/portfolio.html','Portfolio','portfolio',active)}
+          ${navLink('/experience.html','Experience','experience',active)}
+          ${navLink('/projects.html','Projects','projects',active)}
+          ${navLink('/architecture.html','Architecture','architecture',active)}
+          <a href="/experience.html#leadership-model">Leadership</a>
+          <details class="site-more${moreActive ? ' is-active' : ''}">
+            <summary>More</summary>
+            <div class="site-more-menu">
+              ${navLink('/technologies.html','Technologies','technologies',active)}
+              ${navLink('/contributions.html','Contributions','contributions',active)}
+              ${navLink('/governance.html','Recognition','recognition',active)}
+              ${navLink('/evidence.html','Evidence','evidence',active)}
+              <a href="/experience.html#executive-profile">About</a>
+            </div>
+          </details>
+        </div>
+        <a class="site-contact${active === 'contact' ? ' active' : ''}" href="/contact.html"${active === 'contact' ? ' aria-current="page"' : ''}>LET'S TALK →</a>
+        <details class="site-mobile-menu">
+          <summary>Menu</summary>
+          <div class="site-mobile-panel">
+            ${navLink('/portfolio.html','Portfolio','portfolio',active)}
+            ${navLink('/experience.html','Experience','experience',active)}
+            ${navLink('/projects.html','Projects','projects',active)}
+            ${navLink('/architecture.html','Architecture','architecture',active)}
+            <a href="/experience.html#leadership-model">Leadership</a>
+            ${navLink('/technologies.html','Technologies','technologies',active)}
+            ${navLink('/contributions.html','Contributions','contributions',active)}
+            ${navLink('/governance.html','Recognition','recognition',active)}
+            ${navLink('/evidence.html','Evidence','evidence',active)}
+            <a href="/experience.html#executive-profile">About</a>
+            <a class="site-mobile-contact${active === 'contact' ? ' active' : ''}" href="/contact.html"${active === 'contact' ? ' aria-current="page"' : ''}>Start a conversation →</a>
+          </div>
+        </details>
+      </div>`;
+
+    existing.replaceWith(nav);
+  };
+
   const enhance = () => {
     document.documentElement.lang ||= 'en';
+    installUnifiedNavigation();
 
     const main = document.querySelector('main');
     if (main) {
@@ -72,7 +157,7 @@
       if (!/new tab/i.test(current)) link.setAttribute('aria-label', `${current} — opens in a new tab`);
     });
 
-    document.querySelectorAll('a.mark, a.mq-brand').forEach((link) => {
+    document.querySelectorAll('a.site-brand, a.mark, a.mq-brand').forEach((link) => {
       link.setAttribute('aria-label', 'Mahmoud Salama — home');
     });
 

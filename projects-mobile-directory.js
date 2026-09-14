@@ -7,7 +7,7 @@
   let expanded = false;
   const button = document.createElement('button');
   button.type = 'button';
-  button.className = 'mobile-directory-toggle';
+  button.className = 'mobile-directory-toggle';\n  button.setAttribute('aria-label', 'Toggle the full project directory');
   button.setAttribute('aria-controls', 'project-registry');
   tools.insertAdjacentElement('afterend', button);
 

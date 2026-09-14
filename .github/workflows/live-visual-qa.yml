@@ -5,7 +5,7 @@ on:
   push:
     paths:
       - "*.html"
-      - "*.css"
+      - "*.css"\n      - "*.js"
       - "tests/live-visual-qa.mjs"
       - ".github/workflows/live-visual-qa.yml"
 

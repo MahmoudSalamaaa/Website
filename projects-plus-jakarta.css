@@ -1,10 +1,9 @@
 
-/* Projects-only typography experiment:
-   Plus Jakarta Sans for ordinary copy and UI text.
-   Existing title/headline typography is intentionally preserved. */
+/* Legacy projects typography compatibility layer.
+   Uses the shared typography tokens; no independent font stack. */
 
 :root{
-  --projects-body-font:"Plus Jakarta Sans","Segoe UI",Arial,sans-serif;
+  --projects-body-font:var(--body,"Roboto","Segoe UI",Arial,sans-serif);
 }
 
 /* Body copy + interface text */

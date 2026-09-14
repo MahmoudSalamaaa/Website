@@ -30,10 +30,11 @@
     if (['projects.html','mediq.html','flagship-cases.html'].includes(page)) return 'projects';
     if (page === 'experience.html') return 'experience';
     if (['architecture.html','architecture-map.html'].includes(page)) return 'architecture';
+    if (page === 'governance.html') return 'recognition';
     if (page === 'technologies.html') return 'technologies';
     if (page === 'contributions.html') return 'contributions';
-    if (page === 'governance.html') return 'recognition';
     if (page === 'evidence.html') return 'evidence';
+    if (page === 'card.html') return 'card';
     if (page === 'contact.html') return 'contact';
     return '';
   };
@@ -49,7 +50,7 @@
 
     ensureNavStyles();
     const active = currentSection();
-    const moreActive = ['technologies','contributions','recognition','evidence'].includes(active);
+    const moreActive = ['technologies','contributions','evidence','card'].includes(active);
 
     const nav = document.createElement('nav');
     nav.className = 'site-global-nav';
@@ -65,15 +66,15 @@
           ${navLink('/experience.html','Experience','experience',active)}
           ${navLink('/projects.html','Projects','projects',active)}
           ${navLink('/architecture.html','Architecture','architecture',active)}
-          <a href="/experience.html#leadership-model">Leadership</a>
+          ${navLink('/governance.html','Recognition','recognition',active)}
           <details class="site-more${moreActive ? ' is-active' : ''}">
             <summary>More</summary>
             <div class="site-more-menu">
-              ${navLink('/technologies.html','Technologies','technologies',active)}
-              ${navLink('/contributions.html','Contributions','contributions',active)}
-              ${navLink('/governance.html','Recognition','recognition',active)}
-              ${navLink('/evidence.html','Evidence','evidence',active)}
-              <a href="/experience.html#executive-profile">About</a>
+              <a href="/experience.html#executive-profile">About / Executive Profile</a>
+              ${navLink('/technologies.html','Technology Capabilities','technologies',active)}
+              ${navLink('/contributions.html','National Contributions','contributions',active)}
+              ${navLink('/evidence.html','Evidence Registry','evidence',active)}
+              ${navLink('/card.html','Digital Business Card','card',active)}
             </div>
           </details>
         </div>
@@ -85,12 +86,13 @@
             ${navLink('/experience.html','Experience','experience',active)}
             ${navLink('/projects.html','Projects','projects',active)}
             ${navLink('/architecture.html','Architecture','architecture',active)}
-            <a href="/experience.html#leadership-model">Leadership</a>
-            ${navLink('/technologies.html','Technologies','technologies',active)}
-            ${navLink('/contributions.html','Contributions','contributions',active)}
             ${navLink('/governance.html','Recognition','recognition',active)}
-            ${navLink('/evidence.html','Evidence','evidence',active)}
-            <a href="/experience.html#executive-profile">About</a>
+            <div class="site-mobile-secondary-label">More</div>
+            <a href="/experience.html#executive-profile">About / Executive Profile</a>
+            ${navLink('/technologies.html','Technology Capabilities','technologies',active)}
+            ${navLink('/contributions.html','National Contributions','contributions',active)}
+            ${navLink('/evidence.html','Evidence Registry','evidence',active)}
+            ${navLink('/card.html','Digital Business Card','card',active)}
             <a class="site-mobile-contact${active === 'contact' ? ' active' : ''}" href="/contact.html"${active === 'contact' ? ' aria-current="page"' : ''}>Start a conversation →</a>
           </div>
         </details>

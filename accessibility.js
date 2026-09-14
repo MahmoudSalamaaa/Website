@@ -17,15 +17,6 @@
 
   const pageName = () => (location.pathname.split('/').pop() || 'index.html').toLowerCase();
 
-  const ensureNavStyles = () => {
-    if (document.querySelector('link[data-site-nav-styles], link[href$="site-nav.css"]')) return;
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = '/site-nav.css';
-    link.dataset.siteNavStyles = 'true';
-    document.head.appendChild(link);
-  };
-
   const currentSection = () => {
     const page = pageName();
     if (page === 'portfolio.html') return 'portfolio';
@@ -50,7 +41,6 @@
     const existing = document.querySelector('nav[aria-label="Primary navigation"], nav:first-of-type');
     if (!existing) return;
 
-    ensureNavStyles();
     const active = currentSection();
     const moreActive = ['technologies','contributions','evidence','card'].includes(active);
 

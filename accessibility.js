@@ -15,8 +15,10 @@
     return id;
   };
 
+  const pageName = () => (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+
   const ensureNavStyles = () => {
-    if (document.querySelector('link[data-site-nav-styles]')) return;
+    if (document.querySelector('link[data-site-nav-styles], link[href$="site-nav.css"]')) return;
     const link = document.createElement('link');
     link.rel = 'stylesheet';
     link.href = '/site-nav.css';
@@ -25,7 +27,9 @@
   };
 
   const ensureUnifiedPolish = () => {
-    if (document.querySelector('link[data-site-unified-polish]')) return;
+    /* card.html is intentionally a self-contained PRO/FUN business-card experience. */
+    if (pageName() === 'card.html') return;
+    if (document.querySelector('link[data-site-unified-polish], link[href$="site-unified-polish.css"]')) return;
     const link = document.createElement('link');
     link.rel = 'stylesheet';
     link.href = '/site-unified-polish.css';
@@ -34,7 +38,7 @@
   };
 
   const currentSection = () => {
-    const page = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    const page = pageName();
     if (page === 'portfolio.html') return 'portfolio';
     if (['projects.html','mediq.html','flagship-cases.html'].includes(page)) return 'projects';
     if (page === 'experience.html') return 'experience';

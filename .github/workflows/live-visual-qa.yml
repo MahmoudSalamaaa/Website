@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - "*.html"
+      - "*.html"\n      - "*.css"
       - "tests/live-visual-qa.mjs"
       - ".github/workflows/live-visual-qa.yml"
 

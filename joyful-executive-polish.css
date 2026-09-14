@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap');
 /* Executive Zaffa — a visible, controlled joy layer. 2026-09-13 */
 :root{
   --z-navy:#0d2c3d;--z-ink:#10263b;--z-teal:#14b8c9;--z-cyan:#8ce9f3;
@@ -5,6 +6,17 @@
 }
 body{background:var(--z-paper)}
 main{overflow:hidden}
+
+/* Editorial body copy experiment: Fraunces for reading text, not UI or headings. */
+:where(p,li,blockquote,dd,figcaption,.lead,.section-copy,.footer-intro,.footer-row span){
+  font-family:"Fraunces",Georgia,serif!important;
+  font-optical-sizing:auto;
+  font-weight:400;
+  letter-spacing:0;
+}
+:where(h1,h2,h3,h4,h5,h6,nav,a,button,input,select,textarea,summary,.kicker,.registry-id,.registry-type,.registry-program,.registry-meta,.footer-title){
+  font-family:inherit;
+}
 
 nav{border-bottom:1px solid rgba(13,44,61,.12)!important;box-shadow:0 10px 34px rgba(13,44,61,.06)}
 .mark img,.mq-brand{filter:drop-shadow(3px 4px 0 rgba(20,184,201,.15))}

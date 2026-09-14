@@ -5,7 +5,7 @@
 }
 body{
   background:var(--z-paper);
-  font-family:var(--body,"Eagle Lake",Georgia,serif)!important;
+  font-family:var(--body,"Source Sans 3","Segoe UI",Arial,sans-serif)!important;
 }
 main{overflow:hidden}
 
@@ -14,7 +14,7 @@ main{overflow:hidden}
   .lead,.section-copy,.footer-intro,.footer-row,.footer-row span,
   .registry-card>p,.featured-card>p,.case p,.evidence-card p,.contact-channel p,.mediq-node p,
   .experience-copy,.project-description,.card-copy,.body-copy){
-  font-family:var(--body,"Eagle Lake",Georgia,serif)!important;
+  font-family:var(--body,"Source Sans 3","Segoe UI",Arial,sans-serif)!important;
   font-weight:400;
   letter-spacing:0;
 }

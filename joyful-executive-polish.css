@@ -1,22 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 /* Executive Zaffa — a visible, controlled joy layer. 2026-09-13 */
 :root{
   --z-navy:#0d2c3d;--z-ink:#10263b;--z-teal:#14b8c9;--z-cyan:#8ce9f3;
   --z-yellow:#ffd968;--z-pink:#f3a8c5;--z-violet:#b9a8f4;--z-paper:#fffdf7;
 }
-body{background:var(--z-paper)}
+body{
+  background:var(--z-paper);
+  font-family:"Roboto","Segoe UI",Arial,sans-serif!important;
+}
 main{overflow:hidden}
 
-/* Plus Jakarta Sans for reading copy only; display and interface typography stay intact. */
-:is(p,li,blockquote,dd,dt,figcaption,address,.lead,.section-copy,.footer-intro,.footer-row span,
+/* One dependable body-copy family across every page and component. */
+:is(p,ul,ol,li,blockquote,dl,dd,dt,figcaption,address,label,
+  .lead,.section-copy,.footer-intro,.footer-row,.footer-row span,
   .registry-card>p,.featured-card>p,.case p,.evidence-card p,.contact-channel p,.mediq-node p,
   .experience-copy,.project-description,.card-copy,.body-copy){
-  font-family:"Plus Jakarta Sans",Inter,"Segoe UI",Arial,sans-serif!important;
+  font-family:"Roboto","Segoe UI",Arial,sans-serif!important;
   font-weight:400;
   letter-spacing:0;
 }
-:where(h1,h2,h3,h4,h5,h6,nav,a,button,input,select,textarea,summary,.kicker,.registry-id,.registry-type,.registry-program,.registry-meta,.footer-title){
-  font-family:inherit;
+
+/* Keep display and navigation typography separate from reading copy. */
+:is(h1,h2,h3,h4,h5,h6,.display,.section-title,.footer-title){
+  font-family:var(--sans,Inter,"Segoe UI",Arial,sans-serif)!important;
+}
+:is(nav,nav a,button,.btn,input,select,textarea,summary){
+  font-family:var(--sans,Inter,"Segoe UI",Arial,sans-serif)!important;
+}
+:is(.kicker,.registry-id,.registry-type,.registry-program,.registry-meta,.registry-count){
+  font-family:var(--mono,"IBM Plex Mono",monospace)!important;
 }
 
 nav{border-bottom:1px solid rgba(13,44,61,.12)!important;box-shadow:0 10px 34px rgba(13,44,61,.06)}

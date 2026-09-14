@@ -24,6 +24,15 @@
     document.head.appendChild(link);
   };
 
+  const ensureUnifiedPolish = () => {
+    if (document.querySelector('link[data-site-unified-polish]')) return;
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = '/site-unified-polish.css';
+    link.dataset.siteUnifiedPolish = 'true';
+    document.head.appendChild(link);
+  };
+
   const ensurePortfolioStyles = () => {
     const page = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
     if (page !== 'portfolio.html' || document.querySelector('link[data-portfolio-layout-fixes]')) return;
@@ -113,6 +122,7 @@
 
   const enhance = () => {
     document.documentElement.lang ||= 'en';
+    ensureUnifiedPolish();
     ensurePortfolioStyles();
     installUnifiedNavigation();
 

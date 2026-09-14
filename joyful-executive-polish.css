@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 /* Executive Zaffa — a visible, controlled joy layer. 2026-09-13 */
 :root{
   --z-navy:#0d2c3d;--z-ink:#10263b;--z-teal:#14b8c9;--z-cyan:#8ce9f3;
@@ -7,10 +7,11 @@
 body{background:var(--z-paper)}
 main{overflow:hidden}
 
-/* Editorial body copy experiment: Fraunces for reading text, not UI or headings. */
-:where(p,li,blockquote,dd,figcaption,.lead,.section-copy,.footer-intro,.footer-row span){
-  font-family:"Fraunces",Georgia,serif!important;
-  font-optical-sizing:auto;
+/* Plus Jakarta Sans for reading copy only; display and interface typography stay intact. */
+:is(p,li,blockquote,dd,dt,figcaption,address,.lead,.section-copy,.footer-intro,.footer-row span,
+  .registry-card>p,.featured-card>p,.case p,.evidence-card p,.contact-channel p,.mediq-node p,
+  .experience-copy,.project-description,.card-copy,.body-copy){
+  font-family:"Plus Jakarta Sans",Inter,"Segoe UI",Arial,sans-serif!important;
   font-weight:400;
   letter-spacing:0;
 }

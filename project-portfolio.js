@@ -1,35 +1,67 @@
-window.PROJECT_PORTFOLIO = [
-  {name:'MedIQ — Unified National Procurement & Medical Supply Ecosystem',type:'National Platforms',kind:'Main Platform',role:'Executive Technology Ownership',description:'Led the end-to-end transformation of a national healthcare procurement and medical-supply ecosystem, from re-architecture and delivery governance through migration, cutover and production operations.',children:['Institutional Procurement Workflows','E-Tender Platform','Electronic Pharmacy','Logistics & Shipment Management','Annual Demand Planning','Direct Purchase Digitization','Order Tracking','UPA Delivery Mobile App','Recall Workflows','Feedback & Service Requests'],components:['Permissions Governance / RBAC','Real-Time Notifications','SMS Integration','Financial & Product Data Auditing'],award:'Pharmaconex Awards 2026 — Excellence in Digital Transformation',caseStudy:'mediq.html',evidence:'evidence.html'},
-  {name:'Electronic Inventory & Medical Storage Governance',type:'Mobile & Operations',kind:'Operations Platform',description:'Electronic inventory, mobile stocktaking and governed medical-storage operations.',children:['Electronic Inventory Registration','Mobile Stocktaking','Government-Sector Inventory Follow-up','Medical Storage Validation','Inventory Reconciliation','Variance Reporting','Audit Trails']},
-  {name:'Unified Medical Asset Management',type:'Mobile & Operations',kind:'Enterprise Platform',description:'Medical-asset lifecycle management across web and mobile operations.',children:['Asset Registration & Mapping','Lifecycle Management','Maintenance Management','Decommissioning Workflows','Health Assets Mobile Application']},
-  {name:'Enterprise Data, Reporting & Analytics Platform',type:'Data & Integration',kind:'Data Platform',description:'A connected information architecture for operational reporting and executive insight.',children:['Operational Data Store (ODS)','Central Data Warehouse','MedIQ Data Pipeline','National Strategic Dashboard','Dynamic Report Engine','Supply & Procurement Analytics','Reconciliation & Audit Controls']},
-  {name:'Microsoft Dynamics 365 Enterprise Integration',type:'Data & Integration',kind:'ERP Integration Program',description:'Finance, procurement, inventory and CRM integration with governed testing and handover.',children:['Finance Integration','Procurement Integration','Inventory Synchronization','CRM Integration','API & Data Mapping','Testing & Reconciliation','Production Readiness']},
-  {name:'Healthcare Interoperability Program',type:'Data & Integration',kind:'Integration Program',description:'Governed exchange between healthcare, government and enterprise systems.',children:['HMIS / Health Insights Integration','GS1 HLRP / GLN Integration','Government Entity Mapping','Healthcare Data Migration','Private-Sector Payment Integration','SAP Strategic Warehouses Integration']},
-  {name:'Health Technology Assessment Platform',type:'National Platforms',kind:'Healthcare Platform',description:'Digitized institutional workflows supporting health-technology assessment and review.',children:['Assessment Workflows','Evaluation & Review','Approval Workflow','Document Management','Reporting & Decision Support']},
-  {name:'Private Cloud & Enterprise Platform Operations',type:'Enterprise Systems',kind:'Technology Platform',description:'Secure hosting, deployment and operational foundations for enterprise workloads.',children:['Private Cloud Platform','Deployment Environments','Access Control','Monitoring','Backup & Recovery','Production Operations']},
-  {name:'Customer Service & Technical Support Platform',type:'Enterprise Systems',kind:'Service Platform',description:'Structured service requests, escalation and operational support workflows.',children:['Service Requests','CRM Case Handling','Escalation Workflows','Incident Coordination','Support Reporting']},
-  {name:'UPA Official Website & Public Digital Services',type:'Digital Platforms',kind:'Public Platform',description:'Institutional publishing and accessible public-facing digital services.',children:['Institutional Content','News & Announcements','Public Information','Digital Services','Publishing Workflows']},
-  {name:'UPA Correspondence Management',type:'Enterprise Systems',kind:'Enterprise System',description:'Paperless correspondence routing, assignment, follow-up and tracking.',children:['Incoming & Outgoing Correspondence','Routing & Assignment','Follow-up','Document Tracking','Paperless Collaboration']},
-  {name:'UPA Crisis Management',type:'Enterprise Systems',kind:'Enterprise System',description:'Incident registration, escalation and coordinated organizational response.',children:['Incident Registration','Escalation','Response Coordination','Follow-up','Reporting']},
-  {name:'Africa CDC Pooled Procurement Digital Platform',type:'National Platforms',kind:'Regional Platform',description:'Digital support for the African Pooled Procurement Mechanism.',children:[]},
-  {name:'Oman National Educational Portal',type:'National Platforms',kind:'National Platform',role:'Development Team Lead · Hands-on Contributor',description:'Contributed hands-on engineering and delivery leadership to a national government education portal serving approximately one million users.',children:['Educational Portal','Digital Content & Services','Access Services','School Information','Ministry Digital Services'],evidence:'evidence.html'},
-  {name:'Oman Ministry of Education Recruitment System',type:'Enterprise Systems',kind:'Government System',description:'Structured recruitment workflows from vacancies through applicant evaluation.',children:['Vacancy Management','Applications','Applicant Processing','Evaluation','Recruitment Workflows','Reporting'],award:'Sultan Qaboos eGovernment recognition'},
-  {name:'Maktabi / Morasalat',type:'Enterprise Systems',kind:'Government Platform',description:'Electronic correspondence, document routing, approvals and archiving.',children:['Electronic Correspondence','Document Routing','Approvals','Follow-up','Archiving','Notifications']},
-  {name:'International Schools Management System',type:'Enterprise Systems',kind:'Education System',description:'Administrative and operational workflows for international schools.',children:['School Records','Administration','Operational Workflows','Reporting']},
-  {name:'Student Incident Management System',type:'Enterprise Systems',kind:'Education Operations',description:'Incident registration, classification, escalation and resolution for student services.',children:['Incident Registration','Classification','Escalation','Resolution','Reporting']},
-  {name:'Oman Crisis Management System',type:'Enterprise Systems',kind:'Government System',description:'A distinct Oman government system for coordinated crisis response.',children:[]},
-  {name:'Oman Asset Management Platform',type:'Enterprise Systems',kind:'Asset Platform',description:'Enterprise and IT-asset registration, assignment, maintenance and tracking.',children:['Enterprise Asset Management','IT Asset & Hardware Management','Registration & Assignment','Maintenance & Tracking']},
-  {name:'Oman Ministry of Agriculture Official Website',type:'Digital Platforms',kind:'Government Platform',description:'Official public-facing digital presence for the ministry.',children:[]},
-  {name:'Omani Dates Electronic Market (Tmoor / Omanidates)',type:'Digital Platforms',kind:'Digital Marketplace',description:'A unified electronic marketplace serving the Omani dates sector.',children:[]},
-  {name:'Al Wahat Club Management System',type:'Enterprise Systems',kind:'Operations System',description:'Membership and operational management for Al Wahat Club.',children:[]},
-  {name:'Police Civil Registry Integration',type:'Data & Integration',kind:'Government Integration',description:'Controlled integration with civil-registry services.',children:[]},
-  {name:'HR & Attendance System',type:'Enterprise Systems',kind:'HR System',description:'Human-resources and attendance administration workflows.',children:[]},
-  {name:'Government Digital Services Portfolio',type:'Digital Platforms',kind:'Project Portfolio',role:'Development Team Lead · Hands-on Contributor',description:'Selected public-sector portals and citizen-facing digital services delivered during the Keyframe period.',children:['Rate Your Services / Rate Your Government','Egypt Events Calendar','MSAD Portal & E-Services','Ministry of Health Official Website','Ministry of Planning Portal','Government Business Portal','Online Surveys']},
-  {name:'Healthcare Digital Solutions Portfolio',type:'Digital Platforms',kind:'Project Portfolio',role:'Development Team Lead · Hands-on Contributor',description:'Selected healthcare portals and operational systems delivered during the Keyframe period.',children:['Yashfeen Medical Portal','Kasr Al Ainy Liver Tumor Unit Management System','Afia Medical','Medical ICO','Alfa Cure Centers','Virginia Pharma','ESH / Blood Website','Magrabi Biomedical','Arab Medical Union','Salamat Healthcare Platform'],evidence:'evidence.html'},
-  {name:'Education Platforms Portfolio',type:'Digital Platforms',kind:'Project Portfolio',description:'School, assessment and education-management solutions.',children:['School Management System','Edu Advisor / School Advisor','Electronic Examinations','School Rating / Evaluation','Government Schools Database','Courses DP']},
-  {name:'Conference & Event Platforms Portfolio',type:'Digital Platforms',kind:'Project Portfolio',description:'Registration, conference-management and event-reporting solutions.',children:['PTE Conference Registration System','Arab Organizers Conference Management System','BGICC','EEC Reporting / Event Reporting','ASOGIC Platform & Registration','Events & Attractions']},
-  {name:'Commerce, Booking & Marketplace Portfolio',type:'Digital Platforms',kind:'Project Portfolio',description:'Transactional, marketplace, booking and stock-management products.',children:['Multi-Vendor E-Commerce Marketplace','Banking Solutions & Mandates Management / Banky','Mazaya Stock Management','Narita Booking','Agazat Masr','Branding Market','Catering Kitchen']},
-  {name:'Real Estate & Construction Portfolio',type:'Digital Platforms',kind:'Project Portfolio',description:'Selected property, construction and stakeholder-facing platforms.',children:['Manara Real Estate & Rental Platform','Zayed Dunes','Arkan Developers','Property Advisors Egypt','Abdeen Stone','Tameer Egypt','Tasheed','Aristo Engineering']},
-  {name:'Regional Home-Appliance Digital Rollout',type:'Digital Platforms',kind:'Regional Program',description:'Regional brand implementations consolidated as one delivery program.',children:['Electrolux Egypt','Electrolux KSA','Electrolux UAE','Zanussi Regional Implementations','Frigidaire']},
-  {name:'Reusable Product Platforms',type:'Enterprise Systems',kind:'Product Portfolio',description:'Reusable foundations supporting multiple delivery engagements.',children:['Reusable CMS / Electronic Publishing Platform','Reusable Conference Management Platform']}
-];
+/* Public project directory derived from the canonical 179-record career master. */
+(() => {
+  'use strict';
+  const master = Array.isArray(window.CAREER_PROJECTS) ? window.CAREER_PROJECTS : [];
+  const excludedAsContributions = new Set([12]);
+  const mergedOrNonProjectRecords = new Set([138,144,179]);
+  const featured = [
+    {name:'MedIQ — National Procurement & Medical Supply Ecosystem',type:'National Platforms',period:'2020–Present',description:'Flagship national healthcare ecosystem spanning institutional procurement, tendering, pharmacy, planning, logistics, inventory, mobile operations and governed production services.',caseStudy:'mediq.html',evidence:'evidence.html',award:'Pharmaconex Awards 2026 · Excellence in Digital Transformation'},
+    {name:'Enterprise Data, Reporting & Analytics',type:'Data & Integration',period:'2020–Present',description:'Connected data foundations covering the operational data store, central warehouse, MedIQ pipelines, strategic dashboards, reporting and procurement analytics.'},
+    {name:'Microsoft Dynamics 365 Enterprise Integration',type:'Data & Integration',period:'2020–Present',description:'Governed integration across finance, procurement, inventory and CRM, including mapping, reconciliation, testing and production readiness.'},
+    {name:'Healthcare & Government Interoperability',type:'Data & Integration',period:'2020–Present',description:'Independent integration deliveries across HMIS, GS1/GLN, SAP warehouses, government entity mapping, payments and controlled healthcare data exchange.'}
+  ];
+  const exactType = new Map([
+    [1,'National Platforms'],[2,'National Platforms'],[3,'National Platforms'],[7,'National Platforms'],[10,'National Platforms'],[15,'Digital Platforms'],[42,'National Platforms'],
+    [4,'Mobile & Operations'],[5,'Mobile & Operations'],[17,'Mobile & Operations'],[18,'Mobile & Operations'],[32,'Mobile & Operations'],[33,'Mobile & Operations'],[37,'Mobile & Operations'],[38,'Mobile & Operations'],
+    [8,'Data & Integration'],[9,'Data & Integration'],[13,'Data & Integration'],[14,'Data & Integration'],[19,'Data & Integration'],[20,'Data & Integration'],[23,'Data & Integration'],[28,'Data & Integration'],[29,'Data & Integration'],[30,'Data & Integration'],[35,'Data & Integration'],[41,'Data & Integration'],[43,'Data & Integration'],[44,'Data & Integration'],[45,'Data & Integration'],
+    [6,'Enterprise Systems'],[11,'Enterprise Systems'],[16,'Enterprise Systems'],[21,'Enterprise Systems'],[22,'Enterprise Systems'],[24,'Enterprise Systems'],[25,'Enterprise Systems'],[27,'Enterprise Systems'],[31,'Enterprise Systems'],[34,'Enterprise Systems'],[36,'Enterprise Systems'],[39,'Enterprise Systems'],[40,'Enterprise Systems']
+  ]);
+  const periodFor = era => ({'UPA':'2020–Present','Oman / Integral':'2016–2020','Keyframe':'2011–2016','Other':'Earlier / Independent'}[era] || 'Career archive');
+  const eraRank = era => ({'UPA':4,'Oman / Integral':3,'Keyframe':2,'Other':1}[era] || 0);
+  const inferType = record => {
+    if (exactType.has(record.id)) return exactType.get(record.id);
+    const name = record.name.toLowerCase();
+    if (/integration|web-service|data |report|analytics|dashboard|registry/.test(name)) return 'Data & Integration';
+    if (/mobile|stocktaking|inventory|warehouse|asset|attendance|crisis|incident|correspondence|recruitment|management system/.test(name)) return 'Mobile & Operations';
+    if (/website|portal|market|booking|e-commerce|facebook|digital|calendar|survey/.test(name)) return 'Digital Platforms';
+    if (/national|ministry|government|educational/.test(name)) return 'National Platforms';
+    return 'Enterprise Systems';
+  };
+  const inferKind = name => {
+    const value = name.toLowerCase();
+    if (/integration|web-service/.test(value)) return 'Integration';
+    if (/mobile|app\b/.test(value)) return 'Mobile Product';
+    if (/website|portal/.test(value)) return 'Digital Portal';
+    if (/market|booking|e-commerce/.test(value)) return 'Digital Product';
+    if (/system|warehouse|inventory|asset|crm|attendance|correspondence/.test(value)) return 'Enterprise System';
+    return 'Project';
+  };
+  const programFor = id => {
+    if ([1,2,3,4,5,6,17,18,21,25,31,32,33,34,35,36,37].includes(id)) return 'MedIQ ecosystem';
+    if ([8,13,23,41,43,44].includes(id)) return 'Healthcare interoperability';
+    if (id === 9) return 'Dynamics 365 integration';
+    if ([14,19,20,28,29,30,45].includes(id)) return 'Enterprise data & analytics';
+    return '';
+  };
+  const selectedDescriptions = {
+    1:'National healthcare procurement and medical-supply ecosystem led through re-architecture, migration, cutover, stabilization and live operations.',
+    4:'Electronic inventory and mobile stocktaking with reconciliation, variance reporting and auditable operational controls.',
+    7:'Web and mobile medical-asset lifecycle management covering registration, mapping, maintenance and decommissioning.',
+    8:'Bi-directional SAP integration supporting strategic medical-warehouse processes and controlled production reconciliation.',
+    9:'Finance, procurement and inventory integration with Microsoft Dynamics 365 and the unified financial environment.',
+    10:'Digital workflows supporting institutional health-technology assessment, review and decision support.',
+    14:'Operational data foundation supporting governed reporting and downstream analytical workloads.',
+    20:'Centralized analytical data foundation for cross-platform reporting, governance and executive insight.',
+    42:'Digital platform supporting the Africa CDC African Pooled Procurement Mechanism.',
+    43:'Registration and interoperability work connecting institutional data with GS1 HLRP / GLN services.',
+    44:'HMIS integration and healthcare-data migration delivered with governed mapping, validation and reconciliation.',
+    45:'Governed MedIQ data pipeline supporting reliable movement of operational data into reporting and analytics.',
+    46:'National education portal delivered during the Oman / Integral period, combining hands-on engineering and development-team leadership.'
+  };
+  const projects = master
+    .filter(record => record.public === 'yes' && record.status !== 'On Hold / Not Implemented' && !excludedAsContributions.has(record.id) && !mergedOrNonProjectRecords.has(record.id))
+    .map(record => ({id:record.id,name:(record.id === 55 ? 'Omani Dates Electronic Market (Tmoor / Omanidates)' : record.id === 155 ? 'ASOGIC Platform & Registration' : record.name).replace(/^DAF\s+/i,''),type:inferType(record),kind:inferKind(record.name),period:periodFor(record.era),era:record.era,program:programFor(record.id),description:selectedDescriptions[record.id] || '',award:record.id === 46 ? '' : record.award || '',evidence:record.evidence || ''}))
+    .sort((a,b) => eraRank(b.era) - eraRank(a.era) || a.id - b.id);
+  window.PROJECT_FEATURED = featured;
+  window.PROJECT_PORTFOLIO = projects;
+})();

@@ -3,7 +3,7 @@
    Uses the shared typography tokens; no independent font stack. */
 
 :root{
-  --projects-body-font:var(--body,"Source Sans 3","Segoe UI",Arial,sans-serif);
+  --projects-body-font:var(--body,"Sora",Inter,"Segoe UI",Arial,sans-serif);
 }
 
 /* Body copy + interface text */

@@ -9,7 +9,7 @@
 .leadership-principles article:last-child{border-right:0}
 .leadership-principles span{font:700 .68rem/1.1 "IBM Plex Mono",monospace;letter-spacing:.09em;color:#0e93a8}
 .leadership-principles h3{margin:11px 0 8px;font-size:1.2rem;line-height:1.12;letter-spacing:-.02em;color:#10263b}
-.leadership-principles p{margin:0;color:#526675;font-size:.88rem;line-height:1.58}
+.leadership-principles p{margin:0;color:#526675;font-size:.94rem;line-height:1.65}
 .transformation-playbook-compact{display:grid;grid-template-columns:minmax(220px,.72fr) minmax(0,2.28fr);gap:clamp(26px,4vw,54px);margin-top:38px;padding:30px;border:1px solid #cfe1e6;border-radius:16px 24px 20px 14px;background:#fff;box-shadow:9px 11px 0 rgba(13,44,61,.06)}
 .playbook-title small{font:700 .68rem/1.2 "IBM Plex Mono",monospace;letter-spacing:.09em;color:#0e93a8}
 .playbook-title h3{margin:10px 0 0;max-width:12ch;font-size:clamp(1.55rem,2.2vw,2.25rem);line-height:1.08;letter-spacing:-.03em;color:#0f172a}
@@ -17,6 +17,6 @@
 .transformation-playbook-compact li{min-width:0;padding:4px 18px 17px;border-left:1px solid #e2e8f0}
 .transformation-playbook-compact li:nth-child(n+4){padding-top:18px;border-top:1px solid #e2e8f0}
 .transformation-playbook-compact b{display:block;margin-bottom:6px;color:#10263b;font-size:.95rem}
-.transformation-playbook-compact li span{display:block;color:#607381;font-size:.78rem;line-height:1.5}
+.transformation-playbook-compact li span{display:block;color:#607381;font-size:.86rem;line-height:1.58}
 @media(max-width:960px){.leadership-merge-head{grid-template-columns:1fr;gap:16px}.leadership-principles{grid-template-columns:repeat(2,minmax(0,1fr))}.transformation-playbook-compact{grid-template-columns:1fr}.playbook-title h3{max-width:none}}
 @media(max-width:640px){.leadership-merged{padding:46px 0}.leadership-merge-head h2{font-size:clamp(2rem,9vw,2.65rem)}.leadership-principles{grid-template-columns:1fr}.leadership-principles article{border-right:0!important;border-bottom:1px solid #dbe5eb}.leadership-principles article:last-child{border-bottom:0}.transformation-playbook-compact{padding:22px 18px}.transformation-playbook-compact ol{grid-template-columns:1fr}.transformation-playbook-compact li,.transformation-playbook-compact li:nth-child(n+4){padding:14px 0;border-left:0;border-top:1px solid #e2e8f0}.transformation-playbook-compact li:first-child{border-top:0;padding-top:0}}

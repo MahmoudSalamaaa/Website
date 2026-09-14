@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ff6f61">
+<meta name="description" content="MSF WaCA Interview Flash Cards — final high-probability preparation deck for Mahmoud Salama">
+<title>WaCA Interview Flash Cards</title>
+<style>
+:root{
+  --ink:#17324d;--muted:#617188;--paper:#fffdf5;--line:#dbe3ee;--shadow:0 16px 40px rgba(32,45,67,.13);
+  --yellow:#fff1a8;--pink:#ffd4e5;--mint:#c9f4dd;--blue:#cfeaff;--lav:#ddd7ff;--peach:#ffd7b7;--lime:#e7f7aa;--coral:#ffc2b9;
+  --accent:#e94f64;--navy:#17324d;--bg1:#fff7ef;--bg2:#f5f8ff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:
+radial-gradient(circle at 8% 10%,rgba(255,202,118,.35),transparent 26%),
+radial-gradient(circle at 88% 7%,rgba(168,215,255,.4),transparent 25%),
+radial-gradient(circle at 80% 90%,rgba(255,183,213,.28),transparent 28%),linear-gradient(145deg,var(--bg1),var(--bg2));min-height:100vh}
+button,input,select{font:inherit}
+a{color:inherit}
+.shell{width:min(1480px,94vw);margin:auto;padding:24px 0 70px}
+.hero{position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.75);border-radius:32px;padding:28px;background:rgba(255,255,255,.72);backdrop-filter:blur(20px);box-shadow:var(--shadow)}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(2px);opacity:.8;pointer-events:none}.hero:before{width:180px;height:180px;background:#ffe16a;right:-50px;top:-60px}.hero:after{width:110px;height:110px;background:#8ed6ff;right:110px;bottom:-55px}
+.topline{display:flex;gap:12px;justify-content:space-between;align-items:center;flex-wrap:wrap;position:relative;z-index:1}
+.brand{display:flex;gap:12px;align-items:center}.logo{width:52px;height:52px;border-radius:17px;display:grid;place-items:center;background:linear-gradient(135deg,#ff6f61,#ffca68);font-size:28px;box-shadow:0 8px 22px rgba(233,79,100,.22)}
+.eyebrow{font-size:.79rem;font-weight:850;letter-spacing:.13em;text-transform:uppercase;color:#e94f64}.brand h1{margin:2px 0 0;font-size:clamp(1.35rem,2.7vw,2.25rem);line-height:1.05}.home{display:inline-flex;align-items:center;gap:8px;text-decoration:none;background:#17324d;color:#fff;padding:11px 15px;border-radius:15px;font-weight:800;box-shadow:0 8px 20px rgba(23,50,77,.18)}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.35fr .65fr;gap:24px;align-items:end;margin-top:26px}.hero h2{font-size:clamp(2rem,5vw,4rem);line-height:.98;margin:0;max-width:850px;letter-spacing:-.045em}.hero h2 span{background:linear-gradient(90deg,#e94f64,#f59e0b,#2687d8);-webkit-background-clip:text;color:transparent}.hero p{font-size:1.02rem;line-height:1.7;color:var(--muted);max-width:760px;margin:14px 0 0}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.stat{background:rgba(255,255,255,.8);border:1px solid #fff;border-radius:19px;padding:14px;min-height:95px}.stat b{font-size:1.75rem;display:block}.stat small{color:var(--muted);font-weight:700}
+.toolbar{position:sticky;top:8px;z-index:50;margin:18px 0;padding:14px;border-radius:24px;background:rgba(255,255,255,.86);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.9);box-shadow:0 10px 32px rgba(27,42,65,.12)}
+.searchline{display:grid;grid-template-columns:minmax(220px,1.4fr) repeat(3,minmax(145px,.55fr)) auto auto;gap:10px}.control{border:1px solid #d8e1ed;background:white;border-radius:15px;padding:12px 14px;color:var(--ink);outline:none;width:100%}.control:focus{border-color:#79bff2;box-shadow:0 0 0 4px rgba(121,191,242,.17)}.btn{border:0;border-radius:15px;padding:11px 14px;font-weight:850;cursor:pointer;transition:.18s}.btn:hover{transform:translateY(-1px)}.btn-primary{background:#17324d;color:#fff}.btn-soft{background:#fff1a8;color:#675100}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:11px}.chip{border:0;border-radius:999px;padding:8px 12px;background:#edf3f8;color:#496078;font-size:.85rem;font-weight:800;cursor:pointer}.chip.active{background:#17324d;color:white}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin:28px 5px 15px}.section-head h3{font-size:1.45rem;margin:0}.section-head p{margin:4px 0 0;color:var(--muted)}.result-count{font-weight:900;color:#e94f64}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:start}.card{position:relative;border:1px solid rgba(71,86,105,.12);border-radius:8px 8px 18px 8px;padding:21px 20px 18px;min-height:250px;box-shadow:0 13px 25px rgba(50,57,73,.11);transform:rotate(var(--tilt));transition:.2s ease;overflow:hidden}.card:hover{transform:rotate(0deg) translateY(-5px);box-shadow:0 18px 32px rgba(50,57,73,.17);z-index:3}.card:before{content:"";position:absolute;top:0;left:50%;width:88px;height:22px;transform:translate(-50%,-7px) rotate(-2deg);background:rgba(255,255,255,.48);box-shadow:0 1px 2px rgba(0,0,0,.04)}.c0{background:var(--yellow)}.c1{background:var(--pink)}.c2{background:var(--mint)}.c3{background:var(--blue)}.c4{background:var(--lav)}.c5{background:var(--peach)}.c6{background:var(--lime)}.c7{background:var(--coral)}
+.meta{display:flex;gap:7px;flex-wrap:wrap;align-items:center;margin-bottom:13px}.badge{font-size:.7rem;font-weight:900;letter-spacing:.04em;text-transform:uppercase;padding:5px 8px;border-radius:999px;background:rgba(255,255,255,.72);border:1px solid rgba(23,50,77,.10)}.badge.risk{background:#17324d;color:#fff}.rank{position:absolute;right:14px;top:13px;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:#fff;color:#17324d;font-weight:950;box-shadow:0 5px 12px rgba(0,0,0,.08)}.q{font-size:1.16rem;line-height:1.42;font-weight:900;margin:0 38px 14px 0}.mini{font-size:.82rem;color:#4c5e72;font-weight:720;line-height:1.45;margin:0}.answer-wrap{margin-top:15px;border-top:1px dashed rgba(23,50,77,.24);padding-top:13px}.answer{display:none;font-size:.92rem;line-height:1.62;color:#243b50}.answer.show{display:block}.answer strong{color:#b52543}.toggle{border:0;background:rgba(255,255,255,.74);color:#17324d;padding:9px 12px;border-radius:11px;font-weight:900;cursor:pointer;width:100%;text-align:left}.follow{margin:11px 0 0;padding:10px 12px;border-radius:12px;background:rgba(255,255,255,.55);font-size:.84rem;line-height:1.5}.coach{margin-top:10px;font-size:.82rem;line-height:1.55;background:rgba(23,50,77,.08);padding:10px;border-radius:12px}.danger{margin-top:9px;font-size:.81rem;line-height:1.5;background:rgba(233,79,100,.11);padding:10px;border-radius:12px}.hidden{display:none!important}.empty{grid-column:1/-1;text-align:center;padding:50px;border:2px dashed #cbd6e5;border-radius:24px;background:rgba(255,255,255,.55)}
+.mode-note{margin-top:14px;padding:12px 14px;border-radius:16px;background:linear-gradient(90deg,#17324d,#2b648f);color:white;font-size:.9rem;display:flex;gap:10px;align-items:flex-start}.mode-note b{color:#ffe283}
+footer{text-align:center;color:#718096;font-size:.83rem;margin-top:42px}
+@media(max-width:1050px){.hero-grid{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.searchline{grid-template-columns:1fr 1fr 1fr}.searchline .search{grid-column:1/-1}}
+@media(max-width:680px){.shell{width:min(95vw,760px);padding-top:10px}.hero{padding:19px;border-radius:23px}.hero-grid{gap:16px}.stats{grid-template-columns:repeat(4,1fr)}.stat{min-height:auto;padding:10px}.stat b{font-size:1.25rem}.stat small{font-size:.66rem}.toolbar{top:4px;padding:10px;border-radius:18px}.searchline{grid-template-columns:1fr 1fr}.searchline .search{grid-column:1/-1}.grid{grid-template-columns:1fr;gap:17px}.card{min-height:0;transform:none}.section-head{align-items:start;flex-direction:column}.hide-mobile{display:none}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}.card{transform:none!important}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <section class="hero">
+    <div class="topline">
+      <div class="brand"><div class="logo">🧠</div><div><div class="eyebrow">MSF WaCA · Interview Lab</div><h1>Final Interview Flash Cards</h1></div></div>
+      <a class="home" href="/waca/">← WaCA Home</a>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <h2>Master the <span>25 questions</span> most likely to decide the interview.</h2>
+        <p>Built from your audited WaCA question bank, then re-focused for the post-assessment panel: fit, leadership, humanitarian judgement, systems ownership, resilience, Microsoft/Azure, integration and field reality.</p>
+        <div class="mode-note"><span>🎯</span><div><b>Study rule:</b> speak the answer logic, not the script. Open the card only after answering aloud. Every answer should survive two follow-up questions.</div></div>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>25</b><small>Final focus cards</small></div>
+        <div class="stat"><b>3</b><small>Personal risk cards</small></div>
+        <div class="stat"><b>50m</b><small>Interview window</small></div>
+        <div class="stat"><b>P0</b><small>Decision-level prep</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="toolbar" aria-label="Interview card filters">
+    <div class="searchline">
+      <input id="search" class="control search" type="search" placeholder="Search question, answer, category, system…" autocomplete="off">
+      <select id="category" class="control"><option value="all">All categories</option></select>
+      <select id="tier" class="control"><option value="all">All tiers</option><option value="personal">Personal risks</option><option value="P0">P0</option><option value="P1">P1</option><option value="P2">P2</option></select>
+      <select id="view" class="control"><option value="top25">Final Top 25</option><option value="all">Full bank</option></select>
+      <button class="btn btn-soft" id="shuffle">🔀 Shuffle</button>
+      <button class="btn btn-primary" id="toggleAll">Reveal all</button>
+    </div>
+    <div class="chips" id="chips"></div>
+  </section>
+
+  <div class="section-head">
+    <div><h3 id="heading">Final Top 25</h3><p id="subheading">High-probability panel questions after the technical assessment.</p></div>
+    <div class="result-count" id="count">0 cards</div>
+  </div>
+  <main class="grid" id="grid" aria-live="polite"></main>
+  <footer>WaCA Interview Flash Cards · Built for Mahmoud Salama · Use with the audited WaCA evidence pack.</footer>
+</div>
+
+<script src="/waca/assets/js/questions-data.js"></script>
+<script>
+const personalCards=[
+  {
+    rank:1,id:'R1',tier:'personal',category:'Personal Risk · Seniority',track:'Fit & Retention',seconds:60,
+    q:'You currently hold a very senior Head / CTO-level role. Why are you applying for an Information System Manager position?',
+    a:`I am not evaluating this opportunity by title alone. What matters to me is the scope and the mission. This role owns enterprise systems across headquarters and missions: availability, lifecycle, integrations, security, disaster recovery, vendors and alignment with MSF global platforms. That is meaningful systems ownership, not a narrow administrator role. My current experience gives me the maturity to contribute quickly, while MSF gives me a genuinely international humanitarian operating environment that I do not have today. I would only make the move if I am comfortable with the reporting line and the scope; I am comfortable reporting to the Head of Information Systems because accountability and clear governance matter more to me than hierarchy.`,
+    coach:'Do not defend your title. Reframe around scope, mission, international exposure and enterprise ownership.',
+    red:'Never say you just want to leave Egypt, get an international name, or use MSF as a stepping stone.',
+    follow:'Follow-ups: “Will you be comfortable reporting to a Head of IS?” · “Will you get bored?” · “Why not wait for a Director role?”'
+  },
+  {
+    rank:2,id:'R2',tier:'personal',category:'Personal Risk · Hands-on',track:'Technical credibility',seconds:70,
+    q:'What do you personally still do technically, and what do you delegate to your team?',
+    a:`I lead through technical depth, not by trying to perform every engineer's task myself. I remain directly involved in architecture decisions, integration patterns, security and access-control reviews, disaster-recovery decisions, production-risk reviews, critical incidents, vendor technical discussions and major release or migration decisions. I delegate implementation detail to the engineers who own those components, but I require clear evidence: architecture, logs, test results, recovery validation, monitoring and documented rollback. In a critical incident I can go deep enough to challenge assumptions and make decisions, while still preserving ownership in the team.`,
+    coach:'Show technical proximity without pretending you personally execute every infrastructure or coding task.',
+    red:'Avoid “my team handles that” as a repeated answer. Equally avoid claiming daily hands-on administration you no longer perform.',
+    follow:'Follow-ups: “When did you last troubleshoot a production incident?” · “How deep can you go in Microsoft/Azure?”'
+  },
+  {
+    rank:3,id:'R3',tier:'personal',category:'Personal Risk · Retention',track:'Fit & Retention',seconds:55,
+    q:'What would make you stay with MSF for the next several years rather than leave after one or two?',
+    a:`The conditions that create retention for me are meaningful ownership, a clear mandate, continuous learning and visible operational impact. This role has all four if the scope described in the vacancy reflects the real job: enterprise systems across headquarters and missions, collaboration with SITS, security, support and business teams, and responsibility for lifecycle, resilience and integrations. I am not looking for a short stop. If I join, my objective would be to understand the environment deeply, build credibility with the missions, improve system reliability and governance, and leave a stronger operating model than the one I inherited.`,
+    coach:'Make retention sound intentional and operational, not emotional.',
+    red:'Do not promise “I will stay X years.” Avoid unverifiable commitments.',
+    follow:'Follow-ups: “What if the title does not change?” · “What motivates you after the first year?”'
+  }
+];
+
+const source=(window.MSF_QUESTIONS||[]).map((x,i)=>({
+  id:x.id,
+  rank:Number(x.interview_rank||999),
+  tier:x.importance_tier||'P2',
+  category:x.category_en||'Other',
+  track:x.study_track||'General',
+  seconds:x.target_seconds||60,
+  q:x.question_en||'',
+  a:x.answer_en||'',
+  coach:x.coach_en||'',
+  red:x.red_flag_en||'',
+  follow:x.research_anchor_en?`Research anchor: ${x.research_anchor_en}`:'',
+  importance:Number(x.importance_score||0),
+  source:true
+}));
+
+// The audited bank stays intact. We only change study order for this final-stage page.
+const top22=source.slice().sort((a,b)=>a.rank-b.rank || b.importance-a.importance).slice(0,22).map((x,i)=>({...x,rank:i+4}));
+const final25=[...personalCards,...top22];
+let allCards=[...personalCards,...source.map(x=>({...x,rank:x.rank+3}))];
+let shuffled=false;
+
+const grid=document.getElementById('grid'),search=document.getElementById('search'),category=document.getElementById('category'),tier=document.getElementById('tier'),view=document.getElementById('view'),count=document.getElementById('count'),chips=document.getElementById('chips');
+const cats=[...new Set(allCards.map(x=>x.category))].sort();
+cats.forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c;category.appendChild(o)});
+['All','Fit & Retention','Role Core','MSF Context','Security','Resilience','Microsoft','ERP / Integration','Leadership'].forEach((c,i)=>{const b=document.createElement('button');b.className='chip'+(i===0?' active':'');b.textContent=c;b.dataset.track=c;b.onclick=()=>{[...chips.children].forEach(x=>x.classList.remove('active'));b.classList.add('active');render()};chips.appendChild(b)});
+
+function colorIndex(card,i){const key=(String(card.category)+String(card.id)).split('').reduce((a,c)=>a+c.charCodeAt(0),0);return (key+i)%8}
+function esc(s=''){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
+function normalize(s=''){return s.toLowerCase().replace(/[^a-z0-9]+/g,' ')}
+function trackMatch(c,chosen){if(chosen==='All')return true; const hay=normalize(c.track+' '+c.category+' '+c.q); const map={
+  'Fit & Retention':['fit','motivation','retention','seniority','role match'],
+  'Role Core':['role core','first 90','systems ownership','lifecycle','roadmap','vendor'],
+  'MSF Context':['msf','humanitarian','waca','field','sits'],
+  'Security':['security','identity','iam','access','rbac','entra','mfa','zero trust'],
+  'Resilience':['disaster','backup','rto','rpo','availability','incident','continuity','outage'],
+  'Microsoft':['microsoft','azure','365','entra','windows','mdm'],
+  'ERP / Integration':['erp','integration','netsuite','unifield','sira','api','migration'],
+  'Leadership':['leadership','behaviour','team','stakeholder','vendor','conflict','priorit']};
+  return (map[chosen]||[]).some(k=>hay.includes(k));
+}
+function currentCards(){
+  let arr=view.value==='top25'?[...final25]:[...allCards];
+  const q=normalize(search.value);const active=chips.querySelector('.active')?.dataset.track||'All';
+  arr=arr.filter(c=>(category.value==='all'||c.category===category.value)&&(tier.value==='all'||c.tier===tier.value)&&trackMatch(c,active));
+  if(q)arr=arr.filter(c=>normalize([c.q,c.a,c.category,c.track,c.coach,c.red,c.follow].join(' ')).includes(q));
+  if(shuffled)arr.sort(()=>Math.random()-.5); else arr.sort((a,b)=>a.rank-b.rank);
+  return arr;
+}
+function cardHtml(c,i){const tilt=((i%5)-2)*.45+'deg';return `<article class="card c${colorIndex(c,i)}" style="--tilt:${tilt}" data-id="${esc(c.id)}">
+  <div class="rank">${c.rank>999?'•':c.rank}</div>
+  <div class="meta"><span class="badge ${c.tier==='personal'?'risk':''}">${esc(c.tier==='personal'?'PERSONAL RISK':c.tier)}</span><span class="badge">${esc(c.track)}</span><span class="badge">⏱ ${esc(c.seconds)}s</span></div>
+  <h4 class="q">${esc(c.q)}</h4>
+  <p class="mini">${esc(c.category)}</p>
+  <div class="answer-wrap"><button class="toggle" onclick="toggleCard(this)">👀 Reveal answer logic</button>
+    <div class="answer"><p>${esc(c.a)}</p>${c.follow?`<div class="follow"><b>🔎 Follow-up / anchor</b><br>${esc(c.follow)}</div>`:''}${c.coach?`<div class="coach"><b>🎤 Coach:</b> ${esc(c.coach)}</div>`:''}${c.red?`<div class="danger"><b>⚠️ Avoid:</b> ${esc(c.red)}</div>`:''}</div>
+  </div></article>`}
+function render(){
+  const arr=currentCards();count.textContent=`${arr.length} card${arr.length===1?'':'s'}`;
+  document.getElementById('heading').textContent=view.value==='top25'?'Final Top 25':'Full WaCA Question Bank';
+  document.getElementById('subheading').textContent=view.value==='top25'?'High-probability panel questions after the technical assessment.':'Search and filter the complete audited question bank.';
+  grid.innerHTML=arr.length?arr.map(cardHtml).join(''):`<div class="empty"><h3>No cards match this filter.</h3><p>Clear the search or choose a broader category.</p></div>`;
+  document.getElementById('toggleAll').textContent='Reveal all';
+}
+function toggleCard(btn){const a=btn.nextElementSibling;a.classList.toggle('show');btn.textContent=a.classList.contains('show')?'🙈 Hide answer':'👀 Reveal answer logic'}
+window.toggleCard=toggleCard;
+[search,category,tier,view].forEach(el=>el.addEventListener(el===search?'input':'change',()=>{shuffled=false;render()}));
+document.getElementById('shuffle').onclick=()=>{shuffled=true;render()};
+document.getElementById('toggleAll').onclick=function(){const answers=[...document.querySelectorAll('.answer')];const reveal=answers.some(a=>!a.classList.contains('show'));answers.forEach(a=>a.classList.toggle('show',reveal));[...document.querySelectorAll('.toggle')].forEach(b=>b.textContent=reveal?'🙈 Hide answer':'👀 Reveal answer logic');this.textContent=reveal?'Hide all':'Reveal all'};
+render();
+</script>
+</body>
+</html>

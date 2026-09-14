@@ -26,17 +26,6 @@
     document.head.appendChild(link);
   };
 
-  const ensureUnifiedPolish = () => {
-    /* card.html is intentionally a self-contained PRO/FUN business-card experience. */
-    if (pageName() === 'card.html') return;
-    if (document.querySelector('link[data-site-unified-polish], link[href$="site-unified-polish.css"]')) return;
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = '/site-unified-polish.css';
-    link.dataset.siteUnifiedPolish = 'true';
-    document.head.appendChild(link);
-  };
-
   const currentSection = () => {
     const page = pageName();
     if (page === 'portfolio.html') return 'portfolio';
@@ -116,7 +105,6 @@
 
   const enhance = () => {
     document.documentElement.lang ||= 'en';
-    ensureUnifiedPolish();
     installUnifiedNavigation();
 
     const main = document.querySelector('main');

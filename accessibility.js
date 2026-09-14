@@ -24,6 +24,16 @@
     document.head.appendChild(link);
   };
 
+  const ensurePortfolioStyles = () => {
+    const page = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    if (page !== 'portfolio.html' || document.querySelector('link[data-portfolio-layout-fixes]')) return;
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = '/portfolio-layout-fixes.css';
+    link.dataset.portfolioLayoutFixes = 'true';
+    document.head.appendChild(link);
+  };
+
   const currentSection = () => {
     const page = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
     if (page === 'portfolio.html') return 'portfolio';
@@ -103,6 +113,7 @@
 
   const enhance = () => {
     document.documentElement.lang ||= 'en';
+    ensurePortfolioStyles();
     installUnifiedNavigation();
 
     const main = document.querySelector('main');

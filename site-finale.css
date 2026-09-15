@@ -147,3 +147,16 @@ table{max-width:100%;display:block;overflow-x:auto}
   .footer-row{font-size:11px!important}
 }
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+
+/* Homepage hero cleanup: remove the doodle ring beside the name. */
+.executive-hero .hero-name::after,
+.executive-hero .hero-name::before,
+.hero-name::after,
+.hero-name::before{
+  display:none!important;
+  content:none!important;
+  border:0!important;
+  background:none!important;
+  box-shadow:none!important;
+}

@@ -165,3 +165,12 @@ body.home-page{background:#fbfdff!important}.executive-hero{border-bottom:1px so
   .mediq-flagship .mediq-ecosystem{grid-template-columns:1fr!important}
   .mediq-flagship .mediq-node{min-height:0!important}
 }
+
+/* Keep the flagship composition intentional on wide screens; stack only when space requires it. */
+.mediq-flagship{scroll-margin-top:88px!important}
+.mediq-flagship .mediq-grid{
+  grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr)!important;
+}
+@media(max-width:960px){
+  .mediq-flagship .mediq-grid{grid-template-columns:1fr!important}
+}

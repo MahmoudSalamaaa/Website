@@ -19,42 +19,35 @@
   const normalizeFooter = () => {
     const footer = document.querySelector('footer .final-footer');
     if (!footer) return;
-    const nav = footer.querySelector('.footer-nav');
-    if (nav) nav.remove();
-    let cardWrap = footer.querySelector('.v5-card-footer-wrap');
-    if (!cardWrap) {
-      cardWrap = document.createElement('div');
-      cardWrap.className = 'v5-card-footer-wrap';
-      footer.appendChild(cardWrap);
-    }
-    let cardLink = cardWrap.querySelector('a');
-    if (!cardLink) {
-      cardLink = document.createElement('a');
-      cardWrap.appendChild(cardLink);
-    }
-    cardLink.className = 'v5-card-footer-link';
-    cardLink.href = 'card.html';
-    cardLink.setAttribute('aria-label', 'Open Mahmoud Salama digital business card');
-    cardLink.textContent = 'Open Digital Card';
 
-    let socials = cardWrap.querySelector('.footer-socials');
-    if (!socials) {
-      socials = document.createElement('div');
-      socials.className = 'footer-socials';
-      cardWrap.appendChild(socials);
+    const existingCard = footer.querySelector('.v5-card-footer-wrap');
+    if (existingCard) existingCard.remove();
+
+    let nav = footer.querySelector('.footer-nav');
+    if (!nav) {
+      nav = document.createElement('div');
+      nav.className = 'footer-nav';
+      const row = footer.querySelector('.footer-row');
+      if (row) footer.insertBefore(nav, row);
+      else footer.appendChild(nav);
     }
-    const socialLinks = [
-      ['Contact','contact.html'],
-      ['LinkedIn','https://www.linkedin.com/in/mahmoud-salama-30249b34/'],
-      ['GitHub','https://github.com/MahmoudSalamaaa'],
-      ['CV','assets/documents/Mahmoud_Salama_Executive_CV_2026.pdf']
+
+    const links = [
+      ['GitHub', 'https://github.com/MahmoudSalamaaa'],
+      ['LinkedIn', 'https://www.linkedin.com/in/mahmoud-salama-30249b34'],
+      ['Email', 'mailto:ma7moud.salamaaa@gmail.com'],
+      ['Download CV', 'assets/documents/Mahmoud_Salama_Executive_CV_2026.pdf'],
+      ['Digital Business Card', 'card.html']
     ];
-    socials.replaceChildren(...socialLinks.map(([label, href]) => {
+
+    nav.replaceChildren(...links.map(([label, href]) => {
       const link = document.createElement('a');
       link.href = href;
       link.textContent = label;
-      if (label === 'CV') link.setAttribute('download', '');
-      link.setAttribute('aria-label', label === 'Contact' ? 'Contact Mahmoud Salama' : label === 'CV' ? 'Download Mahmoud Salama executive CV' : `Open Mahmoud Salama on ${label}`);
+      if (/^https?:\/\//i.test(href)) {
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+      }
       return link;
     }));
   };

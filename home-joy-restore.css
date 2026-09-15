@@ -369,3 +369,15 @@ body.home-page .cta .btn{min-height:50px!important;white-space:nowrap!important;
   body.home-page .executive-hero .hero-actions .cv-btn{grid-column:auto!important}
   body.home-page .exec-snapshot-grid{grid-template-columns:1fr 1fr!important}
 }
+
+
+/* Final structural guard — keep the flagship two-column composition from collapsing on desktop. */
+body.home-page main .mediq-flagship .mediq-grid{
+  display:grid!important;
+  grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr)!important;
+}
+@media(max-width:960px){
+  body.home-page main .mediq-flagship .mediq-grid{
+    grid-template-columns:1fr!important;
+  }
+}

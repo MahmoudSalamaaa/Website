@@ -174,3 +174,86 @@ body.home-page{background:#fbfdff!important}.executive-hero{border-bottom:1px so
 @media(max-width:960px){
   .mediq-flagship .mediq-grid{grid-template-columns:1fr!important}
 }
+
+/* Current mandate refinement — turn the section into a calm executive operating brief. */
+.home-mandate{
+  scroll-margin-top:88px!important;
+  padding:clamp(70px,8vw,108px) 0!important;
+  background:#f6f8fb!important;
+}
+.home-mandate::after{display:none!important}
+.home-mandate .mandate-grid{
+  display:grid!important;
+  grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr)!important;
+  gap:clamp(28px,6vw,84px)!important;
+  align-items:center!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+.home-mandate .kicker{
+  color:#0f8998!important;
+  font-size:.72rem!important;
+  letter-spacing:.13em!important;
+}
+.home-mandate .section-title{
+  max-width:10ch!important;
+  margin:16px 0 0!important;
+  color:#10263b!important;
+  font-size:clamp(2.6rem,5vw,5.25rem)!important;
+  line-height:.96!important;
+  letter-spacing:-.065em!important;
+}
+.home-mandate .mandate-copy{
+  padding:clamp(24px,3vw,38px)!important;
+  border:1px solid rgba(16,38,59,.12)!important;
+  border-left:5px solid #0f9cab!important;
+  border-radius:16px!important;
+  background:#fff!important;
+  box-shadow:0 16px 38px rgba(16,38,59,.08)!important;
+}
+.home-mandate .mandate-copy::before{display:none!important}
+.home-mandate .mandate-copy p{
+  margin:0!important;
+  color:#435b6b!important;
+  font-size:1rem!important;
+  line-height:1.72!important;
+}
+.home-mandate .mandate-copy p+p{
+  margin-top:22px!important;
+  padding-top:20px!important;
+  border-top:1px solid rgba(16,38,59,.11)!important;
+}
+.home-mandate .mandate-chips{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:8px!important;
+  margin:24px 0!important;
+}
+.home-mandate .mandate-chips span{
+  min-height:42px!important;
+  padding:10px 12px!important;
+  border:1px solid rgba(15,156,171,.18)!important;
+  border-radius:10px!important;
+  background:#eef8f7!important;
+  color:#173a4d!important;
+  font-size:.78rem!important;
+  font-weight:800!important;
+  line-height:1.25!important;
+  box-shadow:none!important;
+}
+.home-mandate .mandate-chips span:nth-child(2n){background:#f2f5fb!important;border-color:rgba(92,145,217,.20)!important}
+@media(max-width:900px){
+  .home-mandate .mandate-grid{grid-template-columns:1fr!important;gap:26px!important}
+  .home-mandate .section-title{max-width:14ch!important}
+}
+@media(max-width:600px){
+  .home-mandate{padding:50px 0 58px!important}
+  .home-mandate .section-title{font-size:clamp(2.35rem,10vw,3.3rem)!important;line-height:1!important}
+  .home-mandate .mandate-copy{padding:22px 18px!important;border-left-width:4px!important}
+  .home-mandate .mandate-copy p{font-size:.93rem!important;line-height:1.65!important}
+  .home-mandate .mandate-chips{grid-template-columns:1fr!important;margin:20px 0!important}
+  .home-mandate .mandate-chips span{min-height:38px!important;font-size:.73rem!important}
+}

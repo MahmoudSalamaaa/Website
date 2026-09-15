@@ -10,17 +10,25 @@ SANTECHTURE — DIRECTOR OF SOLUTIONS ARCHITECTURE
 
 Question 1. Tell me about yourself.
 
-I’m a technology and digital transformation leader with more than 18 years of experience.
+I’m a technology and digital transformation leader with more than 18 years of experience across software engineering, enterprise architecture, healthcare technology, government platforms, integration, delivery, and technology operations.
 
-I started as a software developer and moved through team leadership, enterprise applications, architecture, and then executive technology leadership.
+I started as a hands-on software developer, building web and enterprise systems with Microsoft technologies. That engineering foundation is still important because it allows me to challenge designs, understand technical risk, and communicate credibly with architects and engineering teams.
 
-Today, I lead Information Systems and Digital Transformation at Egypt’s Unified Procurement Authority. I lead a 54-person multidisciplinary technology team, with seven direct reports, and an annual IT budget of around 150 million Egyptian pounds.
+I then progressed into technical leadership and development management. During more than four years in Oman, I led development teams and contributed to government and enterprise platforms, including national-scale education and public-sector systems. That experience taught me how to deliver across different stakeholders, cultures, vendors, legacy environments, and formal government processes.
 
-A major part of my recent work is MedIQ, a national healthcare procurement and medical-supply platform serving more than 38,000 users, 11,000 healthcare facilities, and 2,000 suppliers.
+After returning to Egypt, my scope expanded from software delivery into enterprise applications, architecture, infrastructure and security oversight, data and analytics, integration, vendors, budgets, service continuity, and digital-transformation governance.
 
-What I bring is a combination of technical depth, architecture, production accountability, and leadership.
+Today, I head Information Systems and Digital Transformation at Egypt’s Unified Procurement Authority. I lead a 54-person multidisciplinary technology organization with seven direct reports and responsibility for an annual IT budget of around 150 million Egyptian pounds.
 
-For SANTECHTURE, I’m interested in using that experience in a product-driven healthcare company where architecture directly affects customers, scale, and business results.
+My flagship programme is MedIQ, a national healthcare procurement and medical-supply ecosystem serving more than 38,000 users, 11,000 healthcare facilities, and 2,000 suppliers. Its scope goes far beyond procurement. It covers demand and approvals, e-tendering, supplier services, delivery and receipt, inventory, assets and maintenance, budgeting and planning, logistics, data and reporting, and operational support.
+
+I have also led or governed complex integrations with Microsoft Dynamics 365, SAP strategic medical warehouses, hospital systems, G S 1, and national healthcare stakeholders. My responsibility includes architecture decisions, data ownership, A P I contracts, security, testing, migration, reconciliation, production readiness, incident management, and business continuity.
+
+Across my career, I have contributed to more than 200 projects, platforms, and systems in healthcare, government, and enterprise environments. My role has evolved from writing the code myself to creating the conditions in which teams can make strong decisions and deliver reliable systems at scale.
+
+What I bring to SANTECHTURE is that full combination: engineering depth, enterprise and solution architecture, healthcare experience, customer and stakeholder engagement, production accountability, and executive leadership.
+
+I would not pretend to replace SANTECHTURE’s deep R C M specialists. My value is to turn that domain expertise into scalable product architecture, reusable integration patterns, stronger engineering decisions, measurable reliability, and faster regional growth across G C C markets.
 
 
 Question 2. Why leave an executive role for this one, and will you stay?
@@ -33,6 +41,8 @@ If I make the move, I would make it seriously and with the intention to stay.
 
 SANTECHTURE brings me closer to product strategy, architecture, customers, engineering, and G C C growth.
 
+It also gives me the opportunity to work in a product company where architecture decisions can improve onboarding speed, platform reliability, cost to serve, customer outcomes, and regional scale. That combination is more important to me than protecting a particular title.
+
 
 Question 3. You do not come from our exact domain. Why should we hire you?
 
@@ -44,6 +54,8 @@ I learn the domain by working closely with the people who know it best, then I h
 
 For R C M, I would rely on SANTECHTURE’s domain experts for the deepest rules, and make sure that expertise becomes scalable, testable, and observable in the platform.
 
+The role requires more than domain knowledge alone. It requires someone who can connect business outcomes with product boundaries, integrations, data quality, non-functional requirements, security, engineering practices, production operations, and customer delivery. I can contribute immediately in those areas while building deeper R C M knowledge quickly.
+
 
 Question 4. What would your first 90 days look like?
 
@@ -54,6 +66,8 @@ By day 60, I want a clear baseline of risks, ownership gaps, and the highest-val
 By day 90, I want at least one visible improvement delivered, and an agreed roadmap with measurable priorities.
 
 At SANTECHTURE, I would spend a lot of time with Product, Engineering, Sales, and Delivery, especially around onboarding, integrations, reliability, and cost to serve.
+
+The outcome would not be a large theoretical architecture document. It would be a shared baseline, a small number of agreed architecture principles, clear ownership, one or two visible improvements, and a prioritized roadmap tied to customer and business value.
 
 
 Question 5. How do you approach disaster recovery, R T O, and R P O?
@@ -274,17 +288,25 @@ M S F WaCA — INFORMATION SYSTEM MANAGER
 
 Question 1. Tell me about yourself.
 
-I’m a technology and digital transformation leader with more than 18 years of experience.
+I’m a technology and digital transformation leader with more than 18 years of experience across software engineering, enterprise applications, architecture, healthcare technology, infrastructure and security oversight, integration, delivery, and technology operations.
 
-I started as a software developer and moved through team leadership, enterprise applications and architecture into executive technology leadership.
+I began as a hands-on software developer, then progressed through technical leadership, development management, enterprise applications, and architecture into executive technology leadership. This progression gives me both technical depth and a practical understanding of how systems affect users and operations.
 
-Today, I lead Information Systems and Digital Transformation at Egypt’s Unified Procurement Authority. I lead a 54-person multidisciplinary technology team, with seven direct reports, and an annual IT budget of around 150 million Egyptian pounds.
+I spent more than four years in Oman, where I led development teams and worked on government and enterprise platforms, including national-scale public-sector systems. That experience strengthened my ability to work across cultures, distributed stakeholders, vendors, formal governance, and environments where reliability and user adoption matter as much as the technology itself.
 
-A major part of my recent work is MedIQ, a national healthcare procurement and medical-supply platform serving more than 38,000 users, 11,000 healthcare facilities, and 2,000 suppliers.
+Today, I head Information Systems and Digital Transformation at Egypt’s Unified Procurement Authority. I lead a 54-person multidisciplinary technology organization with seven direct reports and responsibility for an annual IT budget of around 150 million Egyptian pounds.
 
-What I bring is a combination of technical depth, architecture, production accountability, and leadership.
+My current scope includes enterprise applications, Microsoft Dynamics 365 and SAP integrations, data and analytics, infrastructure and security oversight, cloud and hybrid environments, disaster recovery, vendors, governance, service continuity, and support for thousands of distributed users.
 
-For M S F WaCA, I’m interested in using that experience in an international humanitarian environment where reliable systems directly support the mission.
+My flagship programme is MedIQ, a national healthcare procurement and medical-supply ecosystem serving more than 38,000 users, 11,000 healthcare facilities, and 2,000 suppliers. It supports procurement, tenders, supply and delivery, inventory, medical assets and maintenance, logistics, budgeting, reporting, analytics, integrations, and operational support.
+
+I have worked with the Ministry of Health, university hospitals, G S 1, the Egyptian Drug Authority, and other national stakeholders. Across my career, I have contributed to more than 200 projects, platforms, and systems in healthcare, government, and enterprise environments.
+
+My career has moved from building systems myself to leading teams and taking accountability for architecture, security, availability, recovery, vendors, lifecycle management, and production outcomes.
+
+What attracts me to M S F WaCA is the opportunity to apply that experience in an international humanitarian environment where reliable information systems directly support people, field operations, and mission continuity.
+
+I understand that humanitarian operations have different realities and constraints. I would not arrive assuming that my current environment is the same. I would listen to field and headquarters teams, learn the WaCA application landscape and support model, align with M S F standards and shared services, and focus on solutions that are secure, resilient, supportable, and appropriate for the field.
 
 
 Question 2. Why leave an executive role for this one, and will you stay?
@@ -299,6 +321,8 @@ WaCA gives me an international mission-driven environment and responsibility for
 
 I’m also comfortable reporting to the Head of Information Systems.
 
+I am choosing the mission, international exposure, and operational responsibility—not chasing a title. If I join, I would join seriously, respect the reporting structure, and commit to learning the field context and delivering sustainable improvement.
+
 
 Question 3. You do not come from our exact domain. Why should we hire you?
 
@@ -310,6 +334,8 @@ I learn the domain by working closely with the people who know it best, then I h
 
 For humanitarian operations, I would listen first, learn the field context quickly, and avoid bringing unnecessary complexity into the environment.
 
+Many of the underlying challenges are transferable: distributed users, constrained environments, critical services, security, continuity, vendors, integrations, limited support capacity, and the need for simple and dependable systems. I bring a disciplined approach to those challenges while remaining humble about what I still need to learn from M S F teams.
+
 
 Question 4. What would your first 90 days look like?
 
@@ -320,6 +346,8 @@ By day 60, I want a clear baseline of risks, ownership gaps, and the highest-val
 By day 90, I want at least one visible improvement delivered, and an agreed roadmap with measurable priorities.
 
 At WaCA, I would focus on the systems portfolio, field dependencies, support boundaries, disaster recovery, lifecycle risk, and alignment with the Head of Information Systems.
+
+By day 90, I would want a trusted systems inventory, clear ownership and escalation paths, a prioritized risk register, agreed service and recovery targets, practical quick wins, and a roadmap that the headquarters and field teams can realistically support.
 
 
 Question 5. How do you approach disaster recovery, R T O, and R P O?

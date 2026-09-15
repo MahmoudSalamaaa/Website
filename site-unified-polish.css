@@ -151,3 +151,11 @@ body figcaption,
 body summary{
   font-family:Sora,"Segoe UI",Arial,sans-serif!important;
 }
+
+
+/* Site-wide doodle cleanup — preserve functional icons and real imagery. */
+body .doodle,
+body [class*="doodle"],
+body [id*="doodle"]{
+  display:none!important;
+}

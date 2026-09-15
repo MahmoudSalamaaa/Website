@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');
+
+/* FINAL SITE SYSTEM — one joyful, disciplined visual language across every public page */
+:root{
+  --final-ink:#10263b;
+  --final-ink-soft:#27465a;
+  --final-muted:#647987;
+  --final-paper:#fbfaf4;
+  --final-white:#fff;
+  --final-cyan:#0fa9b5;
+  --final-cyan-soft:#e7f8f7;
+  --final-blue:#4e86d6;
+  --final-blue-soft:#edf3ff;
+  --final-amber:#e8b33e;
+  --final-amber-soft:#fff4d8;
+  --final-coral:#ed735f;
+  --final-coral-soft:#fff0eb;
+  --final-green:#55b98a;
+  --final-line:rgba(16,38,59,.12);
+  --final-shadow:0 18px 50px rgba(16,38,59,.09);
+  --final-shadow-lg:0 28px 80px rgba(16,38,59,.13);
+  --final-radius:24px;
+}
+html{scroll-behavior:smooth}
+body,button,input,textarea,select{font-family:Sora,Inter,"Segoe UI",Arial,sans-serif!important}
+body{background:var(--final-paper)!important;color:var(--final-ink)!important}
+h1,h2,h3,h4,p,li,a,span,small,strong,b,button,input,textarea,select{font-family:Sora,Inter,"Segoe UI",Arial,sans-serif}
+h1,h2,h3,h4{letter-spacing:-.045em!important;text-wrap:balance}
+p,li{line-height:1.72}
+a{transition:color .2s ease,background .2s ease,border-color .2s ease,transform .2s ease,box-shadow .2s ease}
+
+/* Remove decorative doodles and pseudo-illustrations globally */
+.doodle,.doodle-hero,[class*="doodle"],[class*="scribble"],[class*="sticker"]{display:none!important}
+.hero::after,.portfolio-hero::after,.experience-hero::after,.architecture-hero::after,.technologies-hero::after,.governance-hero::after,.contact-hero::after,.evidence-hero::after,.projects-hero::after{display:none!important;content:none!important}
+
+/* Navigation: stable, calm, and identical in shape */
+nav,.site-global-nav{background:rgba(251,250,244,.92)!important;border-bottom:1px solid var(--final-line)!important;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.navbar,.site-nav-inner{min-height:74px!important;width:min(1180px,calc(100% - 44px))!important}
+.mark,.site-brand{color:var(--final-ink)!important;font-family:Sora,Inter,sans-serif!important;letter-spacing:.045em!important}
+.mark img,.site-brand img{border-radius:12px}
+.links a,.site-desktop-links a,.desktop-more>summary,.site-more>summary{color:var(--final-muted)!important;border-radius:999px!important;font-weight:600!important}
+.links a:hover,.desktop-more>summary:hover,.site-desktop-links a:hover,.site-more>summary:hover{background:var(--final-white)!important;color:var(--final-ink)!important}
+.pill,.site-contact,.mobile-contact,.site-mobile-contact{background:var(--final-ink)!important;color:#fff!important;border-radius:999px!important;box-shadow:0 10px 24px rgba(16,38,59,.14)!important}
+.pill:hover,.site-contact:hover{transform:translateY(-2px);box-shadow:0 16px 30px rgba(16,38,59,.18)!important}
+
+/* Shared hero: generous whitespace and a warm/cyan wash */
+.hero,.portfolio-hero,.projects-type-hero,.evidence-hero,.contact-hero,.technologies-hero,.experience-hero,.architecture-hero,.governance-hero{
+  background:
+    radial-gradient(circle at 88% 14%,rgba(232,179,62,.17),transparent 24%),
+    radial-gradient(circle at 8% 88%,rgba(15,169,181,.11),transparent 28%),
+    linear-gradient(180deg,#fffefa 0%,#f4fbfa 100%)!important;
+}
+.hero>.wrap,.portfolio-hero>.wrap,.projects-type-hero>.wrap,.evidence-hero>.wrap,.contact-hero>.wrap,.technologies-hero>.wrap,.experience-hero>.wrap,.architecture-hero>.wrap,.governance-hero>.wrap{position:relative;z-index:1}
+.kicker,.eyebrow,.ey,.registry-id,.registry-type,.arch-case-index,.category-no,.case-id{
+  color:var(--final-cyan)!important;letter-spacing:.12em!important;font-weight:800!important
+}
+.kicker::after{content:""!important;display:inline-block!important;width:28px!important;height:3px!important;margin-left:10px!important;border-radius:99px!important;background:linear-gradient(90deg,var(--final-cyan),var(--final-amber))!important}
+.display,.portfolio-title,.executive-hero h1{font-weight:700!important;color:var(--final-ink)!important}
+.hero .lead,.projects-type-hero .lead,.evidence-hero .lead,.technologies-hero .lead,.experience-hero .lead{color:var(--final-muted)!important}
+
+/* Buttons and actions */
+.btn,.hero-actions a,.portfolio-hero-action a,.experience-actions a{
+  min-height:48px!important;padding:0 20px!important;border-radius:999px!important;
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  background:var(--final-ink)!important;color:#fff!important;border:1px solid var(--final-ink)!important;
+  box-shadow:0 12px 24px rgba(16,38,59,.12)!important;font-weight:700!important
+}
+.btn:hover,.hero-actions a:hover{transform:translateY(-2px);box-shadow:0 18px 32px rgba(16,38,59,.18)!important}
+.btn.alt,.hero-actions .alt{background:var(--final-white)!important;color:var(--final-ink)!important;border-color:var(--final-line)!important}
+.context-link,.section-action a{color:var(--final-cyan)!important;font-weight:700!important}
+.context-link:hover,.section-action a:hover{color:var(--final-ink)!important}
+
+/* Section architecture */
+.wrap{width:min(1180px,calc(100% - 44px))!important}
+.band,.arch-section,.gov-section,.registry-shell,.evidence-band,.technology-categories,.v5-toolkit-section,.home-mandate,.home-cases,.home-recognition,.home-operating,.contact-hub,.contact-close,.flagships,.signature,.recognition-strip,.exec-snapshot{
+  border-color:var(--final-line)!important
+}
+.section-title,.section-head h2,.signature-head h2,.wb-title{color:var(--final-ink)!important}
+.section-title::after,.section-head h2::after,.signature-head h2::after{background:linear-gradient(90deg,var(--final-cyan),var(--final-blue),var(--final-amber))!important;width:60px!important}
+
+/* Cards: consistent surfaces, stronger hierarchy, colorful restrained edges */
+.case,.project-card,.featured-card,.gov,.gov-card,.technology-card,.tech-category,.architecture-card,.decision-card,.domain-card,.evidence-card,.recognition-year,.registry-card,.award,.metric,.stat,.portfolio-note,.truth-note,.board-card,.arch-case,.gov-rule,.gov-win,.operating-steps article,.mediq-node,.mandate-chips span{
+  border:1px solid var(--final-line)!important;
+  background:rgba(255,255,255,.82)!important;
+  box-shadow:0 8px 24px rgba(16,38,59,.045)!important;
+  border-radius:var(--final-radius)!important;
+}
+.case,.project-card,.featured-card,.gov,.gov-card,.technology-card,.tech-category,.architecture-card,.decision-card,.domain-card,.evidence-card,.recognition-year,.registry-card,.arch-case,.gov-rule,.gov-win,.operating-steps article{
+  overflow:hidden
+}
+.case::before,.project-card::before,.featured-card::before,.gov::before,.gov-card::before,.technology-card::before,.tech-category::before,.architecture-card::before,.decision-card::before,.domain-card::before,.evidence-card::before,.recognition-year::before,.registry-card::before{height:4px!important;left:0!important;top:0!important;width:100%!important;opacity:1!important;background:linear-gradient(90deg,var(--final-cyan),var(--final-blue))!important}
+.case:nth-child(4n+2)::before,.project-card:nth-child(4n+2)::before,.gov-card:nth-child(4n+2)::before,.technology-card:nth-child(4n+2)::before,.tech-category:nth-child(4n+2)::before,.architecture-card:nth-child(4n+2)::before,.evidence-card:nth-child(4n+2)::before,.registry-card:nth-child(4n+2)::before{background:linear-gradient(90deg,var(--final-blue),#8e6ed8)!important}
+.case:nth-child(4n+3)::before,.project-card:nth-child(4n+3)::before,.gov-card:nth-child(4n+3)::before,.technology-card:nth-child(4n+3)::before,.tech-category:nth-child(4n+3)::before,.architecture-card:nth-child(4n+3)::before,.evidence-card:nth-child(4n+3)::before,.registry-card:nth-child(4n+3)::before{background:linear-gradient(90deg,var(--final-amber),var(--final-coral))!important}
+.case:nth-child(4n)::before,.project-card:nth-child(4n)::before,.gov-card:nth-child(4n)::before,.technology-card:nth-child(4n)::before,.tech-category:nth-child(4n)::before,.architecture-card:nth-child(4n)::before,.evidence-card:nth-child(4n)::before,.registry-card:nth-child(4n)::before{background:linear-gradient(90deg,var(--final-green),var(--final-cyan))!important}
+@media(hover:hover){.case:hover,.project-card:hover,.featured-card:hover,.gov:hover,.gov-card:hover,.technology-card:hover,.tech-category:hover,.architecture-card:hover,.decision-card:hover,.domain-card:hover,.evidence-card:hover,.recognition-year:hover,.registry-card:hover{transform:translateY(-4px)!important;box-shadow:var(--final-shadow)!important;border-color:rgba(15,169,181,.28)!important}}
+
+/* Homepage sections */
+.executive-hero{background:linear-gradient(135deg,#fffefa 0%,#f1fbfa 100%)!important}
+.photo-card{border-radius:30px!important;box-shadow:var(--final-shadow-lg)!important}
+.photo-frame{border-radius:24px!important;overflow:hidden}
+.mediq-flagship{background:linear-gradient(135deg,#0f3349 0%,#145a65 58%,#168f94 100%)!important;color:#fff!important}
+.mediq-flagship h2,.mediq-flagship p,.mediq-flagship h3,.mediq-flagship .kicker{color:#fff!important}
+.mediq-grid{gap:clamp(28px,5vw,72px)!important}
+.mediq-map{background:rgba(255,255,255,.1)!important;border:1px solid rgba(255,255,255,.22)!important;border-radius:28px!important}
+.mediq-node{background:rgba(255,255,255,.12)!important;border-color:rgba(255,255,255,.2)!important;color:#fff!important}
+.mediq-node span{color:rgba(255,255,255,.76)!important}
+.exec-snapshot{background:var(--final-white)!important}
+.exec-snapshot-grid>div{background:linear-gradient(180deg,#fff,#f8fbfb)!important}
+.home-mandate{background:linear-gradient(135deg,#fff4d8 0%,#fffaf0 52%,#e9f8f7 100%)!important}
+.home-cases{background:#f7fbfa!important}
+.recognition-strip{background:linear-gradient(90deg,#eef6ff,#fff8e7)!important}
+.signature{background:#fffefa!important}
+.cta{background:linear-gradient(135deg,#10263b 0%,#164a5a 60%,#0f9cab 100%)!important;color:#fff!important}
+.cta h2,.cta .kicker{color:#fff!important}
+.cta h2 em{color:#bdf3eb!important}
+
+/* Footer: one compact, catchy, reliable block */
+footer{background:var(--final-ink)!important;color:#fff!important;border-top:0!important}
+.final-footer{padding:64px 0 28px!important}
+.footer-title{font-size:clamp(2rem,4vw,4rem)!important;letter-spacing:-.06em!important;color:#fff!important}
+.footer-title em{color:#aef0e8!important}
+.footer-intro,.footer-row{color:rgba(255,255,255,.68)!important}
+.footer-nav{display:flex!important;flex-wrap:wrap!important;gap:10px!important;margin:26px 0!important}
+.footer-nav a{display:inline-flex!important;align-items:center!important;min-height:40px!important;padding:0 14px!important;border:1px solid rgba(255,255,255,.18)!important;border-radius:999px!important;color:#fff!important;background:rgba(255,255,255,.07)!important;text-decoration:none!important;font-size:12px!important;font-weight:700!important}
+.footer-nav a:hover{background:#fff!important;color:var(--final-ink)!important;transform:translateY(-2px)}
+.footer-row{display:flex!important;justify-content:space-between!important;gap:16px!important;flex-wrap:wrap!important;padding-top:22px!important;border-top:1px solid rgba(255,255,255,.14)!important}
+
+/* Prevent overflow from long labels and data cards */
+img{max-width:100%;height:auto}
+table{max-width:100%;display:block;overflow-x:auto}
+.registry-card h3,.case h3,.project-card h3,.featured-card h3,.gov-card h3,.technology-card h3{overflow-wrap:anywhere}
+@media(max-width:900px){
+  .wrap,.navbar,.site-nav-inner{width:min(100% - 28px,1180px)!important}
+  .hero,.portfolio-hero,.projects-type-hero,.evidence-hero,.contact-hero,.technologies-hero,.experience-hero,.architecture-hero,.governance-hero{padding-block:62px!important}
+  .display,.portfolio-title,.executive-hero h1{font-size:clamp(2.7rem,10vw,5rem)!important;line-height:.98!important}
+  .case-grid,.featured-grid,.category-grid,.evidence-grid,.registry-grid,.operating-steps,.mediq-ecosystem{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:640px){
+  .wrap,.navbar,.site-nav-inner{width:calc(100% - 28px)!important}
+  .hero,.portfolio-hero,.projects-type-hero,.evidence-hero,.contact-hero,.technologies-hero,.experience-hero,.architecture-hero,.governance-hero{padding-block:46px!important}
+  .hero-actions,.experience-actions,.hero-actions{flex-direction:column!important;align-items:stretch!important}
+  .hero-actions a,.experience-actions a,.btn{width:100%!important}
+  .case-grid,.featured-grid,.category-grid,.evidence-grid,.registry-grid,.operating-steps,.mediq-ecosystem{grid-template-columns:1fr!important}
+  .final-footer{padding:48px 0 24px!important}
+  .footer-title{font-size:2.3rem!important}
+  .footer-nav a{flex:1 1 auto;justify-content:center}
+  .footer-row{font-size:11px!important}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}

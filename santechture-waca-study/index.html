@@ -217,7 +217,7 @@
     $('#shuffle').onclick=()=>{state.filtered.sort(()=>Math.random()-.5);state.index=0;render()};
     $('#reset').onclick=()=>{if(confirm('Clear all confidence and review marks?')){state.progress={};save();applyFilters()}};
     document.addEventListener('keydown',e=>{if(document.activeElement.matches('input,select'))return;if(e.code==='Space'){e.preventDefault();reveal()}if(e.key==='ArrowRight')$('#next').click();if(e.key==='ArrowLeft')$('#prev').click();if(e.key.toLowerCase()==='h')rate('hard');if(e.key.toLowerCase()==='k')rate('known')});
-    fetch('./study-source.txt').then(r=>{if(!r.ok)throw Error();return r.text()}).then(t=>{state.items=parseText(t);state.filtered=[...state.items];render()}).catch(()=>{$('#question').textContent='The study content could not be loaded.';$('#reveal').style.display='none'});
+    fetch('./study-source.txt?v=20260915-2').then(r=>{if(!r.ok)throw Error();return r.text()}).then(t=>{state.items=parseText(t);state.filtered=[...state.items];render()}).catch(()=>{$('#question').textContent='The study content could not be loaded.';$('#reveal').style.display='none'});
   </script>
 </body>
 </html>

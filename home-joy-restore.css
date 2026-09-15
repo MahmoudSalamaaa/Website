@@ -454,3 +454,26 @@ body main .cta-grid{
   .cta{padding:50px 0 56px!important}
   .cta .btn{box-shadow:4px 4px 0 rgba(242,189,63,.55)!important}
 }
+
+
+/* CTA final cascade fix — override the earlier body-scoped dark treatment. */
+body .cta{
+  padding:clamp(58px,7vw,88px) 0!important;
+  background:
+    radial-gradient(circle at 88% 20%,rgba(242,201,95,.24),transparent 22%),
+    radial-gradient(circle at 8% 82%,rgba(20,184,201,.16),transparent 26%),
+    linear-gradient(135deg,#f2fbfa 0%,#fffaf0 100%)!important;
+  border-top:1px solid rgba(20,184,201,.18)!important;
+  border-bottom:1px solid rgba(242,189,63,.22)!important;
+}
+body .cta .kicker{color:#0b8c99!important}
+body .cta h2{color:#10263b!important}
+body .cta h2 em{color:#0b8c99!important}
+body .cta .btn{
+  background:#102b40!important;
+  border-color:#102b40!important;
+  color:#fff!important;
+  box-shadow:6px 6px 0 rgba(242,189,63,.58)!important;
+}
+body .cta .btn:hover{background:#0f9cab!important;border-color:#0f9cab!important;color:#fff!important}
+@media(max-width:600px){body .cta{padding:50px 0 56px!important}body .cta .btn{box-shadow:4px 4px 0 rgba(242,189,63,.55)!important}}

@@ -381,3 +381,44 @@ body.home-page main .mediq-flagship .mediq-grid{
     grid-template-columns:1fr!important;
   }
 }
+
+
+/* Final structural guard — preserve the intended homepage section grids. */
+body.home-page main .exec-snapshot-grid,
+body.home-page main .operating-steps,
+body.home-page main .cta-grid{
+  display:grid!important;
+}
+body.home-page main .exec-snapshot-grid{
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+}
+body.home-page main .operating-steps{
+  grid-template-columns:repeat(4,minmax(0,1fr))!important;
+}
+body.home-page main .cta-grid{
+  grid-template-columns:minmax(0,1fr) auto!important;
+}
+@media(max-width:960px){
+  body.home-page main .exec-snapshot-grid,
+  body.home-page main .operating-steps,
+  body.home-page main .cta-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+  body.home-page main .cta-grid{
+    grid-template-columns:1fr!important;
+  }
+}
+@media(max-width:600px){
+  body.home-page main .exec-snapshot-grid,
+  body.home-page main .operating-steps{
+    grid-template-columns:1fr 1fr!important;
+  }
+}
+@media(max-width:420px){
+  body.home-page main .exec-snapshot-grid{
+    grid-template-columns:1fr 1fr!important;
+  }
+  body.home-page main .operating-steps{
+    grid-template-columns:1fr!important;
+  }
+}

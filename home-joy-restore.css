@@ -655,3 +655,42 @@ body footer .v5-card-footer-link:hover{
   body footer .footer-nav{margin-top:32px!important}
   body footer .v5-card-footer-link{width:100%!important;justify-content:center!important}
 }
+
+
+/* MedIQ equal-height desktop cards; keep stacked natural height on mobile. */
+@media(min-width:961px){
+  body .mediq-flagship .mediq-grid{
+    align-items:stretch!important;
+  }
+  body .mediq-flagship .mediq-story,
+  body .mediq-flagship .mediq-map{
+    height:100%!important;
+    box-sizing:border-box!important;
+  }
+}
+@media(max-width:960px){
+  body .mediq-flagship .mediq-story,
+  body .mediq-flagship .mediq-map{
+    height:auto!important;
+  }
+}
+
+/* Remove decorative doodle marks from the homepage. */
+body .executive-hero::after,
+body .exec-snapshot::before,
+body .home-mandate::after,
+body .home-cases::after,
+body .home-cases .section-head::after,
+body .recognition-strip-copy::after,
+body .signature.operating-summary::before,
+body .signature.operating-summary::after,
+body footer::before,
+body footer .footer-title::after,
+body .photo-card::before,
+body .photo-card::after{
+  display:none!important;
+  content:none!important;
+  background:none!important;
+  box-shadow:none!important;
+  border:0!important;
+}

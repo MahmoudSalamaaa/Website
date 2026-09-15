@@ -477,3 +477,111 @@ body .cta .btn{
 }
 body .cta .btn:hover{background:#0f9cab!important;border-color:#0f9cab!important;color:#fff!important}
 @media(max-width:600px){body .cta{padding:50px 0 56px!important}body .cta .btn{box-shadow:4px 4px 0 rgba(242,189,63,.55)!important}}
+
+
+/* Footer repair — clear closing panel on desktop and mobile. */
+body footer{
+  position:relative!important;
+  overflow:hidden!important;
+  padding:0!important;
+  background:
+    radial-gradient(circle at 92% 12%,rgba(20,184,201,.20),transparent 24%),
+    radial-gradient(circle at 5% 88%,rgba(242,201,95,.12),transparent 24%),
+    linear-gradient(135deg,#0c2234 0%,#123d50 58%,#102b40 100%)!important;
+  color:#fff!important;
+}
+body footer::before{
+  content:""!important;
+  position:absolute!important;
+  right:7vw!important;
+  top:26px!important;
+  width:170px!important;
+  height:170px!important;
+  border:1px solid rgba(140,233,243,.24)!important;
+  border-radius:50%!important;
+  box-shadow:0 0 0 18px rgba(140,233,243,.05),0 0 0 38px rgba(242,201,95,.04)!important;
+  pointer-events:none!important;
+}
+body footer .final-footer{
+  position:relative!important;
+  z-index:1!important;
+  width:min(1180px,calc(100% - 40px))!important;
+  margin-inline:auto!important;
+  padding:72px 0 28px!important;
+}
+body footer .footer-title{
+  max-width:12ch!important;
+  margin:0!important;
+  color:#fff!important;
+  font-size:clamp(2.4rem,5.3vw,5.8rem)!important;
+  line-height:.93!important;
+  letter-spacing:-.065em!important;
+}
+body footer .footer-title em{color:#f2c95f!important}
+body footer .footer-intro{
+  max-width:52ch!important;
+  margin:20px 0 0!important;
+  color:rgba(224,243,246,.78)!important;
+  font-size:.88rem!important;
+  line-height:1.6!important;
+}
+body footer .footer-nav{
+  display:flex!important;
+  flex-wrap:wrap!important;
+  gap:8px!important;
+  margin:36px 0 0!important;
+  padding:18px 0!important;
+  border-top:1px solid rgba(224,243,246,.20)!important;
+  border-bottom:1px solid rgba(224,243,246,.12)!important;
+}
+body footer .footer-nav a{
+  display:inline-flex!important;
+  align-items:center!important;
+  min-height:34px!important;
+  padding:8px 12px!important;
+  border:1px solid rgba(224,243,246,.18)!important;
+  border-radius:999px!important;
+  background:rgba(255,255,255,.06)!important;
+  color:#eefbfc!important;
+  font-size:.66rem!important;
+  font-weight:800!important;
+  letter-spacing:.04em!important;
+  text-decoration:none!important;
+  transition:background .18s ease,border-color .18s ease,transform .18s ease!important;
+}
+body footer .footer-nav a:hover{
+  border-color:#8ce9f3!important;
+  background:#0f8f9d!important;
+  transform:translateY(-2px)!important;
+}
+body footer .footer-row{
+  display:flex!important;
+  justify-content:space-between!important;
+  gap:20px!important;
+  margin-top:20px!important;
+  padding-top:0!important;
+  color:rgba(224,243,246,.70)!important;
+  font-size:.68rem!important;
+  line-height:1.5!important;
+}
+body footer .v5-card-footer-wrap{
+  margin-top:22px!important;
+  padding-top:18px!important;
+  border-top:1px solid rgba(224,243,246,.12)!important;
+}
+body footer .v5-card-footer-link{
+  color:#f2c95f!important;
+  font-size:.72rem!important;
+  font-weight:850!important;
+  text-decoration:none!important;
+}
+body footer .v5-card-footer-link:hover{color:#fff!important}
+@media(max-width:600px){
+  body footer .final-footer{width:calc(100% - 32px)!important;padding:52px 0 22px!important}
+  body footer::before{right:-64px!important;top:20px!important;width:130px!important;height:130px!important;opacity:.72!important}
+  body footer .footer-title{max-width:11ch!important;font-size:clamp(2.35rem,11vw,3.5rem)!important}
+  body footer .footer-intro{margin-top:16px!important;font-size:.82rem!important}
+  body footer .footer-nav{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px!important;margin-top:28px!important;padding:15px 0!important}
+  body footer .footer-nav a{justify-content:center!important;min-height:38px!important;padding:8px 7px!important;font-size:.59rem!important}
+  body footer .footer-row{flex-direction:column!important;gap:5px!important;margin-top:17px!important;font-size:.64rem!important}
+}

@@ -27,3 +27,13 @@
 @media(max-width:900px){.site-global-nav .site-desktop-links,.site-global-nav .site-contact{display:none}.site-global-nav .site-mobile-menu{display:block}.site-global-nav .site-nav-inner{min-height:64px;width:min(100% - 28px,1180px)}.site-global-nav .site-brand img{width:36px;height:36px}}
 @media(max-width:520px){.site-global-nav .site-brand{font-size:10.5px;letter-spacing:.05em}.site-global-nav .site-brand img{width:34px;height:34px}.site-global-nav .site-mobile-menu>summary{min-width:68px}}
 @media(prefers-reduced-motion:reduce){.site-global-nav *{transition:none!important}}
+
+/* Responsive hardening: keep viewport chrome and long navigation labels inside the page. */
+@media(max-width:900px){
+  html,body{max-width:100%;overflow-x:clip}
+  .site-global-nav{overflow-x:clip}
+  .site-global-nav .site-nav-inner{min-width:0}
+  .site-global-nav .site-brand{min-width:0;overflow:hidden;text-overflow:ellipsis}
+  .site-global-nav .site-mobile-menu{min-width:0}
+  .site-global-nav .site-mobile-panel{max-width:calc(100vw - 28px)}
+}

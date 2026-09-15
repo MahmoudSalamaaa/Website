@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');
+
 /* Unified public-site polish — shared visual language across pages */
 :root{
   --u-ink:#10263b;--u-ink-2:#173a4d;--u-muted:#5f7380;--u-line:rgba(16,38,59,.11);
@@ -131,3 +133,21 @@ footer{background:linear-gradient(135deg,#0e2235 0%,#153b50 60%,#10263b 100%)!im
   .final-footer{padding-inline:18px!important}
 }
 @media(prefers-reduced-motion:reduce){.registry-card,.featured-card,.evidence-card,.tech-category,.contact-channel{transition:none!important;transform:none!important}}
+
+
+/* Site-wide body typography — Sora for readable interface text. */
+body,
+body p,
+body li,
+body a,
+body span,
+body button,
+body input,
+body textarea,
+body select,
+body label,
+body small,
+body figcaption,
+body summary{
+  font-family:Sora,"Segoe UI",Arial,sans-serif!important;
+}

@@ -1,0 +1,448 @@
+MAHMOUD SALAMA
+FINAL INTERVIEW LISTENING SCRIPT
+SANTECHTURE + MSF WaCA
+17 September 2026
+
+
+TRACK ONE
+SANTECHTURE — DIRECTOR OF SOLUTIONS ARCHITECTURE
+
+
+Question 1. Tell me about yourself.
+
+I’m a technology and digital transformation leader with more than 18 years of experience.
+
+I started as a software developer and moved through team leadership, enterprise applications, architecture, and then executive technology leadership.
+
+Today, I lead Information Systems and Digital Transformation at Egypt’s Unified Procurement Authority. I lead a 54-person multidisciplinary technology team, with seven direct reports, and an annual IT budget of around 150 million Egyptian pounds.
+
+A major part of my recent work is MedIQ, a national healthcare procurement and medical-supply platform serving more than 38,000 users, 11,000 healthcare facilities, and 2,000 suppliers.
+
+What I bring is a combination of technical depth, architecture, production accountability, and leadership.
+
+For SANTECHTURE, I’m interested in using that experience in a product-driven healthcare company where architecture directly affects customers, scale, and business results.
+
+
+Question 2. Why leave an executive role for this one, and will you stay?
+
+I’m not making the decision based on title.
+
+I already have a senior title and a broad scope. What I’m looking for is a different kind of challenge and a role where I can create strong impact.
+
+If I make the move, I would make it seriously and with the intention to stay.
+
+SANTECHTURE brings me closer to product strategy, architecture, customers, engineering, and G C C growth.
+
+
+Question 3. You do not come from our exact domain. Why should we hire you?
+
+That’s fair. I would not claim experience I don’t have.
+
+What I do bring is strong healthcare technology experience, complex integrations, production operations, security, vendors, data, architecture, and leadership.
+
+I learn the domain by working closely with the people who know it best, then I help turn that knowledge into reliable systems and repeatable practices.
+
+For R C M, I would rely on SANTECHTURE’s domain experts for the deepest rules, and make sure that expertise becomes scalable, testable, and observable in the platform.
+
+
+Question 4. What would your first 90 days look like?
+
+In the first 30 days, I would learn: the people, systems, customers, current architecture, recent incidents, and major constraints.
+
+By day 60, I want a clear baseline of risks, ownership gaps, and the highest-value improvements.
+
+By day 90, I want at least one visible improvement delivered, and an agreed roadmap with measurable priorities.
+
+At SANTECHTURE, I would spend a lot of time with Product, Engineering, Sales, and Delivery, especially around onboarding, integrations, reliability, and cost to serve.
+
+
+Question 5. How do you approach disaster recovery, R T O, and R P O?
+
+I start with business impact.
+
+How long can this service be unavailable, and how much data can we afford to lose?
+
+That gives us the R T O and R P O.
+
+Then I design the recovery controls around those targets: redundancy where needed, backups, restore testing, dependency mapping, monitoring, and runbooks.
+
+The important point is that a successful backup job does not prove we can recover the service.
+
+For SANTECHTURE, the targets should reflect claims continuity, payer dependencies, customer S L A commitments, and revenue impact.
+
+
+Question 6. How do you approach identity and privileged access?
+
+My baseline is simple: multi-factor authentication, least privilege, role-based access, separate admin accounts, regular access reviews, and auditable privileged activity.
+
+I want security controls to be enforceable technically, not only written in policy.
+
+For SANTECHTURE, I would also make data residency, retention, and administrative access part of the product architecture.
+
+
+Question 7. How do you design integrations?
+
+I start with ownership, data contracts, and failure behavior.
+
+Then I define authentication, validation, versioning, mappings, error handling, monitoring, and reconciliation.
+
+My rule is that the next integration should be easier and safer than the previous one.
+
+In my current environment, I’ve applied this across Dynamics 365, healthcare systems, G S 1, and other national integrations.
+
+At SANTECHTURE, I would turn that into reusable adapters and stable internal models, so hospital, payer, and regulatory variation stays outside the product core.
+
+
+Question 8. A critical system or external dependency is down. What do you do?
+
+First, I confirm impact and severity, assign one incident owner, and communicate clearly.
+
+Then I restore the safest critical service or workaround first.
+
+For external dependencies, I design for failure with timeouts, controlled retries, queues where appropriate, and clear transaction state.
+
+After recovery, I run root-cause analysis and track the corrective actions.
+
+For NPHIES or payer platforms, I also need to know which claims are pending, failed locally, or waiting on the external service, so we can replay safely.
+
+
+Question 9. Why SANTECHTURE?
+
+What attracts me is the combination of healthcare, product engineering, and regional scale.
+
+SANTECHTURE is using deep R C M expertise, rules, and artificial intelligence to improve claim quality and reimbursement outcomes across G C C markets.
+
+That creates a very interesting architecture challenge: how do you scale domain intelligence, integrations, and automation without losing reliability or auditability?
+
+That is exactly where my background in healthcare platforms, integration, and production architecture is relevant.
+
+
+Question 10. What do you understand about SANTECHTURE’s business?
+
+I see SANTECHTURE as a healthcare revenue-cycle technology company.
+
+The business value is reducing administrative effort, improving claim quality, lowering rejection, and making reimbursement faster and more predictable.
+
+Technically, the challenge is combining rules, workflow, data, and artificial intelligence with hospital, payer, and regulatory integrations across different G C C markets.
+
+
+Question 11. Why should I hire you?
+
+Because I bring a combination that is difficult to find in one profile: engineering roots, enterprise and solution architecture, healthcare technology, complex integration, production accountability, and executive leadership.
+
+I can discuss value and risk with executives, work with customers on discovery and feasibility, and still go deep with engineering on boundaries, data, security, and reliability.
+
+I would not replace your R C M experts. I would help scale their expertise through architecture and engineering.
+
+
+Question 12. How would you scale the platform across hospitals and G C C markets?
+
+I would keep one strong product core and control variation at the edge.
+
+Market, payer, and hospital differences should be handled through configuration, rules, adapters, and defined extension points, rather than customer-specific forks.
+
+I would also standardize onboarding, testing, and observability.
+
+My target would be simple: hospital number one hundred should be easier to onboard than hospital number ten.
+
+
+Question 13. How do you approach enterprise pre-sales?
+
+My background is technical solutioning rather than carrying a sales quota.
+
+I start with discovery: what outcome the customer wants, their current workflow, systems, integrations, data, volumes, security, and regulatory constraints.
+
+Then I separate what is configuration, what is integration, what is a true product gap, and what is customer-specific.
+
+I would rather surface a constraint early than win a deal with a promise Engineering cannot support.
+
+
+Question 14. A strategic customer asks for a customization that damages the product. What do you do?
+
+I separate the business need from the implementation they asked for.
+
+First, I look for configuration, an existing capability, or a reusable extension.
+
+If it is genuinely unique, I evaluate the revenue, strategic value, support cost, security, and long-term product debt.
+
+I want to solve the customer’s problem, but I would not damage the core product for one short-term commitment.
+
+
+Question 15. How would you structure Solutions Architecture?
+
+I would make Solutions Architecture accountable for end-to-end technical outcomes, not just diagrams.
+
+It should sit close to Product, Engineering, Sales, and Delivery, and own major solution patterns, integrations, non-functional requirements, architecture decisions, and technical pre-sales where appropriate.
+
+Decision rights need to be clear.
+
+I would measure success through things like onboarding speed, reuse, reliability, and cost to serve.
+
+
+Question 16. How would you build the technical roadmap?
+
+I would start from business strategy: target markets, customer needs, product priorities, and the constraints limiting growth today.
+
+Then I would define the target capabilities we need across software as a service, rules, integrations, data, artificial intelligence, security, and platform engineering.
+
+After that, I would sequence the roadmap by value, risk, and dependency.
+
+Every major architecture item should have a measurable business or engineering outcome.
+
+
+Question 17. How would you modernize a legacy platform?
+
+I would modernize where the current architecture creates measurable pain: slow releases, tight coupling, scaling problems, reliability issues, or too much customer-specific change.
+
+I prefer incremental modernization, often using a Strangler approach, while protecting production continuity.
+
+I would use microservices only where independent scale, ownership, or deployment justifies the added distributed-system complexity.
+
+
+Question 18. Product wants it now, Engineering says three months, and Sales promised six weeks. What do you do?
+
+I bring everyone back to the same business outcome.
+
+What must actually be delivered in six weeks?
+
+Why does Engineering need three months?
+
+What is unsafe or non-negotiable?
+
+Then I create options: smaller scope, phased delivery, reuse, or a revised commitment.
+
+The final date must be one the company can own together, not one department’s promise.
+
+
+Question 19. How would you manage millions of rules and regulatory change?
+
+I would treat rules as governed product assets, not scattered code.
+
+Every rule needs an owner, version, effective date, payer or market scope, test coverage, audit history, and rollback.
+
+High-impact changes should go through automated regression and, when useful, simulation against historical transactions.
+
+We should always be able to answer which rule produced a decision and why.
+
+
+Question 20. Where should artificial intelligence be used, and where should it not?
+
+I would use artificial intelligence where prediction and pattern recognition create value: denial risk, anomalies, documentation assistance, coding suggestions, and prioritization.
+
+I would keep deterministic controls where correctness and auditability must be guaranteed.
+
+My preference is progressive automation: more automation where confidence is high and risk is low, and stronger human review where the decision has high impact.
+
+
+Question 21. How would you approach R C M observability?
+
+I want to trace the claim end to end.
+
+A claim should have a correlation identifier across services and external systems.
+
+Then I want technical telemetry plus business signals: latency, queue age, rejection reason, retries, and failure stage.
+
+During an incident, we should be able to answer very quickly: which customer, which claims, where did it fail, and what can we safely replay?
+
+
+Question 22. How would you approach H L seven and FHIR interoperability?
+
+I would treat interoperability as a product capability, not a collection of customer-specific interfaces.
+
+I want versioned contracts, adapters, validation, terminology mapping, and a stable internal model.
+
+For FHIR, supported resources and profiles should be explicit.
+
+My strongest experience is broader healthcare and enterprise integration, so for deep FHIR specialization, I would work closely with the right domain experts rather than overclaim.
+
+
+Question 23. How do you handle G C C data residency and compliance?
+
+I treat compliance as an architecture input from day one.
+
+I would map what data we hold, where it can be stored and processed, retention requirements, and cross-border restrictions for each market.
+
+Then I translate that into encryption, access control, audit, data minimization, and monitored administration.
+
+Legal and Security interpret the regulation. Architecture makes it enforceable and testable.
+
+
+
+TRACK TWO
+M S F WaCA — INFORMATION SYSTEM MANAGER
+
+
+Question 1. Tell me about yourself.
+
+I’m a technology and digital transformation leader with more than 18 years of experience.
+
+I started as a software developer and moved through team leadership, enterprise applications and architecture into executive technology leadership.
+
+Today, I lead Information Systems and Digital Transformation at Egypt’s Unified Procurement Authority. I lead a 54-person multidisciplinary technology team, with seven direct reports, and an annual IT budget of around 150 million Egyptian pounds.
+
+A major part of my recent work is MedIQ, a national healthcare procurement and medical-supply platform serving more than 38,000 users, 11,000 healthcare facilities, and 2,000 suppliers.
+
+What I bring is a combination of technical depth, architecture, production accountability, and leadership.
+
+For M S F WaCA, I’m interested in using that experience in an international humanitarian environment where reliable systems directly support the mission.
+
+
+Question 2. Why leave an executive role for this one, and will you stay?
+
+I’m not making the decision based on title.
+
+I already have a senior title and a broad scope. What I’m looking for is a different kind of challenge and a role where I can create strong impact.
+
+If I make the move, I would make it seriously and with the intention to stay.
+
+WaCA gives me an international mission-driven environment and responsibility for critical systems.
+
+I’m also comfortable reporting to the Head of Information Systems.
+
+
+Question 3. You do not come from our exact domain. Why should we hire you?
+
+That’s fair. I would not claim experience I don’t have.
+
+What I do bring is strong healthcare technology experience, complex integrations, production operations, security, vendors, data, architecture, and leadership.
+
+I learn the domain by working closely with the people who know it best, then I help turn that knowledge into reliable systems and repeatable practices.
+
+For humanitarian operations, I would listen first, learn the field context quickly, and avoid bringing unnecessary complexity into the environment.
+
+
+Question 4. What would your first 90 days look like?
+
+In the first 30 days, I would learn: the people, systems, business owners, recent incidents, current architecture, and major constraints.
+
+By day 60, I want a clear baseline of risks, ownership gaps, and the highest-value improvements.
+
+By day 90, I want at least one visible improvement delivered, and an agreed roadmap with measurable priorities.
+
+At WaCA, I would focus on the systems portfolio, field dependencies, support boundaries, disaster recovery, lifecycle risk, and alignment with the Head of Information Systems.
+
+
+Question 5. How do you approach disaster recovery, R T O, and R P O?
+
+I start with business impact.
+
+How long can this service be unavailable, and how much data can we afford to lose?
+
+That gives us the R T O and R P O.
+
+Then I design the recovery controls around those targets: redundancy where needed, backups, restore testing, dependency mapping, monitoring, and runbooks.
+
+The important point is that a successful backup job does not prove we can recover the service.
+
+For WaCA, the targets should reflect mission continuity, field dependencies, and what can realistically be supported in the field.
+
+
+Question 6. How do you approach identity and privileged access?
+
+My baseline is simple: multi-factor authentication, least privilege, role-based access, separate admin accounts, regular access reviews, and auditable privileged activity.
+
+I want security controls to be enforceable technically, not only written in policy.
+
+For WaCA, I would apply the same model across Microsoft 365, Azure identity, and Windows administration, aligned with M S F standards.
+
+
+Question 7. How do you design integrations?
+
+I start with ownership, data contracts, and failure behavior.
+
+Then I define authentication, validation, versioning, mappings, error handling, monitoring, and reconciliation.
+
+My rule is that the next integration should be easier and safer than the previous one.
+
+In my current environment, I’ve applied this across Dynamics 365, healthcare systems, G S 1, and other national integrations.
+
+At WaCA, I would focus on clear ownership, supportability, monitoring, and safe escalation across headquarters and missions.
+
+
+Question 8. A critical system or external dependency is down. What do you do?
+
+First, I confirm impact and severity, assign one incident owner, and communicate clearly.
+
+Then I restore the safest critical service or workaround first.
+
+For external dependencies, I design for failure with timeouts, controlled retries, queues where appropriate, and clear transaction state.
+
+After recovery, I run root-cause analysis and track the corrective actions.
+
+For WaCA, any workaround must be realistic for field connectivity, staffing, and local operating conditions.
+
+
+Question 9. Why M S F WaCA?
+
+M S F combines healthcare, technology, and direct operational impact.
+
+My background is in mission-critical healthcare systems, and I want to apply that experience in an international humanitarian environment.
+
+What attracts me is the responsibility to keep systems reliable so teams can deliver their mission, while also learning a very different cross-country operating environment.
+
+
+Question 10. What do you understand the Information System Manager role to be?
+
+I see it as ownership of enterprise systems across headquarters and missions: availability, security, performance, backups and disaster recovery, lifecycle, integrations, licensing, vendors, and documentation.
+
+It also means working closely with Support, Security, and S I T S, and being the main systems point of contact for reliability and technical risk.
+
+
+Question 11. What do you know about UniField and the M S F application landscape?
+
+I understand UniField is an M S F enterprise resource planning system used for finance and supply processes.
+
+I also know M S F has other application environments, such as eHealth.
+
+My focus as Information System Manager would be availability, access control, backup and recovery, patching, interfaces, supportability, and escalation.
+
+I would first verify exactly how WaCA uses each system today before proposing changes.
+
+
+Question 12. How do you manage the boundary between Systems, Support, and S I T S?
+
+I would make the ownership model explicit.
+
+Support handles user-facing incidents, requests, service-level commitments, and knowledge processes.
+
+Systems focuses on platform health, lifecycle, configuration, integrations, recovery, and system-level escalation.
+
+S I T S provides shared services and standards, so I would clarify what is centrally owned and what remains WaCA’s responsibility.
+
+
+Question 13. How would you run UniField reliably in difficult field conditions?
+
+I would start with the basics: backup monitoring, tested recovery, controlled patching, documented dependencies, and a clear escalation path.
+
+Then I would work with the application owners to understand and test the actual offline or synchronization procedures used in the relevant M S F setup.
+
+I would not assume the topology from public information.
+
+
+Question 14. How would you manage Microsoft 365, Azure, and privileged access?
+
+I would start with a clear inventory and ownership model.
+
+Then I would apply multi-factor authentication, least privilege, role-based access, separate admin accounts, secure baselines, patching, logging, and regular access reviews.
+
+Privileged access should be limited and auditable, and time-bound where possible.
+
+
+Question 15. How would you use mobile device management in the field?
+
+I would use mobile device management to enforce the important baseline: enrollment, encryption, screen lock, compliance rules, controlled applications, and remote wipe where appropriate.
+
+But the policy has to work with real field connectivity and operational constraints.
+
+I would rather manage controlled exceptions than weaken the baseline for everyone.
+
+
+Question 16. How would you handle unstable connectivity or power in a mission?
+
+First, I identify what must continue during the outage.
+
+Then I use the simplest safe continuity option: offline capability where the application supports it, local continuity where appropriate, or a controlled manual fallback.
+
+When connectivity returns, synchronization and reconciliation need to be controlled.
+
+The solution must be secure, but it also has to be supportable in the actual field environment.

@@ -160,3 +160,209 @@ table{max-width:100%;display:block;overflow-x:auto}
   background:none!important;
   box-shadow:none!important;
 }
+
+
+/* Sticky-note layer — playful paper cues with executive restraint. */
+:root{
+  --note-yellow:#fff3ad;
+  --note-cyan:#dff8f5;
+  --note-blue:#e5efff;
+  --note-coral:#ffe3db;
+  --note-green:#e2f6df;
+  --note-shadow:0 16px 26px rgba(36,48,57,.12),0 3px 0 rgba(36,48,57,.04);
+}
+.exec-snapshot-grid>div,
+.home-cases .case,
+.operating-steps article,
+.project-type-summary article,
+.registry-card,
+.featured-card,
+.evidence-card,
+.tech-category,
+.gov-win,
+.gov-rule,
+.arch-case,
+.contact-channel,
+.mediq-node,
+.recognition-strip-items article,
+.flagships .case,
+.timeline-content{
+  position:relative!important;
+  isolation:isolate;
+  box-shadow:var(--note-shadow)!important;
+  border-radius:8px 18px 10px 16px!important;
+  transform:rotate(-.45deg);
+  background:var(--note-yellow)!important;
+}
+.exec-snapshot-grid>div:nth-child(4n+2),
+.home-cases .case:nth-child(4n+2),
+.operating-steps article:nth-child(4n+2),
+.project-type-summary article:nth-child(4n+2),
+.registry-card:nth-child(4n+2),
+.featured-card:nth-child(4n+2),
+.evidence-card:nth-child(4n+2),
+.tech-category:nth-child(4n+2),
+.gov-win:nth-child(4n+2),
+.gov-rule:nth-child(4n+2),
+.arch-case:nth-child(4n+2),
+.contact-channel:nth-child(4n+2),
+.mediq-node:nth-child(4n+2),
+.recognition-strip-items article:nth-child(4n+2),
+.flagships .case:nth-child(4n+2),
+.timeline-content:nth-child(4n+2){background:var(--note-cyan)!important;transform:rotate(.55deg)}
+.exec-snapshot-grid>div:nth-child(4n+3),
+.home-cases .case:nth-child(4n+3),
+.operating-steps article:nth-child(4n+3),
+.project-type-summary article:nth-child(4n+3),
+.registry-card:nth-child(4n+3),
+.featured-card:nth-child(4n+3),
+.evidence-card:nth-child(4n+3),
+.tech-category:nth-child(4n+3),
+.gov-win:nth-child(4n+3),
+.gov-rule:nth-child(4n+3),
+.arch-case:nth-child(4n+3),
+.contact-channel:nth-child(4n+3),
+.mediq-node:nth-child(4n+3),
+.recognition-strip-items article:nth-child(4n+3),
+.flagships .case:nth-child(4n+3),
+.timeline-content:nth-child(4n+3){background:var(--note-blue)!important;transform:rotate(-.25deg)}
+.exec-snapshot-grid>div:nth-child(4n),
+.home-cases .case:nth-child(4n),
+.operating-steps article:nth-child(4n),
+.project-type-summary article:nth-child(4n),
+.registry-card:nth-child(4n),
+.featured-card:nth-child(4n),
+.evidence-card:nth-child(4n),
+.tech-category:nth-child(4n),
+.gov-win:nth-child(4n),
+.gov-rule:nth-child(4n),
+.arch-case:nth-child(4n),
+.contact-channel:nth-child(4n),
+.mediq-node:nth-child(4n),
+.recognition-strip-items article:nth-child(4n),
+.flagships .case:nth-child(4n),
+.timeline-content:nth-child(4n){background:var(--note-coral)!important;transform:rotate(.35deg)}
+.exec-snapshot-grid>div:nth-child(5n),
+.home-cases .case:nth-child(5n),
+.operating-steps article:nth-child(5n),
+.registry-card:nth-child(5n),
+.evidence-card:nth-child(5n),
+.tech-category:nth-child(5n),
+.mediq-node:nth-child(5n),
+.timeline-content:nth-child(5n){background:var(--note-green)!important;transform:rotate(-.6deg)}
+
+.exec-snapshot-grid>div::before,
+.home-cases .case::before,
+.operating-steps article::before,
+.project-type-summary article::before,
+.registry-card::before,
+.featured-card::before,
+.evidence-card::before,
+.tech-category::before,
+.gov-win::before,
+.gov-rule::before,
+.arch-case::before,
+.contact-channel::before,
+.mediq-node::before,
+.recognition-strip-items article::before,
+.flagships .case::before,
+.timeline-content::before{
+  content:""!important;
+  position:absolute!important;
+  top:8px!important;
+  left:50%!important;
+  width:68px!important;
+  height:13px!important;
+  transform:translateX(-50%) rotate(-2deg)!important;
+  background:rgba(255,255,255,.5)!important;
+  border:0!important;
+  border-radius:2px!important;
+  box-shadow:0 1px 2px rgba(36,48,57,.08)!important;
+  z-index:2!important;
+  opacity:.76!important;
+}
+.home-cases .case::after,
+.operating-steps article::after,
+.registry-card::after,
+.evidence-card::after,
+.tech-category::after,
+.gov-win::after,
+.gov-rule::after,
+.arch-case::after,
+.contact-channel::after,
+.flagships .case::after{
+  content:""!important;
+  position:absolute!important;
+  right:15px!important;
+  bottom:14px!important;
+  width:28px!important;
+  height:4px!important;
+  border-radius:50%!important;
+  background:rgba(16,38,59,.16)!important;
+  border:0!important;
+  box-shadow:none!important;
+  transform:rotate(-4deg)!important;
+  opacity:.55!important;
+}
+.exec-snapshot-grid>div:hover,
+.home-cases .case:hover,
+.operating-steps article:hover,
+.project-type-summary article:hover,
+.registry-card:hover,
+.featured-card:hover,
+.evidence-card:hover,
+.tech-category:hover,
+.gov-win:hover,
+.gov-rule:hover,
+.arch-case:hover,
+.contact-channel[href]:hover,
+.mediq-node:hover,
+.recognition-strip-items article:hover,
+.flagships .case:hover,
+.timeline-content:hover{
+  transform:translateY(-5px) rotate(0deg)!important;
+  box-shadow:0 22px 34px rgba(36,48,57,.16)!important;
+}
+.mediq-flagship .mediq-node{
+  background:rgba(255,247,183,.16)!important;
+  box-shadow:0 12px 24px rgba(4,26,38,.16)!important;
+}
+.mediq-flagship .mediq-node:nth-child(3n+2){background:rgba(205,247,241,.16)!important}
+.mediq-flagship .mediq-node:nth-child(3n){background:rgba(207,226,255,.15)!important}
+@media(max-width:760px){
+  .exec-snapshot-grid>div,
+  .home-cases .case,
+  .operating-steps article,
+  .project-type-summary article,
+  .registry-card,
+  .featured-card,
+  .evidence-card,
+  .tech-category,
+  .gov-win,
+  .gov-rule,
+  .arch-case,
+  .contact-channel,
+  .mediq-node,
+  .recognition-strip-items article,
+  .flagships .case,
+  .timeline-content{transform:rotate(0deg)!important;border-radius:10px 16px 10px 14px!important}
+  .exec-snapshot-grid>div::before,
+  .home-cases .case::before,
+  .operating-steps article::before,
+  .project-type-summary article::before,
+  .registry-card::before,
+  .featured-card::before,
+  .evidence-card::before,
+  .tech-category::before,
+  .gov-win::before,
+  .gov-rule::before,
+  .arch-case::before,
+  .contact-channel::before,
+  .mediq-node::before,
+  .recognition-strip-items article::before,
+  .flagships .case::before,
+  .timeline-content::before{top:6px!important;width:54px!important;height:10px!important}
+}
+@media(prefers-reduced-motion:reduce){
+  .exec-snapshot-grid>div,.home-cases .case,.operating-steps article,.project-type-summary article,.registry-card,.featured-card,.evidence-card,.tech-category,.gov-win,.gov-rule,.arch-case,.contact-channel,.mediq-node,.recognition-strip-items article,.flagships .case,.timeline-content{transform:none!important}
+}

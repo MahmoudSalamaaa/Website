@@ -1,0 +1,27 @@
+/* Architecture final art direction — coherent executive palette.
+   Ink/navy + cobalt + teal; amber is a controlled accent, not a background. */
+:root{--ax-ink:#10263b;--ax-navy:#15384f;--ax-cobalt:#244f8f;--ax-blue:#315f9f;--ax-teal:#0e7f88;--ax-cyan:#14b8c9;--ax-amber:#f2bd3f;--ax-paper:#f6f9fa;--ax-muted:#526879;--ax-line:#d8e2e7}
+body.architecture-page{background:#f7f9fa!important;color:var(--ax-ink)!important}
+body.architecture-page .architecture-hero{background:radial-gradient(circle at 86% 13%,rgba(20,184,201,.14),transparent 25%),radial-gradient(circle at 96% 76%,rgba(36,79,143,.12),transparent 27%),linear-gradient(135deg,#ffffff 0%,#f1f6f8 60%,#e8f0f4 100%)!important}
+body.architecture-page .architecture-hero::after{background:var(--ax-cobalt)!important;box-shadow:105px 0 0 var(--ax-teal),52px 25px 0 var(--ax-amber)!important}
+body.architecture-page .architecture-hero .kicker{background:var(--ax-ink)!important;color:#86e9ee!important}
+body.architecture-page .arch-scope article{background:rgba(255,255,255,.94)!important;border-color:rgba(16,38,59,.11)!important;box-shadow:0 16px 38px rgba(16,38,59,.07)!important}
+body.architecture-page .arch-scope article::before{background:var(--ax-teal)!important}body.architecture-page .arch-scope article:nth-child(2)::before{background:var(--ax-cobalt)!important}body.architecture-page .arch-scope article:nth-child(3)::before{background:var(--ax-blue)!important}body.architecture-page .arch-scope article:nth-child(4)::before{background:var(--ax-amber)!important}
+body.architecture-page .arch-jump{background:rgba(247,249,250,.93)!important}body.architecture-page .arch-jump a:hover,body.architecture-page .arch-jump a:focus-visible{background:var(--ax-ink)!important;color:#fff!important}
+body.architecture-page .arch-section.alt{background:linear-gradient(180deg,#eef3f5,#f8fafb)!important}body.architecture-page .arch-head .kicker{color:var(--ax-teal)!important}
+/* Method becomes one deliberate family instead of alternating yellow tiles. */
+body.architecture-page .arch-method article{background:#fff!important;border-color:rgba(16,38,59,.11)!important}body.architecture-page .arch-method article:before{background:var(--ax-ink)!important;color:#86e9ee!important}body.architecture-page .arch-method article:nth-child(2):before,body.architecture-page .arch-method article:nth-child(4):before{background:var(--ax-cobalt)!important;color:#fff!important}
+/* Case headers: related dark tones; no large yellow background. */
+body.architecture-page .arch-case{border-color:rgba(16,38,59,.11)!important;box-shadow:0 18px 46px rgba(16,38,59,.075)!important}
+body.architecture-page .arch-case:nth-child(1) .arch-case-top{background:linear-gradient(135deg,#10263b,#17465c)!important;color:#fff!important}
+body.architecture-page .arch-case:nth-child(2) .arch-case-top{background:linear-gradient(135deg,#244f8f,#173f70 60%,#102f4a)!important;color:#fff!important}
+body.architecture-page .arch-case:nth-child(3) .arch-case-top{background:linear-gradient(135deg,#17606b,#123f4d 60%,#102f3d)!important;color:#fff!important}
+body.architecture-page .arch-case .arch-case-top p{color:rgba(255,255,255,.76)!important}body.architecture-page .arch-case .arch-case-index{color:#86e9ee!important}body.architecture-page .arch-case:nth-child(2) .arch-case-index{color:#f6cf70!important}
+body.architecture-page .arch-decision-grid article::before{background:var(--ax-teal)!important}body.architecture-page .arch-decision-grid article:nth-child(2)::before{background:var(--ax-cobalt)!important}body.architecture-page .arch-decision-grid article:nth-child(3)::before{background:var(--ax-blue)!important}body.architecture-page .arch-decision-grid article:nth-child(4)::before{background:#397d62!important}
+body.architecture-page .arch-evidence{background:#edf4f5!important;border-top-color:#d5e4e7!important}body.architecture-page .arch-evidence a:hover{background:var(--ax-ink)!important;border-color:var(--ax-ink)!important;color:#fff!important}
+/* Interoperability — remove cream/yellow control node. */
+body.architecture-page .interop-chain,body.architecture-page .interop-proof{border-color:rgba(16,38,59,.11)!important;box-shadow:0 16px 38px rgba(16,38,59,.06)!important}body.architecture-page .interop-node{background:#eef5f5!important;border-color:#d5e5e6!important}body.architecture-page .interop-node:nth-of-type(3){background:#e2eaf4!important;border-color:#c7d5e7!important}body.architecture-page .interop-arrow{color:var(--ax-cobalt)!important}body.architecture-page .interop-proof li::marker{color:var(--ax-teal)!important}
+/* Governance uses one system with restrained accents. */
+body.architecture-page .gov-grid article{background:#fff!important;border-color:rgba(16,38,59,.11)!important}body.architecture-page .gov-grid small{background:var(--ax-ink)!important;color:#86e9ee!important}body.architecture-page .gov-grid article:nth-child(2) small,body.architecture-page .gov-grid article:nth-child(4) small{background:var(--ax-cobalt)!important;color:#fff!important}
+/* Final map CTA remains premium dark; amber only on the action. */
+body.architecture-page .arch-map-preview{background:radial-gradient(circle at 88% 10%,rgba(20,184,201,.13),transparent 28%),linear-gradient(135deg,#0d2636,#17465c 60%,#173f70)!important}body.architecture-page .arch-map-preview .kicker{color:#86e9ee!important}body.architecture-page .arch-map-preview .btn{background:var(--ax-amber)!important;color:var(--ax-ink)!important;border-color:var(--ax-amber)!important}

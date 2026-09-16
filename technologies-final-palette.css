@@ -1,17 +1,44 @@
-/* Final Technologies palette override — loaded after the global finale layer. */
-body .technology-categories .category-grid .tech-category:nth-child(1){background:linear-gradient(145deg,#6547b8 0%,#49318e 52%,#2f225e 100%)!important;border-color:rgba(101,71,184,.55)!important;color:#fff!important;box-shadow:0 20px 46px rgba(57,37,111,.2)!important}
-body .technology-categories .category-grid .tech-category:nth-child(1)::before{background:linear-gradient(90deg,#14b8c9,#65d9e5)!important}
-body .technology-categories .category-grid .tech-category:nth-child(1) .category-no{color:rgba(255,255,255,.12)!important}
-body .technology-categories .category-grid .tech-category:nth-child(1) .category-head small{color:#9cecf1!important}
-body .technology-categories .category-grid .tech-category:nth-child(1) .category-head h3{color:#fff!important}
-body .technology-categories .category-grid .tech-category:nth-child(1) .category-head p{color:rgba(255,255,255,.8)!important}
-body .technology-categories .category-grid .tech-category:nth-child(1) .tag-cloud span{background:rgba(255,255,255,.1)!important;border-color:rgba(255,255,255,.18)!important;color:#fff!important;box-shadow:none!important}
+/* Technologies — coherent executive palette, loaded after all global styles.
+   One family: ink/navy + cobalt + teal, with amber used only as a restrained accent. */
+:root{--tech-ink:#10263b;--tech-navy:#15384f;--tech-cobalt:#244f8f;--tech-blue:#315f9f;--tech-teal:#0e7f88;--tech-cyan:#14b8c9;--tech-amber:#f2bd3f;--tech-paper:#f6f9fa;--tech-muted:#526879}
 
-/* Integration & Enterprise Systems — strong cobalt/ink, never pink or pastel. */
-body .technology-categories .category-grid .tech-category:nth-child(4){background:linear-gradient(145deg,#244f8f 0%,#173f70 48%,#10263b 100%)!important;border-color:rgba(36,79,143,.55)!important;color:#fff!important;box-shadow:0 20px 46px rgba(16,38,59,.18)!important}
-body .technology-categories .category-grid .tech-category:nth-child(4)::before{background:linear-gradient(90deg,#14b8c9,#f2bd3f)!important}
-body .technology-categories .category-grid .tech-category:nth-child(4) .category-no{color:rgba(255,255,255,.11)!important}
-body .technology-categories .category-grid .tech-category:nth-child(4) .category-head small{color:#86e9ee!important}
-body .technology-categories .category-grid .tech-category:nth-child(4) .category-head h3{color:#fff!important}
-body .technology-categories .category-grid .tech-category:nth-child(4) .category-head p{color:rgba(255,255,255,.8)!important}
-body .technology-categories .category-grid .tech-category:nth-child(4) .tag-cloud span{background:rgba(255,255,255,.09)!important;border-color:rgba(255,255,255,.17)!important;color:#fff!important;box-shadow:none!important}
+/* Shared card language */
+body .technology-categories .category-grid .tech-category{border:1px solid rgba(16,38,59,.13)!important;box-shadow:0 16px 38px rgba(16,38,59,.075)!important;color:var(--tech-ink)!important}
+body .technology-categories .category-grid .tech-category::before{height:5px!important;background:linear-gradient(90deg,var(--tech-cobalt),var(--tech-teal))!important}
+body .technology-categories .category-grid .tech-category .category-no{color:rgba(16,38,59,.08)!important}
+body .technology-categories .category-grid .tech-category .category-head small{color:var(--tech-teal)!important}
+body .technology-categories .category-grid .tech-category .category-head h3{color:var(--tech-ink)!important}
+body .technology-categories .category-grid .tech-category .category-head p{color:var(--tech-muted)!important}
+body .technology-categories .category-grid .tech-category .tag-cloud span{background:rgba(255,255,255,.82)!important;border-color:rgba(16,38,59,.12)!important;color:#29485b!important;box-shadow:none!important}
+
+/* 01–08 use related tones rather than unrelated colors. */
+body .technology-categories .category-grid .tech-category:nth-child(1){background:linear-gradient(145deg,#193d59 0%,#10263b 100%)!important}
+body .technology-categories .category-grid .tech-category:nth-child(2){background:linear-gradient(145deg,#d9eeee 0%,#f7fbfb 100%)!important}
+body .technology-categories .category-grid .tech-category:nth-child(3){background:linear-gradient(145deg,#dce7f3 0%,#f8fafc 100%)!important}
+body .technology-categories .category-grid .tech-category:nth-child(4){background:linear-gradient(145deg,#244f8f 0%,#173f70 58%,#102f4a 100%)!important}
+body .technology-categories .category-grid .tech-category:nth-child(5){background:linear-gradient(145deg,#d7ebe7 0%,#f7faf9 100%)!important}
+body .technology-categories .category-grid .tech-category:nth-child(6){background:linear-gradient(145deg,#e2e9f2 0%,#fafbfd 100%)!important}
+body .technology-categories .category-grid .tech-category:nth-child(7){background:linear-gradient(145deg,#1b4c58 0%,#123843 100%)!important}
+body .technology-categories .category-grid .tech-category:nth-child(8){background:linear-gradient(145deg,#163b53 0%,#10263b 100%)!important}
+
+/* Accent bars stay inside the same palette; amber is reserved for two deliberate highlights. */
+body .technology-categories .category-grid .tech-category:nth-child(1)::before{background:linear-gradient(90deg,var(--tech-cyan),#65d9e5)!important}
+body .technology-categories .category-grid .tech-category:nth-child(2)::before{background:var(--tech-teal)!important}
+body .technology-categories .category-grid .tech-category:nth-child(3)::before{background:var(--tech-cobalt)!important}
+body .technology-categories .category-grid .tech-category:nth-child(4)::before{background:linear-gradient(90deg,var(--tech-cyan),var(--tech-amber))!important}
+body .technology-categories .category-grid .tech-category:nth-child(5)::before{background:#397d62!important}
+body .technology-categories .category-grid .tech-category:nth-child(6)::before{background:var(--tech-blue)!important}
+body .technology-categories .category-grid .tech-category:nth-child(7)::before{background:var(--tech-amber)!important}
+body .technology-categories .category-grid .tech-category:nth-child(8)::before{background:var(--tech-cyan)!important}
+
+/* Dark-card typography and tags. */
+body .technology-categories .category-grid .tech-category:nth-child(1),body .technology-categories .category-grid .tech-category:nth-child(4),body .technology-categories .category-grid .tech-category:nth-child(7),body .technology-categories .category-grid .tech-category:nth-child(8){color:#fff!important;border-color:rgba(255,255,255,.08)!important;box-shadow:0 20px 46px rgba(16,38,59,.16)!important}
+body .technology-categories .category-grid .tech-category:nth-child(1) .category-no,body .technology-categories .category-grid .tech-category:nth-child(4) .category-no,body .technology-categories .category-grid .tech-category:nth-child(7) .category-no,body .technology-categories .category-grid .tech-category:nth-child(8) .category-no{color:rgba(255,255,255,.11)!important}
+body .technology-categories .category-grid .tech-category:nth-child(1) .category-head small,body .technology-categories .category-grid .tech-category:nth-child(4) .category-head small,body .technology-categories .category-grid .tech-category:nth-child(8) .category-head small{color:#86e9ee!important}
+body .technology-categories .category-grid .tech-category:nth-child(7) .category-head small{color:#f6cf70!important}
+body .technology-categories .category-grid .tech-category:nth-child(1) .category-head h3,body .technology-categories .category-grid .tech-category:nth-child(4) .category-head h3,body .technology-categories .category-grid .tech-category:nth-child(7) .category-head h3,body .technology-categories .category-grid .tech-category:nth-child(8) .category-head h3{color:#fff!important}
+body .technology-categories .category-grid .tech-category:nth-child(1) .category-head p,body .technology-categories .category-grid .tech-category:nth-child(4) .category-head p,body .technology-categories .category-grid .tech-category:nth-child(7) .category-head p,body .technology-categories .category-grid .tech-category:nth-child(8) .category-head p{color:rgba(255,255,255,.78)!important}
+body .technology-categories .category-grid .tech-category:nth-child(1) .tag-cloud span,body .technology-categories .category-grid .tech-category:nth-child(4) .tag-cloud span,body .technology-categories .category-grid .tech-category:nth-child(7) .tag-cloud span,body .technology-categories .category-grid .tech-category:nth-child(8) .tag-cloud span{background:rgba(255,255,255,.09)!important;border-color:rgba(255,255,255,.16)!important;color:#fff!important}
+
+/* Keep hover treatment consistent across the full capability map. */
+body .technology-categories .category-grid .tech-category:hover{transform:translateY(-5px)!important;border-color:rgba(36,79,143,.3)!important;box-shadow:0 25px 52px rgba(16,38,59,.13)!important}

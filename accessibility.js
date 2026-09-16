@@ -7,13 +7,20 @@
   const pageName = () => (location.pathname.split('/').pop() || 'index.html').toLowerCase();
 
   const installPageRepairLayer = () => {
-    if (pageName() !== 'portfolio.html') return;
-    if (document.querySelector('link[data-portfolio-fix]')) return;
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = '/portfolio-fix.css';
-    link.dataset.portfolioFix = 'true';
-    document.head.appendChild(link);
+    const page = pageName();
+    const layers = page === 'portfolio.html'
+      ? [['/portfolio-fix.css','portfolio-fix']]
+      : page === 'technologies.html'
+        ? [['/technologies-final-palette.css','technologies-final-palette']]
+        : [];
+    layers.forEach(([href,key]) => {
+      if (document.querySelector(`link[data-page-repair="${key}"]`)) return;
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = href;
+      link.dataset.pageRepair = key;
+      document.head.appendChild(link);
+    });
   };
 
   const currentSection = () => {

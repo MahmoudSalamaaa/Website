@@ -10,8 +10,6 @@ body .technology-categories .category-grid .tech-category .category-head small{c
 body .technology-categories .category-grid .tech-category .category-head h3{color:var(--tech-ink)!important}
 body .technology-categories .category-grid .tech-category .category-head p{color:var(--tech-muted)!important}
 body .technology-categories .category-grid .tech-category .tag-cloud span{background:rgba(255,255,255,.82)!important;border-color:rgba(16,38,59,.12)!important;color:#29485b!important;box-shadow:none!important}
-
-/* 01–08 use related tones rather than unrelated colors. */
 body .technology-categories .category-grid .tech-category:nth-child(1){background:linear-gradient(145deg,#193d59 0%,#10263b 100%)!important}
 body .technology-categories .category-grid .tech-category:nth-child(2){background:linear-gradient(145deg,#d9eeee 0%,#f7fbfb 100%)!important}
 body .technology-categories .category-grid .tech-category:nth-child(3){background:linear-gradient(145deg,#dce7f3 0%,#f8fafc 100%)!important}
@@ -20,8 +18,6 @@ body .technology-categories .category-grid .tech-category:nth-child(5){backgroun
 body .technology-categories .category-grid .tech-category:nth-child(6){background:linear-gradient(145deg,#e2e9f2 0%,#fafbfd 100%)!important}
 body .technology-categories .category-grid .tech-category:nth-child(7){background:linear-gradient(145deg,#1b4c58 0%,#123843 100%)!important}
 body .technology-categories .category-grid .tech-category:nth-child(8){background:linear-gradient(145deg,#163b53 0%,#10263b 100%)!important}
-
-/* Accent bars stay inside the same palette; amber is reserved for two deliberate highlights. */
 body .technology-categories .category-grid .tech-category:nth-child(1)::before{background:linear-gradient(90deg,var(--tech-cyan),#65d9e5)!important}
 body .technology-categories .category-grid .tech-category:nth-child(2)::before{background:var(--tech-teal)!important}
 body .technology-categories .category-grid .tech-category:nth-child(3)::before{background:var(--tech-cobalt)!important}
@@ -30,8 +26,6 @@ body .technology-categories .category-grid .tech-category:nth-child(5)::before{b
 body .technology-categories .category-grid .tech-category:nth-child(6)::before{background:var(--tech-blue)!important}
 body .technology-categories .category-grid .tech-category:nth-child(7)::before{background:var(--tech-amber)!important}
 body .technology-categories .category-grid .tech-category:nth-child(8)::before{background:var(--tech-cyan)!important}
-
-/* Dark-card typography and tags. */
 body .technology-categories .category-grid .tech-category:nth-child(1),body .technology-categories .category-grid .tech-category:nth-child(4),body .technology-categories .category-grid .tech-category:nth-child(7),body .technology-categories .category-grid .tech-category:nth-child(8){color:#fff!important;border-color:rgba(255,255,255,.08)!important;box-shadow:0 20px 46px rgba(16,38,59,.16)!important}
 body .technology-categories .category-grid .tech-category:nth-child(1) .category-no,body .technology-categories .category-grid .tech-category:nth-child(4) .category-no,body .technology-categories .category-grid .tech-category:nth-child(7) .category-no,body .technology-categories .category-grid .tech-category:nth-child(8) .category-no{color:rgba(255,255,255,.11)!important}
 body .technology-categories .category-grid .tech-category:nth-child(1) .category-head small,body .technology-categories .category-grid .tech-category:nth-child(4) .category-head small,body .technology-categories .category-grid .tech-category:nth-child(8) .category-head small{color:#86e9ee!important}
@@ -39,6 +33,19 @@ body .technology-categories .category-grid .tech-category:nth-child(7) .category
 body .technology-categories .category-grid .tech-category:nth-child(1) .category-head h3,body .technology-categories .category-grid .tech-category:nth-child(4) .category-head h3,body .technology-categories .category-grid .tech-category:nth-child(7) .category-head h3,body .technology-categories .category-grid .tech-category:nth-child(8) .category-head h3{color:#fff!important}
 body .technology-categories .category-grid .tech-category:nth-child(1) .category-head p,body .technology-categories .category-grid .tech-category:nth-child(4) .category-head p,body .technology-categories .category-grid .tech-category:nth-child(7) .category-head p,body .technology-categories .category-grid .tech-category:nth-child(8) .category-head p{color:rgba(255,255,255,.78)!important}
 body .technology-categories .category-grid .tech-category:nth-child(1) .tag-cloud span,body .technology-categories .category-grid .tech-category:nth-child(4) .tag-cloud span,body .technology-categories .category-grid .tech-category:nth-child(7) .tag-cloud span,body .technology-categories .category-grid .tech-category:nth-child(8) .tag-cloud span{background:rgba(255,255,255,.09)!important;border-color:rgba(255,255,255,.16)!important;color:#fff!important}
-
-/* Keep hover treatment consistent across the full capability map. */
 body .technology-categories .category-grid .tech-category:hover{transform:translateY(-5px)!important;border-color:rgba(36,79,143,.3)!important;box-shadow:0 25px 52px rgba(16,38,59,.13)!important}
+
+/* TECHNOLOGY DEPTH — same palette, no pink/lilac/peach cards. */
+body .technology-depth{background:linear-gradient(180deg,#f3f7f9 0%,#edf3f5 100%)!important}
+body .technology-depth .kicker{color:var(--tech-teal)!important}
+body .technology-depth .section-title{color:var(--tech-ink)!important}
+body .technology-depth .technology-combinations article{border:1px solid rgba(16,38,59,.12)!important;background:#fff!important;color:var(--tech-ink)!important;box-shadow:0 15px 36px rgba(16,38,59,.065)!important}
+body .technology-depth .technology-combinations article:nth-child(1){background:linear-gradient(145deg,#d9eeee,#f8fbfb)!important;border-top:5px solid var(--tech-teal)!important}
+body .technology-depth .technology-combinations article:nth-child(2){background:linear-gradient(145deg,#dce7f3,#f8fafc)!important;border-top:5px solid var(--tech-cobalt)!important}
+body .technology-depth .technology-combinations article:nth-child(3){background:linear-gradient(145deg,#e3eaf2,#fafbfd)!important;border-top:5px solid var(--tech-blue)!important}
+body .technology-depth .technology-combinations article:nth-child(4){background:linear-gradient(145deg,#d7ebe7,#f8fbfa)!important;border-top:5px solid #397d62!important}
+body .technology-depth .technology-combinations article small{color:var(--tech-teal)!important}
+body .technology-depth .technology-combinations article:nth-child(2) small,body .technology-depth .technology-combinations article:nth-child(3) small{color:var(--tech-cobalt)!important}
+body .technology-depth .technology-combinations article h3{color:var(--tech-ink)!important}
+body .technology-depth .technology-combinations article p{color:var(--tech-muted)!important}
+body .technology-depth .technology-combinations article:hover{border-color:rgba(36,79,143,.28)!important;box-shadow:0 24px 50px rgba(16,38,59,.1)!important}

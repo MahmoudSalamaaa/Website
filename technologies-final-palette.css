@@ -6,3 +6,12 @@ body .technology-categories .category-grid .tech-category:nth-child(1) .category
 body .technology-categories .category-grid .tech-category:nth-child(1) .category-head h3{color:#fff!important}
 body .technology-categories .category-grid .tech-category:nth-child(1) .category-head p{color:rgba(255,255,255,.8)!important}
 body .technology-categories .category-grid .tech-category:nth-child(1) .tag-cloud span{background:rgba(255,255,255,.1)!important;border-color:rgba(255,255,255,.18)!important;color:#fff!important;box-shadow:none!important}
+
+/* Integration & Enterprise Systems — strong cobalt/ink, never pink or pastel. */
+body .technology-categories .category-grid .tech-category:nth-child(4){background:linear-gradient(145deg,#244f8f 0%,#173f70 48%,#10263b 100%)!important;border-color:rgba(36,79,143,.55)!important;color:#fff!important;box-shadow:0 20px 46px rgba(16,38,59,.18)!important}
+body .technology-categories .category-grid .tech-category:nth-child(4)::before{background:linear-gradient(90deg,#14b8c9,#f2bd3f)!important}
+body .technology-categories .category-grid .tech-category:nth-child(4) .category-no{color:rgba(255,255,255,.11)!important}
+body .technology-categories .category-grid .tech-category:nth-child(4) .category-head small{color:#86e9ee!important}
+body .technology-categories .category-grid .tech-category:nth-child(4) .category-head h3{color:#fff!important}
+body .technology-categories .category-grid .tech-category:nth-child(4) .category-head p{color:rgba(255,255,255,.8)!important}
+body .technology-categories .category-grid .tech-category:nth-child(4) .tag-cloud span{background:rgba(255,255,255,.09)!important;border-color:rgba(255,255,255,.17)!important;color:#fff!important;box-shadow:none!important}

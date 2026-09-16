@@ -1,0 +1,90 @@
+/* Portfolio repair — 2026-09-16. Loaded last to neutralize legacy layer conflicts. */
+body{overflow-x:hidden}
+.portfolio-context-strip{max-width:none!important;width:100%!important}
+.portfolio-hero-grid{display:grid!important;grid-template-columns:minmax(0,1.45fr) minmax(280px,.55fr)!important}
+.portfolio-title{font-size:clamp(3.2rem,5.7vw,5.5rem)!important;line-height:.94!important}
+.portfolio-note{min-width:0!important}
+.page-index{top:74px!important}
+.portfolio-section>.wrap{position:relative;z-index:2}
+.metric-grid{align-items:stretch!important}
+.metric-grid .metric{transform:none!important;border-radius:24px!important}
+
+/* Repair the executive map: legacy absolute positioning was the main breakage. */
+#portfolio-map .board{position:relative!important;display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:18px!important;min-height:0!important;height:auto!important;padding:28px!important;margin-top:34px!important;overflow:visible!important}
+#portfolio-map .board-lines{display:none!important}
+#portfolio-map .board-center{position:static!important;grid-column:1/-1!important;grid-row:auto!important;display:block!important;transform:none!important;width:auto!important;height:auto!important}
+#portfolio-map .board-center>div{width:100%!important;min-height:0!important;padding:24px 28px!important;border-radius:24px!important;display:grid!important;grid-template-columns:auto 1fr auto!important;align-items:center!important;gap:24px!important;text-align:left!important}
+#portfolio-map .board-center h3{margin:0!important;font-size:clamp(1.8rem,3vw,3rem)!important;line-height:.92!important}
+#portfolio-map .board-center b{font-size:.8rem!important;letter-spacing:.1em!important}
+#portfolio-map .board-center small{font-size:.78rem!important;text-align:right!important}
+#portfolio-map .board-card{position:relative!important;inset:auto!important;left:auto!important;right:auto!important;top:auto!important;bottom:auto!important;transform:none!important;width:auto!important;min-height:210px!important;padding:24px!important;margin:0!important}
+#portfolio-map .board-card:hover{transform:translateY(-4px)!important}
+#portfolio-map .board-card ul{margin:14px 0 0!important;padding-left:18px!important}
+
+/* Case-study grids and architecture diagrams. */
+.case-journey{align-items:stretch!important}
+.case-journey article{transform:none!important;border-radius:22px!important}
+.arch-box{border:1px solid rgba(16,38,59,.12)!important;border-radius:28px!important;background:#fff!important;padding:28px!important;box-shadow:0 18px 45px rgba(16,38,59,.08)!important;overflow:hidden!important}
+.arch-label{font-size:.7rem!important;font-weight:800!important;letter-spacing:.1em!important;color:#0f7f88!important;margin-bottom:22px!important}
+.arch-flow{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(180px,.65fr) minmax(0,1fr)!important;gap:18px!important;align-items:stretch!important}
+.arch-system{padding:22px!important;border-radius:20px!important;background:#f5faf9!important;border:1px solid rgba(16,38,59,.09)!important}
+.arch-system h3{margin-top:0!important}
+.flow-steps{display:grid!important;gap:8px!important;align-content:center!important}
+.flow-steps>div{padding:10px 12px!important;border-radius:999px!important;background:#10263b!important;color:#fff!important;text-align:center!important;font-size:.7rem!important;font-weight:700!important}
+.integration-case,.dynamics-case{overflow:hidden!important}
+
+/* Career and governance sections: predictable grids, no floating legacy cards. */
+#portfolio-career .timeline{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:16px!important;margin-top:32px!important}
+#portfolio-career .timeline article{position:relative!important;inset:auto!important;transform:none!important;margin:0!important;padding:26px!important;min-height:250px!important}
+.gov-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important;margin-top:32px!important}
+.gov-grid .gov{position:relative!important;transform:none!important;padding:26px!important;min-height:230px!important}
+.award-strip{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:14px!important;margin-top:20px!important}
+.award-strip .award{padding:22px!important;min-width:0!important}
+.portfolio-principle .wrap{display:grid!important;grid-template-columns:auto minmax(0,1fr)!important;gap:30px!important;align-items:center!important}
+
+/* Exactly the same footer treatment as Home. */
+footer{background:var(--final-ink)!important;color:#fff!important}
+.final-footer{padding:34px 0 20px!important;display:grid!important;grid-template-columns:minmax(0,1.5fr) minmax(260px,.5fr)!important;column-gap:36px!important;align-items:end!important}
+.footer-title{grid-column:1/-1!important;width:100%!important;max-width:none!important;margin:0 0 10px!important;font-size:clamp(2.2rem,4.6vw,4.9rem)!important;line-height:.92!important;letter-spacing:-.065em!important;text-wrap:balance!important}
+.footer-intro{grid-column:1!important;margin:0!important;max-width:none!important}
+.footer-nav{grid-column:2!important;grid-row:2!important;justify-content:flex-end!important;margin:0!important}
+.footer-row{grid-column:1/-1!important;margin-top:18px!important}
+
+@media(max-width:980px){
+ .portfolio-context-strip{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .portfolio-context-strip>div:last-child{grid-column:1/-1!important}
+ .portfolio-hero-grid{grid-template-columns:1fr!important}
+ .portfolio-note{min-height:0!important}
+ .metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .metric-grid .metric:last-child{grid-column:1/-1!important}
+ #portfolio-map .board{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ #portfolio-map .board-center>div{grid-template-columns:1fr!important;text-align:left!important}
+ #portfolio-map .board-center small{text-align:left!important}
+ .case-journey,.case-journey.compact{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .arch-flow{grid-template-columns:1fr!important}
+ .evidence-row{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ #portfolio-career .timeline{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .gov-grid,.award-strip{grid-template-columns:1fr!important}
+ .final-footer{grid-template-columns:1fr!important}
+ .footer-intro,.footer-nav,.footer-row{grid-column:1!important;grid-row:auto!important}
+ .footer-nav{justify-content:flex-start!important;margin-top:18px!important}
+}
+@media(max-width:640px){
+ .portfolio-context-strip{grid-template-columns:1fr!important}
+ .portfolio-context-strip>div:last-child{grid-column:auto!important}
+ .portfolio-context-strip>div{min-height:78px!important;padding:16px 20px!important}
+ .portfolio-hero{padding:54px 0!important}
+ .portfolio-title{font-size:clamp(2.65rem,12vw,4rem)!important}
+ .page-index{top:64px!important}
+ .metric-grid,#portfolio-map .board,.case-journey,.case-journey.compact,.evidence-row,#portfolio-career .timeline{grid-template-columns:1fr!important}
+ .metric-grid .metric:last-child{grid-column:auto!important}
+ #portfolio-map .board{padding:16px!important}
+ #portfolio-map .board-card{min-height:0!important}
+ .integration-case{padding:20px!important}
+ .case-heading{display:block!important}
+ .case-status{display:inline-flex!important;margin-top:14px!important}
+ .evidence-row>div+div{border-left:0!important;border-top:1px solid rgba(16,38,59,.08)!important}
+ .portfolio-principle .wrap{grid-template-columns:1fr!important;gap:10px!important}
+ .final-footer{padding:28px 0 18px!important}
+ .footer-title{font-size:clamp(2.1rem,10vw,3.2rem)!important}
+}

@@ -1,0 +1,8 @@
+/* Final Technologies palette override — loaded after the global finale layer. */
+body .technology-categories .category-grid .tech-category:nth-child(1){background:linear-gradient(145deg,#6547b8 0%,#49318e 52%,#2f225e 100%)!important;border-color:rgba(101,71,184,.55)!important;color:#fff!important;box-shadow:0 20px 46px rgba(57,37,111,.2)!important}
+body .technology-categories .category-grid .tech-category:nth-child(1)::before{background:linear-gradient(90deg,#14b8c9,#65d9e5)!important}
+body .technology-categories .category-grid .tech-category:nth-child(1) .category-no{color:rgba(255,255,255,.12)!important}
+body .technology-categories .category-grid .tech-category:nth-child(1) .category-head small{color:#9cecf1!important}
+body .technology-categories .category-grid .tech-category:nth-child(1) .category-head h3{color:#fff!important}
+body .technology-categories .category-grid .tech-category:nth-child(1) .category-head p{color:rgba(255,255,255,.8)!important}
+body .technology-categories .category-grid .tech-category:nth-child(1) .tag-cloud span{background:rgba(255,255,255,.1)!important;border-color:rgba(255,255,255,.18)!important;color:#fff!important;box-shadow:none!important}

@@ -19,4 +19,9 @@ Disallow: /togaf/
 Disallow: /technology-mastery/
 Disallow: /organizations/
 Disallow: /professional-references/
+Disallow: /archive/
+Disallow: /executive-conversion/
+Disallow: /executive-os/
+Disallow: /workspace-hub/
+Disallow: /nomads/
 Sitemap: https://mahmoud-salama.vercel.app/sitemap.xml

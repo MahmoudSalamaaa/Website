@@ -8,7 +8,7 @@ Official current title: **Head of the Central Administration for Information Sys
 
 ## Evidence at a glance
 - 54-person technology organization
-- 7 direct reports
+- 9 direct reports
 - ~60K platform users
 - ~90K facilities/entities
 - ~90K facilities/entities

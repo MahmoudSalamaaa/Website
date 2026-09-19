@@ -13,4 +13,10 @@ Disallow: /executive-growth/
 Disallow: /career-kit/downloads/
 Disallow: /career-kit/downloads/originals/
 
+Disallow: /completed-interviews/
+Disallow: /read/
+Disallow: /togaf/
+Disallow: /technology-mastery/
+Disallow: /organizations/
+Disallow: /professional-references/
 Sitemap: https://mahmoud-salama.vercel.app/sitemap.xml

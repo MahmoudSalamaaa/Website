@@ -52,6 +52,7 @@
     9:'Finance, procurement and inventory integration with Microsoft Dynamics 365 and the unified financial environment.',
     10:'Digital workflows supporting institutional health-technology assessment, review and decision support.',
     14:'Operational data foundation supporting governed reporting and downstream analytical workloads.',
+    19:'Governed supply, procurement and drug-data flow / tracking platform supporting controlled operational visibility and data exchange.',
     20:'Centralized analytical data foundation for cross-platform reporting, governance and executive insight.',
     42:'Digital platform supporting the Africa CDC African Pooled Procurement Mechanism, delivered by UPA’s internal Digital Transformation team across manufacturer prequalification, 30 documented workflows, 13 role IDs, integrations and notifications; designed for continental use across 55 AU Member States.',
     43:'Registration and interoperability work connecting institutional data with GS1 HLRP / GLN services.',

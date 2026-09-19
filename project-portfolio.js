@@ -8,6 +8,7 @@
     {name:'MedIQ — National Procurement & Medical Supply Ecosystem',type:'National Platforms',period:'2020–Present',description:'Flagship national healthcare ecosystem spanning institutional procurement, tendering, pharmacy, planning, logistics, inventory, mobile operations and governed production services.',caseStudy:'mediq.html',evidence:'evidence.html',award:'Pharmaconex Awards 2026 · Excellence in Digital Transformation'},
     {name:'Enterprise Data, Reporting & Analytics',type:'Data & Integration',period:'2020–Present',description:'Connected data foundations covering the operational data store, central warehouse, MedIQ pipelines, strategic dashboards, reporting and procurement analytics.'},
     {name:'Microsoft Dynamics 365 Enterprise Integration',type:'Data & Integration',period:'2020–Present',description:'Governed integration across finance, procurement, inventory and CRM, including mapping, reconciliation, testing and production readiness.'},
+    {name:'Africa CDC — African Pooled Procurement Mechanism (APPM) Digital Platform',type:'National Platforms',period:'2025–Present',description:'Continental pooled-procurement digital platform designed and delivered by UPA’s internal Digital Transformation team under Mahmoud’s leadership, spanning manufacturer prequalification, 30 documented workflows, 13 role IDs, integrations and notifications; designed for use across 55 African Union Member States.'},
     {name:'Healthcare & Government Interoperability',type:'Data & Integration',period:'2020–Present',description:'Independent integration deliveries across HMIS, GS1/GLN, SAP warehouses, government entity mapping, payments and controlled healthcare data exchange.'}
   ];
   const exactType = new Map([
@@ -52,7 +53,7 @@
     10:'Digital workflows supporting institutional health-technology assessment, review and decision support.',
     14:'Operational data foundation supporting governed reporting and downstream analytical workloads.',
     20:'Centralized analytical data foundation for cross-platform reporting, governance and executive insight.',
-    42:'Digital platform supporting the Africa CDC African Pooled Procurement Mechanism.',
+    42:'Digital platform supporting the Africa CDC African Pooled Procurement Mechanism, delivered by UPA’s internal Digital Transformation team across manufacturer prequalification, 30 documented workflows, 13 role IDs, integrations and notifications; designed for continental use across 55 AU Member States.',
     43:'Registration and interoperability work connecting institutional data with GS1 HLRP / GLN services.',
     44:'HMIS integration and healthcare-data migration delivered with governed mapping, validation and reconciliation.',
     45:'Governed MedIQ data pipeline supporting reliable movement of operational data into reporting and analytics.',

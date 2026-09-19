@@ -10,5 +10,7 @@ Disallow: /executive-platform/
 Disallow: /brand-platform/
 Disallow: /executive-capital/
 Disallow: /executive-growth/
+Disallow: /career-kit/downloads/
+Disallow: /career-kit/downloads/originals/
 
 Sitemap: https://mahmoud-salama.vercel.app/sitemap.xml

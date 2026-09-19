@@ -9,10 +9,10 @@ Official current title: **Head of the Central Administration for Information Sys
 ## Evidence at a glance
 - 54-person technology organization
 - 9 direct reports
-- ~60K platform users
-- ~90K facilities/entities
-- ~90K facilities/entities
-- ~300 suppliers
+- 38,000+ current users
+- nearly 90,000 affiliated operational locations
+- nearly 90,000 affiliated operational locations
+- 2,000+ suppliers
 
 ## Selected work
 - **Unified Procurement & Medical Supply Ecosystem** — enterprise systems supporting procurement, inventory, distribution, supplier interaction, reporting and supply-chain operations.

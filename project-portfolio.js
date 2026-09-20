@@ -49,7 +49,7 @@
     4:'Electronic inventory and mobile stocktaking with reconciliation, variance reporting and auditable operational controls.',
     7:'Web and mobile medical-asset lifecycle management covering registration, mapping, maintenance and decommissioning.',
     8:'Bi-directional SAP integration supporting strategic medical-warehouse processes and controlled production reconciliation.',
-    9:'Finance, procurement and inventory integration with Microsoft Dynamics 365 and the unified financial environment.',
+    9:'Enterprise integration connecting UPA operational workflows with Microsoft Dynamics 365 across finance, procurement and inventory; integration scope only, not Dynamics ERP/CRM implementation ownership.',
     10:'Digital workflows supporting institutional health-technology assessment, review and decision support.',
     14:'Operational data foundation supporting governed reporting and downstream analytical workloads.',
     19:'Governed supply, procurement and drug-data flow / tracking platform supporting controlled operational visibility and data exchange.',
@@ -63,7 +63,7 @@
     43:'Registration and interoperability work connecting institutional data with GS1 HLRP / GLN services.',
     44:'HMIS integration and healthcare-data migration delivered with governed mapping, validation and reconciliation.',
     45:'Governed MedIQ data pipeline supporting reliable movement of operational data into reporting and analytics.',
-    46:'National education portal delivered during the Oman / Integral period, combining hands-on engineering and development-team leadership.'
+    46:'National education portal serving 1M+ users, delivered during the Oman / Integral period with hands-on engineering and leadership of a 20-person development team.'
   };
   const projects = master
     .filter(record => record.public === 'yes' && record.status !== 'On Hold / Not Implemented' && !excludedAsContributions.has(record.id) && !mergedOrNonProjectRecords.has(record.id))

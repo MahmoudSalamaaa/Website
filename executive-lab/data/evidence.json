@@ -77,10 +77,10 @@
   },
   {
     "id": "d365",
-    "title": "Microsoft Dynamics 365 ERP & CRM Integration",
+    "title": "Microsoft Dynamics 365 Integration",
     "org": "UPA · Egypt",
     "scope": "Integration architecture",
-    "summary": "Connected procurement, operational, stakeholder, reporting and data platforms with Microsoft Dynamics 365 ERP and CRM using controlled integration patterns.",
+    "summary": "Led UPA-side integration with Microsoft Dynamics 365 using controlled integration patterns; this is integration leadership and does not imply ownership of the Dynamics 365 ERP/CRM implementation.",
     "metrics": [
       "REST connectivity",
       "Workflow alignment and reconciliation",

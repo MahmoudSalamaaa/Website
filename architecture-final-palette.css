@@ -36,3 +36,13 @@ body.architecture-page .gov-grid article{background:#fff!important;border-color:
 body.architecture-page .arch-map-preview{background:radial-gradient(circle at 88% 10%,rgba(20,184,201,.16),transparent 28%),linear-gradient(135deg,#10263b 0%,#17465c 55%,#244f8f 100%)!important;color:#fff!important}
 body.architecture-page .arch-map-preview .kicker{color:#86e9ee!important}body.architecture-page .arch-map-preview h2{color:#fff!important;text-shadow:0 2px 18px rgba(0,0,0,.12)!important}body.architecture-page .arch-map-preview p{color:#d7e5ea!important}body.architecture-page .arch-map-preview .btn{background:var(--ax-amber)!important;color:var(--ax-ink)!important;border-color:var(--ax-amber)!important}body.architecture-page .arch-map-preview .btn:hover,body.architecture-page .arch-map-preview .btn:focus-visible{background:#ffd86b!important;color:var(--ax-ink)!important;border-color:#ffd86b!important}
 @media(max-width:720px){body.architecture-page .case-stack .arch-case:first-child::before{position:relative;display:inline-flex;right:auto;top:auto;margin:18px 20px -2px;background:var(--ax-ink);color:#fff}body.architecture-page .case-stack .arch-case:first-child .arch-case-top{padding-top:28px}body.architecture-page .case-stack .arch-case:first-child .arch-case-top::after{font-size:110px}}
+
+/* 2026-09 architecture visual refinement */
+body.architecture-page .architecture-hero{min-height:650px;display:flex;align-items:center;background:radial-gradient(circle at 85% 14%,rgba(14,127,136,.16),transparent 24%),radial-gradient(circle at 94% 78%,rgba(36,79,143,.13),transparent 26%),linear-gradient(135deg,#fff 0%,#eef5f6 58%,#e8eef2 100%)!important}
+body.architecture-page .architecture-hero::before{color:rgba(16,38,59,.045)!important}
+body.architecture-page .arch-scope article,body.architecture-page .arch-method article,body.architecture-page .gov-grid article{border-radius:18px!important}
+body.architecture-page .arch-case{border-radius:20px!important}
+body.architecture-page .interop-chain,body.architecture-page .interop-proof{border-radius:20px!important}
+body.architecture-page .arch-map-preview{border-radius:20px!important}
+body.architecture-page .arch-map-preview{background:radial-gradient(circle at 88% 10%,rgba(14,127,136,.24),transparent 28%),linear-gradient(135deg,#0d2636,#17465c)!important}
+@media(max-width:680px){body.architecture-page .architecture-hero{min-height:auto}}

@@ -36,7 +36,7 @@
       ['GitHub', 'https://github.com/MahmoudSalamaaa'],
       ['LinkedIn', 'https://www.linkedin.com/in/mahmoud-salama-30249b34'],
       ['Email', 'mailto:ma7moud.salamaaa@gmail.com'],
-      ['Download CV', 'https://drive.google.com/file/d/1lZ6uz6gLUetG-oPLC4iRqOideR4-8lhz/view'],
+      ['Download CV', 'cv-hub.html'],
       ['Digital Business Card', 'card.html']
     ];
 

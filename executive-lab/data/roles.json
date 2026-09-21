@@ -1,26 +1,58 @@
 {
   "cto": {
-    "title": "Technology & IT Executive",
-    "cv": "https://drive.google.com/file/d/1446KDlzDx6oZkSn3uP0Pfv2yd8dligmP/view"
+    "title": "Technology & Digital Transformation Executive — CTO / CDTO",
+    "cv": "../../cv-hub.html"
   },
-  "digital-transformation": {
-    "title": "Digital Transformation & Enterprise Architecture",
-    "cv": "https://drive.google.com/file/d/1kzkIZpasIin-eoo7HOyQD7xz1slN_CAi/view"
+  "cio-it": {
+    "title": "CIO / IT Director — Head of IT",
+    "cv": "../../cv-hub.html",
+    "keywords": [
+      "cio",
+      "it director",
+      "head of it",
+      "information systems",
+      "technology operations",
+      "service resilience",
+      "continuity",
+      "infrastructure",
+      "security",
+      "budget governance"
+    ],
+    "evidence": [
+      "leadership",
+      "mediq",
+      "adoption",
+      "warehouse"
+    ]
   },
   "enterprise-architect": {
-    "title": "Digital Transformation & Enterprise Architecture",
-    "cv": "https://drive.google.com/file/d/1kzkIZpasIin-eoo7HOyQD7xz1slN_CAi/view"
+    "title": "Enterprise & Solution Architecture — Architecture Lead",
+    "cv": "../../cv-hub.html"
+  },
+  "program-delivery": {
+    "title": "Program Director — Head of Delivery / Technology Programs",
+    "cv": "../../cv-hub.html",
+    "keywords": [
+      "program director",
+      "head of delivery",
+      "technology delivery",
+      "program governance",
+      "uat",
+      "cutover",
+      "adoption",
+      "stabilization",
+      "vendor governance",
+      "dependencies"
+    ],
+    "evidence": [
+      "mediq",
+      "adoption",
+      "warehouse",
+      "leadership"
+    ]
   },
   "software-development-manager": {
-    "title": "Software Engineering & Applications Leadership",
-    "cv": "https://drive.google.com/file/d/1fzrsOfTBxmEjSpOFoTZbxUpEfa2lTE7U/view"
-  },
-  "business-analyst": {
-    "title": "Lead / Senior Business Analyst",
-    "cv": "https://drive.google.com/file/d/1NATyf5JSpiHv6yOPZ02k89pe2yKqK2Zk/view"
-  },
-  "oman": {
-    "title": "Oman / GCC Technology Leadership",
-    "cv": "https://drive.google.com/file/d/1446KDlzDx6oZkSn3uP0Pfv2yd8dligmP/view"
+    "title": "Software Engineering & Applications Leader",
+    "cv": "../../cv-hub.html"
   }
 }

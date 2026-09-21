@@ -2,7 +2,7 @@
 (() => {
   'use strict';
   const master = Array.isArray(window.CAREER_PROJECTS) ? window.CAREER_PROJECTS : [];
-  const excludedAsContributions = new Set([12]);
+  const excludedAsContributions = new Set([12]); // Track & Trace is a governance contribution, not a delivered project.
   const mergedOrNonProjectRecords = new Set([138,144,179]);
   const featured = [
     {name:'MedIQ — National Procurement & Medical Supply Ecosystem',type:'National Platforms',period:'2020–Present',description:'Flagship national healthcare ecosystem spanning institutional procurement, tendering, pharmacy, planning, logistics, inventory, mobile operations and governed production services.',caseStudy:'mediq.html',evidence:'evidence.html',award:'Pharmaconex Awards 2026 · Excellence in Digital Transformation'},
@@ -83,7 +83,7 @@
   };
   const projects = master
     .filter(record => record.public === 'yes' && record.status !== 'On Hold / Not Implemented' && !excludedAsContributions.has(record.id) && !mergedOrNonProjectRecords.has(record.id))
-    .map(record => ({id:record.id,name:(record.id === 55 ? 'Omani Dates Electronic Market (Tmoor / Omanidates)' : record.id === 155 ? 'ASOGIC Platform & Registration' : record.name).replace(/^DAF\s+/i,''),type:inferType(record),kind:inferKind(record.name),period:periodFor(record.era),era:record.era,program:programFor(record.id),description:selectedDescriptions[record.id] || '',award:record.id === 46 ? '' : record.award || '',evidence:record.evidence || ''}))
+    .map(record => ({id:record.id,name:(record.id === 48 ? 'Oman Ministry of Education Recruitment System' : record.id === 55 ? 'Omani Dates Electronic Market (Tmoor / Omanidates)' : record.id === 155 ? 'ASOGIC Platform & Registration' : record.name).replace(/^DAF\s+/i,''),type:inferType(record),kind:inferKind(record.name),period:periodFor(record.era),era:record.era,program:programFor(record.id),description:selectedDescriptions[record.id] || '',award:record.id === 46 ? '' : record.award || '',evidence:record.evidence || ''}))
     .sort((a,b) => eraRank(b.era) - eraRank(a.era) || a.id - b.id);
   window.PROJECT_FEATURED = featured;
   window.PROJECT_PORTFOLIO = projects;

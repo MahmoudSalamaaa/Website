@@ -3,7 +3,7 @@
   'use strict';
   const master = Array.isArray(window.CAREER_PROJECTS) ? window.CAREER_PROJECTS : [];
   const excludedAsContributions = new Set([12]); // Track & Trace is a governance contribution, not a delivered project.
-  const mergedOrNonProjectRecords = new Set([138,144,179]);
+  const mergedOrNonProjectRecords = new Set([138,144,179]); // 138 merges into 55 (Omani Dates); 144 merges into 155 (ASOGIC); 179 is summarized as Armed Forces engineering experience rather than a standalone public project.
   const featured = [
     {name:'MedIQ — National Procurement & Medical Supply Ecosystem',type:'National Platforms',period:'2020–Present',description:'Flagship national healthcare ecosystem spanning institutional procurement, tendering, pharmacy, planning, logistics, inventory, mobile operations and governed production services.',caseStudy:'mediq.html',evidence:'evidence.html',award:'Pharmaconex Awards 2026 · Excellence in Digital Transformation'},
     {name:'Enterprise Data, Reporting & Analytics',type:'Data & Integration',period:'2020–Present',description:'Connected data foundations covering the operational data store, central warehouse, MedIQ pipelines, strategic dashboards, reporting and procurement analytics.'},

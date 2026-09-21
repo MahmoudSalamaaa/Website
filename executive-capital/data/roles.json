@@ -1,8 +1,8 @@
 {
   "cto": {
-    "title": "CTO / CIO / IT Director",
+    "title": "Technology & Digital Transformation Executive — CTO / CDTO",
+    "cv": "../../cv-hub.html",
     "tagline": "Technology strategy, enterprise platforms, governance, operations and executive delivery.",
-    "cv": "../docs/Mahmoud_Salama_CV_CTO_IT_Director_LATEST.pdf",
     "keywords": [
       "technology strategy",
       "portfolio management",
@@ -20,29 +20,32 @@
       "d365"
     ]
   },
-  "digital-transformation": {
-    "title": "Digital Transformation Director",
-    "tagline": "Transformation roadmaps, national platforms, governance, adoption and measurable outcomes.",
-    "cv": "../docs/Mahmoud_Salama_CV_Digital_Transformation_Director_LATEST.pdf",
+  "cio-it": {
+    "title": "CIO / IT Director — Head of IT",
+    "cv": "../../cv-hub.html",
     "keywords": [
-      "digital transformation",
-      "program governance",
-      "change management",
-      "platform governance",
-      "stakeholder management",
-      "data platforms"
+      "cio",
+      "it director",
+      "head of it",
+      "information systems",
+      "technology operations",
+      "service resilience",
+      "continuity",
+      "infrastructure",
+      "security",
+      "budget governance"
     ],
     "evidence": [
+      "leadership",
       "mediq",
       "adoption",
-      "warehouse",
-      "leadership"
+      "warehouse"
     ]
   },
   "enterprise-architect": {
-    "title": "Enterprise / Solution Architect",
+    "title": "Enterprise & Solution Architecture — Architecture Lead",
+    "cv": "../../cv-hub.html",
     "tagline": "Architecture decisions across applications, integration, data, platforms and operating models.",
-    "cv": "../docs/Mahmoud_Salama_CV_Enterprise_Architect_LATEST.pdf",
     "keywords": [
       "enterprise architecture",
       "integration architecture",
@@ -58,10 +61,32 @@
       "oman"
     ]
   },
+  "program-delivery": {
+    "title": "Program Director — Head of Delivery / Technology Programs",
+    "cv": "../../cv-hub.html",
+    "keywords": [
+      "program director",
+      "head of delivery",
+      "technology delivery",
+      "program governance",
+      "uat",
+      "cutover",
+      "adoption",
+      "stabilization",
+      "vendor governance",
+      "dependencies"
+    ],
+    "evidence": [
+      "mediq",
+      "adoption",
+      "warehouse",
+      "leadership"
+    ]
+  },
   "software-development-manager": {
-    "title": "Software / Application Development Manager",
+    "title": "Software Engineering & Applications Leader",
+    "cv": "../../cv-hub.html",
     "tagline": "Application delivery, engineering leadership, integration and production ownership.",
-    "cv": "../docs/Mahmoud_Salama_CV_Software_Development_Manager_LATEST.pdf",
     "keywords": [
       "software development",
       "program delivery",
@@ -75,46 +100,6 @@
       "oman",
       "mediq",
       "adoption",
-      "d365"
-    ]
-  },
-  "business-analyst": {
-    "title": "Lead / Senior Business Analyst",
-    "tagline": "Requirements, process redesign, stakeholder alignment, data-supported decisions and transformation delivery.",
-    "cv": "../docs/Mahmoud_Salama_CV_Lead_Senior_Business_Analyst_LATEST.pdf",
-    "keywords": [
-      "requirements",
-      "workflow",
-      "stakeholder management",
-      "analytics",
-      "data mapping",
-      "digital transformation",
-      "process"
-    ],
-    "evidence": [
-      "oman",
-      "d365",
-      "warehouse",
-      "mediq"
-    ]
-  },
-  "oman": {
-    "title": "Oman / GCC Technology Leadership",
-    "tagline": "GCC government delivery with direct Muscat experience and embedded ministry execution.",
-    "cv": "../docs/Mahmoud_Salama_CV_Digital_Transformation_Director_LATEST.pdf",
-    "keywords": [
-      "oman",
-      "gcc",
-      "government technology",
-      "stakeholder management",
-      "software development",
-      "integration",
-      "training"
-    ],
-    "evidence": [
-      "oman",
-      "mediq",
-      "leadership",
       "d365"
     ]
   }

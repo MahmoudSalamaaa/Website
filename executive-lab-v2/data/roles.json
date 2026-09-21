@@ -4,14 +4,16 @@
     "cv": "../../cv-hub.html",
     "tagline": "Technology strategy, enterprise platforms, governance, operations and executive delivery.",
     "keywords": [
+      "cto",
+      "cdto",
+      "chief technology officer",
+      "chief digital officer",
       "technology strategy",
-      "portfolio management",
-      "team leadership",
-      "operations",
-      "service management",
-      "enterprise architecture",
-      "vendor governance",
-      "budget governance"
+      "digital transformation",
+      "transformation portfolio",
+      "technology investment",
+      "executive technology",
+      "technology director"
     ],
     "evidence": [
       "leadership",
@@ -25,15 +27,18 @@
     "cv": "../../cv-hub.html",
     "keywords": [
       "cio",
+      "chief information officer",
       "it director",
       "head of it",
-      "information systems",
-      "technology operations",
+      "information systems director",
+      "technology operations director",
+      "senior it manager",
+      "enterprise it",
       "service resilience",
       "continuity",
       "infrastructure",
       "security",
-      "budget governance"
+      "it budget"
     ],
     "evidence": [
       "leadership",
@@ -47,12 +52,17 @@
     "cv": "../../cv-hub.html",
     "tagline": "Architecture decisions across applications, integration, data, platforms and operating models.",
     "keywords": [
+      "enterprise architect",
+      "solution architect",
+      "architecture lead",
+      "head of enterprise architecture",
+      "integration architect",
+      "application architect",
       "enterprise architecture",
+      "solution architecture",
       "integration architecture",
       "data architecture",
-      "systems integration",
-      "rest api",
-      "platform governance"
+      "systems integration"
     ],
     "evidence": [
       "mediq",
@@ -66,15 +76,18 @@
     "cv": "../../cv-hub.html",
     "keywords": [
       "program director",
+      "programme director",
       "head of delivery",
       "technology delivery",
+      "technical project manager",
+      "senior project manager",
+      "it program manager",
+      "programme manager",
+      "pmo",
       "program governance",
       "uat",
       "cutover",
-      "adoption",
-      "stabilization",
-      "vendor governance",
-      "dependencies"
+      "stabilization"
     ],
     "evidence": [
       "mediq",
@@ -88,13 +101,17 @@
     "cv": "../../cv-hub.html",
     "tagline": "Application delivery, engineering leadership, integration and production ownership.",
     "keywords": [
-      "software development",
-      "program delivery",
-      "testing",
-      "deployment",
-      "production support",
-      "team leadership",
-      "integration"
+      "head of software engineering",
+      "director of software engineering",
+      "engineering manager",
+      "senior engineering manager",
+      "head of applications",
+      "software development manager",
+      "software engineering",
+      "application engineering",
+      "sdlc",
+      "technical debt",
+      "release quality"
     ],
     "evidence": [
       "oman",

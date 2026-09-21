@@ -321,14 +321,14 @@
 
     if (index === '09') {
       const title = card.querySelector('h3');
-      if (title) title.textContent = 'Microsoft Dynamics 365 ERP / Unified Financial System Integration';
+      if (title) title.textContent = 'Microsoft Dynamics 365 / Unified Financial System Integration';
 
       const meta = card.querySelector('.project-meta');
       if (meta) meta.innerHTML = '<span>Enterprise Integration</span><span>·</span><span>Integration leadership</span>';
 
       const description = card.querySelector('.project-content p');
       if (description) {
-        description.textContent = 'Integration of Microsoft Dynamics 365 ERP / the unified financial environment with surrounding enterprise systems and operational workflows, enabling governed data exchange and cross-system process continuity.';
+        description.textContent = 'UPA-side integration of Microsoft Dynamics 365 / the unified financial environment with surrounding enterprise systems and operational workflows, enabling governed data exchange and cross-system process continuity without implying ownership of the Dynamics implementation.';
       }
     }
   });

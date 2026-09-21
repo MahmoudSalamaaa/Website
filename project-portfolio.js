@@ -83,7 +83,7 @@
   };
   const projects = master
     .filter(record => record.public === 'yes' && record.status !== 'On Hold / Not Implemented' && !excludedAsContributions.has(record.id) && !mergedOrNonProjectRecords.has(record.id))
-    .map(record => ({id:record.id,name:(record.id === 48 ? 'Oman Ministry of Education Recruitment System' : record.id === 55 ? 'Omani Dates Electronic Market (Tmoor / Omanidates)' : record.id === 155 ? 'ASOGIC Platform & Registration' : record.name).replace(/^DAF\s+/i,''),type:inferType(record),kind:inferKind(record.name),period:periodFor(record.era),era:record.era,program:programFor(record.id),description:selectedDescriptions[record.id] || '',award:record.id === 46 ? '' : record.award || '',evidence:record.evidence || ''}))
+    .map(record => ({id:record.id,name:(record.id === 48 ? 'Oman Ministry of Education Recruitment System' : record.id === 55 ? 'Omani Dates Electronic Market (Tmoor / Omanidates)' : record.id === 155 ? 'ASOGIC Platform & Registration' : record.name).replace(/^DAF\s+/i,''),type:inferType(record),kind:inferKind(record.name),period:periodFor(record.era),era:record.era,program:programFor(record.id),description:selectedDescriptions[record.id] || '',award:'',evidence:record.evidence || ''}))
     .sort((a,b) => eraRank(b.era) - eraRank(a.era) || a.id - b.id);
   window.PROJECT_FEATURED = featured;
   window.PROJECT_PORTFOLIO = projects;

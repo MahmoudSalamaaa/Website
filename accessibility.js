@@ -71,7 +71,7 @@
       <div class="wrap final-footer">
         <div class="footer-title">Technology leadership grounded in <em>real delivery.</em></div>
         <p class="footer-intro">Mahmoud Salama · Technology Executive · Enterprise Architect · Digital Transformation</p>
-        <div class="footer-nav"><a href="https://github.com/MahmoudSalamaaa" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/mahmoud-salama-30249b34" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:ma7moud.salamaaa@gmail.com">Email</a><a href="/https://drive.google.com/file/d/1lZ6uz6gLUetG-oPLC4iRqOideR4-8lhz/view">Download CV</a><a href="/card.html">Digital Business Card</a></div>
+        <div class="footer-nav"><a href="https://github.com/MahmoudSalamaaa" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/mahmoud-salama-30249b34" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:ma7moud.salamaaa@gmail.com">Email</a><a href="/cv-hub.html">Download CV</a><a href="/card.html">Digital Business Card</a></div>
         <div class="footer-row"><span>Cairo, Egypt</span><span>Systems · Architecture · Delivery · Impact</span></div>
       </div>`;
   };

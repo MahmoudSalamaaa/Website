@@ -46,11 +46,11 @@
     "title": "Governed enterprise integration",
     "tags": [
       "integration",
-      "erp",
-      "crm",
+      "enterprise integration",
+      "dynamics 365",
       "vendors"
     ],
-    "situation": "Operational and procurement platforms needed controlled connectivity with Dynamics 365 ERP and CRM.",
+    "situation": "Operational and procurement platforms needed controlled connectivity with Microsoft Dynamics 365.",
     "action": "Aligned mappings, REST contracts, workflow ownership, reconciliation, monitoring and vendor responsibilities.",
     "result": "Established clearer integration ownership and controlled enterprise connectivity.",
     "evidence": "d365"

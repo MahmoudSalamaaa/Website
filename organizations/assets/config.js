@@ -24,16 +24,16 @@ export const PROFILE = {
 export const DATASETS = {
   ngos: {label:'Africa NGOs & Development', labelAr:'منظمات أفريقيا والتنمية', file:'africa-ngos.csv', kind:'directory', target:148, icon:'AF', page:'africa-ngos.html'},
   organizations: {label:'ICT Organizations', labelAr:'جهات وشركات تكنولوجيا المعلومات', file:'organizations.csv', kind:'directory', target:703, icon:'⌘', page:'organizations.html'},
-  medical: {label:'Medical & Digital Health', labelAr:'الشركات الطبية والصحة الرقمية', file:'medical-companies.csv', kind:'directory', target:651, icon:'✚', page:'medical-companies.html'},
-  recruitment: {label:'Recruitment & Platforms', labelAr:'وكالات ومنصات التوظيف', file:'recruitment-agencies.csv', kind:'directory', target:674, icon:'HR', page:'recruitment-agencies.html'},
-  government: {label:'Government Opportunities', labelAr:'بوابات وفرص حكومية', file:'government-jobs.csv', kind:'directory', target:300, icon:'Gov', page:'government-jobs.html'},
-  companies: {label:'Private Companies', labelAr:'الشركات الخاصة', file:'private-company-directory.csv', kind:'directory', target:812, icon:'Co', page:'private-company-directory.html'},
+  medical: {label:'Medical & Digital Health', labelAr:'الشركات الطبية والصحة الرقمية', file:'medical-companies.csv', kind:'directory', target:651, icon:'✚', page:'healthcare-companies.html'},
+  recruitment: {label:'Recruitment & Platforms', labelAr:'وكالات ومنصات التوظيف', file:'recruitment-agencies.csv', kind:'directory', target:674, icon:'HR', page:'agencies.html'},
+  government: {label:'Government Opportunities', labelAr:'بوابات وفرص حكومية', file:'government-jobs.csv', kind:'directory', target:300, icon:'Gov', page:'government.html'},
+  companies: {label:'Private Companies', labelAr:'الشركات الخاصة', file:'private-company-directory.csv', kind:'directory', target:812, icon:'Co', page:'companies.html'},
   egypt: {label:'Egypt Jobs', labelAr:'وظائف مصر', file:'egypt-vacancies.csv', kind:'job', target:171, icon:'EG', page:'egypt-vacancies.html'},
   gcc: {label:'GCC Jobs', labelAr:'وظائف الخليج', file:'gcc-vacancies.csv', kind:'job', target:530, icon:'GCC', page:'gcc-vacancies.html'},
   remote: {label:'Remote Jobs', labelAr:'الوظائف عن بُعد', file:'remote-jobs.csv', kind:'job', target:467, icon:'◎', page:'remote-jobs.html'},
   jobs: {label:'All Current Jobs', labelAr:'كل الوظائف الحالية', file:'regional-private-companies.csv', kind:'job', target:1507, icon:'Jobs', page:'regional-private-companies.html'},
-  platforms: {label:'Verified Job Sources', labelAr:'مصادر البحث الموثوقة', file:'job-search-platforms.csv', kind:'platform', target:95, icon:'SRC', page:'job-search-platforms.html'},
-  projects: {label:'Projects & Consulting', labelAr:'المشروعات والاستشارات', file:'project-opportunities.csv', kind:'project', target:390, icon:'RFP', page:'project-opportunities.html'}
+  platforms: {label:'Verified Job Sources', labelAr:'مصادر البحث الموثوقة', file:'job-search-platforms.csv', kind:'platform', target:95, icon:'SRC', page:'platforms.html'},
+  projects: {label:'Projects & Consulting', labelAr:'المشروعات والاستشارات', file:'project-opportunities.csv', kind:'project', target:390, icon:'RFP', page:'projects.html'}
 };
 
 export const NAV_ITEMS = [
@@ -73,12 +73,12 @@ export const SECONDARY_NAV_ITEMS = [
   ['egypt-vacancies.html','Egypt Jobs','وظائف مصر'],
   ['gcc-vacancies.html','GCC Jobs','وظائف الخليج'],
   ['remote-jobs.html','Remote Jobs','الوظائف عن بُعد'],
-  ['medical-companies.html','Medical & Digital Health','الطبي والصحة الرقمية'],
-  ['recruitment-agencies.html','Recruitment & Platforms','التوظيف والمنصات'],
-  ['government-jobs.html','Government','الحكومي'],
-  ['private-company-directory.html','Private Companies','الشركات الخاصة'],
-  ['project-opportunities.html','Projects & Consulting','المشروعات والاستشارات'],
-  ['platform-search-hub.html','Search Matrix','مصفوفة البحث'],
+  ['healthcare-companies.html','Medical & Digital Health','الطبي والصحة الرقمية'],
+  ['agencies.html','Recruitment & Platforms','التوظيف والمنصات'],
+  ['government.html','Government','الحكومي'],
+  ['companies.html','Private Companies','الشركات الخاصة'],
+  ['projects.html','Projects & Consulting','المشروعات والاستشارات'],
+  ['explore.html','Search Matrix','مصفوفة البحث'],
   ['dashboard.html','Dashboard','لوحة المؤشرات'],
   ['admin.html','Data Manager','إدارة البيانات'],
   ['link-checker.html','Link Checker','فحص الروابط'],

@@ -1,0 +1,23 @@
+name: Site integrity
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject obsolete career-file references
+        shell: bash
+        run: |
+          set -e
+          if grep -RInE 'CVSalama\.pdf|Mahmoud_Salama_CV_.*_LATEST\.pdf|FINAL FROZEN\.pdf' --include='*.html' --exclude-dir=archive .; then
+            echo "Obsolete career-file reference detected."
+            exit 1
+          fi
+      - name: Check public site links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --accept 200,204,206,301,302,307,308 './**/*.html'
+          fail: true

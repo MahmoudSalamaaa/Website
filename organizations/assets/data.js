@@ -34,7 +34,7 @@ async function fetchText(url){
 
 async function getSeed(){
   if(seedCache)return seedCache;
-  try{seedCache=await (await fetch('./data/seed.json')).json()}catch{seedCache={}}
+  try{seedCache=await (await fetch('../data/seed.json')).json()}catch{seedCache={}}
   return seedCache;
 }
 

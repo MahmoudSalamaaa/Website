@@ -1,11 +1,9 @@
 {
-  "name": "Mahmoud Salama — Executive Portfolio",
-  "short_name": "Mahmoud Salama",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#fbfaf4",
-  "theme_color": "#10263b",
-  "icons": [
-    {"src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}
-  ]
-}
+"name":"Mahmoud Salama — Executive Career Platform","short_name":"Mahmoud Salama","description":"Executive technology leadership, evidence, case studies and role-specific career materials.","id":"/","start_url":"/","scope":"/","display":"standalone","background_color":"#fbfaf4","theme_color":"#10263b",
+"icons":[{"src":"/favicon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}],
+"shortcuts":[
+{"name":"Digital Card","short_name":"Card","url":"/card.html","icons":[{"src":"/favicon.svg","sizes":"any","type":"image/svg+xml"}]},
+{"name":"Recruiter View","short_name":"Recruiter","url":"/recruiter.html","icons":[{"src":"/favicon.svg","sizes":"any","type":"image/svg+xml"}]},
+{"name":"CV Center","short_name":"CVs","url":"/cv-hub.html","icons":[{"src":"/favicon.svg","sizes":"any","type":"image/svg+xml"}]},
+{"name":"Executive Portfolio","short_name":"Portfolio","url":"/portfolio.html","icons":[{"src":"/favicon.svg","sizes":"any","type":"image/svg+xml"}]}
+]}

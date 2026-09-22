@@ -81,6 +81,7 @@
     45:'Governed MedIQ data pipeline supporting reliable movement of operational data into reporting and analytics.',
     46:'National education portal serving 1M+ users, delivered during the Oman / Integral period with hands-on engineering and leadership of a 20-person development team.'
   };
+  // Public portfolio boundary: On Hold / Not Implemented records (including electronic-signature enablement) are intentionally excluded from delivered-project output.
   const projects = master
     .filter(record => record.public === 'yes' && record.status !== 'On Hold / Not Implemented' && !excludedAsContributions.has(record.id) && !mergedOrNonProjectRecords.has(record.id))
     .map(record => ({id:record.id,name:(record.id === 48 ? 'Oman Ministry of Education Recruitment System' : record.id === 55 ? 'Omani Dates Electronic Market (Tmoor / Omanidates)' : record.id === 155 ? 'ASOGIC Platform & Registration' : record.name).replace(/^DAF\s+/i,''),type:inferType(record),kind:inferKind(record.name),period:periodFor(record.era),era:record.era,program:programFor(record.id),description:selectedDescriptions[record.id] || '',award:'',evidence:record.evidence || ''}))

@@ -8,5 +8,5 @@
 {"id":"engineering","label":"Engineering leadership","proof":["applications","APIs and integration","data","platform reliability","delivery"],"routes":["/projects.html","/technologies.html"]},
 {"id":"recognition","label":"Recognition","proof":["Pharmaconex Awards 2026 — Excellence in Digital Transformation","Yashfeen — ITIDA-winning project","Keyframe achieved three ITIDA wins"],"routes":["/governance.html","/evidence.html"]}
 ],
-"boundaries":["OpenTelemetry is not claimed.","FinOps wording is limited to FinOps-aligned private-cloud practice.","APPM was designed to support pooled procurement across all 55 AU Member States; this does not claim active use by all 55 countries.","MedIQ 2.0 documentation is user-authored evidence, not independent third-party evidence."]
+"boundaries":["is not claimed.","FinOps wording is limited to FinOps-aligned private-cloud practice.","APPM was designed to support pooled procurement across all 55 AU Member States; this does not claim active use by all 55 countries.","MedIQ 2.0 documentation is user-authored evidence, not independent third-party evidence."]
 }

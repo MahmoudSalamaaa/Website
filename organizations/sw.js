@@ -3,7 +3,7 @@ const SHELL=[
   './','./index.html','./today.html','./weekly-review.html','./explore.html','./africa-ngos.html','./africa-map.html',
   './regional-private-companies.html','./organizations.html','./dashboard.html','./tracker.html','./review-queue.html',
   './contacts.html','./documents.html','./version-history.html','./calendar.html','./analytics.html','./quality.html',
-  './settings.html','./admin.html','./sources.html','./methodology.html','./job-search-platforms.html',
+  './settings.html','./admin.html','./sources.html','./methodology.html','./platforms.html',
   './ats-connectors.html','./save-from-web.html','./opportunities.html','./consulting.html','./rosters.html','./volunteer-secondments.html','./requirements.html','./templates.html','./email-importer.html','./profile-coverage.html','./rules.html','./archive.html','./vault.html',
   './assets/app.css','./assets/config.js','./assets/i18n.js','./assets/data.js','./assets/tracker.js',
   './assets/productivity.js','./assets/eligibility.js','./assets/security.js','./assets/localdb.js','./assets/shell.js',

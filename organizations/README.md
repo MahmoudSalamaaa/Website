@@ -73,7 +73,7 @@ For deployment, upload the complete `organizations` folder and open `organizatio
 
 Dedicated live-search pages removed:
 - `live-searches.html`
-- `platform-search-hub.html`
+- `explore.html`
 - `platform-search-africa.html`
 - `platform-search-arab.html`
 - `platform-search-egypt.html`
@@ -81,12 +81,12 @@ Dedicated live-search pages removed:
 - `platform-search-remote.html`
 
 Duplicate pages removed:
-- `government-jobs.html` → `government.html`
-- `medical-companies.html` → `healthcare-companies.html`
-- `private-company-directory.html` → `companies.html`
-- `project-opportunities.html` → `projects.html`
-- `recruitment-agencies.html` → `agencies.html`
-- `job-search-platforms.html` → `platforms.html`
+- `government.html` → `government.html`
+- `healthcare-companies.html` → `healthcare-companies.html`
+- `companies.html` → `companies.html`
+- `projects.html` → `projects.html`
+- `agencies.html` → `agencies.html`
+- `platforms.html` → `platforms.html`
 
 ## Test evidence
 

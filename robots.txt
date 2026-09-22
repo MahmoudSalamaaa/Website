@@ -24,4 +24,10 @@ Disallow: /executive-conversion/
 Disallow: /executive-os/
 Disallow: /workspace-hub/
 Disallow: /nomads/
+Disallow: /links/
+
+Disallow: /docs/
+
+Disallow: /private/
+
 Sitemap: https://mahmoud-salama.vercel.app/sitemap.xml

@@ -366,3 +366,52 @@ table{max-width:100%;display:block;overflow-x:auto}
 @media(prefers-reduced-motion:reduce){
   .exec-snapshot-grid>div,.home-cases .case,.operating-steps article,.project-type-summary article,.registry-card,.featured-card,.evidence-card,.tech-category,.gov-win,.gov-rule,.arch-case,.contact-channel,.mediq-node,.recognition-strip-items article,.flagships .case,.timeline-content{transform:none!important}
 }
+
+
+/* 2026 compact editorial pass — shared public-site rhythm. Keeps hierarchy and proof density while reducing vertical travel. */
+:root{--compact-section-y:clamp(48px,5.6vw,76px);--compact-section-y-mobile:42px;--compact-card-pad:clamp(16px,1.8vw,24px);--compact-gap:clamp(12px,1.6vw,22px)}
+
+/* Public pages: tighter section rhythm without flattening hero hierarchy. */
+main>section:not(.executive-hero):not(.mq-hero):not(.contact-hero),
+main>.section,
+main>.band{padding-top:var(--compact-section-y)!important;padding-bottom:var(--compact-section-y)!important}
+
+/* Keep opening statements spacious, but remove oversized viewport-style whitespace. */
+.executive-hero,.contact-hero,.page-hero,.hero,.mq-hero{padding-top:clamp(54px,6vw,84px)!important;padding-bottom:clamp(54px,6vw,84px)!important}
+
+/* Shared editorial headings: less dead space between label, title and supporting copy. */
+.section-head,.signature-head,.page-head,.hero-copy{gap:clamp(10px,1.3vw,18px)!important}
+.section-head{margin-bottom:clamp(22px,3vw,38px)!important}
+.kicker{margin-bottom:clamp(8px,1vw,13px)!important}
+
+/* Dense but readable modular grids. */
+.case-grid,.featured-grid,.category-grid,.evidence-grid,.registry-grid,.operating-steps,.project-type-summary,.recognition-strip-items,.contact-hub-grid,.contact-channel-list,.flagships,.knowledge-grid,.decision-grid{gap:var(--compact-gap)!important}
+.case,.project-card,.featured-card,.gov,.gov-card,.technology-card,.tech-category,.architecture-card,.decision-card,.domain-card,.evidence-card,.recognition-year,.registry-card,.award,.metric,.stat,.portfolio-note,.truth-note,.board-card,.arch-case,.gov-rule,.gov-win,.operating-steps article,.project-type-summary article,.recognition-strip-items article,.flagships .case,.timeline-content{padding:var(--compact-card-pad)!important}
+
+/* Compact copy rhythm inside cards while preserving long-form article readability. */
+.case h3,.project-card h3,.featured-card h3,.evidence-card h3,.registry-card h3,.operating-steps h3,.flagships .case h3{margin-top:8px!important;margin-bottom:8px!important}
+.case p,.project-card p,.featured-card p,.evidence-card p,.registry-card p,.operating-steps p,.flagships .case p{margin-top:0!important;margin-bottom:10px!important}
+.tags{gap:6px!important;margin-top:12px!important}
+.tags span{padding:5px 8px!important}
+
+/* Homepage-specific compression: retain MedIQ as the visual anchor. */
+.home-mandate{padding-top:clamp(52px,6vw,78px)!important;padding-bottom:clamp(52px,6vw,78px)!important}
+.home-mandate .mandate-copy{padding:clamp(20px,2.5vw,30px)!important}
+.home-mandate .mandate-chips{margin:18px 0!important}
+.home-cases .case{min-height:0!important}
+.signature.operating-summary{padding-top:clamp(52px,6vw,78px)!important;padding-bottom:clamp(52px,6vw,78px)!important}
+.recognition-strip{padding-top:clamp(40px,4.5vw,60px)!important;padding-bottom:clamp(40px,4.5vw,60px)!important}
+.cta{padding-top:clamp(44px,5vw,66px)!important;padding-bottom:clamp(44px,5vw,66px)!important}
+
+/* Footer remains a deliberate close, but no longer consumes a full screen. */
+body footer .final-footer{padding-top:clamp(48px,5vw,64px)!important;padding-bottom:24px!important}
+body footer .footer-nav{margin-top:26px!important}
+
+@media(max-width:760px){
+  main>section:not(.executive-hero):not(.mq-hero):not(.contact-hero),main>.section,main>.band{padding-top:var(--compact-section-y-mobile)!important;padding-bottom:var(--compact-section-y-mobile)!important}
+  .executive-hero,.contact-hero,.page-hero,.hero,.mq-hero{padding-top:44px!important;padding-bottom:48px!important}
+  .section-head{margin-bottom:22px!important}
+  .case-grid,.featured-grid,.category-grid,.evidence-grid,.registry-grid,.operating-steps,.project-type-summary,.recognition-strip-items,.contact-hub-grid,.contact-channel-list,.flagships,.knowledge-grid,.decision-grid{gap:12px!important}
+  .case,.project-card,.featured-card,.gov,.gov-card,.technology-card,.tech-category,.architecture-card,.decision-card,.domain-card,.evidence-card,.recognition-year,.registry-card,.award,.metric,.stat,.portfolio-note,.truth-note,.board-card,.arch-case,.gov-rule,.gov-win,.operating-steps article,.project-type-summary article,.recognition-strip-items article,.flagships .case,.timeline-content{padding:16px!important}
+  body footer .final-footer{padding-top:44px!important}
+}

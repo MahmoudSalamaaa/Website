@@ -13,7 +13,6 @@ Disallow: /read/
 Disallow: /togaf/
 Disallow: /technology-mastery/
 Disallow: /organizations/
-Disallow: /archive/
 Disallow: /workspace-hub/
 Disallow: /nomads/
 Disallow: /links/

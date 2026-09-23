@@ -14,7 +14,6 @@
 <h2>Research, knowledge & specialist areas</h2><section class="grid">
 <div class="card"><span class="tag workspace">KNOWLEDGE</span><h3>Read</h3><p>Research/reading knowledge base and thematic source pages.</p><a href="../read/">Open</a></div>
 <div class="card"><span class="tag workspace">CONTENT</span><h3>Insights</h3><p>Insight-oriented content workspace.</p><a href="../insights/">Open</a></div>
-<div class="card"><span class="tag workspace">REFERENCE</span><h3>Organizations</h3><p>Organization-specific reference content.</p><a href="../organizations/">Open</a></div>
 <div class="card"><span class="tag reference">AUTHORITATIVE · NOTION</span><h3>Professional References</h3><p>Notion is the source of truth for referees and background-check forms; do not duplicate contact details into the website.</p><a href="https://app.notion.com/p/3e391b3ef466810fba98ccd8e4368ed6">Open Notion source</a></div>
 <div class="card"><span class="tag workspace">EXPERIMENT</span><h3>Nomads</h3><p>Independent specialist/experimental workspace.</p><a href="../nomads/">Open</a></div>
 <div class="card"><span class="tag reference">ARCHITECTURE</span><h3>Architecture</h3><p>Architecture-specific standalone material complementing root architecture pages.</p><a href="../architecture/">Open</a></div>
@@ -31,13 +30,11 @@
 </section>
 <h2>Repository status</h2><section class="grid">
 <div class="card"><span class="tag prod">ACTIVE</span><h3>Public root</h3><p>Main public HTML/CSS/JS remains in place. No public root page was modified during this organization pass.</p></div>
-<div class="card"><span class="tag reference">PRESERVED</span><h3>Dependency-sensitive areas</h3><p>Assets, APIs, project visuals, organizations and specialist workspaces remain at stable paths until page-level dependency migration is justified.</p></div>
+<div class="card"><span class="tag reference">PRESERVED</span><h3>Dependency-sensitive areas</h3><p>Assets, APIs, project visuals and specialist workspaces remain at stable paths until page-level dependency migration is justified.</p></div>
 <div class="card"><span class="tag prod">DEDUPED</span><h3>Duplicate assets</h3><p>31 <code>.trashed-*</code> files were SHA-verified as exact duplicates of retained assets and removed.</p></div>
 <div class="card"><span class="tag prod">LIVE CHECK</span><h3>Validated workspaces</h3><p>Career Kit, TOGAF, Articles and Executive Platform returned HTTP 200 during live validation. Some protected/share-link checks could not be completed through Vercel's bypass service.</p></div>
 </section><h2>Integrity findings</h2><section class="grid">
 <div class="card"><span class="tag reference">DATA</span><h3>Shared executive datasets</h3><p>Several profile/evidence/industry JSON files are byte-identical across executive waves. They remain duplicated intentionally for workspace portability; deleting them would create unnecessary coupling.</p></div>
-<div class="card"><span class="tag reference">LARGE WORKSPACE</span><h3>Organizations</h3><p>Career Intelligence Dashboard remains an active specialist workspace. Its large page set is not treated as disposable simply because pages are not linked from the public root.</p></div>
 </section><div class="card"><span class="tag prod">CLEAN</span><h3>Generated cache</h3><p>Committed Python bytecode/cache artifacts were removed from Organizations and TOGAF. Source files remain intact.</p></div>
-<div class="card"><span class="tag reference">AUDITED</span><h3>Organizations structure</h3><p>The workspace contains generated/offline datasets, scripts, API helpers and 100+ HTML views. Its <code>data/offline</code> and <code>data/csv</code> trees are actively referenced, so they were preserved rather than misclassified as orphans.</p></div>
 </section></section><div class="note"><strong>Organization rule:</strong> dependency-sensitive active folders remain at stable paths. Retired archive generations and obsolete support snapshots have been removed from the current production source.</div>
 </main><script>const q=document.getElementById('q');q.addEventListener('input',()=>{const s=q.value.toLowerCase();document.querySelectorAll('.card').forEach(c=>c.classList.toggle('hidden',!c.innerText.toLowerCase().includes(s)))})</script><script src="/assets/global-footer.js"></script></body></html>

@@ -9,7 +9,6 @@ Disallow: /brand-platform/
 Disallow: /career-kit/downloads/
 Disallow: /career-kit/downloads/originals/
 
-Disallow: /read/
 Disallow: /togaf/
 Disallow: /technology-mastery/
 Disallow: /workspace-hub/

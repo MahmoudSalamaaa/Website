@@ -4,24 +4,16 @@ Allow: /
 # Archive and experimental generations kept in the repository, not part of the public portfolio.
 Disallow: /old/
 Disallow: /v2/
-Disallow: /executive-lab/
-Disallow: /executive-lab-v2/
 Disallow: /executive-platform/
 Disallow: /brand-platform/
-Disallow: /executive-capital/
-Disallow: /executive-growth/
 Disallow: /career-kit/downloads/
 Disallow: /career-kit/downloads/originals/
 
-Disallow: /completed-interviews/
 Disallow: /read/
 Disallow: /togaf/
 Disallow: /technology-mastery/
 Disallow: /organizations/
-Disallow: /professional-references/
 Disallow: /archive/
-Disallow: /executive-conversion/
-Disallow: /executive-os/
 Disallow: /workspace-hub/
 Disallow: /nomads/
 Disallow: /links/

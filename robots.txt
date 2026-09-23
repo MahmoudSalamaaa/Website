@@ -14,8 +14,6 @@ Disallow: /technology-mastery/
 Disallow: /workspace-hub/
 Disallow: /links/
 
-Disallow: /docs/
-
 Disallow: /private/
 
 Sitemap: https://mahmoud-salama.vercel.app/sitemap.xml

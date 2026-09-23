@@ -12,7 +12,6 @@ Disallow: /career-kit/downloads/originals/
 Disallow: /togaf/
 Disallow: /technology-mastery/
 Disallow: /workspace-hub/
-Disallow: /nomads/
 Disallow: /links/
 
 Disallow: /docs/

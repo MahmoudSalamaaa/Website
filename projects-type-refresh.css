@@ -45,3 +45,16 @@ linear-gradient(128deg,#fffdf5 0%,#eef7f3 54%,#f4e7bf 100%)}
 .registry-program{background:#dca729}
 .registry-links a{background:#dff1f1;color:#075963}.registry-links a:nth-child(2){background:#e6b239;border-color:#c89113}
 @media(max-width:680px){.projects-type-hero{min-height:auto;padding:72px 0 88px}.projects-type-hero::before{font-size:10rem;right:-.08em}.project-type-summary{margin-top:-24px}.project-type-summary article{min-height:126px;border-radius:17px}.featured-card{border-radius:18px}.registry-card{border-radius:16px}}
+
+/* 2026 clarity pass — align Projects with the shared joyful site palette */
+.projects-type-hero{background:radial-gradient(circle at 86% 16%,rgba(15,169,181,.18),transparent 25%),radial-gradient(circle at 12% 88%,rgba(78,134,214,.12),transparent 28%),linear-gradient(180deg,#fffefa 0%,#f3fbfa 100%)!important}
+.projects-type-hero::after{background:var(--final-cyan,#0fa9b5)!important;box-shadow:104px 0 0 var(--final-blue,#4e86d6),52px 24px 0 var(--final-amber,#e8b33e)!important}
+.projects-type-hero .kicker{background:var(--final-ink,#10263b)!important;color:#fff!important}
+.registry-shell{background:linear-gradient(180deg,#f7fbfa 0%,#fff 26%,#fbfaf4 100%)!important}
+.registry-section-head span{color:#087f91!important}.registry-section-head span::before{background:linear-gradient(90deg,var(--final-cyan,#0fa9b5),var(--final-blue,#4e86d6))!important}
+.featured-card{background:linear-gradient(145deg,#12364c,#146978)!important}.featured-card:nth-child(2){background:linear-gradient(145deg,#e9f7f7,#fff)!important;border-color:rgba(15,169,181,.24)!important;box-shadow:0 18px 46px rgba(16,38,59,.09)!important}.featured-card:nth-child(2) .registry-id,.featured-card:nth-child(2) h3,.featured-card:nth-child(2) p{color:#10263b!important}.featured-card:nth-child(2) .registry-type{background:#e7f8f7!important;color:#087f91!important}
+.featured-card:nth-child(3){background:linear-gradient(145deg,#edf3ff,#fff)!important}.featured-card:nth-child(4){background:linear-gradient(145deg,#fff4d8,#fff)!important}.featured-card:nth-child(5){background:linear-gradient(145deg,#eef8f8,#fff)!important}
+.registry-filter.active,.registry-filter[aria-pressed="true"]{background:var(--final-ink,#10263b)!important;color:#fff!important;border-color:var(--final-ink,#10263b)!important;box-shadow:none!important}
+.registry-search:focus{outline:3px solid rgba(15,169,181,.18)!important;border-color:var(--final-cyan,#0fa9b5)!important}
+.registry-card:nth-child(4n+1)::before{background:var(--final-cyan,#0fa9b5)!important}.registry-card:nth-child(4n+2)::before{background:var(--final-blue,#4e86d6)!important}.registry-card:nth-child(4n+3)::before{background:var(--final-amber,#e8b33e)!important}.registry-card:nth-child(4n)::before{background:var(--final-coral,#ed735f)!important}
+.registry-type{background:#e7f8f7!important;color:#087f91!important}.registry-program,.registry-role{background:#fff4d8!important;color:#725315!important}.registry-links a{background:#eaf7f8!important;color:#07596b!important}.registry-links a:nth-child(2){background:#edf3ff!important;color:#315f9f!important;border-color:rgba(78,134,214,.22)!important}

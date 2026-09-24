@@ -1,19 +1,14 @@
 User-agent: *
 Allow: /
 
-# Archive and experimental generations kept in the repository, not part of the public portfolio.
-Disallow: /old/
-Disallow: /v2/
+# Internal/supporting sections intentionally excluded from search indexing.
 Disallow: /executive-platform/
 Disallow: /brand-platform/
 Disallow: /career-kit/downloads/
 Disallow: /career-kit/downloads/originals/
-
 Disallow: /togaf/
 Disallow: /technology-mastery/
 Disallow: /workspace-hub/
 Disallow: /links/
-
-Disallow: /private/
 
 Sitemap: https://mahmoud-salama.vercel.app/sitemap.xml

@@ -74,3 +74,12 @@ body .technology-summary article{border-radius:18px!important}
 .evidence-depth-grid p{color:#60717d;line-height:1.65}
 .evidence-depth-grid a{display:inline-block;margin-top:8px;color:#10263b;font-weight:800}
 @media(max-width:860px){.evidence-depth-grid{grid-template-columns:1fr}}
+
+/* Toolkit contrast repair */
+body .v5-toolkit-section{background:linear-gradient(135deg,#10263b 0%,#173e4c 58%,#315f9f 100%)!important;color:#fff!important}
+body .v5-toolkit-section .kicker{color:#79e1e5!important}
+body .v5-toolkit-section .section-title{color:#fff!important}
+body .v5-toolkit-section .section-copy{color:#d7e5ea!important}
+body .v5-toolkit-grid article{background:rgba(255,255,255,.96)!important;border:1px solid rgba(255,255,255,.18)!important;color:#10263b!important;box-shadow:0 16px 38px rgba(0,0,0,.12)!important}
+body .v5-toolkit-grid article small,body .v5-toolkit-grid article:nth-child(2) small{color:#087f91!important}
+body .v5-toolkit-tags span{background:#eef8f8!important;border:1px solid rgba(15,169,181,.16)!important;color:#284a5d!important}

@@ -37,3 +37,10 @@
   .site-global-nav .site-mobile-menu{min-width:0}
   .site-global-nav .site-mobile-panel{max-width:calc(100vw - 28px)}
 }
+
+/* Make nested navigation unmistakable */
+.desktop-more>summary,.site-global-nav .site-more>summary{gap:7px!important;padding-right:13px!important}
+.desktop-more>summary::after,.site-global-nav .site-more>summary::after{content:"⌄"!important;position:static!important;width:auto!important;height:auto!important;background:none!important;color:var(--site-nav-accent,#0f9cab)!important;font-size:15px!important;font-weight:900!important;line-height:1!important;transform:translateY(-1px);transition:transform .18s ease!important}
+.desktop-more[open]>summary::after,.site-global-nav .site-more[open]>summary::after{transform:rotate(180deg) translateY(1px)!important}
+.desktop-more>summary,.site-global-nav .site-more>summary{border:1px solid rgba(15,156,171,.18)!important;background:rgba(15,156,171,.045)!important}
+.desktop-more>summary:hover,.desktop-more[open]>summary,.site-global-nav .site-more>summary:hover,.site-global-nav .site-more[open]>summary{border-color:rgba(15,156,171,.34)!important;background:#eef9fa!important;color:var(--site-nav-ink,#10263b)!important}

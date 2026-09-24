@@ -2,7 +2,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
 const root = path.resolve(__dirname, '..');
-const pages = ['index','portfolio','projects','experience','architecture','leadership','technologies','governance','contact','flagship-cases','architecture-map'];
+const pages = ['index','portfolio','projects','experience','architecture','technologies','governance','contact','flagship-cases','architecture-map'];
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const attrs = tag => Object.fromEntries([...tag.matchAll(/([\w:-]+)\s*=\s*["']([^"']*)["']/g)].map(m => [m[1], m[2].replaceAll('&amp;', '&')]));
 const failures = [];

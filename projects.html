@@ -39,7 +39,8 @@
   const escapeHtml = value => String(value || '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   const projects = data;
   const categoryIds = {'National Platforms':'count-national','Enterprise Systems':'count-enterprise','Data & Integration':'count-data','Digital Platforms':'count-digital','Mobile & Operations':'count-operations'};
-  document.getElementById('count-main').textContent = projects.length;
+  const mainCount = document.getElementById('count-main');
+  if (mainCount) mainCount.textContent = projects.length;
   Object.entries(categoryIds).forEach(([category,id]) => { const element = document.getElementById(id); if (element) element.textContent = projects.filter(project => project.type === category).length; });
   function render() {
     const query = searchInput.value.trim().toLowerCase();

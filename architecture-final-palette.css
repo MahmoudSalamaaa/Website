@@ -46,3 +46,35 @@ body.architecture-page .interop-chain,body.architecture-page .interop-proof{bord
 body.architecture-page .arch-map-preview{border-radius:20px!important}
 body.architecture-page .arch-map-preview{background:radial-gradient(circle at 88% 10%,rgba(14,127,136,.24),transparent 28%),linear-gradient(135deg,#0d2636,#17465c)!important}
 @media(max-width:680px){body.architecture-page .architecture-hero{min-height:auto}}
+
+/* 2026 joyful architecture pass — clearer hierarchy, brighter site-native palette */
+:root{--ax-joy-cyan:#0fa9b5;--ax-joy-blue:#4e86d6;--ax-joy-amber:#e8b33e;--ax-joy-coral:#ed735f}
+body.architecture-page .architecture-hero{min-height:auto!important;padding:clamp(88px,10vw,132px) 0 74px!important;background:radial-gradient(circle at 86% 16%,rgba(15,169,181,.20),transparent 24%),radial-gradient(circle at 95% 78%,rgba(78,134,214,.13),transparent 26%),radial-gradient(circle at 8% 92%,rgba(232,179,62,.11),transparent 24%),linear-gradient(135deg,#fffefa 0%,#f3fbfa 58%,#eef5ff 100%)!important}
+body.architecture-page .architecture-hero::after{background:var(--ax-joy-cyan)!important;box-shadow:105px 0 0 var(--ax-joy-blue),52px 25px 0 var(--ax-joy-amber)!important}
+body.architecture-page .architecture-hero .kicker{background:#10263b!important;color:#fff!important}
+body.architecture-page .arch-scope{gap:14px!important}
+body.architecture-page .arch-scope article{min-height:150px!important;border-radius:24px!important;background:#fff!important;box-shadow:0 16px 38px rgba(16,38,59,.065)!important}
+body.architecture-page .arch-scope article:nth-child(1){background:linear-gradient(145deg,#e7f8f7,#fff)!important}body.architecture-page .arch-scope article:nth-child(2){background:linear-gradient(145deg,#edf3ff,#fff)!important}body.architecture-page .arch-scope article:nth-child(3){background:linear-gradient(145deg,#fff4d8,#fff)!important}body.architecture-page .arch-scope article:nth-child(4){background:linear-gradient(145deg,#fff0eb,#fff)!important}
+body.architecture-page .arch-scope article:nth-child(1)::before{background:var(--ax-joy-cyan)!important}body.architecture-page .arch-scope article:nth-child(2)::before{background:var(--ax-joy-blue)!important}body.architecture-page .arch-scope article:nth-child(3)::before{background:var(--ax-joy-amber)!important}body.architecture-page .arch-scope article:nth-child(4)::before{background:var(--ax-joy-coral)!important}
+body.architecture-page .arch-section.alt{background:linear-gradient(180deg,#f5fbfa,#fff 88%)!important}
+body.architecture-page .arch-method{gap:14px!important}
+body.architecture-page .arch-method article{border-radius:24px!important;box-shadow:0 12px 30px rgba(16,38,59,.05)!important}
+body.architecture-page .arch-method article:nth-child(1){background:#f0fbfa!important}body.architecture-page .arch-method article:nth-child(2){background:#f1f5fd!important}body.architecture-page .arch-method article:nth-child(3){background:#fff9e9!important}body.architecture-page .arch-method article:nth-child(4){background:#fff3ef!important}body.architecture-page .arch-method article:nth-child(5){background:#f3f8fc!important}
+body.architecture-page .arch-method article:before{border-radius:999px!important;background:#10263b!important;color:#fff!important}body.architecture-page .arch-method article:nth-child(2):before{background:var(--ax-joy-blue)!important}body.architecture-page .arch-method article:nth-child(3):before{background:var(--ax-joy-amber)!important;color:#10263b!important}body.architecture-page .arch-method article:nth-child(4):before{background:var(--ax-joy-coral)!important}body.architecture-page .arch-method article:nth-child(5):before{background:var(--ax-joy-cyan)!important}
+body.architecture-page .arch-case{border-radius:28px!important;box-shadow:0 18px 48px rgba(16,38,59,.07)!important}
+body.architecture-page .arch-case:nth-child(1) .arch-case-top{background:radial-gradient(circle at 88% 12%,rgba(15,169,181,.25),transparent 28%),linear-gradient(135deg,#10263b,#155a68)!important}
+body.architecture-page .arch-case:nth-child(2) .arch-case-top{background:linear-gradient(135deg,#315f9f,#4e86d6)!important}
+body.architecture-page .arch-case:nth-child(3) .arch-case-top{background:linear-gradient(135deg,#0d7882,#0fa9b5)!important}
+body.architecture-page .arch-decision-grid article:nth-child(1)::before{background:var(--ax-joy-cyan)!important}body.architecture-page .arch-decision-grid article:nth-child(2)::before{background:var(--ax-joy-blue)!important}body.architecture-page .arch-decision-grid article:nth-child(3)::before{background:var(--ax-joy-amber)!important}body.architecture-page .arch-decision-grid article:nth-child(4)::before{background:var(--ax-joy-coral)!important}
+body.architecture-page .arch-evidence{background:linear-gradient(90deg,#edf9f8,#f2f6fd)!important}
+body.architecture-page .interop-chain{background:linear-gradient(145deg,#f0fbfa,#fff)!important}body.architecture-page .interop-proof{background:linear-gradient(145deg,#f1f5fd,#fff)!important}
+body.architecture-page .interop-node{background:#fff!important}body.architecture-page .interop-node:nth-of-type(3){background:#fff5d9!important;border-color:#ead49b!important}
+body.architecture-page .interop-arrow{color:var(--ax-joy-coral)!important}
+body.architecture-page .gov-grid{gap:14px!important}
+body.architecture-page .gov-grid article{border-radius:24px!important}
+body.architecture-page .gov-grid article:nth-child(1){background:linear-gradient(145deg,#e7f8f7,#fff)!important}body.architecture-page .gov-grid article:nth-child(2){background:linear-gradient(145deg,#edf3ff,#fff)!important}body.architecture-page .gov-grid article:nth-child(3){background:linear-gradient(145deg,#fff4d8,#fff)!important}body.architecture-page .gov-grid article:nth-child(4){background:linear-gradient(145deg,#fff0eb,#fff)!important}
+body.architecture-page .gov-grid small{background:#10263b!important;color:#fff!important}body.architecture-page .gov-grid article:nth-child(2) small{background:var(--ax-joy-blue)!important}body.architecture-page .gov-grid article:nth-child(3) small{background:var(--ax-joy-amber)!important;color:#10263b!important}body.architecture-page .gov-grid article:nth-child(4) small{background:var(--ax-joy-coral)!important}
+body.architecture-page .arch-map-preview{background:radial-gradient(circle at 88% 12%,rgba(15,169,181,.28),transparent 28%),linear-gradient(135deg,#10263b 0%,#17465c 52%,#315f9f 100%)!important;border-radius:28px!important}
+body.architecture-page .arch-map-preview .btn{background:#fff!important;color:#10263b!important;border-color:#fff!important;box-shadow:none!important}
+body.architecture-page .arch-map-preview .btn:hover{background:#dff7f7!important;border-color:#dff7f7!important}
+body.architecture-page .arch-scope article,body.architecture-page .arch-method article,body.architecture-page .arch-case,body.architecture-page .gov-grid article{opacity:1!important;visibility:visible!important}

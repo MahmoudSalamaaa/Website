@@ -448,3 +448,5 @@ body footer .footer-nav{margin-top:26px!important}
   body .home-cases .case-grid.root-priority>.case{grid-column:auto!important;width:auto!important;max-width:none!important;}
   body .home-cases .case-grid.root-priority>.case:nth-child(5){grid-column:auto!important;}
 }
+
+.site-language{padding:.48rem .72rem!important;border:1px solid #cfe1f4!important;border-radius:999px!important;color:#1268f3!important;font:800 10px "IBM Plex Mono",monospace!important;text-decoration:none!important}.site-language:hover,.site-language:focus-visible{background:#eef6ff!important;color:#09265c!important}@media(max-width:900px){.site-language{display:none!important}}

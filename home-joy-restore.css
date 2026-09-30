@@ -263,7 +263,7 @@ body{overflow-x:clip!important;background:#fbfcfb!important}
 body main>section{position:relative!important}
 body .wrap{width:min(1180px,calc(100% - 40px))!important;margin-inline:auto!important}
 body h2,body h3{overflow-wrap:normal!important;word-break:normal!important}
-body .executive-hero{padding:clamp(72px,8vw,118px) 0 clamp(62px,7vw,104px)!important}
+body .executive-hero{padding:clamp(28px,3vw,42px) 0 clamp(62px,7vw,104px)!important}
 body .executive-hero .hero-grid{grid-template-columns:minmax(0,1.02fr) minmax(360px,.98fr)!important;gap:clamp(34px,6vw,88px)!important;align-items:center!important}
 body .executive-hero .hero-copy{min-width:0!important}
 body .executive-hero .hero-copy h1{max-width:10.5ch!important;margin:18px 0 22px!important;font-size:clamp(3.9rem,6.7vw,7rem)!important;line-height:.91!important;letter-spacing:-.07em!important}
@@ -323,7 +323,7 @@ body .cta h2{max-width:15ch!important;margin:14px 0 0!important;color:#fff!impor
 body .cta h2 em{color:#f2c95f!important}
 body .cta .btn{min-height:50px!important;white-space:nowrap!important;background:#f2c95f!important;color:#10263b!important;border-color:#f2c95f!important}
 @media(max-width:960px){
-  body .executive-hero{padding-top:58px!important}
+  body .executive-hero{padding-top:28px!important}
   body .executive-hero .hero-grid{grid-template-columns:1fr!important;gap:34px!important}
   body .executive-hero .photo-card{justify-self:center!important}
   body .exec-snapshot-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
@@ -337,7 +337,7 @@ body .cta .btn{min-height:50px!important;white-space:nowrap!important;background
 }
 @media(max-width:600px){
   body .wrap{width:calc(100% - 32px)!important}
-  body .executive-hero{padding:42px 0 48px!important}
+  body .executive-hero{padding:24px 0 48px!important}
   body .executive-hero .hero-copy h1{max-width:12ch!important;font-size:clamp(2.65rem,10.5vw,4rem)!important;line-height:1!important}
   body .executive-hero .hero-copy>p{font-size:.95rem!important}
   body .executive-hero .hero-actions{display:grid!important;grid-template-columns:1fr 1fr!important}

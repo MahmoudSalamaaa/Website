@@ -35,6 +35,7 @@
     if (page === 'evidence.html') return 'evidence';
     if (page === 'card.html') return 'card';
     if (page === 'contact.html') return 'contact';
+    if (['faq.html','executive-brief.html','evidence-register.html','how-i-work.html','architecture-decisions.html','insights.html','insights-production-readiness.html','insights-integration-ownership.html','insights-national-platforms.html','ar.html'].includes(page)) return 'evidence';
     return '';
   };
 
@@ -47,7 +48,7 @@
     const existing = document.querySelector('nav[aria-label="Primary navigation"], nav:first-of-type');
     if (!existing) return;
     const active = currentSection();
-    const moreActive = ['technologies','contributions','evidence','card'].includes(active);
+    const moreActive = ['technologies','contributions','evidence','card','faq'].includes(active);
     const nav = document.createElement('nav');
     nav.className = 'site-global-nav';
     nav.setAttribute('aria-label', 'Primary navigation');
@@ -56,7 +57,7 @@
         <a class="site-brand" href="/index.html" aria-label="Mahmoud Salama — home"><img src="/kms-logo-original.png" width="40" height="40" alt="" aria-hidden="true"><span>MAHMOUD SALAMA</span></a>
         <div class="site-desktop-links">
           ${navLink('/portfolio.html','Portfolio','portfolio',active)}${navLink('/experience.html','Experience','experience',active)}${navLink('/projects.html','Projects','projects',active)}${navLink('/architecture.html','Architecture','architecture',active)}${navLink('/governance.html','Recognition','recognition',active)}
-          <details class="site-more${moreActive ? ' is-active' : ''}"><summary>More</summary><div class="site-more-menu">${navLink('/technologies.html','Technology Capabilities','technologies',active)}${navLink('/contributions.html','National Contributions','contributions',active)}${navLink('/evidence.html','Evidence Registry','evidence',active)}${navLink('/card.html','Digital Business Card','card',active)}</div></details>
+          <details class="site-more${moreActive ? ' is-active' : ''}"><summary>More</summary><div class="site-more-menu">${navLink('/technologies.html','Technology Capabilities','technologies',active)}${navLink('/contributions.html','National Contributions','contributions',active)}${navLink('/evidence.html','Evidence Registry','evidence',active)}${navLink('/faq.html','FAQ','faq',active)}${navLink('/executive-brief.html','Executive Brief','evidence',active)}${navLink('/insights.html','Insights','evidence',active)}${navLink('/card.html','Digital Business Card','card',active)}</div></details>
         </div>
         <a class="site-contact${active === 'contact' ? ' active' : ''}" href="/contact.html"${active === 'contact' ? ' aria-current="page"' : ''}>LET'S TALK →</a>
         <details class="site-mobile-menu"><summary>Menu</summary><div class="site-mobile-panel">${navLink('/portfolio.html','Portfolio','portfolio',active)}${navLink('/experience.html','Experience','experience',active)}${navLink('/projects.html','Projects','projects',active)}${navLink('/architecture.html','Architecture','architecture',active)}${navLink('/governance.html','Recognition','recognition',active)}<div class="site-mobile-secondary-label">More</div>${navLink('/technologies.html','Technology Capabilities','technologies',active)}${navLink('/contributions.html','National Contributions','contributions',active)}${navLink('/evidence.html','Evidence Registry','evidence',active)}${navLink('/card.html','Digital Business Card','card',active)}<a class="site-mobile-contact${active === 'contact' ? ' active' : ''}" href="/contact.html"${active === 'contact' ? ' aria-current="page"' : ''}>Start a conversation →</a></div></details>

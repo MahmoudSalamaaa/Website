@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>FAQ — Mahmoud Salama | Technology Leadership &amp; Architecture</title>
+  <meta name="description" content="Evidence-led answers about Mahmoud Salama's technology leadership, enterprise architecture, MedIQ delivery experience and public work.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://mahmoud-salama.vercel.app/faq.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FAQ — Mahmoud Salama">
+  <meta property="og:description" content="A concise, evidence-led guide to Mahmoud Salama's public experience, architecture practice and technology leadership.">
+  <meta property="og:url" content="https://mahmoud-salama.vercel.app/faq.html">
+  <meta property="og:image" content="https://mahmoud-salama.vercel.app/og-executive-card.png">
+  <link rel="stylesheet" href="executive-canvas.css">
+  <link rel="stylesheet" href="site-nav.css" data-site-nav-styles>
+  <link rel="stylesheet" href="site-unified-polish.css" data-site-unified-polish>
+  <link rel="stylesheet" href="site-joy-balance.css">
+  <link rel="stylesheet" href="joy-accent.css">
+  <link rel="stylesheet" href="accessibility.css">
+  <link rel="stylesheet" href="site-finale.css" data-site-finale>
+  <link rel="stylesheet" href="/assets/global-footer.css">
+  <style>
+    :root{--faq-ink:#10275b;--faq-muted:#5f7295;--faq-line:#dce9f6;--faq-blue:#1268f3;--faq-cyan:#13bfe1;--faq-violet:#7168f6;--faq-amber:#ffbd45;--faq-paper:#f8fbff;--faq-shadow:0 24px 70px rgba(31,91,160,.13)}
+    .faq-page{background:var(--faq-paper);color:var(--faq-ink);overflow-x:hidden}
+    .faq-hero{position:relative;overflow:hidden;padding:clamp(72px,10vw,132px) 0 82px;background:radial-gradient(circle at 89% 18%,rgba(19,191,225,.22),transparent 27%),radial-gradient(circle at 8% 90%,rgba(113,104,246,.15),transparent 29%),linear-gradient(135deg,#fffef9 0%,#f4fbff 68%,#fff6d6 100%)}
+    .faq-hero:after{content:"";position:absolute;right:7%;bottom:32px;width:140px;height:54px;border-top:2px dashed rgba(113,104,246,.55);border-radius:50%;transform:rotate(-9deg)}
+    .faq-hero .wrap{position:relative;z-index:1}
+    .faq-kicker,.faq-label{font:800 11px/1.4 "IBM Plex Mono",monospace;letter-spacing:.11em;text-transform:uppercase;color:#48719e}
+    .faq-hero h1{max-width:850px;margin:16px 0 20px;font:900 clamp(46px,7vw,86px)/.96 Inter,var(--sans,sans-serif);letter-spacing:-.065em}
+    .faq-lead{max-width:710px;margin:0;color:#506a86;font-size:18px;line-height:1.75}
+    .faq-note{display:inline-flex;align-items:center;gap:9px;margin-top:28px;padding:10px 14px;border:1px solid rgba(18,104,243,.18);border-radius:999px;background:rgba(255,255,255,.72);color:#27598b;font:700 11px/1.4 "IBM Plex Mono",monospace}
+    .faq-note:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--faq-cyan);box-shadow:0 0 0 5px rgba(19,191,225,.14)}
+    .faq-shell{padding:54px 0 96px}
+    .faq-grid{display:grid;grid-template-columns:minmax(190px,.65fr) minmax(0,2fr);gap:clamp(28px,6vw,84px);align-items:start}
+    .faq-index{position:sticky;top:24px;padding:22px;border:1px solid var(--faq-line);border-radius:22px;background:rgba(255,255,255,.75);box-shadow:var(--faq-shadow)}
+    .faq-index h2{margin:0 0 14px;font-size:15px;letter-spacing:-.02em}
+    .faq-index a{display:block;padding:8px 0;color:var(--faq-muted);font-size:13px;text-decoration:none;border-bottom:1px solid rgba(220,233,246,.72)}
+    .faq-index a:last-child{border-bottom:0}.faq-index a:hover,.faq-index a:focus-visible{color:var(--faq-blue)}
+    .faq-main{min-width:0}
+    .faq-group{margin:0 0 42px;scroll-margin-top:28px}
+    .faq-group-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin:0 0 14px;padding-bottom:12px;border-bottom:2px solid var(--faq-ink)}
+    .faq-group h2{margin:0;font-size:clamp(25px,3vw,36px);letter-spacing:-.045em}
+    .faq-group-head span{color:#7f94ad;font:700 10px "IBM Plex Mono",monospace;letter-spacing:.1em}
+    .faq-item{margin:10px 0;border:1px solid var(--faq-line);border-radius:17px;background:#fff;box-shadow:0 10px 28px rgba(31,91,160,.06);overflow:hidden}
+    .faq-item[open]{border-color:rgba(18,104,243,.38);box-shadow:0 16px 36px rgba(31,91,160,.1)}
+    .faq-item summary{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 22px;cursor:pointer;list-style:none;font-size:18px;font-weight:800;line-height:1.25}
+    .faq-item summary::-webkit-details-marker{display:none}.faq-item summary:after{content:"+";flex:0 0 auto;color:var(--faq-blue);font:400 28px/1 Arial}.faq-item[open] summary:after{content:"−"}
+    .faq-item summary:focus-visible{outline:3px solid rgba(19,191,225,.5);outline-offset:-3px}
+    .faq-answer{padding:0 22px 22px;color:#536b86;font-size:15px;line-height:1.78}
+    .faq-answer p{margin:0 0 12px}.faq-answer p:last-child{margin-bottom:0}
+    .faq-answer a{color:#0b61dc;font-weight:800;text-underline-offset:3px}
+    .faq-source{display:inline-block;margin-top:4px;padding:7px 10px;border-radius:999px;background:#eef6ff;color:#245c9c!important;font:800 10px "IBM Plex Mono",monospace;text-decoration:none}
+    .faq-proof{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;margin-top:20px;padding:22px;border:1px solid rgba(255,189,69,.55);border-radius:20px;background:linear-gradient(135deg,#fffdf2,#fff 70%);box-shadow:var(--faq-shadow)}
+    .faq-proof h2{margin:0 0 7px;font-size:22px;letter-spacing:-.035em}.faq-proof p{margin:0;color:#637895;font-size:14px;line-height:1.65}
+    .faq-proof-links{display:flex;flex-wrap:wrap;align-content:center;justify-content:flex-end;gap:8px}.faq-proof-links a{padding:9px 11px;border:1px solid var(--faq-line);border-radius:999px;background:#fff;color:var(--faq-blue);font:800 10px "IBM Plex Mono",monospace;text-decoration:none}
+    @media(max-width:760px){.faq-hero{padding:64px 0 60px}.faq-hero h1{font-size:clamp(43px,12vw,64px)}.faq-grid{grid-template-columns:1fr;gap:30px}.faq-index{position:relative;top:auto}.faq-index a{display:inline-block;margin-right:13px;border:0}.faq-proof{grid-template-columns:1fr}.faq-proof-links{justify-content:flex-start}.faq-item summary{padding:17px 18px;font-size:16px}.faq-answer{padding:0 18px 19px;font-size:14px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"What does Mahmoud Salama do?","acceptedAnswer":{"@type":"Answer","text":"Mahmoud Salama is a technology and digital transformation executive focused on enterprise architecture, integration, delivery governance and operational ownership."}},
+    {"@type":"Question","name":"What was Mahmoud's role in MedIQ?","acceptedAnswer":{"@type":"Answer","text":"The public case study documents work across core re-architecture, migration, integration, testing, cutover, stabilization and production for a national healthcare procurement and supply ecosystem."}},
+    {"@type":"Question","name":"What kind of architecture does Mahmoud work on?","acceptedAnswer":{"@type":"Answer","text":"The published architecture material covers capability boundaries, APIs, identity, data platforms, resilience, delivery governance and the path from design to operations."}}
+  ]}
+  </script>
+</head>
+<body class="faq-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <nav aria-label="Primary navigation"><div class="wrap navbar">
+    <a class="mark" href="index.html"><img src="kms-logo-original.png" width="44" alt="" aria-hidden="true"><span>MAHMOUD SALAMA</span></a>
+    <div class="links desktop-links"><a href="portfolio.html">Portfolio</a><a href="experience.html">Experience</a><a href="projects.html">Projects</a><a href="architecture.html">Architecture</a><a class="active" aria-current="page" href="faq.html">FAQ</a></div>
+    <a class="pill desktop-contact" href="contact.html">LET'S TALK →</a>
+    <details class="mobile-nav"><summary>Menu</summary><div class="mobile-nav-panel"><a href="portfolio.html">Portfolio</a><a href="experience.html">Experience</a><a href="projects.html">Projects</a><a href="architecture.html">Architecture</a><a class="active" aria-current="page" href="faq.html">FAQ</a><a class="mobile-contact" href="contact.html">Start a conversation →</a></div></details>
+  </div></nav>
+  <main id="main" tabindex="-1">
+    <section class="faq-hero"><div class="wrap">
+      <div class="faq-kicker">PUBLIC FAQ · EVIDENCE BEFORE ADJECTIVES</div>
+      <h1>The questions behind the work.</h1>
+      <p class="faq-lead">A direct guide to Mahmoud's public experience, leadership scope and architecture practice — built from the work documented across this site.</p>
+      <div class="faq-note">Answers stay inside the published record</div>
+    </div></section>
+    <section class="faq-shell"><div class="wrap faq-grid">
+      <aside class="faq-index" aria-label="FAQ sections">
+        <div class="faq-label">Browse by lens</div>
+        <h2>Start with the question you actually have.</h2>
+        <a href="#scope">Role &amp; scope</a><a href="#mediq">MedIQ</a><a href="#architecture">Architecture</a><a href="#delivery">Delivery &amp; scale</a><a href="#proof">Sources &amp; contact</a>
+      </aside>
+      <div class="faq-main">
+        <section class="faq-group" id="scope">
+          <div class="faq-group-head"><h2>Role &amp; scope</h2><span>01 / ORIENTATION</span></div>
+          <details class="faq-item" open><summary>What does Mahmoud Salama do?</summary><div class="faq-answer"><p>He is a technology and digital transformation executive whose public work sits across enterprise architecture, integration, software delivery, governance and operational ownership.</p><p><a class="faq-source" href="experience.html">Read the experience profile →</a></p></div></details>
+          <details class="faq-item"><summary>How much leadership scope is documented?</summary><div class="faq-answer"><p>The site documents leadership of a 54+ person technology organisation, 9 direct reports and accountability for an annual EGP 150M IT budget. These are published scope indicators, not a claim about every role or project.</p><p><a class="faq-source" href="portfolio.html">See the executive systems canvas →</a></p></div></details>
+          <details class="faq-item"><summary>Is his experience limited to strategy?</summary><div class="faq-answer"><p>No. The published evidence connects strategy to architecture decisions, integration contracts, testing, cutover, stabilization, production support and handover. The emphasis is on owning what happens after the design is approved.</p><p><a class="faq-source" href="projects.html">Explore the project record →</a></p></div></details>
+        </section>
+        <section class="faq-group" id="mediq">
+          <div class="faq-group-head"><h2>MedIQ</h2><span>02 / CASE EVIDENCE</span></div>
+          <details class="faq-item"><summary>What was Mahmoud's role in MedIQ?</summary><div class="faq-answer"><p>The public case study documents work across core re-architecture, migration, integration, testing, cutover, stabilization and production for a national healthcare procurement and supply ecosystem.</p><p><a class="faq-source" href="case-mediq.html">Read the MedIQ case study →</a></p></div></details>
+          <details class="faq-item"><summary>What scale is publicly described for MedIQ?</summary><div class="faq-answer"><p>The site describes 38K+ users, 5,900+ government entities, approximately 90K affiliated locations and 2,000+ suppliers. The figures are presented as the platform context in the published case study.</p><p><a class="faq-source" href="case-mediq.html">Check the published context →</a></p></div></details>
+          <details class="faq-item"><summary>What does the MedIQ integration work include?</summary><div class="faq-answer"><p>The documented examples include bi-directional UPA↔SAP exchange for purchase requests, goods receipts, invoices, status and reconciliation, plus enterprise integration work around contracts, mapping, SIT/UAT, security and stabilization.</p><p><a class="faq-source" href="architecture.html">See the architecture view →</a></p></div></details>
+        </section>
+        <section class="faq-group" id="architecture">
+          <div class="faq-group-head"><h2>Architecture</h2><span>03 / HOW THE WORK THINKS</span></div>
+          <details class="faq-item"><summary>What kind of architecture does Mahmoud work on?</summary><div class="faq-answer"><p>The published architecture material covers capability boundaries, APIs, identity, data platforms, resilience, delivery governance and the path from design to operations. It is architecture framed as a system of decisions, not a diagram collection.</p><p><a class="faq-source" href="architecture.html">Open the architecture page →</a></p></div></details>
+          <details class="faq-item"><summary>How does he approach enterprise integrations?</summary><div class="faq-answer"><p>The public material points to clear API boundaries, explicit contracts and mappings, controlled testing, security review, reconciliation and a deliberate handover into operations.</p><p><a class="faq-source" href="projects.html">Review the integration evidence →</a></p></div></details>
+          <details class="faq-item"><summary>Which technologies and patterns are part of the public record?</summary><div class="faq-answer"><p>The site references enterprise integration, OAuth2/OIDC identity, operational data and analytics platforms, private-cloud-aligned resilience, platform/SRE thinking and FinOps-aware ownership. The technologies page provides the fuller inventory.</p><p><a class="faq-source" href="technologies.html">Browse the technology map →</a></p></div></details>
+        </section>
+        <section class="faq-group" id="delivery">
+          <div class="faq-group-head"><h2>Delivery &amp; scale</h2><span>04 / FROM PLAN TO PRODUCTION</span></div>
+          <details class="faq-item"><summary>What national-scale platforms are documented?</summary><div class="faq-answer"><p>The public portfolio includes MedIQ in healthcare, an Oman national educational portal described at approximately 1M users, Africa CDC's APPM platform, and Maktabi/Morasalat electronic correspondence work.</p><p><a class="faq-source" href="portfolio.html">View the portfolio record →</a></p></div></details>
+          <details class="faq-item"><summary>What does delivery ownership look like in practice?</summary><div class="faq-answer"><p>Across the published work, ownership includes aligning stakeholders, shaping the architecture, managing integration and testing, supporting cutover, stabilizing production and keeping monitoring, incidents, continuity and improvement inside the definition of success.</p><p><a class="faq-source" href="experience.html">See the leadership model →</a></p></div></details>
+          <details class="faq-item"><summary>Does the site list every role, credential or private detail?</summary><div class="faq-answer"><p>No. This FAQ stays with publicly documented professional evidence. Salary, personal contact details beyond the public contact routes, private information and unsupported claims are intentionally not included.</p><p><a class="faq-source" href="contact.html">Use the public contact route →</a></p></div></details>
+        </section>
+        <section class="faq-proof" id="proof">
+          <div><div class="faq-label">Evidence trail</div><h2>Want the long version?</h2><p>Use the case studies, architecture notes and experience pages as the primary sources behind these answers.</p></div>
+          <div class="faq-proof-links"><a href="case-mediq.html">MedIQ</a><a href="architecture.html">Architecture</a><a href="experience.html">Experience</a><a href="contact.html">Contact</a></div>
+        </section>
+      </div>
+    </div></section>
+  </main>
+  <footer><div class="wrap final-footer"><div class="footer-title">Technology leadership grounded in <em>real delivery.</em></div><p class="footer-intro">Mahmoud Salama · Technology Executive · Enterprise Architect · Digital Transformation</p><div class="footer-nav"><a href="https://github.com/MahmoudSalamaaa" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/mahmoud-salama-30249b34" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:ma7moud.salamaaa@gmail.com">Email</a><a href="cv-hub.html">Download CV</a><a href="card.html">Digital Business Card</a></div><div class="footer-row"><span>Cairo, Egypt</span><span>Systems · Architecture · Delivery · Impact</span></div></div></footer>
+  <script src="/assets/global-footer.js"></script>
+  <script src="accessibility.js" defer></script>
+</body>
+</html>

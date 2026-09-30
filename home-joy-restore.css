@@ -306,9 +306,9 @@ body .home-cases .tags span{padding:6px 8px!important;border:1px solid rgba(16,3
 body .home-cases .section-action{margin-top:24px!important}
 body .recognition-strip{padding:clamp(58px,7vw,88px) 0!important}
 body .signature.operating-summary{padding:clamp(64px,8vw,104px) 0!important;background:#f6f8fc!important}
-body .signature-head{display:grid!important;grid-template-columns:minmax(0,.9fr) minmax(280px,.7fr)!important;align-items:end!important;gap:34px!important;margin-bottom:28px!important}
-body .signature-head h2{max-width:13ch!important;margin:14px 0 0!important;font-size:clamp(2.5rem,4.8vw,5rem)!important;line-height:.97!important;letter-spacing:-.065em!important}
-body .signature-head>p{max-width:44ch!important;margin:0!important;color:#5a707d!important;font-size:.98rem!important;line-height:1.68!important}
+body .signature-head{display:grid!important;grid-template-columns:1fr!important;gap:18px!important;margin-bottom:28px!important}
+body .signature-head h2{max-width:26ch!important;margin:14px 0 0!important;font-size:clamp(2.5rem,4.8vw,5rem)!important;line-height:.97!important;letter-spacing:-.065em!important}
+body .signature-head>p{max-width:76ch!important;margin:0!important;color:#5a707d!important;font-size:.98rem!important;line-height:1.68!important}
 body .operating-steps{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:12px!important}
 body .operating-steps article{min-width:0!important;min-height:190px!important;padding:22px!important;border:1px solid rgba(16,38,59,.11)!important;border-radius:16px!important;background:#fff!important;box-shadow:0 12px 28px rgba(16,38,59,.055)!important}
 body .operating-steps article:nth-child(2){background:#f3f7fe!important}

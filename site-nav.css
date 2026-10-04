@@ -49,3 +49,6 @@
 .desktop-more>summary,.site-global-nav .site-more>summary{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:6px!important;line-height:1!important}
 .desktop-more>summary::after,.site-global-nav .site-more>summary::after{content:""!important;display:block!important;flex:0 0 auto!important;width:6px!important;height:6px!important;margin:0 0 3px 1px!important;border-right:2px solid var(--site-nav-accent,#0f9cab)!important;border-bottom:2px solid var(--site-nav-accent,#0f9cab)!important;background:transparent!important;transform:rotate(45deg)!important;transition:transform .18s ease,margin .18s ease!important}
 .desktop-more[open]>summary::after,.site-global-nav .site-more[open]>summary::after{margin:4px 0 0 1px!important;transform:rotate(225deg)!important}
+
+/* Temporarily hide Arabic language switch only. */
+.site-language{display:none!important}

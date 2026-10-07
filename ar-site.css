@@ -7,3 +7,9 @@
 .ar-mobile-panel{right:auto!important;inset-inline-end:14px!important}
 .ar-footer-grid{align-items:center!important}
 @media(max-width:850px){.ar-footer-grid{flex-direction:column!important;align-items:flex-start!important}.ar-footer a{margin-inline-start:0!important;margin-inline-end:15px!important}}
+
+/* Localization consistency: language switch is a utility action, not a buried text link. */
+.ar-lang{display:inline-flex!important;align-items:center!important;justify-content:center!important;min-height:36px!important;padding:7px 12px!important;border:1px solid rgba(16,38,59,.16)!important;border-radius:999px!important;background:#fff!important;font-weight:800!important;direction:ltr!important}
+.ar-lang:hover,.ar-lang:focus-visible{border-color:#0f8f98!important;background:#eef7f6!important}
+.ar-hero{padding-top:clamp(58px,8vw,92px)!important;padding-bottom:clamp(38px,5vw,60px)!important}
+@media(max-width:850px){.ar-lang{display:none!important}.ar-mobile-panel a[href="/index.html"]{direction:ltr!important;font-weight:850!important;border-top:1px solid rgba(16,38,59,.08)!important;margin-top:4px!important;padding-top:13px!important}}

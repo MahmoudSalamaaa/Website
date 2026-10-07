@@ -7,7 +7,7 @@
 .ms-global-footer .final-footer{
   width:min(1180px,92vw)!important;
   margin:0 auto!important;
-  padding:30px 0 22px!important;
+  padding:26px 0 20px!important;
   display:grid!important;
   grid-template-columns:minmax(0,1fr) auto!important;
   gap:22px 36px!important;
@@ -16,7 +16,7 @@
 .ms-global-footer .footer-title{
   margin:0!important;
   max-width:680px!important;
-  font-size:clamp(1.35rem,2.3vw,2.25rem)!important;
+  font-size:clamp(1.25rem,2vw,2rem)!important;
   font-weight:800!important;
   line-height:1.08!important;
   letter-spacing:-.035em!important;
@@ -59,3 +59,8 @@
   .ms-global-footer .footer-nav{justify-content:flex-start!important;gap:10px 16px!important}
   .ms-global-footer .footer-row{grid-column:1!important;flex-direction:column!important;gap:4px!important;padding-top:16px!important}
 }
+/* 2026 visual QA: compact executive close and safe clearance for floating controls */
+.ms-global-footer{position:relative!important;isolation:isolate!important}
+.ms-global-footer .final-footer{min-height:0!important}
+@media(min-width:761px){.ms-global-footer .footer-title{max-width:620px!important}.ms-global-footer .footer-row{padding-right:128px!important}}
+@media(max-width:760px){.ms-global-footer{padding-bottom:64px!important}.ms-global-footer .footer-nav a{min-height:36px!important;display:inline-flex!important;align-items:center!important}}

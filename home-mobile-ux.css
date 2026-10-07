@@ -118,3 +118,75 @@
   .mediq-flagship .mediq-node{min-height:94px!important;padding:10px!important}
   .operating-steps{grid-template-columns:1fr!important}
 }
+
+/* 2026-10 mobile homepage correction — screenshot-led, mobile only. */
+@media (max-width:760px){
+  body{overflow-x:hidden!important}
+  main{overflow:hidden!important}
+  .wrap{width:calc(100% - 32px)!important;padding-left:0!important;padding-right:0!important}
+
+  .executive-hero{padding:24px 0 30px!important}
+  .executive-hero .hero-grid{gap:18px!important}
+  .executive-hero .hero-name{font-size:15px!important}
+  .executive-hero .kicker{font-size:9px!important;letter-spacing:.12em!important;line-height:1.45!important}
+  .executive-hero .hero-copy h1{font-size:clamp(32px,9.6vw,42px)!important;line-height:1.02!important;max-width:13ch!important;margin:8px 0 12px!important}
+  .executive-hero .hero-copy>p{font-size:14px!important;line-height:1.58!important;margin-bottom:14px!important}
+  .executive-hero .photo-card{width:min(82vw,300px)!important}
+  .executive-hero .photo-label{font-size:10px!important;padding:8px 10px!important}
+  .hero-actions{gap:8px!important;margin-top:14px!important}
+  .hero-actions .btn{min-height:42px!important;font-size:11px!important}
+
+  .exec-snapshot{padding:26px 0 32px!important}
+  .exec-snapshot-grid{gap:8px!important}
+  .exec-snapshot-grid>div{min-height:88px!important;padding:12px!important;box-shadow:0 7px 16px rgba(36,48,57,.08)!important}
+  .exec-snapshot-grid strong{font-size:clamp(25px,7.8vw,34px)!important}
+  .exec-snapshot-grid span{font-size:10.5px!important;line-height:1.35!important;margin-top:6px!important}
+
+  .mediq-flagship{padding:36px 0 38px!important}
+  .mediq-flagship .mediq-grid{gap:20px!important}
+  .mediq-flagship .mediq-story>h2{font-size:clamp(27px,7.5vw,34px)!important;line-height:1.06!important}
+  .mediq-flagship .mediq-story>p{font-size:13.5px!important;line-height:1.58!important}
+  .mediq-flagship .mediq-facts{gap:8px!important}
+  .mediq-flagship .mediq-facts article{min-height:76px!important;padding:10px!important}
+  .mediq-flagship .mediq-facts b{font-size:18px!important}
+  .mediq-flagship .mediq-facts span{font-size:10px!important;line-height:1.3!important}
+  .mediq-flagship .award-badge{padding:12px!important}
+  .mediq-flagship .mediq-map h3{font-size:18px!important;line-height:1.18!important;margin-bottom:14px!important}
+  .mediq-flagship .mediq-ecosystem{gap:7px!important}
+  .mediq-flagship .mediq-node{min-height:84px!important;padding:10px!important;box-shadow:none!important}
+  .mediq-flagship .mediq-node b{font-size:11.5px!important}
+  .mediq-flagship .mediq-node span{font-size:9.8px!important;line-height:1.32!important}
+
+  .home-mandate,.home-cases,.recognition-strip,.signature.operating-summary{padding-top:34px!important;padding-bottom:36px!important}
+  .mandate-grid{padding:18px!important;gap:16px!important}
+  .mandate-grid .section-title,.home-cases .section-head h2,.recognition-strip-copy h2,.signature-head h2{font-size:clamp(26px,7.6vw,34px)!important;line-height:1.06!important}
+  .mandate-copy p,.home-cases .section-head>p,.signature-head>p{font-size:13px!important;line-height:1.55!important}
+  .mandate-chips{margin:14px 0!important}
+
+  .home-cases .case-grid.root-priority{gap:10px!important}
+  .home-cases .case-grid.root-priority .case{padding:15px!important;box-shadow:0 7px 16px rgba(36,48,57,.08)!important}
+  .home-cases .case h3{font-size:16px!important}
+  .home-cases .case p{font-size:12.5px!important;line-height:1.48!important}
+  .home-cases .case .tags span{font-size:9px!important;padding:5px 7px!important}
+
+  .recognition-strip-inner{gap:16px!important}
+  .recognition-strip-items{gap:8px!important}
+  .recognition-strip-items article{padding:14px!important;box-shadow:0 7px 16px rgba(36,48,57,.08)!important}
+
+  .operating-steps{gap:8px!important}
+  .operating-steps article{padding:14px!important;box-shadow:0 7px 16px rgba(36,48,57,.08)!important}
+  .operating-steps h3{font-size:15px!important}
+  .operating-steps p{font-size:11.5px!important;line-height:1.45!important}
+
+  .cta{padding:32px 0 34px!important}
+  .cta h2{font-size:clamp(27px,8vw,36px)!important}
+  .cta-grid{gap:16px!important}
+
+  .exec-snapshot-grid>div::before,.home-cases .case::before,.operating-steps article::before,.mediq-node::before,.recognition-strip-items article::before{display:none!important}
+  .home-cases .case::after,.operating-steps article::after{display:none!important}
+}
+@media (max-width:420px){
+  .wrap{width:calc(100% - 28px)!important}
+  .mediq-flagship .mediq-ecosystem{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .operating-steps{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}

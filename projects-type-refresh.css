@@ -58,3 +58,10 @@ linear-gradient(128deg,#fffdf5 0%,#eef7f3 54%,#f4e7bf 100%)}
 .registry-search:focus{outline:3px solid rgba(15,169,181,.18)!important;border-color:var(--final-cyan,#0fa9b5)!important}
 .registry-card:nth-child(4n+1)::before{background:var(--final-cyan,#0fa9b5)!important}.registry-card:nth-child(4n+2)::before{background:var(--final-blue,#4e86d6)!important}.registry-card:nth-child(4n+3)::before{background:var(--final-amber,#e8b33e)!important}.registry-card:nth-child(4n)::before{background:var(--final-coral,#ed735f)!important}
 .registry-type{background:#e7f8f7!important;color:#087f91!important}.registry-program,.registry-role{background:#fff4d8!important;color:#725315!important}.registry-links a{background:#eaf7f8!important;color:#07596b!important}.registry-links a:nth-child(2){background:#edf3ff!important;color:#315f9f!important;border-color:rgba(78,134,214,.22)!important}
+
+/* Visual QA: expose the directory immediately and keep filters legible. */
+.directory-head{margin-top:clamp(42px,5vw,64px)!important}
+.registry-tools{display:grid!important;grid-template-columns:minmax(260px,1fr) auto!important;column-gap:16px!important;align-items:center!important}
+.registry-tools .registry-filters{margin-top:0!important;justify-content:flex-end!important}
+.registry-tools .registry-count{grid-column:1/-1!important;margin-top:10px!important}
+@media(max-width:900px){.registry-tools{grid-template-columns:1fr!important}.registry-tools .registry-filters{margin-top:12px!important;justify-content:flex-start!important}.registry-tools .registry-count{grid-column:auto!important}}

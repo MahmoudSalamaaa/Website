@@ -82,7 +82,7 @@
     document.documentElement.lang ||= 'en';
     installPageRepairLayer();
     installUnifiedNavigation();
-    installUnifiedFooter();
+    // The canonical footer is rendered by global-footer.js.
     const main = document.querySelector('main');
     if (main) {
       main.id ||= 'main'; main.tabIndex = -1;

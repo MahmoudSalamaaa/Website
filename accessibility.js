@@ -65,24 +65,17 @@
         <details class="site-mobile-menu"><summary>Menu</summary><div class="site-mobile-panel">${navLink('/portfolio.html','Portfolio','portfolio',active)}${navLink('/experience.html','Experience','experience',active)}${navLink('/projects.html','Projects','projects',active)}${navLink('/architecture.html','Architecture','architecture',active)}${navLink('/governance.html','Recognition','recognition',active)}<div class="site-mobile-secondary-label">More</div>${navLink('/technologies.html','Technology Capabilities','technologies',active)}${navLink('/contributions.html','National Contributions','contributions',active)}${navLink('/evidence.html','Evidence Registry','evidence',active)}${navLink('/faq.html','FAQ','faq',active)}${navLink('/executive-brief.html','Executive Brief','evidence',active)}${navLink('/insights.html','Insights','evidence',active)}${navLink('/card.html','Digital Business Card','card',active)}<a class="site-mobile-contact${active === 'contact' ? ' active' : ''}" href="/contact.html"${active === 'contact' ? ' aria-current="page"' : ''}>Start a conversation →</a></div></details>
       </div>`;
     existing.replaceWith(nav);
-  };
-
-  const installUnifiedFooter = () => {
-    const footer = document.querySelector('footer');
-    if (!footer) return;
-    footer.innerHTML = `
-      <div class="wrap final-footer">
-        <div class="footer-title">Technology leadership grounded in <em>real delivery.</em></div>
-        <div class="footer-nav"><a href="https://github.com/MahmoudSalamaaa" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/mahmoud-salama-30249b34" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:ma7moud.salamaaa@gmail.com">Email</a><a href="/cv-hub.html">CV Center</a><a href="/card.html">Digital Business Card</a></div>
-        <div class="footer-row"><span>Mahmoud Salama · Cairo, Egypt</span><span>Systems · Architecture · Delivery · Impact</span></div>
-      </div>`;
+    nav.querySelectorAll('details').forEach((menu) => {
+      menu.addEventListener('keydown', (event) => { if (event.key === 'Escape') { menu.open = false; menu.querySelector('summary')?.focus(); } });
+      menu.addEventListener('toggle', () => { if (!menu.open) return; nav.querySelectorAll('details').forEach((other) => { if (other !== menu) other.open = false; }); });
+    });
   };
 
   const enhance = () => {
     document.documentElement.lang ||= 'en';
     installPageRepairLayer();
     installUnifiedNavigation();
-    // The canonical footer is rendered by global-footer.js.
+    // Footer rendering is owned by the shared footer component.
     const main = document.querySelector('main');
     if (main) {
       main.id ||= 'main'; main.tabIndex = -1;

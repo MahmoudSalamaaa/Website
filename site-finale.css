@@ -453,3 +453,19 @@ body footer .footer-nav{margin-top:26px!important}
 /* Navigation usability: keep language switch accessible on small screens */
 @media(max-width:900px){.site-global-nav .site-language{display:inline-flex!important;align-items:center!important;flex-shrink:0!important;font-size:11px!important;padding:7px 9px!important;white-space:nowrap!important}.site-global-nav .site-nav-inner{min-width:0!important;gap:8px!important}.site-global-nav .site-brand{min-width:0!important}.site-global-nav .site-brand span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
 @media(max-width:420px){.site-global-nav .site-brand span{display:none!important}}
+
+/* 2026-10 quality pass: safe shared responsive and accessibility rules */
+:where(main,section,article,.wrap,.site-nav-inner){min-width:0}
+:where(main,section,article) :where(img,video,iframe){max-width:100%}
+:where(main,section,article) :where(h1,h2,h3,p){overflow-wrap:break-word}
+:where(a,button,input,select,textarea,summary):focus-visible{outline:3px solid #087f89!important;outline-offset:3px!important}
+:where(.site-global-nav) details summary{cursor:pointer}
+:where(.site-global-nav) details[open] summary{color:#087f89}
+@media(max-width:760px){
+  :where(main,section,article) :where(.wrap){max-width:calc(100vw - 28px)}
+  :where(main,section,article) :where(.grid,.cards,.case-grid){min-width:0}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto!important}
+  :where(.site-global-nav,main) *, :where(.site-global-nav,main) *::before,:where(.site-global-nav,main) *::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
+}

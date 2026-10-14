@@ -8,11 +8,9 @@
 
   const installPageRepairLayer = () => {
     const page = pageName();
-    const layers = page === 'portfolio.html'
-      ? [['/portfolio-fix.css','portfolio-fix']]
-      : page === 'technologies.html'
-        ? [['/technologies-final-palette.css','technologies-final-palette']]
-        : [];
+    const layers = page === 'technologies.html'
+      ? [['/technologies-final-palette.css','technologies-final-palette']]
+      : [];
     layers.forEach(([href,key]) => {
       if (document.querySelector(`link[data-page-repair="${key}"]`)) return;
       const link = document.createElement('link');

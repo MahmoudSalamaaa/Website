@@ -59,3 +59,4 @@
   .ms-global-footer .footer-nav{justify-content:flex-start!important;gap:10px 16px!important}
   .ms-global-footer .footer-row{grid-column:1!important;flex-direction:column!important;gap:4px!important;padding-top:16px!important}
 }
+.ms-global-footer .footer-nav a:focus-visible{outline:2px solid #77d7d1!important;outline-offset:5px!important}.ms-global-footer .final-footer>*{min-width:0}@media(max-width:420px){.ms-global-footer .final-footer{width:calc(100% - 32px)!important}.ms-global-footer .footer-nav a{white-space:normal!important}}

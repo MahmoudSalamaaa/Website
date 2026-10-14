@@ -469,3 +469,41 @@ body footer .footer-nav{margin-top:26px!important}
   html{scroll-behavior:auto!important}
   :where(.site-global-nav,main) *, :where(.site-global-nav,main) *::before,:where(.site-global-nav,main) *::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
 }
+
+/* Executive polish: keep the final system authoritative on high-signal surfaces. */
+@media(min-width:901px){
+  body .executive-hero{padding-top:38px!important;padding-bottom:58px!important}
+  body .executive-hero .hero-copy h1{max-width:11ch!important;font-size:clamp(3.75rem,5.7vw,6.25rem)!important;line-height:.93!important}
+  body .executive-hero .photo-card{min-height:0!important}
+}
+body .exec-snapshot-grid>div,
+body .home-cases .case,
+body .operating-steps article,
+body .recognition-strip-items article{
+  transform:none!important;border-radius:16px!important;background:#fff!important;
+  border:1px solid rgba(16,38,59,.12)!important;box-shadow:0 12px 30px rgba(16,38,59,.06)!important;
+}
+body .mediq-flagship .mediq-node{
+  transform:none!important;border-radius:14px!important;background:rgba(255,255,255,.10)!important;
+  border:1px solid rgba(255,255,255,.20)!important;box-shadow:0 10px 22px rgba(4,26,38,.14)!important;
+}
+body .exec-snapshot-grid>div:nth-child(n),
+body .home-cases .case:nth-child(n),
+body .operating-steps article:nth-child(n),
+body .recognition-strip-items article:nth-child(n){background:#fff!important}
+body .exec-snapshot-grid>div::before,body .exec-snapshot-grid>div::after,
+body .home-cases .case::before,body .home-cases .case::after,
+body .operating-steps article::before,body .operating-steps article::after,
+body .recognition-strip-items article::before,body .recognition-strip-items article::after,
+body .mediq-flagship .mediq-node::before,body .mediq-flagship .mediq-node::after{
+  display:none!important;content:none!important
+}
+body footer .final-footer{padding-top:30px!important;padding-bottom:22px!important}
+body footer .footer-title{font-size:clamp(1.7rem,3.2vw,3rem)!important;line-height:1.08!important}
+@media(hover:hover){
+  body .exec-snapshot-grid>div:hover,body .home-cases .case:hover,
+  body .operating-steps article:hover,body .recognition-strip-items article:hover{
+    transform:translateY(-3px)!important;box-shadow:0 18px 34px rgba(16,38,59,.11)!important
+  }
+  body .mediq-flagship .mediq-node:hover{transform:translateY(-2px)!important;box-shadow:0 14px 26px rgba(4,26,38,.18)!important}
+}

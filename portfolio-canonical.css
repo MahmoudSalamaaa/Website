@@ -148,3 +148,10 @@ footer{background:#0b1f30!important}
   #portfolio-mediq .case-architecture .arch-label{width:auto!important;margin-bottom:12px!important;font-size:10px!important}
   #portfolio-mediq .case-architecture .arch-flow{padding:16px!important}
 }
+
+
+/* Executive map finish: end the section after its content, remove duplicate arrows, and protect anchored headings from the sticky index. */
+.portfolio-section{scroll-margin-top:140px!important}
+#portfolio-map.executive-map-clean{padding-bottom:42px!important}
+#portfolio-map.executive-map-clean .section-action{margin-top:22px!important;margin-bottom:0!important}
+#portfolio-map.executive-map-clean .section-action .context-link:after{content:none!important;display:none!important}

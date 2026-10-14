@@ -1,0 +1,10 @@
+/* Scoped consistency for standalone recruiter and CV pages */
+:root{--executive-ink:#10263b;--executive-accent:#087f89}
+html{scroll-padding-top:80px}
+body{overflow-x:clip}
+body :is(h1,h2,h3){letter-spacing:-.025em}
+body :is(p,li){overflow-wrap:break-word}
+body :is(img,svg,video){max-width:100%}
+body :is(a,button,input,textarea,select,summary):focus-visible{outline:3px solid var(--executive-accent)!important;outline-offset:3px}
+@media(max-width:760px){body :is(.grid,.cards,.role-grid){max-width:100%;min-width:0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}

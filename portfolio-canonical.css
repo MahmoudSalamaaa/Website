@@ -155,3 +155,20 @@ footer{background:#0b1f30!important}
 #portfolio-map.executive-map-clean{padding-bottom:42px!important}
 #portfolio-map.executive-map-clean .section-action{margin-top:22px!important;margin-bottom:0!important}
 #portfolio-map.executive-map-clean .section-action .context-link:after{content:none!important;display:none!important}
+
+
+/* Final map-to-MedIQ compression: the map ends immediately after its action. */
+#portfolio-map.executive-map-clean{
+  padding-bottom:18px!important;
+}
+#portfolio-map.executive-map-clean .section-action{
+  margin-top:14px!important;
+  padding-bottom:0!important;
+}
+#portfolio-map.executive-map-clean + #portfolio-mediq{
+  padding-top:48px!important;
+}
+@media(max-width:680px){
+  #portfolio-map.executive-map-clean{padding-bottom:12px!important}
+  #portfolio-map.executive-map-clean + #portfolio-mediq{padding-top:40px!important}
+}

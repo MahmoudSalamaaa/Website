@@ -450,3 +450,6 @@ body footer .footer-nav{margin-top:26px!important}
 }
 
 .site-language{padding:.48rem .72rem!important;border:1px solid #cfe1f4!important;border-radius:999px!important;color:#1268f3!important;font:800 10px "IBM Plex Mono",monospace!important;text-decoration:none!important}.site-language:hover,.site-language:focus-visible{background:#eef6ff!important;color:#09265c!important}@media(max-width:900px){.site-language{display:none!important}}
+/* Navigation usability: keep language switch accessible on small screens */
+@media(max-width:900px){.site-global-nav .site-language{display:inline-flex!important;align-items:center!important;flex-shrink:0!important;font-size:11px!important;padding:7px 9px!important;white-space:nowrap!important}.site-global-nav .site-nav-inner{min-width:0!important;gap:8px!important}.site-global-nav .site-brand{min-width:0!important}.site-global-nav .site-brand span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}
+@media(max-width:420px){.site-global-nav .site-brand span{display:none!important}}

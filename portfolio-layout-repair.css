@@ -67,3 +67,8 @@ body:has(.portfolio-hero-grid) .case-journey article{padding:18px!important}
 body:has(.portfolio-hero-grid) .executive-map-grid article{padding:18px!important}
 body:has(.portfolio-hero-grid) .section-action{margin-top:18px!important}
 @media(max-width:640px){body:has(.portfolio-hero-grid) .portfolio-section{padding-top:34px!important;padding-bottom:34px!important}}
+
+/* Three-part integration narratives must not leave a stranded third card. */
+@media(min-width:900px){body:has(.portfolio-hero-grid) #portfolio-sap .case-journey.compact{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:12px!important}body:has(.portfolio-hero-grid) #portfolio-sap .case-journey.compact article,body:has(.portfolio-hero-grid) #portfolio-sap .case-journey.compact article:last-child{grid-column:auto!important;grid-row:auto!important;min-width:0!important;min-height:0!important;padding:18px!important}body:has(.portfolio-hero-grid) #portfolio-sap .case-journey.compact article p{font-size:.87rem!important;line-height:1.55!important}}
+@media(min-width:640px) and (max-width:899px){body:has(.portfolio-hero-grid) #portfolio-sap .case-journey.compact{grid-template-columns:repeat(3,minmax(0,1fr))!important}body:has(.portfolio-hero-grid) #portfolio-sap .case-journey.compact article:last-child{grid-column:auto!important}}
+@media(max-width:639px){body:has(.portfolio-hero-grid) #portfolio-sap .case-journey.compact{grid-template-columns:1fr!important}body:has(.portfolio-hero-grid) #portfolio-sap .case-journey.compact article{padding:15px!important}}

@@ -1,0 +1,22 @@
+/* Experience-specific layout repair — isolated from global theme */
+body:has(.experience-hero) .experience-hero{padding:clamp(105px,12vw,150px) 0 58px!important;min-height:0!important;overflow:visible!important}
+body:has(.experience-hero) .experience-hero .wrap{display:block!important}
+body:has(.experience-hero) .experience-hero .display{position:static!important;max-width:1000px!important;margin:18px 0 22px!important;font-size:clamp(2.35rem,5.4vw,5.1rem)!important;line-height:1.09!important;letter-spacing:-.055em!important;overflow-wrap:normal!important;word-break:normal!important;text-wrap:balance!important;transform:none!important}
+body:has(.experience-hero) .experience-hero .lead{max-width:760px!important;font-size:clamp(1rem,1.6vw,1.2rem)!important;line-height:1.7!important;margin:0!important}
+body:has(.experience-hero) .experience-summary{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:12px!important;margin-top:32px!important}
+body:has(.experience-hero) .experience-summary article{min-width:0!important;transform:none!important;padding:20px 16px!important;border-radius:16px!important;box-sizing:border-box!important}
+body:has(.experience-hero) .experience-summary strong{font-size:clamp(1.25rem,2vw,1.85rem)!important;line-height:1.2!important;overflow-wrap:anywhere!important}
+body:has(.experience-hero) .experience-summary span{font-size:.82rem!important;line-height:1.5!important}
+body:has(.experience-hero) .experience-index{top:74px!important;z-index:30!important}
+body:has(.experience-hero) .experience-index-inner{flex-wrap:wrap!important;overflow:visible!important;gap:9px!important}
+body:has(.experience-hero) .experience-timeline-section,body:has(.experience-hero) .leadership-merged,body:has(.experience-hero) .executive-profile-merged{padding-block:clamp(48px,6vw,78px)!important}
+body:has(.experience-hero) .timeline-content{transform:none!important;border-radius:20px!important;min-width:0!important}
+body:has(.experience-hero) .timeline-content::before{display:none!important;content:none!important}
+body:has(.experience-hero) .timeline-content h3{line-height:1.2!important;overflow-wrap:break-word!important}
+body:has(.experience-hero) .role-lens{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+body:has(.experience-hero) .leadership-principles article{min-width:0!important}
+body:has(.experience-hero) .experience-cta-inner{flex-wrap:wrap!important}
+body:has(.experience-hero) .experience-actions{flex-wrap:wrap!important}
+body:has(.experience-hero) #career-history,body:has(.experience-hero) #leadership-model,body:has(.experience-hero) #executive-profile{scroll-margin-top:155px}
+@media(max-width:900px){body:has(.experience-hero) .experience-summary{grid-template-columns:repeat(3,minmax(0,1fr))!important}body:has(.experience-hero) .leadership-principles{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:640px){body:has(.experience-hero) .experience-hero{padding:92px 0 40px!important}body:has(.experience-hero) .experience-hero .display{font-size:clamp(2.05rem,9vw,3rem)!important;line-height:1.13!important;margin:14px 0 18px!important}body:has(.experience-hero) .experience-summary{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}body:has(.experience-hero) .experience-summary article:last-child{grid-column:1/-1!important}body:has(.experience-hero) .experience-index{top:64px!important}body:has(.experience-hero) .experience-index-inner{flex-wrap:nowrap!important;overflow-x:auto!important}body:has(.experience-hero) .executive-timeline .timeline-item{grid-template-columns:1fr!important;gap:8px!important}body:has(.experience-hero) .timeline-content{padding:20px 17px!important}body:has(.experience-hero) .role-lens{grid-template-columns:1fr!important}body:has(.experience-hero) .leadership-principles{grid-template-columns:1fr!important}body:has(.experience-hero) .experience-actions{display:flex!important;flex-direction:column!important;width:100%!important}body:has(.experience-hero) .experience-actions .btn{font-size:.86rem!important;width:100%!important}body:has(.experience-hero) #career-history,body:has(.experience-hero) #leadership-model,body:has(.experience-hero) #executive-profile{scroll-margin-top:130px}}

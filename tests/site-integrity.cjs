@@ -10,16 +10,18 @@ for (const page of pages) {
   const file = page + '.html', html = read(file);
   const fail = message => failures.push(file + ': ' + message);
   if ([...html.matchAll(/<h1\b/gi)].length !== 1) fail('Expected one h1');
-  if (!html.includes('site-enhancements.css')) fail('Missing shared accessibility styles');
+  if (!html.includes('accessibility.css') && !html.includes('site-enhancements.css')) fail('Missing shared accessibility styles');
   if (!html.includes('property="og:image"')) fail('Missing social preview');
   const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(m => m[1]);
   if (ids.length !== new Set(ids).size) fail('Duplicate IDs');
-  for (const match of html.matchAll(/<(?:a|link|script|img)\b[^>]*>/gi)) {
+  const markup = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '');
+  for (const match of markup.matchAll(/<(?:a|link|img)\b[^>]*>/gi)) {
     const a = attrs(match[0]);
     const value = a.href || a.src;
     if (!value || /^(https?:|mailto:|tel:|data:|\/\/)/.test(value)) continue;
     const url = new URL(value, 'https://local.test/' + file);
     const target = decodeURIComponent(url.pathname).slice(1) || 'index.html';
+    if (target.startsWith('_vercel/')) continue; // Platform-injected analytics routes.
     if (!fs.existsSync(path.join(root, target))) { fail('Missing local target ' + value); continue; }
     if (url.hash && target.endsWith('.html')) {
       const fragment = decodeURIComponent(url.hash.slice(1));

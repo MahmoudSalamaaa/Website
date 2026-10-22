@@ -20,6 +20,8 @@ for (const name of ['final-v4.js', 'deep-ux-v4.js', 'menu-focus-repair.js']) {
   const menu = { open: true, querySelector: () => ({ focus: () => { focused = true; } }), removeAttribute() { this.open = false; } };
   const content = { open: true, removeAttribute() { this.open = false; }, querySelector: () => null };
   const document = {
+    createElement: () => ({ dataset: {} }),
+    head: { appendChild() {} },
     querySelector: () => null,
     querySelectorAll: selector => selector === 'details[open]' ? [menu, content] : [menu],
     addEventListener: (type, fn) => { if (type === 'keydown') handlers.push(fn); }
@@ -31,17 +33,10 @@ for (const name of ['final-v4.js', 'deep-ux-v4.js', 'menu-focus-repair.js']) {
   assert.equal(focused, true, `${name}: trigger receives focus`);
 }
 
-for (const reduced of [false, true]) {
-  const buttons = [];
-  let scroll;
-  const rail = { clientWidth: 300, scrollWidth: 900, scrollLeft: 0, addEventListener() {}, scrollBy(value) { scroll = value; } };
-  const shell = { querySelector: selector => selector === '.mobile-primary-rail' ? rail : null, appendChild: btn => buttons.push(btn) };
-  const document = { querySelector: () => shell, createElement: () => ({ setAttribute() {}, addEventListener(type, fn) { this[type] = fn; } }) };
-  vm.runInNewContext(read('mobile-rail-controls.js'), { document, window: { matchMedia: () => ({ matches: reduced }), addEventListener() {} }, requestAnimationFrame: fn => fn() });
-  assert.equal(buttons[0].disabled, true);
-  assert.equal(buttons[1].disabled, false);
-  buttons[1].click();
-  assert.equal(scroll.behavior, reduced ? 'auto' : 'smooth');
-  assert(scroll.left > 0);
-}
-console.log('Site regression checks passed: stale script, legacy links, nested 404, Escape focus, and reduced-motion navigation.');
+// The retired mobile rail has been replaced by the shared quality layer.
+const external = { attrs: {href: 'https://example.com', target: '_blank'}, getAttribute(k) { return this.attrs[k] || ''; }, hasAttribute(k) { return k in this.attrs; }, setAttribute(k,v) { this.attrs[k]=v; } };
+const document = { readyState: 'complete', documentElement: {dataset:{}}, querySelector: () => null, querySelectorAll: s => s.startsWith('a[') ? [external] : [] };
+vm.runInNewContext(read('mobile-rail-controls.js'), {document});
+assert(external.attrs.rel.includes('noopener'));
+assert(external.attrs.rel.includes('noreferrer'));
+console.log('Site regression checks passed: stale script, legacy links, nested 404, Escape focus, external-link protection.');

@@ -16,7 +16,7 @@ I would agree clear priorities, decision rights and a simple reporting rhythm. I
 
 Question 4. What does being number two in technology mean to you?
 
-It means supporting the director, not competing with him. I would turn strategy into execution, build strong engineering managers, protect delivery quality and represent decisions consistently across teams.
+I understand I would report directly to Ibrahim. I would support his strategy and own engineering delivery within the authority he delegates. I would raise risks early and bring clear options. I would not assume a formal deputy title without confirmation.
 
 Question 5. How do you lead 54 people?
 
@@ -40,7 +40,7 @@ I first separate facts from assumptions. I clarify the shared business outcome a
 
 Question 10. Explain an architecture decision you made.
 
-A strong example is the MedIQ core replacement. We needed to modernise the platform without interrupting critical services. I led architecture and delivery governance, including migration, reconciliation, parallel operation, testing and cutover. I worked with specialists on component-level decisions. I do not claim to have personally coded every part of the replacement.
+One example is the MedIQ core replacement. We needed to modernize a critical platform while services continued. I helped set architecture boundaries and led delivery decisions around migration, reconciliation, parallel operation, cutover and support readiness. The key trade-off was modernization speed versus continuity and data integrity.
 
 Question 11. How do you design an enterprise API?
 
@@ -56,7 +56,7 @@ I choose based on team capability, domain boundaries, scaling and operational co
 
 Question 14. Tell us about MedIQ replacement.
 
-I led the in-house organisation through a core platform replacement while operations continued. We treated migration, reconciliation, testing, training and support readiness as delivery work. We used parallel operation, then cutover and stabilisation. The recorded baseline is over 38,000 current users. My involvement began with the original MedIQ development, continued through expansion and modernization, and later included executive leadership of the new-generation rebuild and production transition. The MedIQ transformation received the Pharmaconex 2026 Excellence in Digital Transformation award.
+I was involved in MedIQ's original development and later led the in-house organization through its core replacement. We planned migration, reconciliation, testing, training, parallel operation, cutover and stabilization while operations continued. The platform serves more than 38,000 users. The MedIQ transformation received an organizational Pharmaconex 2026 digital-transformation award, not a personal award.
 
 Question 15. How do you decide go-live readiness?
 
@@ -76,7 +76,7 @@ I start with service criticality, monitoring and incident history. Then I review
 
 Question 19. How would you handle a major incident?
 
-First, I confirm the impact and assign an incident lead. We protect users and data, restore the service safely and give leadership clear updates. After recovery, we review the cause, assign corrective actions and test that the fix works. My governance experience includes disaster recovery to an alternate environment, backup and recovery controls, production monitoring and incident escalation. I do not confuse a planned DR test with an actual unplanned outage.
+First, I confirm the impact, appoint an incident lead and protect users and data. The team works on safe recovery while I keep leaders informed. Afterward, we review the cause and verify corrective actions. We also successfully tested MedIQ running from an alternate disaster-recovery environment. That was a planned test, not an unplanned outage.
 
 Question 20. How do you embed security in delivery?
 
@@ -84,11 +84,11 @@ I include access control, threat review, secrets handling, dependency checks and
 
 Question 21. What is your approach to disaster recovery?
 
-I classify services, agree recovery objectives with the business and verify backups, dependencies and restore tests. I would not invent RTO or RPO numbers; they must be agreed and tested. Our environment includes PostgreSQL production and replica architecture, controlled manual failover, incremental backups with retained full copies and off-site recovery.
+I agree recovery objectives with the business, then test backups, dependencies and recovery procedures with infrastructure specialists. A real example is a successful MedIQ failover test to an alternate environment. I would not quote an RTO or RPO number without evidence.
 
 Question 22. How do you evaluate a vendor?
 
-I check the vendor's technical capability, security, delivery plan, support and total cost. I also require clear acceptance tests, source-code handover, documentation and knowledge transfer. I want SIAD to keep control of its platforms, not depend on one supplier. I manage vendors against business outcomes, security, total cost, delivery milestones, documentation, knowledge transfer and technical acceptance. My annual IT budget responsibility is one hundred and fifty million Egyptian pounds.
+I evaluate technical fit, security, integration constraints, total cost, delivery and support. I require early technical validation and measurable acceptance tests. In a previous CRM project, I learned not to rely on supplier commitments before validating the architecture against our data-center and connectivity constraints.
 
 Question 23. Explain your AI experience.
 
@@ -128,7 +128,7 @@ In Oman I led a twenty-person development team working across more than fifteen 
 
 Question 32. What did Keyframe teach you?
 
-At Keyframe I developed a strong hands-on foundation in systems analysis, C-sharp and dot net, databases, reporting, testing and deployment. I delivered or led more than one hundred and fifty major and mid-sized engagements. One example is Yashfeen, a healthcare solution associated with ITIDA recognition. These engagements are a separate count from my career-wide project total.
+At Keyframe I worked on requirements analysis, .NET development, databases, reporting, testing and deployment. The company handled more than 150 engagements. I worked across that portfolio, but I do not claim I personally coded every system. Yashfeen was one healthcare example linked to company-level ITIDA recognition.
 
 Question 33. Tell us about a failure.
 

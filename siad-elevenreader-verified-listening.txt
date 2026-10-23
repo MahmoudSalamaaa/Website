@@ -1,345 +1,145 @@
-SIAD HOLDING INTERVIEW. VERIFIED CAREER EVIDENCE EDITION.
+SIAD HOLDING — FINAL 35 INTERVIEW QUESTIONS — SPOKEN ENGLISH EDITION.
+Prepared for Assistant Director of Digital Platforms and Engineering.
+Evidence: approved five CV masters and executive portfolio. Interviewer-specific predictions are not confirmed questions. Speak slowly, pause between ideas, and do not claim experience you cannot verify.
 
-Question 1. Describe the architecture you personally own: stack, data, cache, communications, inherited choices.
+Question 1. Tell us about yourself.
 
-I have been involved in MedIQ from its original development through modernization and the new-generation core replacement. I lead architecture and delivery governance across React and Node.js components, dot net APIs, PostgreSQL, Redis, containers and private cloud. I personally developed healthcare REST APIs and an HTA technology solution. I distinguish my own coding from team delivery and inherited architecture.
+I started as a software developer and systems analyst. I later led twenty developers in Oman, delivering government and enterprise platforms. Today I lead a multidisciplinary technology organisation of fifty-four people, with nine direct reports and an annual IT budget of about 150 million Egyptian pounds. I contributed to the original MedIQ platform and later led its re-architecture and replacement. I also led major SAP and Dynamics 365 integrations. I bring hands-on engineering experience and practical leadership to help SIAD deliver reliable digital products.
 
-
-Question 2. Replace point-to-point ERP, PMS, payments and supplier APIs with a governed integration layer.
-
-I would first map business flows and systems of record. Then I would define a governed integration layer with contracts, authentication, versioning, idempotency, reconciliation and monitoring. I led UPA's completed bi-directional SAP Strategic Medical Warehouses integration, from requirements and master-data mapping through user testing, go-live and support. I also directed the completed Dynamics 365 integration.
-
-
-Question 3. Six weeks before Hajj, booking API exceeds 2 seconds at projected peak load; cloud spend is over budget.
-
-I would measure end-to-end performance, including p95 latency, database queries, Redis cache, application code, supplier response times and cloud capacity. Then I would prioritize safe changes, run realistic peak-load tests, control spending and agree rollback and go-or-no-go criteria. My experience includes national-scale MedIQ operations, performance testing and private-cloud capacity governance. I would not claim direct Hajj booking experience.
-
-
-Question 4. Have you built a fully remote team, and what did you get wrong the first time?
-
-I lead a multidisciplinary technology organization of fifty-four people with nine direct reports, and previously led twenty developers in Oman. I have coordinated distributed delivery, but do not claim a fully remote organization. I would use clear ownership, written decisions, measurable results and regular coaching. From the MedIQ replacement, I learned to plan dependencies, migration, reconciliation and operational readiness early. I would not invent a personal mistake.
-
-
-Question 5. Tell us about yourself.
-
-I started in software development and systems analysis, then moved into engineering leadership. In Oman, I led a 20-person development team. Today, I lead a 54-person technology organisation with nine direct reports. My focus is turning business needs into reliable systems and accountable delivery. I also personally developed healthcare APIs and HTA solutions, and led enterprise integrations, including SAP and Dynamics 365. My career spans more than 200 technology projects. I personally designed healthcare REST APIs and the HTA technology solution. My career covers more than two hundred technology projects. I led MedIQ from original development and modernization through the new-generation replacement. MedIQ received the Pharmaconex 2026 Excellence in Digital Transformation award.
-
-
-Question 6. Why this Assistant Director role?
+Question 2. Why this Assistant Director role?
 
 I enjoy turning business needs into reliable digital platforms. This role combines architecture, engineering execution and team leadership. I can bring my experience in complex platforms while learning SIAD's tourism and fleet businesses from their owners. I can connect requirements analysis, architecture, software engineering, operational reliability and executive governance.
 
-
-Question 7. How will you work with Mr Ibrahim Alharbi?
+Question 3. How will you work with Mr Ibrahim Alharbi?
 
 I would agree clear priorities, decision rights and a simple reporting rhythm. I would own day-to-day engineering delivery, raise risks early and bring options rather than surprises. Strategic decisions stay aligned with his direction.
 
-
-Question 8. What does being number two in technology mean to you?
+Question 4. What does being number two in technology mean to you?
 
 It means supporting the director, not competing with him. I would turn strategy into execution, build strong engineering managers, protect delivery quality and represent decisions consistently across teams.
 
+Question 5. How do you lead 54 people?
 
-Question 9. What is your biggest development area?
+I lead through nine direct reports, with clear service owners, measurable goals and regular reviews. Our fifty-four-person organisation includes engineering, infrastructure, security, data, applications and support; they are not all developers. I delegate technical details to specialists, remove blockers and stay accountable for delivery and service quality.
 
-I am strongest when connecting technology with business delivery. I do not claim to be the deepest expert in every infrastructure or security tool. I work with specialists, ask precise questions and keep ownership of outcomes.
-
-
-Question 10. How do you lead 54 people?
-
-I work through nine direct reports with clear goals, decision ownership and regular delivery reviews. I avoid micromanaging specialists. I focus on removing blockers, resolving cross-team dependencies and ensuring production readiness. I lead a multidisciplinary organization, not fifty-four software engineers. The team has nine direct reports and covers applications, support, infrastructure and security oversight. I am accountable for an annual technology budget of one hundred and fifty million Egyptian pounds.
-
-
-Question 11. How do you handle a weak engineering manager?
+Question 6. How do you handle a weak engineering manager?
 
 I start with evidence and clear expectations. I ask what blocks performance, agree a time-bound improvement plan and offer coaching. I review results fairly. If risk continues, I follow formal HR procedures.
 
-
-Question 12. How do you manage engineering capacity?
+Question 7. How do you manage engineering capacity?
 
 I map demand, critical skills, dependencies and operational support load. I protect capacity for security, incidents and technical debt. I make trade-offs visible to business owners before promising dates.
 
-
-Question 13. How do you create engineering accountability?
+Question 8. How do you create engineering accountability?
 
 Each service needs an owner, quality criteria and an escalation route. Teams should know who decides architecture, who deploys, and who supports production. I measure outcomes, not just task completion.
 
-
-Question 14. How do you manage conflict between teams?
+Question 9. How do you manage conflict between teams?
 
 I first separate facts from assumptions. I clarify the shared business outcome and decision rights. I bring the relevant owners together, document the decision and check its effect after implementation.
 
+Question 10. Explain an architecture decision you made.
 
-Question 15. Explain an architecture decision you made.
+A strong example is the MedIQ core replacement. We needed to modernise the platform without interrupting critical services. I led architecture and delivery governance, including migration, reconciliation, parallel operation, testing and cutover. I worked with specialists on component-level decisions. I do not claim to have personally coded every part of the replacement.
 
-I supported the decision to use Redis caching in MedIQ. The key questions were what data to cache, when to refresh it, and how to avoid showing old data. My role was architecture and delivery governance. I would confirm low-level implementation details with the engineers who built them. One architecture example is MedIQ, where we modernized an integrated procurement ecosystem instead of replacing isolated modules. Another is the completed SAP warehouse integration: we chose explicit data ownership, contracts, mapping, reconciliation and controlled environments over direct field-to-field coupling.
+Question 11. How do you design an enterprise API?
 
+I start with the business process, data owner and users. I define the API contract, authentication, validation, error responses, audit logs and testing. I personally designed and developed healthcare REST APIs using JSON over HTTPS and token-based access. The larger enterprise integrations were delivered with my teams.
 
-Question 16. How do you design an enterprise API?
+Question 12. Tell us about SAP integration.
 
-I begin with the business flow and data owner. I define resource contracts, authentication, validation, error handling, idempotency where needed and monitoring. I have personally built healthcare REST APIs using JSON over HTTPS and token-based controls. I have personally developed production healthcare REST APIs for beneficiary, prescription and dispensing data, using JSON over HTTPS, token access, standardized errors and GTIN product identification.
+I led the UPA side of a completed, greenfield, two-way integration with the SAP Strategic Medical Warehouses platform. We agreed requirements, system boundaries, master-data mappings, interface contracts, testing and reconciliation. I coordinated go-live and support. I did not configure SAP itself.
 
-
-Question 17. Tell us about SAP integration.
-
-For the strategic medical warehouses, I led requirements and integration work from the UPA side. We mapped data and business processes, agreed interfaces and tested them with the teams. I did not configure SAP itself. This was a completed, greenfield, bi-directional integration with the Strategic Medical Warehouses system. I led UPA-side requirements, architecture, master-data harmonization, mapping, security, user acceptance testing, go-live and support. This was a completed greenfield, bi-directional SAP integration. I owned UPA-side requirements, integration architecture, master-data harmonization, security, testing, go-live and production support, without claiming SAP configuration.
-
-
-Question 18. Monolith or microservices?
+Question 13. Monolith or microservices?
 
 I choose based on team capability, domain boundaries, scaling and operational cost. A modular monolith can be safer for a smaller team. Microservices make sense when independent deployment and clear ownership justify the added complexity.
 
-
-Question 19. How do you handle integration failure?
-
-First, I check which system failed and whether the business transaction completed. I use logs and request IDs to trace the problem. For safe retries, I need idempotency and a way to reconcile uncertain results. I also keep users and support teams informed.
-
-
-Question 20. Tell us about MedIQ replacement.
+Question 14. Tell us about MedIQ replacement.
 
 I led the in-house organisation through a core platform replacement while operations continued. We treated migration, reconciliation, testing, training and support readiness as delivery work. We used parallel operation, then cutover and stabilisation. The recorded baseline is over 38,000 current users. My involvement began with the original MedIQ development, continued through expansion and modernization, and later included executive leadership of the new-generation rebuild and production transition. The MedIQ transformation received the Pharmaconex 2026 Excellence in Digital Transformation award.
 
+Question 15. How do you decide go-live readiness?
 
-Question 21. How do you decide go-live readiness?
+I review business acceptance, critical tests, security, data reconciliation, monitoring, rollback and support readiness. I recommend a go or no-go decision with documented risks. The final approval follows SIAD's actual governance and delegated authority; I would confirm that with Ibrahim.
 
-I check business acceptance, critical tests, data reconciliation, security, monitoring, rollback and support readiness. I document open risks and recommend whether to release. At SIAD, I understand the Director gives the final go-live approval.
-
-
-Question 22. What would your first 90 days at SIAD look like?
+Question 16. What would your first 90 days at SIAD look like?
 
 In the first month I would listen, map products, teams, risks and delivery commitments. In the second month I would establish a practical engineering scorecard and prioritised improvement plan. By day 90 I would deliver a few measurable fixes and agree a longer roadmap with Ibrahim.
 
-
-Question 23. How do you handle a delayed programme?
+Question 17. How do you handle a delayed programme?
 
 I identify the critical path, root cause and actual business impact. I compare options with the team, replan dependencies and escalate changes early. I never hide a delay behind a green dashboard.
 
-
-Question 24. How do you manage technical debt?
-
-I connect technical debt to incidents, delivery speed, security and change risk. I prioritise the highest-impact items, reserve capacity and measure whether reliability and lead time improve.
-
-
-Question 25. How do you choose cloud versus on-premises?
-
-I compare security, data requirements, integration, resilience, cost and operational capability. I avoid choosing cloud only because it is fashionable. I want a decision record and a realistic operating model.
-
-
-Question 26. Explain CI/CD in simple terms.
-
-CI checks each change through automated builds and tests. CD makes releases repeatable with approvals and rollback controls. The goal is smaller, safer changes and clear traceability.
-
-
-Question 27. How do you improve uptime?
+Question 18. How do you improve uptime?
 
 I start with service criticality, monitoring and incident history. Then I review single points of failure, capacity, backup, recovery testing and support ownership. I would never promise an uptime percentage without measured evidence.
 
-
-Question 28. How would you handle a major incident?
+Question 19. How would you handle a major incident?
 
 First, I confirm the impact and assign an incident lead. We protect users and data, restore the service safely and give leadership clear updates. After recovery, we review the cause, assign corrective actions and test that the fix works. My governance experience includes disaster recovery to an alternate environment, backup and recovery controls, production monitoring and incident escalation. I do not confuse a planned DR test with an actual unplanned outage.
 
-
-Question 29. What is your Kubernetes experience?
-
-I understand orchestration concepts and how they affect deployment, scaling and resilience. I would not claim deep hands-on cluster administration. I rely on specialists for detailed platform operations while owning architectural and delivery decisions.
-
-
-Question 30. How do you embed security in delivery?
+Question 20. How do you embed security in delivery?
 
 I include access control, threat review, secrets handling, dependency checks and testing in the delivery process. Security and infrastructure specialists review the technical controls. I remain accountable for business risk and release decisions. In MedIQ, one-time-password multi-factor authentication and a user activity log were rolled out. I oversee security and release controls with accountable specialist teams.
 
-
-Question 31. How do you manage sensitive data?
-
-I start with data classification, purpose, least privilege, encryption and retention. I limit access, log sensitive operations and avoid sharing real patient or beneficiary data in demos.
-
-
-Question 32. What is your approach to disaster recovery?
+Question 21. What is your approach to disaster recovery?
 
 I classify services, agree recovery objectives with the business and verify backups, dependencies and restore tests. I would not invent RTO or RPO numbers; they must be agreed and tested. Our environment includes PostgreSQL production and replica architecture, controlled manual failover, incremental backups with retained full copies and off-site recovery.
 
-
-Question 33. How do you evaluate a vendor?
+Question 22. How do you evaluate a vendor?
 
 I check the vendor's technical capability, security, delivery plan, support and total cost. I also require clear acceptance tests, source-code handover, documentation and knowledge transfer. I want SIAD to keep control of its platforms, not depend on one supplier. I manage vendors against business outcomes, security, total cost, delivery milestones, documentation, knowledge transfer and technical acceptance. My annual IT budget responsibility is one hundred and fifty million Egyptian pounds.
 
+Question 23. Explain your AI experience.
 
-Question 34. What if business wants an unsafe release?
+We explored a controlled DeepSeek natural-language-to-SQL capability for MedIQ data. The design focuses on approved read-only SELECT queries, validation, role-based access and logging. I would not describe an explored capability as a fully rolled-out production AI service.
 
-I explain the risk in business terms and present options: delay, reduce scope or apply an approved mitigation. Critical safety and security controls are not optional. I document the decision and its owner.
-
-
-Question 35. Explain your AI experience.
-
-We explored a controlled DeepSeek natural-language-to-SQL capability. The important controls are read-only SELECT, validation, allowlisted scope and role-based access. I distinguish a controlled capability from a fully rolled-out production service. We explored DeepSeek natural-language-to-SQL over real MedIQ data with SELECT-only execution, SQL validation, allowlisted scope and role-based access. It is a controlled proof of concept, not an unrestricted AI deployment.
-
-
-Question 36. How would you use AI in engineering?
-
-I would start with low-risk use cases such as test suggestions, documentation and code review assistance. I would require human review, data protection, measurable benefit and clear rollback if quality falls.
-
-
-Question 37. How do you govern enterprise data?
+Question 24. How do you govern enterprise data?
 
 I define data owners, business definitions, validation and access rules. Integration is not successful if teams cannot trust the numbers. I use reconciliation and quality checks before executive reporting. I led UPA-side data preparation, mapping and harmonization for the production Central Data Warehouse, and oversaw a separate MedIQ data pipeline and operational reporting patterns.
 
-
-Question 38. What is the risk of AI-generated SQL?
-
-It may expose data, generate expensive queries or produce incorrect answers. I would restrict it to approved read-only operations, validate queries, apply role-based controls and log use. Human validation remains important.
-
-
-Question 39. How do you measure AI ROI?
-
-I establish a baseline, define a small controlled pilot and measure accuracy, time saved, risk and support cost. I do not present estimated benefits as proven savings.
-
-
-Question 40. How would you approach an OTA platform?
+Question 25. How would you approach an OTA platform?
 
 I would first learn SIAD's booking journey and supplier contracts. Then I would review search, pricing, inventory, payment and confirmation. My priorities would be accurate bookings, reliable partner APIs and clear monitoring. I would not assume the existing architecture is wrong.
 
-
-Question 41. B2B versus B2C platform architecture?
+Question 26. B2B versus B2C platform architecture?
 
 B2C focuses on customer experience, conversion and payment. B2B often needs account contracts, roles, negotiated pricing, invoicing and partner APIs. I would identify shared services while keeping commercial rules clear.
 
-
-Question 42. How would you avoid double booking?
+Question 27. How would you avoid double booking?
 
 I would check how the supplier holds and confirms inventory. Each booking needs a unique request key and clear states, such as pending, confirmed or failed. If the response is uncertain, I would verify the supplier state before trying again.
 
-
-Question 43. How would you design fleet tracking?
+Question 28. How would you design fleet tracking?
 
 I would separate device ingestion, vehicle state, alerts and operational dashboards. I would plan for intermittent connectivity, event ordering, location privacy and retention. I would test with actual fleet operations before selecting technologies.
 
-
-Question 44. How would you build shared digital services?
+Question 29. How would you build shared digital services?
 
 I would identify reusable identity, notifications, payments, integration and observability capabilities. I would define ownership and service contracts. Shared services should reduce duplication without creating a central bottleneck.
 
-
-Question 45. How do you balance cost and quality?
-
-I compare total cost with service risk, maintainability and business value. A cheaper solution can be expensive if it increases outages or locks us into a supplier. I document assumptions and review actual costs.
-
-
-Question 46. How do you prioritise competing projects?
-
-I use strategic value, urgency, dependency, risk and available capacity. I ask leaders to make explicit trade-offs instead of treating every request as priority one.
-
-
-Question 47. How do you communicate with executives?
+Question 30. How do you communicate with executives?
 
 I use short updates: outcome, current status, decision needed, risks and next milestone. I explain technical problems in business language and keep detailed engineering evidence available.
 
+Question 31. What did you do in Oman?
 
-Question 48. How do you manage external partners?
+In Oman I led a twenty-person development team working across more than fifteen government and enterprise platforms. I contributed to the National Educational Portal, including learning workflows, reporting and integrations, and to correspondence solutions. I combined requirements analysis, development oversight, testing, releases and customer support.
 
-I define deliverables, acceptance criteria, escalation routes and evidence. I review technical quality with the team and separate operational acceptance from commercial authority.
+Question 32. What did Keyframe teach you?
 
+At Keyframe I developed a strong hands-on foundation in systems analysis, C-sharp and dot net, databases, reporting, testing and deployment. I delivered or led more than one hundred and fifty major and mid-sized engagements. One example is Yashfeen, a healthcare solution associated with ITIDA recognition. These engagements are a separate count from my career-wide project total.
 
-Question 49. How would you report platform KPIs?
+Question 33. Tell us about a failure.
 
-I would use service availability, error rates, latency, release quality, incident recovery and business journey completion. I would define each metric with product owners before setting targets.
+I would explain a genuine setback with the situation, my responsibility, the impact, the action I took and the lesson. I will not invent a personal failure. One documented lesson from the MedIQ replacement is the importance of planning migration, reconciliation and operational readiness early.
 
-
-Question 50. Give an example of hands-on coding.
-
-I personally designed and developed REST APIs for healthcare beneficiary, prescription and dispensing information. I used JSON over HTTPS, token-based access and defined error contracts. The broader platform was team-delivered.
-
-
-Question 51. What did you do in Oman?
-
-At Integral Solutions I led a 20-person development team and worked hands-on on the Educational Portal and Maktabi correspondence workflows. I contributed to routing, reporting, database work, testing and support. I do not claim sole ownership of the whole portal. I led twenty developers across more than fifteen Omani government and enterprise platforms. I contributed extensively to the National Educational Portal, Maktabi correspondence and the Ministry of Education Recruitment System.
-
-
-Question 52. What did Keyframe teach you?
-
-At Keyframe I worked directly with requirements, .NET applications, databases, reporting, testing and deployment. It gave me a strong foundation in translating client needs into working software. I delivered or led more than one hundred and fifty major and mid-sized engagements at Keyframe, including Yashfeen, Rate Your Services and the Kasr Al Ainy Liver Tumor Unit Management System. I learned full-cycle analysis, development, testing and client delivery.
-
-
-Question 53. Tell us about a failure.
-
-I would give a specific real example, explain what I personally got wrong, what happened, and what I changed. I still need to select and verify that example. I should not invent one for the interview.
-
-
-Question 54. What achievement are you proud of?
-
-I am proud of leading the MedIQ core replacement while services continued. It required migration, testing, reconciliation, training and a controlled production transition. The recorded platform baseline includes over 38,000 current users. I am proud of MedIQ's evolution from original development to national-scale modernization and replacement, and its Pharmaconex 2026 recognition. I also led the UPA digital team delivering the Africa CDC pooled procurement digital platform; Africa CDC owns the wider continental mechanism.
-
-
-Question 55. Why leave your current position?
-
-I value what I have built, but I want to apply my engineering and transformation experience in a business with multiple digital products. SIAD's platform portfolio is an interesting next challenge.
-
-
-Question 56. Are you comfortable reporting to Ibrahim?
-
-Yes. I value clear accountability and direct communication. I would align with his priorities, own delegated execution and escalate decisions that affect strategy, budget or risk.
-
-
-Question 57. How would you work with Human Capital Director Tahani?
+Question 34. How would you work with Human Capital Director Tahani?
 
 I would partner with HR on hiring, succession, performance, learning and team wellbeing. Engineering results depend on capable people and a healthy delivery culture.
 
+Question 35. Why should we hire you?
 
-Question 58. What are your salary expectations?
+I combine eighteen-plus years of software engineering, business analysis, architecture and delivery leadership. I lead fifty-four people through nine direct reports, and I have delivered complex platform replacements and enterprise integrations. I can help SIAD turn business needs into secure, reliable products with clear engineering ownership.
 
-I am open to discussing a fair package based on the role and responsibilities. I would first confirm the monthly currency, whether the figure is gross or net, and the full benefits. I can then give a clear expected range.
-
-
-Question 59. Why should we hire you?
-
-I combine hands-on software experience with engineering leadership. I have worked on APIs, integration, major platform changes and delivery teams. Today I lead a 54-person technology organisation. I can help SIAD build reliable products and strong engineering ownership. I bring eighteen-plus years of software, analysis, architecture and leadership experience, a fifty-four-person multidisciplinary technology organization, nine direct reports, and delivery across more than two hundred career projects.
-
-
-Question 60. Your team wants microservices; you disagree. What next?
-
-I ask for the business requirement and evidence. We compare complexity, ownership, release independence and operational cost. I choose the simplest architecture that meets the need, record the decision and revisit it when facts change.
-
-
-Question 61. A booking API times out after payment. What do you do?
-
-First, I would not repeat the payment blindly. I would check the payment provider and booking supplier using the transaction IDs. If payment succeeded but booking is uncertain, I would keep the order pending, reconcile the state and follow the agreed recovery or refund process.
-
-
-Question 62. An executive wants AI in every product. How do you respond?
-
-I support innovation, but I would rank use cases by value, risk and data readiness. I would pilot a few measurable cases, put human controls in place and scale only when evidence supports it.
-
-
-Question 63. A vendor misses a critical deadline. What do you do?
-
-I verify dependencies, contractual deliverables and real business impact. I establish a recovery plan, alternatives and escalation with procurement and legal teams. I protect service continuity and document decisions.
-
-
-Question 64. What would you ask the panel?
-
-I would ask Ibrahim which three outcomes matter most in the first six months, how engineering ownership is divided across the portfolio, and what currently blocks delivery. I would ask Tahani about leadership expectations and team development.
-
-
-Question 65. What did you deliver for Africa CDC?
-
-I led the UPA in-house digital transformation team that designed and delivered the digital platform supporting the African Pooled Procurement Mechanism. Africa CDC owns the continental initiative. Our responsibility was digital platform design, delivery, publishing and enhancement.
-
-
-Question 66. What is your hands-on HTA experience?
-
-I personally designed and developed the technology solution for the Health Technology Assessment platform. This complements my production healthcare API development and earlier dot net software engineering.
-
-
-Question 67. How do you govern Dynamics 365 integration?
-
-I directed the completed Dynamics 365 enterprise integration across procurement, supply, inventory, finance and reporting, including mapping, interface governance, testing, security and production transition. I do not claim to have configured the ERP itself.
-
-
-Question 68. What are your systems analysis methods?
-
-I map current and target processes, clarify business rules, define user stories and acceptance criteria, and use UML, Visio, Jira and data mappings to connect requirements to engineering and testing.
-
-
-Question 69. What is your Africa and national governance experience?
-
-I contributed to national pharmaceutical traceability governance, served on the National Blood Operations Oversight board and joined the digital transformation committee supporting the World Bank B-READY assessment. These are governance roles, not personal software builds.
+FOUR ADDITIONAL ASSESSMENT SCENARIOS: Refer to the interview HTML for the previously submitted assessment questions. These are separate from the thirty-five core interview questions.

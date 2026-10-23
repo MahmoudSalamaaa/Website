@@ -1,6 +1,6 @@
-SIAD HOLDING — FINAL 35 INTERVIEW QUESTIONS — SPOKEN ENGLISH EDITION.
+SIAD HOLDING — 35 INTERVIEW PRACTICE QUESTIONS — SIMPLE SPOKEN ENGLISH.
 Prepared for Assistant Director of Digital Platforms and Engineering.
-Evidence: approved five CV masters and executive portfolio. Interviewer-specific predictions are not confirmed questions. Speak slowly, pause between ideas, and do not claim experience you cannot verify.
+These are practice questions, not confirmed questions from the interview panel. The answers distinguish my real experience from plans for SIAD.
 
 Question 1. Tell us about yourself.
 
@@ -16,7 +16,7 @@ I would agree clear priorities, decision rights and a simple reporting rhythm. I
 
 Question 4. What does being number two in technology mean to you?
 
-I understand I would report directly to Ibrahim. I would support his strategy and own engineering delivery within the authority he delegates. I would raise risks early and bring clear options. I would not assume a formal deputy title without confirmation.
+I would report directly to Mr Ibrahim and support his priorities. My job would be to turn his strategy into clear engineering plans, lead daily delivery, solve problems early and keep him informed. I would take decisions within my agreed authority and escalate major risks with options.
 
 Question 5. How do you lead 54 people?
 
@@ -40,7 +40,7 @@ I first separate facts from assumptions. I clarify the shared business outcome a
 
 Question 10. Explain an architecture decision you made.
 
-One example is the MedIQ core replacement. We needed to modernize a critical platform while services continued. I helped set architecture boundaries and led delivery decisions around migration, reconciliation, parallel operation, cutover and support readiness. The key trade-off was modernization speed versus continuity and data integrity.
+One important decision was how to replace the MedIQ core without stopping critical services. We chose a controlled transition instead of a sudden switch. We prepared data mapping, migration checks, parallel operation, cutover and support. I led the architecture and delivery decisions with our technical specialists. The priority was safe change and correct data, not speed alone.
 
 Question 11. How do you design an enterprise API?
 
@@ -56,15 +56,15 @@ I choose based on team capability, domain boundaries, scaling and operational co
 
 Question 14. Tell us about MedIQ replacement.
 
-I was involved in MedIQ's original development and later led the in-house organization through its core replacement. We planned migration, reconciliation, testing, training, parallel operation, cutover and stabilization while operations continued. The platform serves more than 38,000 users. The MedIQ transformation received an organizational Pharmaconex 2026 digital-transformation award, not a personal award.
+I worked on MedIQ from its early development and later led the team responsible for replacing its core platform. We prepared data migration, checks, testing, training, parallel operation and a controlled cutover. The platform has more than thirty-eight thousand users. Our organisation received a Pharmaconex digital transformation award in 2026 for this work.
 
 Question 15. How do you decide go-live readiness?
 
-I review business acceptance, critical tests, security, data reconciliation, monitoring, rollback and support readiness. I recommend a go or no-go decision with documented risks. The final approval follows SIAD's actual governance and delegated authority; I would confirm that with Ibrahim.
+I check business acceptance, critical tests, security, data accuracy, monitoring, rollback and support readiness. I present a clear go or no-go recommendation with risks and options. Final approval must follow the company's agreed decision process.
 
 Question 16. What would your first 90 days at SIAD look like?
 
-In the first month I would listen, map products, teams, risks and delivery commitments. In the second month I would establish a practical engineering scorecard and prioritised improvement plan. By day 90 I would deliver a few measurable fixes and agree a longer roadmap with Ibrahim.
+In the first thirty days, I would meet the teams and business owners, understand each platform, and review risks and delivery promises. In the next thirty days, I would agree owners, key measures and the most urgent fixes. By day ninety, I would aim to show early improvements and agree a realistic roadmap with Mr Ibrahim.
 
 Question 17. How do you handle a delayed programme?
 
@@ -76,7 +76,7 @@ I start with service criticality, monitoring and incident history. Then I review
 
 Question 19. How would you handle a major incident?
 
-First, I confirm the impact, appoint an incident lead and protect users and data. The team works on safe recovery while I keep leaders informed. Afterward, we review the cause and verify corrective actions. We also successfully tested MedIQ running from an alternate disaster-recovery environment. That was a planned test, not an unplanned outage.
+First, I check who is affected and appoint an incident lead. We protect users and data, restore service safely and give regular updates. After recovery, we find the root cause and test the fix. In MedIQ, we also completed a planned disaster recovery test using an alternate environment. That was a test, not an unplanned outage.
 
 Question 20. How do you embed security in delivery?
 
@@ -84,7 +84,7 @@ I include access control, threat review, secrets handling, dependency checks and
 
 Question 21. What is your approach to disaster recovery?
 
-I agree recovery objectives with the business, then test backups, dependencies and recovery procedures with infrastructure specialists. A real example is a successful MedIQ failover test to an alternate environment. I would not quote an RTO or RPO number without evidence.
+I start by asking which services are most critical and how much downtime and data loss the business can accept. Then we agree recovery targets and test backups, dependencies and recovery steps with the infrastructure team. We carried out a planned MedIQ recovery test in an alternate environment. I would only quote recovery numbers that have been measured.
 
 Question 22. How do you evaluate a vendor?
 
@@ -100,7 +100,7 @@ I define data owners, business definitions, validation and access rules. Integra
 
 Question 25. How would you approach an OTA platform?
 
-I would first learn SIAD's booking journey and supplier contracts. Then I would review search, pricing, inventory, payment and confirmation. My priorities would be accurate bookings, reliable partner APIs and clear monitoring. I would not assume the existing architecture is wrong.
+I would first understand the customer journey, supplier contracts and current systems. I would map search, prices, available inventory, payment and booking confirmation. I would focus on correct booking states, reliable supplier APIs and monitoring. I would validate the design with SIAD's product and operations teams before recommending changes.
 
 Question 26. B2B versus B2C platform architecture?
 
@@ -108,11 +108,11 @@ B2C focuses on customer experience, conversion and payment. B2B often needs acco
 
 Question 27. How would you avoid double booking?
 
-I would check how the supplier holds and confirms inventory. Each booking needs a unique request key and clear states, such as pending, confirmed or failed. If the response is uncertain, I would verify the supplier state before trying again.
+I would give each booking request a unique idempotency key and keep clear states: pending, confirmed or failed. If a supplier times out, I would check the real booking status before retrying. I would also reconcile payment and booking records so we avoid both double bookings and double charges.
 
 Question 28. How would you design fleet tracking?
 
-I would separate device ingestion, vehicle state, alerts and operational dashboards. I would plan for intermittent connectivity, event ordering, location privacy and retention. I would test with actual fleet operations before selecting technologies.
+I would separate incoming GPS data, vehicle status, alerts and dashboards. Some devices will lose their connection, so the system must show when a location is old and process late data safely. I would protect location privacy, define retention rules and test the design with fleet operations.
 
 Question 29. How would you build shared digital services?
 
@@ -128,7 +128,7 @@ In Oman I led a twenty-person development team working across more than fifteen 
 
 Question 32. What did Keyframe teach you?
 
-At Keyframe I worked on requirements analysis, .NET development, databases, reporting, testing and deployment. The company handled more than 150 engagements. I worked across that portfolio, but I do not claim I personally coded every system. Yashfeen was one healthcare example linked to company-level ITIDA recognition.
+At Keyframe I built my hands-on skills in requirements analysis, C sharp, dot net, databases, reports, testing and deployment. I worked on a wide range of client projects within a portfolio of more than one hundred and fifty engagements. Yashfeen was a healthcare solution linked to recognition for the company through ITIDA.
 
 Question 33. Tell us about a failure.
 
@@ -136,10 +136,10 @@ One example was a CRM implementation in a controlled government environment. I t
 
 Question 34. How would you work with Human Capital Director Tahani?
 
-I would partner with HR on hiring, succession, performance, learning and team wellbeing. Engineering results depend on capable people and a healthy delivery culture.
+I would work with the Human Capital Director on hiring, developing managers, performance and succession planning. I would agree the skills we need, set fair expectations and support managers in building strong teams. People development is part of engineering delivery.
 
 Question 35. Why should we hire you?
 
-I combine eighteen-plus years of software engineering, business analysis, architecture and delivery leadership. I lead fifty-four people through nine direct reports, and I have delivered complex platform replacements and enterprise integrations. I can help SIAD turn business needs into secure, reliable products with clear engineering ownership.
+I bring more than eighteen years of experience across systems analysis, software engineering, architecture and delivery leadership. Today I lead fifty-four people through nine direct reports. I have helped build and replace major platforms and integrate enterprise systems. I can support Mr Ibrahim by turning SIAD's business priorities into reliable products and clear engineering results.
 
-FOUR ADDITIONAL ASSESSMENT SCENARIOS: Refer to the interview HTML for the previously submitted assessment questions. These are separate from the thirty-five core interview questions.
+End of the thirty-five SIAD interview practice questions.

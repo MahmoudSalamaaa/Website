@@ -167,4 +167,86 @@ Follow-up 10. Tahani asks: Why are you interested in leaving your current role, 
 
 I value the scale and public impact of my current work. I am interested in SIAD because the role brings together digital products, engineering leadership, and commercial platforms. I want to contribute to a growing business and take clear responsibility for platform delivery. For compensation, I would first like to understand the full responsibilities and package, then discuss a fair level based on the role and my experience.
 
+PART THREE. TWENTY JOB DESCRIPTION COVERAGE QUESTIONS.
+
+Coverage 1. How would you build a multi-year technology roadmap across OTA, tourism, fleet, AI, and shared services?
+
+I would start with SIAD's growth priorities and map each platform's current capability, risks, and cost. I would group work into business outcomes, dependencies, and delivery stages. I would agree investment choices with Ibrahim and review the roadmap regularly. I would include architecture standards, AI readiness, and measurable business results.
+
+Coverage 2. How would you run Agile delivery across Product Managers, Business Analysts, engineering, QA, and DevOps?
+
+I would give each product a clear owner, prioritized backlog, sprint goals, acceptance criteria, and delivery measures. Business Analysts clarify requirements; engineering and QA confirm feasibility and quality. I would review dependencies and risks every week. Scope changes need an agreed decision, not hidden work.
+
+Coverage 3. How would you control uncontrolled development, scope changes, and cross-team dependencies?
+
+I would make the approved backlog and change requests visible. Each change needs a business reason, effort estimate, impact on schedule, and an authorized decision. I would maintain a dependency register and review blockers across teams. This protects delivery commitments while allowing urgent business changes through a controlled process.
+
+Coverage 4. How would you establish architecture reviews and keep system diagrams and data flows current?
+
+I would define a small architecture review process for high-impact changes. Teams should maintain system context diagrams, API contracts, data flows, and short architecture decision records in their normal workflow. Reviews must cover security, integration, operations, and reuse. Documentation should be updated with releases, not only at project start.
+
+Coverage 5. How would you design shared booking, pricing, payments, and supplier connectivity capabilities?
+
+I would first define who owns booking status, price rules, payment status, and supplier data. I would use clear service contracts and idempotent operations for critical transactions. Pricing and availability can change, so checkout needs revalidation and reconciliation. Shared services need monitoring, access controls, and independent support ownership.
+
+Coverage 6. How would you align SIAD's platforms with Saudi NCA ECC and PDPL requirements?
+
+I would work with SIAD's security, legal, and compliance owners to map applicable controls and personal-data obligations. We would identify data types, access rights, hosting and transfer requirements, retention, audit evidence, and vendor responsibilities. I would put required controls into architecture reviews and delivery checks. I would not claim legal compliance without a formal assessment.
+
+Coverage 7. How would you govern SAST, DAST, penetration testing, and vulnerability remediation SLAs?
+
+I would include code and dependency scanning in the delivery pipeline and use dynamic testing and penetration tests based on risk. Findings need severity, an owner, a due date, and verified closure. Critical risks should block release when required by policy. I would report overdue high-risk issues to the appropriate leaders.
+
+Coverage 8. How would you secure customer payments, supplier access, privileged accounts, and production systems?
+
+I would use least-privilege access, strong authentication, secure secret storage, and full audit logging. Payment data should be minimized and handled through approved payment services and controls. Supplier access needs clear scope and expiry. Production access should be controlled, monitored, and reviewed regularly.
+
+Coverage 9. How would you govern integrations with Dynamics 365 F&O, Opera Cloud/OHIP, Fastbooking, and payment gateways?
+
+I would confirm each system's API capabilities, contracts, rate limits, data ownership, and failure behavior with its vendor. I would use a governed integration layer with secure access, mapping, monitoring, and reconciliation. My experience includes leading the UPA side of SAP and Dynamics integration work. I would not claim hands-on experience with Opera or Fastbooking before working with them.
+
+Coverage 10. How would you integrate GPS providers, WhatsApp or Twilio, and BI platforms safely?
+
+I would define clear event formats, consent and privacy rules, access controls, and provider service levels. GPS data may arrive late or be duplicated. Messaging must handle failed delivery and avoid exposing sensitive data. BI feeds need documented definitions and validation. I would monitor each provider separately and the full business process end to end.
+
+Coverage 11. How would you reduce vendor dependency and enforce source-code handover?
+
+I would make architecture documents, source-code access, deployment scripts, API specifications, and support knowledge part of contractual acceptance criteria. I would review milestones, defects, and service levels weekly. I would verify that our team can build, deploy, and support the delivered system before final acceptance. Risks would be escalated to Ibrahim with mitigation options.
+
+Coverage 12. How would you build a high-performing remote engineering office in Cairo?
+
+I would define roles, technical leads, decision rights, working agreements, and a regular delivery rhythm. I would make documentation and issue tracking the default so remote teams do not depend on informal conversations. I would review capacity, performance, skills, and succession with managers. I have led multidisciplinary teams, but I would first learn SIAD's current remote operating model.
+
+Coverage 13. What coding, branching, review, and documentation standards would you enforce?
+
+I would set a practical minimum: version control, protected branches, peer review, automated checks, clear API documentation, and traceable releases. I would avoid one rigid process for every technology. Exceptions should be documented and approved based on risk. We would inspect quality trends and improve the standards over time.
+
+Coverage 14. How would you prepare SIAD platforms for Hajj and Umrah demand peaks?
+
+I would use demand forecasts and historical traffic to identify critical booking, payment, and supplier journeys. Before peak season, I would run load and failure tests, review capacity and rate limits, and agree supplier escalation plans. We would monitor error rates, latency, and completed bookings in real time. During peak periods, I would control risky changes and prepare recovery playbooks.
+
+Coverage 15. How would you define SLAs, uptime targets, alerts, and environment management?
+
+I would agree service importance and business expectations before setting uptime and recovery targets. I would define measurable service indicators, alerts, ownership, and escalation rules. Development, QA, staging, UAT, production, and disaster recovery environments need controlled access and deployment paths. Targets should be based on business need and operational evidence.
+
+Coverage 16. How would you ensure complete QA coverage and obtain final go-live approval?
+
+I would require risk-based functional, API, integration, regression, mobile, performance, and security testing. Each release needs test evidence, known defects, release notes, deployment steps, and a rollback plan. I would review readiness with product and engineering owners, then submit my recommendation to Ibrahim for final go-live sign-off, as described in the role.
+
+Coverage 17. Which dashboards would you prioritize for OTA, supplier margin, fleet, and customer behavior?
+
+I would start with agreed definitions for booking conversion, failed bookings, supplier margin, fleet utilization, customer journeys, and system health. Each metric needs a business owner and a reliable source. I would validate the data before executive reporting. Then I would use the dashboards to find operational problems and test improvements.
+
+Coverage 18. How would you make the platforms AI-ready before launching AI features?
+
+I would first improve data quality, ownership, access controls, and API-accessible data. I would define structured business events and document the meaning of key fields. Then I would select a small AI use case with measurable value and privacy safeguards. Our DeepSeek natural-language-to-SQL work was an exploratory read-only pilot, not a production AI product.
+
+Coverage 19. How would you establish L2 and L3 support, runbooks, and development-to-support handover?
+
+I would define what L1, L2, and L3 own, with response targets, escalation paths, and on-call responsibilities. Every release should include troubleshooting notes, known issues, monitoring, and support handover. We would review recurring tickets and incidents to improve the product. A knowledge base should reduce repeated escalations and dependence on individual engineers.
+
+Coverage 20. How do your experience and technical background match the role's stated requirements?
+
+I have more than eighteen years in technology, beginning with software development and systems analysis. I led twenty developers in Oman and now lead fifty-four multidisciplinary technology staff through nine direct reports. My work covers web platforms, enterprise integrations, vendor governance, and data initiatives. I would be precise about my direct cloud, mobile, and AI experience and would not claim certifications I have not verified.
+
 End of interview listening practice.

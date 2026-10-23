@@ -249,4 +249,86 @@ Coverage 20. How do your experience and technical background match the role's st
 
 I have more than eighteen years in technology, beginning with software development and systems analysis. I led twenty developers in Oman and now lead fifty-four multidisciplinary technology staff through nine direct reports. My work covers web platforms, enterprise integrations, vendor governance, and data initiatives. I would be precise about my direct cloud, mobile, and AI experience and would not claim certifications I have not verified.
 
+PART THREE. JOB DESCRIPTION COVERAGE — TWENTY QUESTIONS.
+
+Coverage 1. How would you build SIAD's multi-year technology roadmap?
+
+I would connect each platform's roadmap to business growth, customer needs, risk, and cost. I would map dependencies across OTA, tourism, fleet, AI, and shared services. I would agree priorities and investment decisions with Ibrahim, and review the roadmap regularly against measurable outcomes.
+
+Coverage 2. How would you control Agile delivery, backlogs, UAT, and scope changes?
+
+I would assign clear product owners, sprint goals, acceptance criteria, and delivery measures. Product Managers, Business Analysts, engineering, QA, and DevOps must share one approved backlog. Changes need impact assessment and approval. Before release, business users must complete UAT and confirm readiness.
+
+Coverage 3. How would you govern architecture reviews and documentation?
+
+I would require architecture review for high-impact changes. Teams should maintain system diagrams, data flows, API contracts, and short decision records. Reviews would check security, reuse, integration, and operational risks. Documentation must change when the system changes.
+
+Coverage 4. How would you design reusable booking, pricing, payment, and supplier services?
+
+I would define clear ownership for prices, availability, booking status, and payment status. Services need secure interfaces, idempotent requests, monitoring, and reconciliation. Availability and prices must be checked again before final confirmation. Reuse should not create one fragile central dependency.
+
+Coverage 5. How would you address NCA ECC and Saudi PDPL obligations?
+
+I would work with SIAD's security and legal owners to identify applicable controls and personal-data obligations. I would map sensitive data, access, retention, transfers, suppliers, and audit evidence. Then I would add required controls to architecture and release reviews. Formal compliance must be validated by responsible specialists.
+
+Coverage 6. How would you manage SAST, DAST, penetration testing, and vulnerability SLAs?
+
+I would automate code and dependency checks, schedule dynamic testing and penetration tests based on risk, and assign each finding an owner and deadline. Critical vulnerabilities must be handled before unsafe releases. I would track overdue remediation and verify fixes with the security team.
+
+Coverage 7. How would you protect payment flows and supplier or privileged access?
+
+I would enforce least privilege, strong authentication, secure secrets, approved payment controls, and audit logs. Supplier access must be limited and reviewed. Production access should be controlled and monitored. We should avoid storing sensitive payment data unless there is a justified and compliant need.
+
+Coverage 8. How would you integrate Dynamics 365 F&O, Opera Cloud OHIP, and Fastbooking?
+
+I would first confirm vendor APIs, authentication, rate limits, data ownership, and failure behavior. Then I would define mapping, contracts, monitoring, and reconciliation through a governed integration layer. I have led enterprise integrations including SAP and Dynamics work, but I would first learn the specific Opera and Fastbooking interfaces.
+
+Coverage 9. How would you integrate GPS, Twilio or WhatsApp, and BI systems?
+
+I would define data formats, consent and privacy rules, provider limits, and failure handling. GPS events may be late or duplicated. Messaging needs delivery tracking and safe retries. BI data needs agreed definitions and validation. I would monitor both each interface and the complete business journey.
+
+Coverage 10. How would you reduce vendor dependency and verify handover?
+
+I would include source code, build instructions, deployment scripts, architecture documents, API specifications, and support training in acceptance criteria. I would track vendor milestones, defects, and SLAs weekly. Before final acceptance, our team should demonstrate that it can operate and support the solution.
+
+Coverage 11. How would you build a remote engineering office in Cairo?
+
+I would define team ownership, engineering leads, working agreements, and a regular delivery rhythm. Shared documentation, visible work, and clear escalation are essential for remote teams. I would review capacity, skills, performance, and succession with managers, while adapting to SIAD's existing organization.
+
+Coverage 12. Which engineering standards would you enforce?
+
+I would establish protected branches, peer code reviews, automated tests, coding guidelines, API documentation, and traceable releases. Standards should be consistent on critical controls but flexible across technology stacks. Exceptions need clear reasons and risk approval.
+
+Coverage 13. How would you prepare for Hajj and Umrah peak demand?
+
+I would forecast demand, identify critical booking and payment journeys, and test capacity and supplier limits before peak season. We would run load and failure tests, monitor conversion and errors, and prepare escalation and recovery playbooks. I would limit risky changes during critical periods.
+
+Coverage 14. How would you define uptime SLAs and manage cloud environments?
+
+I would agree business-critical services and realistic service targets with stakeholders. I would define measurable availability, latency, recovery, alerts, and escalation ownership. Development, QA, staging, UAT, production, and DR environments need controlled access and repeatable deployment processes.
+
+Coverage 15. How would you govern QA coverage and final go-live sign-off?
+
+I would require functional, API, integration, regression, mobile, performance, and security testing based on risk. Every release needs test results, known defects, release notes, a deployment checklist, and rollback steps. I would recommend readiness to Ibrahim, who has final go-live sign-off under the job description.
+
+Coverage 16. Which BI measures matter most for SIAD's platforms?
+
+I would agree definitions and owners for booking conversion, failed bookings, supplier margin, fleet utilization, customer behavior, and platform health. I would validate data sources and reconcile exceptions. Dashboards should help leaders make decisions, not just display numbers.
+
+Coverage 17. How would you make the platforms ready for AI?
+
+I would improve data quality, ownership, access controls, structured event streams, and API-accessible data. Then I would test a focused AI use case with measurable value and human oversight. Our DeepSeek natural-language-to-SQL work was an exploratory read-only pilot, not a full production deployment.
+
+Coverage 18. How would you establish L2 and L3 application support?
+
+I would define responsibilities, response SLAs, escalation paths, and on-call ownership. Each release should include monitoring, runbooks, known issues, and a support handover. I would review recurring incidents and update the knowledge base so fewer issues require escalation.
+
+Coverage 19. How would you manage cross-team dependencies and weekly executive reporting?
+
+I would keep a visible dependency and risk register with owners and deadlines. Weekly reports should show delivered outcomes, blocked work, upcoming decisions, and changes to schedule or cost. I would escalate issues early with options rather than surprises.
+
+Coverage 20. How does your experience match the stated technical leadership requirements?
+
+I have more than eighteen years in technology, starting with systems analysis and development. I led twenty developers in Oman and now lead fifty-four multidisciplinary staff through nine direct reports. I have led critical platform modernization, enterprise integration, and data initiatives. I would be precise about direct hands-on cloud, mobile, and AI experience.
+
 End of interview listening practice.

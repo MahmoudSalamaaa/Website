@@ -1,144 +1,146 @@
-SIAD HOLDING. Assistant Director of Digital Platforms and Engineering.
-Interview listening practice. Thirty-five questions and answers in clear spoken English.
-These are preparation questions, not confirmed questions from the interview panel.
+SIAD HOLDING. ASSISTANT DIRECTOR OF DIGITAL PLATFORMS AND ENGINEERING.
+EXECUTIVE AND TECHNICAL INTERVIEW PRACTICE. REBUILT EDITION.
+These are predicted practice questions, not confirmed questions from the panel.
+Answers use documented experience where stated. SIAD architecture answers are proposed approaches, not claims about its current systems.
 
+Question 1. Tell us about yourself and why you fit this position.
 
-Question 1. Tell us about yourself.
+I started in software development and systems analysis. In Oman, I led a team of twenty developers. Today, I lead a multidisciplinary technology organization of fifty-four people through nine direct reports. My work includes the MedIQ platform replacement, enterprise integrations, and data platforms. I understand both engineering details and executive delivery. At SIAD, I would focus on reliable platforms, clear ownership, and business results.
 
-I started as a software developer and systems analyst. I later led twenty developers in Oman, delivering government and enterprise platforms. Today I lead a multidisciplinary technology organisation of fifty-four people, with nine direct reports and an annual IT budget of about 150 million Egyptian pounds. I contributed to the original MedIQ platform and later led its re-architecture and replacement. I also led major SAP and Dynamics 365 integrations. I bring hands-on engineering experience and practical leadership to help SIAD deliver reliable digital products.
+Question 2. What would you need to understand before changing SIAD's architecture?
 
-Question 2. Why this Assistant Director role?
+First, I would map the products, users, suppliers, business processes, and current system boundaries. I would review incidents, costs, delivery delays, security risks, and team skills. I would speak with the business and engineering owners. Only then would I recommend changes. I do not want to redesign a platform before understanding what already works.
 
-I enjoy turning business needs into reliable digital platforms. This role combines architecture, engineering execution and team leadership. I can bring my experience in complex platforms while learning SIAD's tourism and fleet businesses from their owners. I can connect requirements analysis, architecture, software engineering, operational reliability and executive governance.
+Question 3. How would you structure engineering teams across OTA, fleet, and shared services?
 
-Question 3. How will you work with Mr Ibrahim Alharbi?
+I would start with clear product ownership. Each team needs a business goal, technical lead, delivery plan, and production responsibility. Shared capabilities should have their own service owners and clear contracts. I would avoid creating a central team that blocks every product. The final structure depends on team size, dependencies, and SIAD's operating model.
 
-I would agree priorities and decision rights with Mr Ibrahim. I would manage daily engineering delivery and give him clear progress updates. When there is a risk, I would bring options and a recommendation early. My job is to turn his strategy into reliable execution.
+Question 4. What decisions should you own, and what should go to Ibrahim?
 
-Question 4. What does being number two in technology mean to you?
+I would agree decision rights with Mr Ibrahim early. I can own engineering execution, technical reviews, delivery risks, and team performance within my authority. Major investments, strategy changes, and high business risks should be escalated with clear options. I would never surprise him with a problem that I already knew about.
 
-I understand I would report directly to Mr Ibrahim. I would support his strategy and lead the engineering work assigned to me. I would build capable managers, make decisions within my authority and escalate important risks early. I would confirm the exact scope of the role with him.
+Question 5. How would you assess a fragmented platform architecture?
 
-Question 5. How do you lead 54 people?
+I would draw the main systems and their data flows. Then I would identify duplicated functions, direct dependencies, weak interfaces, and unclear data ownership. I would rank issues by customer impact and operational risk. My goal would be a practical roadmap, not a large redesign with no business value.
 
-I lead through nine direct reports, with clear service owners, measurable goals and regular reviews. Our fifty-four-person organisation includes engineering, infrastructure, security, data, applications and support; they are not all developers. I delegate technical details to specialists, remove blockers and stay accountable for delivery and service quality.
+Question 6. Tell me about a major architecture decision you actually led.
 
-Question 6. How do you handle a weak engineering manager?
+During the MedIQ core replacement, the challenge was to modernize a critical platform while keeping services running. We chose a controlled transition with data mapping, reconciliation, parallel operation, testing, and cutover preparation. I led architecture and delivery decisions with technical specialists. We balanced modernization speed against continuity and data integrity.
 
-I start with evidence and clear expectations. I ask what blocks performance, agree a time-bound improvement plan and offer coaching. I review results fairly. If risk continues, I follow formal HR procedures.
+Question 7. How would you decide between a modular monolith and microservices?
 
-Question 7. How do you manage engineering capacity?
+I would look at domain boundaries, team ownership, scaling needs, and operational maturity. A modular monolith can be easier to test and operate. Microservices can help when teams need independent releases and the boundaries are clear. I would not choose microservices only because they sound modern.
 
-I map demand, critical skills, dependencies and operational support load. I protect capacity for security, incidents and technical debt. I make trade-offs visible to business owners before promising dates.
+Question 8. How would you integrate OTA, fleet, ERP, and partner systems?
 
-Question 8. How do you create engineering accountability?
+I would define clear API contracts, data owners, security rules, and monitoring. I would avoid many hidden point-to-point connections. For asynchronous work, I would consider events and queues, but only where they solve a real problem. I would use versioning, retries, and reconciliation so one partner failure does not damage the whole platform.
 
-Each service needs an owner, quality criteria and an escalation route. Teams should know who decides architecture, who deploys, and who supports production. I measure outcomes, not just task completion.
+Question 9. A booking payment succeeds, but the supplier confirmation fails. What do you do?
 
-Question 9. How do you manage conflict between teams?
+I would treat payment and booking as separate states. The system must not show a confirmed booking without supplier confirmation. I would use a unique request key, check the supplier status after timeouts, and reconcile payment records. If confirmation fails, the system needs a clear refund or recovery process, with customer communication and an audit trail.
 
-I bring both teams back to the same business goal. I ask each team to explain the facts, impact and options. Then I clarify ownership, agree a decision and set a deadline. I document the result and follow up. For major business risks, I escalate with a recommendation.
+Question 10. How would you prevent double bookings and double charges?
 
-Question 10. Explain an architecture decision you made.
+I would use idempotency keys for repeated requests, clear booking states, and supplier-side confirmation checks. A timeout is not proof that a booking failed. Before retrying, we must check the real state. Payment and booking records should be reconciled, and exceptions should be visible to operations.
 
-A good example is the MedIQ core replacement. We had to modernize a critical platform without stopping daily operations. I worked with technical leads on the architecture and planned data migration, reconciliation and parallel running. We tested before cutover and prepared the support team. The main trade-off was modernization speed versus service continuity and data accuracy.
+Question 11. The booking API is slow during a seasonal peak. How would you investigate?
 
-Question 11. How do you design an enterprise API?
+First, I would measure where the delay happens: our API, database, cache, or supplier. I would check traffic, error rates, slow queries, and dependency timeouts. Then I would protect the booking path, adjust capacity, and apply safe fixes. I would measure the result before making larger architecture changes.
 
-I start with the business process, data owner and users. I define the API contract, authentication, validation, error responses, audit logs and testing. I personally designed and developed healthcare REST APIs using JSON over HTTPS and token-based access. The larger enterprise integrations were delivered with my teams.
+Question 12. How would you design a reliable fleet tracking platform?
 
-Question 12. Tell us about SAP integration.
+I would separate device ingestion, location processing, alerts, and dashboards. Devices can go offline, so every location needs a timestamp and a clear stale-data status. We must handle late or duplicate events safely. I would also define access controls, location privacy, and retention rules with the business.
 
-I led the UPA side of a completed, greenfield, two-way integration with the SAP Strategic Medical Warehouses platform. We agreed requirements, system boundaries, master-data mappings, interface contracts, testing and reconciliation. I coordinated go-live and support. I did not configure SAP itself.
+Question 13. What should be shared across SIAD's digital platforms?
 
-Question 13. Monolith or microservices?
+Identity, notifications, integration standards, monitoring, and selected payment capabilities may be shared. But I would confirm the business needs first. Each shared service needs a clear owner, service contract, and support model. Reuse should reduce duplication, not create a single point of failure or a delivery bottleneck.
 
-I choose based on team capability, domain boundaries, scaling and operational cost. A modular monolith can be safer for a smaller team. Microservices make sense when independent deployment and clear ownership justify the added complexity.
+Question 14. How would you improve engineering delivery predictability?
 
-Question 14. Tell us about MedIQ replacement.
+I would start with a visible backlog, realistic capacity, clear priorities, and small delivery milestones. I would track blocked work, defects, and changes in scope. Managers must raise risks early. I would focus on finished business outcomes, not just the number of tasks closed.
 
-I worked on the original MedIQ platform and later led the in-house team during its core replacement. We prepared the new system, migrated and checked the data, ran the systems in parallel and planned the final cutover. The platform serves more than thirty-eight thousand users. The MedIQ transformation received a digital transformation award at Pharmaconex in 2026. It was recognition for the organization and team.
+Question 15. Two product owners both say their project is urgent. What do you do?
 
-Question 15. How do you decide go-live readiness?
+I would compare business value, deadlines, risk, dependencies, and available capacity. I would show the trade-offs openly and recommend an order of work. If the decision affects strategy or commitments, I would take options to Ibrahim. I would not promise the same people to two projects at the same time.
 
-I check business acceptance, critical tests, security, data accuracy, monitoring, rollback and support readiness. I present a clear go or no-go recommendation with risks and options. Final approval must follow the company's agreed decision process.
+Question 16. How do you reduce technical debt without stopping delivery?
 
-Question 16. What would your first 90 days at SIAD look like?
+I would identify debt that causes incidents, security risk, slow releases, or high support cost. Then I would include the highest-risk fixes in the delivery plan. Some debt can be addressed during normal feature work. I would explain the business impact rather than asking for a large technical cleanup without evidence.
 
-In the first thirty days, I would meet the teams and business owners, understand each platform, and review risks and delivery promises. In the next thirty days, I would agree owners, key measures and the most urgent fixes. By day ninety, I would aim to show early improvements and agree a realistic roadmap with Mr Ibrahim.
+Question 17. How would you measure engineering performance?
 
-Question 17. How do you handle a delayed programme?
+I would use a small set of measures: delivery predictability, production incidents, recovery time, change failures, and customer impact. I would review them with context, not use them to punish teams. The aim is to find bottlenecks and improve service quality.
 
-I identify the critical path, root cause and actual business impact. I compare options with the team, replan dependencies and escalate changes early. I never hide a delay behind a green dashboard.
+Question 18. How do you lead managers rather than manage every engineer yourself?
 
-Question 18. How do you improve uptime?
+Today I lead fifty-four people through nine direct reports. I agree goals and responsibilities with each manager, review delivery and service risks, and help remove blockers. I expect managers to own technical decisions within their scope. I stay accountable for the overall result without becoming a bottleneck.
 
-I start with critical services, monitoring data and incident history. Then I look for single points of failure, slow components and capacity limits. I work with infrastructure and application teams to improve monitoring, recovery and support. I measure the results before reporting improvement.
+Question 19. An engineering manager repeatedly misses commitments. What do you do?
 
-Question 19. How would you handle a major incident?
+I would check the facts first. Is the problem skill, capacity, unclear priorities, or poor management? I would agree specific expectations, support, and review dates. If performance does not improve, I would work with Human Capital through a fair formal process. The team and business still need a recovery plan.
 
-First, I confirm the impact and assign one incident lead. We protect users and data, focus on safe recovery and give leaders regular updates. After recovery, we find the root cause and verify corrective actions. In MedIQ, we also tested service recovery in an alternate environment. That was a planned recovery test.
+Question 20. What would you do if Ibrahim requested an unsafe launch date?
 
-Question 20. How do you embed security in delivery?
+I would explain the specific risks in business terms and show the evidence. Then I would offer options, such as reducing scope, adding a controlled pilot, or moving the date. If a critical security or data-integrity issue remains, I would recommend no go. I would document the decision and follow the agreed governance process.
 
-I include access control, threat review, secrets handling, dependency checks and testing in the delivery process. Security and infrastructure specialists review the technical controls. I remain accountable for business risk and release decisions. In MedIQ, one-time-password multi-factor authentication and a user activity log were rolled out. I oversee security and release controls with accountable specialist teams.
+Question 21. What are your go-live criteria for a business-critical platform?
 
-Question 21. What is your approach to disaster recovery?
+I need business acceptance, tested critical journeys, security review, data checks, monitoring, rollback planning, and a ready support team. Open risks must be visible, with owners. I would give a clear go or no-go recommendation. Final approval follows the company's agreed authority.
 
-I ask the business how quickly each critical service must recover and how much data loss it can accept. Then I work with infrastructure specialists to test backups, dependencies and recovery steps. In MedIQ, we completed a planned test using an alternate recovery environment. I focus on tested recovery capability, not only written plans.
+Question 22. How would you handle a major production incident?
 
-Question 22. How do you evaluate a vendor?
+I would confirm customer impact, appoint an incident lead, and establish clear communication. The technical team would focus on safe recovery while we protect data and limit further damage. After service returns, we would review the root cause and verify corrective actions. Our MedIQ disaster recovery test was planned; I would not describe it as a real outage.
 
-I evaluate technical fit, security, integration constraints, total cost, delivery and support. I require early technical validation and measurable acceptance tests. In a previous CRM project, I learned not to rely on supplier commitments before validating the architecture against our data-center and connectivity constraints.
+Question 23. What is your approach to resilience and disaster recovery?
 
-Question 23. Explain your AI experience.
+First, I would agree which services are critical and what recovery targets the business needs. Then I would review backups, dependencies, alternate environments, and test results with specialists. We completed a planned MedIQ recovery test in an alternate environment. I would not claim specific recovery times without measurements.
 
-We explored a controlled AI solution using DeepSeek to turn business questions into SQL queries for MedIQ data. The design allows approved read-only queries, with validation, access control and logging. It can make data easier to use, but sensitive information needs strong controls. This was a controlled capability, not a company-wide AI rollout.
+Question 24. How do you build security into engineering delivery?
 
-Question 24. How do you govern enterprise data?
+Security should start in design, not only before release. I would require clear access rules, secure secrets, dependency checks, testing, and audit logs. Specialist teams review the controls. In MedIQ, we rolled out one-time-password multi-factor authentication and user activity logging. I would keep security risk visible in release decisions.
 
-I define data owners, business definitions, validation and access rules. Integration is not successful if teams cannot trust the numbers. I use reconciliation and quality checks before executive reporting. I led UPA-side data preparation, mapping and harmonization for the production Central Data Warehouse, and oversaw a separate MedIQ data pipeline and operational reporting patterns.
+Question 25. Tell us about an enterprise integration you personally led.
 
-Question 25. How would you approach an OTA platform?
+I led the UPA side of a two-way integration with the SAP Strategic Medical Warehouses platform. We worked on requirements, data mapping, interface contracts, testing, reconciliation, and go-live coordination. I led the integration work on our side; I did not configure SAP itself. I also directed completed Dynamics 365 integration work.
 
-I would first understand the customer booking journey and supplier contracts. Then I would review search, pricing, availability, payment, supplier confirmation and support. I would check what happens when a supplier is slow or a payment succeeds but the booking is not confirmed. Clear booking states, monitoring and reconciliation help protect customers.
+Question 26. What is your hands-on API design experience?
 
-Question 26. B2B versus B2C platform architecture?
+I personally designed and developed healthcare REST APIs using JSON, HTTPS, and token-based access. I start with the business process and data owner. Then I define the contract, validation, errors, access rules, logs, and tests. For large integrations, I lead specialist teams and remain accountable for the end-to-end result.
 
-B2C focuses on customer experience, conversion and payment. B2B often needs account contracts, roles, negotiated pricing, invoicing and partner APIs. I would identify shared services while keeping commercial rules clear.
+Question 27. How would you make executive reports trustworthy?
 
-Question 27. How would you avoid double booking?
+I would define each metric, its data owner, source, and calculation. I would use validation and reconciliation before publishing numbers. In my current work, I led data preparation and harmonization for a Central Data Warehouse. If two reports disagree, I would investigate the definitions and source records before choosing a number.
 
-I would use a unique idempotency key for each booking request, so retries do not create a second booking. I would check how the supplier reserves and confirms inventory. The booking moves through clear states, such as pending, confirmed or failed. If a request times out, we check the supplier's real status before retrying. We also reconcile uncertain results.
+Question 28. Where would you use AI in SIAD, and what would you avoid?
 
-Question 28. How would you design fleet tracking?
+I would start with a real business problem and a small measurable pilot, such as support knowledge search or controlled analytics. I would protect sensitive data, check accuracy, and keep human review where needed. We explored a read-only natural-language-to-SQL capability using DeepSeek. I would not present that exploration as a full production AI rollout.
 
-I would separate incoming device data from vehicle status, alerts and dashboards. Each message needs a vehicle ID and timestamp. When a device goes offline, the dashboard must show that the location is old, not pretend it is live. I would plan safe data replay, operator alerts, access control and location-data retention.
+Question 29. When would you build software internally instead of buying it?
 
-Question 29. How would you build shared digital services?
+I would compare business differentiation, time, total cost, security, integration, support, and vendor dependence. I would build when the capability is central to the business and we can own it well. I would buy when a proven product meets the need at lower risk. The decision must include long-term operating cost, not only purchase price.
 
-I would identify reusable identity, notifications, payments, integration and observability capabilities. I would define ownership and service contracts. Shared services should reduce duplication without creating a central bottleneck.
+Question 30. Tell us about a professional failure and what changed afterward.
 
-Question 30. How do you communicate with executives?
+In a CRM project, I trusted the vendor's technical commitment too much. We did not validate the proposed architecture early enough. Later, it did not fit our controlled data-center and connectivity constraints. I took responsibility and led a technical reassessment and alternative designs. Since then, I insist on early technical validation before major delivery commitments.
 
-I give executives short updates in business language: what we delivered, what is at risk, what decision is needed and what happens next. I keep technical details ready. If a deadline is at risk, I explain it early and present options instead of hiding the problem.
+Question 31. How do you manage a vendor whose solution is not technically suitable?
 
-Question 31. What did you do in Oman?
+I would compare the proposed solution with agreed requirements and constraints, using technical evidence. I would ask for a tested correction or alternatives and assess the impact on cost and schedule. I learned this in the CRM project: supplier promises cannot replace technical validation. I would document decisions and protect the business from further risk.
 
-In Oman I led a twenty-person development team working across more than fifteen government and enterprise platforms. I contributed to the National Educational Portal, including learning workflows, reporting and integrations, and to correspondence solutions. I combined requirements analysis, development oversight, testing, releases and customer support.
+Question 32. How would you handle disagreement with a senior executive?
 
-Question 32. What did Keyframe teach you?
+I would explain the risk calmly, using facts and practical alternatives. In one case, a senior executive requested sharing company-related data with an external party. I raised a governance concern and asked for written authorization before following the formal direction. I respect leadership decisions while making risk and accountability clear.
 
-At Keyframe, I built hands-on experience in business analysis, C-sharp and dot net, databases, reporting, testing and deployment. I worked across a portfolio of more than one hundred and fifty client engagements. Yashfeen was one healthcare example connected with ITIDA recognition. That period taught me to connect customer requirements with working software.
+Question 33. What would you do in your first ninety days?
 
-Question 33. Tell us about a failure.
+In the first month, I would listen to Ibrahim, product owners, and engineering managers, then map platforms, commitments, incidents, and risks. In the second month, I would agree ownership, a small engineering scorecard, and priority fixes. By day ninety, I would aim to deliver early measurable improvements and a realistic roadmap. I would validate the plan before promising results.
 
-One example was a CRM implementation in a controlled government environment. I trusted the vendor's commitment too much and did not ask for enough technical validation early in the project. Later, we found that the proposed architecture did not fit our data-center and connectivity constraints. I took responsibility and led the technical assessment and alternative designs. The lesson was clear: vendor promises cannot replace early technical validation. Now I validate critical architecture assumptions before committing to delivery.
+Question 34. How would you work with Tahani on engineering capability?
 
-Question 34. How would you work with Human Capital Director Tahani?
+I would agree the skills and leadership roles we need, then review hiring, development, performance, and succession plans with Human Capital. I would set fair expectations and support managers with coaching. The goal is a team that can deliver reliably and retain critical knowledge.
 
-I would work closely with Ms Tahani on hiring, performance, succession planning and team development. I would define the skills we need, use fair performance measures and help managers coach their teams. I would also discuss retention risks early. The goal is a stable engineering organization that does not depend on one person.
+Question 35. Why should SIAD choose you for this role?
 
-Question 35. Why should we hire you?
+I combine hands-on systems analysis and software engineering with large-team leadership. I have led platform modernization, enterprise integrations, and critical service delivery. Today I manage a multidisciplinary team of fifty-four people through nine direct reports. I would bring clear engineering ownership, practical architecture decisions, and disciplined execution while learning SIAD's business in depth.
 
-I bring more than eighteen years of experience across software development, systems analysis, architecture and technology leadership. Today I lead a multidisciplinary team of fifty-four people through nine direct reports. I have led a critical platform replacement and enterprise integrations while protecting daily operations. I can help SIAD turn business needs into reliable digital products, with clear ownership and disciplined delivery.
+End of the thirty-five interview practice questions.

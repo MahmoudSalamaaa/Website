@@ -249,4 +249,38 @@ Coverage 20. How does your experience match the stated technical leadership requ
 
 I have more than eighteen years in technology, starting with systems analysis and development. I led twenty developers in Oman and now lead fifty-four multidisciplinary staff through nine direct reports. I have led critical platform modernization, enterprise integration, and data initiatives. I would be precise about direct hands-on cloud, mobile, and Artificial Intelligence (AI) experience.
 
+PART FOUR. FOUR PANEL ASSESSMENT SCENARIOS — QUESTIONS, MODEL ANSWERS, AND FOLLOW-UP CHALLENGES.
+
+Assessment scenario 1. Describe the architecture you personally own: stack, data, cache, communications, inherited choices.
+
+Model answer:
+I have been involved in MedIQ from its original development through modernization and the new-generation core replacement. I lead architecture and delivery governance across React and Node.js components, Microsoft .NET Application Programming Interfaces (APIs), PostgreSQL, Redis, containers and private cloud. I personally developed healthcare Representational State Transfer (REST) Application Programming Interfaces (APIs) and an Health Technology Assessment (HTA) technology solution. I distinguish my own coding from team delivery and inherited architecture.
+
+Follow-up questions to prepare:
+Which Redis invalidation strategy did you actually use? Which MedIQ components did you personally code? What was inherited? Answer only with verified facts.
+
+Assessment scenario 2. Replace point-to-point Enterprise Resource Planning (ERP), Property Management System (PMS), payments and supplier Application Programming Interfaces (APIs) with a governed integration layer.
+
+Model answer:
+I would first map business flows and systems of record. Then I would define a governed integration layer with contracts, authentication, versioning, idempotency, reconciliation and monitoring. I led Egyptian Authority for Unified Procurement (UPA)'s completed bi-directional SAP Strategic Medical Warehouses integration, from requirements and master-data mapping through user testing, go-live and support. I also directed the completed Dynamics 365 integration.
+
+Follow-up questions to prepare:
+Explain idempotency with a double-charge example. When would you use a queue? How do you prevent infinite retries?
+
+Assessment scenario 3. Six weeks before Hajj, booking Application Programming Interface (API) exceeds 2 seconds at projected peak load; cloud spend is over budget.
+
+Model answer:
+I would measure end-to-end performance, including ninety-fifth percentile latency (p95 latency), database queries, Redis cache, application code, supplier response times and cloud capacity. Then I would prioritize safe changes, run realistic peak-load tests, control spending and agree rollback and go-or-no-go criteria. My experience includes national-scale MedIQ operations, performance testing and private-cloud capacity governance. I would not claim direct Hajj booking experience.
+
+Follow-up questions to prepare:
+What is ninety-fifth percentile latency (p95 latency)? What if the supplier Application Programming Interface (API) is the bottleneck? What is the rollback trigger?
+
+Assessment scenario 4. Have you built a fully remote team, and what did you get wrong the first time?
+
+Model answer:
+I lead a multidisciplinary technology organization of fifty-four people with nine direct reports, and previously led twenty developers in Oman. I have coordinated distributed delivery, but do not claim a fully remote organization. I would use clear ownership, written decisions, measurable results and regular coaching. From the MedIQ replacement, I learned to plan dependencies, migration, reconciliation and operational readiness early. I would not invent a personal mistake.
+
+Follow-up questions to prepare:
+What did you personally get wrong? Prepare a real incident with context, your action, outcome and lesson.
+
 End of interview listening practice.

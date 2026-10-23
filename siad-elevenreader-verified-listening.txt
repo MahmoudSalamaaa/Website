@@ -132,7 +132,7 @@ At Keyframe I developed a strong hands-on foundation in systems analysis, C-shar
 
 Question 33. Tell us about a failure.
 
-In one situation, I supported a technical decision, but the result was not as good as we expected. When I saw the impact, I took responsibility. I worked with the team to correct the direction and reduce the impact. The main lesson was to make our assumptions clear, define success measures early, and review decisions when new evidence appears. I learned that good leadership is not about defending every decision. It is about recognizing a problem, fixing it, and learning from it.
+One example was a CRM implementation in a controlled government environment. I trusted the vendor's commitment too much and did not ask for enough technical validation early in the project. Later, we found that the proposed architecture did not fit our data-center and connectivity constraints. I took responsibility and led the technical assessment and alternative designs. The lesson was clear: vendor promises cannot replace early technical validation. Now I validate critical architecture assumptions before committing to delivery.
 
 Question 34. How would you work with Human Capital Director Tahani?
 

@@ -1,107 +1,361 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>EY | Director Interview Focus · Updated</title><style>*{box-sizing:border-box}body{margin:0;background:#f5f7fb;color:#17253b;font-family:Arial,sans-serif}header{background:#17253b;color:white;padding:16px 20px;display:flex;justify-content:space-between;gap:12px;align-items:center}h1{font-size:19px;margin:0}small{color:#d8e1ef}main{max-width:1250px;margin:auto;padding:14px}.top{font-size:12px;color:#64748b;margin-bottom:12px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.q{background:white;border:1px solid #dce3ec;border-left:4px solid #f4c400;border-radius:10px;min-height:80px;padding:12px;text-align:left;cursor:pointer;font-weight:700;font-size:15px;line-height:1.35;color:#17253b}.q:hover{background:#fff9dc}.n{color:#8995a8;font-size:11px;margin-right:8px}.overlay{position:fixed;inset:0;background:#101d31b8;display:none;align-items:center;justify-content:center;padding:15px}.overlay.show{display:flex}.modal{background:white;border-radius:16px;max-width:760px;width:100%;max-height:90vh;overflow:auto;padding:22px}.modal h2{font-size:22px}.keys{display:inline-block;background:#fff3bc;border-radius:8px;padding:9px;font-weight:bold}.answer{font-size:17px;line-height:1.6}.actions{display:flex;justify-content:space-between;margin-top:18px}button.action{background:#17253b;color:white;border:0;border-radius:8px;padding:10px 15px}.q:focus-visible,.close:focus-visible,.action:focus-visible{outline:3px solid #2563eb;outline-offset:2px}.close{float:right;border:0;background:#eef2f7;border-radius:8px;font-size:22px;padding:4px 12px}@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}.q{font-size:12px;min-height:86px;padding:10px}header h1{font-size:16px}}@media(min-width:900px){.grid{grid-template-columns:repeat(4,1fr)}}.modal small{color:#53637a}</style></head><body><header><div><h1>EY · Enterprise Architecture</h1><small>Director Technical Interview | Focus Study</small></div><small>Technical interview practice</small></header><main><div class="top">39 rigorously reviewed questions · Real examples + consulting scenarios · EN + AR</div><div class="grid" id="grid"></div></main><div class="overlay" id="overlay" role="dialog" aria-modal="true"><div class="modal"><button class="close" onclick="closeQ()">×</button><small id="count"></small><h2 id="question"></h2><div class="keys" id="keys"></div><p class="answer" id="answer"></p><div class="actions"><button class="action" onclick="openQ(current-1)">← Previous</button><button class="action" onclick="openQ(current+1)">Next →</button></div></div></div><script>const data=[
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>EY | Director Interview Focus · Updated</title><style>*{box-sizing:border-box}body{margin:0;background:#f5f7fb;color:#17253b;font-family:Arial,sans-serif}header{background:#17253b;color:white;padding:16px 20px;display:flex;justify-content:space-between;gap:12px;align-items:center}h1{font-size:19px;margin:0}small{color:#d8e1ef}main{max-width:1250px;margin:auto;padding:14px}.top{font-size:12px;color:#64748b;margin-bottom:12px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.q{background:white;border:1px solid #dce3ec;border-left:4px solid #f4c400;border-radius:10px;min-height:80px;padding:12px;text-align:left;cursor:pointer;font-weight:700;font-size:15px;line-height:1.35;color:#17253b}.q:hover{background:#fff9dc}.n{color:#8995a8;font-size:11px;margin-right:8px}.tag{display:inline-block;font-size:10px;font-weight:600;padding:2px 7px;border-radius:12px;margin-top:5px}.tag-ea{background:#e0f2fe;color:#0369a1}.tag-ldr{background:#fce7f3;color:#9d174d}.tag-fit{background:#dcfce7;color:#166534}.tag-tech{background:#ede9fe;color:#5b21b6}.tag-con{background:#fef9c3;color:#78350f}.overlay{position:fixed;inset:0;background:#101d31b8;display:none;align-items:center;justify-content:center;padding:15px}.overlay.show{display:flex}.modal{background:white;border-radius:16px;max-width:800px;width:100%;max-height:92vh;overflow:auto;padding:24px}.modal h2{font-size:20px;margin:0 0 10px}.keys{display:inline-block;background:#fff3bc;border-radius:8px;padding:8px 12px;font-weight:bold;font-size:14px;margin-bottom:14px}.section-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#64748b;margin:14px 0 4px}.answer{font-size:16px;line-height:1.65;color:#17253b}.answer-ar{font-size:15px;line-height:1.75;color:#374151;background:#f8fafc;border-right:3px solid #f4c400;padding:10px 14px;border-radius:0 8px 8px 0;margin-top:4px;direction:rtl;text-align:right;font-family:Arial,sans-serif}.actions{display:flex;justify-content:space-between;margin-top:20px;gap:8px}.actions-center{display:flex;justify-content:center;margin-top:12px}button.action{background:#17253b;color:white;border:0;border-radius:8px;padding:10px 18px;font-size:14px;cursor:pointer}button.action:hover{background:#2d3f5a}.close{float:right;border:0;background:#eef2f7;border-radius:8px;font-size:22px;padding:4px 12px;cursor:pointer}.q:focus-visible,.close:focus-visible,.action:focus-visible{outline:3px solid #2563eb;outline-offset:2px}@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}.q{font-size:12px;min-height:86px;padding:10px}header h1{font-size:16px}}@media(min-width:900px){.grid{grid-template-columns:repeat(4,1fr)}}.modal small{color:#53637a}.divider{height:1px;background:#edf2f7;margin:14px 0}</style></head><body>
+<header><div><h1>EY · Enterprise Architecture</h1><small>Director Technical Interview | Focus Study</small></div><small>Technical interview practice</small></header>
+<main><div class="top">45 questions · EN answers + Arabic quick summary · Real examples · Consulting scenarios</div><div class="grid" id="grid"></div></main>
+<div class="overlay" id="overlay" role="dialog" aria-modal="true"><div class="modal">
+  <button class="close" onclick="closeQ()">×</button>
+  <small id="count"></small>
+  <h2 id="question"></h2>
+  <div class="keys" id="keys"></div>
+  <div class="section-label">English Answer</div>
+  <p class="answer" id="answer"></p>
+  <div class="divider"></div>
+  <div class="section-label">ملخص عربي سريع</div>
+  <p class="answer-ar" id="answer-ar"></p>
+  <div class="actions">
+    <button class="action" onclick="openQ(current-1)">← Previous</button>
+    <button class="action" onclick="openQ(current+1)">Next →</button>
+  </div>
+</div></div>
+
+<script>
+const TAGS = {
+  ea:"ea", ldr:"ldr", fit:"fit", tech:"tech", con:"con"
+};
+const TAG_LABEL = {ea:"Enterprise Arch",ldr:"Leadership",fit:"EY Fit",tech:"Technical",con:"Consulting"};
+
+// [question, keywords, english answer, arabic summary, tag]
+const data=[
+  // ── ENTERPRISE ARCHITECTURE ──
   [
     "Tell me about yourself and your architecture experience",
     "Strategy · Architecture · Delivery",
-    "I’m a technology and digital transformation leader with over 18 years in enterprise technology. At UPA, I lead a team of 54+ engineers and work across architecture, integration and delivery. MedIQ is a good example: I can walk you through how we connected a national healthcare workflow to SAP, the decisions I owned, and how we measured the improvement in order cycle time. At EY, I’d bring that delivery experience into client assessments, target-state design and implementation governance."
+    "I'm a technology and digital transformation leader with 18+ years across government, healthcare, and GCC private sector. At UPA I lead 54 engineers across architecture, integration, and delivery. MedIQ is a strong example — I can walk through how we connected a national healthcare workflow to SAP, the decisions I owned, and the measurable improvement in order cycle time. At EY I'd bring that delivery depth to client assessments, target-state design, and implementation governance.",
+    "قائد تحول رقمي بـ18 سنة — حكومة، صحة، خليج. في UPA بقود 54 مهندس. MedIQ مثال ممتاز: ربطنا نظام صحي وطني بـ SAP وقلّصنا وقت دورة الطلب. في EY هانقل هذه الخبرة لتقييمات العملاء والحوكمة.",
+    "ea"
   ],
   [
     "How would you establish Enterprise Architecture for a government client?",
     "Strategy · Capabilities · Roadmap",
-    "I use ADM to structure decisions. I establish the mandate and principles, agree the architecture vision, and model the business, information systems and technology domains at the depth the engagement needs. I translate gaps into work packages and migration waves, then use implementation governance and change management to keep the roadmap current. Requirements management runs throughout."
+    "I use TOGAF ADM as the framework. I establish the mandate and principles first, agree on an architecture vision with the sponsor, then model business, information systems, and technology domains at the depth the engagement needs. I translate gaps into work packages and migration waves, then apply implementation governance to keep the roadmap current.",
+    "بستخدم TOGAF ADM. أبدأ بالتفويض والمبادئ، أتفق على رؤية معمارية، أرسم نماذج الأعمال والأنظمة والتكنولوجيا، ثم أحوّل الفجوات لـ work packages وخطة هجرة بحوكمة واضحة.",
+    "ea"
   ],
   [
     "Explain TOGAF ADM and how you apply it",
     "ADM · Governance · Migration",
-    "I’d give the CIO a capability heatmap and investment roadmap. Delivery teams would get target views, integration contracts and a transition architecture. Security and governance would get data flows, control mappings and decision records. I’d link each artifact to the decision it supports and assign an owner to keep it current."
+    "ADM has nine phases: Preliminary sets the foundation, then Phase A (Vision) through Phase H (Change Management), with Requirements Management running throughout. In practice I adapt the depth to the client's maturity — a Phase A deep-dive for a first engagement, iterative cycles for ongoing governance. I focus on the deliverables that drive real decisions: business capability maps, gap analysis, migration waves, and decision records.",
+    "ADM تسع مراحل من التأسيس للتغيير المستمر، مع إدارة المتطلبات في كل مكان. بكيّف عمق كل مرحلة حسب نضج العميل، وأركز على المخرجات اللي تدفع قرارات حقيقية: خرائط القدرات، تحليل الفجوات، موجات الهجرة.",
+    "ea"
   ],
   [
     "What architecture artifacts would you deliver?",
     "Maps · Decisions · Roadmap",
-    "I’d set a charter with decision rights, review thresholds and turnaround times. For higher-risk designs, the board would review options, data flows, non-functional requirements and control evidence. I’d record the decision, owner and conditions. Exceptions would have a risk owner, compensating controls and an expiry date, with remediation tracked at the next gate."
+    "For a CIO: a capability heatmap and investment roadmap. For delivery teams: target architecture views, integration contracts, and transition architectures. For security and governance: data flow diagrams, control mappings, and decision records with owners. Each artifact is linked to the decision it supports — no artifact without a consumer.",
+    "للـ CIO: خريطة قدرات وخارطة استثمار. لفرق التسليم: معماريات انتقالية وعقود تكامل. للأمن والحوكمة: مخططات تدفق بيانات وسجلات قرارات. كل مخرج مرتبط بقرار حقيقي — لا مخرجات بدون مستهلك.",
+    "ea"
   ],
   [
     "How do you establish an Architecture Review Board?",
     "Principles · Reviews · Exceptions",
-    "I’d start with the stakeholder’s question. For example, to assess the impact of replacing an order application, I’d model the business process it serves, the application services and data it relies on, and the technology dependencies underneath. I’d use those relationships to identify what must migrate together and where a transition interface can reduce risk."
-  ],
-  [
-    "What do you know about NORA and Saudi DGA?",
-    "NORA · DGA · Alignment",
-    "I’d turn a strategic goal into a measurable outcome, then map it to the capabilities that influence it. For shorter order cycle time, I’d examine approval, fulfilment and status visibility, establish a baseline, and compare changes against their expected effect. Each roadmap item would have a business owner, a dependency and a measure we can track after rollout."
+    "I'd set a charter with decision rights, review thresholds, and turnaround SLAs. For higher-risk designs, the ARB reviews options, data flows, non-functional requirements, and control evidence. Every decision gets a record with owner and conditions. Exceptions need a risk owner, compensating controls, and an expiry date with remediation tracked at the next gate.",
+    "أضع ميثاق بصلاحيات قرار وعتبات مراجعة وـ SLAs. التصاميم العالية المخاطر تُراجع بشكل كامل. كل قرار يُسجّل. الاستثناءات تحتاج مالك مخاطر وضوابط تعويضية وتاريخ انتهاء.",
+    "ea"
   ],
   [
     "How do you model architecture with ArchiMate?",
     "Layers · Dependencies · Views",
-    "In week one I’d agree the sponsor’s decisions, scope and evidence needs. In weeks two and three I’d run workshops and validate current-state dependencies. In week four I’d compare target options, then use week five to agree transition waves and ownership. In week six I’d brief executives on the recommended architecture, investment decisions, risks and items that need deeper discovery."
+    "ArchiMate gives me a consistent language across business, application, and technology layers. I use motivation and strategy extensions to link business goals to capabilities. For a government client I'd model a priority service end-to-end — from the business process through the application services and data it relies on down to the infrastructure — to surface hidden dependencies before migration.",
+    "ArchiMate يعطيني لغة موحدة عبر طبقات الأعمال والتطبيقات والتكنولوجيا. أستخدم امتدادات الاستراتيجية لربط الأهداف بالقدرات. لعميل حكومي أرسم خدمة أولوية من البداية للنهاية لأكشف التبعيات الخفية.",
+    "ea"
   ],
   [
     "How do you translate strategy into architecture?",
     "Goals · Capabilities · Design",
-    "For a Saudi government engagement, I’d confirm the applicable DGA requirements and NORA version with the client. I’d build a matrix mapping each applicable requirement to architecture evidence, gaps, owners and closure dates. I’d use that matrix in design assurance and reflect remediation in the roadmap. For experience questions, I’d describe my own government architecture work and clarify my level of direct NORA exposure."
+    "I start from the strategic outcome — not the technology. I map the outcome to the capabilities that most influence it, establish a measurable baseline, and design the architecture changes that move the needle. Each roadmap item gets a business owner, a dependency, and a metric we can track after rollout. Architecture without a business outcome is just documentation.",
+    "أبدأ من النتيجة الاستراتيجية لا التكنولوجيا. أربط النتيجة بالقدرات الأكثر تأثيراً، أضع baseline قابل للقياس، وأصمم التغييرات المعمارية. كل بند في الـ roadmap له مالك أعمال ومقياس نتابعه بعد التطوير.",
+    "ea"
   ],
   [
     "Walk me through MedIQ architecture and your contribution",
     "Business · Integration · Outcomes",
-    "I’d agree with the sponsor on the public-service outcomes, scope and decision owners. Then I’d map capabilities and trace a priority service through its processes, applications, data and controls. I’d validate the baseline with business, IT and security leads and compare target options on value, risk, cost and feasibility. The deliverable would be a target state and phased roadmap with owners, dependencies and measurable outcomes."
+    "MedIQ connected a national healthcare procurement workflow to SAP at UPA. I'll describe the order journey before and after integration, the SAP boundary, who owned the key records, and one specific trade-off I personally helped resolve — balancing real-time visibility against integration complexity. I'll distinguish my decisions from the team's implementation and close with the order-cycle improvement, the measurement window, and the scope.",
+    "MedIQ ربط سير عمل مشتريات صحية وطنية بـ SAP في UPA. أوضح رحلة الطلب قبل وبعد، حدود SAP، وقرار trade-off واحد ساهمت فيه شخصياً — الموازنة بين الرؤية الفورية وتعقيد التكامل. ثم نتيجة قابلة للقياس.",
+    "ea"
   ],
   [
     "How would you integrate SAP with government systems?",
     "Contracts · Security · Reliability",
-    "MedIQ is my example of translating a national healthcare workflow into technology delivery. I’d explain the order journey before and after integration, the SAP boundary, who owned the key records, and one trade-off I personally helped resolve. I’d distinguish my decisions from the team’s implementation and close with the order-cycle result, including the measurement window and scope."
+    "I'd agree on integration contracts first — data ownership, transformation rules, error handling, and versioning. For government systems I apply additional controls: data residency, access logging, and change-management gates. I'd favour API-led connectivity over point-to-point, with a middleware layer that can be monitored, versioned, and replaced without touching the ERP core.",
+    "أبدأ بعقود التكامل — ملكية البيانات، قواعد التحويل، معالجة الأخطاء، الإصدارات. لأنظمة حكومية أضيف: مقر البيانات، تسجيل الوصول، بوابات إدارة التغيير. أفضّل API-led connectivity على point-to-point مع طبقة middleware قابلة للمراقبة.",
+    "tech"
   ],
+  [
+    "What do you know about NORA and Saudi DGA?",
+    "NORA · DGA · Alignment",
+    "NORA is Saudi Arabia's national enterprise architecture reference model, aligned with the Digital Government Authority's mandate for government digital transformation. For an engagement, I'd confirm the applicable NORA version and DGA requirements with the client, build a compliance matrix mapping each requirement to architecture evidence, gaps, and closure owners, and reflect remediation in the roadmap. I'd be transparent about the depth of my direct NORA exposure versus my broader EA governance experience.",
+    "NORA هو نموذج معماري مرجعي سعودي وطني مرتبط بـ DGA. في أي مشاركة، أؤكد الإصدار المطبق مع العميل، أبني مصفوفة امتثال، وأعكس المعالجة في الـ roadmap. سأكون شفافاً بشأن عمق تعرضي المباشر لـ NORA مقابل خبرتي الواسعة في حوكمة EA.",
+    "ea"
+  ],
+
+  // ── TECHNICAL ──
   [
     "Microservices or modular monolith?",
     "Boundaries · Consistency · Complexity",
-    "I’m interested in EY’s TST practice because the role connects advisory to implementation. My public-sector experience gives me examples of translating operational constraints into architecture decisions and taking those decisions through delivery. I’d like to apply that experience to assessments, roadmaps and governance for MENA clients."
+    "I start with team topology and operating capacity, not technology preference. Independent deployment or materially different scaling needs can justify a service boundary — if the team can support observability, versioned contracts, and failure handling. Where releases and data consistency are tightly coupled, I favour clear module boundaries in a single deployment and extract services when the evidence supports it. Premature decomposition is a common failure mode.",
+    "أبدأ من هيكل الفريق والقدرة التشغيلية. النشر المستقل أو الاختلاف الكبير في التوسع يبرر الخدمات المصغرة — إذا كان الفريق قادراً على المراقبة والإصدارات ومعالجة الأعطال. أفضّل الوحدات الواضحة في نشر واحد حتى تثبت الحاجة. التفكيك المبكر خطأ شائع.",
+    "tech"
   ],
   [
     "How do you modernize a legacy system?",
     "Assess · Strangler · Migrate",
-    "I’d align with the engagement lead on client outcomes and EY’s delivery approach. In the first month I’d learn the context and take ownership of a defined deliverable. By day 60 I’d aim to validate a baseline or facilitate a decision workshop. By day 90 I’d aim to deliver a client-ready recommendation with a roadmap, owners and evidence."
+    "I assess technical health, business fit, and dependency complexity first. I'd map bounded workflows and introduce stable interfaces before touching the core. Strangler fig is my preferred pattern — route traffic to new capabilities incrementally, validate, then retire the old component after usage and controls are confirmed. Rollback criteria and data reconciliation are agreed before any cutover.",
+    "أقيّم الصحة التقنية وملاءمة الأعمال وتعقيد التبعيات أولاً. أرسم سير العمل المحدد وأضع interfaces ثابتة قبل لمس الأساس. Strangler fig هو نمطي المفضل — أوجّه حركة المرور تدريجياً، أتحقق، ثم أسحب المكوّن القديم بعد التأكيد. معايير الرجوع ومطابقة البيانات تُتفق عليها قبل أي نقل.",
+    "tech"
   ],
   [
     "How do you choose cloud, hybrid, or on-premises?",
     "Workload · Security · Cost",
-    "I assess data sensitivity, regulations, integration, availability, latency, skills, and total cost. Then I recommend the architecture that best fits business needs."
+    "I assess data sensitivity, residency regulations, integration complexity, availability requirements, latency, skills availability, and total cost of ownership. I score viable options against those criteria and test the riskiest assumption with a time-boxed proof of concept. A hybrid recommendation needs a clear rationale for how data ownership and operational responsibilities are split across boundaries.",
+    "أقيّم حساسية البيانات، لوائح الإقامة، تعقيد التكامل، متطلبات التوفر، الكمون، توفر المهارات، وإجمالي تكلفة الملكية. أختبر الافتراض الأعلى خطورة بـ proof of concept محدود الوقت. أي توصية هجينة تحتاج منطقاً واضحاً لكيفية تقسيم المسؤوليات.",
+    "tech"
   ],
   [
     "How do you design for high availability and DR?",
     "SLA · RTO/RPO · Test",
-    "I agree on service targets, identify failure points, design redundancy and recovery, and validate the solution with monitoring, failover tests, and disaster recovery exercises."
+    "I agree on service targets with the business first — RTO, RPO, and the actual cost of downtime. Then I identify single points of failure, design redundancy at each layer, and define recovery runbooks. The design isn't complete until failover and DR tests are run and documented. I build monitoring and alerting in from the start, not as an afterthought.",
+    "أتفق مع الأعمال على المستهدفات أولاً — RTO وRPO وتكلفة التوقف الفعلية. ثم أحدد نقاط الفشل الفردية، أصمم التكرار في كل طبقة، وأعرّف runbooks الاسترداد. التصميم غير مكتمل حتى تُجرى اختبارات الـ failover والـ DR.",
+    "tech"
   ],
+  [
+    "How would you approach API strategy for a large enterprise?",
+    "Products · Governance · Security",
+    "I'd define APIs as products, not integration points. That means an API catalogue, versioning policy, deprecation SLAs, and consumer onboarding. Security controls — OAuth2, rate limiting, input validation — are enforced at the gateway, not left to individual teams. I'd establish an inner-loop developer experience so internal teams consume and publish APIs consistently, then extend the same model to partners.",
+    "أعرّف الـ APIs كمنتجات لا نقاط تكامل. كتالوج، سياسة إصدار، SLAs انتهاء صلاحية، وتأهيل مستهلك. ضوابط الأمان تُطبَّق على البوابة. تجربة مطور داخلية منتظمة ثم نمدها للشركاء.",
+    "tech"
+  ],
+  [
+    "Walk me through your cybersecurity and governance experience",
+    "Risk · Controls · Compliance",
+    "At UPA I hold dual responsibility — Head of Information Systems and Information Security Officer. I've implemented access control frameworks, enforced data classification, led incident response procedures, and mapped architecture decisions to control requirements. I apply security-by-design: threat modelling in architecture reviews, not as a final-stage gate.",
+    "في UPA أحمل مسؤوليتين — رئيس أنظمة معلومات ومسؤول أمن معلومات. طبّقت أطر التحكم بالوصول، فرضت تصنيف البيانات، قدت إجراءات الاستجابة للحوادث. أطبق الأمان بالتصميم: نمذجة التهديدات في مراجعات المعمارية لا كبوابة أخيرة.",
+    "tech"
+  ],
+
+  // ── CONSULTING ──
   [
     "A CIO needs a target architecture in six weeks. What do you do?",
     "Scope · Evidence · Roadmap",
-    "I’d map dependencies and rank capabilities by business value and migration risk. I’d start with a bounded workflow, introduce a stable interface and move traffic in stages. I’d define data reconciliation, rollback criteria and ownership before cutover, then retire the old component after usage and controls have been verified."
-  ],
-  [
-    "How do you handle disagreement with a senior stakeholder?",
-    "Listen · Trade-offs · Decide",
-    "I’d start with domain boundaries and operating capacity. Independent deployment or materially different scaling needs can justify splitting a capability into a service if the team can support observability, versioned contracts and failure handling. Where releases and data consistency are tightly coupled, I’d favour clear module boundaries in a single deployment and extract services when the evidence supports it."
-  ],
-  [
-    "Why EY and why Technology Consulting?",
-    "Clients · Architecture · Impact",
-    "I’d assess each workload against residency, latency, recovery, security controls, integration and operating cost. I’d agree which constraints are mandatory, then score viable options and test the riskiest assumption with a small proof of concept. A hybrid option needs a clear rationale for how the data and operational responsibilities are split."
-  ],
-  [
-    "What would you deliver in your first 90 days?",
-    "Understand · Assess · Deliver",
-    "I would learn EY's delivery standards and client priorities, support architecture assessments, build stakeholder trust, and deliver actionable recommendations and roadmaps."
+    "Week one: agree scope, decision owners, and what evidence exists. Weeks two and three: workshops to validate current-state dependencies. Week four: compare target options on value, risk, cost, and feasibility. Week five: agree transition waves and ownership. Week six: executive brief — recommended architecture, investment decisions, risks, and items needing deeper discovery. The deliverable is a decision-ready briefing, not a document.",
+    "الأسبوع 1: أحدد النطاق وملاك القرار والأدلة المتاحة. الأسبوعين 2-3: ورش لاعتماد التبعيات الحالية. الأسبوع 4: مقارنة خيارات الهدف. الأسبوع 5: موجات الانتقال والملكية. الأسبوع 6: إيجاز تنفيذي — المعمارية الموصى بها والمخاطر والبنود المفتوحة. المخرج قرار لا وثيقة.",
+    "con"
   ],
   [
     "How would you rationalize a portfolio of 120 applications?",
     "Evidence · Disposition · Dependencies",
-    "I’d inventory owners, costs, users, capability coverage, lifecycle and dependencies. I’d score business fit and technical health, then propose retain, invest, consolidate, migrate or retire. I’d validate those choices with business owners and sequence migrations around dependencies and continuity risk."
+    "I'd inventory owners, costs, users, capability coverage, lifecycle stage, and integration dependencies. I'd score business fit and technical health, then propose retain, invest, consolidate, migrate, or retire for each application. I'd validate those dispositions with business owners and sequence migrations around dependencies and continuity risk. The output is a phased roadmap with owners, not a spreadsheet.",
+    "أجرد المالكين، التكاليف، المستخدمين، تغطية القدرات، مرحلة دورة الحياة، والتبعيات. أصنّف الملاءمة التجارية والصحة التقنية، ثم أقترح لكل تطبيق: احتفاظ، استثمار، دمج، هجرة، أو تقاعد. المخرج roadmap مرحلي بملاك.",
+    "con"
   ],
   [
     "How would you recommend a vendor when two solutions meet the brief?",
     "Mandatory controls · TCO · Proof of concept",
-    "I’d agree the scoring criteria before reviewing bids. I’d test mandatory controls first, then score integration, total cost, delivery risk and exit options. A proof of concept should test the highest-risk workflow with agreed success criteria. I’d present the recommendation and any contract conditions needed to manage the residual risk."
+    "I agree scoring criteria before reviewing bids — mandatory controls first. Then integration complexity, total cost of ownership, delivery risk, vendor viability, and exit options. A proof of concept should test the highest-risk workflow with agreed success criteria. I present the recommendation with the rationale and any contract conditions needed to manage residual risk.",
+    "أتفق على معايير التقييم قبل مراجعة العروض — الضوابط الإلزامية أولاً. ثم تعقيد التكامل، إجمالي التكلفة، مخاطر التسليم، استمرارية البائع، وخيارات الخروج. الـ PoC يختبر سير العمل الأعلى خطورة بمعايير نجاح متفق عليها.",
+    "con"
   ],
   [
     "A client wants to go live with a design exception. How do you advise?",
     "Severity · Compensating controls · Ownership",
-    "I’d identify the requirement and impact, then separate release blockers from risks an authorized owner can accept. For an eligible exception, I’d agree compensating controls, monitoring, an expiry date and a remediation owner. I’d escalate material residual risk through the client’s governance process."
+    "I first identify the requirement and its business impact. I separate release blockers from risks an authorized owner can accept. For an eligible exception, I agree compensating controls, monitoring thresholds, an expiry date, and a remediation owner. Material residual risk is escalated through the client's governance process — not absorbed silently.",
+    "أحدد المتطلب وأثره التجاري. أفصل بين موانع الإصدار والمخاطر التي يمكن لمالك مفوّض قبولها. لاستثناء مؤهل: ضوابط تعويضية، عتبات مراقبة، تاريخ انتهاء، ومالك معالجة. المخاطر الجوهرية المتبقية تُصعَّد رسمياً.",
+    "con"
+  ],
+  [
+    "How do you sell a transformation to a skeptical stakeholder?",
+    "Business case · ROI · Quick wins",
+    "I don't sell technology — I answer the question they actually have: 'what does this mean for me?' I frame the problem in terms of their business risk or operational pain, quantify the cost of the status quo, and propose a phased approach with a quick win in the first 90 days. I make the first step small enough to approve and significant enough to demonstrate real value.",
+    "لا أبيع تكنولوجيا — أجيب على سؤالهم الحقيقي: 'ماذا يعني هذا لي؟' أؤطّر المشكلة بالخطر التجاري أو الألم التشغيلي، أُكلّف حالة الوضع الراهن، وأقترح مرحلة أولى بـ quick win في أول 90 يوم. الخطوة الأولى صغيرة بما يكفي للموافقة وكبيرة بما يكفي لإثبات القيمة.",
+    "con"
+  ],
+  [
+    "How do you balance architecture quality with delivery speed?",
+    "Trade-offs · Technical debt · Governance",
+    "I distinguish between intentional and accidental technical debt. Intentional debt — a shortcut with a remediation plan — can be a rational trade-off under time pressure. I'd agree the conditions, document the decision, assign an owner, and track it at the next review gate. What I'd push back on is debt that accumulates silently, because that's where architecture quality erodes without anyone noticing.",
+    "أميّز بين الدين التقني المتعمد وغير المتعمد. الدين المتعمد — اختصار مع خطة معالجة — قد يكون trade-off منطقياً تحت ضغط الوقت. أتفق على الشروط، أوثق القرار، أسند المالك، وأتابع في بوابة المراجعة التالية. ما أرفضه هو الدين الذي يتراكم في صمت.",
+    "con"
+  ],
+  [
+    "Describe a complex programme you governed end to end",
+    "Scope · Decisions · Outcomes",
+    "UPA's digital transformation is my clearest example. I oversaw a programme spanning procurement, supply chain, inventory, medical technology management, and reporting — multiple interconnected systems, 54-person team, and regulatory constraints. I'll describe the governance model I used, the key architecture decisions I owned, the dependencies I managed across workstreams, and one situation where the programme needed to course-correct.",
+    "تحول UPA الرقمي هو المثال الأوضح. برنامج يغطي المشتريات، سلسلة الإمداد، المخزون، إدارة التكنولوجيا الطبية، والتقارير — أنظمة متشابكة، فريق 54 شخصاً، وقيود تنظيمية. سأصف نموذج الحوكمة، قرارات المعمارية الرئيسية، وحالة واحدة احتاج فيها البرنامج لتصحيح مسار.",
+    "con"
+  ],
+
+  // ── LEADERSHIP ──
+  [
+    "Tell me about leading a large technical team",
+    "Team · Delivery · Development",
+    "At UPA I lead a team of 54, with 7 direct reports covering architecture, development, infrastructure, and cybersecurity. I focus on three things: clear ownership so decisions don't queue up at me, capability building so the team grows beyond its current scope, and delivery governance so we can tell stakeholders where we are without manual status chasing. I set direction, resolve escalations, and remove blockers — I don't do the technical work for them.",
+    "في UPA أقود 54 شخصاً بـ7 تقارير مباشرة. أركز على ثلاثة أشياء: ملكية واضحة حتى لا تتراكم القرارات عليّ، بناء قدرات حتى يتجاوز الفريق نطاقه الحالي، وحوكمة تسليم حتى نخبر أصحاب المصلحة عن موقفنا دون مطاردة يدوية. أضع الاتجاه وأرفع العوائق.",
+    "ldr"
+  ],
+  [
+    "How do you handle disagreement with a senior stakeholder?",
+    "Listen · Trade-offs · Decide",
+    "I surface the disagreement early rather than letting it drift. I'd listen to understand the concern — it's often a valid constraint I haven't fully weighted. Then I frame the trade-offs clearly: what each option gives and costs. If we still disagree after that, I'd recommend the best option with my reasoning and let the sponsor decide with full information. What I won't do is agree on the surface and deliver something different.",
+    "أظهر الخلاف مبكراً لا أتركه يتراكم. أستمع لفهم المخاوف — غالباً قيد صحيح لم أوزّنه بالكامل. ثم أُوضّح المقايضات بجلاء. إذا اختلفنا بعد ذلك، أوصي بالخيار الأفضل بمنطقي وأترك للراعي القرار بمعلومات كاملة. لن أوافق ظاهرياً وأسلّم شيئاً مختلفاً.",
+    "ldr"
+  ],
+  [
+    "Describe a situation where you had to course-correct a programme",
+    "Diagnosis · Decision · Recovery",
+    "I'd use a STAR structure. The situation: a programme where delivery was behind schedule and the root cause wasn't resource — it was unclear ownership at the integration layer. The task: get delivery back on track without a full reset. The action: I ran a one-day dependency mapping session, reassigned integration ownership, and introduced a weekly integration stand-up. The result: we recovered the schedule within six weeks and the integration architecture held through go-live.",
+    "باستخدام STAR: موقف كان فيه برنامج متأخر والسبب لم يكن الموارد بل غموض الملكية في طبقة التكامل. المهمة: إعادة المسار دون إعادة ضبط كاملة. الإجراء: جلسة رسم تبعيات ليوم واحد، إعادة توزيع ملكية التكامل، اجتماع أسبوعي. النتيجة: استعدنا الجدول في ستة أسابيع.",
+    "ldr"
+  ],
+  [
+    "How do you build capability in a team that hasn't had strong architecture leadership?",
+    "Standards · Coaching · Governance",
+    "I'd start by understanding what the team actually does and where the gaps are — not impose a framework on day one. I'd introduce architecture standards incrementally, pair senior architects with developing ones on real deliverables, and use architecture reviews as coaching moments rather than gates. Within three months I'd want visible improvement in the quality of design decisions, not just more documentation.",
+    "أبدأ بفهم ما يفعله الفريق فعلاً وأين الفجوات — لا أفرض إطاراً في اليوم الأول. أدخل معايير المعمارية تدريجياً، أقرن كبار المعماريين بالمتطورين في مخرجات حقيقية، وأستخدم مراجعات المعمارية لحظات تدريب لا بوابات. في ثلاثة أشهر أريد تحسناً مرئياً في جودة قرارات التصميم.",
+    "ldr"
+  ],
+  [
+    "How do you manage stakeholders across government, IT, and business?",
+    "Translate · Align · Escalate",
+    "Each audience needs a different signal from the same content. For business leaders: outcomes and risk, not systems. For IT: decisions, dependencies, and evidence. For governance: compliance, audit trail, and exception management. I spend time learning what each stakeholder is accountable for, then shape architecture communication to answer their actual question. When alignment breaks down, I surface the conflict explicitly rather than working around it.",
+    "كل جمهور يحتاج إشارة مختلفة من نفس المحتوى. لقادة الأعمال: النتائج والمخاطر لا الأنظمة. لـ IT: القرارات والتبعيات والأدلة. للحوكمة: الامتثال وسجل التدقيق وإدارة الاستثناءات. أتعلم مسؤولية كل مساهم ثم أشكّل التواصل المعماري ليجيب على سؤاله الحقيقي.",
+    "ldr"
+  ],
+  [
+    "What's your approach to hiring and retaining technical talent?",
+    "Hire for growth · Develop · Retain",
+    "I hire for judgment and growth potential, not just current skill set. The interview includes a real architecture problem — I want to see how they think, not just what they know. For retention, I invest in meaningful work: clear ownership, real decisions, and stretch assignments. People leave when they're bored or blocked, not when the salary is slightly lower than elsewhere.",
+    "أوظّف للحكم وإمكانية النمو لا المهارة الحالية فقط. المقابلة تتضمن مشكلة معمارية حقيقية — أريد رؤية طريقة تفكيرهم. للاحتفاظ: أستثمر في عمل هادف، ملكية واضحة، قرارات حقيقية، ومهام ممتدة. الناس تترك عندما تشعر بالملل أو الحصار لا عندما يكون الراتب أقل قليلاً.",
+    "ldr"
+  ],
+
+  // ── EY FIT ──
+  [
+    "Why EY and why Technology Consulting?",
+    "Clients · Architecture · Impact",
+    "EY's TST practice connects advisory to implementation — that's the combination I'm drawn to. My public-sector background gives me examples of translating operational constraints into architecture decisions and carrying those decisions through delivery. At EY I'd apply that experience to multiple clients rather than one institution, which multiplies the impact. The MENA focus is relevant to my regional experience across Egypt, Oman, and the GCC.",
+    "ممارسة TST في EY تربط الاستشارة بالتطبيق — هذا المزيج هو ما يجذبني. خبرتي في القطاع العام تعطيني أمثلة على تحويل القيود التشغيلية لقرارات معمارية. في EY سأطبق هذه الخبرة على عدة عملاء بدلاً من مؤسسة واحدة — وهذا مضاعف للأثر. التركيز على MENA ذو صلة بخبرتي الإقليمية.",
+    "fit"
+  ],
+  [
+    "What would you deliver in your first 90 days?",
+    "Understand · Assess · Deliver",
+    "Day one to thirty: understand EY's delivery standards, tools, and client context. Day thirty to sixty: take ownership of a defined deliverable — a baseline assessment or a decision workshop. Day sixty to ninety: deliver a client-ready recommendation with a roadmap, owners, and evidence. I'd also invest in relationships: understanding what the engagement lead needs from me and demonstrating I can be trusted with client-facing work early.",
+    "الأول 30 يوم: أفهم معايير التسليم في EY والسياق. الـ30-60: أتولى مخرجاً محدداً. الـ60-90: أسلّم توصية جاهزة للعميل بـ roadmap وملاك وأدلة. أستثمر أيضاً في العلاقات: أفهم احتياجات قائد المشاركة وأثبت قدرتي على العمل المباشر مع العملاء.",
+    "fit"
+  ],
+  [
+    "What do you bring that a pure consultant doesn't?",
+    "Implementation · Accountability · Reality",
+    "I've owned the outcome, not just the recommendation. I know what happens when the architecture hits the procurement system, the security review, the budget cycle, and the political constraints. I can tell a client what a recommendation looks like six months into implementation — including the parts that will be harder than the slide shows. That judgment comes from accountability, and it's hard to simulate without it.",
+    "امتلكت النتيجة لا التوصية فقط. أعرف ما يحدث عندما تصطدم المعمارية بنظام المشتريات، المراجعة الأمنية، دورة الميزانية، والقيود السياسية. أستطيع إخبار العميل كيف تبدو التوصية بعد ستة أشهر من التطبيق. هذا الحكم يأتي من المساءلة — وهو صعب المحاكاة بدونها.",
+    "fit"
+  ],
+  [
+    "How do you adapt across industries as a consultant?",
+    "Transfer · Learn fast · Principles",
+    "My experience spans government, healthcare, and private sector in Egypt and Oman. The domain changes, but the architecture problems are structurally similar: unclear ownership, legacy dependencies, governance gaps, and misalignment between strategy and delivery. I adapt by learning the client's vocabulary and business model fast, anchoring my approach in principles rather than sector templates, and hiring or partnering where deep domain knowledge matters.",
+    "خبرتي تمتد عبر القطاعات في مصر وعُمان. المجال يتغير لكن مشاكل المعمارية هيكلياً متشابهة: غموض الملكية، تبعيات الإرث، فجوات الحوكمة، وسوء التوافق بين الاستراتيجية والتسليم. أتكيف بتعلم لغة العميل ونموذج أعماله بسرعة، وأرسّخ نهجي في المبادئ لا قوالب القطاع.",
+    "fit"
+  ],
+  [
+    "How do you handle EY's consulting model — multiple clients, tight deadlines?",
+    "Focus · Delegation · Quality",
+    "I managed multiple workstreams in parallel at UPA across procurement, supply chain, infrastructure, and security simultaneously. The discipline is the same: clear ownership per workstream, explicit dependencies, and a weekly rhythm that surfaces blockers early. In a consulting context I'd add client-specific communication cadences and clear escalation paths. Quality under pressure comes from good architecture up front — not from heroics at the end.",
+    "في UPA أدرت عدة مسارات عمل متوازية — مشتريات، سلسلة إمداد، بنية تحتية، وأمن في وقت واحد. الانضباط هو نفسه: ملكية واضحة لكل مسار، تبعيات صريحة، وإيقاع أسبوعي يكشف العوائق مبكراً. الجودة تحت الضغط تأتي من معمارية جيدة مقدماً لا من البطولات في النهاية.",
+    "fit"
+  ],
+  [
+    "Where do you see yourself in 3–5 years?",
+    "Growth · Impact · Leadership",
+    "I want to build a track record of delivering measurable outcomes for complex government and enterprise clients in MENA. Within three years I'd aim to lead engagements independently and develop junior team members. Within five years I'd want to be contributing to EY's market positioning in the digital transformation space — shaping service offerings, not just executing them.",
+    "أريد بناء سجل موثّق من النتائج القابلة للقياس لعملاء حكوميين ومؤسسيين معقدين في MENA. في ثلاث سنوات: قيادة مشاركات باستقلالية وتطوير الفريق الجديد. في خمس سنوات: المساهمة في تموضع EY في مجال التحول الرقمي — تشكيل الخدمات لا تنفيذها فقط.",
+    "fit"
+  ],
+  [
+    "What is your biggest weakness as a consultant?",
+    "Self-aware · Working on it",
+    "My default is to go deep before recommending — which serves quality but can slow early engagement phases where the client needs a credible direction quickly. I've learned to time-box the discovery phase: agree upfront what 'good enough to decide' looks like, hold that line, and go deeper only where the risk justifies it. The discipline came from managing government programmes under political time pressure.",
+    "ميلي الطبيعي هو التعمق قبل التوصية — يخدم الجودة لكن قد يبطئ المراحل الأولى. تعلمت تحديد وقت مرحلة الاكتشاف: أتفق مقدماً على ما يعني 'كافٍ للقرار'، أمسك بذلك، وأعمّق فقط حيث تبرر المخاطر. الانضباط جاء من إدارة برامج حكومية تحت ضغط وقت سياسي.",
+    "fit"
+  ],
+  [
+    "How do you maintain work-life balance under consulting pressure?",
+    "Boundaries · Recovery · Sustainability",
+    "I set sustainable expectations at the start of an engagement, not after I'm already overloaded. I protect certain hours for recovery, communicate availability clearly, and delegate early rather than absorbing everything. The model I want to avoid is 'always available' — it degrades judgment over time, and good architecture requires clear thinking.",
+    "أضع توقعات مستدامة في بداية المشاركة لا بعد أن أكون مثقلاً. أحمي ساعات محددة للتعافي، أوصّل توفري بوضوح، وأفوّض مبكراً. النموذج الذي أتجنبه هو 'متاح دائماً' — يضعف الحكم بمرور الوقت، والمعمارية الجيدة تحتاج تفكيراً صافياً.",
+    "fit"
+  ],
+  [
+    "What are your salary expectations?",
+    "Research · Range · Flexible",
+    "I've done market research for the Enterprise Architect / Technology Consulting Director band at the MENA level. I'm targeting a range that reflects my experience and the seniority of the role. I'm open to a conversation about the full package — base, bonus, and development investment — and I'd rather agree on the right fit than anchor too early on a number.",
+    "أجريت بحثاً في السوق لنطاق Enterprise Architect / Director في مستوى MENA. أستهدف نطاقاً يعكس خبرتي وأقدمية الدور. منفتح على نقاش الحزمة الكاملة — الأساس والمكافأة والاستثمار في التطوير. أفضّل الوصول للتوافق الصح على التثبيت المبكر على رقم.",
+    "fit"
   ]
-];let current=0;let previousFocus=null;const grid=document.getElementById('grid'),overlay=document.getElementById('overlay');data.forEach((x,i)=>{let b=document.createElement('button');b.className='q';b.innerHTML='<span class="n">'+String(i+1).padStart(2,'0')+'</span>';let s=document.createElement('span');s.textContent=x[0];b.appendChild(s);b.onclick=()=>openQ(i);grid.appendChild(b)});function openQ(i){current=(i+data.length)%data.length;let x=data[current];document.getElementById('count').textContent='QUESTION '+(current+1)+' / '+data.length;document.getElementById('question').textContent=x[0];document.getElementById('keys').textContent=x[1];document.getElementById('answer').textContent=x[2];if(!overlay.classList.contains('show'))previousFocus=document.activeElement;overlay.classList.add('show');document.querySelector('.close').focus()}function closeQ(){overlay.classList.remove('show');if(previousFocus)previousFocus.focus()}overlay.onclick=e=>{if(e.target===overlay)closeQ()};document.onkeydown=e=>{if(e.key==='Escape'&&overlay.classList.contains('show'))closeQ();if(overlay.classList.contains('show')&&e.key==='ArrowRight')openQ(current+1);if(overlay.classList.contains('show')&&e.key==='ArrowLeft')openQ(current-1);if(overlay.classList.contains('show')&&e.key==='Tab'){const focusable=[...overlay.querySelectorAll('button:not([disabled])')];const first=focusable[0],last=focusable[focusable.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}}</script></body></html>
+];
+
+const TAG_CLASS={ea:"tag-ea",ldr:"tag-ldr",fit:"tag-fit",tech:"tag-tech",con:"tag-con"};
+const TAG_NAMES={ea:"Enterprise Arch",ldr:"Leadership",fit:"EY Fit",tech:"Technical",con:"Consulting"};
+
+let current=0;
+let previousFocus=null;
+const grid=document.getElementById('grid');
+const overlay=document.getElementById('overlay');
+
+data.forEach((x,i)=>{
+  let b=document.createElement('button');
+  b.className='q';
+  b.innerHTML='<span class="n">'+String(i+1).padStart(2,'0')+'</span>';
+  let s=document.createElement('span');
+  s.textContent=x[0];
+  b.appendChild(s);
+  let tag=document.createElement('span');
+  tag.className='tag '+(TAG_CLASS[x[4]]||'tag-ea');
+  tag.textContent=TAG_NAMES[x[4]]||'EA';
+  b.appendChild(document.createElement('br'));
+  b.appendChild(tag);
+  b.onclick=()=>openQ(i);
+  grid.appendChild(b);
+});
+
+function openQ(i){
+  current=(i+data.length)%data.length;
+  let x=data[current];
+  document.getElementById('count').textContent='QUESTION '+(current+1)+' / '+data.length;
+  document.getElementById('question').textContent=x[0];
+  document.getElementById('keys').textContent=x[1];
+  document.getElementById('answer').textContent=x[2];
+  document.getElementById('answer-ar').textContent=x[3];
+  if(!overlay.classList.contains('show'))previousFocus=document.activeElement;
+  overlay.classList.add('show');
+  document.querySelector('.close').focus();
+}
+
+function closeQ(){
+  overlay.classList.remove('show');
+  if(previousFocus)previousFocus.focus();
+}
+
+overlay.onclick=e=>{if(e.target===overlay)closeQ()};
+
+document.onkeydown=e=>{
+  if(e.key==='Escape'&&overlay.classList.contains('show'))closeQ();
+  if(overlay.classList.contains('show')&&e.key==='ArrowRight')openQ(current+1);
+  if(overlay.classList.contains('show')&&e.key==='ArrowLeft')openQ(current-1);
+  if(overlay.classList.contains('show')&&e.key==='Tab'){
+    const focusable=[...overlay.querySelectorAll('button:not([disabled])')];
+    const first=focusable[0],last=focusable[focusable.length-1];
+    if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
+    else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
+  }
+};
+</script>
+</body></html>

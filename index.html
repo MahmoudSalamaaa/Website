@@ -36,6 +36,21 @@
   /* The flagship proof cards are a visual card grid, not a four-column ledger. */
   .home-cases .proof-ledger-head{display:none!important;}
 </style>
+<style data-career-journey-responsive>
+/* Career journey: responsive editorial timeline, aligned to existing case design. */
+.career-journey{padding:clamp(52px,7vw,94px) 0;background:linear-gradient(180deg,#f5f9f8 0%,#fbfaf4 100%)}
+.career-journey .section-head{align-items:end}
+.career-journey .case-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:16px}
+.career-journey .case{min-width:0;border-top:4px solid #0b8190;padding:24px 20px;overflow-wrap:break-word}
+.career-journey .case:nth-child(2){border-top-color:#4e86d6}
+.career-journey .case:nth-child(3){border-top-color:#55b98a}
+.career-journey .case:nth-child(4){border-top-color:#e8b33e}
+.career-journey .case small{display:block;letter-spacing:.06em;font-weight:800}
+.career-journey .case h3{font-size:clamp(1.1rem,1.6vw,1.45rem);line-height:1.25;margin:14px 0 10px}
+.career-journey .case p{line-height:1.65;margin:0}
+@media(max-width:960px){.career-journey .case-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:620px){.career-journey .case-grid{grid-template-columns:1fr!important}.career-journey .section-head{display:block}.career-journey .section-head p{margin-top:14px}.career-journey .case{padding:22px}}
+</style>
 <link rel="stylesheet" href="/assets/site-command.css"><link rel="stylesheet" href="/assets/global-footer.css"><link rel="stylesheet" href="/assets/a11y-hardening.css"><script type="speculationrules">{"prefetch":[{"where":{"href_matches":"/impact.html"},"eagerness":"moderate"}]}</script><link rel="stylesheet" href="/site-enhancements.css"></head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>

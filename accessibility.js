@@ -2,6 +2,8 @@
 (() => {
   'use strict';
 
+  const siteBase = location.pathname.replace(/\/[^/]*$/, '');
+
   const slug = (value) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 52) || 'section';
   const uniqueId = (base) => { let id = base; let index = 2; while (document.getElementById(id)) id = `${base}-${index++}`; return id; };
   const pageName = () => (location.pathname.split('/').pop() || 'index.html').toLowerCase();
@@ -9,7 +11,7 @@
   const installPageRepairLayer = () => {
     const page = pageName();
     const layers = page === 'technologies.html'
-      ? [['/technologies-final-palette.css','technologies-final-palette']]
+      ? [[`${siteBase}/technologies-final-palette.css`,'technologies-final-palette']]
       : [];
     layers.forEach(([href,key]) => {
       if (document.querySelector(`link[data-page-repair="${key}"]`)) return;
@@ -53,13 +55,13 @@
     nav.setAttribute('aria-label', 'Primary navigation');
     nav.innerHTML = `
       <div class="site-nav-inner">
-        <a class="site-brand" href="/index.html" aria-label="Mahmoud Salama — home"><img src="/kms-logo-original.png" width="40" height="40" alt="" aria-hidden="true"><span>MAHMOUD SALAMA</span></a>
+        <a class="site-brand" href="${siteBase}/index.html" aria-label="Mahmoud Salama — home"><img src="${siteBase}/kms-logo-original.png" width="40" height="40" alt="" aria-hidden="true"><span>MAHMOUD SALAMA</span></a>
         <div class="site-desktop-links">
-          ${navLink('/portfolio.html','Portfolio','portfolio',active)}${navLink('/experience.html','Experience','experience',active)}${navLink('/projects.html','Projects','projects',active)}${navLink('/architecture.html','Architecture','architecture',active)}${navLink('/governance.html','Recognition','recognition',active)}
-          <details class="site-more${moreActive ? ' is-active' : ''}"><summary>More</summary><div class="site-more-menu">${navLink('/technologies.html','Technology Capabilities','technologies',active)}${navLink('/contributions.html','National Contributions','contributions',active)}${navLink('/evidence.html','Evidence Registry','evidence',active)}${navLink('/faq.html','FAQ','faq',active)}${navLink('/executive-brief.html','Executive Brief','evidence',active)}${navLink('/insights.html','Insights','evidence',active)}${navLink('/card.html','Digital Business Card','card',active)}</div></details>
+          ${navLink(`${siteBase}/portfolio.html`,'Portfolio','portfolio',active)}${navLink(`${siteBase}/experience.html`,'Experience','experience',active)}${navLink(`${siteBase}/projects.html`,'Projects','projects',active)}${navLink(`${siteBase}/architecture.html`,'Architecture','architecture',active)}${navLink(`${siteBase}/governance.html`,'Recognition','recognition',active)}
+          <details class="site-more${moreActive ? ' is-active' : ''}"><summary>More</summary><div class="site-more-menu">${navLink(`${siteBase}/technologies.html`,'Technology Capabilities','technologies',active)}${navLink(`${siteBase}/contributions.html`,'National Contributions','contributions',active)}${navLink(`${siteBase}/evidence.html`,'Evidence Registry','evidence',active)}${navLink(`${siteBase}/faq.html`,'FAQ','faq',active)}${navLink(`${siteBase}/executive-brief.html`,'Executive Brief','evidence',active)}${navLink(`${siteBase}/insights.html`,'Insights','evidence',active)}${navLink(`${siteBase}/card.html`,'Digital Business Card','card',active)}</div></details>
         </div>
-        <a class="site-contact${active === 'contact' ? ' active' : ''}" href="/contact.html"${active === 'contact' ? ' aria-current="page"' : ''}>LET'S TALK →</a>
-        <details class="site-mobile-menu"><summary>Menu</summary><div class="site-mobile-panel">${navLink('/portfolio.html','Portfolio','portfolio',active)}${navLink('/experience.html','Experience','experience',active)}${navLink('/projects.html','Projects','projects',active)}${navLink('/architecture.html','Architecture','architecture',active)}${navLink('/governance.html','Recognition','recognition',active)}<div class="site-mobile-secondary-label">More</div>${navLink('/technologies.html','Technology Capabilities','technologies',active)}${navLink('/contributions.html','National Contributions','contributions',active)}${navLink('/evidence.html','Evidence Registry','evidence',active)}${navLink('/faq.html','FAQ','faq',active)}${navLink('/executive-brief.html','Executive Brief','evidence',active)}${navLink('/insights.html','Insights','evidence',active)}${navLink('/card.html','Digital Business Card','card',active)}<a class="site-mobile-contact${active === 'contact' ? ' active' : ''}" href="/contact.html"${active === 'contact' ? ' aria-current="page"' : ''}>Start a conversation →</a></div></details>
+        <a class="site-contact${active === 'contact' ? ' active' : ''}" href="${siteBase}/contact.html"${active === 'contact' ? ' aria-current="page"' : ''}>LET'S TALK →</a>
+        <details class="site-mobile-menu"><summary>Menu</summary><div class="site-mobile-panel">${navLink(`${siteBase}/portfolio.html`,'Portfolio','portfolio',active)}${navLink(`${siteBase}/experience.html`,'Experience','experience',active)}${navLink(`${siteBase}/projects.html`,'Projects','projects',active)}${navLink(`${siteBase}/architecture.html`,'Architecture','architecture',active)}${navLink(`${siteBase}/governance.html`,'Recognition','recognition',active)}<div class="site-mobile-secondary-label">More</div>${navLink(`${siteBase}/technologies.html`,'Technology Capabilities','technologies',active)}${navLink(`${siteBase}/contributions.html`,'National Contributions','contributions',active)}${navLink(`${siteBase}/evidence.html`,'Evidence Registry','evidence',active)}${navLink(`${siteBase}/faq.html`,'FAQ','faq',active)}${navLink(`${siteBase}/executive-brief.html`,'Executive Brief','evidence',active)}${navLink(`${siteBase}/insights.html`,'Insights','evidence',active)}${navLink(`${siteBase}/card.html`,'Digital Business Card','card',active)}<a class="site-mobile-contact${active === 'contact' ? ' active' : ''}" href="${siteBase}/contact.html"${active === 'contact' ? ' aria-current="page"' : ''}>Start a conversation →</a></div></details>
       </div>`;
     existing.replaceWith(nav);
     nav.querySelectorAll('details').forEach((menu) => {
